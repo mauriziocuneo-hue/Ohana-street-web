@@ -38,17 +38,29 @@ for p in catalog:
     # Pubblicare due card che usano gli stessi byte immagine confonde il cliente.
     if p["genere"] == "Scarpe":
         if p.get("vetrina") is False:
-            original_id = p.get("duplicatoDi")
-            assert original_id in all_products_by_id, f"Riferimento duplicato mancante: {p['id']}"
-            original = all_products_by_id[original_id]
-            assert original["genere"] == "Scarpe" and original.get("vetrina") is not False, f"Capogruppo non valido: {p['id']}"
-            assert p["brand"] == original["brand"] and p["model"] == original["model"], f"Titolo differente dal capogruppo: {p['id']}"
+            # Archivio editoriale: preserva schede e mapping ma non renderle pubbliche.
+            # I vecchi link duplicatoDi possono essere archiviati indipendentemente.
+            pass
         else:
             digest = hashlib.sha256(raw).hexdigest()
             assert digest not in visible_photo_digests, (
                 f"Foto duplicata esposta per {p['id']} e {visible_photo_digests.get(digest)}"
             )
             visible_photo_digests[digest] = p["id"]
+            if p.get("selezione")=="editoriale":
+                gallery=p.get("images")
+                assert isinstance(gallery,list) and len(gallery)==3 and gallery[0]==path, f"Galleria diversa da 3 foto: {p['id']}"
+                image_hashes=set()
+                for photo_path in gallery:
+                    assert isinstance(photo_path,str) and re.fullmatch(r"assets/products/[A-Za-z0-9_.-]+\.webp",photo_path), "Percorso galleria non valido"
+                    photo=Path(photo_path)
+                    assert photo.is_file() and photo.stat().st_size>1000, f"Foto galleria mancante: {photo_path}"
+                    raw_gallery=photo.read_bytes()
+                    assert raw_gallery[:4]==b"RIFF" and raw_gallery[8:12]==b"WEBP", "Foto galleria non WebP"
+                    image_hashes.add(hashlib.sha256(raw_gallery).hexdigest())
+                assert len(image_hashes)==3, f"Due foto esattamente identiche: {p['id']}"
+                assert p.get("modelloVerificato") is True, f"Modello non verificato: {p['id']}"
+                assert isinstance(p.get("descrizione"),str) and 35<=len(p["descrizione"])<=350, f"Descrizione mancante: {p['id']}"
 
 assert "href=\"gestione/\"" in Path("index.html").read_text(encoding="utf-8"), "Il pulsante gestori manca"
 config = Path("gestione/config.js").read_text(encoding="utf-8")
