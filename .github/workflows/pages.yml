@@ -33,7 +33,6 @@ jobs:
 
   deploy:
     name: Pubblica su GitHub Pages
-    if: github.event_name == 'workflow_dispatch'
     needs: verifica
     runs-on: ubuntu-latest
     environment:
