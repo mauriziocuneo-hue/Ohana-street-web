@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/importa-lotto-002.yml"
+      - "tools/importa_lotto_webp.py"
+  workflow_dispatch:
 
 permissions:
   contents: write
