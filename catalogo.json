@@ -218,7 +218,8 @@
     "image": "assets/products/OHY-013.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "variante": "1 di 2"
   },
   {
     "id": "OHY-014",
@@ -1297,7 +1298,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-949D51135B4E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "1 di 3"
   },
   {
     "id": "OH-11DE03266FB8",
@@ -1345,7 +1347,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-FA458370428C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 2"
   },
   {
     "id": "OH-9292D9FC2F9A",
@@ -1537,7 +1540,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-682F4C0BDCD3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "1 di 9"
   },
   {
     "id": "OH-B20F214F839A",
@@ -1617,7 +1621,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-C9F2F09ED203.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "1 di 11"
   },
   {
     "id": "OH-A8F188D34BF5",
@@ -1697,7 +1702,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-15C9ED492DFD.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-F20D7AD66FF8",
@@ -1713,7 +1720,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-F20D7AD66FF8.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-0179DC981468",
@@ -1745,7 +1754,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-347E701B03E1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-FE404F9E0A83",
@@ -1793,7 +1804,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-8AA8F8955FD3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 3"
   },
   {
     "id": "OH-9245A7FE08A3",
@@ -1809,7 +1821,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-9245A7FE08A3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-F6E3F091FF42",
@@ -1841,7 +1855,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-8AD88138B95D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-007C5D0EADCC",
@@ -1889,7 +1905,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-C39901484F56.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-5C05EF281F13",
@@ -1905,7 +1923,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-5C05EF281F13.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-E86838EC23E2",
@@ -1969,7 +1989,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-6BF0E14324A4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-2AE1379F75E0",
@@ -1985,7 +2007,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-2AE1379F75E0.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-0BE8FA6C5E55",
@@ -2001,7 +2025,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-0BE8FA6C5E55.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-2FBF94AD6BDD",
@@ -2017,7 +2043,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-2FBF94AD6BDD.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-4AF24F080222",
@@ -2033,7 +2061,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-4AF24F080222.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 9"
   },
   {
     "id": "OH-403961F5BFE5",
@@ -2113,7 +2142,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-913E3CE8C2A7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 11"
   },
   {
     "id": "OH-60AE63B9825A",
@@ -2161,7 +2191,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-FF6D1CEA8719.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-148AA9D070C4",
@@ -2177,7 +2209,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-148AA9D070C4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-8A244ADCC371",
@@ -2209,7 +2243,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-FD07F5B02E8F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-2C9DD0AF2AB5",
@@ -2257,7 +2293,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-F336279283DD.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "3 di 3"
   },
   {
     "id": "OH-81B780ADF7C5",
@@ -2273,7 +2310,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-81B780ADF7C5.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-801B5F4E6C59",
@@ -2305,7 +2344,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-1AEB705F6BD9.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-97D7AB40C47A",
@@ -2353,7 +2394,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-8405B75DC42E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-BDDF2060568E",
@@ -2369,7 +2412,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-BDDF2060568E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-00719E27FCE1",
@@ -2433,7 +2478,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-6B8FBB7619E2.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-BCDAA71E8C0D",
@@ -2449,7 +2496,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-BCDAA71E8C0D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-8743C0E833CF",
@@ -2465,7 +2514,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-8743C0E833CF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-E78FC6A2567A",
@@ -2481,7 +2532,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-E78FC6A2567A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-DBD4A416CDF9",
@@ -2497,7 +2550,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-DBD4A416CDF9.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "3 di 9"
   },
   {
     "id": "OH-B82950F98FA8",
@@ -2577,7 +2631,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-D86AE4815A44.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "3 di 11"
   },
   {
     "id": "OH-299FB2F3DB0C",
@@ -2625,7 +2680,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-36CFD973686A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-1FF4A2128B63",
@@ -2641,7 +2698,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-1FF4A2128B63.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-7D0BE1D1B1FA",
@@ -2673,7 +2732,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-26FE44BD4B2D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-157DD1B68E2C",
@@ -2721,7 +2782,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-921BAF2C6ED4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "1 di 3"
   },
   {
     "id": "OH-4819ED13D821",
@@ -2737,7 +2799,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-4819ED13D821.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-6749E4A2B003",
@@ -2801,7 +2865,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-27E5B90E5B24.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-F91E44F4A9EE",
@@ -2817,7 +2883,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-F91E44F4A9EE.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-00E2EDB5A284",
@@ -2849,7 +2917,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-4D801A18D4AC.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-962E947EA4F0",
@@ -2897,7 +2967,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-B5E0087C4EB4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 3"
   },
   {
     "id": "OH-C47BE5ADA895",
@@ -2913,7 +2984,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-C47BE5ADA895.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-775065AC8B6E",
@@ -2945,7 +3018,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-21E1699330BE.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-05E3E1358B32",
@@ -2993,7 +3068,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-47987D08746C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-0ADB669CCF97",
@@ -3009,7 +3086,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-0ADB669CCF97.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-7307A6B93F31",
@@ -3073,7 +3152,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-F6B5764820F3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-F38D7A6D530C",
@@ -3089,7 +3170,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-F38D7A6D530C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-09BECF0EA3B1",
@@ -3105,7 +3188,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-09BECF0EA3B1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-89E104F9E783",
@@ -3121,7 +3206,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-89E104F9E783.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-BFD29EC1E0D6",
@@ -3137,7 +3224,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-BFD29EC1E0D6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "4 di 9"
   },
   {
     "id": "OH-8116F4A6267B",
@@ -3217,7 +3305,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-2145B0BEA414.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "4 di 11"
   },
   {
     "id": "OH-DE57A3CA5E22",
@@ -3265,7 +3354,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-75B06B7D4905.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-43A4724BF536",
@@ -3281,7 +3372,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-43A4724BF536.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-C4A8F3895241",
@@ -3313,7 +3406,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-778CBBE3DA85.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-126A28109E5B",
@@ -3361,7 +3456,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-3D80710ABA63.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "3 di 3"
   },
   {
     "id": "OH-35BB391AFB38",
@@ -3377,7 +3473,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-35BB391AFB38.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-AC856D45C0B4",
@@ -3409,7 +3507,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-2CB5F6AEE063.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-BFF6E73431F0",
@@ -3457,7 +3557,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-611D6B825C41.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-3F6C5FB78DD5",
@@ -3473,7 +3575,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-3F6C5FB78DD5.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-849BF33F0CB7",
@@ -3537,7 +3641,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-C514C606C00E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-3B87F263496C",
@@ -3553,7 +3659,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-3B87F263496C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-15154E42A70B",
@@ -3569,7 +3677,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-15154E42A70B.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-E97A2E41E360",
@@ -3585,7 +3695,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-E97A2E41E360.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-55A325964470",
@@ -3601,7 +3713,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-55A325964470.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "5 di 9"
   },
   {
     "id": "OH-27D940D929E2",
@@ -3681,7 +3794,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-E2AB168B191E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "5 di 11"
   },
   {
     "id": "OH-699351B9C916",
@@ -3729,7 +3843,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-A0D81427383C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-BD9C4D5A0FBA",
@@ -3745,7 +3861,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-BD9C4D5A0FBA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-DB0CF87DF2E4",
@@ -3777,7 +3895,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-835D3713D111.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-EC74A932B8DB",
@@ -3825,7 +3945,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-57A4DDC1F41A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "1 di 7"
   },
   {
     "id": "OH-300537181F7B",
@@ -3841,7 +3962,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-300537181F7B.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-59FD4F5DE78D",
@@ -3873,7 +3996,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-43A7C1F5ADA6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-C2A2CD3E2DDA",
@@ -3921,7 +4046,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-1B4947A0AA64.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-DEECC9DA89DC",
@@ -3937,7 +4064,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-DEECC9DA89DC.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-2C41B4A1EC81",
@@ -4001,7 +4130,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-2C601CEA01BA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-47038B47FEF4",
@@ -4017,7 +4148,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-47038B47FEF4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-9F27B8C95C88",
@@ -4033,7 +4166,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-9F27B8C95C88.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-16C118CB8B7F",
@@ -4049,7 +4184,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-16C118CB8B7F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-E7B1D4003687",
@@ -4065,7 +4202,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-E7B1D4003687.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "6 di 9"
   },
   {
     "id": "OH-075400FEDA4B",
@@ -4145,7 +4283,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-B76093E9A201.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "6 di 11"
   },
   {
     "id": "OH-3349A6B14FCB",
@@ -4193,7 +4332,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-1B4AE20218ED.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-24FCC8BC9465",
@@ -4209,7 +4350,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-24FCC8BC9465.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-C3E7145ED6C2",
@@ -4241,7 +4384,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-ACB4748A4D8E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-378A7B4BBFA5",
@@ -4289,7 +4434,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-51ECBA48E2E4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "2 di 7"
   },
   {
     "id": "OH-B58F9791A260",
@@ -4305,7 +4451,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-B58F9791A260.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-B713BBE471E4",
@@ -4337,7 +4485,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-4B3D5B8DA7BF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-259CFA45A6E4",
@@ -4385,7 +4535,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-E987987E8F60.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-317AE1500B22",
@@ -4401,7 +4553,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-317AE1500B22.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-D2440686730C",
@@ -4465,7 +4619,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-3D180AD5FB63.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-453328039369",
@@ -4481,7 +4637,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-453328039369.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-E8F0540865F7",
@@ -4497,7 +4655,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-E8F0540865F7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-F1AD611B6696",
@@ -4513,7 +4673,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-F1AD611B6696.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-737634294C46",
@@ -4529,7 +4691,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-737634294C46.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "7 di 9"
   },
   {
     "id": "OH-81634797E076",
@@ -4609,7 +4772,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-369D56725A1B.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "7 di 11"
   },
   {
     "id": "OH-E72B55DBB7D5",
@@ -4657,7 +4821,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-801A4D5BF193.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-3DE61F41366F",
@@ -4673,7 +4839,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-3DE61F41366F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-86EB0DEBC255",
@@ -4705,7 +4873,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-D122A3791BB3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-96DA3EF315EE",
@@ -4753,7 +4923,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-9A8A627A548C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "3 di 7"
   },
   {
     "id": "OH-30E0E5105D2F",
@@ -4769,7 +4940,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-30E0E5105D2F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-6684A7BB7DE7",
@@ -4801,7 +4974,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-9B6417FD51E6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-FF11D094EA63",
@@ -4849,7 +5024,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-DF49F4382B66.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-C5A486FDF394",
@@ -4865,7 +5042,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-C5A486FDF394.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-178681DBFEAB",
@@ -4929,7 +5108,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-D08B3CC86EA1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-0E971DFAD509",
@@ -4945,7 +5126,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-0E971DFAD509.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-C18AB16BD630",
@@ -4961,7 +5144,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-C18AB16BD630.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-18A91D048F72",
@@ -4977,7 +5162,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-18A91D048F72.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-2822B6F39F82",
@@ -4993,7 +5180,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-2822B6F39F82.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "8 di 9"
   },
   {
     "id": "OH-00E63C7231EF",
@@ -5073,7 +5261,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-B26D1759C531.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "8 di 11"
   },
   {
     "id": "OH-AE299A20C288",
@@ -5121,7 +5310,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-5903E7D0F25C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-7075FE998A59",
@@ -5137,7 +5328,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-7075FE998A59.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-217E1860ECAA",
@@ -5169,7 +5362,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-45D9DA71737F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-124A79EDE602",
@@ -5217,7 +5412,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-BE0BD1666A57.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "4 di 7"
   },
   {
     "id": "OH-7BEA7F395DC6",
@@ -5233,7 +5429,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-7BEA7F395DC6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-467041996010",
@@ -5265,7 +5463,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-3DBCE285049D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-9DE6B7E90E81",
@@ -5313,7 +5513,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-111F4D50AAF1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-FF150B4E6F7F",
@@ -5329,7 +5531,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-FF150B4E6F7F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-6F97BC2B45B0",
@@ -5393,7 +5597,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-6B1E6C9E5312.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-FCAF164A4642",
@@ -5409,7 +5615,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-FCAF164A4642.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-CDDB3145A974",
@@ -5425,7 +5633,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-CDDB3145A974.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-B64DB8D84020",
@@ -5441,7 +5651,9 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-B64DB8D84020.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-AEEAD5351636",
@@ -5537,7 +5749,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-AC2EA8159800.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "9 di 11"
   },
   {
     "id": "OH-30F4C57ED9C2",
@@ -5585,7 +5798,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-0D0D097C4F75.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-C121AC985A18",
@@ -5601,7 +5816,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-C121AC985A18.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-C05E69943287",
@@ -5633,7 +5850,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-D299D9704A2B.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-93854CD3A49C",
@@ -5681,7 +5900,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-DF278690C6BF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "5 di 7"
   },
   {
     "id": "OH-511DC7FAC9FA",
@@ -5697,7 +5917,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-511DC7FAC9FA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-61E033FF973A",
@@ -5729,7 +5951,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-8E9B52648C22.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-66AA6788EE13",
@@ -5777,7 +6001,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-7FF3E81A4C51.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-DFA0BCB3BF9F",
@@ -5793,7 +6019,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-DFA0BCB3BF9F.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-F796BD5155B3",
@@ -5857,7 +6085,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-5D135B35C1DF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-0BDF23690CBC",
@@ -5873,7 +6103,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-0BDF23690CBC.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-EFF24FEE6244",
@@ -5889,7 +6121,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-EFF24FEE6244.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-6863914B83FA",
@@ -5905,7 +6139,9 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-6863914B83FA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-7A8FBFA2B405",
@@ -6001,7 +6237,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-DBC4C0F38D37.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "10 di 11"
   },
   {
     "id": "OH-D4FB5B6DD804",
@@ -6049,7 +6286,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-BA9D513A01C7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-1D10A7C20A28",
@@ -6065,7 +6304,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-1D10A7C20A28.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-FAB2D612D4BA",
@@ -6097,7 +6338,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-7A07D98838C2.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-5ED2C1D0B5CA",
@@ -6145,7 +6388,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-4307CE8EB16D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "6 di 7"
   },
   {
     "id": "OH-CFCC9A9A2D3D",
@@ -6161,7 +6405,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-CFCC9A9A2D3D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-0210AEE6DFBD",
@@ -6193,7 +6439,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-6F51D677B95E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-CB3C272D49A4",
@@ -6241,7 +6489,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-606C44F2DC1A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-50F2C032182D",
@@ -6257,7 +6507,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-50F2C032182D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-AC09DD731E0C",
@@ -6321,7 +6573,9 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-78E2BBA32301.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-469859E4B79B"
   },
   {
     "id": "OH-4B0945DCEEC5",
@@ -6337,7 +6591,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-4B0945DCEEC5.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-844E0762D4C6"
   },
   {
     "id": "OH-3DB62CAABE8A",
@@ -6353,7 +6609,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-3DB62CAABE8A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-4998644B87D6"
   },
   {
     "id": "OH-8738134899F0",
@@ -6369,7 +6627,9 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-8738134899F0.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-C14D9E0CC810"
   },
   {
     "id": "OH-142CC9280AC3",
@@ -6385,7 +6645,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-142CC9280AC3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "9 di 9"
   },
   {
     "id": "OH-C744BA3388F0",
@@ -6465,7 +6726,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-03F4661DD7BD.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "11 di 11"
   },
   {
     "id": "OH-334A3C1BB471",
@@ -6513,7 +6775,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-20390FD5A9D9.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-CE8FA242690C"
   },
   {
     "id": "OH-369A3339D085",
@@ -6529,7 +6793,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-369A3339D085.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7D8A48E99BE6"
   },
   {
     "id": "OH-311959DF67D1",
@@ -6561,7 +6827,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-CE124252ED34.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-66E680A4FF32"
   },
   {
     "id": "OH-5BAB1351EDE8",
@@ -6609,7 +6877,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-A7E22E815166.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "variante": "7 di 7"
   },
   {
     "id": "OH-603A257F6F0C",
@@ -6625,7 +6894,9 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-603A257F6F0C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-11DE03266FB8"
   },
   {
     "id": "OH-3BDE45C46EAF",
@@ -6657,7 +6928,9 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-1A242A3F8193.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-FA458370428C"
   },
   {
     "id": "OH-90D880F84BF4",
@@ -6705,7 +6978,9 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-9DAE99934D48.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-7EAD59B0C4F6"
   },
   {
     "id": "OH-0FA8E64A5C7E",
@@ -6721,7 +6996,9 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-0FA8E64A5C7E.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false,
+    "duplicatoDi": "OH-1BA2CF6B6A1D"
   },
   {
     "id": "OH-D47C694F6712",
