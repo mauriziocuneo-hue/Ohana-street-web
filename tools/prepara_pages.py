@@ -9,7 +9,7 @@ root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
 assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
-required = ["index.html", "catalogo.json", "favicon.svg", "gestione/index.html", "gestione/config.js"]
+required = ["index.html", "catalogo.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
     if file.endswith((".html", ".json", ".js")):
@@ -39,6 +39,8 @@ dest.mkdir()
 for item in ["index.html", "catalogo.json", "favicon.svg"]:
     shutil.copy2(item, dest / item)
 shutil.copytree("assets/products", dest / "assets/products")
+for item in ["ohana-chat.css", "ohana-chat.js"]:
+    shutil.copy2(Path("assets") / item, dest / "assets" / item)
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
