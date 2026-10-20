@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>OHANA STREET — Area gestori</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+:root{--ocean:#123e40;--mint:#65dfc6;--cream:#fcf8ee;--coral:#ff7560;--ink:#143438;--line:#d6e2dd}
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:var(--cream);color:var(--ink);margin:0}
+header{background:var(--ocean);color:white;padding:18px max(16px,calc((100% - 1100px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}
+header a{color:white;text-decoration:none;font-weight:900}
+header small{display:block;font-weight:400;letter-spacing:2px;color:var(--mint);font-size:10px}
+header .home{font-size:13px;border:1px solid #a5cfca;border-radius:30px;padding:10px 14px}
+main{max-width:1100px;margin:40px auto;padding:0 16px}
+h1{font-size:clamp(32px,5vw,58px);line-height:1.05;margin:0 0 12px;font-family:Impact,'Arial Narrow',Arial,sans-serif}
+p{line-height:1.6}
+.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 14px 30px #14343810;max-width:490px}
+label{display:block;margin-top:16px;margin-bottom:7px;font-weight:800;font-size:13px}
+input{font:inherit;display:block;width:100%;border:1px solid #bac9c4;border-radius:10px;padding:13px;background:#fff}
+button{font:inherit;cursor:pointer;background:var(--coral);color:var(--ink);font-weight:900;border:0;border-radius:30px;padding:13px 20px}
+button:disabled{opacity:.6;cursor:wait}
+button.secondary{background:var(--ocean);color:white}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.notice{background:#fff2db;border:1px solid #e7c783;border-radius:10px;padding:14px;margin:18px 0;font-size:14px}
+.error{color:#a82e2e}
+.muted{color:#677976}
+#workspace{display:none}
+#workspace.ready{display:block}
+#search{max-width:450px;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.item{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.item img{width:100%;height:190px;object-fit:cover;background:#edf5f0}
+.item .details{padding:14px}
+.item .details b{display:block;min-height:45px}
+.item small{color:#5b7471}
+.item .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.item .links a{background:var(--ocean);color:white;border-radius:20px;padding:8px 10px;text-decoration:none;font-size:12px;font-weight:700}
+.item .links a:hover{background:#205c5f}
+@media(max-width:550px){main{margin:25px auto}.panel{padding:18px}header{padding:15px}}
+</style>
+</head>
+<body>
+<header>
+<a href="../">OHANA STREET <small>SOLO GESTORI</small></a>
+<a class="home" href="../">Torna al sito</a>
+</header>
+<main>
+<section id="login">
+  <h1>BENVENUTI NELL'ʻOHANA</h1>
+  <p>Area riservata ai due gestori. I collegamenti ai fornitori non sono presenti nel catalogo pubblico.</p>
+  <div class="panel">
+    <div class="notice" id="setup" hidden>Area riservata in preparazione: il servizio di autenticazione non è ancora configurato.</div>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required>
+      <div class="actions"><button id="loginBtn" type="submit">Accedi</button></div>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+  </div>
+</section>
+<section id="workspace">
+  <h1>CATALOGHI RISERVATI</h1>
+  <p class="muted">I collegamenti compaiono soltanto dopo autenticazione e autorizzazione sul database protetto.</p>
+  <div class="actions"><button id="logout" class="secondary">Esci</button><span id="count" class="muted"></span></div>
+  <label for="search">Cerca per marca, nome o codice prodotto</label>
+  <input id="search" type="search" placeholder="Es. Jordan, OHY-001, piumino">
+  <div id="results" class="grid"></div>
+  <p id="empty" role="status"></p>
+</section>
+</main>
+<script src="config.js"></script>
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+const $ = selector => document.querySelector(selector);
+const cfg = window.OHANA_CONFIG || {};
+const message = text => { $('#message').textContent = text; };
+const esc = v => String(v ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const secureLink = v => {try{const u=new URL(v);return u.protocol==='https:'?u.href:null;}catch{return null;}};
+let supabase=null, rows=[], products=[];
+async function initialize(){
+  if(!cfg.supabaseUrl || !cfg.supabaseAnonKey){
+    $('#setup').hidden=false;
+    $('#loginForm').hidden=true;
+    return;
+  }
+  supabase=createClient(cfg.supabaseUrl,cfg.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true}});
+  try{
+    const {data:{session},error}=await supabase.auth.getSession();
+    if(error) throw error;
+    if(session) await showPrivate(session.user);
+  }catch(e){message('Impossibile verificare la sessione. Riprova.');}
+}
+async function showPrivate(user){
+  const {data:manager,error:managerError}=await supabase.from('ohana_managers').select('user_id').eq('user_id',user.id).maybeSingle();
+  if(managerError || !manager){
+    await supabase.auth.signOut();
+    message('Questo account non è autorizzato a gestire OHANA STREET.');
+    return;
+  }
+  const {data:privateRows,error:linksError}=await supabase.from('ohana_supplier_links').select('product_id,album_url,catalog_url').order('product_id');
+  if(linksError){message('Non riesco a leggere i collegamenti riservati. Verifica i permessi del database.');return;}
+  rows=privateRows||[];
+  try{
+    const response=await fetch('../catalogo.json',{cache:'no-store'});
+    if(!response.ok)throw new Error('Catalogo non disponibile');
+    products=await response.json();
+  }catch(e){message('Impossibile caricare catalogo.json.');return;}
+  $('#login').hidden=true;
+  $('#workspace').classList.add('ready');
+  render();
+}
+function render(){
+  const query=$('#search').value.toLowerCase().trim();
+  const byId=new Map(products.map(p=>[p.id,p]));
+  const data=rows.filter(r=>{
+    const p=byId.get(r.product_id)||{};
+    return (r.product_id+' '+(p.brand||'')+' '+(p.model||'')).toLowerCase().includes(query);
+  });
+  $('#count').textContent=data.length+' schede con collegamento riservato';
+  $('#results').innerHTML=data.map(r=>{
+    const p=byId.get(r.product_id)||{};
+    const a=secureLink(r.album_url),c=secureLink(r.catalog_url);
+    const img=p.image && /^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(p.image) ? '<img loading="lazy" alt="" src="../'+esc(p.image)+'">' : '';
+    return '<article class="item">'+img+'<div class="details"><small>'+esc(r.product_id)+' · '+esc(p.brand||'')+'</small><b>'+esc(p.model||'Prodotto')+'</b><small>'+esc(p.genere||'')+' / '+esc(p.sottogenere||'')+'</small><div class="links">'+
+     (a?'<a href="'+esc(a)+'" target="_blank" rel="noopener noreferrer">Album foto</a>':'')+
+     (c?'<a href="'+esc(c)+'" target="_blank" rel="noopener noreferrer">Catalogo fornitore</a>':'')+
+     '</div></div></article>';
+  }).join('');
+  $('#empty').textContent=rows.length===0?'Nessun collegamento privato è stato ancora importato.':(data.length===0?'Nessun prodotto corrispondente.':'');
+}
+$('#search').addEventListener('input',render);
+$('#loginForm').addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(!supabase)return;
+  const btn=$('#loginBtn');btn.disabled=true;message('Accesso in corso…');
+  try{
+    const {data,error}=await supabase.auth.signInWithPassword({email:$('#email').value,password:$('#password').value});
+    if(error)throw error;
+    message('');
+    await showPrivate(data.user);
+  }catch(e){message('Accesso non riuscito. Controlla le credenziali e riprova.');}
+  finally{btn.disabled=false;}
+});
+$('#logout').addEventListener('click',async()=>{
+  if(supabase)await supabase.auth.signOut();
+  rows=[];products=[];$('#results').replaceChildren();
+  $('#workspace').classList.remove('ready');$('#login').hidden=false;$('#password').value='';message('');
+});
+initialize();
+</script>
+</body>
+</html>
