@@ -1,0 +1,71 @@
+name: Recupera fotografie OHANA dal vecchio hosting
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/recupera-foto.yml"
+permissions:
+  contents: write
+jobs:
+  recupera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controlla e recupera le fotografie dal sito precedente
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures, json, pathlib, urllib.request
+          from urllib.error import HTTPError, URLError
+
+          base = "https://myd3v.it/ohana-preview/"
+          products = json.loads(pathlib.Path("catalogo.json").read_text(encoding="utf-8"))
+          assert len(products) == 68, "Numero inatteso di schede"
+          folder = pathlib.Path("assets/products")
+          folder.mkdir(parents=True, exist_ok=True)
+
+          def get_image(p):
+              rel = p["image"]
+              if not rel.startswith("assets/products/") or ".." in pathlib.PurePosixPath(rel).parts:
+                  return (rel, False, "Percorso non valido")
+              target = pathlib.Path(rel)
+              if target.exists() and target.stat().st_size > 1000:
+                  return (rel, True, "Presente")
+              req = urllib.request.Request(base + rel, headers={"User-Agent":"Mozilla/5.0 (OHANA STREET migration)"})
+              try:
+                  with urllib.request.urlopen(req, timeout=22) as response:
+                      data = response.read(12000000)
+                  good = data[:3] == bytes.fromhex("ffd8ff") or data[:8] == bytes.fromhex("89504e470d0a1a0a") or (data[:4]==b"RIFF" and data[8:12]==b"WEBP")
+                  if not good: return (rel,False,"Risposta non immagine")
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  target.write_bytes(data)
+                  return (rel,True,str(len(data))+" byte")
+              except Exception as e:
+                  return (rel,False,type(e).__name__+": "+str(e)[:120])
+
+          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+              results=list(pool.map(get_image,products))
+          ok=sum(result[1] for result in results)
+          print("Fotografie recuperate:",ok,"/",len(results))
+          pathlib.Path("report-foto.txt").write_text("\n".join(f"{'OK' if success else 'MANCANTE'} | {path} | {details}" for path,success,details in results),encoding="utf-8")
+          if ok != len(results):
+              print("Alcune immagini mancano dal vecchio hosting; non verrà fatta pubblicazione.")
+          PY
+      - name: Salva rapporto di recupero
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapporto-fotografie
+          path: report-foto.txt
+          if-no-files-found: warn
+      - name: Pubblica fotografie recuperate nel repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/products/
+          if git diff --cached --quiet; then
+            echo "Nessuna nuova fotografia scaricata."
+          else
+            git commit -m "Recupera fotografie dal precedente hosting"
+            git push
+          fi
