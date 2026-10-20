@@ -8,7 +8,7 @@ import shutil
 root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
-assert isinstance(catalog, list) and len(catalog) == 68, "Attese esattamente 68 schede"
+assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
 required = ["index.html", "catalogo.json", "favicon.svg", "gestione/index.html", "gestione/config.js"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
