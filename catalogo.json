@@ -1154,5 +1154,1605 @@
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Running"
+  },
+  {
+    "id": "OH-5693197E6E99",
+    "brand": "Sport",
+    "model": "2026冬 BSY7203 牛津布绣花棉衣外套 黑色 白色 S~3XL P95",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "sport"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-5693197E6E99.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F3418AB047FC",
+    "brand": "T-shirt e shorts",
+    "model": "SHORTS",
+    "genere": "Abbigliamento",
+    "sottogenere": "Shorts",
+    "category": "Shorts",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt e shorts"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-F3418AB047FC.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-CE8FA242690C",
+    "brand": "Balenciaga",
+    "model": "【EA5LJ】白灰红-1 巴黎世家2.0 779064 W3RXP 9160 Balenciaga Wms running shoes \"white grey red\"",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-CE8FA242690C.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-7D8A48E99BE6",
+    "brand": "Nike",
+    "model": "100 耐克（NIKE）男女子运动鞋 COURT BOROUGH LOW 小空军低帮板鞋。货号：BQ5448 ID:HL541001017",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-7D8A48E99BE6.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-DB68CB73EE27",
+    "brand": "Jordan",
+    "model": "Jordan Air Jordan 5 黑红 Air Jordan AJ5 Retro 原楦原纸板  原厂材料开发 细节把控到位 主供外贸客户  打造完美鞋型 纸板中底 钢印  完美版型 公司货既视感",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-DB68CB73EE27.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-66E680A4FF32",
+    "brand": "New Balance",
+    "model": "130 公司级✅New Balance 9060系列 新百伦 复古休闲运动慢跑鞋  鞋面大身由空间双格及磨砂鞋面拼接而生  采用大面积网眼以及麂皮材质覆盖鞋身 还原经典气质 搭载ABZORB避震科技",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new balance"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-66E680A4FF32.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-55F7A26B64B1",
+    "brand": "Chrome Hearts",
+    "model": "克罗心翻领短袖S-4XLA88070",
+    "genere": "Abbigliamento",
+    "sottogenere": "T-shirt",
+    "category": "T-shirt",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "chrome hearts"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-55F7A26B64B1.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-E8FB3C102CD1",
+    "brand": "Golden Goose",
+    "model": "Women's Ball Star Wishes with suede star and leopard-print pony skin heel tab",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden goose"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-E8FB3C102CD1.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-949D51135B4E",
+    "brand": "Scarpe da calcio",
+    "model": "到货36-45）阿迪达斯猎鹰27代全针织无鞋带FG足球鞋adidas 27 Predator Elite Tongue FG36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Scarpe da calcio e calcetto",
+    "category": "Scarpe da calcio e calcetto",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "scarpe da calcio"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-949D51135B4E.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-11DE03266FB8",
+    "brand": "Louis Vuitton",
+    "model": "L家高版本男士拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "louis vuitton"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-11DE03266FB8.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-B7E0F418FB65",
+    "brand": "Maglie da calcio",
+    "model": "纽卡斯尔足球出场服运动连帽风衣外套 S-2XL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "maglie da calcio"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-B7E0F418FB65.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-FA458370428C",
+    "brand": "Adidas",
+    "model": "didas Originals TOKYO DECON W 东京限定 全新adidas 货号：IH3999 尺码36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-FA458370428C.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-9292D9FC2F9A",
+    "brand": "Moncler",
+    "model": "Moncler丨蒙口抽绳连帽滑雪羽绒服",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moncler"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-9292D9FC2F9A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-AA4467E89CAF",
+    "brand": "UGG",
+    "model": "4090 栗色 夏季罗马休闲凉鞋 现货35-41码",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-AA4467E89CAF.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-7EAD59B0C4F6",
+    "brand": "ASICS",
+    "model": "Onitsuka Tiger鬼塚虎 Edr 78 舒适百搭防滑耐磨 低帮跑步鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-7EAD59B0C4F6.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-1BA2CF6B6A1D",
+    "brand": "Prada",
+    "model": "男士休闲运动鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "prada"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-1BA2CF6B6A1D.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-3A4CEEB8503E",
+    "brand": "T-shirt",
+    "model": "659005#驴家 刺绣霓虹灯印花高品质 320 克圆领短袖T恤 品牌经典 ：黑色 白色 尺码：S 一 XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "T-shirt",
+    "category": "T-shirt",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-3A4CEEB8503E.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-C94ECCDFF8F2",
+    "brand": "Ralph Lauren",
+    "model": "拉夫劳伦 纯色经典红标小马刺绣连帽羽绒服外套S-XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph lauren"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-C94ECCDFF8F2.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-757604EB58FA",
+    "brand": "Supreme",
+    "model": "￥498  SS26 PATCHWORK ZIU UP SWEATER 针织拼接拉链毛衣 蓝色  黑色 S-XL   SB92",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria",
+    "category": "Maglieria",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-757604EB58FA.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-469859E4B79B",
+    "brand": "Hermès",
+    "model": "H家男士休闲拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "hermès"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-469859E4B79B.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-844E0762D4C6",
+    "brand": "Gucci",
+    "model": "gucci运动鞋 size:35-45  4505580",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-844E0762D4C6.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-4998644B87D6",
+    "brand": "Loro Piana",
+    "model": "早秋新款格纹系带休闲板鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro piana"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-4998644B87D6.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-C14D9E0CC810",
+    "brand": "Salomon",
+    "model": "【god】萨洛蒙 / Salomon XT-6系列户外越野徒步鞋运动鞋，鹌鹑紫 471482，3124v  size：36-46",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor",
+    "category": "Trail e outdoor",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-C14D9E0CC810.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-682F4C0BDCD3",
+    "brand": "On Running",
+    "model": "ON Cloudmonster 3 怪兽三代 官方一比一真标36--45",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "on running"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-682F4C0BDCD3.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-B20F214F839A",
+    "brand": "Canada Goose",
+    "model": "Canada Goose丨加拿大鹅羊毛飞行夹克",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "canada goose"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-B20F214F839A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-A3B33120BCAE",
+    "brand": "ESSENTIALS",
+    "model": "￥258  Ess联名连帽卫衣 颜色：藏蓝色  S-XL  5553XW",
+    "genere": "Abbigliamento",
+    "sottogenere": "Felpe",
+    "category": "Felpe",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "essentials"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-A3B33120BCAE.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-0EF2DA3CE614",
+    "brand": "The North Face",
+    "model": "飞行员夹克米白",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "the north face"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-0EF2DA3CE614.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-A6877DA9444E",
+    "brand": "Moose Knuckles",
+    "model": "羽绒马甲",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moose knuckles"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-A6877DA9444E.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-C9F2F09ED203",
+    "brand": "Dior",
+    "model": "D家顶级版本男女运动鞋 35-46",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "dior"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-C9F2F09ED203.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-A8F188D34BF5",
+    "brand": "Saucony",
+    "model": "Saucony Pro Grid Omni 全擎 9 时尚 跑步运动鞋 | album | 双林鞋业 | Supplier Product Catalog",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "saucony"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-A8F188D34BF5.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-959ADC2D14BA",
+    "brand": "Stone Island",
+    "model": "winter coat",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "stone island"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-959ADC2D14BA.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-6751D4C6D289",
+    "brand": "Sport",
+    "model": "2026冬 BQD9298 情侣绣花棉衣外套 黑色 卡其 军绿 S~2XL P99",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "sport"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-6751D4C6D289.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-30E0E3AA5AFC",
+    "brand": "T-shirt e shorts",
+    "model": "SHORTS",
+    "genere": "Abbigliamento",
+    "sottogenere": "Shorts",
+    "category": "Shorts",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt e shorts"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-30E0E3AA5AFC.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-15C9ED492DFD",
+    "brand": "Balenciaga",
+    "model": "【EA5LJ】白灰红-1 巴黎世家2.0 779064 W3RXP 9160 Balenciaga Wms running shoes \"white grey red\"",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-15C9ED492DFD.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F20D7AD66FF8",
+    "brand": "Nike",
+    "model": "100 耐克（NIKE）男女子运动鞋 COURT BOROUGH LOW 小空军低帮板鞋。货号：BQ5448 ID:HL541001017",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-F20D7AD66FF8.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-0179DC981468",
+    "brand": "Jordan",
+    "model": "Jordan Air Jordan 5 \"Aqua\" 墨绿色 货号：IU0734-001 尺码：40-48.5",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-0179DC981468.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-347E701B03E1",
+    "brand": "New Balance",
+    "model": "130 公司级✅New Balance 9060系列 新百伦 复古休闲运动慢跑鞋  鞋面大身由空间双格及磨砂鞋面拼接而生  采用大面积网眼以及麂皮材质覆盖鞋身 还原经典气质 搭载ABZORB避震科技",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new balance"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-347E701B03E1.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-FE404F9E0A83",
+    "brand": "Chrome Hearts",
+    "model": "克罗心圆领短袖S-2XLA88060",
+    "genere": "Abbigliamento",
+    "sottogenere": "T-shirt",
+    "category": "T-shirt",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "chrome hearts"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-FE404F9E0A83.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-AEE9524F4735",
+    "brand": "Golden Goose",
+    "model": "Women's Ball Star Wishes in white nappa leather with green leather star and heel tab",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden goose"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-AEE9524F4735.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-8AA8F8955FD3",
+    "brand": "Scarpe da calcio",
+    "model": "到货36-45）阿迪达斯猎鹰27代全针织无鞋带FG足球鞋adidas 27 Predator Elite Tongue FG36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Scarpe da calcio e calcetto",
+    "category": "Scarpe da calcio e calcetto",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "scarpe da calcio"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-8AA8F8955FD3.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-9245A7FE08A3",
+    "brand": "Louis Vuitton",
+    "model": "L家高版本男士拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "louis vuitton"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-9245A7FE08A3.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F6E3F091FF42",
+    "brand": "Maglie da calcio",
+    "model": "纽卡斯尔足球出场服运动连帽风衣外套 S-2XL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "maglie da calcio"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-F6E3F091FF42.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-8AD88138B95D",
+    "brand": "Adidas",
+    "model": "didas Originals TOKYO DECON W 东京限定 全新adidas 货号：IH3999 尺码36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-8AD88138B95D.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-007C5D0EADCC",
+    "brand": "Moncler",
+    "model": "Moncler丨蒙口抽绳连帽滑雪羽绒服",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moncler"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-007C5D0EADCC.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-6E2532D93DEF",
+    "brand": "UGG",
+    "model": "4090 沙色 夏季休闲凉鞋 现货35-41码",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-6E2532D93DEF.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-C39901484F56",
+    "brand": "ASICS",
+    "model": "Onitsuka Tiger鬼塚虎 Edr 78 舒适百搭防滑耐磨 低帮跑步鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-C39901484F56.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-5C05EF281F13",
+    "brand": "Prada",
+    "model": "男士休闲运动鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "prada"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-5C05EF281F13.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-E86838EC23E2",
+    "brand": "T-shirt",
+    "model": "659005#驴家 刺绣霓虹灯印花高品质 320 克圆领短袖T恤 品牌经典 ：黑色 白色 尺码：S 一 XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "T-shirt",
+    "category": "T-shirt",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-E86838EC23E2.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-C112F9999CC9",
+    "brand": "Ralph Lauren",
+    "model": "拉夫劳伦 纯色经典红标小马刺绣连帽羽绒服外套S-XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph lauren"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-C112F9999CC9.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F5D18A7FEFCA",
+    "brand": "Supreme",
+    "model": "￥498  SS26 PATCHWORK ZIU UP SWEATER 针织拼接拉链毛衣 蓝色  黑色 S-XL   SB92",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria",
+    "category": "Maglieria",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-F5D18A7FEFCA.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-6BF0E14324A4",
+    "brand": "Hermès",
+    "model": "H家男士休闲拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "hermès"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-6BF0E14324A4.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-2AE1379F75E0",
+    "brand": "Gucci",
+    "model": "gucci运动鞋 size:35-45  4505580",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-2AE1379F75E0.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-0BE8FA6C5E55",
+    "brand": "Loro Piana",
+    "model": "早秋新款格纹系带休闲板鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro piana"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-0BE8FA6C5E55.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-2FBF94AD6BDD",
+    "brand": "Salomon",
+    "model": "【god】萨洛蒙 / Salomon XT-6系列户外越野徒步鞋运动鞋，鹌鹑紫 471482，3124v  size：36-46",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor",
+    "category": "Trail e outdoor",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-2FBF94AD6BDD.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-4AF24F080222",
+    "brand": "On Running",
+    "model": "ON Cloudmonster 3 怪兽三代 官方一比一真标36--45",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "on running"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-4AF24F080222.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-403961F5BFE5",
+    "brand": "Canada Goose",
+    "model": "Canada Goose丨加拿大鹅羊毛飞行夹克",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "canada goose"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-403961F5BFE5.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-DAD266CDA0BF",
+    "brand": "ESSENTIALS",
+    "model": "￥258  Ess联名连帽卫衣 颜色：藏蓝色  S-XL  5553XW",
+    "genere": "Abbigliamento",
+    "sottogenere": "Felpe",
+    "category": "Felpe",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "essentials"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-DAD266CDA0BF.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-E4F21160671C",
+    "brand": "The North Face",
+    "model": "飞行员夹克米白",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "the north face"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-E4F21160671C.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-69FB5836198B",
+    "brand": "Moose Knuckles",
+    "model": "羽绒马甲",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moose knuckles"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-69FB5836198B.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-913E3CE8C2A7",
+    "brand": "Dior",
+    "model": "D家顶级版本男女运动鞋 35-46",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "dior"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-913E3CE8C2A7.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-60AE63B9825A",
+    "brand": "Sport",
+    "model": "2026冬 BSY6332 牛仔绣花外套 黑色 蓝色 S~2XL P120",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "sport"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-60AE63B9825A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-972DDBACA30F",
+    "brand": "T-shirt e shorts",
+    "model": "SHORTS",
+    "genere": "Abbigliamento",
+    "sottogenere": "Shorts",
+    "category": "Shorts",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt e shorts"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-972DDBACA30F.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-FF6D1CEA8719",
+    "brand": "Balenciaga",
+    "model": "【EA5LJ】白灰红-1 巴黎世家2.0 779064 W3RXP 9160 Balenciaga Wms running shoes \"white grey red\"",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-FF6D1CEA8719.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-148AA9D070C4",
+    "brand": "Nike",
+    "model": "100 耐克（NIKE）男女子运动鞋 COURT BOROUGH LOW 小空军低帮板鞋。货号：BQ5448 ID:HL541001017",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-148AA9D070C4.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-8A244ADCC371",
+    "brand": "Jordan",
+    "model": "Air Jordan 12 “Bucks”雄鹿 货号：CT8013-103  尺码：40-48.5",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-8A244ADCC371.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-FD07F5B02E8F",
+    "brand": "New Balance",
+    "model": "130 公司级✅New Balance 9060系列 新百伦 复古休闲运动慢跑鞋  鞋面大身由空间双格及磨砂鞋面拼接而生  采用大面积网眼以及麂皮材质覆盖鞋身 还原经典气质 搭载ABZORB避震科技",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new balance"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-FD07F5B02E8F.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-2C9DD0AF2AB5",
+    "brand": "Chrome Hearts",
+    "model": "克罗心西服外套M-XXXLB56190",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "chrome hearts"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-2C9DD0AF2AB5.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-3FA6333B7471",
+    "brand": "Golden Goose",
+    "model": "Women's Ball Star Wishes in nappa with black naplak star and heel tab",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden goose"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-3FA6333B7471.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F336279283DD",
+    "brand": "Scarpe da calcio",
+    "model": "到货36-45）阿迪达斯猎鹰27代全针织无鞋带FG足球鞋adidas 27 Predator Elite Tongue FG36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Scarpe da calcio e calcetto",
+    "category": "Scarpe da calcio e calcetto",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "scarpe da calcio"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-F336279283DD.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-81B780ADF7C5",
+    "brand": "Louis Vuitton",
+    "model": "L家高版本男士拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "louis vuitton"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-81B780ADF7C5.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-801B5F4E6C59",
+    "brand": "Maglie da calcio",
+    "model": "纽卡斯尔足球出场服运动连帽风衣外套 S-2XL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "maglie da calcio"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-801B5F4E6C59.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-1AEB705F6BD9",
+    "brand": "Adidas",
+    "model": "didas Originals TOKYO DECON W 东京限定 全新adidas 货号：IH3999 尺码36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-1AEB705F6BD9.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-97D7AB40C47A",
+    "brand": "Moncler",
+    "model": "Moncler丨蒙口抽绳连帽滑雪羽绒服",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moncler"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-97D7AB40C47A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-5A54217FFBF7",
+    "brand": "UGG",
+    "model": "0512 绿色 系带板鞋休闲款男鞋 现货40-45码",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-5A54217FFBF7.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-8405B75DC42E",
+    "brand": "ASICS",
+    "model": "Onitsuka Tiger鬼塚虎 Edr 78 舒适百搭防滑耐磨 低帮跑步鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-8405B75DC42E.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-BDDF2060568E",
+    "brand": "Prada",
+    "model": "男士休闲运动鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "prada"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-BDDF2060568E.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-00719E27FCE1",
+    "brand": "T-shirt",
+    "model": "659005#驴家 刺绣霓虹灯印花高品质 320 克圆领短袖T恤 品牌经典 ：黑色 白色 尺码：S 一 XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "T-shirt",
+    "category": "T-shirt",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-00719E27FCE1.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-CFA9859B0642",
+    "brand": "Ralph Lauren",
+    "model": "拉夫劳伦 纯色经典红标小马刺绣连帽羽绒服外套S-XXL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph lauren"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-CFA9859B0642.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F2C66658A8BE",
+    "brand": "Supreme",
+    "model": "￥498  SS26 PATCHWORK ZIU UP SWEATER 针织拼接拉链毛衣 蓝色  黑色 S-XL   SB92",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria",
+    "category": "Maglieria",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-F2C66658A8BE.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-6B8FBB7619E2",
+    "brand": "Hermès",
+    "model": "H家男士休闲拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "hermès"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-6B8FBB7619E2.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-BCDAA71E8C0D",
+    "brand": "Gucci",
+    "model": "gucci运动鞋 size:35-45  4505580",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-BCDAA71E8C0D.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-8743C0E833CF",
+    "brand": "Loro Piana",
+    "model": "早秋新款格纹系带休闲板鞋",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro piana"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-8743C0E833CF.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-E78FC6A2567A",
+    "brand": "Salomon",
+    "model": "【god】萨洛蒙 / Salomon XT-6系列户外越野徒步鞋运动鞋，鹌鹑紫 471482，3124v  size：36-46",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor",
+    "category": "Trail e outdoor",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-E78FC6A2567A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-DBD4A416CDF9",
+    "brand": "On Running",
+    "model": "ON Cloudmonster 3 怪兽三代 官方一比一真标36--45",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "on running"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-DBD4A416CDF9.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-B82950F98FA8",
+    "brand": "Canada Goose",
+    "model": "Canada Goose丨加拿大鹅羊毛飞行夹克",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "canada goose"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-B82950F98FA8.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-F9F98F778EA1",
+    "brand": "ESSENTIALS",
+    "model": "￥258  Ess联名连帽卫衣 颜色：藏蓝色  S-XL  5553XW",
+    "genere": "Abbigliamento",
+    "sottogenere": "Felpe",
+    "category": "Felpe",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "essentials"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-F9F98F778EA1.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-FE46F0F846DE",
+    "brand": "The North Face",
+    "model": "飞行员夹克米白",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "the north face"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-FE46F0F846DE.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-34DD6A8ED0EE",
+    "brand": "Moose Knuckles",
+    "model": "羽绒马甲",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini",
+    "category": "Piumini",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moose knuckles"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-34DD6A8ED0EE.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-D86AE4815A44",
+    "brand": "Dior",
+    "model": "D家顶级版本男女运动鞋 35-46",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "dior"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-D86AE4815A44.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-299FB2F3DB0C",
+    "brand": "Sport",
+    "model": "2026秋 BSY6916 情侣绣花绣牛仔长裤 黑色 蓝色 S~2XL P102",
+    "genere": "Abbigliamento",
+    "sottogenere": "Pantaloni e joggers",
+    "category": "Pantaloni e joggers",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "sport"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-299FB2F3DB0C.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-7DC292923386",
+    "brand": "T-shirt e shorts",
+    "model": "SHORTS",
+    "genere": "Abbigliamento",
+    "sottogenere": "Shorts",
+    "category": "Shorts",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "t-shirt e shorts"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-7DC292923386.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-36CFD973686A",
+    "brand": "Balenciaga",
+    "model": "【EA5LJ】白灰红-1 巴黎世家2.0 779064 W3RXP 9160 Balenciaga Wms running shoes \"white grey red\"",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-36CFD973686A.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-1FF4A2128B63",
+    "brand": "Nike",
+    "model": "100 耐克（NIKE）男女子运动鞋 COURT BOROUGH LOW 小空军低帮板鞋。货号：BQ5448 ID:HL541001017",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-1FF4A2128B63.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-7D0BE1D1B1FA",
+    "brand": "Jordan",
+    "model": "Air Jordan 12 Retro\"Black Taxi\"AJ12 乔丹12代黑金 货号：CT8013-071 尺码：40-48.5",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-7D0BE1D1B1FA.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-26FE44BD4B2D",
+    "brand": "New Balance",
+    "model": "130 公司级✅New Balance 9060系列 新百伦 复古休闲运动慢跑鞋  鞋面大身由空间双格及磨砂鞋面拼接而生  采用大面积网眼以及麂皮材质覆盖鞋身 还原经典气质 搭载ABZORB避震科技",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new balance"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-26FE44BD4B2D.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-157DD1B68E2C",
+    "brand": "Chrome Hearts",
+    "model": "克罗心休闲裤S-XXLB35130",
+    "genere": "Abbigliamento",
+    "sottogenere": "Pantaloni e joggers",
+    "category": "Pantaloni e joggers",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "chrome hearts"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-157DD1B68E2C.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-E58F3DD661AC",
+    "brand": "Golden Goose",
+    "model": "Women's Ball Star in white nappa with bright blue metallic leather star and heel tab",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden goose"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-E58F3DD661AC.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-921BAF2C6ED4",
+    "brand": "Scarpe da calcio",
+    "model": "（到货）36-45阿迪达斯猎鹰27代全针织反舌FG足球鞋adidas 27 Predator Elite Tongue FG36-45",
+    "genere": "Scarpe",
+    "sottogenere": "Scarpe da calcio e calcetto",
+    "category": "Scarpe da calcio e calcetto",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "scarpe da calcio"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-921BAF2C6ED4.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-4819ED13D821",
+    "brand": "Louis Vuitton",
+    "model": "L家高版本男士拖鞋 38-45",
+    "genere": "Scarpe",
+    "sottogenere": "Sandali e ciabatte",
+    "category": "Sandali e ciabatte",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "louis vuitton"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-4819ED13D821.webp",
+    "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-6749E4A2B003",
+    "brand": "Maglie da calcio",
+    "model": "纽卡斯尔足球出场服运动连帽风衣外套 S-2XL",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "maglie da calcio"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-6749E4A2B003.webp",
+    "status": "Scheda fotografica"
   }
 ]
