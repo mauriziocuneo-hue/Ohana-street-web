@@ -1,0 +1,1158 @@
+[
+  {
+    "id": "OHY-001",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 — AJ4 Rhine",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-001.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-002",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 London — IV6048-001",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-002.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-003",
+    "brand": "Jordan",
+    "model": "Eminem × Air Jordan 4 Encore — JJ3098-400",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-003.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-004",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 — Nuovo London",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-004.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-005",
+    "brand": "Jordan",
+    "model": "J Balvin × Air Jordan 4 Lemonade — IW2872-700",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-005.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-006",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 — AJ4 Phantom",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-006.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-007",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Onitsuka Tiger EDR 78 — variante 1",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-007.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-008",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Onitsuka Tiger EDR 78 — variante 2",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-008.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-009",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Sneaker Hypertaping",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-009.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-010",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Kiko Kostadinov × ASICS Gessirit",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-010.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-011",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Onitsuka Tiger Mexico 66 — variante 1",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-011.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-012",
+    "brand": "ASICS / Onitsuka Tiger",
+    "model": "Onitsuka Tiger Mexico 66 — variante 2",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "asics-/-onitsuka-tiger",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-012.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-013",
+    "brand": "Adidas",
+    "model": "Adidas Originals Tokyo Decon W — IH3999",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-013.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-014",
+    "brand": "Adidas",
+    "model": "Adidas Originals Tokyo Decon W — IH4001",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-014.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-015",
+    "brand": "Adidas",
+    "model": "Adidas Terrex Agravic TT — HP6533",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-015.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-016",
+    "brand": "Adidas",
+    "model": "Adidas Adizero Evo SL",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-016.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running"
+  },
+  {
+    "id": "OHY-017",
+    "brand": "Adidas",
+    "model": "Adidas Adizero Adios Pro 4",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-017.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running"
+  },
+  {
+    "id": "OHY-018",
+    "brand": "Adidas",
+    "model": "Adidas Samba OG",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-018.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-019",
+    "brand": "Nike",
+    "model": "Nike Air Max Portal Initiator — 394053-105",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-019.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-020",
+    "brand": "Nike",
+    "model": "Nike Gato Black Gum — HQ6019",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-020.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Scarpe da calcio e calcetto"
+  },
+  {
+    "id": "OHY-021",
+    "brand": "Nike",
+    "model": "Nike ACG Mountain Fly Low GTX SE",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-021.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-022",
+    "brand": "Nike",
+    "model": "Nike Air Liquid Max — HF6334-008",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-022.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running"
+  },
+  {
+    "id": "OHY-023",
+    "brand": "Nike",
+    "model": "Nike Zoom Skylon 11 — IU7360-010",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-023.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running"
+  },
+  {
+    "id": "OHY-024",
+    "brand": "Nike",
+    "model": "Nike Initiator — 394053-108",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-024.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-025",
+    "brand": "New Balance",
+    "model": "New Balance 2000",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-025.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-026",
+    "brand": "New Balance",
+    "model": "New Balance 9060",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-026.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-027",
+    "brand": "New Balance",
+    "model": "New Balance MR530 — U530SNC",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-027.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-028",
+    "brand": "New Balance",
+    "model": "New Balance 574",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-028.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-029",
+    "brand": "New Balance",
+    "model": "New Balance 983 — U9833M7",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-029.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-030",
+    "brand": "New Balance",
+    "model": "New Balance 1906",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "new-balance",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-030.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-031",
+    "brand": "Salomon",
+    "model": "Salomon XT-6 — Purple",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-031.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-032",
+    "brand": "Salomon",
+    "model": "Salomon XT-Quest × OAMC — Black",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-032.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-033",
+    "brand": "Salomon",
+    "model": "Salomon XT-6 — Coffee/Silver",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-033.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-034",
+    "brand": "Salomon",
+    "model": "Salomon Ultra Glide 4",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-034.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-035",
+    "brand": "Salomon",
+    "model": "Salomon XT-6 GTX — Sand",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-035.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-036",
+    "brand": "Salomon",
+    "model": "Salomon XA PRO 3D — Black",
+    "category": "Sneakers",
+    "kind": "trail",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-036.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Trail e outdoor"
+  },
+  {
+    "id": "OHY-037",
+    "brand": "Golden Goose",
+    "model": "Ball Star Wishes — Suede Star / Leopard Heel",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden-goose",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-037.png",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-038",
+    "brand": "Golden Goose",
+    "model": "Ball Star Wishes — White / Green Star",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden-goose",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-038.png",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-039",
+    "brand": "Golden Goose",
+    "model": "Ball Star Wishes — Black Star",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "golden-goose",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-039.png",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-040",
+    "brand": "UGG",
+    "model": "UGG — Modello 3970, castagna",
+    "category": "Calzature",
+    "kind": "boot",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg",
+      "calzature"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-040.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Stivali e stivaletti"
+  },
+  {
+    "id": "OHY-041",
+    "brand": "UGG",
+    "model": "UGG — Slip-on 5295, nero",
+    "category": "Calzature",
+    "kind": "boot",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg",
+      "calzature"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-041.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sabot e slip-on"
+  },
+  {
+    "id": "OHY-042",
+    "brand": "UGG",
+    "model": "UGG — Slip-on 5295, senape",
+    "category": "Calzature",
+    "kind": "boot",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg",
+      "calzature"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-042.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sabot e slip-on"
+  },
+  {
+    "id": "OHY-043",
+    "brand": "UGG",
+    "model": "UGG — Slip-on 5295, rosa",
+    "category": "Calzature",
+    "kind": "boot",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ugg",
+      "calzature"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-043.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sabot e slip-on"
+  },
+  {
+    "id": "OHY-044",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Piumino con cappuccio",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-044.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini"
+  },
+  {
+    "id": "OHY-045",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Giacca coach nera",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-045.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche"
+  },
+  {
+    "id": "OHY-046",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Pantaloni jogging",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-046.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Pantaloni e joggers"
+  },
+  {
+    "id": "OHY-047",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Gilet imbottito",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-047.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Gilet"
+  },
+  {
+    "id": "OHY-048",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Maglione dolcevita",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-048.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria"
+  },
+  {
+    "id": "OHY-049",
+    "brand": "Ralph Lauren",
+    "model": "Ralph Lauren — Giacca imbottita",
+    "category": "Abbigliamento",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "ralph-lauren",
+      "abbigliamento"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-049.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Giacche"
+  },
+  {
+    "id": "OHY-050",
+    "brand": "Moncler",
+    "model": "Moncler — Piumino da sci con cappuccio 1",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moncler",
+      "giacche"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-050.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini"
+  },
+  {
+    "id": "OHY-051",
+    "brand": "Moncler",
+    "model": "Moncler — Piumino da sci con cappuccio 2",
+    "category": "Giacche",
+    "kind": "jacket",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "moncler",
+      "giacche"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-051.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Piumini"
+  },
+  {
+    "id": "OHY-052",
+    "brand": "Gucci",
+    "model": "Gucci — Sneakers, variante 1",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci",
+      "calzature"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-052.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-053",
+    "brand": "Gucci",
+    "model": "Gucci — Sneakers, variante 2",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci",
+      "calzature"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-053.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-054",
+    "brand": "Gucci",
+    "model": "Gucci — Sneakers, variante 3",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci",
+      "calzature"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-054.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-055",
+    "brand": "Gucci",
+    "model": "Gucci — Sneakers, variante 4",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "gucci",
+      "calzature"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-055.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-056",
+    "brand": "Supreme",
+    "model": "Supreme — Maglione mezza zip",
+    "category": "Abbigliamento",
+    "kind": "hoodie",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme",
+      "abbigliamento"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-056.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria"
+  },
+  {
+    "id": "OHY-057",
+    "brand": "Supreme",
+    "model": "Supreme — Felpa con cappuccio",
+    "category": "Abbigliamento",
+    "kind": "hoodie",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme",
+      "abbigliamento"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-057.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Felpe"
+  },
+  {
+    "id": "OHY-058",
+    "brand": "Supreme",
+    "model": "Supreme — Felpa zip con logo ARC",
+    "category": "Abbigliamento",
+    "kind": "hoodie",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme",
+      "abbigliamento"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-058.png",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Felpe"
+  },
+  {
+    "id": "OHY-059",
+    "brand": "Supreme",
+    "model": "Supreme — Cappello tartan",
+    "category": "Abbigliamento",
+    "kind": "hoodie",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "supreme",
+      "abbigliamento"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-059.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Cappelli"
+  },
+  {
+    "id": "OHY-060",
+    "brand": "Balenciaga",
+    "model": "Balenciaga — Borsa City",
+    "category": "Accessori",
+    "kind": "shirt",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga",
+      "abbigliamento"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-060.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Borse e accessori"
+  },
+  {
+    "id": "OHY-061",
+    "brand": "Balenciaga",
+    "model": "Balenciaga — Borsa a tracolla 1",
+    "category": "Accessori",
+    "kind": "shirt",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga",
+      "abbigliamento"
+    ],
+    "tone": 4,
+    "image": "assets/products/OHY-061.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Borse e accessori"
+  },
+  {
+    "id": "OHY-062",
+    "brand": "Balenciaga",
+    "model": "Balenciaga — Borsa a tracolla 2",
+    "category": "Accessori",
+    "kind": "shirt",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga",
+      "abbigliamento"
+    ],
+    "tone": 5,
+    "image": "assets/products/OHY-062.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Borse e accessori"
+  },
+  {
+    "id": "OHY-063",
+    "brand": "Balenciaga",
+    "model": "Balenciaga — Maglia a maniche lunghe",
+    "category": "Abbigliamento",
+    "kind": "shirt",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "balenciaga",
+      "abbigliamento"
+    ],
+    "tone": 6,
+    "image": "assets/products/OHY-063.jpeg",
+    "status": "Scheda fotografica",
+    "genere": "Abbigliamento",
+    "sottogenere": "Maglieria"
+  },
+  {
+    "id": "OHY-064",
+    "brand": "Loro Piana",
+    "model": "Loro Piana — Sneakers a quadri, variante 1",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro-piana",
+      "calzature"
+    ],
+    "tone": 7,
+    "image": "assets/products/OHY-064.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-065",
+    "brand": "Loro Piana",
+    "model": "Loro Piana — Sneakers a quadri, variante 2",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro-piana",
+      "calzature"
+    ],
+    "tone": 0,
+    "image": "assets/products/OHY-065.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-066",
+    "brand": "Loro Piana",
+    "model": "Loro Piana — Sneakers a quadri, variante 3",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro-piana",
+      "calzature"
+    ],
+    "tone": 1,
+    "image": "assets/products/OHY-066.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-067",
+    "brand": "Loro Piana",
+    "model": "Loro Piana — Sneakers casual",
+    "category": "Calzature",
+    "kind": "sneaker",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "loro-piana",
+      "calzature"
+    ],
+    "tone": 2,
+    "image": "assets/products/OHY-067.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers"
+  },
+  {
+    "id": "OHY-068",
+    "brand": "Saucony",
+    "model": "Saucony ProGrid Omni 9 — Collezione",
+    "category": "Sneakers",
+    "kind": "runner",
+    "style": "Scheda catalogo OHANA",
+    "tags": [
+      "saucony",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OHY-068.jpg",
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running"
+  }
+]
