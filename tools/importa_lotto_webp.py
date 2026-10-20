@@ -2,7 +2,7 @@
 """Import a trusted public-only pilot ZIP into the OHANA STREET public website.
 No private supplier URLs are allowed in this program's input or output.
 """
-import hashlib,io,json,os,pathlib,sys,zipfile
+import hashlib,io,json,os,pathlib,re,sys,zipfile
 from urllib.parse import urlsplit
 import requests
 
@@ -41,8 +41,9 @@ with zipfile.ZipFile(io.BytesIO(body)) as z:
         assert image in names
         photo=z.read(image)
         assert len(photo)>1000 and photo[:4]==b"RIFF" and photo[8:12]==b"WEBP"
-        assert p.get("genere") in ("Scarpe","Abbigliamento")
+        assert p.get("genere")=="Scarpe", "Solo scarpe nei nuovi lotti"
         assert p.get("brand") and p.get("model") and p.get("sottogenere")!="Da classificare"
+        assert not re.search(r"[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f]",p["model"]), "Prodotto con titolo cinese"
         staged.append((image,photo))
     assert set(names)=={"catalogo_aggiunte.json",*(path for path,_ in staged)}
     if ids.issubset(old_ids):
@@ -50,6 +51,37 @@ with zipfile.ZipFile(io.BytesIO(body)) as z:
         sys.exit(0)
     if ids.intersection(old_ids):
         raise SystemExit("Partial/duplicate import: manual repair required")
+    # Nasconde (non elimina) eventuali prodotti che condividono esattamente
+    # la stessa foto con un modello già visibile.
+    visible_photos = {}
+    for old in existing:
+        if old.get("genere")!="Scarpe" or old.get("vetrina") is False:
+            continue
+        digest=hashlib.sha256((ROOT/old["image"]).read_bytes()).hexdigest()
+        visible_photos[digest]=old
+    by_image=dict(staged)
+    for p in cards:
+        digest=hashlib.sha256(by_image[p["image"]]).hexdigest()
+        if digest in visible_photos:
+            canonical=visible_photos[digest]
+            if canonical["brand"]!=p["brand"] or canonical["model"]!=p["model"]:
+                raise SystemExit("Fotografia identica associata a modello o marchio diverso: "+p["id"])
+            p["vetrina"]=False
+            p["duplicatoDi"]=canonical["id"]
+        else:
+            visible_photos[digest]=p
+
+    # Distingue fotograficamente varianti dello stesso modello senza inventare colori.
+    by_title={}
+    for p in existing+cards:
+        p.pop("variante",None)
+        if p.get("genere")=="Scarpe" and p.get("vetrina") is not False:
+            by_title.setdefault((p["brand"],p["model"]),[]).append(p)
+    for same_title in by_title.values():
+        if len(same_title)>1:
+            for index,p in enumerate(same_title,1):
+                p["variante"]=f"{index} di {len(same_title)}"
+
     for image,photo in staged:
         path=ROOT/image
         if path.exists() and path.read_bytes()!=photo:
