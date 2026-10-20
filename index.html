@@ -30,6 +30,18 @@
   .photo-link:hover{background:var(--coral)}
   .modalvisual.photo-modal{background:#f4f6f3!important;display:flex;align-items:center;justify-content:center}
   .modalvisual.photo-modal img{width:100%;height:100%;max-height:480px;object-fit:contain;}
+  /* Galleria editoriale: le tre immagini devono provenire dallo stesso album. */
+  #modalVisual.photo-gallery{height:auto!important;display:block;background:#f3f7f3!important;padding:17px 17px 11px}
+  .oh-gallery-main{height:clamp(230px,36vw,370px);display:flex;align-items:center;justify-content:center;position:relative}
+  .oh-gallery-main img{width:100%;height:100%;object-fit:contain}
+  .oh-gallery-count{position:absolute;left:9px;bottom:8px;background:#123e40;color:white;border-radius:20px;padding:5px 11px;font-size:11px;font-weight:900}
+  .oh-gallery-thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:11px}
+  .oh-gallery-thumb{padding:4px;border:2px solid #d2dfd8;border-radius:10px;background:white;cursor:pointer;height:76px;display:grid;place-items:center;overflow:hidden}
+  .oh-gallery-thumb[aria-pressed="true"]{border-color:#123e40;box-shadow:2px 3px 0 #65dfc6}
+  .oh-gallery-thumb img{max-width:100%;max-height:100%;object-fit:contain}
+  .oh-gallery-thumb:focus-visible{outline:3px solid #ff7560;outline-offset:2px}
+  .oh-model-verified{font-weight:800;color:#336d5b;font-size:12px}
+  @media(max-width:530px){#modalVisual.photo-gallery{padding:12px}.oh-gallery-main{height:245px}.oh-gallery-thumb{height:64px}}
 
     /* Accesso discreto, visibile anche da smartphone */
     .header-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
@@ -93,7 +105,35 @@
     }).join(''):'<div class="empty">Nessun risultato. Prova un altro modello o azzera i filtri.</div>';
   }
   function closeModal(){ $('#overlay').classList.add('hide');document.body.style.overflow='';$('#search').focus(); }
-  function openModal(id){const p=PRODUCTS.find(x=>x.id===id);if(!p)return;let a=art(p);$('#modalVisual').style.background=a.bg;$('#modalVisual').classList.toggle('photo-modal',Boolean(p.image));$('#modalVisual').innerHTML=p.image?`<img src="${esc(p.image)}" alt="Foto catalogo ${esc(p.model)}" onerror="this.hidden=true;this.parentElement.classList.add('missing-photo')">`:a.svg;$('#dialogBrand').textContent=`${p.brand} • ${p.genere} • ${p.sottogenere} • ${p.id}`;$('#dialogTitle').textContent=p.model;$('#dialogDescription').textContent=`Per maggiori informazioni su questo articolo, taglie e disponibilità, contattaci su WhatsApp. Premi il pulsante qui sotto per prepararci il tuo messaggio.`;$('#dialogTags').innerHTML=p.tags.map(t=>`<span>#${esc(t)}</span>`).join('');$('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();}
+  function openModal(id){
+    const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+    const visual=$('#modalVisual'),a=art(p);
+    const photos=Array.isArray(p.images)&&p.images.length===3&&
+      p.images.every(x=>typeof x==='string'&&/^assets\/products\/[A-Za-z0-9_.-]+\.webp$/i.test(x))&&p.images[0]===p.image
+      ?p.images:null;
+    visual.style.background=a.bg;
+    visual.classList.toggle('photo-gallery',Boolean(photos));
+    visual.classList.toggle('photo-modal',Boolean(p.image&&!photos));
+    if(photos){
+      visual.innerHTML=`<div class="oh-gallery-main"><img id="ohGalleryMain" alt="Prima vista del modello ${esc(p.model)}" src="${esc(photos[0])}"><span id="ohGalleryCount" class="oh-gallery-count">1 / 3</span></div><div class="oh-gallery-thumbs" aria-label="Le tre fotografie dello stesso articolo">${photos.map((url,i)=>`<button type="button" class="oh-gallery-thumb" data-gallery-index="${i}" aria-pressed="${i===0?'true':'false'}" aria-label="Mostra fotografia ${i+1} di 3"><img src="${esc(url)}" alt="" loading="lazy"></button>`).join('')}</div>`;
+      visual.querySelectorAll('[data-gallery-index]').forEach(button=>button.addEventListener('click',()=>{
+        const i=Number(button.dataset.galleryIndex);
+        visual.querySelector('#ohGalleryMain').src=photos[i];
+        visual.querySelector('#ohGalleryMain').alt=`Vista ${i+1} del modello ${p.model}`;
+        visual.querySelector('#ohGalleryCount').textContent=`${i+1} / 3`;
+        visual.querySelectorAll('[data-gallery-index]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+      }));
+    }else{
+      visual.innerHTML=p.image?`<img src="${esc(p.image)}" alt="Foto catalogo ${esc(p.model)}" onerror="this.hidden=true;this.parentElement.classList.add('missing-photo')">`:a.svg;
+    }
+    $('#dialogBrand').textContent=`${p.brand} • ${p.genere} • ${p.sottogenere} • ${p.id}`;
+    $('#dialogTitle').textContent=p.model;
+    const description=typeof p.descrizione==='string'&&p.descrizione.trim()?p.descrizione.trim()+'\n\n':'';
+    $('#dialogDescription').textContent=description+'Per maggiori informazioni, taglie e disponibilità, contattaci su WhatsApp.';
+    $('#dialogDescription').style.whiteSpace='pre-line';
+    $('#dialogTags').innerHTML=p.tags.map(t=>`<span>#${esc(t)}</span>`).join('');
+    $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
+  }
   $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
   $('#grid').addEventListener('click',e=>{const fav=e.target.closest('[data-favorite]');if(fav){const id=fav.dataset.favorite;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('ohana-fav-v1',JSON.stringify([...favorites]));}catch(e){}render();return;}const open=e.target.closest('[data-open]');if(open)openModal(open.dataset.open)});
   $('#search').addEventListener('input',e=>{state.query=e.target.value;shownProducts=48;render()});
