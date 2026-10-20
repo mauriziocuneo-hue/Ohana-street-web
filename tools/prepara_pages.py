@@ -20,6 +20,10 @@ found = set()
 for p in catalog:
     assert all(p.get(k) for k in ("id", "brand", "model", "genere", "sottogenere", "image")), f"Prodotto incompleto: {p}"
     assert p["id"] not in found, f"Codice duplicato: {p['id']}"
+    # Evita che le prossime importazioni reintroducano titoli in cinese o altre scritture CJK.
+    for key in ("brand", "model", "genere", "sottogenere", "category", "style"):
+        if p.get(key):
+            assert not re.search(r"[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f]", str(p[key])), f"Testo non tradotto ({key}): {p['id']}"
     found.add(p["id"])
     assert not any(re.search(r"supplier|album_url|catalog_url|password", str(k), re.I) for k in p), "Campi privati nel catalogo"
     path = p["image"]
