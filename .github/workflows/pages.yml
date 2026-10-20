@@ -1,0 +1,57 @@
+name: OHANA STREET — Verifica e pubblica su Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "catalogo.json"
+      - "favicon.svg"
+      - "assets/products/**"
+      - "gestione/**"
+      - "tools/prepara_pages.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifica:
+    name: Verifica sito, 68 foto e assenza link riservati
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepara i soli file pubblici
+        run: python3 tools/prepara_pages.py
+      - name: Carica archivio validato
+        uses: actions/upload-artifact@v4
+        with:
+          name: ohana-sito-pubblico
+          path: _site/
+          include-hidden-files: true
+
+  deploy:
+    name: Pubblica su GitHub Pages
+    if: github.event_name == 'workflow_dispatch'
+    needs: verifica
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepara file pubblici
+        run: python3 tools/prepara_pages.py
+      - name: Configura Pages
+        uses: actions/configure-pages@v5
+      - name: Carica il sito Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site/
+      - name: Pubblica
+        id: deployment
+        uses: actions/deploy-pages@v4
