@@ -109,7 +109,10 @@ async function showPrivate(user){
   try{
     const response=await fetch('../catalogo.json',{cache:'no-store'});
     if(!response.ok)throw new Error('Catalogo non disponibile');
-    products=await response.json();
+    const completeCatalog=await response.json();
+    // Area gestori allineata alla vetrina attiva: solo scarpe non ripetute.
+    // Le altre mappature restano archiviate nel database, senza cancellazioni.
+    products=completeCatalog.filter(p=>p.genere==='Scarpe'&&p.vetrina!==false);
   }catch(e){message('Impossibile caricare catalogo.json.');return;}
   $('#login').hidden=true;
   $('#workspace').classList.add('ready');
@@ -119,6 +122,7 @@ function render(){
   const query=$('#search').value.toLowerCase().trim();
   const byId=new Map(products.map(p=>[p.id,p]));
   const data=rows.filter(r=>{
+    if(!byId.has(r.product_id))return false;
     const p=byId.get(r.product_id)||{};
     return (r.product_id+' '+(p.brand||'')+' '+(p.model||'')).toLowerCase().includes(query);
   });
