@@ -7137,5 +7137,317 @@
     "modelloVerificato": true,
     "selezione": "editoriale",
     "vetrina": true
+  },
+  {
+    "id": "OH-369B224810B2",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 Retro — Bianco e blu",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-369B224810B2_1.webp",
+    "images": [
+      "assets/products/OH-369B224810B2_1.webp",
+      "assets/products/OH-369B224810B2_2.webp",
+      "assets/products/OH-369B224810B2_3.webp"
+    ],
+    "descrizione": "Tomaia chiara con inserti blu intenso, dettagli grigi e struttura tipica della Air Jordan 4. Tre viste dello stesso paio. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-84F6279FB930",
+    "brand": "Jordan",
+    "model": "Air Jordan 5 Retro — Nero e azzurro",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-84F6279FB930_1.webp",
+    "images": [
+      "assets/products/OH-84F6279FB930_1.webp",
+      "assets/products/OH-84F6279FB930_2.webp",
+      "assets/products/OH-84F6279FB930_3.webp"
+    ],
+    "descrizione": "Tomaia nera, pannelli grigi, dettagli azzurri e suola con inserto traslucido. Tre prospettive della stessa colorazione. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-1D51AAD02AE9",
+    "brand": "Jordan",
+    "model": "Air Jordan 5 Retro — Bianco e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-1D51AAD02AE9_1.webp",
+    "images": [
+      "assets/products/OH-1D51AAD02AE9_1.webp",
+      "assets/products/OH-1D51AAD02AE9_2.webp",
+      "assets/products/OH-1D51AAD02AE9_3.webp"
+    ],
+    "descrizione": "Sneaker alta bianca con dettagli rossi e neri, tomaia strutturata e suola a contrasto. Le immagini mostrano un unico paio. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-4E2FD78FC0BD",
+    "brand": "Jordan",
+    "model": "Air Jordan 11 — Bianco",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-4E2FD78FC0BD_1.webp",
+    "images": [
+      "assets/products/OH-4E2FD78FC0BD_1.webp",
+      "assets/products/OH-4E2FD78FC0BD_2.webp",
+      "assets/products/OH-4E2FD78FC0BD_3.webp"
+    ],
+    "descrizione": "Silhouette alta monocromatica bianca con finitura lucida sul fascione e suola chiara. Tre fotografie coerenti della stessa colorazione. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-2C6DE5417E3C",
+    "brand": "Jordan",
+    "model": "Air Jordan 11 — Nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-2C6DE5417E3C_1.webp",
+    "images": [
+      "assets/products/OH-2C6DE5417E3C_1.webp",
+      "assets/products/OH-2C6DE5417E3C_2.webp",
+      "assets/products/OH-2C6DE5417E3C_3.webp"
+    ],
+    "descrizione": "Modello alto in nero con fascia lucida tono su tono e suola scura. Le tre immagini mostrano lo stesso paio da angolazioni diverse. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-DE81202EA4B1",
+    "brand": "Balenciaga",
+    "model": "Balenciaga 3XL — Grigio e giallo chiaro",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-DE81202EA4B1_1.webp",
+    "images": [
+      "assets/products/OH-DE81202EA4B1_1.webp",
+      "assets/products/OH-DE81202EA4B1_2.webp",
+      "assets/products/OH-DE81202EA4B1_3.webp"
+    ],
+    "descrizione": "Sneaker dal profilo voluminoso con pannelli grigi, inserti giallo tenue e lacci sovrapposti. Tre prospettive della medesima colorazione. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-63787AF3560F",
+    "brand": "Balenciaga",
+    "model": "Balenciaga 3XL — Bianco, blu e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-63787AF3560F_1.webp",
+    "images": [
+      "assets/products/OH-63787AF3560F_1.webp",
+      "assets/products/OH-63787AF3560F_2.webp",
+      "assets/products/OH-63787AF3560F_3.webp"
+    ],
+    "descrizione": "Sneaker 3XL con tomaia chiara, dettagli blu navy e scritte rosse, profilo sportivo e suola multilivello. Fotografie dello stesso paio. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-C52F0D7E3095",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Runner — Blu navy e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-C52F0D7E3095_1.webp",
+    "images": [
+      "assets/products/OH-C52F0D7E3095_1.webp",
+      "assets/products/OH-C52F0D7E3095_2.webp",
+      "assets/products/OH-C52F0D7E3095_3.webp"
+    ],
+    "descrizione": "Runner con pannelli sovrapposti blu e grigi, inserti rossi e suola scolpita. Le tre fotografie mostrano la stessa colorazione. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-1D597F6E14F6",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Runner — Bianco e multicolore",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-1D597F6E14F6_1.webp",
+    "images": [
+      "assets/products/OH-1D597F6E14F6_1.webp",
+      "assets/products/OH-1D597F6E14F6_2.webp",
+      "assets/products/OH-1D597F6E14F6_3.webp"
+    ],
+    "descrizione": "Runner dalla base bianca con inserti rosa, arancio e azzurro, suola articolata e dettagli a contrasto. Tre viste coerenti. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-44A9F6B3914E",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Track — Bianco e argento",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-44A9F6B3914E_1.webp",
+    "images": [
+      "assets/products/OH-44A9F6B3914E_1.webp",
+      "assets/products/OH-44A9F6B3914E_2.webp",
+      "assets/products/OH-44A9F6B3914E_3.webp"
+    ],
+    "descrizione": "Modello Track in tonalità bianche e grigio argento, con pannelli tecnici stratificati e suola robusta. Tre fotografie dello stesso paio. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-83FFBCDFC3B1",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Track 2 — Bianco e azzurro tenue",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-83FFBCDFC3B1_1.webp",
+    "images": [
+      "assets/products/OH-83FFBCDFC3B1_1.webp",
+      "assets/products/OH-83FFBCDFC3B1_2.webp",
+      "assets/products/OH-83FFBCDFC3B1_3.webp"
+    ],
+    "descrizione": "Track 2 in tonalità chiare con dettagli azzurro tenue, pannelli sovrapposti e suola sportiva. Le immagini documentano un unico paio. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-0EDF3B772737",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Track 2 — Nero e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-0EDF3B772737_1.webp",
+    "images": [
+      "assets/products/OH-0EDF3B772737_1.webp",
+      "assets/products/OH-0EDF3B772737_2.webp",
+      "assets/products/OH-0EDF3B772737_3.webp"
+    ],
+    "descrizione": "Track 2 nera con inserti rossi e bianchi, tomaia tecnica e suola strutturata. Le tre prospettive appartengono alla stessa variante. Identificazione fotografica della famiglia; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
   }
 ]
