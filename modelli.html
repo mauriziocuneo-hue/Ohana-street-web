@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123e40">
+<meta name="description" content="Esplora i marchi e le famiglie di sneakers individuate nel censimento OHANA STREET. Verifica fotografica e disponibilità in corso.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Modelli censiti — OHANA STREET</title>
+<style>
+:root{--deep:#123e40;--deep2:#0c3036;--sea:#65dfc6;--cream:#fcf8ee;--sun:#ffde86;--coral:#ff7560;--ink:#143438;--line:#c9d8d2;--muted:#637a74}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{width:min(1200px,calc(100% - 36px));margin:auto}
+header{background:var(--cream);border-bottom:2px solid var(--deep);position:sticky;top:0;z-index:20}
+header .wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.logo{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:29px;white-space:nowrap;font-weight:900;letter-spacing:-.03em}
+.logo .dot{color:var(--coral)}
+.logo small{font-family:Arial,sans-serif;display:block;font-size:8px;letter-spacing:2px;margin-top:-5px}
+.head-links{display:flex;align-items:center;gap:12px;font-size:12px;text-transform:uppercase;font-weight:900}
+.head-links a{padding:12px 16px;border:2px solid var(--deep);border-radius:30px}
+.head-links a.primary{background:var(--deep);color:#fff}
+.hero{background:radial-gradient(circle at 92% 8%,#226e6b 0,transparent 33%),linear-gradient(117deg,#0b3038,#154b50);color:#fff;padding:64px 0 55px;overflow:hidden}
+.kicker{font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--sea)}
+h1{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(59px,11vw,126px);line-height:.85;letter-spacing:-.035em;margin:20px 0}
+.hero p{font-size:15px;line-height:1.7;max-width:740px;color:#d8ebe3}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.stat{background:var(--sea);color:var(--deep);padding:12px 17px;min-width:145px;border:2px solid var(--deep);box-shadow:4px 4px 0 #0c2930}
+.stat b{display:block;font:900 30px Impact,'Arial Narrow',sans-serif;letter-spacing:.015em}
+.stat span{display:block;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+main{padding:33px 0 80px}
+.note{border:1px solid #d6d9c4;border-left:5px solid #cf8d42;background:#fff9e9;padding:15px 17px;font-size:13px;line-height:1.6;margin:0 0 28px}
+.controls{background:#fff;border:2px solid var(--deep);padding:19px;box-shadow:5px 5px 0 #c0dfd5;display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,270px);gap:13px}
+.controls input,.controls select{height:49px;border:1px solid var(--line);background:#f7faf8;padding:10px 15px;border-radius:11px;color:var(--deep);width:100%;min-width:0}
+.hint{font-size:12px;font-weight:800;color:var(--muted);margin:20px 0}
+.brand-section{padding:22px 0 14px;scroll-margin-top:100px}
+.brand-head{display:flex;gap:18px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--deep);padding:11px 0}
+.brand-head h2{font:900 clamp(30px,5vw,47px)/1 Impact,'Arial Narrow',Arial,sans-serif;text-transform:uppercase;margin:0}
+.brand-head span{font-size:12px;font-weight:800;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;padding:22px 0}
+.card{background:white;border:2px solid var(--deep);padding:17px;box-shadow:4px 4px 0 var(--deep);min-height:160px;display:flex;flex-direction:column;justify-content:space-between}
+.card .eyebrow{color:#ad5a51;text-transform:uppercase;font-size:10px;letter-spacing:.1em;font-weight:900}
+.card h3{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(23px,3vw,29px);line-height:1.04;margin:11px 0}
+.card .foot{border-top:1px solid #dfeae5;padding-top:12px;display:flex;gap:8px;align-items:center;justify-content:space-between;font-size:11px;color:#4c6e68;font-weight:800}
+.pill{border-radius:40px;background:#e8f6f1;padding:6px 9px;font-size:10px}
+.blank{border:1px dashed #c5d2ce;background:#ffffffad;color:#5c7470;padding:26px;line-height:1.65;font-size:14px}
+#empty{padding:60px 10px;text-align:center;font-weight:800}
+footer{background:var(--deep2);color:#b6d0c8;padding:32px 0;font-size:12px;line-height:1.8}
+footer strong{color:white}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.controls{grid-template-columns:1fr}.head-links a{padding:10px}.logo{font-size:23px}}
+@media(max-width:430px){.cards{gap:10px}.card{padding:12px;min-height:150px}.stat{min-width:calc(50% - 6px)}.card h3{font-size:23px}.head-links{gap:5px}.head-links a{font-size:10px;padding:9px}.logo{font-size:20px}.logo small{letter-spacing:1px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="index.html" aria-label="OHANA STREET — homepage">OHANA<span class="dot">.</span>STREET<small>ISLAND CULTURE / STREET STYLE</small></a><nav class="head-links" aria-label="Menu principale"><a href="index.html#lookbook">Lookbook</a><a href="gestione/" class="primary">Gestori</a></nav></div></header>
+<section class="hero"><div class="wrap"><div class="kicker">OHANA / Archivio modelli</div><h1>Esplora<br>i modelli.</h1><p>Dal nostro censimento delle gallerie di scarpe: marchi, famiglie e linee riconosciute. Un archivio in crescita che diventerà progressivamente una selezione fotografica di articoli con tre viste.</p><div class="stats" id="stats" aria-live="polite"><div class="stat"><b>—</b><span>Modelli individuati</span></div></div></div></section>
+<main class="wrap">
+<div class="note"><strong>Come leggere questo indice:</strong> le voci rappresentano famiglie riconosciute nei titoli degli album, non singole scarpe verificate né disponibilità di acquisto. Lo stesso modello può avere più colorazioni; i dati sono in revisione. Le schede complete, con fotografie, si trovano nel <a href="index.html#lookbook" style="text-decoration:underline;font-weight:900">lookbook</a>.</div>
+<div class="controls"><input id="search" type="search" autocomplete="off" placeholder="Cerca un modello… es. 9060, Samba, 3XL" aria-label="Cerca marchio o modello"><select id="brand" aria-label="Filtra marchio"><option value="">Tutti i marchi</option></select></div>
+<p class="hint" id="count" aria-live="polite">Caricamento indice modelli…</p>
+<div id="sections" aria-live="polite"></div>
+<p id="empty" hidden>Nessun modello corrispondente. Prova un altro marchio o nome.</p>
+</main>
+<footer><div class="wrap"><strong>OHANA STREET</strong> — Your style. Your vibe. Your ʻohana.<p>Indice informativo non affiliato ai marchi citati. Le famiglie vengono identificate da descrizioni di catalogo e sono soggette a verifica.</p></div></footer>
+<script>
+'use strict';
+const $=selector=>document.querySelector(selector);
+const norm=t=>String(t??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let brands=[];
+function node(tag,classname,text){
+ const e=document.createElement(tag);
+ if(classname)e.className=classname;
+ if(text!==undefined)e.textContent=String(text);
+ return e;
+}
+function createCard(model,brand){
+ const card=node('article','card');
+ const top=node('div');
+ top.append(node('div','eyebrow',brand),node('h3','',model.nome));
+ const foot=node('div','foot');
+ foot.append(node('span','pill','Da verificare'),node('span','',model.album_ricondotti.toLocaleString('it-IT')+' album censiti'));
+ card.append(top,foot);
+ return card;
+}
+function render(){
+ const query=norm($('#search').value.trim());
+ const selected=$('#brand').value;
+ const host=$('#sections');host.replaceChildren();
+ let num=0,countBrands=0;
+ for(const row of brands){
+  if(selected && row.brand!==selected)continue;
+  const models=row.modelli.filter(m=>!query||norm(row.brand+' '+m.nome).includes(query));
+  if(!models.length && (query || row.modelli.length))continue;
+  if(query && !models.length)continue;
+  countBrands++;
+  const section=node('section','brand-section');section.id='marca-'+String(countBrands);
+  const head=node('div','brand-head');head.append(node('h2','',row.brand),node('span','',row.album_censiti.toLocaleString('it-IT')+' album censiti'));
+  section.appendChild(head);
+  if(models.length){
+   const grid=node('div','cards');
+   for(const m of models)grid.appendChild(createCard(m,row.brand));
+   section.appendChild(grid);num+=models.length;
+  }else{
+   section.appendChild(node('div','blank','Titoli troppo generici per riconoscere i modelli. Identificazione dalle fotografie ancora in corso.'));
+  }
+  host.appendChild(section);
+ }
+ $('#count').textContent=num+' famiglie individuate · '+countBrands+' marchi o categorie visualizzati';
+ $('#empty').hidden=countBrands>0;
+}
+async function start(){
+ try{
+  const resp=await fetch('modelli.json',{cache:'no-store'});
+  if(!resp.ok)throw Error('HTTP '+resp.status);
+  const data=await resp.json();
+  if(!Array.isArray(data.brands)||data.brands.length!==20)throw Error('Dati incompleti');
+  brands=data.brands;
+  const families=brands.reduce((sum,b)=>sum+b.modelli.length,0);
+  const found=brands.filter(b=>b.modelli.length).length;
+  const stats=$('#stats');stats.replaceChildren();
+  for(const [v,caption] of [[families,'Famiglie individuate'],[data.totale_album_scarpe.toLocaleString('it-IT'),'Album censiti'],[brands.length,'Marchi e categorie'],[found,'Marchi con famiglie riconosciute']]){
+   const c=node('div','stat');c.append(node('b','',v),node('span','',caption));stats.appendChild(c);
+  }
+  const options=$('#brand');
+  for(const b of brands){
+   const o=node('option','',b.brand);o.value=b.brand;options.appendChild(o);
+  }
+  render();
+ }catch(error){
+  $('#count').textContent='Indice temporaneamente non disponibile.';
+  $('#sections').appendChild(node('div','blank','Riprova più tardi o consulta il lookbook fotografico.'));
+  console.error('OHANA modelli',error);
+ }
+}
+$('#search').addEventListener('input',render);
+$('#brand').addEventListener('change',render);
+start();
+</script>
+</body></html>
