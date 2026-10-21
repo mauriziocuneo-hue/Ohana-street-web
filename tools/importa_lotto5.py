@@ -62,7 +62,15 @@ def build_release():
     assert len(catalog) >= 481
     old_ids = {p["id"] for p in catalog}
     assert len(old_ids) == len(catalog)
-    assert not old_ids.intersection(ids), "Articolo gia presente: importazione interrotta"
+    # Two legacy Cortez records exist as hidden placeholders with wrong titles.
+    # Upgrade these in place, preserving all other historical catalog entries.
+    upgrades = {"OH-C121AC985A18", "OH-7075FE998A59"}
+    assert old_ids.intersection(ids) == upgrades, "Collisione inattesa con il catalogo esistente"
+    previous = {p["id"]: p for p in catalog}
+    for pid in upgrades:
+        old = previous[pid]
+        assert old.get("genere") == "Scarpe" and old.get("vetrina") is False
+        assert old["image"] == "assets/products/" + pid + ".webp"
     current_visible = [p for p in catalog if p.get("genere") == "Scarpe" and p.get("vetrina") is not False]
     assert len(current_visible) >= 74
     old_image_hashes = set()
@@ -122,8 +130,14 @@ def build_release():
         dest = ROOT / target
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(data)
-    catalog_file.write_text(json.dumps(catalog + cards, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("PASS: {} schede precedenti, +66 nuove, +198 foto; URL fornitori solo privati.".format(len(current_visible)))
+    additions = {p["id"]: p for p in cards}
+    merged = [additions.pop(old["id"], old) for old in catalog]
+    assert len(additions) == 64, "Attesi 64 nuovi articoli e 2 aggiornamenti legacy"
+    merged.extend(additions.values())
+    assert len(merged) == len(catalog) + 64
+    assert sum(p.get("genere") == "Scarpe" and p.get("vetrina") is not False for p in merged) == len(current_visible) + 66
+    catalog_file.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("PASS: +64 nuove schede, 2 Cortez corrette, +198 foto; URL fornitori solo privati.")
 
 if __name__ == "__main__":
     build_release()
