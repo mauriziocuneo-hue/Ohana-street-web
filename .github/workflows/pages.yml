@@ -6,6 +6,8 @@ on:
     paths:
       - "index.html"
       - "catalogo.json"
+      - "modelli.html"
+      - "modelli.json"
       - "favicon.svg"
       - "assets/products/**"
       - "gestione/**"
