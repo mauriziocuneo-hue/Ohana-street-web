@@ -8229,5 +8229,525 @@
     "status": "Selezione fotografica",
     "selezione": "editoriale",
     "vetrina": true
+  },
+  {
+    "id": "OH-913A152E94B8",
+    "brand": "Nike",
+    "model": "Nike Air Force 1 Shadow — Bianco e giallo pastello",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "nike",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-913A152E94B8_1.webp",
+    "images": [
+      "assets/products/OH-913A152E94B8_1.webp",
+      "assets/products/OH-913A152E94B8_2.webp",
+      "assets/products/OH-913A152E94B8_3.webp"
+    ],
+    "descrizione": "Sneaker bassa con tomaia chiara, profili sovrapposti e accenti giallo tenue; la suola rialzata distingue la linea Shadow. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-65788E3B555D",
+    "brand": "Adidas",
+    "model": "Adidas Superstar — Fantasia leopardata",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-65788E3B555D_1.webp",
+    "images": [
+      "assets/products/OH-65788E3B555D_1.webp",
+      "assets/products/OH-65788E3B555D_2.webp",
+      "assets/products/OH-65788E3B555D_3.webp"
+    ],
+    "descrizione": "Sneaker bassa con stampa leopardata, strisce laterali chiare e il caratteristico puntale a conchiglia. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-3C92D4AE929C",
+    "brand": "ASICS",
+    "model": "ASICS GEL-Kayano — Nero e turchese",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "asics",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-3C92D4AE929C_1.webp",
+    "images": [
+      "assets/products/OH-3C92D4AE929C_1.webp",
+      "assets/products/OH-3C92D4AE929C_2.webp",
+      "assets/products/OH-3C92D4AE929C_3.webp"
+    ],
+    "descrizione": "Scarpa running nera con dettagli turchesi e viola, pannelli tecnici e suola ammortizzata. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-D64FC149BF8D",
+    "brand": "Salomon",
+    "model": "Salomon XT-6 — Nero e grigio scuro",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-D64FC149BF8D_1.webp",
+    "images": [
+      "assets/products/OH-D64FC149BF8D_1.webp",
+      "assets/products/OH-D64FC149BF8D_2.webp",
+      "assets/products/OH-D64FC149BF8D_3.webp"
+    ],
+    "descrizione": "Scarpa tecnica in tonalità nere e grigie, con lacci rapidi e suola scolpita. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-694A6237355C",
+    "brand": "Salomon",
+    "model": "Salomon XT-4 Mule MM6 — Nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-694A6237355C_1.webp",
+    "images": [
+      "assets/products/OH-694A6237355C_1.webp",
+      "assets/products/OH-694A6237355C_2.webp",
+      "assets/products/OH-694A6237355C_3.webp"
+    ],
+    "descrizione": "Calzatura tecnica scura con struttura bassa e dettagli Salomon sul fianco, nella variante Mule indicata dal catalogo. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-B10DECD009C9",
+    "brand": "Salomon",
+    "model": "Salomon XT-4 OG — Nero e argento",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-B10DECD009C9_1.webp",
+    "images": [
+      "assets/products/OH-B10DECD009C9_1.webp",
+      "assets/products/OH-B10DECD009C9_2.webp",
+      "assets/products/OH-B10DECD009C9_3.webp"
+    ],
+    "descrizione": "Scarpa trail nera con pannelli e scritte argento, suola tassellata e profilo tecnico. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-10F084834511",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Ball Star — Bianco e rosa",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-10F084834511_1.webp",
+    "images": [
+      "assets/products/OH-10F084834511_1.webp",
+      "assets/products/OH-10F084834511_2.webp",
+      "assets/products/OH-10F084834511_3.webp"
+    ],
+    "descrizione": "Sneaker chiara con dettagli rosa, stella laterale scura e finiture dall'effetto vissuto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-ED3A8A47A95A",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Super-Star — Nero e beige",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-ED3A8A47A95A_1.webp",
+    "images": [
+      "assets/products/OH-ED3A8A47A95A_1.webp",
+      "assets/products/OH-ED3A8A47A95A_2.webp",
+      "assets/products/OH-ED3A8A47A95A_3.webp"
+    ],
+    "descrizione": "Sneaker in pelle nera con dettagli beige e stella laterale fantasia, suola chiara a contrasto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-122059D9C474",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Stardan — Beige e malva",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-122059D9C474_1.webp",
+    "images": [
+      "assets/products/OH-122059D9C474_1.webp",
+      "assets/products/OH-122059D9C474_2.webp",
+      "assets/products/OH-122059D9C474_3.webp"
+    ],
+    "descrizione": "Sneaker bassa beige e crema con pannelli malva e stella laterale a contrasto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-87E30062A3AF",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Stardan — Nero e verde",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-87E30062A3AF_1.webp",
+    "images": [
+      "assets/products/OH-87E30062A3AF_1.webp",
+      "assets/products/OH-87E30062A3AF_2.webp",
+      "assets/products/OH-87E30062A3AF_3.webp"
+    ],
+    "descrizione": "Sneaker scura con inserti verdi e viola, stella laterale chiara e finitura effetto vissuto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-9425118EDC6A",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 — Marrone e nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-9425118EDC6A_1.webp",
+    "images": [
+      "assets/products/OH-9425118EDC6A_1.webp",
+      "assets/products/OH-9425118EDC6A_2.webp",
+      "assets/products/OH-9425118EDC6A_3.webp"
+    ],
+    "descrizione": "Sneaker alta con pannelli marroni, rete laterale nera, dettagli scuri e suola strutturata. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-FECA88081B2D",
+    "brand": "Jordan",
+    "model": "Air Jordan 1 Low — Blu, bianco e nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-FECA88081B2D_1.webp",
+    "images": [
+      "assets/products/OH-FECA88081B2D_1.webp",
+      "assets/products/OH-FECA88081B2D_2.webp",
+      "assets/products/OH-FECA88081B2D_3.webp"
+    ],
+    "descrizione": "Sneaker bassa con pannelli blu e bianchi, dettagli neri e logo laterale a contrasto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-BEAE04F3B8E7",
+    "brand": "Jordan",
+    "model": "Air Jordan 12 — Bianco e verde",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-BEAE04F3B8E7_1.webp",
+    "images": [
+      "assets/products/OH-BEAE04F3B8E7_1.webp",
+      "assets/products/OH-BEAE04F3B8E7_2.webp",
+      "assets/products/OH-BEAE04F3B8E7_3.webp"
+    ],
+    "descrizione": "Sneaker alta con tomaia bianca, pannelli verdi lungo la suola e profilo arcuato tipico della linea Jordan 12. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-39E3DC518D3B",
+    "brand": "Jordan",
+    "model": "Air Jordan 1 Low — Blu navy e bianco",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-39E3DC518D3B_1.webp",
+    "images": [
+      "assets/products/OH-39E3DC518D3B_1.webp",
+      "assets/products/OH-39E3DC518D3B_2.webp",
+      "assets/products/OH-39E3DC518D3B_3.webp"
+    ],
+    "descrizione": "Sneaker bassa con tomaia in bianco e blu navy, inserti scuri e suola a contrasto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-DA1EBDE6EFF1",
+    "brand": "Balenciaga",
+    "model": "Balenciaga 3XL — Bianco e arancione",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-DA1EBDE6EFF1_1.webp",
+    "images": [
+      "assets/products/OH-DA1EBDE6EFF1_1.webp",
+      "assets/products/OH-DA1EBDE6EFF1_2.webp",
+      "assets/products/OH-DA1EBDE6EFF1_3.webp"
+    ],
+    "descrizione": "Sneaker oversize con base chiara, inserti arancione acceso e lacci decorativi avvolgenti. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-D1551EDCEDAF",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Runner — Bianco e nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-D1551EDCEDAF_1.webp",
+    "images": [
+      "assets/products/OH-D1551EDCEDAF_1.webp",
+      "assets/products/OH-D1551EDCEDAF_2.webp",
+      "assets/products/OH-D1551EDCEDAF_3.webp"
+    ],
+    "descrizione": "Sneaker running voluminosa bianca con pannelli neri e grigi, dettagli sportivi e suola articolata. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-D6FDAF603880",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Runner — Bianco e graffiti azzurri",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-D6FDAF603880_1.webp",
+    "images": [
+      "assets/products/OH-D6FDAF603880_1.webp",
+      "assets/products/OH-D6FDAF603880_2.webp",
+      "assets/products/OH-D6FDAF603880_3.webp"
+    ],
+    "descrizione": "Sneaker voluminosa dalla base bianca, decorazioni azzurre effetto graffiti e suola scolpita. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-2C1B9B3B7018",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Triple S — Nero e verde fluo",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-2C1B9B3B7018_1.webp",
+    "images": [
+      "assets/products/OH-2C1B9B3B7018_1.webp",
+      "assets/products/OH-2C1B9B3B7018_2.webp",
+      "assets/products/OH-2C1B9B3B7018_3.webp"
+    ],
+    "descrizione": "Sneaker voluminosa nera con accenti verde fluo e suola stratificata. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-D24D9E6ECA30",
+    "brand": "Balenciaga",
+    "model": "Balenciaga x Adidas Triple S — Nero e bianco",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-D24D9E6ECA30_1.webp",
+    "images": [
+      "assets/products/OH-D24D9E6ECA30_1.webp",
+      "assets/products/OH-D24D9E6ECA30_2.webp",
+      "assets/products/OH-D24D9E6ECA30_3.webp"
+    ],
+    "descrizione": "Sneaker chunky nera con tre strisce bianche, scritte sul fianco e suola oversize a contrasto. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-1848B2D5CCED",
+    "brand": "Balenciaga",
+    "model": "Balenciaga x Adidas Triple S — Azzurro",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-1848B2D5CCED_1.webp",
+    "images": [
+      "assets/products/OH-1848B2D5CCED_1.webp",
+      "assets/products/OH-1848B2D5CCED_2.webp",
+      "assets/products/OH-1848B2D5CCED_3.webp"
+    ],
+    "descrizione": "Sneaker oversize azzurra con tre strisce bianche e suola multistrato in tinta. Selezione fotografica; disponibilità e dettagli commerciali da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
   }
 ]
