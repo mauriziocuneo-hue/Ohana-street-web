@@ -29,7 +29,7 @@ for i,(pid,views,brand,model,sub,description) in enumerate(select):
     paths=[]
     for img in m["images"]:
         path=img["path"]
-        assert re.fullmatch(r"assets/products/OH-[A-F0-9]{12}_[0-9]+\\.webp",path)
+        assert re.fullmatch(r"assets/products/OH-[A-F0-9]{12}_[0-9]+\.webp",path)
         raw=private_file(PREFIX+path)
         digest=hashlib.sha256(raw).hexdigest()
         assert digest==img["sha256"] and len(raw)==img["size"]
@@ -52,5 +52,5 @@ assert len([p for p in existing if p["genere"]=="Scarpe" and p.get("vetrina") is
 assert len([p for p in existing if p["genere"]=="Abbigliamento"])==160
 for path,raw in staged:
     dest=ROOT/path;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(raw)
-(ROOT/"catalogo.json").write_text(json.dumps(existing,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+(ROOT/"catalogo.json").write_text(json.dumps(existing,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("PASS: 12 schede, 36 foto validate, nessun link privato nel catalogo.")
