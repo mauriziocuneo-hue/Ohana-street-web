@@ -14,7 +14,8 @@
     "image": "assets/products/OHY-001.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-002",
@@ -31,7 +32,8 @@
     "image": "assets/products/OHY-002.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-003",
@@ -48,7 +50,8 @@
     "image": "assets/products/OHY-003.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-004",
@@ -65,7 +68,8 @@
     "image": "assets/products/OHY-004.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-005",
@@ -82,7 +86,8 @@
     "image": "assets/products/OHY-005.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-006",
@@ -99,7 +104,8 @@
     "image": "assets/products/OHY-006.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-007",
@@ -116,7 +122,8 @@
     "image": "assets/products/OHY-007.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-008",
@@ -133,7 +140,8 @@
     "image": "assets/products/OHY-008.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-009",
@@ -150,7 +158,8 @@
     "image": "assets/products/OHY-009.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-010",
@@ -167,7 +176,8 @@
     "image": "assets/products/OHY-010.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-011",
@@ -184,7 +194,8 @@
     "image": "assets/products/OHY-011.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-012",
@@ -201,7 +212,8 @@
     "image": "assets/products/OHY-012.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-013",
@@ -219,7 +231,7 @@
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
-    "variante": "1 di 2"
+    "vetrina": false
   },
   {
     "id": "OHY-014",
@@ -236,7 +248,8 @@
     "image": "assets/products/OHY-014.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-015",
@@ -253,7 +266,8 @@
     "image": "assets/products/OHY-015.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-016",
@@ -270,7 +284,8 @@
     "image": "assets/products/OHY-016.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running"
+    "sottogenere": "Running",
+    "vetrina": false
   },
   {
     "id": "OHY-017",
@@ -287,7 +302,8 @@
     "image": "assets/products/OHY-017.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running"
+    "sottogenere": "Running",
+    "vetrina": false
   },
   {
     "id": "OHY-018",
@@ -304,7 +320,8 @@
     "image": "assets/products/OHY-018.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-019",
@@ -321,7 +338,8 @@
     "image": "assets/products/OHY-019.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-020",
@@ -338,7 +356,8 @@
     "image": "assets/products/OHY-020.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto"
+    "sottogenere": "Scarpe da calcio e calcetto",
+    "vetrina": false
   },
   {
     "id": "OHY-021",
@@ -355,7 +374,8 @@
     "image": "assets/products/OHY-021.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-022",
@@ -372,7 +392,8 @@
     "image": "assets/products/OHY-022.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running"
+    "sottogenere": "Running",
+    "vetrina": false
   },
   {
     "id": "OHY-023",
@@ -389,7 +410,8 @@
     "image": "assets/products/OHY-023.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running"
+    "sottogenere": "Running",
+    "vetrina": false
   },
   {
     "id": "OHY-024",
@@ -406,7 +428,8 @@
     "image": "assets/products/OHY-024.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-025",
@@ -423,7 +446,8 @@
     "image": "assets/products/OHY-025.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-026",
@@ -440,7 +464,8 @@
     "image": "assets/products/OHY-026.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-027",
@@ -457,7 +482,8 @@
     "image": "assets/products/OHY-027.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-028",
@@ -474,7 +500,8 @@
     "image": "assets/products/OHY-028.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-029",
@@ -491,7 +518,8 @@
     "image": "assets/products/OHY-029.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-030",
@@ -508,7 +536,8 @@
     "image": "assets/products/OHY-030.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-031",
@@ -525,7 +554,8 @@
     "image": "assets/products/OHY-031.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-032",
@@ -542,7 +572,8 @@
     "image": "assets/products/OHY-032.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-033",
@@ -559,7 +590,8 @@
     "image": "assets/products/OHY-033.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-034",
@@ -576,7 +608,8 @@
     "image": "assets/products/OHY-034.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-035",
@@ -593,7 +626,8 @@
     "image": "assets/products/OHY-035.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-036",
@@ -610,7 +644,8 @@
     "image": "assets/products/OHY-036.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Trail e outdoor"
+    "sottogenere": "Trail e outdoor",
+    "vetrina": false
   },
   {
     "id": "OHY-037",
@@ -627,7 +662,8 @@
     "image": "assets/products/OHY-037.png",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-038",
@@ -644,7 +680,8 @@
     "image": "assets/products/OHY-038.png",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-039",
@@ -661,7 +698,8 @@
     "image": "assets/products/OHY-039.png",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-040",
@@ -678,7 +716,8 @@
     "image": "assets/products/OHY-040.jpeg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Stivali e stivaletti"
+    "sottogenere": "Stivali e stivaletti",
+    "vetrina": false
   },
   {
     "id": "OHY-041",
@@ -695,7 +734,8 @@
     "image": "assets/products/OHY-041.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sabot e slip-on"
+    "sottogenere": "Sabot e slip-on",
+    "vetrina": false
   },
   {
     "id": "OHY-042",
@@ -712,7 +752,8 @@
     "image": "assets/products/OHY-042.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sabot e slip-on"
+    "sottogenere": "Sabot e slip-on",
+    "vetrina": false
   },
   {
     "id": "OHY-043",
@@ -729,7 +770,8 @@
     "image": "assets/products/OHY-043.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sabot e slip-on"
+    "sottogenere": "Sabot e slip-on",
+    "vetrina": false
   },
   {
     "id": "OHY-044",
@@ -882,7 +924,8 @@
     "image": "assets/products/OHY-052.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-053",
@@ -899,7 +942,8 @@
     "image": "assets/products/OHY-053.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-054",
@@ -916,7 +960,8 @@
     "image": "assets/products/OHY-054.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-055",
@@ -933,7 +978,8 @@
     "image": "assets/products/OHY-055.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-056",
@@ -1086,7 +1132,8 @@
     "image": "assets/products/OHY-064.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-065",
@@ -1103,7 +1150,8 @@
     "image": "assets/products/OHY-065.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-066",
@@ -1120,7 +1168,8 @@
     "image": "assets/products/OHY-066.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-067",
@@ -1137,7 +1186,8 @@
     "image": "assets/products/OHY-067.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers"
+    "sottogenere": "Sneakers",
+    "vetrina": false
   },
   {
     "id": "OHY-068",
@@ -1154,7 +1204,8 @@
     "image": "assets/products/OHY-068.jpg",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running"
+    "sottogenere": "Running",
+    "vetrina": false
   },
   {
     "id": "OH-5693197E6E99",
@@ -1202,7 +1253,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-CE8FA242690C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-7D8A48E99BE6",
@@ -1218,7 +1270,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-7D8A48E99BE6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-DB68CB73EE27",
@@ -1234,7 +1287,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-DB68CB73EE27.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-66E680A4FF32",
@@ -1250,7 +1304,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-66E680A4FF32.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-55F7A26B64B1",
@@ -1271,18 +1326,28 @@
   {
     "id": "OH-E8FB3C102CD1",
     "brand": "Golden Goose",
-    "model": "Golden Goose Ball Star Wishes donna — stella in suede e tallone leopardato",
+    "model": "Golden Goose Ball Star Wishes — Bianco e leopardato",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "golden goose"
+      "golden goose",
+      "sneakers"
     ],
-    "tone": 7,
-    "image": "assets/products/OH-E8FB3C102CD1.webp",
-    "status": "Scheda fotografica"
+    "tone": 2,
+    "image": "assets/products/OH-E8FB3C102CD1_1.webp",
+    "status": "Selezione fotografica",
+    "images": [
+      "assets/products/OH-E8FB3C102CD1_1.webp",
+      "assets/products/OH-E8FB3C102CD1_4.webp",
+      "assets/products/OH-E8FB3C102CD1_9.webp"
+    ],
+    "descrizione": "Silhouette bassa in tonalità chiare, stella laterale color tortora, lacci neri e dettaglio leopardato sul tallone.",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
   },
   {
     "id": "OH-949D51135B4E",
@@ -1299,7 +1364,7 @@
     "tone": 7,
     "image": "assets/products/OH-949D51135B4E.webp",
     "status": "Scheda fotografica",
-    "variante": "1 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-11DE03266FB8",
@@ -1315,7 +1380,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-11DE03266FB8.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-B7E0F418FB65",
@@ -1348,7 +1414,7 @@
     "tone": 4,
     "image": "assets/products/OH-FA458370428C.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 2"
+    "vetrina": false
   },
   {
     "id": "OH-9292D9FC2F9A",
@@ -1380,7 +1446,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-AA4467E89CAF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-7EAD59B0C4F6",
@@ -1396,7 +1463,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-7EAD59B0C4F6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-1BA2CF6B6A1D",
@@ -1412,7 +1480,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-1BA2CF6B6A1D.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-3A4CEEB8503E",
@@ -1476,7 +1545,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-469859E4B79B.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-844E0762D4C6",
@@ -1492,7 +1562,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-844E0762D4C6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-4998644B87D6",
@@ -1508,7 +1579,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-4998644B87D6.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-C14D9E0CC810",
@@ -1524,7 +1596,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-C14D9E0CC810.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-682F4C0BDCD3",
@@ -1541,7 +1614,7 @@
     "tone": 2,
     "image": "assets/products/OH-682F4C0BDCD3.webp",
     "status": "Scheda fotografica",
-    "variante": "1 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-B20F214F839A",
@@ -1622,7 +1695,7 @@
     "tone": 6,
     "image": "assets/products/OH-C9F2F09ED203.webp",
     "status": "Scheda fotografica",
-    "variante": "1 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-A8F188D34BF5",
@@ -1638,7 +1711,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-A8F188D34BF5.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-959ADC2D14BA",
@@ -1703,8 +1777,7 @@
     "tone": 3,
     "image": "assets/products/OH-15C9ED492DFD.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-F20D7AD66FF8",
@@ -1721,8 +1794,7 @@
     "tone": 5,
     "image": "assets/products/OH-F20D7AD66FF8.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-0179DC981468",
@@ -1738,7 +1810,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-0179DC981468.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-347E701B03E1",
@@ -1755,8 +1828,7 @@
     "tone": 1,
     "image": "assets/products/OH-347E701B03E1.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-FE404F9E0A83",
@@ -1777,18 +1849,28 @@
   {
     "id": "OH-AEE9524F4735",
     "brand": "Golden Goose",
-    "model": "Golden Goose Ball Star Wishes donna — pelle bianca e dettagli verdi",
+    "model": "Golden Goose Ball Star Wishes — Bianco e verde",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "golden goose"
+      "golden goose",
+      "sneakers"
     ],
-    "tone": 0,
-    "image": "assets/products/OH-AEE9524F4735.webp",
-    "status": "Scheda fotografica"
+    "tone": 3,
+    "image": "assets/products/OH-AEE9524F4735_1.webp",
+    "status": "Selezione fotografica",
+    "images": [
+      "assets/products/OH-AEE9524F4735_1.webp",
+      "assets/products/OH-AEE9524F4735_3.webp",
+      "assets/products/OH-AEE9524F4735_5.webp"
+    ],
+    "descrizione": "Sneaker bassa con tomaia chiara, stella e tallone verdi, dettagli a contrasto e suola dal colore naturale.",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
   },
   {
     "id": "OH-8AA8F8955FD3",
@@ -1805,7 +1887,7 @@
     "tone": 0,
     "image": "assets/products/OH-8AA8F8955FD3.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-9245A7FE08A3",
@@ -1822,8 +1904,7 @@
     "tone": 5,
     "image": "assets/products/OH-9245A7FE08A3.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-F6E3F091FF42",
@@ -1856,8 +1937,7 @@
     "tone": 5,
     "image": "assets/products/OH-8AD88138B95D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-007C5D0EADCC",
@@ -1889,7 +1969,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-6E2532D93DEF.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-C39901484F56",
@@ -1906,8 +1987,7 @@
     "tone": 4,
     "image": "assets/products/OH-C39901484F56.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-5C05EF281F13",
@@ -1924,8 +2004,7 @@
     "tone": 2,
     "image": "assets/products/OH-5C05EF281F13.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-E86838EC23E2",
@@ -1990,8 +2069,7 @@
     "tone": 4,
     "image": "assets/products/OH-6BF0E14324A4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-2AE1379F75E0",
@@ -2008,8 +2086,7 @@
     "tone": 6,
     "image": "assets/products/OH-2AE1379F75E0.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-0BE8FA6C5E55",
@@ -2026,26 +2103,33 @@
     "tone": 3,
     "image": "assets/products/OH-0BE8FA6C5E55.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-2FBF94AD6BDD",
     "brand": "Salomon",
-    "model": "Salomon XT-6 — Scarpe da trail viola — 471482",
+    "model": "Salomon XT-Quest x OAMC — Nero",
     "genere": "Scarpe",
     "sottogenere": "Trail e outdoor",
     "category": "Trail e outdoor",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "salomon"
+      "salomon",
+      "trail e outdoor"
     ],
-    "tone": 2,
-    "image": "assets/products/OH-2FBF94AD6BDD.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "tone": 0,
+    "image": "assets/products/OH-2FBF94AD6BDD_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-2FBF94AD6BDD_1.webp",
+      "assets/products/OH-2FBF94AD6BDD_2.webp",
+      "assets/products/OH-2FBF94AD6BDD_4.webp"
+    ],
+    "descrizione": "Scarpa dal carattere outdoor con tomaia nera, rinforzi tecnici laterali e suola scolpita. Dettagli OAMC visibili nelle fotografie.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-4AF24F080222",
@@ -2062,7 +2146,7 @@
     "tone": 3,
     "image": "assets/products/OH-4AF24F080222.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-403961F5BFE5",
@@ -2143,7 +2227,7 @@
     "tone": 7,
     "image": "assets/products/OH-913E3CE8C2A7.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-60AE63B9825A",
@@ -2192,8 +2276,7 @@
     "tone": 4,
     "image": "assets/products/OH-FF6D1CEA8719.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-148AA9D070C4",
@@ -2210,8 +2293,7 @@
     "tone": 6,
     "image": "assets/products/OH-148AA9D070C4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-8A244ADCC371",
@@ -2227,7 +2309,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-8A244ADCC371.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-FD07F5B02E8F",
@@ -2244,8 +2327,7 @@
     "tone": 2,
     "image": "assets/products/OH-FD07F5B02E8F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-2C9DD0AF2AB5",
@@ -2277,7 +2359,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-3FA6333B7471.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-F336279283DD",
@@ -2294,7 +2377,7 @@
     "tone": 1,
     "image": "assets/products/OH-F336279283DD.webp",
     "status": "Scheda fotografica",
-    "variante": "3 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-81B780ADF7C5",
@@ -2311,8 +2394,7 @@
     "tone": 6,
     "image": "assets/products/OH-81B780ADF7C5.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-801B5F4E6C59",
@@ -2345,8 +2427,7 @@
     "tone": 6,
     "image": "assets/products/OH-1AEB705F6BD9.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-97D7AB40C47A",
@@ -2378,7 +2459,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-5A54217FFBF7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-8405B75DC42E",
@@ -2395,8 +2477,7 @@
     "tone": 5,
     "image": "assets/products/OH-8405B75DC42E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-BDDF2060568E",
@@ -2413,8 +2494,7 @@
     "tone": 3,
     "image": "assets/products/OH-BDDF2060568E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-00719E27FCE1",
@@ -2479,8 +2559,7 @@
     "tone": 5,
     "image": "assets/products/OH-6B8FBB7619E2.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-BCDAA71E8C0D",
@@ -2497,8 +2576,7 @@
     "tone": 7,
     "image": "assets/products/OH-BCDAA71E8C0D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-8743C0E833CF",
@@ -2515,8 +2593,7 @@
     "tone": 4,
     "image": "assets/products/OH-8743C0E833CF.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-E78FC6A2567A",
@@ -2533,8 +2610,7 @@
     "tone": 3,
     "image": "assets/products/OH-E78FC6A2567A.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-DBD4A416CDF9",
@@ -2551,7 +2627,7 @@
     "tone": 4,
     "image": "assets/products/OH-DBD4A416CDF9.webp",
     "status": "Scheda fotografica",
-    "variante": "3 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-B82950F98FA8",
@@ -2632,7 +2708,7 @@
     "tone": 0,
     "image": "assets/products/OH-D86AE4815A44.webp",
     "status": "Scheda fotografica",
-    "variante": "3 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-299FB2F3DB0C",
@@ -2681,8 +2757,7 @@
     "tone": 5,
     "image": "assets/products/OH-36CFD973686A.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-1FF4A2128B63",
@@ -2699,8 +2774,7 @@
     "tone": 7,
     "image": "assets/products/OH-1FF4A2128B63.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-7D0BE1D1B1FA",
@@ -2716,7 +2790,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-7D0BE1D1B1FA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-26FE44BD4B2D",
@@ -2733,8 +2808,7 @@
     "tone": 3,
     "image": "assets/products/OH-26FE44BD4B2D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-157DD1B68E2C",
@@ -2766,7 +2840,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-E58F3DD661AC.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-921BAF2C6ED4",
@@ -2783,7 +2858,7 @@
     "tone": 2,
     "image": "assets/products/OH-921BAF2C6ED4.webp",
     "status": "Scheda fotografica",
-    "variante": "1 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-4819ED13D821",
@@ -2800,8 +2875,7 @@
     "tone": 7,
     "image": "assets/products/OH-4819ED13D821.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-6749E4A2B003",
@@ -2854,20 +2928,28 @@
   {
     "id": "OH-27E5B90E5B24",
     "brand": "Balenciaga",
-    "model": "Balenciaga 2.0 — Sneakers running bianche, grigie e rosse — W3RXP 9160",
+    "model": "Balenciaga Runner — Nero e bianco",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "balenciaga"
+      "balenciaga",
+      "running"
     ],
     "tone": 6,
-    "image": "assets/products/OH-27E5B90E5B24.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "image": "assets/products/OH-27E5B90E5B24_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-27E5B90E5B24_1.webp",
+      "assets/products/OH-27E5B90E5B24_2.webp",
+      "assets/products/OH-27E5B90E5B24_7.webp"
+    ],
+    "descrizione": "Una sneaker dalla struttura a pannelli sovrapposti, contrasti netti bianco e nero e suola voluminosa dal profilo tecnico.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-F91E44F4A9EE",
@@ -2884,24 +2966,33 @@
     "tone": 0,
     "image": "assets/products/OH-F91E44F4A9EE.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-00E2EDB5A284",
     "brand": "Jordan",
-    "model": "Air Jordan 4 Retro Marquette University — HF4340-008",
+    "model": "Air Jordan 4 Retro — Giallo oro",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "jordan"
+      "jordan",
+      "sneakers"
     ],
-    "tone": 4,
-    "image": "assets/products/OH-00E2EDB5A284.webp",
-    "status": "Scheda fotografica"
+    "tone": 0,
+    "image": "assets/products/OH-00E2EDB5A284_1.webp",
+    "status": "Selezione fotografica",
+    "images": [
+      "assets/products/OH-00E2EDB5A284_1.webp",
+      "assets/products/OH-00E2EDB5A284_8.webp",
+      "assets/products/OH-00E2EDB5A284_12.webp"
+    ],
+    "descrizione": "Una Jordan 4 dalla colorazione giallo oro uniforme, con inserti laterali a rete, silhouette strutturata e dettagli della suola a contrasto.",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
   },
   {
     "id": "OH-4D801A18D4AC",
@@ -2918,8 +3009,7 @@
     "tone": 4,
     "image": "assets/products/OH-4D801A18D4AC.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-962E947EA4F0",
@@ -2951,7 +3041,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-AC8BAC2788D7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-B5E0087C4EB4",
@@ -2968,7 +3059,7 @@
     "tone": 3,
     "image": "assets/products/OH-B5E0087C4EB4.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-C47BE5ADA895",
@@ -2985,8 +3076,7 @@
     "tone": 0,
     "image": "assets/products/OH-C47BE5ADA895.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-775065AC8B6E",
@@ -3019,8 +3109,7 @@
     "tone": 7,
     "image": "assets/products/OH-21E1699330BE.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-05E3E1358B32",
@@ -3052,7 +3141,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-57750200FD55.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-47987D08746C",
@@ -3069,8 +3159,7 @@
     "tone": 6,
     "image": "assets/products/OH-47987D08746C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-0ADB669CCF97",
@@ -3087,8 +3176,7 @@
     "tone": 4,
     "image": "assets/products/OH-0ADB669CCF97.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-7307A6B93F31",
@@ -3153,8 +3241,7 @@
     "tone": 6,
     "image": "assets/products/OH-F6B5764820F3.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-F38D7A6D530C",
@@ -3171,8 +3258,7 @@
     "tone": 0,
     "image": "assets/products/OH-F38D7A6D530C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-09BECF0EA3B1",
@@ -3189,8 +3275,7 @@
     "tone": 5,
     "image": "assets/products/OH-09BECF0EA3B1.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-89E104F9E783",
@@ -3207,8 +3292,7 @@
     "tone": 4,
     "image": "assets/products/OH-89E104F9E783.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-BFD29EC1E0D6",
@@ -3225,7 +3309,7 @@
     "tone": 5,
     "image": "assets/products/OH-BFD29EC1E0D6.webp",
     "status": "Scheda fotografica",
-    "variante": "4 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-8116F4A6267B",
@@ -3306,7 +3390,7 @@
     "tone": 1,
     "image": "assets/products/OH-2145B0BEA414.webp",
     "status": "Scheda fotografica",
-    "variante": "4 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-DE57A3CA5E22",
@@ -3343,20 +3427,28 @@
   {
     "id": "OH-75B06B7D4905",
     "brand": "Balenciaga",
-    "model": "Balenciaga 2.0 — Sneakers running bianche, grigie e rosse — W3RXP 9160",
+    "model": "Balenciaga Runner — Bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "balenciaga"
+      "balenciaga",
+      "running"
     ],
     "tone": 7,
-    "image": "assets/products/OH-75B06B7D4905.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "image": "assets/products/OH-75B06B7D4905_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-75B06B7D4905_1.webp",
+      "assets/products/OH-75B06B7D4905_3.webp",
+      "assets/products/OH-75B06B7D4905_7.webp"
+    ],
+    "descrizione": "Profilo sportivo con tomaia prevalentemente bianca, dettagli grafici rossi e intersuola importante in tonalità chiare.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-43A4724BF536",
@@ -3373,42 +3465,59 @@
     "tone": 1,
     "image": "assets/products/OH-43A4724BF536.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-C4A8F3895241",
     "brand": "Jordan",
-    "model": "Air Jordan 4 Retro Bred — IX8180-001",
+    "model": "Air Jordan 4 Retro Bred — Nero e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "jordan"
+      "jordan",
+      "sneakers"
     ],
-    "tone": 5,
-    "image": "assets/products/OH-C4A8F3895241.webp",
-    "status": "Scheda fotografica"
+    "tone": 1,
+    "image": "assets/products/OH-C4A8F3895241_1.webp",
+    "status": "Selezione fotografica",
+    "images": [
+      "assets/products/OH-C4A8F3895241_1.webp",
+      "assets/products/OH-C4A8F3895241_3.webp",
+      "assets/products/OH-C4A8F3895241_9.webp"
+    ],
+    "descrizione": "L'iconica linea della Jordan 4 con tomaia nera, dettagli bianchi e rossi, gabbia laterale e suola dal contrasto deciso.",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
   },
   {
     "id": "OH-778CBBE3DA85",
     "brand": "New Balance",
-    "model": "New Balance 9060 — Sneakers in mesh e suede con ammortizzazione ABZORB",
+    "model": "New Balance 530 — Bianco e tortora",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "new balance"
+      "new balance",
+      "sneakers"
     ],
-    "tone": 5,
-    "image": "assets/products/OH-778CBBE3DA85.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "tone": 4,
+    "image": "assets/products/OH-778CBBE3DA85_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-778CBBE3DA85_1.webp",
+      "assets/products/OH-778CBBE3DA85_4.webp",
+      "assets/products/OH-778CBBE3DA85_10.webp"
+    ],
+    "descrizione": "Una sneaker ispirata al running rétro, con pannelli chiari e tortora, inserti laterali a contrasto e una linea sportiva.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-126A28109E5B",
@@ -3440,7 +3549,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-669401383FD3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-3D80710ABA63",
@@ -3457,7 +3567,7 @@
     "tone": 4,
     "image": "assets/products/OH-3D80710ABA63.webp",
     "status": "Scheda fotografica",
-    "variante": "3 di 3"
+    "vetrina": false
   },
   {
     "id": "OH-35BB391AFB38",
@@ -3474,8 +3584,7 @@
     "tone": 1,
     "image": "assets/products/OH-35BB391AFB38.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-AC856D45C0B4",
@@ -3508,8 +3617,7 @@
     "tone": 0,
     "image": "assets/products/OH-2CB5F6AEE063.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-BFF6E73431F0",
@@ -3541,7 +3649,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-5CA563FB87E3.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-611D6B825C41",
@@ -3558,8 +3667,7 @@
     "tone": 7,
     "image": "assets/products/OH-611D6B825C41.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-3F6C5FB78DD5",
@@ -3576,8 +3684,7 @@
     "tone": 5,
     "image": "assets/products/OH-3F6C5FB78DD5.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-849BF33F0CB7",
@@ -3642,8 +3749,7 @@
     "tone": 7,
     "image": "assets/products/OH-C514C606C00E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-3B87F263496C",
@@ -3660,8 +3766,7 @@
     "tone": 1,
     "image": "assets/products/OH-3B87F263496C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-15154E42A70B",
@@ -3678,26 +3783,33 @@
     "tone": 6,
     "image": "assets/products/OH-15154E42A70B.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-E97A2E41E360",
     "brand": "Salomon",
-    "model": "Salomon XT-6 — Scarpe da trail viola — 471482",
+    "model": "Salomon XT-6 GTX — Sabbia",
     "genere": "Scarpe",
     "sottogenere": "Trail e outdoor",
     "category": "Trail e outdoor",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "salomon"
+      "salomon",
+      "trail e outdoor"
     ],
-    "tone": 5,
-    "image": "assets/products/OH-E97A2E41E360.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "tone": 1,
+    "image": "assets/products/OH-E97A2E41E360_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-E97A2E41E360_1.webp",
+      "assets/products/OH-E97A2E41E360_2.webp",
+      "assets/products/OH-E97A2E41E360_7.webp"
+    ],
+    "descrizione": "Sneaker ispirata al trail in tonalità sabbia, con allacciatura tecnica, pannelli sovrapposti e suola dal disegno marcato.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-55A325964470",
@@ -3714,7 +3826,7 @@
     "tone": 6,
     "image": "assets/products/OH-55A325964470.webp",
     "status": "Scheda fotografica",
-    "variante": "5 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-27D940D929E2",
@@ -3795,7 +3907,7 @@
     "tone": 2,
     "image": "assets/products/OH-E2AB168B191E.webp",
     "status": "Scheda fotografica",
-    "variante": "5 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-699351B9C916",
@@ -3844,8 +3956,7 @@
     "tone": 0,
     "image": "assets/products/OH-A0D81427383C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-BD9C4D5A0FBA",
@@ -3862,8 +3973,7 @@
     "tone": 2,
     "image": "assets/products/OH-BD9C4D5A0FBA.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-DB0CF87DF2E4",
@@ -3879,7 +3989,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-DB0CF87DF2E4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-835D3713D111",
@@ -3896,8 +4007,7 @@
     "tone": 6,
     "image": "assets/products/OH-835D3713D111.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-EC74A932B8DB",
@@ -3929,7 +4039,8 @@
     ],
     "tone": 5,
     "image": "assets/products/OH-DD7E3212615A.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-57A4DDC1F41A",
@@ -3946,7 +4057,7 @@
     "tone": 5,
     "image": "assets/products/OH-57A4DDC1F41A.webp",
     "status": "Scheda fotografica",
-    "variante": "1 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-300537181F7B",
@@ -3963,8 +4074,7 @@
     "tone": 2,
     "image": "assets/products/OH-300537181F7B.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-59FD4F5DE78D",
@@ -3985,20 +4095,28 @@
   {
     "id": "OH-43A7C1F5ADA6",
     "brand": "Adidas",
-    "model": "Adidas Originals Tokyo Decon W — IH3999",
+    "model": "adidas Samba OG — Nero e grigio",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "adidas"
+      "adidas",
+      "sneakers"
     ],
-    "tone": 1,
-    "image": "assets/products/OH-43A7C1F5ADA6.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "tone": 2,
+    "image": "assets/products/OH-43A7C1F5ADA6_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-43A7C1F5ADA6_1.webp",
+      "assets/products/OH-43A7C1F5ADA6_6.webp",
+      "assets/products/OH-43A7C1F5ADA6_12.webp"
+    ],
+    "descrizione": "Sneaker bassa dal profilo essenziale: tomaia scura, tre strisce grigie, punta rinforzata e suola color gomma.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-C2A2CD3E2DDA",
@@ -4030,7 +4148,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-5DC4B16DF7C9.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-1B4947A0AA64",
@@ -4047,8 +4166,7 @@
     "tone": 0,
     "image": "assets/products/OH-1B4947A0AA64.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-DEECC9DA89DC",
@@ -4065,8 +4183,7 @@
     "tone": 6,
     "image": "assets/products/OH-DEECC9DA89DC.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-2C41B4A1EC81",
@@ -4131,8 +4248,7 @@
     "tone": 0,
     "image": "assets/products/OH-2C601CEA01BA.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-47038B47FEF4",
@@ -4149,8 +4265,7 @@
     "tone": 2,
     "image": "assets/products/OH-47038B47FEF4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-9F27B8C95C88",
@@ -4167,8 +4282,7 @@
     "tone": 7,
     "image": "assets/products/OH-9F27B8C95C88.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-16C118CB8B7F",
@@ -4185,8 +4299,7 @@
     "tone": 6,
     "image": "assets/products/OH-16C118CB8B7F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-E7B1D4003687",
@@ -4203,7 +4316,7 @@
     "tone": 7,
     "image": "assets/products/OH-E7B1D4003687.webp",
     "status": "Scheda fotografica",
-    "variante": "6 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-075400FEDA4B",
@@ -4284,7 +4397,7 @@
     "tone": 3,
     "image": "assets/products/OH-B76093E9A201.webp",
     "status": "Scheda fotografica",
-    "variante": "6 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-3349A6B14FCB",
@@ -4333,8 +4446,7 @@
     "tone": 1,
     "image": "assets/products/OH-1B4AE20218ED.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-24FCC8BC9465",
@@ -4351,8 +4463,7 @@
     "tone": 3,
     "image": "assets/products/OH-24FCC8BC9465.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-C3E7145ED6C2",
@@ -4368,7 +4479,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-C3E7145ED6C2.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-ACB4748A4D8E",
@@ -4385,8 +4497,7 @@
     "tone": 7,
     "image": "assets/products/OH-ACB4748A4D8E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-378A7B4BBFA5",
@@ -4418,7 +4529,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-A80ED5273296.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-51ECBA48E2E4",
@@ -4435,7 +4547,7 @@
     "tone": 6,
     "image": "assets/products/OH-51ECBA48E2E4.webp",
     "status": "Scheda fotografica",
-    "variante": "2 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-B58F9791A260",
@@ -4452,8 +4564,7 @@
     "tone": 3,
     "image": "assets/products/OH-B58F9791A260.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-B713BBE471E4",
@@ -4486,8 +4597,7 @@
     "tone": 2,
     "image": "assets/products/OH-4B3D5B8DA7BF.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-259CFA45A6E4",
@@ -4519,7 +4629,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-57CE8FAE46F9.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-E987987E8F60",
@@ -4536,8 +4647,7 @@
     "tone": 1,
     "image": "assets/products/OH-E987987E8F60.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-317AE1500B22",
@@ -4554,8 +4664,7 @@
     "tone": 7,
     "image": "assets/products/OH-317AE1500B22.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-D2440686730C",
@@ -4620,8 +4729,7 @@
     "tone": 1,
     "image": "assets/products/OH-3D180AD5FB63.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-453328039369",
@@ -4638,8 +4746,7 @@
     "tone": 3,
     "image": "assets/products/OH-453328039369.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-E8F0540865F7",
@@ -4656,8 +4763,7 @@
     "tone": 0,
     "image": "assets/products/OH-E8F0540865F7.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-F1AD611B6696",
@@ -4674,8 +4780,7 @@
     "tone": 7,
     "image": "assets/products/OH-F1AD611B6696.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-737634294C46",
@@ -4692,7 +4797,7 @@
     "tone": 0,
     "image": "assets/products/OH-737634294C46.webp",
     "status": "Scheda fotografica",
-    "variante": "7 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-81634797E076",
@@ -4773,7 +4878,7 @@
     "tone": 4,
     "image": "assets/products/OH-369D56725A1B.webp",
     "status": "Scheda fotografica",
-    "variante": "7 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-E72B55DBB7D5",
@@ -4822,8 +4927,7 @@
     "tone": 2,
     "image": "assets/products/OH-801A4D5BF193.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-3DE61F41366F",
@@ -4840,8 +4944,7 @@
     "tone": 4,
     "image": "assets/products/OH-3DE61F41366F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-86EB0DEBC255",
@@ -4857,7 +4960,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-86EB0DEBC255.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-D122A3791BB3",
@@ -4874,8 +4978,7 @@
     "tone": 0,
     "image": "assets/products/OH-D122A3791BB3.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-96DA3EF315EE",
@@ -4907,7 +5010,8 @@
     ],
     "tone": 7,
     "image": "assets/products/OH-355D9B4262C1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-9A8A627A548C",
@@ -4924,7 +5028,7 @@
     "tone": 7,
     "image": "assets/products/OH-9A8A627A548C.webp",
     "status": "Scheda fotografica",
-    "variante": "3 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-30E0E5105D2F",
@@ -4941,8 +5045,7 @@
     "tone": 4,
     "image": "assets/products/OH-30E0E5105D2F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-6684A7BB7DE7",
@@ -4975,8 +5078,7 @@
     "tone": 3,
     "image": "assets/products/OH-9B6417FD51E6.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-FF11D094EA63",
@@ -5008,7 +5110,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-2F809C56DDAE.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-DF49F4382B66",
@@ -5025,8 +5128,7 @@
     "tone": 2,
     "image": "assets/products/OH-DF49F4382B66.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-C5A486FDF394",
@@ -5043,8 +5145,7 @@
     "tone": 0,
     "image": "assets/products/OH-C5A486FDF394.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-178681DBFEAB",
@@ -5109,8 +5210,7 @@
     "tone": 2,
     "image": "assets/products/OH-D08B3CC86EA1.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-0E971DFAD509",
@@ -5127,8 +5227,7 @@
     "tone": 4,
     "image": "assets/products/OH-0E971DFAD509.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-C18AB16BD630",
@@ -5145,8 +5244,7 @@
     "tone": 1,
     "image": "assets/products/OH-C18AB16BD630.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-18A91D048F72",
@@ -5163,8 +5261,7 @@
     "tone": 0,
     "image": "assets/products/OH-18A91D048F72.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-2822B6F39F82",
@@ -5181,7 +5278,7 @@
     "tone": 1,
     "image": "assets/products/OH-2822B6F39F82.webp",
     "status": "Scheda fotografica",
-    "variante": "8 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-00E63C7231EF",
@@ -5262,7 +5359,7 @@
     "tone": 5,
     "image": "assets/products/OH-B26D1759C531.webp",
     "status": "Scheda fotografica",
-    "variante": "8 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-AE299A20C288",
@@ -5311,8 +5408,7 @@
     "tone": 3,
     "image": "assets/products/OH-5903E7D0F25C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-7075FE998A59",
@@ -5329,8 +5425,7 @@
     "tone": 5,
     "image": "assets/products/OH-7075FE998A59.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-217E1860ECAA",
@@ -5346,7 +5441,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-217E1860ECAA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-45D9DA71737F",
@@ -5363,8 +5459,7 @@
     "tone": 1,
     "image": "assets/products/OH-45D9DA71737F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-124A79EDE602",
@@ -5396,7 +5491,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-033756C40681.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-BE0BD1666A57",
@@ -5413,7 +5509,7 @@
     "tone": 0,
     "image": "assets/products/OH-BE0BD1666A57.webp",
     "status": "Scheda fotografica",
-    "variante": "4 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-7BEA7F395DC6",
@@ -5430,8 +5526,7 @@
     "tone": 5,
     "image": "assets/products/OH-7BEA7F395DC6.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-467041996010",
@@ -5452,20 +5547,28 @@
   {
     "id": "OH-3DBCE285049D",
     "brand": "Adidas",
-    "model": "Adidas Originals Tokyo Decon W — IH3999",
+    "model": "adidas Gazelle Indoor — Bianco e acquamarina",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "adidas"
+      "adidas",
+      "sneakers"
     ],
-    "tone": 4,
-    "image": "assets/products/OH-3DBCE285049D.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "tone": 3,
+    "image": "assets/products/OH-3DBCE285049D_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-3DBCE285049D_1.webp",
+      "assets/products/OH-3DBCE285049D_6.webp",
+      "assets/products/OH-3DBCE285049D_12.webp"
+    ],
+    "descrizione": "Interpretazione chiara della Gazelle Indoor, con strisce e dettagli acquamarina, linea slanciata e suola color miele.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-9DE6B7E90E81",
@@ -5497,7 +5600,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-A94C26878A86.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-111F4D50AAF1",
@@ -5514,8 +5618,7 @@
     "tone": 3,
     "image": "assets/products/OH-111F4D50AAF1.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-FF150B4E6F7F",
@@ -5532,8 +5635,7 @@
     "tone": 1,
     "image": "assets/products/OH-FF150B4E6F7F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-6F97BC2B45B0",
@@ -5598,8 +5700,7 @@
     "tone": 3,
     "image": "assets/products/OH-6B1E6C9E5312.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-FCAF164A4642",
@@ -5616,8 +5717,7 @@
     "tone": 5,
     "image": "assets/products/OH-FCAF164A4642.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-CDDB3145A974",
@@ -5634,8 +5734,7 @@
     "tone": 2,
     "image": "assets/products/OH-CDDB3145A974.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-B64DB8D84020",
@@ -5652,8 +5751,7 @@
     "tone": 1,
     "image": "assets/products/OH-B64DB8D84020.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-AEEAD5351636",
@@ -5669,7 +5767,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-AEEAD5351636.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-96B457F9F9A9",
@@ -5750,7 +5849,7 @@
     "tone": 6,
     "image": "assets/products/OH-AC2EA8159800.webp",
     "status": "Scheda fotografica",
-    "variante": "9 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-30F4C57ED9C2",
@@ -5799,8 +5898,7 @@
     "tone": 4,
     "image": "assets/products/OH-0D0D097C4F75.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-C121AC985A18",
@@ -5817,8 +5915,7 @@
     "tone": 6,
     "image": "assets/products/OH-C121AC985A18.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-C05E69943287",
@@ -5834,7 +5931,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-C05E69943287.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-D299D9704A2B",
@@ -5851,8 +5949,7 @@
     "tone": 2,
     "image": "assets/products/OH-D299D9704A2B.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-93854CD3A49C",
@@ -5884,7 +5981,8 @@
     ],
     "tone": 1,
     "image": "assets/products/OH-2B5A50DE63D7.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-DF278690C6BF",
@@ -5901,7 +5999,7 @@
     "tone": 1,
     "image": "assets/products/OH-DF278690C6BF.webp",
     "status": "Scheda fotografica",
-    "variante": "5 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-511DC7FAC9FA",
@@ -5918,8 +6016,7 @@
     "tone": 6,
     "image": "assets/products/OH-511DC7FAC9FA.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-61E033FF973A",
@@ -5952,8 +6049,7 @@
     "tone": 5,
     "image": "assets/products/OH-8E9B52648C22.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-66AA6788EE13",
@@ -5985,7 +6081,8 @@
     ],
     "tone": 6,
     "image": "assets/products/OH-0B52459DC502.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-7FF3E81A4C51",
@@ -6002,8 +6099,7 @@
     "tone": 4,
     "image": "assets/products/OH-7FF3E81A4C51.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-DFA0BCB3BF9F",
@@ -6020,8 +6116,7 @@
     "tone": 2,
     "image": "assets/products/OH-DFA0BCB3BF9F.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-F796BD5155B3",
@@ -6086,8 +6181,7 @@
     "tone": 4,
     "image": "assets/products/OH-5D135B35C1DF.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-0BDF23690CBC",
@@ -6104,8 +6198,7 @@
     "tone": 6,
     "image": "assets/products/OH-0BDF23690CBC.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-EFF24FEE6244",
@@ -6122,8 +6215,7 @@
     "tone": 3,
     "image": "assets/products/OH-EFF24FEE6244.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-6863914B83FA",
@@ -6140,8 +6232,7 @@
     "tone": 2,
     "image": "assets/products/OH-6863914B83FA.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-7A8FBFA2B405",
@@ -6157,7 +6248,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-7A8FBFA2B405.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-500FB732AF5E",
@@ -6238,7 +6330,7 @@
     "tone": 7,
     "image": "assets/products/OH-DBC4C0F38D37.webp",
     "status": "Scheda fotografica",
-    "variante": "10 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-D4FB5B6DD804",
@@ -6287,8 +6379,7 @@
     "tone": 5,
     "image": "assets/products/OH-BA9D513A01C7.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-1D10A7C20A28",
@@ -6305,8 +6396,7 @@
     "tone": 7,
     "image": "assets/products/OH-1D10A7C20A28.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-FAB2D612D4BA",
@@ -6322,7 +6412,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-FAB2D612D4BA.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-7A07D98838C2",
@@ -6339,8 +6430,7 @@
     "tone": 3,
     "image": "assets/products/OH-7A07D98838C2.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-5ED2C1D0B5CA",
@@ -6372,7 +6462,8 @@
     ],
     "tone": 2,
     "image": "assets/products/OH-39205F1A062C.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-4307CE8EB16D",
@@ -6389,7 +6480,7 @@
     "tone": 2,
     "image": "assets/products/OH-4307CE8EB16D.webp",
     "status": "Scheda fotografica",
-    "variante": "6 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-CFCC9A9A2D3D",
@@ -6406,8 +6497,7 @@
     "tone": 7,
     "image": "assets/products/OH-CFCC9A9A2D3D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-0210AEE6DFBD",
@@ -6440,8 +6530,7 @@
     "tone": 6,
     "image": "assets/products/OH-6F51D677B95E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-CB3C272D49A4",
@@ -6473,7 +6562,8 @@
     ],
     "tone": 0,
     "image": "assets/products/OH-F2546D8E0082.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-606C44F2DC1A",
@@ -6490,8 +6580,7 @@
     "tone": 5,
     "image": "assets/products/OH-606C44F2DC1A.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-50F2C032182D",
@@ -6508,8 +6597,7 @@
     "tone": 3,
     "image": "assets/products/OH-50F2C032182D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-AC09DD731E0C",
@@ -6574,8 +6662,7 @@
     "tone": 5,
     "image": "assets/products/OH-78E2BBA32301.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-469859E4B79B"
+    "vetrina": false
   },
   {
     "id": "OH-4B0945DCEEC5",
@@ -6592,8 +6679,7 @@
     "tone": 7,
     "image": "assets/products/OH-4B0945DCEEC5.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-844E0762D4C6"
+    "vetrina": false
   },
   {
     "id": "OH-3DB62CAABE8A",
@@ -6610,8 +6696,7 @@
     "tone": 4,
     "image": "assets/products/OH-3DB62CAABE8A.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-4998644B87D6"
+    "vetrina": false
   },
   {
     "id": "OH-8738134899F0",
@@ -6628,8 +6713,7 @@
     "tone": 3,
     "image": "assets/products/OH-8738134899F0.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-C14D9E0CC810"
+    "vetrina": false
   },
   {
     "id": "OH-142CC9280AC3",
@@ -6646,7 +6730,7 @@
     "tone": 4,
     "image": "assets/products/OH-142CC9280AC3.webp",
     "status": "Scheda fotografica",
-    "variante": "9 di 9"
+    "vetrina": false
   },
   {
     "id": "OH-C744BA3388F0",
@@ -6727,7 +6811,7 @@
     "tone": 0,
     "image": "assets/products/OH-03F4661DD7BD.webp",
     "status": "Scheda fotografica",
-    "variante": "11 di 11"
+    "vetrina": false
   },
   {
     "id": "OH-334A3C1BB471",
@@ -6776,8 +6860,7 @@
     "tone": 6,
     "image": "assets/products/OH-20390FD5A9D9.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-CE8FA242690C"
+    "vetrina": false
   },
   {
     "id": "OH-369A3339D085",
@@ -6794,8 +6877,7 @@
     "tone": 0,
     "image": "assets/products/OH-369A3339D085.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7D8A48E99BE6"
+    "vetrina": false
   },
   {
     "id": "OH-311959DF67D1",
@@ -6811,7 +6893,8 @@
     ],
     "tone": 4,
     "image": "assets/products/OH-311959DF67D1.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-CE124252ED34",
@@ -6828,8 +6911,7 @@
     "tone": 4,
     "image": "assets/products/OH-CE124252ED34.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-66E680A4FF32"
+    "vetrina": false
   },
   {
     "id": "OH-5BAB1351EDE8",
@@ -6861,7 +6943,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-6F430A1B98A4.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-A7E22E815166",
@@ -6878,7 +6961,7 @@
     "tone": 3,
     "image": "assets/products/OH-A7E22E815166.webp",
     "status": "Scheda fotografica",
-    "variante": "7 di 7"
+    "vetrina": false
   },
   {
     "id": "OH-603A257F6F0C",
@@ -6895,8 +6978,7 @@
     "tone": 0,
     "image": "assets/products/OH-603A257F6F0C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-11DE03266FB8"
+    "vetrina": false
   },
   {
     "id": "OH-3BDE45C46EAF",
@@ -6929,8 +7011,7 @@
     "tone": 7,
     "image": "assets/products/OH-1A242A3F8193.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-FA458370428C"
+    "vetrina": false
   },
   {
     "id": "OH-90D880F84BF4",
@@ -6962,7 +7043,8 @@
     ],
     "tone": 3,
     "image": "assets/products/OH-050F8B523DCE.webp",
-    "status": "Scheda fotografica"
+    "status": "Scheda fotografica",
+    "vetrina": false
   },
   {
     "id": "OH-9DAE99934D48",
@@ -6979,8 +7061,7 @@
     "tone": 6,
     "image": "assets/products/OH-9DAE99934D48.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-7EAD59B0C4F6"
+    "vetrina": false
   },
   {
     "id": "OH-0FA8E64A5C7E",
@@ -6997,8 +7078,7 @@
     "tone": 4,
     "image": "assets/products/OH-0FA8E64A5C7E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false,
-    "duplicatoDi": "OH-1BA2CF6B6A1D"
+    "vetrina": false
   },
   {
     "id": "OH-D47C694F6712",
@@ -7031,5 +7111,31 @@
     "tone": 6,
     "image": "assets/products/OH-EBEDD1719745.webp",
     "status": "Scheda fotografica"
+  },
+  {
+    "id": "OH-4D65578D838A",
+    "brand": "ASICS",
+    "model": "ASICS GEL-1130 — Nero e argento",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "status": "Selezione fotografica",
+    "tone": 5,
+    "tags": [
+      "asics",
+      "running"
+    ],
+    "image": "assets/products/OH-4D65578D838A_1.webp",
+    "images": [
+      "assets/products/OH-4D65578D838A_1.webp",
+      "assets/products/OH-4D65578D838A_2.webp",
+      "assets/products/OH-4D65578D838A_6.webp"
+    ],
+    "descrizione": "Silhouette running dall'ispirazione rétro, con tomaia nera, dettagli argento, pannelli sovrapposti e suola strutturata.",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
   }
 ]
