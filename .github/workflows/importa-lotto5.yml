@@ -1,0 +1,51 @@
+name: OHANA - Lotto 5 (rilascio controllato)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/importa_lotto5.py"
+      - ".github/workflows/importa-lotto5.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    name: Verifica sintassi e isolamento del catalogo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compila lo script senza importare foto
+        run: python3 -m py_compile tools/importa_lotto5.py
+      - name: Valida il sito esistente
+        run: python3 tools/prepara_pages.py
+
+  release:
+    name: Importa lotto 5 solo dopo autorizzazione privata
+    if: github.event_name == 'workflow_dispatch'
+    needs: syntax
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verifica accesso al repository privato
+        env:
+          TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: test -n "$TOKEN" || { echo "::error::Token privato non configurato"; exit 1; }
+      - name: Importa fotografie e schede solo con autorizzazione registrata
+        env:
+          OHANA_PRIVATE_READ_TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: python3 tools/importa_lotto5.py
+      - name: Controlla intero sito prima del commit
+        run: python3 tools/prepara_pages.py
+      - name: Commit additivo preservando tutte le schede precedenti
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalogo.json assets/products/
+          git diff --cached --quiet || (git commit -m "OHANA: pubblica lotto 5 validato (66 scarpe, 198 foto)" && git fetch origin main && git rebase origin/main && git push)
