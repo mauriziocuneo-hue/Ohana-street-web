@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/importa_lotto5.py"
       - ".github/workflows/importa-lotto5.yml"
+      - "release/lotto5-release-approved.txt"
   workflow_dispatch:
 
 permissions:
@@ -23,7 +24,7 @@ jobs:
 
   release:
     name: Importa lotto 5 solo dopo autorizzazione privata
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.event.head_commit.message == '[OHANA] Pubblica lotto 5 autorizzato')
     needs: syntax
     runs-on: ubuntu-latest
     timeout-minutes: 30
