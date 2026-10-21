@@ -10,7 +10,7 @@ root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
 assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
-required = ["index.html", "catalogo.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js"]
+required = ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
     if file.endswith((".html", ".json", ".js")):
@@ -62,6 +62,27 @@ for p in catalog:
                 assert p.get("modelloVerificato") is True, f"Modello non verificato: {p['id']}"
                 assert isinstance(p.get("descrizione"),str) and 35<=len(p["descrizione"])<=350, f"Descrizione mancante: {p['id']}"
 
+# L'indice modelli e' una fotografia informativa del censimento: non va confuso con schede prodotto pubblicabili.
+models = json.loads(Path("modelli.json").read_text(encoding="utf-8"))
+assert models.get("version") == 1 and models.get("totale_album_scarpe") == 16841, "Indice modelli incompleto"
+brands = models.get("brands")
+assert isinstance(brands, list) and len(brands) == 20, "Mancano gruppi di marchio"
+assert len(set(b.get("brand") for b in brands)) == 20, "Marchi ripetuti nell'indice"
+assert sum(b.get("album_censiti",0) for b in brands) == 16841, "Album non corrispondenti al censimento"
+family_count = 0
+for brand_row in brands:
+    entries=brand_row.get("modelli")
+    assert isinstance(entries,list), "Elenco famiglie non valido"
+    names=set()
+    for family in entries:
+        name=family.get("nome","")
+        assert isinstance(name,str) and 2 <= len(name) <= 90 and not re.search(r"[\\u3400-\\u9fff\\uf900-\\ufaff]", name), "Nome famiglia non valido"
+        assert name not in names, "Famiglia ripetuta"
+        names.add(name)
+        assert isinstance(family.get("album_ricondotti"),int) and 0 < family["album_ricondotti"] <= brand_row["album_censiti"], "Conteggio famiglia non valido"
+        family_count += 1
+assert 140 <= family_count <= 220, "Indice incompleto o imprevisto"
+assert "href=\"modelli.html\"" in Path("index.html").read_text(encoding="utf-8"), "Collegamento ai modelli mancante"
 assert "href=\"gestione/\"" in Path("index.html").read_text(encoding="utf-8"), "Il pulsante gestori manca"
 config = Path("gestione/config.js").read_text(encoding="utf-8")
 assert "tqkmrejfbvzchfplgxzl.supabase.co" in config, "Configurazione Supabase da verificare"
@@ -69,7 +90,7 @@ assert "service_role" not in config and "sb_secret_" not in config, "Chiave segr
 
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
-for item in ["index.html", "catalogo.json", "favicon.svg"]:
+for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg"]:
     shutil.copy2(item, dest / item)
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js"]:
@@ -78,4 +99,4 @@ for item in ["ohana-chat.css", "ohana-chat.js"]:
 for item in ["index.html", "config.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
 (dest / ".nojekyll").write_text("", encoding="utf-8")
-print(f"PASS: {len(catalog)} schede archiviate; {len(visible_photo_digests)} foto di scarpe distinte esposte; nessun link Yupoo pubblico.")
+print(f"PASS: {len(catalog)} schede archiviate; {len(visible_photo_digests)} foto di scarpe distinte esposte; {family_count} famiglie modello consultabili, nessun link privato.")
