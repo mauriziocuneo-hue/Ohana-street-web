@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "generated_from": "Censimento preliminare OHANA-Street — 21 ottobre 2026",
+  "tipo": "Indice famiglie da identificazione testuale (non disponibilità commerciale verificata)",
+  "totale_album_scarpe": 16841,
+  "brands": [
+    {
+      "brand": "Nike",
+      "album_censiti": 2319,
+      "album_con_famiglia_riconosciuta": 1166,
+      "modelli": [
+        {
+          "nome": "Air Max",
+          "album_ricondotti": 225
+        },
+        {
+          "nome": "Air Max 1",
+          "album_ricondotti": 210
+        },
+        {
+          "nome": "Air Max 90",
+          "album_ricondotti": 162
+        },
+        {
+          "nome": "Air Max 95",
+          "album_ricondotti": 119
+        },
+        {
+          "nome": "Air Max 97",
+          "album_ricondotti": 67
+        },
+        {
+          "nome": "P-6000",
+          "album_ricondotti": 61
+        },
+        {
+          "nome": "Shox",
+          "album_ricondotti": 58
+        },
+        {
+          "nome": "Metcon",
+          "album_ricondotti": 49
+        },
+        {
+          "nome": "ZoomX",
+          "album_ricondotti": 39
+        },
+        {
+          "nome": "Cortez",
+          "album_ricondotti": 29
+        },
+        {
+          "nome": "Air Max Plus",
+          "album_ricondotti": 28
+        },
+        {
+          "nome": "Blazer",
+          "album_ricondotti": 25
+        },
+        {
+          "nome": "Vapormax",
+          "album_ricondotti": 24
+        },
+        {
+          "nome": "V2K Run",
+          "album_ricondotti": 20
+        },
+        {
+          "nome": "Vomero 5",
+          "album_ricondotti": 17
+        },
+        {
+          "nome": "Zoom Structure",
+          "album_ricondotti": 16
+        },
+        {
+          "nome": "Pegasus",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "React Infinity",
+          "album_ricondotti": 6
+        },
+        {
+          "nome": "Dunk",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Air Force 1",
+          "album_ricondotti": 1
+        }
+      ]
+    },
+    {
+      "brand": "Jordan",
+      "album_censiti": 1922,
+      "album_con_famiglia_riconosciuta": 1476,
+      "modelli": [
+        {
+          "nome": "Air Jordan 1",
+          "album_ricondotti": 631
+        },
+        {
+          "nome": "Air Jordan 4",
+          "album_ricondotti": 464
+        },
+        {
+          "nome": "Air Jordan 12",
+          "album_ricondotti": 124
+        },
+        {
+          "nome": "Air Jordan 11",
+          "album_ricondotti": 58
+        },
+        {
+          "nome": "Air Jordan 3",
+          "album_ricondotti": 52
+        },
+        {
+          "nome": "Air Jordan 5",
+          "album_ricondotti": 38
+        },
+        {
+          "nome": "Air Jordan 6",
+          "album_ricondotti": 38
+        },
+        {
+          "nome": "Air Jordan 8",
+          "album_ricondotti": 37
+        },
+        {
+          "nome": "Air Jordan 13",
+          "album_ricondotti": 22
+        },
+        {
+          "nome": "Jordan Spizike",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "Air Jordan 14",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "Air Jordan 10",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Air Jordan 2",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Jordan Legacy 312",
+          "album_ricondotti": 1
+        },
+        {
+          "nome": "Air Jordan 23",
+          "album_ricondotti": 1
+        }
+      ]
+    },
+    {
+      "brand": "New Balance",
+      "album_censiti": 1888,
+      "album_con_famiglia_riconosciuta": 1375,
+      "modelli": [
+        {
+          "nome": "New Balance 9060",
+          "album_ricondotti": 369
+        },
+        {
+          "nome": "New Balance 1906",
+          "album_ricondotti": 294
+        },
+        {
+          "nome": "New Balance 530",
+          "album_ricondotti": 145
+        },
+        {
+          "nome": "New Balance 2000",
+          "album_ricondotti": 102
+        },
+        {
+          "nome": "New Balance 204L",
+          "album_ricondotti": 93
+        },
+        {
+          "nome": "New Balance 740",
+          "album_ricondotti": 65
+        },
+        {
+          "nome": "New Balance 327",
+          "album_ricondotti": 58
+        },
+        {
+          "nome": "New Balance 574",
+          "album_ricondotti": 44
+        },
+        {
+          "nome": "New Balance 2002R",
+          "album_ricondotti": 39
+        },
+        {
+          "nome": "New Balance 1000",
+          "album_ricondotti": 35
+        },
+        {
+          "nome": "New Balance 471",
+          "album_ricondotti": 31
+        },
+        {
+          "nome": "New Balance 1080",
+          "album_ricondotti": 23
+        },
+        {
+          "nome": "New Balance 990",
+          "album_ricondotti": 22
+        },
+        {
+          "nome": "New Balance 2002",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "New Balance 880",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "New Balance 993",
+          "album_ricondotti": 7
+        },
+        {
+          "nome": "New Balance 992",
+          "album_ricondotti": 7
+        },
+        {
+          "nome": "New Balance 860",
+          "album_ricondotti": 5
+        },
+        {
+          "nome": "New Balance 1300",
+          "album_ricondotti": 4
+        },
+        {
+          "nome": "New Balance 550",
+          "album_ricondotti": 4
+        }
+      ]
+    },
+    {
+      "brand": "Louis Vuitton",
+      "album_censiti": 1462,
+      "album_con_famiglia_riconosciuta": 365,
+      "modelli": [
+        {
+          "nome": "LV Trainer",
+          "album_ricondotti": 305
+        },
+        {
+          "nome": "LV Archlight",
+          "album_ricondotti": 27
+        },
+        {
+          "nome": "LV Skate",
+          "album_ricondotti": 12
+        },
+        {
+          "nome": "LV Trainer Maxi",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "LV Tatic Runner",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "LV Footprint",
+          "album_ricondotti": 4
+        }
+      ]
+    },
+    {
+      "brand": "Chanel",
+      "album_censiti": 1402,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "Prada",
+      "album_censiti": 1191,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "Loro Piana",
+      "album_censiti": 1047,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "Scarpe da calcio",
+      "album_censiti": 1004,
+      "album_con_famiglia_riconosciuta": 761,
+      "modelli": [
+        {
+          "nome": "Nike Mercurial Vapor",
+          "album_ricondotti": 170
+        },
+        {
+          "nome": "Nike Phantom",
+          "album_ricondotti": 149
+        },
+        {
+          "nome": "Adidas Predator",
+          "album_ricondotti": 147
+        },
+        {
+          "nome": "Nike Mercurial Superfly",
+          "album_ricondotti": 67
+        },
+        {
+          "nome": "Nike Tiempo",
+          "album_ricondotti": 38
+        },
+        {
+          "nome": "Adidas F50",
+          "album_ricondotti": 35
+        },
+        {
+          "nome": "Adidas Copa Pure",
+          "album_ricondotti": 25
+        },
+        {
+          "nome": "Nike T90",
+          "album_ricondotti": 24
+        },
+        {
+          "nome": "Joma (modello non specificato)",
+          "album_ricondotti": 23
+        },
+        {
+          "nome": "Nike Hypervenom Phantom",
+          "album_ricondotti": 22
+        },
+        {
+          "nome": "Puma Future",
+          "album_ricondotti": 22
+        },
+        {
+          "nome": "Puma Ultra",
+          "album_ricondotti": 15
+        },
+        {
+          "nome": "Adidas Copa",
+          "album_ricondotti": 12
+        },
+        {
+          "nome": "Nike Mercurial (versione non specificata)",
+          "album_ricondotti": 7
+        },
+        {
+          "nome": "Adidas X Crazyfast",
+          "album_ricondotti": 5
+        }
+      ]
+    },
+    {
+      "brand": "Golden Goose",
+      "album_censiti": 952,
+      "album_con_famiglia_riconosciuta": 780,
+      "modelli": [
+        {
+          "nome": "Super-Star",
+          "album_ricondotti": 404
+        },
+        {
+          "nome": "Ball Star",
+          "album_ricondotti": 70
+        },
+        {
+          "nome": "Stardan",
+          "album_ricondotti": 54
+        },
+        {
+          "nome": "Running Sole",
+          "album_ricondotti": 49
+        },
+        {
+          "nome": "Slide",
+          "album_ricondotti": 47
+        },
+        {
+          "nome": "Francy",
+          "album_ricondotti": 43
+        },
+        {
+          "nome": "Hi-Star",
+          "album_ricondotti": 31
+        },
+        {
+          "nome": "Mid Star",
+          "album_ricondotti": 30
+        },
+        {
+          "nome": "Starter",
+          "album_ricondotti": 23
+        },
+        {
+          "nome": "Dad-Star",
+          "album_ricondotti": 14
+        },
+        {
+          "nome": "Sky-Star",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "V-Star",
+          "album_ricondotti": 7
+        }
+      ]
+    },
+    {
+      "brand": "Balenciaga",
+      "album_censiti": 896,
+      "album_con_famiglia_riconosciuta": 445,
+      "modelli": [
+        {
+          "nome": "Triple S",
+          "album_ricondotti": 168
+        },
+        {
+          "nome": "Runner",
+          "album_ricondotti": 115
+        },
+        {
+          "nome": "Track",
+          "album_ricondotti": 58
+        },
+        {
+          "nome": "3XL",
+          "album_ricondotti": 42
+        },
+        {
+          "nome": "Track 2",
+          "album_ricondotti": 25
+        },
+        {
+          "nome": "Defender",
+          "album_ricondotti": 14
+        },
+        {
+          "nome": "Cargo",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "Radar",
+          "album_ricondotti": 5
+        },
+        {
+          "nome": "Phantom",
+          "album_ricondotti": 5
+        },
+        {
+          "nome": "X-Pander",
+          "album_ricondotti": 4
+        }
+      ]
+    },
+    {
+      "brand": "Gucci",
+      "album_censiti": 545,
+      "album_con_famiglia_riconosciuta": 77,
+      "modelli": [
+        {
+          "nome": "Gucci Rhyton",
+          "album_ricondotti": 38
+        },
+        {
+          "nome": "Gucci Chunky B",
+          "album_ricondotti": 19
+        },
+        {
+          "nome": "Gucci Run",
+          "album_ricondotti": 12
+        },
+        {
+          "nome": "Gucci MAC80",
+          "album_ricondotti": 8
+        }
+      ]
+    },
+    {
+      "brand": "Adidas",
+      "album_censiti": 525,
+      "album_con_famiglia_riconosciuta": 301,
+      "modelli": [
+        {
+          "nome": "Gazelle Indoor",
+          "album_ricondotti": 43
+        },
+        {
+          "nome": "Samba OG",
+          "album_ricondotti": 41
+        },
+        {
+          "nome": "Superstar",
+          "album_ricondotti": 38
+        },
+        {
+          "nome": "Adizero Evo SL",
+          "album_ricondotti": 36
+        },
+        {
+          "nome": "Adizero",
+          "album_ricondotti": 33
+        },
+        {
+          "nome": "Gazelle Bold",
+          "album_ricondotti": 30
+        },
+        {
+          "nome": "Handball Spezial",
+          "album_ricondotti": 17
+        },
+        {
+          "nome": "Gazelle",
+          "album_ricondotti": 11
+        },
+        {
+          "nome": "Formotion One",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "Forum",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "Ultraboost",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "Samba",
+          "album_ricondotti": 8
+        },
+        {
+          "nome": "SL 72",
+          "album_ricondotti": 6
+        },
+        {
+          "nome": "Samba Mary Jane",
+          "album_ricondotti": 4
+        },
+        {
+          "nome": "Campus 00s",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "Stan Smith",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Samba LT",
+          "album_ricondotti": 1
+        },
+        {
+          "nome": "Ozweego",
+          "album_ricondotti": 1
+        },
+        {
+          "nome": "Campus",
+          "album_ricondotti": 1
+        }
+      ]
+    },
+    {
+      "brand": "Hermès",
+      "album_censiti": 490,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "Armani",
+      "album_censiti": 433,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "ASICS",
+      "album_censiti": 277,
+      "album_con_famiglia_riconosciuta": 122,
+      "modelli": [
+        {
+          "nome": "Onitsuka Tiger Mexico 66",
+          "album_ricondotti": 47
+        },
+        {
+          "nome": "ASICS GEL-Nimbus",
+          "album_ricondotti": 11
+        },
+        {
+          "nome": "ASICS GEL-1130",
+          "album_ricondotti": 7
+        },
+        {
+          "nome": "Onitsuka Tiger EDR 78",
+          "album_ricondotti": 6
+        },
+        {
+          "nome": "ASICS GEL-Kayano 14",
+          "album_ricondotti": 6
+        },
+        {
+          "nome": "ASICS GEL-Trabuco 13",
+          "album_ricondotti": 5
+        },
+        {
+          "nome": "ASICS GEL-Kayano (altro)",
+          "album_ricondotti": 5
+        },
+        {
+          "nome": "ASICS GEL-Venture 6",
+          "album_ricondotti": 4
+        },
+        {
+          "nome": "ASICS GEL-NYC",
+          "album_ricondotti": 4
+        },
+        {
+          "nome": "ASICS Megablast",
+          "album_ricondotti": 4
+        },
+        {
+          "nome": "ASICS GEL-Kayano 31",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "ASICS GEL-DS Trainer 14",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "ASICS GEL-Kayano 32",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "ASICS GEL-Kinetic Fluent",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "ASICS GEL-Quantum 360",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "ASICS GEL-Kinetic",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "ASICS GT-2160",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "ASICS GEL-Quantum Kinetic",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Onitsuka Tiger Corsair",
+          "album_ricondotti": 1
+        },
+        {
+          "nome": "ASICS GEL-Quantum (altro)",
+          "album_ricondotti": 1
+        }
+      ]
+    },
+    {
+      "brand": "On Running",
+      "album_censiti": 134,
+      "album_con_famiglia_riconosciuta": 94,
+      "modelli": [
+        {
+          "nome": "Cloudmonster 3",
+          "album_ricondotti": 21
+        },
+        {
+          "nome": "Cloudmonster",
+          "album_ricondotti": 21
+        },
+        {
+          "nome": "Cloudmonster 2",
+          "album_ricondotti": 21
+        },
+        {
+          "nome": "Cloudmonster 1",
+          "album_ricondotti": 12
+        },
+        {
+          "nome": "Cloudmonster Void",
+          "album_ricondotti": 10
+        },
+        {
+          "nome": "Cloudflow 4",
+          "album_ricondotti": 9
+        }
+      ]
+    },
+    {
+      "brand": "Salomon",
+      "album_censiti": 130,
+      "album_con_famiglia_riconosciuta": 120,
+      "modelli": [
+        {
+          "nome": "XT-6",
+          "album_ricondotti": 32
+        },
+        {
+          "nome": "XA Pro 3D",
+          "album_ricondotti": 31
+        },
+        {
+          "nome": "XT-Quest",
+          "album_ricondotti": 23
+        },
+        {
+          "nome": "XT-Quest ADV",
+          "album_ricondotti": 9
+        },
+        {
+          "nome": "XT-6 Expanse",
+          "album_ricondotti": 7
+        },
+        {
+          "nome": "XT-6 GTX",
+          "album_ricondotti": 6
+        },
+        {
+          "nome": "XT-MM6",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "X-Alp",
+          "album_ricondotti": 3
+        },
+        {
+          "nome": "XT-4",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "XT-4 Mule",
+          "album_ricondotti": 2
+        },
+        {
+          "nome": "Ultra Glide 4",
+          "album_ricondotti": 1
+        },
+        {
+          "nome": "XT Pu.Re Advanced",
+          "album_ricondotti": 1
+        }
+      ]
+    },
+    {
+      "brand": "Dior",
+      "album_censiti": 117,
+      "album_con_famiglia_riconosciuta": 0,
+      "modelli": []
+    },
+    {
+      "brand": "UGG",
+      "album_censiti": 106,
+      "album_con_famiglia_riconosciuta": 3,
+      "modelli": [
+        {
+          "nome": "Neumel II",
+          "album_ricondotti": 3
+        }
+      ]
+    },
+    {
+      "brand": "Saucony",
+      "album_censiti": 1,
+      "album_con_famiglia_riconosciuta": 1,
+      "modelli": [
+        {
+          "nome": "ProGrid Omni 9",
+          "album_ricondotti": 1
+        }
+      ]
+    }
+  ]
+}
