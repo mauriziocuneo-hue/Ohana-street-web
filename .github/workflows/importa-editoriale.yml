@@ -1,0 +1,28 @@
+name: OHANA - Importa collezione editoriale privata
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  importa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verifica accesso privato
+        env:
+          PRIVATE_TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: |
+          test -n "$PRIVATE_TOKEN" || { echo "::error::Configura OHANA_PRIVATE_READ_TOKEN (Contents: Read sul repository Ohana-street)"; exit 1; }
+      - name: Scarica esclusivamente le 36 foto pubblicabili
+        env:
+          PRIVATE_TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: python3 tools/importa_da_privato.py
+      - name: Verifica il catalogo prima di pubblicare
+        run: python3 tools/prepara_pages.py
+      - name: Commit atomico di catalogo e fotografie
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalogo.json assets/products/
+          git diff --cached --quiet || (git commit -m "Produzione: 12 sneakers curate, 36 foto" && git push)
