@@ -1,0 +1,32 @@
+name: OHANA - Importa lotto di sneakers revisionate
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/importa_lotto_revisionato.py"
+      - ".github/workflows/importa-lotto-revisionato.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-reviewed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verifica token accesso privato
+        env:
+          TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: test -n "$TOKEN" || { echo "::error::Manca accesso in sola lettura al repo privato"; exit 1; }
+      - name: Importa SOLO 12 schede con 3 foto, senza link dei fornitori
+        env:
+          OHANA_PRIVATE_READ_TOKEN: ${{ secrets.OHANA_PRIVATE_READ_TOKEN }}
+        run: python3 tools/importa_lotto_revisionato.py
+      - name: Valida integralmente catalogo e contenuti pubblici
+        run: python3 tools/prepara_pages.py
+      - name: Pubblica aggiornamento additivo sul repository pubblico
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalogo.json assets/products/
+          git diff --cached --quiet || (git commit -m "OHANA: aggiungi 12 sneakers fotografiche revisionate preservando le esistenti" && git fetch origin main && git rebase origin/main && git push)
