@@ -76,7 +76,7 @@ for brand_row in brands:
     names=set()
     for family in entries:
         name=family.get("nome","")
-        assert isinstance(name,str) and 2 <= len(name) <= 90 and not re.search(r"[\\u3400-\\u9fff\\uf900-\\ufaff]", name), "Nome famiglia non valido"
+        assert isinstance(name,str) and 2 <= len(name) <= 90 and not re.search(r"[\u3400-\u9fff\uf900-\ufaff]", name), "Nome famiglia non valido"
         assert name not in names, "Famiglia ripetuta"
         names.add(name)
         assert isinstance(family.get("album_ricondotti"),int) and 0 < family["album_ricondotti"] <= brand_row["album_censiti"], "Conteggio famiglia non valido"
