@@ -1,0 +1,5 @@
+OHANA STREET — Lotto 5 release trigger
+Staging private: LOTTO5_66_SCHEDE_STAGING_CONSOLIDATO_20261021.json
+Manifest Git blob: 50aaa8b02ea46aa3a6c821dc9248d025271ceec5
+Expected change: 64 new catalog rows, 2 legacy Cortez upgraded, 198 new WebP images.
+Do not copy supplier links to the public repository.
