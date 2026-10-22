@@ -53,6 +53,8 @@
     function message() {
       const product = data.product.trim() || 'Richiesta generica';
       const size = data.size.trim() || 'Da definire';
+      const code = product.match(/\b(?:OHY-\d{3}|OH-[A-F0-9]{12})\b/i);
+      const link = code ? location.origin + location.pathname + '?articolo=' + encodeURIComponent(code[0].toUpperCase()) : '';
       return [
         'Ciao OHANA STREET! 👋',
         'Vorrei chiedere informazioni su un articolo del vostro catalogo.',
@@ -60,6 +62,7 @@
         'Prodotto: ' + product,
         'Taglia: ' + size,
         'Richiesta: ' + data.question.trim(),
+        ...(link ? ['Scheda: ' + link] : []),
         '',
         'Messaggio preparato dal sito OHANA STREET.'
       ].join('\n');
@@ -103,7 +106,7 @@
         question = 'Quale taglia cerchi?';
         tip = 'Puoi anche saltare questo passaggio se non hai una taglia precisa.';
         field = textField('ohana-size', 'Taglia desiderata (facoltativa)', data.size, false, 50);
-        field[1].placeholder = 'Es. 42, M, L…';
+        field[1].placeholder = 'Es. 42 · altre taglie su richiesta';
       } else if (step === 2) {
         question = 'Cosa vuoi sapere?';
         tip = 'Per esempio puoi chiedere informazioni su misure, colori e disponibilità.';

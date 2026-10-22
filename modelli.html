@@ -54,6 +54,7 @@ footer strong{color:white}
 @media(max-width:1000px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.controls{grid-template-columns:1fr}.head-links a{padding:10px}.logo{font-size:23px}}
 @media(max-width:430px){.cards{gap:10px}.card{padding:12px;min-height:150px}.stat{min-width:calc(50% - 6px)}.card h3{font-size:23px}.head-links{gap:5px}.head-links a{font-size:10px;padding:9px}.logo{font-size:20px}.logo small{letter-spacing:1px}}
+@media(max-width:430px){header .wrap{flex-wrap:wrap;gap:10px;padding:12px 0}.head-links{margin-left:auto}.card h3{overflow-wrap:anywhere}}
 </style>
 </head>
 <body>
@@ -83,7 +84,7 @@ function createCard(model,brand){
  const top=node('div');
  top.append(node('div','eyebrow',brand),node('h3','',model.nome));
  const foot=node('div','foot');
- foot.append(node('span','pill','Da verificare'),node('span','',model.album_ricondotti.toLocaleString('it-IT')+' album censiti'));
+ foot.append(node('span','pill','Da verificare'),node('span','',model.album_ricondotti.toLocaleString('it-IT')+(model.album_ricondotti===1?' album censito':' album censiti')));
  card.append(top,foot);
  return card;
 }

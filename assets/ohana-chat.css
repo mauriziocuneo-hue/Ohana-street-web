@@ -5,7 +5,7 @@
 .ohc-fab{border:2px solid #123e40;border-radius:100px;min-height:58px;padding:13px 20px;display:flex;align-items:center;gap:10px;background:#65dfc6;color:#123e40;font-size:14px;font-weight:900;box-shadow:4px 5px 0 #123e40;cursor:pointer}
 .ohc-fab:hover{background:#ffde86}
 .ohc-fab-mark{font-size:21px;line-height:1}
-.ohc-panel{position:absolute;right:0;bottom:74px;width:min(380px,calc(100vw - 24px));max-height:min(590px,calc(100dvh - 110px));display:flex;flex-direction:column;overflow:hidden;background:#fcf8ee;border:2px solid #123e40;border-radius:18px;box-shadow:7px 8px 0 #123e40}
+.ohc-panel{position:absolute;right:0;bottom:74px;width:min(380px,calc(100vw - 48px));max-height:min(590px,calc(100dvh - 110px));display:flex;flex-direction:column;overflow:hidden;background:#fcf8ee;border:2px solid #123e40;border-radius:18px;box-shadow:7px 8px 0 #123e40}
 .ohc-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 18px;color:#fff;background:#123e40}
 .ohc-header strong{display:block;font-weight:900;font-size:18px;letter-spacing:.02em}
 .ohc-header span{display:block;margin-top:4px;color:#a5e5d4;font-size:11px}
@@ -27,5 +27,5 @@
 .ohc-error{color:#9a3029;font-size:12px;margin:10px 0 0}
 .ohc-summary{background:white;border:1px solid #bcd4ca;border-radius:10px;padding:13px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.55}
 .ohc-send{text-decoration:none;display:flex;align-items:center;justify-content:center}
-@media(max-width:480px){.ohc-root{right:13px;bottom:14px}.ohc-fab{padding:11px 15px;min-height:53px}.ohc-panel{bottom:67px;width:calc(100vw - 26px);max-height:calc(100dvh - 99px)}}
+@media(max-width:480px){.ohc-root{right:13px;bottom:14px}.ohc-fab{padding:11px 15px;min-height:53px}.ohc-panel{bottom:67px;width:calc(100vw - 48px);max-height:calc(100dvh - 99px)}}
 @media(prefers-reduced-motion:reduce){.ohc-root *{scroll-behavior:auto}}

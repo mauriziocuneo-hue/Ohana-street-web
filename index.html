@@ -102,7 +102,7 @@
     if(state.sort==='brand')r.sort((a,b)=>a.brand.localeCompare(b.brand,'it')||a.model.localeCompare(b.model,'it'));
     if(state.sort==='model')r.sort((a,b)=>a.model.localeCompare(b.model,'it'));
     $('#total').textContent=PRODUCTS.length;
-    $('#results').textContent=`${r.length} ${r.length===1?'articolo':'articoli'} trovati`;
+    $('#results').textContent=`${r.length} ${r.length===1?'articolo trovato':'articoli trovati'}`;
     $('#favToggle').setAttribute('aria-pressed',String(state.favoritesOnly));$('#favToggle').textContent=state.favoritesOnly?'♥ Mostra tutte':'♡ Solo preferiti';
     $('#moreProducts').hidden=r.length<=shownProducts;
     $('#grid').innerHTML=r.length?r.slice(0,shownProducts).map(p=>{
