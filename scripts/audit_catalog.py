@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """OHANA Street: validate catalog structure and locally stored product photos."""
 import json
+import hashlib
 import re
 import sys
 from collections import Counter
@@ -11,6 +12,8 @@ items = json.loads((ROOT / "catalogo.json").read_text(encoding="utf-8"))
 active = [p for p in items if p.get("genere") == "Scarpe" and p.get("vetrina") is not False]
 errors = []
 warnings = []
+image_hashes = {}
+image_total_bytes = 0
 ids = Counter(p.get("id", "") for p in active)
 for item_id, count in ids.items():
     if not item_id or count > 1:
@@ -32,8 +35,20 @@ for p in active:
         photo = ROOT / name
         if not photo.is_file():
             errors.append(f"{pid}: foto mancante {name}")
-        elif photo.stat().st_size < 1000:
-            warnings.append(f"{pid}: foto sospettosamente piccola {name}")
+        else:
+            size = photo.stat().st_size
+            image_total_bytes += size
+            if size < 1000:
+                warnings.append(f"{pid}: foto sospettosamente piccola {name}")
+            with photo.open("rb") as fh:
+                signature = fh.read(12)
+                if signature[:4] != b"RIFF" or signature[8:12] != b"WEBP":
+                    errors.append(f"{pid}: file non valido come WebP: {name}")
+            digest = hashlib.sha256(photo.read_bytes()).hexdigest()
+            other = image_hashes.get(digest)
+            if other and other != name:
+                warnings.append(f"{pid}: immagine identica ad altro file {other}")
+            image_hashes[digest] = name
     if not (p.get("model") or "").strip() or not (p.get("brand") or "").strip():
         errors.append(f"{pid}: marchio o modello mancante")
     if not (p.get("descrizione") or "").strip():
@@ -43,5 +58,6 @@ for w in warnings:
     print("WARN:", w)
 for e in errors:
     print("ERRORE:", e)
+print(f"File fotografici unici SHA256: {len(image_hashes)}; byte immagini controllate: {image_total_bytes}")
 print(f"Esito: {len(errors)} errori, {len(warnings)} avvisi")
 sys.exit(1 if errors else 0)
