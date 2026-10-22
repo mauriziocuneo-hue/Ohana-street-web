@@ -10544,5 +10544,317 @@
     "modelloVerificato": true,
     "selezione": "editoriale",
     "vetrina": true
+  },
+  {
+    "id": "OH-192FE6F2E4B8",
+    "brand": "New Balance",
+    "model": "New Balance 204L — Argento e beige",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "new balance",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-192FE6F2E4B8_1.webp",
+    "images": [
+      "assets/products/OH-192FE6F2E4B8_1.webp",
+      "assets/products/OH-192FE6F2E4B8_2.webp",
+      "assets/products/OH-192FE6F2E4B8_3.webp"
+    ],
+    "descrizione": "Sneaker dal profilo basso con pannelli argentati, accenti beige e suola chiara. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-3883F7BDE78D",
+    "brand": "New Balance",
+    "model": "New Balance 204L — Bianco e blu navy",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "new balance",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-3883F7BDE78D_1.webp",
+    "images": [
+      "assets/products/OH-3883F7BDE78D_1.webp",
+      "assets/products/OH-3883F7BDE78D_2.webp",
+      "assets/products/OH-3883F7BDE78D_3.webp"
+    ],
+    "descrizione": "Profilo basso rétro con tomaia bianca, logo laterale blu e dettagli scuri. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-A18264B589CD",
+    "brand": "New Balance",
+    "model": "New Balance 740 — Bianco e bordeaux",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "new balance",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-A18264B589CD_1.webp",
+    "images": [
+      "assets/products/OH-A18264B589CD_1.webp",
+      "assets/products/OH-A18264B589CD_2.webp",
+      "assets/products/OH-A18264B589CD_3.webp"
+    ],
+    "descrizione": "Scarpa running rétro bianca con inserti bordeaux e profili a contrasto. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-579BD7D7BA9C",
+    "brand": "Adidas",
+    "model": "Adidas SL 72 — Marrone e bianco",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-579BD7D7BA9C_1.webp",
+    "images": [
+      "assets/products/OH-579BD7D7BA9C_1.webp",
+      "assets/products/OH-579BD7D7BA9C_2.webp",
+      "assets/products/OH-579BD7D7BA9C_3.webp"
+    ],
+    "descrizione": "Sneaker bassa marrone con tre strisce bianche e suola chiara. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-122E72C8EFDF",
+    "brand": "Adidas",
+    "model": "Adidas Gazelle Bold — Bianco con dettagli multicolore",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-122E72C8EFDF_1.webp",
+    "images": [
+      "assets/products/OH-122E72C8EFDF_1.webp",
+      "assets/products/OH-122E72C8EFDF_2.webp",
+      "assets/products/OH-122E72C8EFDF_3.webp"
+    ],
+    "descrizione": "Sneaker chiara con strisce multicolore e suola color gomma. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-92FFD9AEACD4",
+    "brand": "Adidas",
+    "model": "Adidas Adizero Adios Pro 4 — Azzurro e rosa",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "adidas",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-92FFD9AEACD4_1.webp",
+    "images": [
+      "assets/products/OH-92FFD9AEACD4_1.webp",
+      "assets/products/OH-92FFD9AEACD4_2.webp",
+      "assets/products/OH-92FFD9AEACD4_3.webp"
+    ],
+    "descrizione": "Scarpa running sportiva azzurra con dettagli rosa e suola sagomata. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-5EA823B3E08C",
+    "brand": "Jordan",
+    "model": "Air Jordan 3 — Bianco e viola",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-5EA823B3E08C_1.webp",
+    "images": [
+      "assets/products/OH-5EA823B3E08C_1.webp",
+      "assets/products/OH-5EA823B3E08C_2.webp",
+      "assets/products/OH-5EA823B3E08C_3.webp"
+    ],
+    "descrizione": "Sneaker bianca con inserti viola, dettagli grigio scuro e suola a contrasto. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-F93C92A52F5C",
+    "brand": "Jordan",
+    "model": "Air Jordan 3 — Bianco, blu e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-F93C92A52F5C_1.webp",
+    "images": [
+      "assets/products/OH-F93C92A52F5C_1.webp",
+      "assets/products/OH-F93C92A52F5C_2.webp",
+      "assets/products/OH-F93C92A52F5C_3.webp"
+    ],
+    "descrizione": "Sneaker Jordan 3 chiara con inserti blu, dettagli rossi e suola bicolore. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-28B7B3F9C85F",
+    "brand": "Salomon",
+    "model": "Salomon XT-Quest — Grigio e nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "salomon",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-28B7B3F9C85F_1.webp",
+    "images": [
+      "assets/products/OH-28B7B3F9C85F_1.webp",
+      "assets/products/OH-28B7B3F9C85F_2.webp",
+      "assets/products/OH-28B7B3F9C85F_3.webp"
+    ],
+    "descrizione": "Scarpa trail dal profilo strutturato in tonalità grigio scuro e nero. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-0CEDFC106A96",
+    "brand": "On Running",
+    "model": "On Cloudmonster 2 — Nero",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "on running",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-0CEDFC106A96_1.webp",
+    "images": [
+      "assets/products/OH-0CEDFC106A96_1.webp",
+      "assets/products/OH-0CEDFC106A96_2.webp",
+      "assets/products/OH-0CEDFC106A96_3.webp"
+    ],
+    "descrizione": "Scarpa running nera con intersuola ad elementi cavi e tomaia tecnica. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-210E4E203D8F",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Defender — Azzurro chiaro",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-210E4E203D8F_1.webp",
+    "images": [
+      "assets/products/OH-210E4E203D8F_1.webp",
+      "assets/products/OH-210E4E203D8F_2.webp",
+      "assets/products/OH-210E4E203D8F_3.webp"
+    ],
+    "descrizione": "Sneaker dal profilo voluminoso azzurro chiaro con suola molto scolpita. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-472578399AAC",
+    "brand": "Balenciaga",
+    "model": "Balenciaga Cargo — Bianco e rosa",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "balenciaga",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-472578399AAC_1.webp",
+    "images": [
+      "assets/products/OH-472578399AAC_1.webp",
+      "assets/products/OH-472578399AAC_2.webp",
+      "assets/products/OH-472578399AAC_3.webp"
+    ],
+    "descrizione": "Sneaker voluminosa bianca e rosa con inserti sagomati e suola a contrasto. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
   }
 ]
