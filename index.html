@@ -5,7 +5,7 @@
   <!-- OHANA STREET v3: tassonomia 2 livelli e catalogo esterno locale -->
   <meta name="theme-color" content="#0e4a4e"><link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/ohana-chat.css">
-  <meta name="description" content="OHANA STREET — catalogo fotografico di sneakers, scarpe sportive e cultura delle isole. Nessun prezzo e nessun carrello.">
+  <meta name="description" content="OHANA STREET — catalogo fotografico di sneakers e scarpe sportive. Informazioni sui modelli tramite WhatsApp.">
   <title>OHANA STREET — Your style. Your vibe. Your ʻohana.</title>
   <style>
     :root{--deep:#123e40;--deep2:#0c3036;--sea:#65dfc6;--cream:#fcf8ee;--sun:#ffde86;--coral:#ff7560;--ink:#143438;--line:#224d4d;--muted:#6e8582;--white:#fff;--radius:20px}
@@ -65,7 +65,7 @@
     <section class="notes" id="contatti"><div class="wrap notes-inner"><div><div style="font-size:11px;font-weight:900;letter-spacing:.15em;margin-bottom:10px">IL SIGNIFICATO DI OHANA</div><h2 class="display">MORE THAN<br>A STYLE. FAMILY.</h2><p>Per noi ʻohana richiama le Hawaii, l'inclusione e il senso di appartenenza. Il catalogo OHANA è progettato per archiviare tutte le fotografie direttamente sul nostro spazio web, senza dipendere da gallerie esterne. Per chiedere informazioni sui prodotti, usa l’assistente OHANA: raccoglie modello, taglia e domanda e prepara un messaggio WhatsApp da inviare al nostro team.</p></div><div class="label">ALOHA<br>FROM<br>OHANA ✿</div></div></section>
   </main>
   <footer class="footer"><div class="wrap"><div><div class="logo">OHANA<span class="dot">.</span>STREET</div><p>Catalogo fotografico OHANA STREET, con immagini ospitate sul nostro spazio web, senza prezzi o acquisti online. I nomi dei marchi sono riferimenti descrittivi e non implicano affiliazione o autorizzazione dei rispettivi titolari.</p></div><div><strong>FATTO CON ALOHA ♡</strong><p>Sito vetrina, senza prezzi o carrello.<br>WhatsApp: assistente attivo per richieste sui prodotti.</p></div></div></footer>
-  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a><p class="disclaimer">Prezzi e disponibilità vengono confermati su richiesta tramite WhatsApp.</p></div></div></div>
+  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a></div></div></div>
   <script>
   let PRODUCTS=[];
   const SHOW_ABBIGLIAMENTO=false; // Riattivabile senza cancellare il catalogo esistente.
@@ -134,7 +134,7 @@
     $('#dialogBrand').textContent=`${p.brand} • ${p.genere} • ${p.sottogenere} • ${p.id}`;
     $('#dialogTitle').textContent=p.model;
     const description=typeof p.descrizione==='string'&&p.descrizione.trim()?p.descrizione.trim()+'\n\n':'';
-    $('#dialogDescription').textContent=description+'Per maggiori informazioni, taglie e disponibilità, contattaci su WhatsApp.';
+    $('#dialogDescription').textContent=description+'Per maggiori informazioni su modelli, colori e taglie, contattaci su WhatsApp.';
     $('#dialogDescription').style.whiteSpace='pre-line';
     $('#dialogTags').innerHTML=p.tags.map(t=>`<span>#${esc(t)}</span>`).join('');
     const code=productCode(p);
@@ -142,10 +142,12 @@
     const colorName=String(p.model||'').split(/\s+[—–]\s+/).slice(-1)[0].trim();
     const colorTerms=/bianco|bianca|nero|nera|grigi|argento|oro|beige|crema|marron|rosa|rosso|rossa|blu|azzurr|verde|giall|viola|leopard|sabbia|menta|tortora|castagna|arancion|purple|black|white|silver|pink|blue|green|red/i;
     const photoColor=colorName!==p.model&&colorTerms.test(colorName)?colorName:'Colorazione mostrata nelle fotografie';
-    $('#dialogMetadata').innerHTML=`<strong>Codice OHANA:</strong> ${esc(p.id)}${code?` · <strong>Codice modello:</strong> ${esc(code)}`:''}<div><strong>Colore:</strong> ${esc(colors.length?colors.join(', '):photoColor)} · altre colorazioni su richiesta</div><div><strong>Taglie:</strong> 36–46 · altre taglie su richiesta</div><div class="oh-availability-note">Disponibilità di colori e numeri da confermare tramite WhatsApp.</div>`;
+    $('#dialogMetadata').innerHTML=`<strong>Codice OHANA:</strong> ${esc(p.id)}${code?` · <strong>Codice modello:</strong> ${esc(code)}`:''}<div><strong>Colore:</strong> ${esc(colors.length?colors.join(', '):photoColor)} · altre colorazioni su richiesta</div><div><strong>Taglie:</strong> 36–46 · altre taglie su richiesta</div><div class="oh-availability-note">Per dettagli sui colori e sulle taglie, scrivici su WhatsApp.</div>`;
     const contact=String(window.OHANA_CONTACT_NUMBER||'').replace(/\D/g,'');
-    const message=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.model} (codice OHANA ${p.id}${code?', modello '+code:''}). Potete confermarmi colori, taglie e disponibilità?`;
+    const message=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.model} (codice OHANA ${p.id}${code?', modello '+code:''}). Potete darmi maggiori informazioni su colori e taglie?`;
     const wa=$('#dialogWhatsapp');wa.href=contact?`https://wa.me/${contact}?text=${encodeURIComponent(message)}`:'#contatti';wa.hidden=!contact;
+    // Compatibilita: rimuove il pulsante duplicato eventualmente aggiunto da script in cache.
+    document.querySelector('#ohana-chat-product-button')?.remove();
     $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
   }
   $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
@@ -182,6 +184,6 @@
   </script>
   <!-- Recapito di contatto WhatsApp OHANA confermato dal gestore. -->
   <script>window.OHANA_CONTACT_NUMBER = "393473099705";</script>
-  <script src="assets/ohana-chat.js" defer></script>
+  <script src="assets/ohana-chat.js?v=20261022-2" defer></script>
 </body>
 </html>
