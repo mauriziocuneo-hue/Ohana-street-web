@@ -9,7 +9,8 @@ on:
       - "modelli.html"
       - "modelli.json"
       - "favicon.svg"
-      - "assets/products/**"
+      - "assets/**"
+      - "scripts/audit_catalog.py"
       - "gestione/**"
       - "tools/prepara_pages.py"
       - ".github/workflows/pages.yml"
@@ -20,10 +21,12 @@ permissions:
 
 jobs:
   verifica:
-    name: Verifica sito, 68 foto e assenza link riservati
+    name: Verifica catalogo, fotografie e assenza link riservati
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Controlla tutte le gallerie fotografiche
+        run: python3 scripts/audit_catalog.py
       - name: Prepara i soli file pubblici
         run: python3 tools/prepara_pages.py
       - name: Carica archivio validato

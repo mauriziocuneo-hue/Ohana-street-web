@@ -109,7 +109,7 @@
     }).join(''):'<div class="empty">Nessun risultato. Prova un altro modello o azzera i filtri.</div>';
   }
   let modalReturnFocus=null;
-  function closeModal(){ $('#overlay').classList.add('hide');document.body.style.overflow='';if(modalReturnFocus&&modalReturnFocus.isConnected)modalReturnFocus.focus();else $('#search').focus();modalReturnFocus=null; }
+  function closeModal(){ document.body.classList.remove('product-dialog-open');$('#overlay').classList.add('hide');document.body.style.overflow='';if(modalReturnFocus&&modalReturnFocus.isConnected)modalReturnFocus.focus();else $('#search').focus();modalReturnFocus=null; }
   function openModal(id){
     const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
     modalReturnFocus=document.activeElement;
@@ -149,6 +149,7 @@
     const wa=$('#dialogWhatsapp');wa.href=contact?`https://wa.me/${contact}?text=${encodeURIComponent(message)}`:'#contatti';wa.hidden=!contact;
     // Compatibilita: rimuove il pulsante duplicato eventualmente aggiunto da script in cache.
     document.querySelector('#ohana-chat-product-button')?.remove();
+    window.OhanaChat?.close();document.body.classList.add('product-dialog-open');
     $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
   }
   $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
@@ -177,7 +178,7 @@
       render();
     }catch(err){
       $('#results').textContent='Catalogo temporaneamente non disponibile';
-      $('#grid').innerHTML='<div class="empty">Non riesco a caricare il catalogo. Controlla che <strong>catalogo.json</strong> si trovi nella stessa cartella di index.html.</div>';
+      $('#grid').innerHTML='<div class="empty">Il catalogo è temporaneamente non disponibile. Ricarica la pagina oppure riprova tra poco.</div>';
       console.error('OHANA catalog:',err);
     }
   }
