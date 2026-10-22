@@ -2038,8 +2038,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Bianco e azzurro",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -2638,8 +2638,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Bianco e rosa",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -3187,8 +3187,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Bianco e verde menta",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -3557,8 +3557,8 @@
     "brand": "Balenciaga",
     "model": "Balenciaga Runner — Nero e bianco",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "tags": [
@@ -4091,8 +4091,8 @@
     "brand": "Balenciaga",
     "model": "Balenciaga Runner — Bianco e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "tags": [
@@ -4513,8 +4513,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Bianco e bordeaux",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -5598,8 +5598,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Crema e giallo chiaro",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -6147,8 +6147,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Bianco e beige",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -6714,8 +6714,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Verde oliva e nero",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -7294,8 +7294,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Nero e giallo",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -7843,8 +7843,8 @@
     "brand": "On Running",
     "model": "Sneaker sportiva — Tortora e nero",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
@@ -8308,8 +8308,8 @@
     "brand": "ASICS",
     "model": "ASICS GEL-1130 — Nero e argento",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "status": "Selezione fotografica",
@@ -11844,8 +11844,8 @@
     "brand": "Adidas",
     "model": "Adidas Adizero Adios Pro 4 — Azzurro e rosa",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "tags": [
@@ -11948,8 +11948,8 @@
     "brand": "On Running",
     "model": "On Cloudmonster 2 — Nero",
     "genere": "Scarpe",
-    "sottogenere": "Sneakers",
-    "category": "Sneakers",
+    "sottogenere": "Running",
+    "category": "Running",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "tags": [
@@ -12287,8 +12287,8 @@
     "brand": "ASICS",
     "model": "ASICS GEL-Nimbus 10.1 — Argento e blu",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Selezione OHANA",
     "tags": [
@@ -12890,5 +12890,907 @@
     "colori_disponibili": [
       "Bianco e grigio"
     ]
+  },
+  {
+    "id": "OH-A228F5755740",
+    "brand": "Nike",
+    "model": "Air Max 90 — Marrone chiaro",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 90",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-A228F5755740_verified_1.webp",
+    "images": [
+      "assets/products/OH-A228F5755740_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 90 nella colorazione marrone chiaro. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Marrone chiaro"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-3D198A215EE7",
+    "brand": "Nike",
+    "model": "Air Max 90 — Bianco e verde menta",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 90",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-3D198A215EE7_verified_1.webp",
+    "images": [
+      "assets/products/OH-3D198A215EE7_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 90 nella colorazione bianco e verde menta. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e verde menta"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-AF1BC798A1A6",
+    "brand": "Nike",
+    "model": "Zoom Vomero 5 — Bianco, grigio e rosso",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "zoom vomero 5",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-AF1BC798A1A6_verified_1.webp",
+    "images": [
+      "assets/products/OH-AF1BC798A1A6_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Zoom Vomero 5 nella colorazione bianco, grigio e rosso. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco, grigio e rosso"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-C8D28154EFEA",
+    "brand": "Nike",
+    "model": "Zoom Vomero 5 — Beige e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "zoom vomero 5",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-C8D28154EFEA_verified_1.webp",
+    "images": [
+      "assets/products/OH-C8D28154EFEA_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Zoom Vomero 5 nella colorazione beige e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Beige e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-7614AF86173D",
+    "brand": "Nike",
+    "model": "P-6000 — Nero e blu",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "p-6000",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-7614AF86173D_verified_1.webp",
+    "images": [
+      "assets/products/OH-7614AF86173D_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "P-6000 nella colorazione nero e blu. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Nero e blu"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-EF9502F5D90D",
+    "brand": "Nike",
+    "model": "P-6000 — Bianco e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "p-6000",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-EF9502F5D90D_verified_1.webp",
+    "images": [
+      "assets/products/OH-EF9502F5D90D_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "P-6000 nella colorazione bianco e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-369CF2C781BA",
+    "brand": "Nike",
+    "model": "Sneaker — Nero e verde fluo",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "sneaker",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-369CF2C781BA_verified_1.webp",
+    "images": [
+      "assets/products/OH-369CF2C781BA_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker nella colorazione nero e verde fluo. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Nero e verde fluo"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-FF9874534B5B",
+    "brand": "Adidas",
+    "model": "Campus — Beige e bianco",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "adidas",
+      "campus",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-FF9874534B5B_verified_1.webp",
+    "images": [
+      "assets/products/OH-FF9874534B5B_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Campus nella colorazione beige e bianco. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Beige e bianco"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-982B9107222A",
+    "brand": "ASICS",
+    "model": "Sneaker — Bianco e grigio",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "asics",
+      "sneaker",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-982B9107222A_verified_1.webp",
+    "images": [
+      "assets/products/OH-982B9107222A_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker nella colorazione bianco e grigio. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e grigio"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-E2538BA93133",
+    "brand": "ASICS",
+    "model": "GEL-NYC — Nero, grigio e verde oliva",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "asics",
+      "gel-nyc",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-E2538BA93133_verified_1.webp",
+    "images": [
+      "assets/products/OH-E2538BA93133_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "GEL-NYC nella colorazione nero, grigio e verde oliva. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Nero, grigio e verde oliva"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-9B6F812F7D1A",
+    "brand": "ASICS",
+    "model": "Sneaker sportiva — Bianco e blu",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "asics",
+      "sneaker sportiva",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-9B6F812F7D1A_verified_1.webp",
+    "images": [
+      "assets/products/OH-9B6F812F7D1A_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker sportiva nella colorazione bianco e blu. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e blu"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-7B0AC0EA3999",
+    "brand": "Golden Goose",
+    "model": "Sneaker con stella — Bianco e bronzo",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "golden goose",
+      "sneaker con stella",
+      "sneakers"
+    ],
+    "tone": 6,
+    "image": "assets/products/OH-7B0AC0EA3999_verified_1.webp",
+    "images": [
+      "assets/products/OH-7B0AC0EA3999_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker con stella nella colorazione bianco e bronzo. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e bronzo"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-5EBACB0CB15F",
+    "brand": "Golden Goose",
+    "model": "Sneaker con stella — Bianco, grigio e verde",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "golden goose",
+      "sneaker con stella",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-5EBACB0CB15F_verified_1.webp",
+    "images": [
+      "assets/products/OH-5EBACB0CB15F_verified_1.webp",
+      "assets/products/OH-5EBACB0CB15F_verified_2.webp",
+      "assets/products/OH-5EBACB0CB15F_verified_3.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker con stella nella colorazione bianco, grigio e verde. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco, grigio e verde"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
+  },
+  {
+    "id": "OH-74F8C80E4997",
+    "brand": "Balenciaga",
+    "model": "Runner — Bianco, rosa e giallo",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "balenciaga",
+      "runner",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-74F8C80E4997_verified_1.webp",
+    "images": [
+      "assets/products/OH-74F8C80E4997_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Runner nella colorazione bianco, rosa e giallo. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco, rosa e giallo"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-2FC481A0F469",
+    "brand": "Nike",
+    "model": "Air Max 95 — Bianco, grigio e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 95",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-2FC481A0F469_verified_1.webp",
+    "images": [
+      "assets/products/OH-2FC481A0F469_verified_1.webp",
+      "assets/products/OH-2FC481A0F469_verified_2.webp",
+      "assets/products/OH-2FC481A0F469_verified_3.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 95 nella colorazione bianco, grigio e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco, grigio e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
+  },
+  {
+    "id": "OH-04236E8BAFF2",
+    "brand": "Nike",
+    "model": "Air Max 95 — Bianco e argento",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 95",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-04236E8BAFF2_verified_1.webp",
+    "images": [
+      "assets/products/OH-04236E8BAFF2_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 95 nella colorazione bianco e argento. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e argento"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-D4E5DE17B1FE",
+    "brand": "Nike",
+    "model": "Shox — Grigio e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "shox",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-D4E5DE17B1FE_verified_1.webp",
+    "images": [
+      "assets/products/OH-D4E5DE17B1FE_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Shox nella colorazione grigio e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Grigio e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-6ED692D90D4B",
+    "brand": "New Balance",
+    "model": "2002R — Beige",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "new balance",
+      "2002r",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-6ED692D90D4B_verified_1.webp",
+    "images": [
+      "assets/products/OH-6ED692D90D4B_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "2002R nella colorazione beige. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Beige"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-9DC1320087C5",
+    "brand": "New Balance",
+    "model": "327 — Grigio e crema",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "new balance",
+      "327",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-9DC1320087C5_verified_1.webp",
+    "images": [
+      "assets/products/OH-9DC1320087C5_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "327 nella colorazione grigio e crema. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Grigio e crema"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-019EA106B2FC",
+    "brand": "ASICS",
+    "model": "Sneaker — Crema, nero, rosso e azzurro",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "asics",
+      "sneaker",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-019EA106B2FC_verified_1.webp",
+    "images": [
+      "assets/products/OH-019EA106B2FC_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Sneaker nella colorazione crema, nero, rosso e azzurro. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Crema, nero, rosso e azzurro"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-A0ADB866A68E",
+    "brand": "ASICS",
+    "model": "GEL-Quantum — Grigio e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "asics",
+      "gel-quantum",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-A0ADB866A68E_verified_1.webp",
+    "images": [
+      "assets/products/OH-A0ADB866A68E_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "GEL-Quantum nella colorazione grigio e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Grigio e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-65ACA34B0213",
+    "brand": "Balenciaga",
+    "model": "Track — Bianco con scritta nera",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "balenciaga",
+      "track",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-65ACA34B0213_verified_1.webp",
+    "images": [
+      "assets/products/OH-65ACA34B0213_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Track nella colorazione bianco con scritta nera. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco con scritta nera"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-9C2F138B54B4",
+    "brand": "Nike",
+    "model": "Air Max 90 — Grigio scuro e turchese",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 90",
+      "sneakers"
+    ],
+    "tone": 7,
+    "image": "assets/products/OH-9C2F138B54B4_verified_1.webp",
+    "images": [
+      "assets/products/OH-9C2F138B54B4_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 90 nella colorazione grigio scuro e turchese. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Grigio scuro e turchese"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-ACFC113BA0F0",
+    "brand": "Nike",
+    "model": "Air Max 90 — Nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "nike",
+      "air max 90",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-ACFC113BA0F0_verified_1.webp",
+    "images": [
+      "assets/products/OH-ACFC113BA0F0_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Air Max 90 nella colorazione nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-3199D69D9E82",
+    "brand": "New Balance",
+    "model": "204L — Marrone e beige",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "new balance",
+      "204l",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-3199D69D9E82_verified_1.webp",
+    "images": [
+      "assets/products/OH-3199D69D9E82_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "204L nella colorazione marrone e beige. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Marrone e beige"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-13284EEF84C7",
+    "brand": "New Balance",
+    "model": "740 — Crema, rosa e verde lime",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "new balance",
+      "740",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-13284EEF84C7_verified_1.webp",
+    "images": [
+      "assets/products/OH-13284EEF84C7_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "740 nella colorazione crema, rosa e verde lime. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Crema, rosa e verde lime"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-EF292F02A92A",
+    "brand": "Adidas",
+    "model": "SL 72 — Bianco e grigio",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "adidas",
+      "sl 72",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-EF292F02A92A_verified_1.webp",
+    "images": [
+      "assets/products/OH-EF292F02A92A_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "SL 72 nella colorazione bianco e grigio. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Bianco e grigio"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-07E636624E70",
+    "brand": "Onitsuka Tiger",
+    "model": "Mexico 66 — Giallo e nero",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "onitsuka tiger",
+      "mexico 66",
+      "sneakers"
+    ],
+    "tone": 4,
+    "image": "assets/products/OH-07E636624E70_verified_1.webp",
+    "images": [
+      "assets/products/OH-07E636624E70_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Mexico 66 nella colorazione giallo e nero. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Giallo e nero"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-1B31E7EBD5F3",
+    "brand": "Onitsuka Tiger",
+    "model": "Mexico 66 — Arancione",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "onitsuka tiger",
+      "mexico 66",
+      "sneakers"
+    ],
+    "tone": 5,
+    "image": "assets/products/OH-1B31E7EBD5F3_verified_1.webp",
+    "images": [
+      "assets/products/OH-1B31E7EBD5F3_verified_1.webp",
+      "assets/products/OH-1B31E7EBD5F3_verified_2.webp",
+      "assets/products/OH-1B31E7EBD5F3_verified_3.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "descrizione": "Mexico 66 nella colorazione arancione. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Arancione"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
+  },
+  {
+    "id": "OH-DA1B5BA49D0F",
+    "brand": "On Running",
+    "model": "Cloudmonster — Rosa chiaro e giallo",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "on running",
+      "cloudmonster",
+      "running"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-DA1B5BA49D0F_verified_1.webp",
+    "images": [
+      "assets/products/OH-DA1B5BA49D0F_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "vetrina": true,
+    "descrizione": "Cloudmonster nella colorazione rosa chiaro e giallo. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Rosa chiaro e giallo"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
+  },
+  {
+    "id": "OH-EF2925FC81E6",
+    "brand": "On Running",
+    "model": "Cloudmonster — Grigio chiaro",
+    "category": "Running",
+    "kind": "sneaker",
+    "style": "Archivio OHANA",
+    "tags": [
+      "on running",
+      "cloudmonster",
+      "running"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-EF2925FC81E6_verified_1.webp",
+    "images": [
+      "assets/products/OH-EF2925FC81E6_verified_1.webp"
+    ],
+    "status": "Scheda fotografica",
+    "genere": "Scarpe",
+    "sottogenere": "Running",
+    "vetrina": true,
+    "descrizione": "Cloudmonster nella colorazione grigio chiaro. Fotografie controllate per modello e variante visibile.",
+    "colori_disponibili": [
+      "Grigio chiaro"
+    ],
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false,
+    "galleria_in_completamento": true
   }
 ]

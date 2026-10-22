@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "verifica-responsive.html"
       - "catalogo.json"
       - "modelli.html"
       - "modelli.json"

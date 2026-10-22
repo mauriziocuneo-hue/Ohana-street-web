@@ -90,7 +90,7 @@ assert "service_role" not in config and "sb_secret_" not in config, "Chiave segr
 
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
-for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg"]:
+for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html"]:
     shutil.copy2(item, dest / item)
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js"]:
