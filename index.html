@@ -28,6 +28,8 @@
   .product-photo>.label-top,.product-photo>.heart,.product-photo>.photo-label{z-index:2}
   .photo-link{display:inline-block;margin-top:14px;background:var(--deep);color:#fff;padding:12px 17px;font-size:13px;font-weight:900;border-radius:10px}
   .photo-link:hover{background:var(--coral)}
+  .oh-contact-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:18px;background:#167b56;color:#fff;padding:13px 18px;border-radius:12px;font-size:13px;font-weight:900;min-height:45px}
+  .oh-contact-cta:hover{background:#115e43}.oh-detail-meta{margin:12px 0;color:#365c56;font-size:13px;line-height:1.6}.oh-detail-meta strong{color:#123e40}
   .modalvisual.photo-modal{background:#f4f6f3!important;display:flex;align-items:center;justify-content:center}
   .modalvisual.photo-modal img{width:100%;height:100%;max-height:480px;object-fit:contain;}
   /* Galleria editoriale: le tre immagini devono provenire dallo stesso album. */
@@ -63,13 +65,14 @@
     <section class="notes" id="contatti"><div class="wrap notes-inner"><div><div style="font-size:11px;font-weight:900;letter-spacing:.15em;margin-bottom:10px">IL SIGNIFICATO DI OHANA</div><h2 class="display">MORE THAN<br>A STYLE. FAMILY.</h2><p>Per noi ʻohana richiama le Hawaii, l'inclusione e il senso di appartenenza. Il catalogo OHANA è progettato per archiviare tutte le fotografie direttamente sul nostro spazio web, senza dipendere da gallerie esterne. Per chiedere informazioni sui prodotti, usa l’assistente OHANA: raccoglie modello, taglia e domanda e prepara un messaggio WhatsApp da inviare al nostro team.</p></div><div class="label">ALOHA<br>FROM<br>OHANA ✿</div></div></section>
   </main>
   <footer class="footer"><div class="wrap"><div><div class="logo">OHANA<span class="dot">.</span>STREET</div><p>Catalogo fotografico OHANA STREET, con immagini ospitate sul nostro spazio web, senza prezzi o acquisti online. I nomi dei marchi sono riferimenti descrittivi e non implicano affiliazione o autorizzazione dei rispettivi titolari.</p></div><div><strong>FATTO CON ALOHA ♡</strong><p>Sito vetrina, senza prezzi o carrello.<br>WhatsApp: assistente attivo per richieste sui prodotti.</p></div></div></footer>
-  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><p class="disclaimer">Prezzi e disponibilità vengono confermati su richiesta tramite WhatsApp.</p></div></div></div>
+  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a><p class="disclaimer">Prezzi e disponibilità vengono confermati su richiesta tramite WhatsApp.</p></div></div></div>
   <script>
   let PRODUCTS=[];
   const SHOW_ABBIGLIAMENTO=false; // Riattivabile senza cancellare il catalogo esistente.
   const genres=SHOW_ABBIGLIAMENTO?['Tutte','Scarpe','Abbigliamento']:['Scarpe'];
   const tones=[['#b3ebd9','#6bd6c9'],['#ffe5a3','#ffc46a'],['#f7b6a8','#ee806f'],['#d1d5fa','#a8b4ef'],['#d3eaca','#a7d9ad'],['#f4d3ea','#dca3cb'],['#e8dccf','#c5a990'],['#bde3f6','#86c3d8']];
   const $=s=>document.querySelector(s); const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const productCode=p=>{if(p.codice_modello)return String(p.codice_modello);const match=String(p.model||"").match(/(?:^|[—–\s])([A-Z]{1,4}\d{3,8}(?:-\d{2,4})?)\s*$/i);return match?match[1]:"";};
   const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   let state={genere:SHOW_ABBIGLIAMENTO?'Tutte':'Scarpe',sottogenere:'',brand:'',query:'',sort:'default',favoritesOnly:false};
   let favorites=new Set();try{favorites=new Set(JSON.parse(localStorage.getItem('ohana-fav-v1')||'[]'));}catch(e){}
@@ -93,7 +96,7 @@
   function renderTabs(){ $('#categoryTabs').innerHTML=genres.map(c=>`<button class="tab ${state.genere===c?'active':''}" type="button" data-genere-tab="${esc(c)}">${esc(c)}</button>`).join(''); }
   function render(){
     renderTabs();syncSubgenres();
-    const r=PRODUCTS.filter(p=>(state.genere==='Tutte'||p.genere===state.genere)&&(!state.sottogenere||p.sottogenere===state.sottogenere)&&(!state.brand||p.brand===state.brand)&&(!state.favoritesOnly||favorites.has(p.id))&&(!state.query||norm([p.id,p.brand,p.model,p.genere,p.sottogenere,p.style,...(p.tags||[])].join(' ')).includes(norm(state.query))));
+    const r=PRODUCTS.filter(p=>(state.genere==='Tutte'||p.genere===state.genere)&&(!state.sottogenere||p.sottogenere===state.sottogenere)&&(!state.brand||p.brand===state.brand)&&(!state.favoritesOnly||favorites.has(p.id))&&(!state.query||norm([p.id,p.brand,p.model,productCode(p),p.genere,p.sottogenere,p.style,...(p.tags||[])].join(' ')).includes(norm(state.query))));
     if(state.sort==='brand')r.sort((a,b)=>a.brand.localeCompare(b.brand,'it')||a.model.localeCompare(b.model,'it'));
     if(state.sort==='model')r.sort((a,b)=>a.model.localeCompare(b.model,'it'));
     $('#total').textContent=PRODUCTS.length;
@@ -101,7 +104,7 @@
     $('#favToggle').setAttribute('aria-pressed',String(state.favoritesOnly));$('#favToggle').textContent=state.favoritesOnly?'♥ Mostra tutte':'♡ Solo preferiti';
     $('#moreProducts').hidden=r.length<=shownProducts;
     $('#grid').innerHTML=r.length?r.slice(0,shownProducts).map(p=>{
-      const a=art(p);return `<article class="tile"><div class="visual ${p.image?'product-photo':''}" style="background:${a.bg}"><span class="label-top">${esc(p.sottogenere||'Da classificare')}</span><button type="button" class="heart ${favorites.has(p.id)?'active':''}" data-favorite="${esc(p.id)}" aria-label="${favorites.has(p.id)?'Rimuovi dai':'Aggiungi ai'} preferiti ${esc(p.model)}">${favorites.has(p.id)?'♥':'♡'}</button>${p.image ? `<img src="${esc(p.image)}" loading="lazy" alt="Immagine catalogo ${esc(p.brand)} ${esc(p.model)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden class="image-fallback">Immagine non disponibile</span>` : a.svg}<span class="photo-label">Archivio OHANA</span></div><div class="tile-main"><div class="brand">${esc(p.brand)}</div><h3>${esc(p.model)}</h3><p class="subline">${esc(p.genere)} · ${esc(p.sottogenere)}</p>${p.variante?`<p class="variant-note">Variante fotografica ${esc(p.variante)}</p>`:''}<p class="item-code"><span>Codice articolo</span> <strong>${esc(p.id)}</strong></p><button type="button" class="detail" data-open="${esc(p.id)}"><span>Esplora scheda</span><span aria-hidden="true">↗</span></button></div></article>`;
+      const a=art(p);return `<article class="tile"><div class="visual ${p.image?'product-photo':''}" style="background:${a.bg}"><span class="label-top">${esc(p.sottogenere||'Da classificare')}</span><button type="button" class="heart ${favorites.has(p.id)?'active':''}" data-favorite="${esc(p.id)}" aria-label="${favorites.has(p.id)?'Rimuovi dai':'Aggiungi ai'} preferiti ${esc(p.model)}">${favorites.has(p.id)?'♥':'♡'}</button>${p.image ? `<img src="${esc(p.image)}" loading="lazy" alt="Immagine catalogo ${esc(p.brand)} ${esc(p.model)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden class="image-fallback">Immagine non disponibile</span>` : a.svg}<span class="photo-label">Archivio OHANA</span></div><div class="tile-main"><div class="brand">${esc(p.brand)}</div><h3>${esc(p.model)}</h3><p class="subline">${esc(p.genere)} · ${esc(p.sottogenere)}</p>${p.variante?`<p class="variant-note">Variante fotografica ${esc(p.variante)}</p>`:''}<p class="item-code"><span>${productCode(p)?"Modello: "+esc(productCode(p))+" · ":""}Codice OHANA</span> <strong>${esc(p.id)}</strong></p><button type="button" class="detail" data-open="${esc(p.id)}"><span>Esplora scheda</span><span aria-hidden="true">↗</span></button></div></article>`;
     }).join(''):'<div class="empty">Nessun risultato. Prova un altro modello o azzera i filtri.</div>';
   }
   function closeModal(){ $('#overlay').classList.add('hide');document.body.style.overflow='';$('#search').focus(); }
@@ -132,6 +135,13 @@
     $('#dialogDescription').textContent=description+'Per maggiori informazioni, taglie e disponibilità, contattaci su WhatsApp.';
     $('#dialogDescription').style.whiteSpace='pre-line';
     $('#dialogTags').innerHTML=p.tags.map(t=>`<span>#${esc(t)}</span>`).join('');
+    const code=productCode(p);
+    const colors=Array.isArray(p.colori_disponibili)?p.colori_disponibili.filter(Boolean):[];
+    const sizes=Array.isArray(p.taglie_disponibili)?p.taglie_disponibili.filter(Boolean):[];
+    $('#dialogMetadata').innerHTML=`<strong>Codice OHANA:</strong> ${esc(p.id)}${code?` · <strong>Codice modello:</strong> ${esc(code)}`:''}<div><strong>Colori disponibili:</strong> ${colors.length?esc(colors.join(', ')):'Da confermare'}</div><div><strong>Taglie disponibili:</strong> ${sizes.length?esc(sizes.join(', ')):'Da confermare'}</div>`;
+    const contact=String(window.OHANA_CONTACT_NUMBER||'').replace(/\D/g,'');
+    const message=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.model} (codice OHANA ${p.id}${code?', modello '+code:''}). Potete confermarmi colori, taglie e disponibilità?`;
+    const wa=$('#dialogWhatsapp');wa.href=contact?`https://wa.me/${contact}?text=${encodeURIComponent(message)}`:'#contatti';wa.hidden=!contact;
     $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
   }
   $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
