@@ -29,27 +29,6 @@
     ].join('');
     document.body.appendChild(root);
 
-    // Anche dalla scheda aperta si può inviare una richiesta sul prodotto specifico.
-    const dialogBody = document.querySelector('#overlay .dialog-body');
-    if (dialogBody) {
-      const ask = document.createElement('button');
-      ask.type = 'button';
-      ask.id = 'ohana-chat-product-button';
-      ask.className = 'photo-link';
-      ask.textContent = 'Chiedi informazioni su questo articolo ↗';
-      dialogBody.appendChild(ask);
-      ask.addEventListener('click', function () {
-        const parts = String(document.getElementById('dialogBrand')?.textContent || '').split(' • ');
-        const product = {
-          brand: parts[0] || '',
-          model: String(document.getElementById('dialogTitle')?.textContent || ''),
-          id: parts.length >= 4 ? parts[parts.length - 1] : ''
-        };
-        document.getElementById('closeDialog')?.click();
-        reset(product);
-      });
-    }
-
     const fab = root.querySelector('#ohana-chat-toggle');
     const panel = root.querySelector('#ohana-chat-panel');
     const close = root.querySelector('#ohana-chat-close');
