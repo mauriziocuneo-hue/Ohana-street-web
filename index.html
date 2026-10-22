@@ -107,9 +107,11 @@
       const a=art(p);return `<article class="tile"><div class="visual ${p.image?'product-photo':''}" style="background:${a.bg}"><span class="label-top">${esc(p.sottogenere||'Da classificare')}</span><button type="button" class="heart ${favorites.has(p.id)?'active':''}" data-favorite="${esc(p.id)}" aria-label="${favorites.has(p.id)?'Rimuovi dai':'Aggiungi ai'} preferiti ${esc(p.model)}">${favorites.has(p.id)?'♥':'♡'}</button>${p.image ? `<img src="${esc(p.image)}" loading="lazy" alt="Immagine catalogo ${esc(p.brand)} ${esc(p.model)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden class="image-fallback">Immagine non disponibile</span>` : a.svg}<span class="photo-label">Archivio OHANA</span></div><div class="tile-main"><div class="brand">${esc(p.brand)}</div><h3>${esc(p.model)}</h3><p class="subline">${esc(p.genere)} · ${esc(p.sottogenere)}</p>${p.variante?`<p class="variant-note">Variante fotografica ${esc(p.variante)}</p>`:''}<p class="item-code"><span>${productCode(p)?"Modello: "+esc(productCode(p))+" · ":""}Codice OHANA</span> <strong>${esc(p.id)}</strong></p><button type="button" class="detail" data-open="${esc(p.id)}"><span>Esplora scheda</span><span aria-hidden="true">↗</span></button></div></article>`;
     }).join(''):'<div class="empty">Nessun risultato. Prova un altro modello o azzera i filtri.</div>';
   }
-  function closeModal(){ $('#overlay').classList.add('hide');document.body.style.overflow='';$('#search').focus(); }
+  let modalReturnFocus=null;
+  function closeModal(){ $('#overlay').classList.add('hide');document.body.style.overflow='';if(modalReturnFocus&&modalReturnFocus.isConnected)modalReturnFocus.focus();else $('#search').focus();modalReturnFocus=null; }
   function openModal(id){
     const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+    modalReturnFocus=document.activeElement;
     const visual=$('#modalVisual'),a=art(p);
     const photos=Array.isArray(p.images)&&p.images.length===3&&
       p.images.every(x=>typeof x==='string'&&/^assets\/products\/[A-Za-z0-9_.-]+\.webp$/i.test(x))&&p.images[0]===p.image
@@ -159,7 +161,7 @@
   $('#menuBtn').addEventListener('click',()=>{const closed=$('#mobileNav').classList.toggle('hide');$('#menuBtn').setAttribute('aria-expanded',String(!closed));});
   $('#closeDialog').addEventListener('click',closeModal);
   $('#overlay').addEventListener('click',e=>{if(e.target===$('#overlay'))closeModal()});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#overlay').classList.contains('hide'))closeModal()});
+  document.addEventListener('keydown',e=>{if($('#overlay').classList.contains('hide'))return;if(e.key==='Escape'){e.preventDefault();closeModal();return;}if(e.key==='Tab'){const focusable=[...$('#overlay').querySelectorAll('button:not([disabled]):not([hidden]),a[href]:not([hidden])')].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
   async function loadCatalog(){
     try {
       const response=await fetch('catalogo.json',{cache:'no-store'});
