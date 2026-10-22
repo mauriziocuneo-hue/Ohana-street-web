@@ -21,12 +21,13 @@ for item_id, count in ids.items():
 for p in active:
     pid = p.get("id", "<senza ID>")
     images = p.get("images")
-    if not isinstance(images, list) or len(images) != 3:
-        errors.append(f"{pid}: richieste esattamente tre immagini")
+    expected_images = 1 if p.get("galleria_in_completamento") is True else 3
+    if not isinstance(images, list) or len(images) != expected_images:
+        errors.append(f"{pid}: richieste esattamente {expected_images} immagini")
         continue
     if p.get("image") != images[0]:
         errors.append(f"{pid}: copertina diversa dalla prima foto")
-    if len(set(images)) != 3:
+    if len(set(images)) != len(images):
         errors.append(f"{pid}: immagini ripetute nella galleria")
     for name in images:
         if not isinstance(name, str) or not re.fullmatch(r"assets/products/[A-Za-z0-9_.-]+\.webp", name):
@@ -53,7 +54,7 @@ for p in active:
         errors.append(f"{pid}: marchio o modello mancante")
     if not (p.get("descrizione") or "").strip():
         warnings.append(f"{pid}: descrizione assente")
-print(f"Schede archiviate: {len(items)}; vetrina: {len(active)}; marchi: {len(set(p['brand'] for p in active))}; immagini attese: {len(active)*3}")
+print(f"Schede archiviate: {len(items)}; vetrina: {len(active)}; marchi: {len(set(p['brand'] for p in active))}; immagini attese: {sum(len(p.get('images', [])) for p in active)}")
 for w in warnings:
     print("WARN:", w)
 for e in errors:

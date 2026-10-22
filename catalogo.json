@@ -1360,20 +1360,33 @@
   },
   {
     "id": "OH-949D51135B4E",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio senza lacci",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio senza lacci — Nero, bianco e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "senza lacci"
     ],
     "tone": 7,
     "image": "assets/products/OH-949D51135B4E.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-949D51135B4E.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, bianco e rosso"
+    ],
+    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-11DE03266FB8",
@@ -1883,20 +1896,33 @@
   },
   {
     "id": "OH-8AA8F8955FD3",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio senza lacci",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio senza lacci — Nero, fucsia e giallo",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "senza lacci"
     ],
     "tone": 0,
     "image": "assets/products/OH-8AA8F8955FD3.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-8AA8F8955FD3.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, fucsia e giallo"
+    ],
+    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-9245A7FE08A3",
@@ -2373,20 +2399,33 @@
   },
   {
     "id": "OH-F336279283DD",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio senza lacci",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio senza lacci — Blu, argento e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "senza lacci"
     ],
     "tone": 1,
     "image": "assets/products/OH-F336279283DD.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-F336279283DD.webp"
+    ],
+    "colori_disponibili": [
+      "Blu, argento e rosso"
+    ],
+    "descrizione": "Scarpa da calcio senza lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-81B780ADF7C5",
@@ -2854,20 +2893,33 @@
   },
   {
     "id": "OH-921BAF2C6ED4",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio con linguetta",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Rosa e argento",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 2,
     "image": "assets/products/OH-921BAF2C6ED4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-921BAF2C6ED4.webp"
+    ],
+    "colori_disponibili": [
+      "Rosa e argento"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione rosa e argento, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-4819ED13D821",
@@ -3055,20 +3107,33 @@
   },
   {
     "id": "OH-B5E0087C4EB4",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio con linguetta",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Bianco, nero e verde lime",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 3,
     "image": "assets/products/OH-B5E0087C4EB4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-B5E0087C4EB4.webp"
+    ],
+    "colori_disponibili": [
+      "Bianco, nero e verde lime"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e verde lime, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-C47BE5ADA895",
@@ -3563,20 +3628,33 @@
   },
   {
     "id": "OH-3D80710ABA63",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio con linguetta",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Nero, bianco e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 4,
     "image": "assets/products/OH-3D80710ABA63.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-3D80710ABA63.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, bianco e rosso"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-35BB391AFB38",
@@ -4053,20 +4131,33 @@
   },
   {
     "id": "OH-57A4DDC1F41A",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Blu, argento e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 5,
     "image": "assets/products/OH-57A4DDC1F41A.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-57A4DDC1F41A.webp"
+    ],
+    "colori_disponibili": [
+      "Blu, argento e rosso"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-300537181F7B",
@@ -4543,20 +4634,33 @@
   },
   {
     "id": "OH-51ECBA48E2E4",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Azzurro e argento",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 6,
     "image": "assets/products/OH-51ECBA48E2E4.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-51ECBA48E2E4.webp"
+    ],
+    "colori_disponibili": [
+      "Azzurro e argento"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione azzurro e argento, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-B58F9791A260",
@@ -5024,20 +5128,33 @@
   },
   {
     "id": "OH-9A8A627A548C",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Bianco, nero e giallo",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 7,
     "image": "assets/products/OH-9A8A627A548C.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-9A8A627A548C.webp"
+    ],
+    "colori_disponibili": [
+      "Bianco, nero e giallo"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-30E0E5105D2F",
@@ -5514,20 +5631,33 @@
   },
   {
     "id": "OH-BE0BD1666A57",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio senza lacci — Nero, bianco e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "senza lacci"
     ],
     "tone": 0,
     "image": "assets/products/OH-BE0BD1666A57.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-BE0BD1666A57.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, bianco e rosso"
+    ],
+    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-7BEA7F395DC6",
@@ -6013,20 +6143,33 @@
   },
   {
     "id": "OH-DF278690C6BF",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Nero, fucsia e giallo",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 1,
     "image": "assets/products/OH-DF278690C6BF.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-DF278690C6BF.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, fucsia e giallo"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-511DC7FAC9FA",
@@ -6494,20 +6637,33 @@
   },
   {
     "id": "OH-4307CE8EB16D",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Nero, bianco e rosso",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 2,
     "image": "assets/products/OH-4307CE8EB16D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-4307CE8EB16D.webp"
+    ],
+    "colori_disponibili": [
+      "Nero, bianco e rosso"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-CFCC9A9A2D3D",
@@ -6975,20 +7131,33 @@
   },
   {
     "id": "OH-A7E22E815166",
-    "brand": "Scarpe da calcio",
-    "model": "Adidas Predator Elite Tongue FG — Scarpe da calcio",
+    "brand": "Adidas",
+    "model": "Scarpa da calcio con lacci — Bianco, nero e giallo",
     "genere": "Scarpe",
-    "sottogenere": "Scarpe da calcio e calcetto",
-    "category": "Scarpe da calcio e calcetto",
+    "sottogenere": "Scarpe con tacchetti",
+    "category": "Scarpe con tacchetti",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "scarpe da calcio"
+      "adidas",
+      "calcio",
+      "tacchetti",
+      "con lacci"
     ],
     "tone": 3,
     "image": "assets/products/OH-A7E22E815166.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-A7E22E815166.webp"
+    ],
+    "colori_disponibili": [
+      "Bianco, nero e giallo"
+    ],
+    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-603A257F6F0C",
