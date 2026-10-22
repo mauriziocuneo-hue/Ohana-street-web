@@ -1276,19 +1276,28 @@
   {
     "id": "OH-DB68CB73EE27",
     "brand": "Jordan",
-    "model": "Air Jordan 5 Retro — Sneakers nere e rosse",
+    "model": "Air Jordan 5 — Nero, grigio e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
     "kind": "sneaker",
-    "style": "Scheda catalogo OHANA",
+    "style": "Selezione OHANA",
     "tags": [
-      "jordan"
+      "jordan",
+      "sneakers"
     ],
-    "tone": 0,
-    "image": "assets/products/OH-DB68CB73EE27.webp",
-    "status": "Scheda fotografica",
-    "vetrina": false
+    "tone": 4,
+    "image": "assets/products/OH-DB68CB73EE27_1.webp",
+    "status": "Selezione fotografica",
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-DB68CB73EE27_1.webp",
+      "assets/products/OH-DB68CB73EE27_2.webp",
+      "assets/products/OH-DB68CB73EE27_3.webp"
+    ],
+    "descrizione": "Sneaker alta nera con dettagli grigi, inserto rosso sulla suola e rete laterale. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "modelloVerificato": true,
+    "selezione": "editoriale"
   },
   {
     "id": "OH-66E680A4FF32",
@@ -10429,6 +10438,110 @@
     "descrizione": "Sneaker alta nera con inserti verde fluo e fasce lucide. Identificazione fotografica; autenticità e disponibilità da verificare.",
     "modelloVerificato": true,
     "status": "Selezione fotografica",
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-EE82533D0DAA",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Stardan — Bianco e argento",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 0,
+    "image": "assets/products/OH-EE82533D0DAA_1.webp",
+    "images": [
+      "assets/products/OH-EE82533D0DAA_1.webp",
+      "assets/products/OH-EE82533D0DAA_2.webp",
+      "assets/products/OH-EE82533D0DAA_3.webp"
+    ],
+    "descrizione": "Sneaker bassa bianca con stella glitter argento e inserto metallizzato sul tallone. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "status": "Selezione fotografica",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-FD739021AD23",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Stardan — Beige e marrone",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 1,
+    "image": "assets/products/OH-FD739021AD23_1.webp",
+    "images": [
+      "assets/products/OH-FD739021AD23_1.webp",
+      "assets/products/OH-FD739021AD23_2.webp",
+      "assets/products/OH-FD739021AD23_3.webp"
+    ],
+    "descrizione": "Sneaker bassa beige con inserti marroni e stella laterale a contrasto. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "status": "Selezione fotografica",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-A9957951ADD1",
+    "brand": "Golden Goose",
+    "model": "Golden Goose Stardan — Crema e glitter grigio",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "golden goose",
+      "sneakers"
+    ],
+    "tone": 2,
+    "image": "assets/products/OH-A9957951ADD1_1.webp",
+    "images": [
+      "assets/products/OH-A9957951ADD1_1.webp",
+      "assets/products/OH-A9957951ADD1_2.webp",
+      "assets/products/OH-A9957951ADD1_3.webp"
+    ],
+    "descrizione": "Sneaker bassa color crema con pannelli glitter grigio e dettagli rossi sulla suola. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "status": "Selezione fotografica",
+    "modelloVerificato": true,
+    "selezione": "editoriale",
+    "vetrina": true
+  },
+  {
+    "id": "OH-06AB604C0181",
+    "brand": "Jordan",
+    "model": "Air Jordan 4 — Bianco, nero e rosso",
+    "genere": "Scarpe",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
+    "kind": "sneaker",
+    "style": "Selezione OHANA",
+    "tags": [
+      "jordan",
+      "sneakers"
+    ],
+    "tone": 3,
+    "image": "assets/products/OH-06AB604C0181_1.webp",
+    "images": [
+      "assets/products/OH-06AB604C0181_1.webp",
+      "assets/products/OH-06AB604C0181_2.webp",
+      "assets/products/OH-06AB604C0181_3.webp"
+    ],
+    "descrizione": "Sneaker bianca con gabbia laterale nera, inserti rossi e intersuola a contrasto. Identificazione fotografica; autenticità e disponibilità da verificare.",
+    "status": "Selezione fotografica",
+    "modelloVerificato": true,
     "selezione": "editoriale",
     "vetrina": true
   }
