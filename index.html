@@ -36,6 +36,7 @@
   #modalVisual.photo-gallery{height:auto!important;display:block;background:#f3f7f3!important;padding:17px 17px 11px}
   .oh-gallery-main{height:clamp(230px,36vw,370px);display:flex;align-items:center;justify-content:center;position:relative}
   .oh-gallery-main img{width:100%;height:100%;object-fit:contain}
+  .oh-gallery-error{font-weight:800;color:#365c56;padding:24px;text-align:center;font-size:13px}
   .oh-gallery-count{position:absolute;left:9px;bottom:8px;background:#123e40;color:white;border-radius:20px;padding:5px 11px;font-size:11px;font-weight:900}
   .oh-gallery-thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:11px}
   .oh-gallery-thumb{padding:5px;border:2px solid #d2dfd8;border-radius:10px;background:#f7f8f6;cursor:pointer;height:94px;display:flex;align-items:center;justify-content:center;overflow:hidden}
@@ -120,7 +121,7 @@
     visual.classList.toggle('photo-gallery',Boolean(photos));
     visual.classList.toggle('photo-modal',Boolean(p.image&&!photos));
     if(photos){
-      visual.innerHTML=`<div class="oh-gallery-main"><img id="ohGalleryMain" alt="Prima vista del modello ${esc(p.model)}" src="${esc(photos[0])}"><span id="ohGalleryCount" class="oh-gallery-count">1 / 3</span></div><div class="oh-gallery-thumbs" aria-label="Le tre fotografie dello stesso articolo">${photos.map((url,i)=>`<button type="button" class="oh-gallery-thumb" data-gallery-index="${i}" aria-pressed="${i===0?'true':'false'}" aria-label="Mostra fotografia ${i+1} di 3"><img src="${esc(url)}" alt="Miniatura fotografia ${i+1}" loading="eager" decoding="async"></button>`).join('')}</div>`;
+      visual.innerHTML=`<div class="oh-gallery-main"><img id="ohGalleryMain" alt="Prima vista del modello ${esc(p.model)}" src="${esc(photos[0])}" onerror="this.hidden=true;this.parentElement.querySelector('.oh-gallery-error').hidden=false" onload="this.hidden=false;this.parentElement.querySelector('.oh-gallery-error').hidden=true"><span class="oh-gallery-error" hidden>Fotografia temporaneamente non disponibile</span><span id="ohGalleryCount" class="oh-gallery-count">1 / 3</span></div><div class="oh-gallery-thumbs" aria-label="Le tre fotografie dello stesso articolo">${photos.map((url,i)=>`<button type="button" class="oh-gallery-thumb" data-gallery-index="${i}" aria-pressed="${i===0?'true':'false'}" aria-label="Mostra fotografia ${i+1} di 3"><img src="${esc(url)}" alt="Miniatura fotografia ${i+1}" loading="eager" decoding="async"></button>`).join('')}</div>`;
       visual.querySelectorAll('[data-gallery-index]').forEach(button=>button.addEventListener('click',()=>{
         const i=Number(button.dataset.galleryIndex);
         visual.querySelector('#ohGalleryMain').src=photos[i];
