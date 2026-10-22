@@ -26,7 +26,7 @@ for p in active:
     if len(set(images)) != 3:
         errors.append(f"{pid}: immagini ripetute nella galleria")
     for name in images:
-        if not isinstance(name, str) or not re.fullmatch(r"assets/products/[A-Za-z0-9_.-]+\\.webp", name):
+        if not isinstance(name, str) or not re.fullmatch(r"assets/products/[A-Za-z0-9_.-]+\.webp", name):
             errors.append(f"{pid}: percorso foto non consentito {name!r}")
             continue
         photo = ROOT / name
