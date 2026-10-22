@@ -1,0 +1,18 @@
+name: OHANA catalog quality
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'catalogo.json'
+      - 'assets/products/**'
+      - 'scripts/audit_catalog.py'
+      - '.github/workflows/catalog-quality.yml'
+jobs:
+  catalog-quality:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate catalog and local photos
+        run: python3 scripts/audit_catalog.py
