@@ -114,7 +114,7 @@
   {
     "id": "OHY-005",
     "brand": "Jordan",
-    "model": "J Balvin × Air Jordan 4 Lemonade — IW2872-700",
+    "model": "Sneaker — Giallo chiaro",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -123,11 +123,21 @@
       "sneakers"
     ],
     "tone": 4,
-    "image": "assets/products/OHY-005.jpeg",
+    "image": "assets/products/OHY-005_restored.webp",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OHY-005_restored.webp"
+    ],
+    "colori_disponibili": [
+      "Giallo chiaro"
+    ],
+    "descrizione": "Sneaker nella colorazione giallo chiaro. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OHY-006",
@@ -412,7 +422,7 @@
   {
     "id": "OHY-016",
     "brand": "Adidas",
-    "model": "Adidas Adizero Evo SL",
+    "model": "Sneaker sportiva — Grigio, nero e bianco",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -421,11 +431,21 @@
       "sneakers"
     ],
     "tone": 7,
-    "image": "assets/products/OHY-016.jpg",
+    "image": "assets/products/OHY-016_restored.webp",
     "status": "Scheda fotografica",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "vetrina": false
+    "sottogenere": "Sneakers",
+    "vetrina": true,
+    "images": [
+      "assets/products/OHY-016_restored.webp"
+    ],
+    "colori_disponibili": [
+      "Grigio, nero e bianco"
+    ],
+    "descrizione": "Sneaker sportiva nella colorazione grigio, nero e bianco. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OHY-017",
@@ -3165,19 +3185,30 @@
   {
     "id": "OH-DBD4A416CDF9",
     "brand": "On Running",
-    "model": "On Cloudmonster 3 — Scarpe da running",
+    "model": "Sneaker sportiva — Bianco e verde menta",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "on running"
+      "on running",
+      "sneakers"
     ],
     "tone": 4,
     "image": "assets/products/OH-DBD4A416CDF9.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-DBD4A416CDF9.webp"
+    ],
+    "colori_disponibili": [
+      "Bianco e verde menta"
+    ],
+    "descrizione": "Sneaker sportiva nella colorazione bianco e verde menta. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-B82950F98FA8",
@@ -3368,19 +3399,30 @@
   {
     "id": "OH-26FE44BD4B2D",
     "brand": "New Balance",
-    "model": "New Balance 9060 — Sneakers in mesh e suede con ammortizzazione ABZORB",
+    "model": "Sneaker — Grigio e argento",
     "genere": "Scarpe",
-    "sottogenere": "Running",
-    "category": "Running",
+    "sottogenere": "Sneakers",
+    "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "new balance"
+      "new balance",
+      "sneakers"
     ],
     "tone": 3,
     "image": "assets/products/OH-26FE44BD4B2D.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-26FE44BD4B2D.webp"
+    ],
+    "colori_disponibili": [
+      "Grigio e argento"
+    ],
+    "descrizione": "Sneaker nella colorazione grigio e argento. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-157DD1B68E2C",
@@ -4837,20 +4879,31 @@
   },
   {
     "id": "OH-5DC4B16DF7C9",
-    "brand": "UGG",
-    "model": "ALO Yoga Recovery Slipper — Ciabatte color castagna",
+    "brand": "Alo Yoga",
+    "model": "Ciabatta con bordo morbido — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "ugg"
+      "alo yoga",
+      "sandali e ciabatte"
     ],
     "tone": 2,
     "image": "assets/products/OH-5DC4B16DF7C9.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-5DC4B16DF7C9.webp"
+    ],
+    "colori_disponibili": [
+      "Castagna e crema"
+    ],
+    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-1B4947A0AA64",
@@ -5364,20 +5417,31 @@
   },
   {
     "id": "OH-57CE8FAE46F9",
-    "brand": "UGG",
-    "model": "ALO Yoga Recovery Slipper — Ciabatte bianche",
+    "brand": "Alo Yoga",
+    "model": "Ciabatta con rivestimento morbido — Crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
     "tags": [
-      "ugg"
+      "alo yoga",
+      "sandali e ciabatte"
     ],
     "tone": 3,
     "image": "assets/products/OH-57CE8FAE46F9.webp",
     "status": "Scheda fotografica",
-    "vetrina": false
+    "vetrina": true,
+    "images": [
+      "assets/products/OH-57CE8FAE46F9.webp"
+    ],
+    "colori_disponibili": [
+      "Crema"
+    ],
+    "descrizione": "Ciabatta con rivestimento morbido nella colorazione crema. La fotografia mostra la variante di riferimento.",
+    "galleria_in_completamento": true,
+    "selezione": "archivio_ripristinato",
+    "modelloVerificato": false
   },
   {
     "id": "OH-E987987E8F60",
