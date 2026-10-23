@@ -87,6 +87,8 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const safeUrl = value => { try { const u = new URL(value); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
 function imageUrl(row) {
   if (/^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(row.local_image || '')) return '../' + row.local_image;
+  const preview=row.image_features?.preview_webp_base64;
+  if(typeof preview==='string' && preview.length<100000 && preview.length%4===0 && /^UklGR[A-Za-z0-9+/]+={0,2}$/.test(preview))return 'data:image/webp;base64,'+preview;
   return safeUrl(row.cover_url);
 }
 function familyKey(row) { return row.model_key || row.candidate_key || null; }
@@ -132,7 +134,7 @@ function mountVariants(client) {
         buttons.forEach((b, i) => b.setAttribute('aria-pressed', String((i === 0) === (tab === 'confirmed'))));
         status.textContent = 'Caricamento…';
         const field = tab === 'confirmed' ? 'model_key' : 'candidate_key';
-        const { data, error, count } = await client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_name,candidate_family,color,status,cover_url,local_image', { count: 'exact' }).eq(field, key).eq('status', tab).neq('album_key', anchor.album_key).order('album_key').range(offset, offset + 23);
+        const { data, error, count } = await client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_name,candidate_family,color,status,cover_url,local_image,image_features', { count: 'exact' }).eq(field, key).eq('status', tab).neq('album_key', anchor.album_key).order('album_key').range(offset, offset + 23);
         if (token !== epoch || current !== request) return;
         loading = false; more.disabled = false;
         if (error) { status.textContent = 'Errore nel caricamento. Premi di nuovo la sezione per riprovare.'; more.hidden = true; return; }
@@ -140,6 +142,7 @@ function mountVariants(client) {
           const card = el('article', '', 'item'); const imgUrl = imageUrl(row);
           if (imgUrl) { const img = el('img'); img.src = imgUrl; img.alt = row.color || 'Foto del fornitore'; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; img.addEventListener('error', () => img.replaceWith(el('p', 'Anteprima non disponibile'))); card.append(img); }
           const details = el('div', '', 'details'); details.append(el('small', row.status === 'confirmed' ? 'Associazione confermata' : 'Da verificare · riconoscimento preliminare'), el('b', row.model_name || row.candidate_family || 'Modello da verificare'), el('p', row.color || 'Colore da verificare'), el('small', row.supplier));
+          if(row.image_features?.review?.supplier_code_conflicts?.length)details.append(el('small','Codice fornitore incoerente: confronto solo fotografico.'));
           const links = el('div', '', 'links'); const album = link('Album foto', row.album_url); if (album) links.append(album); details.append(links); card.append(details); list.append(card);
         }
         offset += (data || []).length; more.hidden = offset >= count;
