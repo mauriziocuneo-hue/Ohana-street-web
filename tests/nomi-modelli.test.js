@@ -1,0 +1,40 @@
+'use strict';
+const assert=require('node:assert/strict');
+const reviews=require('../nomi-modelli.json').products;
+const legacy=require('../catalogo.json').filter(p=>p.genere==='Scarpe'&&p.vetrina!==false);
+const products=require('../catalogo-nuovo.json').products;
+const {family}=require('../assets/ohana-media.js');
+const {filterProducts,related}=require('../assets/ohana-catalogo.js');
+const {productInfo}=require('../assets/ohana-chat.js');
+const find=id=>products.find(p=>p.id===id);
+for(const [id,r] of Object.entries(reviews)){
+ const old=legacy.find(p=>p.id===id),p=find(id);
+ assert(old&&p,'Nessuna scheda revisionata deve andare persa');
+ assert.equal(p.brand,r.brand);assert.equal(p.family,r.family);
+ assert.equal(p.modelNameStatus,r.status);
+ assert(old.model.startsWith(r.name+' — '));
+ assert.equal(productInfo(p).label,p.brand+' · '+p.name,'WhatsApp usa lo stesso nome mostrato nella scheda');
+ assert(filterProducts(products,{query:r.name}).some(x=>x.id===id),'Il modello deve essere ricercabile');
+ assert.equal(family(old),p.variantGroup,'Bot precedente e catalogo devono condividere i gruppi');
+ if(r.status!=='identified'||r.variantFamily===null){assert.equal(p.variantGroup,null);assert.deepEqual(related(products,p),[]);}
+}
+assert.equal(find('OHY-001').name,'Air Jordan 4');
+const jordan4=filterProducts(products,{query:'Air Jordan 4'});
+assert(jordan4.length>0&&jordan4.every(p=>/^Air Jordan 4\b/.test(p.name||p.family)),'Il numero 4 nel codice OHANA non deve far comparire altri modelli');
+assert(filterProducts(products,{query:'Cloudmonster 3'}).every(p=>p.family==='Cloudmonster 3'));
+assert(related(products,find('OHY-001')).length>0);
+assert(related(products,find('OHY-001')).every(p=>!p.family.includes('SB')),'Air Jordan 4 non va associata alla SB');
+assert.equal(find('OHY-013').family,'Tokyo Decon','Non attribuire Samba alle Tokyo Decon');
+assert.equal(find('OH-0179DC981468').family,'Air Jordan 5');
+assert.equal(find('OH-217E1860ECAA').family,'Six Rings');
+assert.equal(find('OH-0EC34260BBCF').family,'Shox R4');
+assert.equal(find('OH-A3B69FE3C3E7').family,'Shox Z');
+assert.notEqual(find('OH-0EC34260BBCF').variantGroup,find('OH-A3B69FE3C3E7').variantGroup);
+const cloud3=find('OH-142CC9280AC3');
+assert(related(products,cloud3).every(p=>p.family==='Cloudmonster 3'));
+assert.equal(find('OH-148AA9D070C4').modelNameStatus,'pending','Un titolo incoerente con la foto deve restare da verificare');
+assert.equal(find('OH-F2546D8E0082').modelNameStatus,'pending','Un riferimento non coerente con la foto non conferma il modello');
+assert(!products.some(p=>/^(Sneaker|Scarpa |Ciabatta |Sandalo |Stival|Sabot|Mocassino)/.test(p.family)),'Nessun titolo generico senza indicazione della verifica');
+assert.equal(products.length,375);
+assert.equal(products.reduce((n,p)=>n+p.photos.length,0),1140);
+console.log(`PASS: ${Object.keys(reviews).length} nomi revisionati, ricerca, contesto WhatsApp, identità, separazione modelli e casi da verificare.`);

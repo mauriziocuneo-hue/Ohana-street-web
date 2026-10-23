@@ -1,0 +1,983 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-23",
+  "note": "Revisione dei nomi nel catalogo OHANA. Identifica il modello raffigurato; non certifica autenticità, materiali, disponibilità o caratteristiche tecniche. I collegamenti riservati non sono inclusi.",
+  "products": {
+    "OH-019EA106B2FC": {
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 31",
+      "family": "GEL-KAYANO 31",
+      "status": "identified",
+      "variantFamily": "GEL-KAYANO 31",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-982B9107222A": {
+      "brand": "ASICS",
+      "name": "GEL-1130",
+      "family": "GEL-1130",
+      "status": "identified",
+      "variantFamily": "GEL-1130",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-9B6F812F7D1A": {
+      "brand": "ASICS",
+      "name": "GEL-KAYANO 32",
+      "family": "GEL-KAYANO 32",
+      "status": "identified",
+      "variantFamily": "GEL-KAYANO 32",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-A0ADB866A68E": {
+      "brand": "ASICS",
+      "name": "GEL-QUANTUM 360 VIII",
+      "family": "GEL-QUANTUM 360 VIII",
+      "status": "identified",
+      "variantFamily": "GEL-QUANTUM 360 VIII",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-010": {
+      "brand": "ASICS",
+      "name": "Gessirit",
+      "family": "Gessirit",
+      "status": "identified",
+      "variantFamily": "Gessirit",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-3D80710ABA63": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-4307CE8EB16D": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-51ECBA48E2E4": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-57A4DDC1F41A": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-8AA8F8955FD3": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-921BAF2C6ED4": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-949D51135B4E": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-9A8A627A548C": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-A7E22E815166": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-B5E0087C4EB4": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-BE0BD1666A57": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-DF278690C6BF": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-F336279283DD": {
+      "brand": "Adidas",
+      "name": "Predator FG",
+      "family": "Predator",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Famiglia Predator e suola FG identificate; generazione e allestimento non confermati. Non unire automaticamente le diverse costruzioni della tomaia."
+    },
+    "OH-FF9874534B5B": {
+      "brand": "Adidas",
+      "name": "Campus 00s",
+      "family": "Campus 00s",
+      "status": "identified",
+      "variantFamily": "Campus 00s",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-013": {
+      "brand": "Adidas",
+      "name": "Tokyo Decon W",
+      "family": "Tokyo Decon",
+      "status": "identified",
+      "variantFamily": "Tokyo Decon",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-014": {
+      "brand": "Adidas",
+      "name": "Tokyo Decon W",
+      "family": "Tokyo Decon",
+      "status": "identified",
+      "variantFamily": "Tokyo Decon",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-015": {
+      "brand": "Adidas",
+      "name": "TERREX Agravic TT",
+      "family": "TERREX Agravic TT",
+      "status": "identified",
+      "variantFamily": "TERREX Agravic TT",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-016": {
+      "brand": "Adidas",
+      "name": "Adizero EVO SL",
+      "family": "Adizero EVO SL",
+      "status": "identified",
+      "variantFamily": "Adizero EVO SL",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-017": {
+      "brand": "Adidas",
+      "name": "Adizero Adios Pro 4",
+      "family": "Adizero Adios Pro 4",
+      "status": "identified",
+      "variantFamily": "Adizero Adios Pro 4",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-57CE8FAE46F9": {
+      "brand": "Alo Yoga",
+      "name": "Recovery Slipper",
+      "family": "Recovery Slipper",
+      "status": "identified",
+      "variantFamily": "Recovery Slipper",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-5DC4B16DF7C9": {
+      "brand": "Alo Yoga",
+      "name": "Recovery Slipper",
+      "family": "Recovery Slipper",
+      "status": "identified",
+      "variantFamily": "Recovery Slipper",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-0D0D097C4F75": {
+      "brand": "Balenciaga",
+      "name": "Track Trail Lace",
+      "family": "Track Trail Lace",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-03F4661DD7BD": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-369D56725A1B": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-913E3CE8C2A7": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-AC2EA8159800": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-B26D1759C531": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-B76093E9A201": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-C9F2F09ED203": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-D86AE4815A44": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-DBC4C0F38D37": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-E2AB168B191E": {
+      "brand": "Dior",
+      "name": "B30",
+      "family": "B30",
+      "status": "identified",
+      "variantFamily": "B30",
+      "review": "Identificazione della famiglia B30 dal profilo e dal logo laterale nelle fotografie; non attribuire il nome Countdown alle foto del modello precedente."
+    },
+    "OH-033756C40681": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-2B5A50DE63D7": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-355D9B4262C1": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-3FA6333B7471": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-669401383FD3": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-7B0AC0EA3999": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-A80ED5273296": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-DD7E3212615A": {
+      "brand": "Golden Goose",
+      "name": "Ball Star",
+      "family": "Ball Star",
+      "status": "identified",
+      "variantFamily": "Ball Star",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-39205F1A062C": {
+      "brand": "Golden Goose",
+      "name": "Slide",
+      "family": "Slide",
+      "status": "identified",
+      "variantFamily": "Slide",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-6F430A1B98A4": {
+      "brand": "Golden Goose",
+      "name": "Slide",
+      "family": "Slide",
+      "status": "identified",
+      "variantFamily": "Slide",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-0BDF23690CBC": {
+      "brand": "Gucci",
+      "name": "2.0",
+      "family": "2.0",
+      "status": "identified",
+      "variantFamily": "2.0",
+      "review": "Profilo con nastro Web imbottito e suola scolpita, confrontato con la scheda pubblica Gucci 2.0 in rete e pelle."
+    },
+    "OHY-053": {
+      "brand": "Gucci",
+      "name": "2.0",
+      "family": "2.0",
+      "status": "identified",
+      "variantFamily": "2.0",
+      "review": "Profilo con nastro Web imbottito e suola scolpita, confrontato con la scheda pubblica Gucci 2.0 in rete e pelle."
+    },
+    "OHY-054": {
+      "brand": "Gucci",
+      "name": "2.0",
+      "family": "2.0",
+      "status": "identified",
+      "variantFamily": "2.0",
+      "review": "Profilo con nastro Web imbottito e suola scolpita, confrontato con la scheda pubblica Gucci 2.0 in rete e pelle."
+    },
+    "OHY-055": {
+      "brand": "Gucci",
+      "name": "2.0",
+      "family": "2.0",
+      "status": "identified",
+      "variantFamily": "2.0",
+      "review": "Profilo con nastro Web imbottito e suola scolpita, confrontato con la scheda pubblica Gucci 2.0 in rete e pelle."
+    },
+    "OH-0179DC981468": {
+      "brand": "Jordan",
+      "name": "Air Jordan 5",
+      "family": "Air Jordan 5",
+      "status": "identified",
+      "variantFamily": "Air Jordan 5",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-217E1860ECAA": {
+      "brand": "Jordan",
+      "name": "Six Rings",
+      "family": "Six Rings",
+      "status": "identified",
+      "variantFamily": "Six Rings",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-311959DF67D1": {
+      "brand": "Jordan",
+      "name": "Six Rings",
+      "family": "Six Rings",
+      "status": "identified",
+      "variantFamily": "Six Rings",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-86EB0DEBC255": {
+      "brand": "Jordan",
+      "name": "Six Rings",
+      "family": "Six Rings",
+      "status": "identified",
+      "variantFamily": "Six Rings",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-C05E69943287": {
+      "brand": "Jordan",
+      "name": "Six Rings",
+      "family": "Six Rings",
+      "status": "identified",
+      "variantFamily": "Six Rings",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-FAB2D612D4BA": {
+      "brand": "Jordan",
+      "name": "Six Rings",
+      "family": "Six Rings",
+      "status": "identified",
+      "variantFamily": "Six Rings",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-3493AF40BDDD": {
+      "brand": "Jordan",
+      "name": "Air Jordan 1 High",
+      "family": "Air Jordan 1 High",
+      "status": "identified",
+      "variantFamily": "Air Jordan 1 High",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-7D0BE1D1B1FA": {
+      "brand": "Jordan",
+      "name": "Air Jordan 12",
+      "family": "Air Jordan 12",
+      "status": "identified",
+      "variantFamily": "Air Jordan 12",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-EC304B4680FC": {
+      "brand": "Jordan",
+      "name": "Air Jordan 1 High x Off-White",
+      "family": "Air Jordan 1 High x Off-White",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-001": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OHY-002": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OHY-003": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OHY-004": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OHY-005": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OHY-006": {
+      "brand": "Jordan",
+      "name": "Air Jordan 4",
+      "family": "Air Jordan 4",
+      "status": "identified",
+      "variantFamily": "Air Jordan 4",
+      "review": "Silhouette Air Jordan 4 confermata nelle foto e nell’archivio. Nessuna attribuzione di collaborazioni o colorway non corroborate."
+    },
+    "OH-26FE44BD4B2D": {
+      "brand": "New Balance",
+      "name": "1906",
+      "family": "1906",
+      "status": "family",
+      "variantFamily": null,
+      "review": "Famiglia 1906 riconoscibile; suffisso e versione da verificare. Nessun abbinamento automatico con altre 1906."
+    },
+    "OH-3C58E1BE7780": {
+      "brand": "New Balance",
+      "name": "2000",
+      "family": "2000",
+      "status": "identified",
+      "variantFamily": "2000",
+      "review": "Suola a capsule lungo tutta la lunghezza e profilo 2000 confrontati con le foto della famiglia. Il vecchio titolo di archivio della prima scheda era incoerente."
+    },
+    "OHY-025": {
+      "brand": "New Balance",
+      "name": "2000",
+      "family": "2000",
+      "status": "identified",
+      "variantFamily": "2000",
+      "review": "Suola a capsule lungo tutta la lunghezza e profilo 2000 confrontati con le foto della famiglia. Il vecchio titolo di archivio della prima scheda era incoerente."
+    },
+    "OHY-028": {
+      "brand": "New Balance",
+      "name": "574",
+      "family": "574",
+      "status": "identified",
+      "variantFamily": "574",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-029": {
+      "brand": "New Balance",
+      "name": "983",
+      "family": "983",
+      "status": "identified",
+      "variantFamily": "983",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-0EC34260BBCF": {
+      "brand": "Nike",
+      "name": "Shox R4",
+      "family": "Shox R4",
+      "status": "identified",
+      "variantFamily": "Shox R4",
+      "review": "Profilo Shox R4 nelle fotografie. Separato dalla costruzione bassa Shox Z."
+    },
+    "OH-369CF2C781BA": {
+      "brand": "Nike",
+      "name": "Air Rubber Dunk x Off-White",
+      "family": "Air Rubber Dunk x Off-White",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-A3B69FE3C3E7": {
+      "brand": "Nike",
+      "name": "Shox Z",
+      "family": "Shox Z",
+      "status": "identified",
+      "variantFamily": "Shox Z",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-D4E5DE17B1FE": {
+      "brand": "Nike",
+      "name": "Shox Z",
+      "family": "Shox Z",
+      "status": "identified",
+      "variantFamily": "Shox Z",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-CD982961808A": {
+      "brand": "Nike",
+      "name": "Air Max Plus Drift",
+      "family": "Air Max Plus Drift",
+      "status": "identified",
+      "variantFamily": "Air Max Plus Drift",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-020": {
+      "brand": "Nike",
+      "name": "Gato",
+      "family": "Gato",
+      "status": "identified",
+      "variantFamily": "Gato",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-021": {
+      "brand": "Nike",
+      "name": "ACG Mountain Fly Low",
+      "family": "ACG Mountain Fly Low",
+      "status": "identified",
+      "variantFamily": null,
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-022": {
+      "brand": "Nike",
+      "name": "Air Liquid Max",
+      "family": "Air Liquid Max",
+      "status": "identified",
+      "variantFamily": "Air Liquid Max",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-023": {
+      "brand": "Nike",
+      "name": "Zoom Skylon 11",
+      "family": "Zoom Skylon 11",
+      "status": "identified",
+      "variantFamily": "Zoom Skylon 11",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-024": {
+      "brand": "Nike",
+      "name": "Initiator",
+      "family": "Initiator",
+      "status": "identified",
+      "variantFamily": "Initiator",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-142CC9280AC3": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-2822B6F39F82": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-4AF24F080222": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-55A325964470": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-682F4C0BDCD3": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-737634294C46": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-7A8FBFA2B405": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-AEEAD5351636": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OH-DBD4A416CDF9": {
+      "brand": "On Running",
+      "name": "Cloudmonster 3",
+      "family": "Cloudmonster 3",
+      "status": "identified",
+      "variantFamily": "Cloudmonster 3",
+      "review": "Nome presente nell’archivio e confrontato con il profilo Cloudmonster 3. Gruppo distinto da Cloudmonster e Cloudmonster 2."
+    },
+    "OHY-007": {
+      "brand": "Onitsuka Tiger",
+      "name": "EDR 78",
+      "family": "EDR 78",
+      "status": "identified",
+      "variantFamily": "EDR 78",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-008": {
+      "brand": "Onitsuka Tiger",
+      "name": "EDR 78",
+      "family": "EDR 78",
+      "status": "identified",
+      "variantFamily": "EDR 78",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-009": {
+      "brand": "Onitsuka Tiger",
+      "name": "Hypertaping",
+      "family": "Hypertaping",
+      "status": "identified",
+      "variantFamily": "Hypertaping",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-011": {
+      "brand": "Onitsuka Tiger",
+      "name": "Mexico 66",
+      "family": "Mexico 66",
+      "status": "identified",
+      "variantFamily": "Mexico 66",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-012": {
+      "brand": "Onitsuka Tiger",
+      "name": "Mexico 66",
+      "family": "Mexico 66",
+      "status": "identified",
+      "variantFamily": "Mexico 66",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-031": {
+      "brand": "Salomon",
+      "name": "XT-6",
+      "family": "XT-6",
+      "status": "identified",
+      "variantFamily": "XT-6",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-033": {
+      "brand": "Salomon",
+      "name": "XT-6",
+      "family": "XT-6",
+      "status": "identified",
+      "variantFamily": "XT-6",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-034": {
+      "brand": "Salomon",
+      "name": "Ultra Glide 4",
+      "family": "Ultra Glide 4",
+      "status": "identified",
+      "variantFamily": "Ultra Glide 4",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OH-A8F188D34BF5": {
+      "brand": "Saucony",
+      "name": "ProGrid Omni 9",
+      "family": "ProGrid Omni 9",
+      "status": "identified",
+      "variantFamily": "ProGrid Omni 9",
+      "review": "Nome recuperato dai dati di archivio e confrontato con le fotografie della scheda."
+    },
+    "OHY-041": {
+      "brand": "UGG",
+      "name": "GoldenGlow Canvas Clog",
+      "family": "GoldenGlow Canvas Clog",
+      "status": "identified",
+      "variantFamily": "GoldenGlow Canvas Clog",
+      "review": "Riferimento di archivio 5295 e costruzione con tomaia in canvas e guscio in gomma coerenti con GoldenGlow Canvas Clog 1175295."
+    },
+    "OHY-042": {
+      "brand": "UGG",
+      "name": "GoldenGlow Canvas Clog",
+      "family": "GoldenGlow Canvas Clog",
+      "status": "identified",
+      "variantFamily": "GoldenGlow Canvas Clog",
+      "review": "Riferimento di archivio 5295 e costruzione con tomaia in canvas e guscio in gomma coerenti con GoldenGlow Canvas Clog 1175295."
+    },
+    "OHY-043": {
+      "brand": "UGG",
+      "name": "GoldenGlow Canvas Clog",
+      "family": "GoldenGlow Canvas Clog",
+      "status": "identified",
+      "variantFamily": "GoldenGlow Canvas Clog",
+      "review": "Riferimento di archivio 5295 e costruzione con tomaia in canvas e guscio in gomma coerenti con GoldenGlow Canvas Clog 1175295."
+    },
+    "OH-5EBACB0CB15F": {
+      "brand": "Golden Goose",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-2C601CEA01BA": {
+      "brand": "Hermès",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OHY-064": {
+      "brand": "Loro Piana",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OHY-065": {
+      "brand": "Loro Piana",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OHY-066": {
+      "brand": "Loro Piana",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OHY-067": {
+      "brand": "Loro Piana",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-11DE03266FB8": {
+      "brand": "Louis Vuitton",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-148AA9D070C4": {
+      "brand": "Nike",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-0ADB669CCF97": {
+      "brand": "Prada",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-050F8B523DCE": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-0B52459DC502": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-2F809C56DDAE": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-57750200FD55": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-5A54217FFBF7": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-5CA563FB87E3": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-6E2532D93DEF": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-A94C26878A86": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-AA4467E89CAF": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OH-F2546D8E0082": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    },
+    "OHY-040": {
+      "brand": "UGG",
+      "name": "Modello da verificare",
+      "family": "Modello da verificare",
+      "status": "pending",
+      "variantFamily": null,
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+    }
+  }
+}

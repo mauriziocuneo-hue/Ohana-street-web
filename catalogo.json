@@ -2,7 +2,7 @@
   {
     "id": "OHY-001",
     "brand": "Jordan",
-    "model": "Sneaker — Bianco e beige",
+    "model": "Air Jordan 4 — Bianco e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -24,14 +24,17 @@
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-002",
     "brand": "Jordan",
-    "model": "Sneaker — Blu scuro e nero",
+    "model": "Air Jordan 4 — Blu scuro e nero",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -53,14 +56,17 @@
     "colori_disponibili": [
       "Blu scuro e nero"
     ],
-    "descrizione": "Sneaker nella colorazione blu scuro e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Blu scuro e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-003",
     "brand": "Jordan",
-    "model": "Sneaker — Blu e nero",
+    "model": "Air Jordan 4 — Blu e nero",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -82,14 +88,17 @@
     "colori_disponibili": [
       "Blu e nero"
     ],
-    "descrizione": "Sneaker nella colorazione blu e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Blu e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-004",
     "brand": "Jordan",
-    "model": "Sneaker — Grigio scuro e rosso",
+    "model": "Air Jordan 4 — Grigio scuro e rosso",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -111,14 +120,17 @@
     "colori_disponibili": [
       "Grigio scuro e rosso"
     ],
-    "descrizione": "Sneaker nella colorazione grigio scuro e rosso. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Grigio scuro e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-005",
     "brand": "Jordan",
-    "model": "Sneaker — Giallo chiaro",
+    "model": "Air Jordan 4 — Giallo chiaro",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -140,14 +152,17 @@
     "colori_disponibili": [
       "Giallo chiaro"
     ],
-    "descrizione": "Sneaker nella colorazione giallo chiaro. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Giallo chiaro. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-006",
     "brand": "Jordan",
-    "model": "Sneaker — Verde oliva e beige",
+    "model": "Air Jordan 4 — Verde oliva e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -169,14 +184,17 @@
     "colori_disponibili": [
       "Verde oliva e beige"
     ],
-    "descrizione": "Sneaker nella colorazione verde oliva e beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 4. Colorazione: Verde oliva e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 4",
+    "famiglia_varianti": "Air Jordan 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-007",
     "brand": "Onitsuka Tiger",
-    "model": "Sneaker bassa — Grigio, bianco e blu",
+    "model": "EDR 78 — Grigio, bianco e blu",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -198,14 +216,17 @@
     "colori_disponibili": [
       "Grigio, bianco e blu"
     ],
-    "descrizione": "Sneaker bassa nella colorazione grigio, bianco e blu. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Onitsuka Tiger EDR 78. Colorazione: Grigio, bianco e blu. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "EDR 78",
+    "famiglia_varianti": "EDR 78",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-008",
     "brand": "Onitsuka Tiger",
-    "model": "Sneaker bassa — Blu e corallo",
+    "model": "EDR 78 — Blu e corallo",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -227,14 +248,17 @@
     "colori_disponibili": [
       "Blu e corallo"
     ],
-    "descrizione": "Sneaker bassa nella colorazione blu e corallo. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Onitsuka Tiger EDR 78. Colorazione: Blu e corallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "EDR 78",
+    "famiglia_varianti": "EDR 78",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-009",
     "brand": "Onitsuka Tiger",
-    "model": "Sneaker con cinturini — Verde lime, blu e rosa",
+    "model": "Hypertaping — Verde lime, blu e rosa",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -256,14 +280,17 @@
     "colori_disponibili": [
       "Verde lime, blu e rosa"
     ],
-    "descrizione": "Sneaker con cinturini nella colorazione verde lime, blu e rosa. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Onitsuka Tiger Hypertaping. Colorazione: Verde lime, blu e rosa. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Hypertaping",
+    "famiglia_varianti": "Hypertaping",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-010",
     "brand": "ASICS",
-    "model": "Sneaker con cinturini — Blu, argento e verde",
+    "model": "Gessirit — Blu, argento e verde",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -285,14 +312,17 @@
     "colori_disponibili": [
       "Blu, argento e verde"
     ],
-    "descrizione": "Sneaker con cinturini nella colorazione blu, argento e verde. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "ASICS Gessirit. Colorazione: Blu, argento e verde. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Gessirit",
+    "famiglia_varianti": "Gessirit",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-011",
     "brand": "Onitsuka Tiger",
-    "model": "Sneaker bassa — Lilla e giallo",
+    "model": "Mexico 66 — Lilla e giallo",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -314,14 +344,17 @@
     "colori_disponibili": [
       "Lilla e giallo"
     ],
-    "descrizione": "Sneaker bassa nella colorazione lilla e giallo. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Onitsuka Tiger Mexico 66. Colorazione: Lilla e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Mexico 66",
+    "famiglia_varianti": "Mexico 66",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-012",
     "brand": "Onitsuka Tiger",
-    "model": "Sneaker bassa — Nero e crema",
+    "model": "Mexico 66 — Nero e crema",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -343,14 +376,17 @@
     "colori_disponibili": [
       "Nero e crema"
     ],
-    "descrizione": "Sneaker bassa nella colorazione nero e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Onitsuka Tiger Mexico 66. Colorazione: Nero e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Mexico 66",
+    "famiglia_varianti": "Mexico 66",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-013",
     "brand": "Adidas",
-    "model": "Sneaker bassa — Bianco e rosso",
+    "model": "Tokyo Decon W — Bianco e rosso",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -372,14 +408,17 @@
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker bassa nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Adidas Tokyo Decon W. Colorazione: Bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Tokyo Decon",
+    "famiglia_varianti": "Tokyo Decon",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-014",
     "brand": "Adidas",
-    "model": "Sneaker bassa — Azzurro e bianco",
+    "model": "Tokyo Decon W — Azzurro e bianco",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -401,14 +440,17 @@
     "colori_disponibili": [
       "Azzurro e bianco"
     ],
-    "descrizione": "Sneaker bassa nella colorazione azzurro e bianco. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Adidas Tokyo Decon W. Colorazione: Azzurro e bianco. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Tokyo Decon",
+    "famiglia_varianti": "Tokyo Decon",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-015",
     "brand": "Adidas",
-    "model": "Sneaker sportiva — Giallo fluo e nero",
+    "model": "TERREX Agravic TT — Giallo fluo e nero",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -430,14 +472,17 @@
     "colori_disponibili": [
       "Giallo fluo e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione giallo fluo e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Adidas TERREX Agravic TT. Colorazione: Giallo fluo e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "TERREX Agravic TT",
+    "famiglia_varianti": "TERREX Agravic TT",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-016",
     "brand": "Adidas",
-    "model": "Sneaker sportiva — Grigio, nero e bianco",
+    "model": "Adizero EVO SL — Grigio, nero e bianco",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -459,14 +504,17 @@
     "colori_disponibili": [
       "Grigio, nero e bianco"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione grigio, nero e bianco. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Adidas Adizero EVO SL. Colorazione: Grigio, nero e bianco. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Adizero EVO SL",
+    "famiglia_varianti": "Adizero EVO SL",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-017",
     "brand": "Adidas",
-    "model": "Sneaker sportiva — Bianco, giallo e azzurro",
+    "model": "Adizero Adios Pro 4 — Bianco, giallo e azzurro",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -488,9 +536,12 @@
     "colori_disponibili": [
       "Bianco, giallo e azzurro"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, giallo e azzurro. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Adidas Adizero Adios Pro 4. Colorazione: Bianco, giallo e azzurro. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Adizero Adios Pro 4",
+    "famiglia_varianti": "Adizero Adios Pro 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-018",
@@ -531,7 +582,7 @@
   {
     "id": "OHY-020",
     "brand": "Nike",
-    "model": "Scarpa bassa sportiva — Nero e verde lime",
+    "model": "Gato — Nero e verde lime",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -553,14 +604,17 @@
     "colori_disponibili": [
       "Nero e verde lime"
     ],
-    "descrizione": "Scarpa bassa sportiva nella colorazione nero e verde lime. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nike Gato. Colorazione: Nero e verde lime. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Gato",
+    "famiglia_varianti": "Gato",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-021",
     "brand": "Nike",
-    "model": "Sneaker sportiva — Bianco, beige e nero",
+    "model": "ACG Mountain Fly Low — Bianco, beige e nero",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -582,14 +636,17 @@
     "colori_disponibili": [
       "Bianco, beige e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, beige e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nike ACG Mountain Fly Low. Colorazione: Bianco, beige e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "ACG Mountain Fly Low",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-022",
     "brand": "Nike",
-    "model": "Sneaker sportiva — Grigio scuro e nero",
+    "model": "Air Liquid Max — Grigio scuro e nero",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -609,15 +666,18 @@
     "colori_disponibili": [
       "Grigio scuro e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione grigio scuro e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nike Air Liquid Max. Colorazione: Grigio scuro e nero. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Liquid Max",
+    "famiglia_varianti": "Air Liquid Max",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-023",
     "brand": "Nike",
-    "model": "Sneaker sportiva — Nero e argento",
+    "model": "Zoom Skylon 11 — Nero e argento",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -639,14 +699,17 @@
     "colori_disponibili": [
       "Nero e argento"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione nero e argento. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nike Zoom Skylon 11. Colorazione: Nero e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Zoom Skylon 11",
+    "famiglia_varianti": "Zoom Skylon 11",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-024",
     "brand": "Nike",
-    "model": "Sneaker — Bianco e argento",
+    "model": "Initiator — Bianco e argento",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -668,14 +731,17 @@
     "colori_disponibili": [
       "Bianco e argento"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e argento. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nike Initiator. Colorazione: Bianco e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Initiator",
+    "famiglia_varianti": "Initiator",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-025",
     "brand": "New Balance",
-    "model": "Sneaker — Nero e argento",
+    "model": "2000 — Nero e argento",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -697,9 +763,12 @@
     "colori_disponibili": [
       "Nero e argento"
     ],
-    "descrizione": "Sneaker nella colorazione nero e argento. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "New Balance 2000. Colorazione: Nero e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2000",
+    "famiglia_varianti": "2000",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-026",
@@ -740,7 +809,7 @@
   {
     "id": "OHY-028",
     "brand": "New Balance",
-    "model": "Sneaker — Nero e grigio",
+    "model": "574 — Nero e grigio",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -760,15 +829,18 @@
     "colori_disponibili": [
       "Nero e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione nero e grigio. La fotografia mostra la variante di riferimento.",
+    "descrizione": "New Balance 574. Colorazione: Nero e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "574",
+    "famiglia_varianti": "574",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-029",
     "brand": "New Balance",
-    "model": "Sneaker — Nero",
+    "model": "983 — Nero",
     "category": "Sneakers",
     "kind": "runner",
     "style": "Scheda catalogo OHANA",
@@ -790,9 +862,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Sneaker nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "New Balance 983. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "983",
+    "famiglia_varianti": "983",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-030",
@@ -815,7 +890,7 @@
   {
     "id": "OHY-031",
     "brand": "Salomon",
-    "model": "Sneaker sportiva — Lilla e grigio",
+    "model": "XT-6 — Lilla e grigio",
     "category": "Sneakers",
     "kind": "trail",
     "style": "Scheda catalogo OHANA",
@@ -837,9 +912,12 @@
     "colori_disponibili": [
       "Lilla e grigio"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione lilla e grigio. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Salomon XT-6. Colorazione: Lilla e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "XT-6",
+    "famiglia_varianti": "XT-6",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-032",
@@ -862,7 +940,7 @@
   {
     "id": "OHY-033",
     "brand": "Salomon",
-    "model": "Sneaker sportiva — Marrone, grigio e nero",
+    "model": "XT-6 — Marrone, grigio e nero",
     "category": "Sneakers",
     "kind": "trail",
     "style": "Scheda catalogo OHANA",
@@ -884,14 +962,17 @@
     "colori_disponibili": [
       "Marrone, grigio e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione marrone, grigio e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Salomon XT-6. Colorazione: Marrone, grigio e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "XT-6",
+    "famiglia_varianti": "XT-6",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-034",
     "brand": "Salomon",
-    "model": "Sneaker sportiva — Bianco, grigio e bordeaux",
+    "model": "Ultra Glide 4 — Bianco, grigio e bordeaux",
     "category": "Sneakers",
     "kind": "trail",
     "style": "Scheda catalogo OHANA",
@@ -913,9 +994,12 @@
     "colori_disponibili": [
       "Bianco, grigio e bordeaux"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, grigio e bordeaux. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Salomon Ultra Glide 4. Colorazione: Bianco, grigio e bordeaux. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ultra Glide 4",
+    "famiglia_varianti": "Ultra Glide 4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-035",
@@ -1010,7 +1094,7 @@
   {
     "id": "OHY-040",
     "brand": "UGG",
-    "model": "Stivaletto con dettagli morbidi — Castagna e crema",
+    "model": "Modello da verificare — Castagna e crema",
     "category": "Stivali e stivaletti",
     "kind": "boot",
     "style": "Scheda catalogo OHANA",
@@ -1032,14 +1116,17 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Stivaletto con dettagli morbidi nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OHY-041",
     "brand": "UGG",
-    "model": "Sabot con cinturino — Nero",
+    "model": "GoldenGlow Canvas Clog — Nero",
     "category": "Sabot e slip-on",
     "kind": "boot",
     "style": "Scheda catalogo OHANA",
@@ -1061,14 +1148,17 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "UGG GoldenGlow Canvas Clog. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GoldenGlow Canvas Clog",
+    "famiglia_varianti": "GoldenGlow Canvas Clog",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-042",
     "brand": "UGG",
-    "model": "Sabot con cinturino — Beige",
+    "model": "GoldenGlow Canvas Clog — Beige",
     "category": "Sabot e slip-on",
     "kind": "boot",
     "style": "Scheda catalogo OHANA",
@@ -1090,14 +1180,17 @@
     "colori_disponibili": [
       "Beige"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "UGG GoldenGlow Canvas Clog. Colorazione: Beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GoldenGlow Canvas Clog",
+    "famiglia_varianti": "GoldenGlow Canvas Clog",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-043",
     "brand": "UGG",
-    "model": "Sabot con cinturino — Rosa",
+    "model": "GoldenGlow Canvas Clog — Rosa",
     "category": "Sabot e slip-on",
     "kind": "boot",
     "style": "Scheda catalogo OHANA",
@@ -1119,9 +1212,12 @@
     "colori_disponibili": [
       "Rosa"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione rosa. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "UGG GoldenGlow Canvas Clog. Colorazione: Rosa. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GoldenGlow Canvas Clog",
+    "famiglia_varianti": "GoldenGlow Canvas Clog",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-044",
@@ -1280,7 +1376,7 @@
   {
     "id": "OHY-053",
     "brand": "Gucci",
-    "model": "Sneaker — Grigio, crema e blu",
+    "model": "2.0 — Grigio, crema e blu",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1302,14 +1398,17 @@
     "colori_disponibili": [
       "Grigio, crema e blu"
     ],
-    "descrizione": "Sneaker nella colorazione grigio, crema e blu. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Gucci 2.0. Colorazione: Grigio, crema e blu. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2.0",
+    "famiglia_varianti": "2.0",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-054",
     "brand": "Gucci",
-    "model": "Sneaker — Nero, grigio e crema",
+    "model": "2.0 — Nero, grigio e crema",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1331,14 +1430,17 @@
     "colori_disponibili": [
       "Nero, grigio e crema"
     ],
-    "descrizione": "Sneaker nella colorazione nero, grigio e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Gucci 2.0. Colorazione: Nero, grigio e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2.0",
+    "famiglia_varianti": "2.0",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-055",
     "brand": "Gucci",
-    "model": "Sneaker — Grigio e bordeaux",
+    "model": "2.0 — Grigio e bordeaux",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1360,9 +1462,12 @@
     "colori_disponibili": [
       "Grigio e bordeaux"
     ],
-    "descrizione": "Sneaker nella colorazione grigio e bordeaux. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Gucci 2.0. Colorazione: Grigio e bordeaux. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2.0",
+    "famiglia_varianti": "2.0",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-056",
@@ -1503,7 +1608,7 @@
   {
     "id": "OHY-064",
     "brand": "Loro Piana",
-    "model": "Sneaker a quadri — Marrone e beige",
+    "model": "Modello da verificare — Marrone e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1525,14 +1630,17 @@
     "colori_disponibili": [
       "Marrone e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione marrone e beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Marrone e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OHY-065",
     "brand": "Loro Piana",
-    "model": "Sneaker a quadri — Grigio e beige",
+    "model": "Modello da verificare — Grigio e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1554,14 +1662,17 @@
     "colori_disponibili": [
       "Grigio e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione grigio e beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Grigio e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OHY-066",
     "brand": "Loro Piana",
-    "model": "Sneaker a quadri — Bianco e beige",
+    "model": "Modello da verificare — Bianco e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1583,14 +1694,17 @@
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione bianco e beige. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OHY-067",
     "brand": "Loro Piana",
-    "model": "Sneaker bassa — Bianco",
+    "model": "Modello da verificare — Bianco",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1612,9 +1726,12 @@
     "colori_disponibili": [
       "Bianco"
     ],
-    "descrizione": "Sneaker bassa nella colorazione bianco. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Bianco. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OHY-068",
@@ -1788,7 +1905,7 @@
   {
     "id": "OH-949D51135B4E",
     "brand": "Adidas",
-    "model": "Scarpa da calcio senza lacci — Nero, bianco e rosso",
+    "model": "Predator FG — Nero, bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -1812,14 +1929,17 @@
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
-    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-11DE03266FB8",
     "brand": "Louis Vuitton",
-    "model": "Ciabatta con fascia — Nero",
+    "model": "Modello da verificare — Nero",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -1841,9 +1961,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Ciabatta con fascia nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-B7E0F418FB65",
@@ -1897,7 +2020,7 @@
   {
     "id": "OH-AA4467E89CAF",
     "brand": "UGG",
-    "model": "Sandalo a due fasce — Castagna",
+    "model": "Modello da verificare — Castagna",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -1919,9 +2042,12 @@
     "colori_disponibili": [
       "Castagna"
     ],
-    "descrizione": "Sandalo a due fasce nella colorazione castagna. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Castagna. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-7EAD59B0C4F6",
@@ -2076,7 +2202,7 @@
   {
     "id": "OH-682F4C0BDCD3",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Bianco e azzurro",
+    "model": "Cloudmonster 3 — Bianco e azzurro",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -2096,10 +2222,13 @@
     "colori_disponibili": [
       "Bianco e azzurro"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco e azzurro. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Bianco e azzurro. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-B20F214F839A",
@@ -2168,7 +2297,7 @@
   {
     "id": "OH-C9F2F09ED203",
     "brand": "Dior",
-    "model": "Sneaker — Grigio chiaro e verde",
+    "model": "B30 — Grigio chiaro e verde",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2190,14 +2319,17 @@
     "colori_disponibili": [
       "Grigio chiaro e verde"
     ],
-    "descrizione": "Sneaker nella colorazione grigio chiaro e verde. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Grigio chiaro e verde. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-A8F188D34BF5",
     "brand": "Saucony",
-    "model": "Sneaker — Corallo, grigio e lilla",
+    "model": "ProGrid Omni 9 — Corallo, grigio e lilla",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2217,10 +2349,13 @@
     "colori_disponibili": [
       "Corallo, grigio e lilla"
     ],
-    "descrizione": "Sneaker nella colorazione corallo, grigio e lilla. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Saucony ProGrid Omni 9. Colorazione: Corallo, grigio e lilla. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "ProGrid Omni 9",
+    "famiglia_varianti": "ProGrid Omni 9",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-959ADC2D14BA",
@@ -2307,7 +2442,7 @@
   {
     "id": "OH-0179DC981468",
     "brand": "Jordan",
-    "model": "Sneaker alta — Verde oliva e nero",
+    "model": "Air Jordan 5 — Verde oliva e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2329,9 +2464,12 @@
     "colori_disponibili": [
       "Verde oliva e nero"
     ],
-    "descrizione": "Sneaker alta nella colorazione verde oliva e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 5. Colorazione: Verde oliva e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 5",
+    "famiglia_varianti": "Air Jordan 5",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-347E701B03E1",
@@ -2395,7 +2533,7 @@
   {
     "id": "OH-8AA8F8955FD3",
     "brand": "Adidas",
-    "model": "Scarpa da calcio senza lacci — Nero, fucsia e giallo",
+    "model": "Predator FG — Nero, fucsia e giallo",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -2419,9 +2557,12 @@
     "colori_disponibili": [
       "Nero, fucsia e giallo"
     ],
-    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, fucsia e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-9245A7FE08A3",
@@ -2492,7 +2633,7 @@
   {
     "id": "OH-6E2532D93DEF",
     "brand": "UGG",
-    "model": "Sandalo a due fasce — Sabbia",
+    "model": "Modello da verificare — Sabbia",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -2514,9 +2655,12 @@
     "colori_disponibili": [
       "Sabbia"
     ],
-    "descrizione": "Sandalo a due fasce nella colorazione sabbia. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Sabbia. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-C39901484F56",
@@ -2680,7 +2824,7 @@
   {
     "id": "OH-4AF24F080222",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Bianco e rosa",
+    "model": "Cloudmonster 3 — Bianco e rosa",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -2700,10 +2844,13 @@
     "colori_disponibili": [
       "Bianco e rosa"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco e rosa. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Bianco e rosa. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-403961F5BFE5",
@@ -2772,7 +2919,7 @@
   {
     "id": "OH-913E3CE8C2A7",
     "brand": "Dior",
-    "model": "Sneaker — Beige e grigio",
+    "model": "B30 — Beige e grigio",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2794,9 +2941,12 @@
     "colori_disponibili": [
       "Beige e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione beige e grigio. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Beige e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-60AE63B9825A",
@@ -2850,7 +3000,7 @@
   {
     "id": "OH-148AA9D070C4",
     "brand": "Nike",
-    "model": "Sneaker bassa — Bianco e blu navy",
+    "model": "Modello da verificare — Bianco e blu navy",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2870,10 +3020,13 @@
     "colori_disponibili": [
       "Bianco e blu navy"
     ],
-    "descrizione": "Sneaker bassa nella colorazione bianco e blu navy. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Bianco e blu navy. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-8A244ADCC371",
@@ -2928,7 +3081,7 @@
   {
     "id": "OH-3FA6333B7471",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Bianco e nero",
+    "model": "Ball Star — Bianco e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -2950,14 +3103,17 @@
     "colori_disponibili": [
       "Bianco e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-F336279283DD",
     "brand": "Adidas",
-    "model": "Scarpa da calcio senza lacci — Blu, argento e rosso",
+    "model": "Predator FG — Blu, argento e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -2981,9 +3137,12 @@
     "colori_disponibili": [
       "Blu, argento e rosso"
     ],
-    "descrizione": "Scarpa da calcio senza lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Blu, argento e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-81B780ADF7C5",
@@ -3054,7 +3213,7 @@
   {
     "id": "OH-5A54217FFBF7",
     "brand": "UGG",
-    "model": "Scarpa alta con lacci — Verde oliva",
+    "model": "Modello da verificare — Verde oliva",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -3076,9 +3235,12 @@
     "colori_disponibili": [
       "Verde oliva"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione verde oliva. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Verde oliva. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-8405B75DC42E",
@@ -3233,7 +3395,7 @@
   {
     "id": "OH-DBD4A416CDF9",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Bianco e verde menta",
+    "model": "Cloudmonster 3 — Bianco e verde menta",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -3253,10 +3415,13 @@
     "colori_disponibili": [
       "Bianco e verde menta"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco e verde menta. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Bianco e verde menta. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-B82950F98FA8",
@@ -3325,7 +3490,7 @@
   {
     "id": "OH-D86AE4815A44",
     "brand": "Dior",
-    "model": "Sneaker — Bianco e blu navy",
+    "model": "B30 — Bianco e blu navy",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -3347,9 +3512,12 @@
     "colori_disponibili": [
       "Bianco e blu navy"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e blu navy. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Bianco e blu navy. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-299FB2F3DB0C",
@@ -3420,7 +3588,7 @@
   {
     "id": "OH-7D0BE1D1B1FA",
     "brand": "Jordan",
-    "model": "Sneaker alta — Nero e giallo",
+    "model": "Air Jordan 12 — Nero e giallo",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -3442,14 +3610,17 @@
     "colori_disponibili": [
       "Nero e giallo"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero e giallo. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 12. Colorazione: Nero e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 12",
+    "famiglia_varianti": "Air Jordan 12",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-26FE44BD4B2D",
     "brand": "New Balance",
-    "model": "Sneaker — Grigio e argento",
+    "model": "1906 — Grigio e argento",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -3469,10 +3640,13 @@
     "colori_disponibili": [
       "Grigio e argento"
     ],
-    "descrizione": "Sneaker nella colorazione grigio e argento. La fotografia mostra la variante di riferimento.",
+    "descrizione": "New Balance 1906. Colorazione: Grigio e argento. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "1906",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "family"
   },
   {
     "id": "OH-157DD1B68E2C",
@@ -3510,7 +3684,7 @@
   {
     "id": "OH-921BAF2C6ED4",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Rosa e argento",
+    "model": "Predator FG — Rosa e argento",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -3534,9 +3708,12 @@
     "colori_disponibili": [
       "Rosa e argento"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione rosa e argento, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Rosa e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-4819ED13D821",
@@ -3725,7 +3902,7 @@
   {
     "id": "OH-B5E0087C4EB4",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Bianco, nero e verde lime",
+    "model": "Predator FG — Bianco, nero e verde lime",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -3749,9 +3926,12 @@
     "colori_disponibili": [
       "Bianco, nero e verde lime"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e verde lime, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Bianco, nero e verde lime. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-C47BE5ADA895",
@@ -3822,7 +4002,7 @@
   {
     "id": "OH-57750200FD55",
     "brand": "UGG",
-    "model": "Scarpa alta con lacci — Castagna e nero",
+    "model": "Modello da verificare — Castagna e nero",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -3844,9 +4024,12 @@
     "colori_disponibili": [
       "Castagna e nero"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione castagna e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-47987D08746C",
@@ -3868,7 +4051,7 @@
   {
     "id": "OH-0ADB669CCF97",
     "brand": "Prada",
-    "model": "Sneaker — Nero e grigio",
+    "model": "Modello da verificare — Nero e grigio",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -3888,10 +4071,13 @@
     "colori_disponibili": [
       "Nero e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione nero e grigio. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Nero e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-7307A6B93F31",
@@ -4253,7 +4439,7 @@
   {
     "id": "OH-669401383FD3",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Bianco e rosso",
+    "model": "Ball Star — Bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -4275,14 +4461,17 @@
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-3D80710ABA63",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Nero, bianco e rosso",
+    "model": "Predator FG — Nero, bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -4306,9 +4495,12 @@
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-35BB391AFB38",
@@ -4379,7 +4571,7 @@
   {
     "id": "OH-5CA563FB87E3",
     "brand": "UGG",
-    "model": "Scarpa alta con lacci — Nero",
+    "model": "Modello da verificare — Nero",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -4401,9 +4593,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-611D6B825C41",
@@ -4567,7 +4762,7 @@
   {
     "id": "OH-55A325964470",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Bianco e bordeaux",
+    "model": "Cloudmonster 3 — Bianco e bordeaux",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -4587,10 +4782,13 @@
     "colori_disponibili": [
       "Bianco e bordeaux"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco e bordeaux. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Bianco e bordeaux. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-27D940D929E2",
@@ -4659,7 +4857,7 @@
   {
     "id": "OH-E2AB168B191E",
     "brand": "Dior",
-    "model": "Sneaker — Giallo, blu e grigio",
+    "model": "B30 — Giallo, blu e grigio",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -4681,9 +4879,12 @@
     "colori_disponibili": [
       "Giallo, blu e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione giallo, blu e grigio. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Giallo, blu e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-699351B9C916",
@@ -4804,7 +5005,7 @@
   {
     "id": "OH-DD7E3212615A",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Bianco, grigio e nero",
+    "model": "Ball Star — Bianco, grigio e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -4826,14 +5027,17 @@
     "colori_disponibili": [
       "Bianco, grigio e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco, grigio e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Bianco, grigio e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-57A4DDC1F41A",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Blu, argento e rosso",
+    "model": "Predator FG — Blu, argento e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -4857,9 +5061,12 @@
     "colori_disponibili": [
       "Blu, argento e rosso"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Blu, argento e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-300537181F7B",
@@ -4939,7 +5146,7 @@
   {
     "id": "OH-5DC4B16DF7C9",
     "brand": "Alo Yoga",
-    "model": "Ciabatta con bordo morbido — Castagna e crema",
+    "model": "Recovery Slipper — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -4961,9 +5168,12 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Alo Yoga Recovery Slipper. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Recovery Slipper",
+    "famiglia_varianti": "Recovery Slipper",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-1B4947A0AA64",
@@ -5050,7 +5260,7 @@
   {
     "id": "OH-2C601CEA01BA",
     "brand": "Hermès",
-    "model": "Ciabatta con fascia — Bianco e nero",
+    "model": "Modello da verificare — Bianco e nero",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -5070,10 +5280,13 @@
     "colori_disponibili": [
       "Bianco e nero"
     ],
-    "descrizione": "Ciabatta con fascia nella colorazione bianco e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-47038B47FEF4",
@@ -5210,7 +5423,7 @@
   {
     "id": "OH-B76093E9A201",
     "brand": "Dior",
-    "model": "Sneaker — Bianco e blu",
+    "model": "B30 — Bianco e blu",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -5232,9 +5445,12 @@
     "colori_disponibili": [
       "Bianco e blu"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e blu. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Bianco e blu. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-3349A6B14FCB",
@@ -5355,7 +5571,7 @@
   {
     "id": "OH-A80ED5273296",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Crema e blu",
+    "model": "Ball Star — Crema e blu",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -5377,14 +5593,17 @@
     "colori_disponibili": [
       "Crema e blu"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione crema e blu. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Crema e blu. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-51ECBA48E2E4",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Azzurro e argento",
+    "model": "Predator FG — Azzurro e argento",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -5408,9 +5627,12 @@
     "colori_disponibili": [
       "Azzurro e argento"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione azzurro e argento, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Azzurro e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-B58F9791A260",
@@ -5481,7 +5703,7 @@
   {
     "id": "OH-57CE8FAE46F9",
     "brand": "Alo Yoga",
-    "model": "Ciabatta con rivestimento morbido — Crema",
+    "model": "Recovery Slipper — Crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -5503,9 +5725,12 @@
     "colori_disponibili": [
       "Crema"
     ],
-    "descrizione": "Ciabatta con rivestimento morbido nella colorazione crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Alo Yoga Recovery Slipper. Colorazione: Crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Recovery Slipper",
+    "famiglia_varianti": "Recovery Slipper",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-E987987E8F60",
@@ -5660,7 +5885,7 @@
   {
     "id": "OH-737634294C46",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Crema e giallo chiaro",
+    "model": "Cloudmonster 3 — Crema e giallo chiaro",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -5680,10 +5905,13 @@
     "colori_disponibili": [
       "Crema e giallo chiaro"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione crema e giallo chiaro. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Crema e giallo chiaro. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-81634797E076",
@@ -5752,7 +5980,7 @@
   {
     "id": "OH-369D56725A1B",
     "brand": "Dior",
-    "model": "Sneaker — Giallo lime",
+    "model": "B30 — Giallo lime",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -5774,9 +6002,12 @@
     "colori_disponibili": [
       "Giallo lime"
     ],
-    "descrizione": "Sneaker nella colorazione giallo lime. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Giallo lime. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-E72B55DBB7D5",
@@ -5847,7 +6078,7 @@
   {
     "id": "OH-86EB0DEBC255",
     "brand": "Jordan",
-    "model": "Sneaker alta — Bianco, nero e rosa",
+    "model": "Six Rings — Bianco, nero e rosa",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -5869,9 +6100,12 @@
     "colori_disponibili": [
       "Bianco, nero e rosa"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco, nero e rosa. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Six Rings. Colorazione: Bianco, nero e rosa. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Six Rings",
+    "famiglia_varianti": "Six Rings",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-D122A3791BB3",
@@ -5909,7 +6143,7 @@
   {
     "id": "OH-355D9B4262C1",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Crema e rosso",
+    "model": "Ball Star — Crema e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -5931,14 +6165,17 @@
     "colori_disponibili": [
       "Crema e rosso"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione crema e rosso. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Crema e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-9A8A627A548C",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Bianco, nero e giallo",
+    "model": "Predator FG — Bianco, nero e giallo",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -5962,9 +6199,12 @@
     "colori_disponibili": [
       "Bianco, nero e giallo"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Bianco, nero e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-30E0E5105D2F",
@@ -6035,7 +6275,7 @@
   {
     "id": "OH-2F809C56DDAE",
     "brand": "UGG",
-    "model": "Ciabatta con bordo morbido — Castagna e crema",
+    "model": "Modello da verificare — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -6057,9 +6297,12 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-DF49F4382B66",
@@ -6214,7 +6457,7 @@
   {
     "id": "OH-2822B6F39F82",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Bianco e beige",
+    "model": "Cloudmonster 3 — Bianco e beige",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -6234,10 +6477,13 @@
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco e beige. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-00E63C7231EF",
@@ -6306,7 +6552,7 @@
   {
     "id": "OH-B26D1759C531",
     "brand": "Dior",
-    "model": "Sneaker — Blu",
+    "model": "B30 — Blu",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -6328,9 +6574,12 @@
     "colori_disponibili": [
       "Blu"
     ],
-    "descrizione": "Sneaker nella colorazione blu. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Blu. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-AE299A20C288",
@@ -6410,7 +6659,7 @@
   {
     "id": "OH-217E1860ECAA",
     "brand": "Jordan",
-    "model": "Sneaker alta — Bianco e nero",
+    "model": "Six Rings — Bianco e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -6432,9 +6681,12 @@
     "colori_disponibili": [
       "Bianco e nero"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Six Rings. Colorazione: Bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Six Rings",
+    "famiglia_varianti": "Six Rings",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-45D9DA71737F",
@@ -6472,7 +6724,7 @@
   {
     "id": "OH-033756C40681",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Bianco e argento",
+    "model": "Ball Star — Bianco e argento",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -6494,14 +6746,17 @@
     "colori_disponibili": [
       "Bianco e argento"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e argento. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Bianco e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-BE0BD1666A57",
     "brand": "Adidas",
-    "model": "Scarpa da calcio senza lacci — Nero, bianco e rosso",
+    "model": "Predator FG — Nero, bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -6525,9 +6780,12 @@
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
-    "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-7BEA7F395DC6",
@@ -6607,7 +6865,7 @@
   {
     "id": "OH-A94C26878A86",
     "brand": "UGG",
-    "model": "Ciabatta con bordo morbido — Nero",
+    "model": "Modello da verificare — Nero",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -6629,9 +6887,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-111F4D50AAF1",
@@ -6786,7 +7047,7 @@
   {
     "id": "OH-AEEAD5351636",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Verde oliva e nero",
+    "model": "Cloudmonster 3 — Verde oliva e nero",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -6806,10 +7067,13 @@
     "colori_disponibili": [
       "Verde oliva e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione verde oliva e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Verde oliva e nero. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-96B457F9F9A9",
@@ -6878,7 +7142,7 @@
   {
     "id": "OH-AC2EA8159800",
     "brand": "Dior",
-    "model": "Sneaker — Nero, bianco e turchese",
+    "model": "B30 — Nero, bianco e turchese",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -6900,9 +7164,12 @@
     "colori_disponibili": [
       "Nero, bianco e turchese"
     ],
-    "descrizione": "Sneaker nella colorazione nero, bianco e turchese. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Nero, bianco e turchese. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-30F4C57ED9C2",
@@ -6939,7 +7206,7 @@
   {
     "id": "OH-0D0D097C4F75",
     "brand": "Balenciaga",
-    "model": "Sneaker — Grigio e rosso",
+    "model": "Track Trail Lace — Grigio e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -6959,10 +7226,13 @@
     "colori_disponibili": [
       "Grigio e rosso"
     ],
-    "descrizione": "Sneaker nella colorazione grigio e rosso. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Balenciaga Track Trail Lace. Colorazione: Grigio e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Track Trail Lace",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-C121AC985A18",
@@ -6993,7 +7263,7 @@
   {
     "id": "OH-C05E69943287",
     "brand": "Jordan",
-    "model": "Sneaker alta — Bianco e rosso",
+    "model": "Six Rings — Bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7015,9 +7285,12 @@
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Six Rings. Colorazione: Bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Six Rings",
+    "famiglia_varianti": "Six Rings",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-D299D9704A2B",
@@ -7055,7 +7328,7 @@
   {
     "id": "OH-2B5A50DE63D7",
     "brand": "Golden Goose",
-    "model": "Sneaker bassa con stella — Beige, argento e nero",
+    "model": "Ball Star — Beige, argento e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7077,14 +7350,17 @@
     "colori_disponibili": [
       "Beige, argento e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione beige, argento e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Beige, argento e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-DF278690C6BF",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Nero, fucsia e giallo",
+    "model": "Predator FG — Nero, fucsia e giallo",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -7108,9 +7384,12 @@
     "colori_disponibili": [
       "Nero, fucsia e giallo"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, fucsia e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-511DC7FAC9FA",
@@ -7181,7 +7460,7 @@
   {
     "id": "OH-0B52459DC502",
     "brand": "UGG",
-    "model": "Stivaletto con bordo morbido — Castagna e crema",
+    "model": "Modello da verificare — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -7201,10 +7480,13 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Stivaletto con bordo morbido nella colorazione castagna e crema. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-7FF3E81A4C51",
@@ -7308,7 +7590,7 @@
   {
     "id": "OH-0BDF23690CBC",
     "brand": "Gucci",
-    "model": "Sneaker — Grigio e crema",
+    "model": "2.0 — Grigio e crema",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7328,10 +7610,13 @@
     "colori_disponibili": [
       "Grigio e crema"
     ],
-    "descrizione": "Sneaker nella colorazione grigio e crema. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Gucci 2.0. Colorazione: Grigio e crema. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2.0",
+    "famiglia_varianti": "2.0",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-EFF24FEE6244",
@@ -7370,7 +7655,7 @@
   {
     "id": "OH-7A8FBFA2B405",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Nero e giallo",
+    "model": "Cloudmonster 3 — Nero e giallo",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -7390,10 +7675,13 @@
     "colori_disponibili": [
       "Nero e giallo"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione nero e giallo. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Nero e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-500FB732AF5E",
@@ -7462,7 +7750,7 @@
   {
     "id": "OH-DBC4C0F38D37",
     "brand": "Dior",
-    "model": "Sneaker — Bianco, grigio e nero",
+    "model": "B30 — Bianco, grigio e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7484,9 +7772,12 @@
     "colori_disponibili": [
       "Bianco, grigio e nero"
     ],
-    "descrizione": "Sneaker nella colorazione bianco, grigio e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Bianco, grigio e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-D4FB5B6DD804",
@@ -7557,7 +7848,7 @@
   {
     "id": "OH-FAB2D612D4BA",
     "brand": "Jordan",
-    "model": "Sneaker alta — Nero, rosso e bianco",
+    "model": "Six Rings — Nero, rosso e bianco",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7579,9 +7870,12 @@
     "colori_disponibili": [
       "Nero, rosso e bianco"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero, rosso e bianco. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Six Rings. Colorazione: Nero, rosso e bianco. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Six Rings",
+    "famiglia_varianti": "Six Rings",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-7A07D98838C2",
@@ -7619,7 +7913,7 @@
   {
     "id": "OH-39205F1A062C",
     "brand": "Golden Goose",
-    "model": "Sneaker alta con stella — Argento, bianco e nero",
+    "model": "Slide — Argento, bianco e nero",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7641,14 +7935,17 @@
     "colori_disponibili": [
       "Argento, bianco e nero"
     ],
-    "descrizione": "Sneaker alta con stella nella colorazione argento, bianco e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Slide. Colorazione: Argento, bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Slide",
+    "famiglia_varianti": "Slide",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-4307CE8EB16D",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Nero, bianco e rosso",
+    "model": "Predator FG — Nero, bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -7670,10 +7967,13 @@
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Nero, bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-CFCC9A9A2D3D",
@@ -7744,7 +8044,7 @@
   {
     "id": "OH-F2546D8E0082",
     "brand": "UGG",
-    "model": "Stivaletto basso — Sabbia",
+    "model": "Modello da verificare — Sabbia",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -7764,10 +8064,13 @@
     "colori_disponibili": [
       "Sabbia"
     ],
-    "descrizione": "Stivaletto basso nella colorazione sabbia. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Sabbia. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-606C44F2DC1A",
@@ -7922,7 +8225,7 @@
   {
     "id": "OH-142CC9280AC3",
     "brand": "On Running",
-    "model": "Sneaker sportiva — Tortora e nero",
+    "model": "Cloudmonster 3 — Tortora e nero",
     "genere": "Scarpe",
     "sottogenere": "Running",
     "category": "Running",
@@ -7942,10 +8245,13 @@
     "colori_disponibili": [
       "Tortora e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione tortora e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "On Running Cloudmonster 3. Colorazione: Tortora e nero. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Cloudmonster 3",
+    "famiglia_varianti": "Cloudmonster 3",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-C744BA3388F0",
@@ -8014,7 +8320,7 @@
   {
     "id": "OH-03F4661DD7BD",
     "brand": "Dior",
-    "model": "Sneaker — Blu navy e grigio",
+    "model": "B30 — Blu navy e grigio",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -8036,9 +8342,12 @@
     "colori_disponibili": [
       "Blu navy e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione blu navy e grigio. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Dior B30. Colorazione: Blu navy e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "B30",
+    "famiglia_varianti": "B30",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-334A3C1BB471",
@@ -8109,7 +8418,7 @@
   {
     "id": "OH-311959DF67D1",
     "brand": "Jordan",
-    "model": "Sneaker alta — Nero e azzurro",
+    "model": "Six Rings — Nero e azzurro",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -8131,9 +8440,12 @@
     "colori_disponibili": [
       "Nero e azzurro"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero e azzurro. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Six Rings. Colorazione: Nero e azzurro. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Six Rings",
+    "famiglia_varianti": "Six Rings",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-CE124252ED34",
@@ -8171,7 +8483,7 @@
   {
     "id": "OH-6F430A1B98A4",
     "brand": "Golden Goose",
-    "model": "Sneaker alta con stella — Avorio e argento",
+    "model": "Slide — Avorio e argento",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -8193,14 +8505,17 @@
     "colori_disponibili": [
       "Avorio e argento"
     ],
-    "descrizione": "Sneaker alta con stella nella colorazione avorio e argento. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Golden Goose Slide. Colorazione: Avorio e argento. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Slide",
+    "famiglia_varianti": "Slide",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-A7E22E815166",
     "brand": "Adidas",
-    "model": "Scarpa da calcio con lacci — Bianco, nero e giallo",
+    "model": "Predator FG — Bianco, nero e giallo",
     "genere": "Scarpe",
     "sottogenere": "Scarpe con tacchetti",
     "category": "Scarpe con tacchetti",
@@ -8224,9 +8539,12 @@
     "colori_disponibili": [
       "Bianco, nero e giallo"
     ],
-    "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
+    "descrizione": "Adidas Predator FG. Colorazione: Bianco, nero e giallo. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Predator",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-603A257F6F0C",
@@ -8297,7 +8615,7 @@
   {
     "id": "OH-050F8B523DCE",
     "brand": "UGG",
-    "model": "Mocassino — Nero",
+    "model": "Modello da verificare — Nero",
     "genere": "Scarpe",
     "sottogenere": "Mocassini",
     "category": "Mocassini",
@@ -8319,9 +8637,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Mocassino nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-9DAE99934D48",
@@ -10602,7 +10923,7 @@
   {
     "id": "OH-A3B69FE3C3E7",
     "brand": "Nike",
-    "model": "Nike Shox — Nero e rosso",
+    "model": "Shox Z — Nero e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -10619,16 +10940,19 @@
       "assets/products/OH-A3B69FE3C3E7_2.webp",
       "assets/products/OH-A3B69FE3C3E7_3.webp"
     ],
-    "descrizione": "Scarpa sportiva nera con dettagli rossi e ammortizzazione a colonne visibile sul tallone.",
+    "descrizione": "Nike Shox Z. Colorazione: Nero e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "modelloVerificato": true,
     "status": "Selezione fotografica",
     "selezione": "editoriale",
-    "vetrina": true
+    "vetrina": true,
+    "famiglia_modello": "Shox Z",
+    "famiglia_varianti": "Shox Z",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-0EC34260BBCF",
     "brand": "Nike",
-    "model": "Nike Shox — Bianco e rosso",
+    "model": "Shox R4 — Bianco e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -10645,11 +10969,14 @@
       "assets/products/OH-0EC34260BBCF_2.webp",
       "assets/products/OH-0EC34260BBCF_3.webp"
     ],
-    "descrizione": "Modello Nike Shox con tomaia chiara, contrasti rossi e suola tecnica.",
+    "descrizione": "Nike Shox R4. Colorazione: Bianco e rosso. Le fotografie mostrano l’articolo di riferimento.",
     "modelloVerificato": true,
     "status": "Selezione fotografica",
     "selezione": "editoriale",
-    "vetrina": true
+    "vetrina": true,
+    "famiglia_modello": "Shox R4",
+    "famiglia_varianti": "Shox R4",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-1A38425EA168",
@@ -13157,7 +13484,7 @@
   {
     "id": "OH-369CF2C781BA",
     "brand": "Nike",
-    "model": "Sneaker — Nero e verde fluo",
+    "model": "Air Rubber Dunk x Off-White — Nero e verde fluo",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13175,18 +13502,21 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker nella colorazione nero e verde fluo. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "Nike Air Rubber Dunk x Off-White. Colorazione: Nero e verde fluo. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Nero e verde fluo"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": true,
+    "galleria_in_completamento": true,
+    "famiglia_modello": "Air Rubber Dunk x Off-White",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-FF9874534B5B",
     "brand": "Adidas",
-    "model": "Campus — Beige e bianco",
+    "model": "Campus 00s — Beige e bianco",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13204,18 +13534,21 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Campus nella colorazione beige e bianco. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "Adidas Campus 00s. Colorazione: Beige e bianco. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Beige e bianco"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": true,
+    "galleria_in_completamento": true,
+    "famiglia_modello": "Campus 00s",
+    "famiglia_varianti": "Campus 00s",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-982B9107222A",
     "brand": "ASICS",
-    "model": "Sneaker — Bianco e grigio",
+    "model": "GEL-1130 — Bianco e grigio",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13235,12 +13568,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker nella colorazione bianco e grigio. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "ASICS GEL-1130. Colorazione: Bianco e grigio. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Bianco e grigio"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GEL-1130",
+    "famiglia_varianti": "GEL-1130",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-E2538BA93133",
@@ -13275,7 +13611,7 @@
   {
     "id": "OH-9B6F812F7D1A",
     "brand": "ASICS",
-    "model": "Sneaker sportiva — Bianco e blu",
+    "model": "GEL-KAYANO 32 — Bianco e blu",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13295,17 +13631,20 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker sportiva nella colorazione bianco e blu. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "ASICS GEL-KAYANO 32. Colorazione: Bianco e blu. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Bianco e blu"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GEL-KAYANO 32",
+    "famiglia_varianti": "GEL-KAYANO 32",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-7B0AC0EA3999",
     "brand": "Golden Goose",
-    "model": "Sneaker con stella — Bianco e bronzo",
+    "model": "Ball Star — Bianco e bronzo",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13325,17 +13664,20 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker con stella nella colorazione bianco e bronzo. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "Golden Goose Ball Star. Colorazione: Bianco e bronzo. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Bianco e bronzo"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Ball Star",
+    "famiglia_varianti": "Ball Star",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-5EBACB0CB15F",
     "brand": "Golden Goose",
-    "model": "Sneaker con stella — Bianco, grigio e verde",
+    "model": "Modello da verificare — Bianco, grigio e verde",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13355,12 +13697,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker con stella nella colorazione bianco, grigio e verde. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "Nome del modello da verificare. Colorazione: Bianco, grigio e verde. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Bianco, grigio e verde"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": false,
+    "famiglia_modello": "Modello da verificare",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "pending"
   },
   {
     "id": "OH-74F8C80E4997",
@@ -13455,7 +13800,7 @@
   {
     "id": "OH-D4E5DE17B1FE",
     "brand": "Nike",
-    "model": "Shox — Grigio e nero",
+    "model": "Shox Z — Grigio e nero",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13475,12 +13820,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Shox nella colorazione grigio e nero. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "Nike Shox Z. Colorazione: Grigio e nero. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Grigio e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Shox Z",
+    "famiglia_varianti": "Shox Z",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-6ED692D90D4B",
@@ -13545,7 +13893,7 @@
   {
     "id": "OH-019EA106B2FC",
     "brand": "ASICS",
-    "model": "Sneaker — Crema, nero, rosso e azzurro",
+    "model": "GEL-KAYANO 31 — Crema, nero, rosso e azzurro",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13563,18 +13911,21 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker nella colorazione crema, nero, rosso e azzurro. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "ASICS GEL-KAYANO 31. Colorazione: Crema, nero, rosso e azzurro. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Crema, nero, rosso e azzurro"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": true,
+    "galleria_in_completamento": true,
+    "famiglia_modello": "GEL-KAYANO 31",
+    "famiglia_varianti": "GEL-KAYANO 31",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-A0ADB866A68E",
     "brand": "ASICS",
-    "model": "GEL-Quantum — Grigio e nero",
+    "model": "GEL-QUANTUM 360 VIII — Grigio e nero",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13594,12 +13945,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "GEL-Quantum nella colorazione grigio e nero. Fotografie controllate per modello e variante visibile.",
+    "descrizione": "ASICS GEL-QUANTUM 360 VIII. Colorazione: Grigio e nero. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Grigio e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "GEL-QUANTUM 360 VIII",
+    "famiglia_varianti": "GEL-QUANTUM 360 VIII",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-65ACA34B0213",
@@ -13901,7 +14255,7 @@
   {
     "id": "OH-EC304B4680FC",
     "brand": "Jordan",
-    "model": "Air Jordan 1 — Bianco e crema",
+    "model": "Air Jordan 1 High x Off-White — Bianco e crema",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13921,17 +14275,20 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Jordan 1 nella colorazione bianco e crema. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 1 High x Off-White. Colorazione: Bianco e crema. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Bianco e crema"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 1 High x Off-White",
+    "famiglia_varianti": null,
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-3493AF40BDDD",
     "brand": "Jordan",
-    "model": "Air Jordan 1 — Rosso e nero",
+    "model": "Air Jordan 1 High — Rosso e nero",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -13951,12 +14308,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Jordan 1 nella colorazione rosso e nero. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Jordan Air Jordan 1 High. Colorazione: Rosso e nero. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Rosso e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Jordan 1 High",
+    "famiglia_varianti": "Air Jordan 1 High",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-3559A478CF97",
@@ -14228,7 +14588,7 @@
   {
     "id": "OH-CD982961808A",
     "brand": "Nike",
-    "model": "Sneaker con cinturino — Nero e bianco",
+    "model": "Air Max Plus Drift — Nero e bianco",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -14248,12 +14608,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker con cinturino nella colorazione nero e bianco. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "Nike Air Max Plus Drift. Colorazione: Nero e bianco. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Nero e bianco"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "Air Max Plus Drift",
+    "famiglia_varianti": "Air Max Plus Drift",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-D7D45E19B4F4",
@@ -14318,7 +14681,7 @@
   {
     "id": "OH-3C58E1BE7780",
     "brand": "New Balance",
-    "model": "Sneaker — Blu e verde iridescente",
+    "model": "2000 — Blu e verde iridescente",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Archivio OHANA",
@@ -14338,12 +14701,15 @@
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker nella colorazione blu e verde iridescente. Le fotografie mostrano la variante di riferimento.",
+    "descrizione": "New Balance 2000. Colorazione: Blu e verde iridescente. Le fotografie mostrano l’articolo di riferimento.",
     "colori_disponibili": [
       "Blu e verde iridescente"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false
+    "modelloVerificato": true,
+    "famiglia_modello": "2000",
+    "famiglia_varianti": "2000",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-81B122C92E87",

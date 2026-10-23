@@ -14,8 +14,10 @@ assert(variants.items.every(p => p.id !== product.id && family(p) === family(pro
 assert(!variants.items.some(p => /\bSB\b/.test(p.model)), 'Non confondere Jordan 4 e Jordan 4 SB');
 assert.notEqual(family({brand: 'Balenciaga', model: 'Track — Nero'}), family({brand: 'Balenciaga', model: 'Track 2 — Nero'}));
 assert.notEqual(family({brand: 'On Running', model: 'Cloudmonster — Nero'}), family({brand: 'On Running', model: 'On Cloudmonster 2 — Nero'}));
-const generic = catalog.find(p => p.id === 'OHY-001');
+const generic = catalog.find(p => p.stato_nome_modello === 'pending');
+assert(generic, 'La prova usa un articolo con nome ancora da verificare');
 assert.equal(answer('altri colori', generic, catalog, []).items.length, 0, 'Non associare sneaker generiche diverse');
+assert.equal(family({brand:'Nike',model:'Sneaker — Nero'}),null,'I nuovi titoli generici restano senza gruppo');
 const incomplete = catalog.find(p => p.vetrina === true && p.galleria_in_completamento === true);
 assert(incomplete, 'Esiste ancora un caso reale di foto incompleta per il collaudo');
 const one = answer('altre foto', incomplete, catalog, []);

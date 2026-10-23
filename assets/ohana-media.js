@@ -22,6 +22,11 @@
   ]);
   function family(product) {
     const brand = norm(product.brand);
+    // Explicit reviewed grouping takes precedence, including an intentional null.
+    if (Object.prototype.hasOwnProperty.call(product, 'famiglia_varianti')) {
+      return product.modelloVerificato === true && typeof product.famiglia_varianti === 'string' && norm(product.famiglia_varianti)
+        ? brand + ':' + norm(product.famiglia_varianti) : null;
+    }
     let name = norm(String(product.model || '').split(/\s+[—–]\s+/)[0]);
     for (const prefix of [brand, brand === 'jordan' ? 'jordan' : '', brand === 'on running' ? 'on' : '']) {
       if (prefix && name.startsWith(prefix + ' ')) name = name.slice(prefix.length + 1);

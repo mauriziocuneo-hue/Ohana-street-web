@@ -6,7 +6,11 @@
   const typeGroups={'@sport':['Running','Trail e outdoor'],'@tacchetti':['Scarpe con tacchetti','Calcio · FG','Calcetto · TF']};
   function filterProducts(products,state){
     const words=norm(state.query).split(/\s+/).filter(Boolean);
-    const list=products.filter(p=>(!state.brand||p.brand===state.brand)&&(!state.family||p.family===state.family)&&(!state.type||p.type===state.type||(typeGroups[state.type]||[]).includes(p.type))&&words.every(w=>norm([p.id,p.brand,p.family,p.name,p.color,p.code,p.type,...(p.tags||[])].join(' ')).includes(w)));
+    const list=products.filter(p=>{
+      if((state.brand&&p.brand!==state.brand)||(state.family&&p.family!==state.family)||(state.type&&p.type!==state.type&&!(typeGroups[state.type]||[]).includes(p.type)))return false;
+      const text=norm([p.brand,p.family,p.name,p.color,p.code,p.type,...(p.tags||[])].join(' '));
+      return words.every(w=>/^\d+$/.test(w)?new RegExp('(?:^|[^a-z0-9])'+w+'(?=$|[^0-9])').test(text):(text+' '+norm(p.id)).includes(w));
+    });
     if(state.sort==='brand')list.sort((a,b)=>a.brand.localeCompare(b.brand,'it')||a.family.localeCompare(b.family,'it'));
     if(state.sort==='family')list.sort((a,b)=>a.family.localeCompare(b.family,'it'));
     return list;
@@ -32,7 +36,7 @@
   const $=s=>document.querySelector(s),esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let products=[],state={brand:'',family:'',type:'',query:'',sort:'default'},limit=24,current=null,returnFocus=null,requestController=null;
   const dialog=$('#productDialog');
-  function card(p){return `<article class="card"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="Apri ${esc(p.brand+' '+p.family+' '+p.color)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+p.family+' · '+p.color)}"><span class="photo-count">${p.photos.length} foto</span></button><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3 class="display">${esc(p.family)}</h3><p class="card-color">${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">Esplora la scarpa <span aria-hidden="true">↗</span></button></div></article>`;}
+  function card(p){return `<article class="card"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="Apri ${esc(p.brand+' '+(p.name||p.family)+' '+p.color)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+(p.name||p.family)+' · '+p.color)}"><span class="photo-count">${p.photos.length} foto</span></button><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3 class="display">${esc(p.name||p.family)}</h3><p class="card-color">${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">Esplora la scarpa <span aria-hidden="true">↗</span></button></div></article>`;}
   function tree(){
     const brands=[...new Set(products.map(p=>p.brand))].sort((a,b)=>a.localeCompare(b,'it'));
     $('#categoryTree').innerHTML=`<button type="button" data-brand="" data-family="" ${!state.brand?'aria-current="true"':''}>Tutte le scarpe</button>`+brands.map(b=>{
@@ -50,7 +54,7 @@
   }
   function showPhoto(index){
     const src=current.photos[index];if(!src)return;
-    $('#photoError').hidden=true;$('#mainPhoto').hidden=false;$('#mainPhoto').src=src;$('#mainPhoto').alt=`${current.brand} ${current.family} · ${current.color} · fotografia ${index+1}`;
+    $('#photoError').hidden=true;$('#mainPhoto').hidden=false;$('#mainPhoto').src=src;$('#mainPhoto').alt=`${current.brand} ${current.name||current.family} · ${current.color} · fotografia ${index+1}`;
     $('#photoCounter').textContent=`${index+1} / ${current.photos.length}`;
     $('#thumbnails').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.photo)===index)));
   }

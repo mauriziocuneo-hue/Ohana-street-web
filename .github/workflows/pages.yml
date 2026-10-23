@@ -12,6 +12,9 @@ on:
       - "scripts/audit_catalogo_nuovo.py"
       - "tests/catalogo-nuovo.test.js"
       - "tests/ohana-chat.test.js"
+      - "tests/nomi-modelli.test.js"
+      - "nomi-modelli.json"
+      - "tools/importa_catalogo_esistente.py"
       - "foto-extra.json"
       - "tests/media-bot.test.js"
       - "modelli.html"
@@ -41,6 +44,8 @@ jobs:
         run: node tests/catalogo-nuovo.test.js
       - name: Verifica le richieste guidate WhatsApp
         run: node tests/ohana-chat.test.js
+      - name: Verifica i nomi dei modelli e i gruppi di varianti
+        run: node tests/nomi-modelli.test.js
       - name: Prepara i soli file pubblici
         run: python3 tools/prepara_pages.py
       - name: Carica archivio validato

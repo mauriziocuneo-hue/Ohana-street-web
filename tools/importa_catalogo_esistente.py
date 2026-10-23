@@ -5,6 +5,21 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 legacy=json.loads((ROOT/'catalogo.json').read_text())
 active=[p for p in legacy if p.get('genere')=='Scarpe' and p.get('vetrina') is not False]
+reviews=json.loads((ROOT/'nomi-modelli.json').read_text())['products']
+assert set(reviews).issubset(p['id'] for p in active), 'Name review for an inactive or missing article'
+for p in active:
+ review=reviews.get(p['id'])
+ if not review:continue
+ assert p['brand']==review['brand'], 'Model review brand mismatch'
+ color=', '.join(p.get('colori_disponibili') or [re.split(r'\s+[—–]\s+',p['model'])[-1]])
+ p['model']=review['name']+' — '+color
+ p['famiglia_modello']=review['family']
+ p['famiglia_varianti']=review['variantFamily']
+ p['stato_nome_modello']=review['status']
+ p['modelloVerificato']=review['status']=='identified'
+ prefix='Nome del modello da verificare.' if review['status']=='pending' else p['brand']+' '+review['name']+'.'
+ p['descrizione']=prefix+' Colorazione: '+color+'. Le fotografie mostrano l’articolo di riferimento.'
+(ROOT/'catalogo.json').write_text(json.dumps(legacy,ensure_ascii=False,indent=2)+'\n')
 existing=json.loads((ROOT/'catalogo-nuovo.json').read_text())
 pilot=[p for p in existing['products'] if not p.get('legacy')]
 extras=json.loads((ROOT/'foto-extra.json').read_text())['products']
@@ -22,7 +37,7 @@ for p in pilot:
 products=[]
 for p in active:
  parts=re.split(r'\s+[—–]\s+',p['model']);name=trim_brand(parts[0].strip(),p['brand'])
- family=aliases.get(norm(name),name)
+ family=p.get('famiglia_modello') or aliases.get(norm(name),name)
  colors=p.get('colori_disponibili')
  color=', '.join(colors) if isinstance(colors,list) and colors else (parts[-1].strip() if len(parts)>1 else 'Colorazione nelle fotografie')
  images=list(p['images']);photos=list(dict.fromkeys(images+[x['src'] for x in extras.get(p['id'],[])]))
@@ -30,7 +45,7 @@ for p in active:
  if not code:
   match=re.search(r'(?:^|[—–\s])([A-Z]{1,4}\d{3,8}(?:-\d{2,4})?)\s*$',p['model'],re.I)
   code=match[1] if match else ''
- products.append({'id':p['id'],'brand':p['brand'],'family':family,'name':name,'color':color,'type':p['sottogenere'],'code':code,'description':p['descrizione'],'image':p['image'],'images':images,'photos':photos,'tags':p.get('tags',[]),'variantGroup':keys[p['id']],'galleryIncomplete':len(images)<3,'legacy':True})
+ products.append({'id':p['id'],'brand':p['brand'],'family':family,'name':name,'modelNameStatus':p.get('stato_nome_modello','existing'),'color':color,'type':p['sottogenere'],'code':code,'description':p['descrizione'],'image':p['image'],'images':images,'photos':photos,'tags':p.get('tags',[]),'variantGroup':keys[p['id']],'galleryIncomplete':len(images)<3,'legacy':True})
 ids={p['id'] for p in products}
 assert not ids.intersection(p['id'] for p in pilot),'IDs overlap between legacy and new albums'
 products+=pilot
