@@ -93,6 +93,8 @@ function familyKey(row) { return row.model_key || row.candidate_key || null; }
 const el = (tag, text, cls) => { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; };
 function link(text, url) { const href = safeUrl(url); if (!href) return null; const a = el('a', text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; }
 function mountVariants(client) {
+  // Progressive enhancement: the base catalog remains usable without dialog support.
+  if(typeof document.createElement!=='function' || !('showModal' in document.createElement('dialog')))return;
   let epoch = 0;
   const modal = el('dialog', '', 'variants-dialog');
   modal.setAttribute('aria-label', 'Varianti e sorgenti riservate');
