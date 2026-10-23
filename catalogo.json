@@ -17,13 +17,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-001_restored.webp"
+      "assets/products/OHY-001_restored.webp",
+      "assets/products/OHY-001_gallery_2.webp",
+      "assets/products/OHY-001_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione bianco e beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -45,13 +46,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-002_restored.webp"
+      "assets/products/OHY-002_restored.webp",
+      "assets/products/OHY-002_gallery_2.webp",
+      "assets/products/OHY-002_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu scuro e nero"
     ],
-    "descrizione": "Sneaker nella colorazione blu scuro e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione blu scuro e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -73,13 +75,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-003_restored.webp"
+      "assets/products/OHY-003_restored.webp",
+      "assets/products/OHY-003_gallery_2.webp",
+      "assets/products/OHY-003_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu e nero"
     ],
-    "descrizione": "Sneaker nella colorazione blu e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione blu e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -101,13 +104,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-004_restored.webp"
+      "assets/products/OHY-004_restored.webp",
+      "assets/products/OHY-004_gallery_2.webp",
+      "assets/products/OHY-004_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio scuro e rosso"
     ],
-    "descrizione": "Sneaker nella colorazione grigio scuro e rosso. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione grigio scuro e rosso. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -129,13 +133,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-005_restored.webp"
+      "assets/products/OHY-005_restored.webp",
+      "assets/products/OHY-005_gallery_2.webp",
+      "assets/products/OHY-005_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Giallo chiaro"
     ],
-    "descrizione": "Sneaker nella colorazione giallo chiaro. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione giallo chiaro. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -157,13 +162,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-006_restored.webp"
+      "assets/products/OHY-006_restored.webp",
+      "assets/products/OHY-006_gallery_2.webp",
+      "assets/products/OHY-006_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Verde oliva e beige"
     ],
-    "descrizione": "Sneaker nella colorazione verde oliva e beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione verde oliva e beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -185,13 +191,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-007_restored.webp"
+      "assets/products/OHY-007_restored.webp",
+      "assets/products/OHY-007_gallery_2.webp",
+      "assets/products/OHY-007_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio, bianco e blu"
     ],
-    "descrizione": "Sneaker bassa nella colorazione grigio, bianco e blu. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione grigio, bianco e blu. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -213,13 +220,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-008_restored.webp"
+      "assets/products/OHY-008_restored.webp",
+      "assets/products/OHY-008_gallery_2.webp",
+      "assets/products/OHY-008_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu e corallo"
     ],
-    "descrizione": "Sneaker bassa nella colorazione blu e corallo. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione blu e corallo. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -241,13 +249,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-009_restored.webp"
+      "assets/products/OHY-009_restored.webp",
+      "assets/products/OHY-009_gallery_2.webp",
+      "assets/products/OHY-009_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Verde lime, blu e rosa"
     ],
-    "descrizione": "Sneaker con cinturini nella colorazione verde lime, blu e rosa. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker con cinturini nella colorazione verde lime, blu e rosa. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -269,13 +278,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-010_restored.webp"
+      "assets/products/OHY-010_restored.webp",
+      "assets/products/OHY-010_gallery_2.webp",
+      "assets/products/OHY-010_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu, argento e verde"
     ],
-    "descrizione": "Sneaker con cinturini nella colorazione blu, argento e verde. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker con cinturini nella colorazione blu, argento e verde. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -297,13 +307,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-011_restored.webp"
+      "assets/products/OHY-011_restored.webp",
+      "assets/products/OHY-011_gallery_2.webp",
+      "assets/products/OHY-011_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Lilla e giallo"
     ],
-    "descrizione": "Sneaker bassa nella colorazione lilla e giallo. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione lilla e giallo. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -325,13 +336,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-012_restored.webp"
+      "assets/products/OHY-012_restored.webp",
+      "assets/products/OHY-012_gallery_2.webp",
+      "assets/products/OHY-012_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e crema"
     ],
-    "descrizione": "Sneaker bassa nella colorazione nero e crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione nero e crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -353,13 +365,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-013_restored.webp"
+      "assets/products/OHY-013_restored.webp",
+      "assets/products/OHY-013_gallery_2.webp",
+      "assets/products/OHY-013_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker bassa nella colorazione bianco e rosso. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -381,13 +394,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-014_restored.webp"
+      "assets/products/OHY-014_restored.webp",
+      "assets/products/OHY-014_gallery_2.webp",
+      "assets/products/OHY-014_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Azzurro e bianco"
     ],
-    "descrizione": "Sneaker bassa nella colorazione azzurro e bianco. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione azzurro e bianco. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -409,13 +423,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-015_restored.webp"
+      "assets/products/OHY-015_restored.webp",
+      "assets/products/OHY-015_gallery_2.webp",
+      "assets/products/OHY-015_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Giallo fluo e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione giallo fluo e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione giallo fluo e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -437,13 +452,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-016_restored.webp"
+      "assets/products/OHY-016_restored.webp",
+      "assets/products/OHY-016_gallery_2.webp",
+      "assets/products/OHY-016_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio, nero e bianco"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione grigio, nero e bianco. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione grigio, nero e bianco. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -465,13 +481,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-017_restored.webp"
+      "assets/products/OHY-017_restored.webp",
+      "assets/products/OHY-017_gallery_2.webp",
+      "assets/products/OHY-017_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, giallo e azzurro"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, giallo e azzurro. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione bianco, giallo e azzurro. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -529,13 +546,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-020_restored.webp"
+      "assets/products/OHY-020_restored.webp",
+      "assets/products/OHY-020_gallery_2.webp",
+      "assets/products/OHY-020_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e verde lime"
     ],
-    "descrizione": "Scarpa bassa sportiva nella colorazione nero e verde lime. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Scarpa bassa sportiva nella colorazione nero e verde lime. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -557,13 +575,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-021_restored.webp"
+      "assets/products/OHY-021_restored.webp",
+      "assets/products/OHY-021_gallery_2.webp",
+      "assets/products/OHY-021_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, beige e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, beige e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione bianco, beige e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -613,13 +632,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-023_restored.webp"
+      "assets/products/OHY-023_restored.webp",
+      "assets/products/OHY-023_gallery_2.webp",
+      "assets/products/OHY-023_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e argento"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione nero e argento. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione nero e argento. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -641,13 +661,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-024_restored.webp"
+      "assets/products/OHY-024_restored.webp",
+      "assets/products/OHY-024_gallery_2.webp",
+      "assets/products/OHY-024_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e argento"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e argento. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione bianco e argento. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -669,13 +690,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-025_restored.webp"
+      "assets/products/OHY-025_restored.webp",
+      "assets/products/OHY-025_gallery_2.webp",
+      "assets/products/OHY-025_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e argento"
     ],
-    "descrizione": "Sneaker nella colorazione nero e argento. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione nero e argento. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -761,13 +783,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-029_restored.webp"
+      "assets/products/OHY-029_restored.webp",
+      "assets/products/OHY-029_gallery_2.webp",
+      "assets/products/OHY-029_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Sneaker nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -807,13 +830,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-031_restored.webp"
+      "assets/products/OHY-031_restored.webp",
+      "assets/products/OHY-031_gallery_2.webp",
+      "assets/products/OHY-031_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Lilla e grigio"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione lilla e grigio. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione lilla e grigio. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -853,13 +877,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-033_restored.webp"
+      "assets/products/OHY-033_restored.webp",
+      "assets/products/OHY-033_gallery_2.webp",
+      "assets/products/OHY-033_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Marrone, grigio e nero"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione marrone, grigio e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione marrone, grigio e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -881,13 +906,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-034_restored.webp"
+      "assets/products/OHY-034_restored.webp",
+      "assets/products/OHY-034_gallery_2.webp",
+      "assets/products/OHY-034_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, grigio e bordeaux"
     ],
-    "descrizione": "Sneaker sportiva nella colorazione bianco, grigio e bordeaux. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker sportiva nella colorazione bianco, grigio e bordeaux. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -999,13 +1025,14 @@
     "sottogenere": "Stivali e stivaletti",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-040_restored.webp"
+      "assets/products/OHY-040_restored.webp",
+      "assets/products/OHY-040_gallery_2.webp",
+      "assets/products/OHY-040_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Stivaletto con dettagli morbidi nella colorazione castagna e crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Stivaletto con dettagli morbidi nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1027,13 +1054,14 @@
     "sottogenere": "Sabot e slip-on",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-041_restored.webp"
+      "assets/products/OHY-041_restored.webp",
+      "assets/products/OHY-041_gallery_2.webp",
+      "assets/products/OHY-041_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sabot con cinturino nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1055,13 +1083,14 @@
     "sottogenere": "Sabot e slip-on",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-042_restored.webp"
+      "assets/products/OHY-042_restored.webp",
+      "assets/products/OHY-042_gallery_2.webp",
+      "assets/products/OHY-042_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Beige"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sabot con cinturino nella colorazione beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1083,13 +1112,14 @@
     "sottogenere": "Sabot e slip-on",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-043_restored.webp"
+      "assets/products/OHY-043_restored.webp",
+      "assets/products/OHY-043_gallery_2.webp",
+      "assets/products/OHY-043_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Rosa"
     ],
-    "descrizione": "Sabot con cinturino nella colorazione rosa. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sabot con cinturino nella colorazione rosa. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1265,13 +1295,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-053_restored.webp"
+      "assets/products/OHY-053_restored.webp",
+      "assets/products/OHY-053_gallery_2.webp",
+      "assets/products/OHY-053_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio, crema e blu"
     ],
-    "descrizione": "Sneaker nella colorazione grigio, crema e blu. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione grigio, crema e blu. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1293,13 +1324,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-054_restored.webp"
+      "assets/products/OHY-054_restored.webp",
+      "assets/products/OHY-054_gallery_2.webp",
+      "assets/products/OHY-054_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, grigio e crema"
     ],
-    "descrizione": "Sneaker nella colorazione nero, grigio e crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione nero, grigio e crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1321,13 +1353,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-055_restored.webp"
+      "assets/products/OHY-055_restored.webp",
+      "assets/products/OHY-055_gallery_2.webp",
+      "assets/products/OHY-055_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio e bordeaux"
     ],
-    "descrizione": "Sneaker nella colorazione grigio e bordeaux. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione grigio e bordeaux. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1485,13 +1518,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-064_restored.webp"
+      "assets/products/OHY-064_restored.webp",
+      "assets/products/OHY-064_gallery_2.webp",
+      "assets/products/OHY-064_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Marrone e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione marrone e beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker a quadri nella colorazione marrone e beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1513,13 +1547,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-065_restored.webp"
+      "assets/products/OHY-065_restored.webp",
+      "assets/products/OHY-065_gallery_2.webp",
+      "assets/products/OHY-065_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione grigio e beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker a quadri nella colorazione grigio e beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1541,13 +1576,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-066_restored.webp"
+      "assets/products/OHY-066_restored.webp",
+      "assets/products/OHY-066_gallery_2.webp",
+      "assets/products/OHY-066_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Sneaker a quadri nella colorazione bianco e beige. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker a quadri nella colorazione bianco e beige. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1569,13 +1605,14 @@
     "sottogenere": "Sneakers",
     "vetrina": true,
     "images": [
-      "assets/products/OHY-067_restored.webp"
+      "assets/products/OHY-067_restored.webp",
+      "assets/products/OHY-067_gallery_2.webp",
+      "assets/products/OHY-067_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco"
     ],
-    "descrizione": "Sneaker bassa nella colorazione bianco. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa nella colorazione bianco. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1768,13 +1805,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-949D51135B4E.webp"
+      "assets/products/OH-949D51135B4E.webp",
+      "assets/products/OH-949D51135B4E_gallery_2.webp",
+      "assets/products/OH-949D51135B4E_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
     "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1796,13 +1834,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-11DE03266FB8.webp"
+      "assets/products/OH-11DE03266FB8.webp",
+      "assets/products/OH-11DE03266FB8_gallery_2.webp",
+      "assets/products/OH-11DE03266FB8_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Ciabatta con fascia nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Ciabatta con fascia nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -1873,13 +1912,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-AA4467E89CAF.webp"
+      "assets/products/OH-AA4467E89CAF.webp",
+      "assets/products/OH-AA4467E89CAF_gallery_2.webp",
+      "assets/products/OH-AA4467E89CAF_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Castagna"
     ],
-    "descrizione": "Sandalo a due fasce nella colorazione castagna. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sandalo a due fasce nella colorazione castagna. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2143,13 +2183,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-C9F2F09ED203.webp"
+      "assets/products/OH-C9F2F09ED203.webp",
+      "assets/products/OH-C9F2F09ED203_gallery_2.webp",
+      "assets/products/OH-C9F2F09ED203_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Grigio chiaro e verde"
     ],
-    "descrizione": "Sneaker nella colorazione grigio chiaro e verde. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione grigio chiaro e verde. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2281,13 +2322,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-0179DC981468.webp"
+      "assets/products/OH-0179DC981468.webp",
+      "assets/products/OH-0179DC981468_gallery_2.webp",
+      "assets/products/OH-0179DC981468_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Verde oliva e nero"
     ],
-    "descrizione": "Sneaker alta nella colorazione verde oliva e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione verde oliva e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2370,13 +2412,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-8AA8F8955FD3.webp"
+      "assets/products/OH-8AA8F8955FD3.webp",
+      "assets/products/OH-8AA8F8955FD3_gallery_2.webp",
+      "assets/products/OH-8AA8F8955FD3_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, fucsia e giallo"
     ],
     "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2464,13 +2507,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-6E2532D93DEF.webp"
+      "assets/products/OH-6E2532D93DEF.webp",
+      "assets/products/OH-6E2532D93DEF_gallery_2.webp",
+      "assets/products/OH-6E2532D93DEF_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Sabbia"
     ],
-    "descrizione": "Sandalo a due fasce nella colorazione sabbia. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sandalo a due fasce nella colorazione sabbia. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2743,13 +2787,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-913E3CE8C2A7.webp"
+      "assets/products/OH-913E3CE8C2A7.webp",
+      "assets/products/OH-913E3CE8C2A7_gallery_2.webp",
+      "assets/products/OH-913E3CE8C2A7_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Beige e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione beige e grigio. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione beige e grigio. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2898,13 +2943,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-3FA6333B7471.webp"
+      "assets/products/OH-3FA6333B7471.webp",
+      "assets/products/OH-3FA6333B7471_gallery_2.webp",
+      "assets/products/OH-3FA6333B7471_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -2928,13 +2974,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-F336279283DD.webp"
+      "assets/products/OH-F336279283DD.webp",
+      "assets/products/OH-F336279283DD_gallery_2.webp",
+      "assets/products/OH-F336279283DD_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu, argento e rosso"
     ],
     "descrizione": "Scarpa da calcio senza lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3022,13 +3069,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-5A54217FFBF7.webp"
+      "assets/products/OH-5A54217FFBF7.webp",
+      "assets/products/OH-5A54217FFBF7_gallery_2.webp",
+      "assets/products/OH-5A54217FFBF7_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Verde oliva"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione verde oliva. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Scarpa alta con lacci nella colorazione verde oliva. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3292,13 +3340,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-D86AE4815A44.webp"
+      "assets/products/OH-D86AE4815A44.webp",
+      "assets/products/OH-D86AE4815A44_gallery_2.webp",
+      "assets/products/OH-D86AE4815A44_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e blu navy"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e blu navy. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione bianco e blu navy. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3386,13 +3435,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-7D0BE1D1B1FA.webp"
+      "assets/products/OH-7D0BE1D1B1FA.webp",
+      "assets/products/OH-7D0BE1D1B1FA_gallery_2.webp",
+      "assets/products/OH-7D0BE1D1B1FA_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e giallo"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero e giallo. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione nero e giallo. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3477,13 +3527,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-921BAF2C6ED4.webp"
+      "assets/products/OH-921BAF2C6ED4.webp",
+      "assets/products/OH-921BAF2C6ED4_gallery_2.webp",
+      "assets/products/OH-921BAF2C6ED4_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Rosa e argento"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione rosa e argento, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3691,13 +3742,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-B5E0087C4EB4.webp"
+      "assets/products/OH-B5E0087C4EB4.webp",
+      "assets/products/OH-B5E0087C4EB4_gallery_2.webp",
+      "assets/products/OH-B5E0087C4EB4_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, nero e verde lime"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e verde lime, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -3785,13 +3837,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-57750200FD55.webp"
+      "assets/products/OH-57750200FD55.webp",
+      "assets/products/OH-57750200FD55_gallery_2.webp",
+      "assets/products/OH-57750200FD55_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Castagna e nero"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione castagna e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Scarpa alta con lacci nella colorazione castagna e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4215,13 +4268,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-669401383FD3.webp"
+      "assets/products/OH-669401383FD3.webp",
+      "assets/products/OH-669401383FD3_gallery_2.webp",
+      "assets/products/OH-669401383FD3_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e rosso. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4245,13 +4299,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-3D80710ABA63.webp"
+      "assets/products/OH-3D80710ABA63.webp",
+      "assets/products/OH-3D80710ABA63_gallery_2.webp",
+      "assets/products/OH-3D80710ABA63_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4339,13 +4394,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-5CA563FB87E3.webp"
+      "assets/products/OH-5CA563FB87E3.webp",
+      "assets/products/OH-5CA563FB87E3_gallery_2.webp",
+      "assets/products/OH-5CA563FB87E3_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Scarpa alta con lacci nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Scarpa alta con lacci nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4618,13 +4674,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-E2AB168B191E.webp"
+      "assets/products/OH-E2AB168B191E.webp",
+      "assets/products/OH-E2AB168B191E_gallery_2.webp",
+      "assets/products/OH-E2AB168B191E_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Giallo, blu e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione giallo, blu e grigio. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione giallo, blu e grigio. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4762,13 +4819,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-DD7E3212615A.webp"
+      "assets/products/OH-DD7E3212615A.webp",
+      "assets/products/OH-DD7E3212615A_gallery_2.webp",
+      "assets/products/OH-DD7E3212615A_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, grigio e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco, grigio e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione bianco, grigio e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4792,13 +4850,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-57A4DDC1F41A.webp"
+      "assets/products/OH-57A4DDC1F41A.webp",
+      "assets/products/OH-57A4DDC1F41A_gallery_2.webp",
+      "assets/products/OH-57A4DDC1F41A_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu, argento e rosso"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione blu, argento e rosso, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -4895,13 +4954,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-5DC4B16DF7C9.webp"
+      "assets/products/OH-5DC4B16DF7C9.webp",
+      "assets/products/OH-5DC4B16DF7C9_gallery_2.webp",
+      "assets/products/OH-5DC4B16DF7C9_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5165,13 +5225,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-B76093E9A201.webp"
+      "assets/products/OH-B76093E9A201.webp",
+      "assets/products/OH-B76093E9A201_gallery_2.webp",
+      "assets/products/OH-B76093E9A201_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e blu"
     ],
-    "descrizione": "Sneaker nella colorazione bianco e blu. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione bianco e blu. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5309,13 +5370,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-A80ED5273296.webp"
+      "assets/products/OH-A80ED5273296.webp",
+      "assets/products/OH-A80ED5273296_gallery_2.webp",
+      "assets/products/OH-A80ED5273296_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Crema e blu"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione crema e blu. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione crema e blu. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5339,13 +5401,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-51ECBA48E2E4.webp"
+      "assets/products/OH-51ECBA48E2E4.webp",
+      "assets/products/OH-51ECBA48E2E4_gallery_2.webp",
+      "assets/products/OH-51ECBA48E2E4_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Azzurro e argento"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione azzurro e argento, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5433,13 +5496,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-57CE8FAE46F9.webp"
+      "assets/products/OH-57CE8FAE46F9.webp",
+      "assets/products/OH-57CE8FAE46F9_gallery_2.webp",
+      "assets/products/OH-57CE8FAE46F9_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Crema"
     ],
-    "descrizione": "Ciabatta con rivestimento morbido nella colorazione crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Ciabatta con rivestimento morbido nella colorazione crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5703,13 +5767,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-369D56725A1B.webp"
+      "assets/products/OH-369D56725A1B.webp",
+      "assets/products/OH-369D56725A1B_gallery_2.webp",
+      "assets/products/OH-369D56725A1B_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Giallo lime"
     ],
-    "descrizione": "Sneaker nella colorazione giallo lime. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione giallo lime. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5797,13 +5862,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-86EB0DEBC255.webp"
+      "assets/products/OH-86EB0DEBC255.webp",
+      "assets/products/OH-86EB0DEBC255_gallery_2.webp",
+      "assets/products/OH-86EB0DEBC255_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, nero e rosa"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco, nero e rosa. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione bianco, nero e rosa. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5858,13 +5924,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-355D9B4262C1.webp"
+      "assets/products/OH-355D9B4262C1.webp",
+      "assets/products/OH-355D9B4262C1_gallery_2.webp",
+      "assets/products/OH-355D9B4262C1_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Crema e rosso"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione crema e rosso. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione crema e rosso. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5888,13 +5955,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-9A8A627A548C.webp"
+      "assets/products/OH-9A8A627A548C.webp",
+      "assets/products/OH-9A8A627A548C_gallery_2.webp",
+      "assets/products/OH-9A8A627A548C_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, nero e giallo"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -5982,13 +6050,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-2F809C56DDAE.webp"
+      "assets/products/OH-2F809C56DDAE.webp",
+      "assets/products/OH-2F809C56DDAE_gallery_2.webp",
+      "assets/products/OH-2F809C56DDAE_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Ciabatta con bordo morbido nella colorazione castagna e crema. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6252,13 +6321,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-B26D1759C531.webp"
+      "assets/products/OH-B26D1759C531.webp",
+      "assets/products/OH-B26D1759C531_gallery_2.webp",
+      "assets/products/OH-B26D1759C531_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu"
     ],
-    "descrizione": "Sneaker nella colorazione blu. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione blu. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6355,13 +6425,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-217E1860ECAA.webp"
+      "assets/products/OH-217E1860ECAA.webp",
+      "assets/products/OH-217E1860ECAA_gallery_2.webp",
+      "assets/products/OH-217E1860ECAA_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e nero"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6416,13 +6487,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-033756C40681.webp"
+      "assets/products/OH-033756C40681.webp",
+      "assets/products/OH-033756C40681_gallery_2.webp",
+      "assets/products/OH-033756C40681_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e argento"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione bianco e argento. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione bianco e argento. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6446,13 +6518,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-BE0BD1666A57.webp"
+      "assets/products/OH-BE0BD1666A57.webp",
+      "assets/products/OH-BE0BD1666A57_gallery_2.webp",
+      "assets/products/OH-BE0BD1666A57_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, bianco e rosso"
     ],
     "descrizione": "Scarpa da calcio senza lacci, nella colorazione nero, bianco e rosso, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6549,13 +6622,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-A94C26878A86.webp"
+      "assets/products/OH-A94C26878A86.webp",
+      "assets/products/OH-A94C26878A86_gallery_2.webp",
+      "assets/products/OH-A94C26878A86_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Ciabatta con bordo morbido nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Ciabatta con bordo morbido nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6819,13 +6893,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-AC2EA8159800.webp"
+      "assets/products/OH-AC2EA8159800.webp",
+      "assets/products/OH-AC2EA8159800_gallery_2.webp",
+      "assets/products/OH-AC2EA8159800_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, bianco e turchese"
     ],
-    "descrizione": "Sneaker nella colorazione nero, bianco e turchese. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione nero, bianco e turchese. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6933,13 +7008,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-C05E69943287.webp"
+      "assets/products/OH-C05E69943287.webp",
+      "assets/products/OH-C05E69943287_gallery_2.webp",
+      "assets/products/OH-C05E69943287_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco e rosso"
     ],
-    "descrizione": "Sneaker alta nella colorazione bianco e rosso. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione bianco e rosso. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -6994,13 +7070,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-2B5A50DE63D7.webp"
+      "assets/products/OH-2B5A50DE63D7.webp",
+      "assets/products/OH-2B5A50DE63D7_gallery_2.webp",
+      "assets/products/OH-2B5A50DE63D7_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Beige, argento e nero"
     ],
-    "descrizione": "Sneaker bassa con stella nella colorazione beige, argento e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker bassa con stella nella colorazione beige, argento e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -7024,13 +7101,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-DF278690C6BF.webp"
+      "assets/products/OH-DF278690C6BF.webp",
+      "assets/products/OH-DF278690C6BF_gallery_2.webp",
+      "assets/products/OH-DF278690C6BF_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, fucsia e giallo"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione nero, fucsia e giallo, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -7399,13 +7477,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-DBC4C0F38D37.webp"
+      "assets/products/OH-DBC4C0F38D37.webp",
+      "assets/products/OH-DBC4C0F38D37_gallery_2.webp",
+      "assets/products/OH-DBC4C0F38D37_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, grigio e nero"
     ],
-    "descrizione": "Sneaker nella colorazione bianco, grigio e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione bianco, grigio e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -7493,13 +7572,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-FAB2D612D4BA.webp"
+      "assets/products/OH-FAB2D612D4BA.webp",
+      "assets/products/OH-FAB2D612D4BA_gallery_2.webp",
+      "assets/products/OH-FAB2D612D4BA_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero, rosso e bianco"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero, rosso e bianco. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione nero, rosso e bianco. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -7554,13 +7634,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-39205F1A062C.webp"
+      "assets/products/OH-39205F1A062C.webp",
+      "assets/products/OH-39205F1A062C_gallery_2.webp",
+      "assets/products/OH-39205F1A062C_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Argento, bianco e nero"
     ],
-    "descrizione": "Sneaker alta con stella nella colorazione argento, bianco e nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta con stella nella colorazione argento, bianco e nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -7948,13 +8029,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-03F4661DD7BD.webp"
+      "assets/products/OH-03F4661DD7BD.webp",
+      "assets/products/OH-03F4661DD7BD_gallery_2.webp",
+      "assets/products/OH-03F4661DD7BD_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Blu navy e grigio"
     ],
-    "descrizione": "Sneaker nella colorazione blu navy e grigio. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker nella colorazione blu navy e grigio. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -8042,13 +8124,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-311959DF67D1.webp"
+      "assets/products/OH-311959DF67D1.webp",
+      "assets/products/OH-311959DF67D1_gallery_2.webp",
+      "assets/products/OH-311959DF67D1_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero e azzurro"
     ],
-    "descrizione": "Sneaker alta nella colorazione nero e azzurro. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta nella colorazione nero e azzurro. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -8103,13 +8186,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-6F430A1B98A4.webp"
+      "assets/products/OH-6F430A1B98A4.webp",
+      "assets/products/OH-6F430A1B98A4_gallery_2.webp",
+      "assets/products/OH-6F430A1B98A4_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Avorio e argento"
     ],
-    "descrizione": "Sneaker alta con stella nella colorazione avorio e argento. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Sneaker alta con stella nella colorazione avorio e argento. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -8133,13 +8217,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-A7E22E815166.webp"
+      "assets/products/OH-A7E22E815166.webp",
+      "assets/products/OH-A7E22E815166_gallery_2.webp",
+      "assets/products/OH-A7E22E815166_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Bianco, nero e giallo"
     ],
     "descrizione": "Scarpa da calcio con lacci, nella colorazione bianco, nero e giallo, con suola a tacchetti visibile nella fotografia.",
-    "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -8227,13 +8312,14 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-050F8B523DCE.webp"
+      "assets/products/OH-050F8B523DCE.webp",
+      "assets/products/OH-050F8B523DCE_gallery_2.webp",
+      "assets/products/OH-050F8B523DCE_gallery_3.webp"
     ],
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Mocassino nella colorazione nero. La fotografia mostra la variante di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Mocassino nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false
   },
@@ -12993,7 +13079,9 @@
     "tone": 3,
     "image": "assets/products/OH-C8D28154EFEA_verified_1.webp",
     "images": [
-      "assets/products/OH-C8D28154EFEA_verified_1.webp"
+      "assets/products/OH-C8D28154EFEA_verified_1.webp",
+      "assets/products/OH-C8D28154EFEA_gallery_2.webp",
+      "assets/products/OH-C8D28154EFEA_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13004,8 +13092,7 @@
       "Beige e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-7614AF86173D",
@@ -13022,7 +13109,9 @@
     "tone": 4,
     "image": "assets/products/OH-7614AF86173D_verified_1.webp",
     "images": [
-      "assets/products/OH-7614AF86173D_verified_1.webp"
+      "assets/products/OH-7614AF86173D_verified_1.webp",
+      "assets/products/OH-7614AF86173D_gallery_2.webp",
+      "assets/products/OH-7614AF86173D_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13033,8 +13122,7 @@
       "Nero e blu"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-EF9502F5D90D",
@@ -13051,7 +13139,9 @@
     "tone": 5,
     "image": "assets/products/OH-EF9502F5D90D_verified_1.webp",
     "images": [
-      "assets/products/OH-EF9502F5D90D_verified_1.webp"
+      "assets/products/OH-EF9502F5D90D_verified_1.webp",
+      "assets/products/OH-EF9502F5D90D_gallery_2.webp",
+      "assets/products/OH-EF9502F5D90D_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13062,8 +13152,7 @@
       "Bianco e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-369CF2C781BA",
@@ -13138,7 +13227,9 @@
     "tone": 3,
     "image": "assets/products/OH-982B9107222A_verified_1.webp",
     "images": [
-      "assets/products/OH-982B9107222A_verified_1.webp"
+      "assets/products/OH-982B9107222A_verified_1.webp",
+      "assets/products/OH-982B9107222A_gallery_2.webp",
+      "assets/products/OH-982B9107222A_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13149,8 +13240,7 @@
       "Bianco e grigio"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-E2538BA93133",
@@ -13167,7 +13257,9 @@
     "tone": 4,
     "image": "assets/products/OH-E2538BA93133_verified_1.webp",
     "images": [
-      "assets/products/OH-E2538BA93133_verified_1.webp"
+      "assets/products/OH-E2538BA93133_verified_1.webp",
+      "assets/products/OH-E2538BA93133_gallery_2.webp",
+      "assets/products/OH-E2538BA93133_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13178,8 +13270,7 @@
       "Nero, grigio e verde oliva"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-9B6F812F7D1A",
@@ -13196,7 +13287,9 @@
     "tone": 5,
     "image": "assets/products/OH-9B6F812F7D1A_verified_1.webp",
     "images": [
-      "assets/products/OH-9B6F812F7D1A_verified_1.webp"
+      "assets/products/OH-9B6F812F7D1A_verified_1.webp",
+      "assets/products/OH-9B6F812F7D1A_gallery_2.webp",
+      "assets/products/OH-9B6F812F7D1A_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13207,8 +13300,7 @@
       "Bianco e blu"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-7B0AC0EA3999",
@@ -13225,7 +13317,9 @@
     "tone": 6,
     "image": "assets/products/OH-7B0AC0EA3999_verified_1.webp",
     "images": [
-      "assets/products/OH-7B0AC0EA3999_verified_1.webp"
+      "assets/products/OH-7B0AC0EA3999_verified_1.webp",
+      "assets/products/OH-7B0AC0EA3999_gallery_2.webp",
+      "assets/products/OH-7B0AC0EA3999_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13236,8 +13330,7 @@
       "Bianco e bronzo"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-5EBACB0CB15F",
@@ -13284,7 +13377,9 @@
     "tone": 1,
     "image": "assets/products/OH-74F8C80E4997_verified_1.webp",
     "images": [
-      "assets/products/OH-74F8C80E4997_verified_1.webp"
+      "assets/products/OH-74F8C80E4997_verified_1.webp",
+      "assets/products/OH-74F8C80E4997_gallery_2.webp",
+      "assets/products/OH-74F8C80E4997_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13295,8 +13390,7 @@
       "Bianco, rosa e giallo"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-2FC481A0F469",
@@ -13343,7 +13437,9 @@
     "tone": 3,
     "image": "assets/products/OH-04236E8BAFF2_verified_1.webp",
     "images": [
-      "assets/products/OH-04236E8BAFF2_verified_1.webp"
+      "assets/products/OH-04236E8BAFF2_verified_1.webp",
+      "assets/products/OH-04236E8BAFF2_gallery_2.webp",
+      "assets/products/OH-04236E8BAFF2_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13354,8 +13450,7 @@
       "Bianco e argento"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-D4E5DE17B1FE",
@@ -13372,7 +13467,9 @@
     "tone": 5,
     "image": "assets/products/OH-D4E5DE17B1FE_verified_1.webp",
     "images": [
-      "assets/products/OH-D4E5DE17B1FE_verified_1.webp"
+      "assets/products/OH-D4E5DE17B1FE_verified_1.webp",
+      "assets/products/OH-D4E5DE17B1FE_gallery_2.webp",
+      "assets/products/OH-D4E5DE17B1FE_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13383,8 +13480,7 @@
       "Grigio e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-6ED692D90D4B",
@@ -13401,7 +13497,9 @@
     "tone": 7,
     "image": "assets/products/OH-6ED692D90D4B_verified_1.webp",
     "images": [
-      "assets/products/OH-6ED692D90D4B_verified_1.webp"
+      "assets/products/OH-6ED692D90D4B_verified_1.webp",
+      "assets/products/OH-6ED692D90D4B_gallery_2.webp",
+      "assets/products/OH-6ED692D90D4B_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13412,8 +13510,7 @@
       "Beige"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-9DC1320087C5",
@@ -13430,7 +13527,9 @@
     "tone": 0,
     "image": "assets/products/OH-9DC1320087C5_verified_1.webp",
     "images": [
-      "assets/products/OH-9DC1320087C5_verified_1.webp"
+      "assets/products/OH-9DC1320087C5_verified_1.webp",
+      "assets/products/OH-9DC1320087C5_gallery_2.webp",
+      "assets/products/OH-9DC1320087C5_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13441,8 +13540,7 @@
       "Grigio e crema"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-019EA106B2FC",
@@ -13488,7 +13586,9 @@
     "tone": 2,
     "image": "assets/products/OH-A0ADB866A68E_verified_1.webp",
     "images": [
-      "assets/products/OH-A0ADB866A68E_verified_1.webp"
+      "assets/products/OH-A0ADB866A68E_verified_1.webp",
+      "assets/products/OH-A0ADB866A68E_gallery_2.webp",
+      "assets/products/OH-A0ADB866A68E_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13499,8 +13599,7 @@
       "Grigio e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-65ACA34B0213",
@@ -13517,7 +13616,9 @@
     "tone": 4,
     "image": "assets/products/OH-65ACA34B0213_verified_1.webp",
     "images": [
-      "assets/products/OH-65ACA34B0213_verified_1.webp"
+      "assets/products/OH-65ACA34B0213_verified_1.webp",
+      "assets/products/OH-65ACA34B0213_gallery_2.webp",
+      "assets/products/OH-65ACA34B0213_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13528,8 +13629,7 @@
       "Bianco con scritta nera"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-9C2F138B54B4",
@@ -13546,7 +13646,9 @@
     "tone": 7,
     "image": "assets/products/OH-9C2F138B54B4_verified_1.webp",
     "images": [
-      "assets/products/OH-9C2F138B54B4_verified_1.webp"
+      "assets/products/OH-9C2F138B54B4_verified_1.webp",
+      "assets/products/OH-9C2F138B54B4_gallery_2.webp",
+      "assets/products/OH-9C2F138B54B4_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13557,8 +13659,7 @@
       "Grigio scuro e turchese"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-ACFC113BA0F0",
@@ -13604,7 +13705,9 @@
     "tone": 1,
     "image": "assets/products/OH-3199D69D9E82_verified_1.webp",
     "images": [
-      "assets/products/OH-3199D69D9E82_verified_1.webp"
+      "assets/products/OH-3199D69D9E82_verified_1.webp",
+      "assets/products/OH-3199D69D9E82_gallery_2.webp",
+      "assets/products/OH-3199D69D9E82_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13615,8 +13718,7 @@
       "Marrone e beige"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-13284EEF84C7",
@@ -13633,7 +13735,9 @@
     "tone": 2,
     "image": "assets/products/OH-13284EEF84C7_verified_1.webp",
     "images": [
-      "assets/products/OH-13284EEF84C7_verified_1.webp"
+      "assets/products/OH-13284EEF84C7_verified_1.webp",
+      "assets/products/OH-13284EEF84C7_gallery_2.webp",
+      "assets/products/OH-13284EEF84C7_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13644,8 +13748,7 @@
       "Crema, rosa e verde lime"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-EF292F02A92A",
@@ -13662,7 +13765,9 @@
     "tone": 3,
     "image": "assets/products/OH-EF292F02A92A_verified_1.webp",
     "images": [
-      "assets/products/OH-EF292F02A92A_verified_1.webp"
+      "assets/products/OH-EF292F02A92A_verified_1.webp",
+      "assets/products/OH-EF292F02A92A_gallery_2.webp",
+      "assets/products/OH-EF292F02A92A_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13673,8 +13778,7 @@
       "Bianco e grigio"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-07E636624E70",
@@ -13691,7 +13795,9 @@
     "tone": 4,
     "image": "assets/products/OH-07E636624E70_verified_1.webp",
     "images": [
-      "assets/products/OH-07E636624E70_verified_1.webp"
+      "assets/products/OH-07E636624E70_verified_1.webp",
+      "assets/products/OH-07E636624E70_gallery_2.webp",
+      "assets/products/OH-07E636624E70_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
@@ -13702,8 +13808,7 @@
       "Giallo e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-1B31E7EBD5F3",
@@ -13808,19 +13913,20 @@
     "tone": 3,
     "image": "assets/products/OH-EC304B4680FC_verified_1.webp",
     "images": [
-      "assets/products/OH-EC304B4680FC_verified_1.webp"
+      "assets/products/OH-EC304B4680FC_verified_1.webp",
+      "assets/products/OH-EC304B4680FC_gallery_2.webp",
+      "assets/products/OH-EC304B4680FC_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Jordan 1 nella colorazione bianco e crema. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Air Jordan 1 nella colorazione bianco e crema. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e crema"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-3493AF40BDDD",
@@ -13837,19 +13943,20 @@
     "tone": 4,
     "image": "assets/products/OH-3493AF40BDDD_verified_1.webp",
     "images": [
-      "assets/products/OH-3493AF40BDDD_verified_1.webp"
+      "assets/products/OH-3493AF40BDDD_verified_1.webp",
+      "assets/products/OH-3493AF40BDDD_gallery_2.webp",
+      "assets/products/OH-3493AF40BDDD_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Jordan 1 nella colorazione rosso e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Air Jordan 1 nella colorazione rosso e nero. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Rosso e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-3559A478CF97",
@@ -13866,19 +13973,20 @@
     "tone": 5,
     "image": "assets/products/OH-3559A478CF97_verified_1.webp",
     "images": [
-      "assets/products/OH-3559A478CF97_verified_1.webp"
+      "assets/products/OH-3559A478CF97_verified_1.webp",
+      "assets/products/OH-3559A478CF97_gallery_2.webp",
+      "assets/products/OH-3559A478CF97_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Max 95 nella colorazione blu navy e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Air Max 95 nella colorazione blu navy e nero. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Blu navy e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-DEE78ED74FE9",
@@ -13895,19 +14003,20 @@
     "tone": 6,
     "image": "assets/products/OH-DEE78ED74FE9_verified_1.webp",
     "images": [
-      "assets/products/OH-DEE78ED74FE9_verified_1.webp"
+      "assets/products/OH-DEE78ED74FE9_verified_1.webp",
+      "assets/products/OH-DEE78ED74FE9_gallery_2.webp",
+      "assets/products/OH-DEE78ED74FE9_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Max 95 nella colorazione nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Air Max 95 nella colorazione nero. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-15491933B470",
@@ -13953,19 +14062,20 @@
     "tone": 0,
     "image": "assets/products/OH-97EA20D78667_verified_1.webp",
     "images": [
-      "assets/products/OH-97EA20D78667_verified_1.webp"
+      "assets/products/OH-97EA20D78667_verified_1.webp",
+      "assets/products/OH-97EA20D78667_gallery_2.webp",
+      "assets/products/OH-97EA20D78667_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Air Max 90 nella colorazione verde oliva. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Air Max 90 nella colorazione verde oliva. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Verde oliva"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-C3AE67FA2B6A",
@@ -14011,19 +14121,20 @@
     "tone": 2,
     "image": "assets/products/OH-F9359EE6B954_verified_1.webp",
     "images": [
-      "assets/products/OH-F9359EE6B954_verified_1.webp"
+      "assets/products/OH-F9359EE6B954_verified_1.webp",
+      "assets/products/OH-F9359EE6B954_gallery_2.webp",
+      "assets/products/OH-F9359EE6B954_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Zoom Vomero 5 nella colorazione bianco, nero e lilla. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Zoom Vomero 5 nella colorazione bianco, nero e lilla. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco, nero e lilla"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-4660F7387C99",
@@ -14040,19 +14151,20 @@
     "tone": 3,
     "image": "assets/products/OH-4660F7387C99_verified_1.webp",
     "images": [
-      "assets/products/OH-4660F7387C99_verified_1.webp"
+      "assets/products/OH-4660F7387C99_verified_1.webp",
+      "assets/products/OH-4660F7387C99_gallery_2.webp",
+      "assets/products/OH-4660F7387C99_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "P-6000 nella colorazione bianco e oro. La fotografia mostra la variante di riferimento.",
+    "descrizione": "P-6000 nella colorazione bianco e oro. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e oro"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-3C56A1597493",
@@ -14069,19 +14181,20 @@
     "tone": 4,
     "image": "assets/products/OH-3C56A1597493_verified_1.webp",
     "images": [
-      "assets/products/OH-3C56A1597493_verified_1.webp"
+      "assets/products/OH-3C56A1597493_verified_1.webp",
+      "assets/products/OH-3C56A1597493_gallery_2.webp",
+      "assets/products/OH-3C56A1597493_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "P-6000 nella colorazione bianco e argento. La fotografia mostra la variante di riferimento.",
+    "descrizione": "P-6000 nella colorazione bianco e argento. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e argento"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-ABD788FB856E",
@@ -14127,19 +14240,20 @@
     "tone": 6,
     "image": "assets/products/OH-CD982961808A_verified_1.webp",
     "images": [
-      "assets/products/OH-CD982961808A_verified_1.webp"
+      "assets/products/OH-CD982961808A_verified_1.webp",
+      "assets/products/OH-CD982961808A_gallery_2.webp",
+      "assets/products/OH-CD982961808A_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker con cinturino nella colorazione nero e bianco. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Sneaker con cinturino nella colorazione nero e bianco. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Nero e bianco"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-D7D45E19B4F4",
@@ -14156,19 +14270,20 @@
     "tone": 7,
     "image": "assets/products/OH-D7D45E19B4F4_verified_1.webp",
     "images": [
-      "assets/products/OH-D7D45E19B4F4_verified_1.webp"
+      "assets/products/OH-D7D45E19B4F4_verified_1.webp",
+      "assets/products/OH-D7D45E19B4F4_gallery_2.webp",
+      "assets/products/OH-D7D45E19B4F4_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "9060 nella colorazione crema e bordeaux. La fotografia mostra la variante di riferimento.",
+    "descrizione": "9060 nella colorazione crema e bordeaux. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Crema e bordeaux"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-489F42A155E8",
@@ -14185,19 +14300,20 @@
     "tone": 0,
     "image": "assets/products/OH-489F42A155E8_verified_1.webp",
     "images": [
-      "assets/products/OH-489F42A155E8_verified_1.webp"
+      "assets/products/OH-489F42A155E8_verified_1.webp",
+      "assets/products/OH-489F42A155E8_gallery_2.webp",
+      "assets/products/OH-489F42A155E8_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "9060 nella colorazione crema e beige. La fotografia mostra la variante di riferimento.",
+    "descrizione": "9060 nella colorazione crema e beige. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Crema e beige"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-3C58E1BE7780",
@@ -14214,19 +14330,20 @@
     "tone": 1,
     "image": "assets/products/OH-3C58E1BE7780_verified_1.webp",
     "images": [
-      "assets/products/OH-3C58E1BE7780_verified_1.webp"
+      "assets/products/OH-3C58E1BE7780_verified_1.webp",
+      "assets/products/OH-3C58E1BE7780_gallery_2.webp",
+      "assets/products/OH-3C58E1BE7780_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Sneaker nella colorazione blu e verde iridescente. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Sneaker nella colorazione blu e verde iridescente. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Blu e verde iridescente"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-81B122C92E87",
@@ -14243,19 +14360,20 @@
     "tone": 2,
     "image": "assets/products/OH-81B122C92E87_verified_1.webp",
     "images": [
-      "assets/products/OH-81B122C92E87_verified_1.webp"
+      "assets/products/OH-81B122C92E87_verified_1.webp",
+      "assets/products/OH-81B122C92E87_gallery_2.webp",
+      "assets/products/OH-81B122C92E87_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "1906 nella colorazione bordeaux e marrone. La fotografia mostra la variante di riferimento.",
+    "descrizione": "1906 nella colorazione bordeaux e marrone. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bordeaux e marrone"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-00E3F1DABC85",
@@ -14272,19 +14390,20 @@
     "tone": 3,
     "image": "assets/products/OH-00E3F1DABC85_verified_1.webp",
     "images": [
-      "assets/products/OH-00E3F1DABC85_verified_1.webp"
+      "assets/products/OH-00E3F1DABC85_verified_1.webp",
+      "assets/products/OH-00E3F1DABC85_gallery_2.webp",
+      "assets/products/OH-00E3F1DABC85_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "530 nella colorazione bianco. La fotografia mostra la variante di riferimento.",
+    "descrizione": "530 nella colorazione bianco. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-31E6F167139E",
@@ -14301,19 +14420,20 @@
     "tone": 4,
     "image": "assets/products/OH-31E6F167139E_verified_1.webp",
     "images": [
-      "assets/products/OH-31E6F167139E_verified_1.webp"
+      "assets/products/OH-31E6F167139E_verified_1.webp",
+      "assets/products/OH-31E6F167139E_gallery_2.webp",
+      "assets/products/OH-31E6F167139E_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "530 nella colorazione bianco e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "530 nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-62D620DF077E",
@@ -14330,19 +14450,20 @@
     "tone": 5,
     "image": "assets/products/OH-62D620DF077E_verified_1.webp",
     "images": [
-      "assets/products/OH-62D620DF077E_verified_1.webp"
+      "assets/products/OH-62D620DF077E_verified_1.webp",
+      "assets/products/OH-62D620DF077E_gallery_2.webp",
+      "assets/products/OH-62D620DF077E_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "2002R nella colorazione crema e grigio chiaro. La fotografia mostra la variante di riferimento.",
+    "descrizione": "2002R nella colorazione crema e grigio chiaro. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Crema e grigio chiaro"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-4BD314A76CC5",
@@ -14359,19 +14480,20 @@
     "tone": 0,
     "image": "assets/products/OH-4BD314A76CC5_verified_1.webp",
     "images": [
-      "assets/products/OH-4BD314A76CC5_verified_1.webp"
+      "assets/products/OH-4BD314A76CC5_verified_1.webp",
+      "assets/products/OH-4BD314A76CC5_gallery_2.webp",
+      "assets/products/OH-4BD314A76CC5_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Triple S nella colorazione bianco e nero. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Triple S nella colorazione bianco e nero. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e nero"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   },
   {
     "id": "OH-FB81DDCAB12D",
@@ -14388,18 +14510,19 @@
     "tone": 1,
     "image": "assets/products/OH-FB81DDCAB12D_verified_1.webp",
     "images": [
-      "assets/products/OH-FB81DDCAB12D_verified_1.webp"
+      "assets/products/OH-FB81DDCAB12D_verified_1.webp",
+      "assets/products/OH-FB81DDCAB12D_gallery_2.webp",
+      "assets/products/OH-FB81DDCAB12D_gallery_3.webp"
     ],
     "status": "Scheda fotografica",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "vetrina": true,
-    "descrizione": "Triple S nella colorazione bianco e blu. La fotografia mostra la variante di riferimento.",
+    "descrizione": "Triple S nella colorazione bianco e blu. Le fotografie mostrano la variante di riferimento.",
     "colori_disponibili": [
       "Bianco e blu"
     ],
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "galleria_in_completamento": true
+    "modelloVerificato": false
   }
 ]

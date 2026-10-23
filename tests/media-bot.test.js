@@ -16,7 +16,9 @@ assert.notEqual(family({brand: 'Balenciaga', model: 'Track — Nero'}), family({
 assert.notEqual(family({brand: 'On Running', model: 'Cloudmonster — Nero'}), family({brand: 'On Running', model: 'On Cloudmonster 2 — Nero'}));
 const generic = catalog.find(p => p.id === 'OHY-001');
 assert.equal(answer('altri colori', generic, catalog, []).items.length, 0, 'Non associare sneaker generiche diverse');
-const one = answer('altre foto', generic, catalog, []);
+const incomplete = catalog.find(p => p.vetrina === true && p.galleria_in_completamento === true);
+assert(incomplete, 'Esiste ancora un caso reale di foto incompleta per il collaudo');
+const one = answer('altre foto', incomplete, catalog, []);
 assert.equal(one.items.length, 1);
 assert.match(one.text, /sola fotografia/);
 const photos = answer('altre immagini', product, catalog, extra[product.id]);
