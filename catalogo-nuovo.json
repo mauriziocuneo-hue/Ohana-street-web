@@ -680,7 +680,8 @@
         "assets/products/OHY-028_restored.webp"
       ],
       "photos": [
-        "assets/products/OHY-028_restored.webp"
+        "assets/products/OHY-028_restored.webp",
+        "assets/products/OHY-028_extra_followup_20261023_1.webp"
       ],
       "tags": [
         "new balance",
@@ -1647,13 +1648,13 @@
     {
       "id": "OH-5A54217FFBF7",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Lowmel Guard",
+      "name": "Lowmel Guard · versione da verificare",
+      "modelNameStatus": "family",
       "color": "Verde oliva",
       "type": "Stivali e stivaletti",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Verde oliva. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Lowmel Guard · versione da verificare. Colorazione: Verde oliva. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-5A54217FFBF7.webp",
       "images": [
         "assets/products/OH-5A54217FFBF7.webp",
@@ -1909,13 +1910,13 @@
     {
       "id": "OH-57750200FD55",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Lowmel Guard",
+      "name": "Lowmel Guard · versione da verificare",
+      "modelNameStatus": "family",
       "color": "Castagna e nero",
       "type": "Stivali e stivaletti",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Castagna e nero. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Lowmel Guard · versione da verificare. Colorazione: Castagna e nero. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-57750200FD55.webp",
       "images": [
         "assets/products/OH-57750200FD55.webp",
@@ -1938,26 +1939,30 @@
     {
       "id": "OH-0ADB669CCF97",
       "brand": "Prada",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "1E506O",
+      "name": "1E506O · mesh e suede",
+      "modelNameStatus": "identified",
       "color": "Nero e grigio",
       "type": "Sneakers",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Nero e grigio. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Prada 1E506O · mesh e suede. Colorazione: Nero e grigio. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-0ADB669CCF97.webp",
       "images": [
-        "assets/products/OH-0ADB669CCF97.webp"
+        "assets/products/OH-0ADB669CCF97.webp",
+        "assets/products/OH-0ADB669CCF97_extra_followup_20261023_1.webp",
+        "assets/products/OH-0ADB669CCF97_extra_followup_20261023_2.webp"
       ],
       "photos": [
-        "assets/products/OH-0ADB669CCF97.webp"
+        "assets/products/OH-0ADB669CCF97.webp",
+        "assets/products/OH-0ADB669CCF97_extra_followup_20261023_1.webp",
+        "assets/products/OH-0ADB669CCF97_extra_followup_20261023_2.webp"
       ],
       "tags": [
         "prada",
         "sneakers"
       ],
       "variantGroup": null,
-      "galleryIncomplete": true,
+      "galleryIncomplete": false,
       "legacy": true
     },
     {
@@ -2116,13 +2121,13 @@
     {
       "id": "OH-5CA563FB87E3",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Lowmel Guard",
+      "name": "Lowmel Guard · versione da verificare",
+      "modelNameStatus": "family",
       "color": "Nero",
       "type": "Stivali e stivaletti",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Lowmel Guard · versione da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-5CA563FB87E3.webp",
       "images": [
         "assets/products/OH-5CA563FB87E3.webp",
@@ -3302,8 +3307,7 @@
         "assets/products/OH-F2546D8E0082.webp"
       ],
       "photos": [
-        "assets/products/OH-F2546D8E0082.webp",
-        "assets/products/OH-F2546D8E0082_extra_recovered_20261023.webp"
+        "assets/products/OH-F2546D8E0082.webp"
       ],
       "tags": [
         "ugg",
@@ -8850,13 +8854,13 @@
     {
       "id": "OH-5EBACB0CB15F",
       "brand": "Golden Goose",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Ball Star",
+      "name": "Ball Star · versione da verificare",
+      "modelNameStatus": "family",
       "color": "Bianco, grigio e verde",
       "type": "Sneakers",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Bianco, grigio e verde. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Golden Goose Ball Star · versione da verificare. Colorazione: Bianco, grigio e verde. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-5EBACB0CB15F_verified_1.webp",
       "images": [
         "assets/products/OH-5EBACB0CB15F_verified_1.webp",

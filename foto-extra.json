@@ -167,12 +167,6 @@
         "label": "Scatto aggiuntivo della stessa colorazione"
       }
     ],
-    "OH-F2546D8E0082": [
-      {
-        "src": "assets/products/OH-F2546D8E0082_extra_recovered_20261023.webp",
-        "label": "Scatto aggiuntivo della stessa colorazione"
-      }
-    ],
     "OH-A228F5755740": [
       {
         "src": "assets/products/OH-A228F5755740_extra_recovered_20261023.webp",
@@ -218,6 +212,12 @@
     "OH-ABD788FB856E": [
       {
         "src": "assets/products/OH-ABD788FB856E_extra_recovered_20261023.webp",
+        "label": "Scatto aggiuntivo della stessa colorazione"
+      }
+    ],
+    "OHY-028": [
+      {
+        "src": "assets/products/OHY-028_extra_followup_20261023_1.webp",
         "label": "Scatto aggiuntivo della stessa colorazione"
       }
     ]
