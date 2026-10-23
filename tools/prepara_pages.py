@@ -100,7 +100,7 @@ for brand_row in brands:
         assert isinstance(family.get("album_ricondotti"),int) and 0 < family["album_ricondotti"] <= brand_row["album_censiti"], "Conteggio famiglia non valido"
         family_count += 1
 assert 140 <= family_count <= 220, "Indice incompleto o imprevisto"
-assert "href=\"modelli.html\"" in Path("index.html").read_text(encoding="utf-8"), "Collegamento ai modelli mancante"
+assert "href=\"catalogo-nuovo.html#catalogo\"" in Path("index.html").read_text(encoding="utf-8"), "Collegamento al catalogo completo mancante"
 assert "href=\"gestione/\"" in Path("index.html").read_text(encoding="utf-8"), "Il pulsante gestori manca"
 config = Path("gestione/config.js").read_text(encoding="utf-8")
 assert "tqkmrejfbvzchfplgxzl.supabase.co" in config, "Configurazione Supabase da verificare"

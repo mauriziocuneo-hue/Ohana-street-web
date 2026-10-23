@@ -79,7 +79,6 @@
     if(a.kind==='variants'&&a.items.length){const grid=document.createElement('div');grid.className='variants';grid.innerHTML=a.items.map(p=>`<button type="button" data-open="${esc(p.id)}" aria-label="Apri variante ${esc(p.color)}"><img src="${esc(p.image)}" alt="${esc(p.color)}" loading="lazy">${esc(p.color)}</button>`).join('');host.append(grid);}
   }
   document.addEventListener('click',e=>{
-    const headerLink=e.target.closest('header [data-sottogenere]');if(headerLink){e.preventDefault();const sub=headerLink.dataset.sottogenere;state={brand:'',family:'',query:'',sort:'default',type:sub==='Running'?'@sport':sub==='Scarpe con tacchetti'?'@tacchetti':sub};$('#search').value='';$('#sort').value='default';$('#type').value=state.type;limit=24;render();$('#mobileNav').classList.add('hide');$('#menuBtn').setAttribute('aria-expanded','false');$('#catalogo').scrollIntoView({block:'start'});return;}
     const open=e.target.closest('[data-open]');if(open){openProduct(open.dataset.open);return;}
     const photo=e.target.closest('[data-photo]');if(photo&&current){showPhoto(Number(photo.dataset.photo));return;}
     const nav=e.target.closest('[data-brand]');if(nav){state.brand=nav.dataset.brand;state.family=nav.dataset.family||'';state.query='';$('#search').value='';state.type='';$('#type').value='';limit=24;render();if(matchMedia('(max-width:760px)').matches)$('#categoryMenu').open=false;}
