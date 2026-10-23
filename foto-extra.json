@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "products": {
+    "OH-00E2EDB5A284": [
+      {
+        "src": "assets/products/OH-00E2EDB5A284_extra_4.webp",
+        "label": "Vista della coppia"
+      },
+      {
+        "src": "assets/products/OH-00E2EDB5A284_extra_6.webp",
+        "label": "Vista laterale"
+      },
+      {
+        "src": "assets/products/OH-00E2EDB5A284_extra_10.webp",
+        "label": "Vista obliqua"
+      }
+    ],
+    "OH-C4A8F3895241": [
+      {
+        "src": "assets/products/OH-C4A8F3895241_extra_5.webp",
+        "label": "Vista della coppia"
+      },
+      {
+        "src": "assets/products/OH-C4A8F3895241_extra_11.webp",
+        "label": "Vista obliqua"
+      }
+    ],
+    "OH-43A7C1F5ADA6": [
+      {
+        "src": "assets/products/OH-43A7C1F5ADA6_extra_2.webp",
+        "label": "Vista della suola"
+      },
+      {
+        "src": "assets/products/OH-43A7C1F5ADA6_extra_4.webp",
+        "label": "Vista laterale"
+      },
+      {
+        "src": "assets/products/OH-43A7C1F5ADA6_extra_8.webp",
+        "label": "Vista della coppia"
+      },
+      {
+        "src": "assets/products/OH-43A7C1F5ADA6_extra_10.webp",
+        "label": "Vista obliqua"
+      }
+    ],
+    "OH-3DBCE285049D": [
+      {
+        "src": "assets/products/OH-3DBCE285049D_extra_2.webp",
+        "label": "Vista della suola"
+      },
+      {
+        "src": "assets/products/OH-3DBCE285049D_extra_4.webp",
+        "label": "Vista laterale"
+      },
+      {
+        "src": "assets/products/OH-3DBCE285049D_extra_8.webp",
+        "label": "Vista della coppia"
+      },
+      {
+        "src": "assets/products/OH-3DBCE285049D_extra_10.webp",
+        "label": "Vista obliqua"
+      }
+    ],
+    "OH-778CBBE3DA85": [
+      {
+        "src": "assets/products/OH-778CBBE3DA85_extra_2.webp",
+        "label": "Vista della suola"
+      },
+      {
+        "src": "assets/products/OH-778CBBE3DA85_extra_6.webp",
+        "label": "Vista laterale"
+      },
+      {
+        "src": "assets/products/OH-778CBBE3DA85_extra_8.webp",
+        "label": "Vista posteriore"
+      }
+    ],
+    "OH-4D65578D838A": [
+      {
+        "src": "assets/products/OH-4D65578D838A_extra_4.webp",
+        "label": "Vista laterale"
+      }
+    ],
+    "OH-27E5B90E5B24": [
+      {
+        "src": "assets/products/OH-27E5B90E5B24_extra_9.webp",
+        "label": "Vista della coppia"
+      }
+    ],
+    "OH-75B06B7D4905": [
+      {
+        "src": "assets/products/OH-75B06B7D4905_extra_9.webp",
+        "label": "Vista della coppia"
+      }
+    ],
+    "OH-2FBF94AD6BDD": [
+      {
+        "src": "assets/products/OH-2FBF94AD6BDD_extra_6.webp",
+        "label": "Dettaglio laterale"
+      },
+      {
+        "src": "assets/products/OH-2FBF94AD6BDD_extra_9.webp",
+        "label": "Vista della coppia"
+      },
+      {
+        "src": "assets/products/OH-2FBF94AD6BDD_extra_11.webp",
+        "label": "Dettaglio interno"
+      }
+    ],
+    "OH-E97A2E41E360": [
+      {
+        "src": "assets/products/OH-E97A2E41E360_extra_5.webp",
+        "label": "Dettaglio interno"
+      },
+      {
+        "src": "assets/products/OH-E97A2E41E360_extra_9.webp",
+        "label": "Vista dall’alto"
+      },
+      {
+        "src": "assets/products/OH-E97A2E41E360_extra_11.webp",
+        "label": "Dettaglio laterale"
+      }
+    ],
+    "OH-E8FB3C102CD1": [
+      {
+        "src": "assets/products/OH-E8FB3C102CD1_extra_2.webp",
+        "label": "Vista laterale"
+      },
+      {
+        "src": "assets/products/OH-E8FB3C102CD1_extra_8.webp",
+        "label": "Vista posteriore"
+      }
+    ],
+    "OH-AEE9524F4735": [
+      {
+        "src": "assets/products/OH-AEE9524F4735_extra_7.webp",
+        "label": "Vista della suola"
+      }
+    ]
+  }
+}

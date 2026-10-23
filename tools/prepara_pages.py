@@ -10,7 +10,7 @@ root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
 assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
-required = ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js"]
+required = ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js", "assets/ohana-media.js", "assets/ohana-media.css", "foto-extra.json"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
     if file.endswith((".html", ".json", ".js")):
@@ -62,6 +62,24 @@ for p in catalog:
                 assert p.get("modelloVerificato") is True, f"Modello non verificato: {p['id']}"
                 assert isinstance(p.get("descrizione"),str) and 35<=len(p["descrizione"])<=350, f"Descrizione mancante: {p['id']}"
 
+# Il bot espone solo foto approvate, locali, collegate a un articolo visibile.
+media = json.loads(Path('foto-extra.json').read_text(encoding='utf-8'))
+assert media.get('version') == 1 and isinstance(media.get('products'), dict), 'Indice foto extra non valido'
+for pid, photos in media['products'].items():
+    product = all_products_by_id.get(pid)
+    assert product and product.get('vetrina') is True, f'Foto extra per articolo non pubblico: {pid}'
+    assert isinstance(photos, list) and photos, f'Foto extra vuote: {pid}'
+    hashes = {hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in product['images']}
+    for photo in photos:
+        name = photo.get('src', '')
+        assert re.fullmatch(r'assets/products/[A-Za-z0-9_.-]+\.webp', name), 'Percorso foto extra non valido'
+        raw = Path(name).read_bytes()
+        assert len(raw) > 1000 and raw[:4] == b'RIFF' and raw[8:12] == b'WEBP', f'Foto extra non valida: {name}'
+        digest = hashlib.sha256(raw).hexdigest()
+        assert digest not in hashes, f'Foto extra duplicata: {name}'
+        hashes.add(digest)
+        assert isinstance(photo.get('label'), str) and 3 <= len(photo['label']) <= 60, 'Didascalia foto extra mancante'
+
 # L'indice modelli e' una fotografia informativa del censimento: non va confuso con schede prodotto pubblicabili.
 models = json.loads(Path("modelli.json").read_text(encoding="utf-8"))
 assert models.get("version") == 1 and models.get("totale_album_scarpe") == 16841, "Indice modelli incompleto"
@@ -90,10 +108,10 @@ assert "service_role" not in config and "sb_secret_" not in config, "Chiave segr
 
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
-for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html"]:
+for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
     shutil.copy2(item, dest / item)
 shutil.copytree("assets/products", dest / "assets/products")
-for item in ["ohana-chat.css", "ohana-chat.js"]:
+for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js"]:

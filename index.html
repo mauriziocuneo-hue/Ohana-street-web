@@ -5,6 +5,8 @@
   <!-- OHANA STREET v3: tassonomia 2 livelli e catalogo esterno locale -->
   <meta name="theme-color" content="#0e4a4e"><link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/ohana-chat.css?v=20261022-3">
+  <link rel="stylesheet" href="assets/ohana-media.css?v=20261023-1">
+  <script src="assets/ohana-media.js?v=20261023-1"></script>
   <meta name="description" content="OHANA STREET — catalogo fotografico di sneakers e scarpe sportive. Informazioni sui modelli tramite WhatsApp.">
   <title>OHANA STREET — Your style. Your vibe. Your ʻohana.</title>
   <style>
@@ -67,7 +69,7 @@
     <section class="notes" id="contatti"><div class="wrap notes-inner"><div><div style="font-size:11px;font-weight:900;letter-spacing:.15em;margin-bottom:10px">IL SIGNIFICATO DI OHANA</div><h2 class="display">MORE THAN<br>A STYLE. FAMILY.</h2><p>Per noi ʻohana richiama le Hawaii, l'inclusione e il senso di appartenenza. Il catalogo OHANA è progettato per archiviare tutte le fotografie direttamente sul nostro spazio web, senza dipendere da gallerie esterne. Per chiedere informazioni sui prodotti, usa l’assistente OHANA: raccoglie modello, taglia e domanda e prepara un messaggio WhatsApp da inviare al nostro team.</p></div><div class="label">ALOHA<br>FROM<br>OHANA ✿</div></div></section>
   </main>
   <footer class="footer"><div class="wrap"><div><div class="logo">OHANA<span class="dot">.</span>STREET</div><p>Catalogo fotografico OHANA STREET, con immagini ospitate sul nostro spazio web. I nomi dei marchi sono riferimenti descrittivi e non implicano affiliazione o autorizzazione dei rispettivi titolari.</p></div><div><strong>FATTO CON ALOHA ♡</strong><p>WhatsApp: contattaci per ulteriori dettagli sui prodotti.</p></div></div></footer>
-  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a></div></div></div>
+  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><div id="ohana-media-bot"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a></div></div></div>
   <script>
   let PRODUCTS=[];
   const SHOW_ABBIGLIAMENTO=false; // Riattivabile senza cancellare il catalogo esistente.
@@ -151,7 +153,7 @@
     const wa=$('#dialogWhatsapp');wa.href=contact?`https://wa.me/${contact}?text=${encodeURIComponent(message)}`:'#contatti';wa.hidden=!contact;
     // Compatibilita: rimuove il pulsante duplicato eventualmente aggiunto da script in cache.
     document.querySelector('#ohana-chat-product-button')?.remove();
-    window.OhanaChat?.close();document.body.classList.add('product-dialog-open');
+    window.OhanaChat?.close();window.OhanaMedia?.mount(p,PRODUCTS,openModal);document.body.classList.add('product-dialog-open');
     $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
   }
   $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
@@ -170,7 +172,7 @@
   $('#menuBtn').addEventListener('click',()=>{const closed=$('#mobileNav').classList.toggle('hide');$('#menuBtn').setAttribute('aria-expanded',String(!closed));});
   $('#closeDialog').addEventListener('click',closeModal);
   $('#overlay').addEventListener('click',e=>{if(e.target===$('#overlay'))closeModal()});
-  document.addEventListener('keydown',e=>{if($('#overlay').classList.contains('hide'))return;if(e.key==='Escape'){e.preventDefault();closeModal();return;}if(e.key==='Tab'){const focusable=[...$('#overlay').querySelectorAll('button:not([disabled]):not([hidden]),a[href]:not([hidden])')].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+  document.addEventListener('keydown',e=>{if($('#overlay').classList.contains('hide'))return;if(e.key==='Escape'){e.preventDefault();closeModal();return;}if(e.key==='Tab'){const focusable=[...$('#overlay').querySelectorAll('button:not([disabled]):not([hidden]),a[href]:not([hidden]),input:not([disabled]):not([hidden])')].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
   async function loadCatalog(){
     try {
       const response=await fetch('catalogo.json',{cache:'no-store'});
