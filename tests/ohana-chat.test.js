@@ -1,0 +1,24 @@
+'use strict';
+const assert=require('node:assert/strict');
+const api=require('../assets/ohana-chat.js');
+const catalog=require('../catalogo-nuovo.json').products;
+const base='https://mauriziocuneo-hue.github.io/Ohana-street-web/index.html?qa=private&bot=1#lookbook';
+const p=catalog.find(p=>p.id==='OH-N-F14BD7189F9B');
+const data={size:'42',color:'Nero & rosa',question:'Avete questa variante? Vorrei foto e informazioni.'};
+const r=api.requestData(p,data,base);
+assert.equal(r.id,p.id);assert.equal(r.size,'42');assert.equal(r.color,data.color);
+assert.equal(r.url,'https://mauriziocuneo-hue.github.io/Ohana-street-web/catalogo-nuovo.html?articolo='+p.id);
+assert(!r.url.includes('qa='));assert(!r.url.includes('bot='));
+const text=api.message(p,data,base);assert(text.includes(p.id));assert(text.includes(p.code));assert(text.includes(data.question));
+assert.equal(decodeURIComponent(encodeURIComponent(text)),text);
+assert(api.validate({...data,size:''},0));assert(api.validate({...data,question:'  '},1));
+assert.equal(api.validate({...data,size:'unknown'},0),'');
+assert.equal(api.validate({...data,size:'other',otherSize:'47'},0),'');
+assert.equal(api.sizeValue({...data,size:'other',otherSize:'42,5'}),'42.5');
+assert(api.validate({...data,size:'other',otherSize:'<script>'},0));
+assert.equal(api.requestData(null,{...data,product:'OH-N-F14BD7189F9B'},base).id,p.id);
+assert.equal(api.requestData(null,{...data,product:'Ho una domanda generale'},base).url,'');
+assert(api.message(null,{...data,size:'unknown'},base).includes('Taglia richiesta: Da definire'));
+for(const product of catalog){const msg=api.message(product,data,base);assert(msg.includes('Codice OHANA: '+product.id));}
+const other=catalog.find(q=>q.id!==p.id);assert(!api.message(other,data,base).includes('Codice OHANA: '+p.id));
+console.log('PASS: tutte le 375 schede, codici OH-N, contesto, taglie fuori gamma e mezze misure, domanda obbligatoria, link puliti e messaggi WhatsApp.');

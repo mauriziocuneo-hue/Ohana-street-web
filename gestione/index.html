@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>OHANA STREET — Area gestori</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/ohana-business.css?v=20261023-5">
 <style>
 :root{--ocean:#123e40;--mint:#65dfc6;--cream:#fcf8ee;--coral:#ff7560;--ink:#143438;--line:#d6e2dd}
 *{box-sizing:border-box}
@@ -68,6 +69,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
   <h1>CATALOGHI RISERVATI</h1>
   <p class="muted">I collegamenti compaiono soltanto dopo autenticazione e autorizzazione sul database protetto.</p>
   <div class="actions"><button id="logout" class="secondary">Esci</button><span id="count" class="muted"></span></div>
+  <details id="businessToolkit" class="business-tools"><summary>WhatsApp Business · testi pronti e organizzazione richieste</summary><div id="businessToolkitContent"></div></details>
   <label for="search">Cerca per marca, nome o codice prodotto</label>
   <input id="search" type="search" placeholder="Es. Jordan, OHY-001, piumino">
   <div id="results" class="grid"></div>
@@ -75,6 +77,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 </section>
 </main>
 <script src="config.js"></script>
+<script src="../assets/ohana-business.js?v=20261023-5" defer></script>
 <script type="module">
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const $ = selector => document.querySelector(selector);

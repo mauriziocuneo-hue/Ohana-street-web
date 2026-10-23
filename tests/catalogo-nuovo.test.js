@@ -18,3 +18,7 @@ const recovered=products.find(p=>p.id==='OH-C4A8F3895241');assert(recovered);ass
 assert(api.filterProducts(products,{query:'Bred'}).some(p=>p.id==='OH-C4A8F3895241'));
 const cleats=api.filterProducts(products,{type:'@tacchetti'});assert.equal(cleats.length,29);assert(cleats.every(p=>['Scarpe con tacchetti','Calcio · FG','Calcetto · TF'].includes(p.type)));
 console.log('PASS: codici precedenti, nomi e varianti, famiglie ambigue isolate, foto singole, foto extra e filtro tacchetti.');
+
+assert.equal(api.answer(products,p,'Quanto costa?').kind,'request');
+assert.match(api.answer(products,p,'Quanto costa?').text,/Prezzi, disponibilità/);
+assert.match(api.answer(products,p,'Avete il numero 42?').text,/36–46/);

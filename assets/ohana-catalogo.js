@@ -24,13 +24,13 @@
       return {kind:'variants',items,text:items.length?'Queste sono le altre colorazioni fotografate dello stesso modello e tipo di suola. Tocca una variante per aprirla.':'Non ho altre colorazioni verificate con questa richiesta. Puoi chiederle su WhatsApp.'};
     }
     if(/\b(foto|immagini|fotografie|scatti|suola|dietro|dettagli|vista|viste)\b/.test(text))return {kind:'photos',items:p.photos,text:p.photos.length>1?'Ecco tutte le fotografie verificate di questa variante.':'Per questo articolo è disponibile una sola fotografia verificata. Puoi richiedere altri scatti su WhatsApp.'};
-    if(/\b(taglia|taglie|numero|numeri)\b/.test(text))return {kind:'text',items:[],text:'Taglie 36–46 e altre su richiesta. Conferma la misura desiderata con OHANA su WhatsApp.'};
+    if(/\b(taglia|taglie|numero|numeri|prezzo|prezzi|costo|costi|costa|costano|disponibilita|disponibile|disponibili|spedizione|spedizioni|consegna)\b/.test(text))return {kind:'request',items:[],text:/\b(taglia|taglie|numero|numeri)\b/.test(text)?'Taglie 36–46 e altre su richiesta. I gestori confermeranno disponibilità e dettagli su WhatsApp.':'Prezzi, disponibilità e spedizioni si confermano con i gestori su WhatsApp. Posso preparare la tua richiesta.'};
     return {kind:'text',items:[],text:'Posso mostrarti altre foto o altri colori. Prova “altre foto”, “altri colori” o “la cerco blu”.'};
   }
   const api={filterProducts,related,answer};if(typeof module!=='undefined'&&module.exports)module.exports=api;
   if(!root||!root.document)return;
   const $=s=>document.querySelector(s),esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  let products=[],state={brand:'',family:'',type:'',query:'',sort:'default'},limit=24,current=null,returnFocus=null;
+  let products=[],state={brand:'',family:'',type:'',query:'',sort:'default'},limit=24,current=null,returnFocus=null,requestController=null;
   const dialog=$('#productDialog');
   function card(p){return `<article class="card"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="Apri ${esc(p.brand+' '+p.family+' '+p.color)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+p.family+' · '+p.color)}"><span class="photo-count">${p.photos.length} foto</span></button><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3 class="display">${esc(p.family)}</h3><p class="card-color">${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">Esplora la scarpa <span aria-hidden="true">↗</span></button></div></article>`;}
   function tree(){
@@ -71,10 +71,12 @@
     const url=new URL(location.href);url.searchParams.set('articolo',p.id);history.replaceState({},'',url);
     const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.name||p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda: ${url.href}`;
     $('#whatsapp').href='https://wa.me/393473099705?text='+encodeURIComponent(msg);
-    if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden';}dialog.scrollTop=0;$('#closeDialog').focus();
+    requestController=root.OhanaChat?.mount($('#ohana-product-request'),p);$('#whatsapp').hidden=Boolean(requestController);root.OhanaChat?.close();
+    if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden';document.body.classList.add('product-dialog-open');}dialog.scrollTop=0;$('#closeDialog').focus();
   }
   function ask(query){
     const a=answer(products,current,query),host=$('#botResponse');host.replaceChildren();const p=document.createElement('p');p.textContent=a.text;host.append(p);
+    if(a.kind==='request'&&requestController){const b=document.createElement('button');b.type='button';b.textContent='Prepara la richiesta';b.addEventListener('click',()=>requestController.question(query));host.append(b);}
     if(a.kind==='photos'&&a.items.length>1){expandAlbum();const b=document.createElement('button');b.type='button';b.textContent='Vai alle fotografie ↑';b.addEventListener('click',()=>$('.gallery').scrollIntoView({block:'start'}));host.append(b);}
     if(a.kind==='variants'&&a.items.length){const grid=document.createElement('div');grid.className='variants';grid.innerHTML=a.items.map(p=>`<button type="button" data-open="${esc(p.id)}" aria-label="Apri variante ${esc(p.color)}"><img src="${esc(p.image)}" alt="${esc(p.color)}" loading="lazy">${esc(p.color)}</button>`).join('');host.append(grid);}
   }
@@ -90,7 +92,7 @@
   $('#more').addEventListener('click',()=>{limit+=24;render();});
   $('#closeDialog').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
-  dialog.addEventListener('close',()=>{document.body.style.overflow='';const url=new URL(location.href);url.searchParams.delete('articolo');history.replaceState({},'',url);if(returnFocus?.isConnected)returnFocus.focus();});
+  dialog.addEventListener('close',()=>{document.body.style.overflow='';document.body.classList.remove('product-dialog-open');const url=new URL(location.href);url.searchParams.delete('articolo');history.replaceState({},'',url);if(returnFocus?.isConnected)returnFocus.focus();});
   $('#showAlbum').addEventListener('click',()=>{if($('#album').hidden)expandAlbum();else{$('#album').hidden=true;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${current.photos.length} fotografie ↓`;}});
   $('#botPhotos').addEventListener('click',()=>ask('altre foto'));$('#botColors').addEventListener('click',()=>ask('altri colori'));
   $('#botForm').addEventListener('submit',e=>{e.preventDefault();ask($('#botQuery').value);});

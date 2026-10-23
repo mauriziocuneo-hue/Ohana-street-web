@@ -88,9 +88,9 @@
     const host = document.getElementById('ohana-media-bot');
     if (!host) return;
     host.replaceChildren();
-    const toggle = node('button', 'ohm-toggle', '✿ Foto e colori · Prova il bot');
+    const toggle = node('button', 'ohm-toggle', '✿ Foto e colori');
     toggle.type = 'button'; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-controls', 'ohm-panel');
-    const panel = node('section', 'ohm-panel'); panel.id = 'ohm-panel'; panel.hidden = true; panel.setAttribute('aria-label', 'Bot foto e colori di test');
+    const panel = node('section', 'ohm-panel'); panel.id = 'ohm-panel'; panel.hidden = true; panel.setAttribute('aria-label', 'Assistente foto e colori');
     panel.append(node('strong', 'ohm-title', 'ALOHA! Quale dettaglio vuoi vedere?'));
     panel.append(node('p', 'ohm-context', product.brand + ' · ' + product.model + ' · ' + product.id));
     const log = node('div', 'ohm-log'); log.setAttribute('role', 'log'); log.setAttribute('aria-live', 'polite'); panel.append(log);
@@ -101,7 +101,7 @@
     const label = node('label', 'ohm-input-label', 'Chiedi foto o colori'); label.htmlFor = 'ohm-question';
     const input = node('input'); input.id = 'ohm-question'; input.type = 'text'; input.maxLength = 180; input.placeholder = 'Es. la cerco nera'; input.autocomplete = 'off';
     const submit = node('button', '', 'Chiedi'); submit.type = 'submit';
-    form.append(label, input, submit); panel.append(form, node('p', 'ohm-note', 'Versione di test · fotografie reali dall’archivio OHANA.'));
+    form.append(label, input, submit); panel.append(form, node('p', 'ohm-note', 'Fotografie reali dall’archivio OHANA.'));
     host.append(toggle, panel);
     let turn = 0;
     async function ask(query) {
@@ -140,3 +140,4 @@
   }
   root.OhanaMedia = Object.freeze({...api, mount});
 })(typeof window === 'undefined' ? null : window);
+

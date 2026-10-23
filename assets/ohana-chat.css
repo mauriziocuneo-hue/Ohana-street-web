@@ -29,3 +29,25 @@
 .ohc-send{text-decoration:none;display:flex;align-items:center;justify-content:center}
 @media(max-width:480px){.ohc-root{right:13px;bottom:14px}.ohc-fab{padding:11px 15px;min-height:53px}.ohc-panel{bottom:67px;width:calc(100vw - 48px);max-height:calc(100dvh - 99px)}}
 @media(prefers-reduced-motion:reduce){.ohc-root *{scroll-behavior:auto}}
+.product-dialog-open .ohc-root{display:none}
+.oh-contact-cta[hidden]{display:none!important}
+.ohc-request{border:1px solid #bad5ca;background:#f4faf6;border-radius:14px;padding:17px;margin-top:20px;min-width:0;scroll-margin-top:20px}
+.ohc-request,.ohc-request *{box-sizing:border-box}
+.ohc-request [hidden]{display:none!important}
+.ohc-body.ohc-request{border:0;border-radius:0;background:transparent;margin:0;padding:20px;min-height:0}
+.ohc-request .ohc-question{font:900 21px/1.2 Arial,'Helvetica Neue',sans-serif;margin:0 0 12px}
+.ohc-request .ohc-progress{font-size:10px;line-height:1.4;margin:0 0 12px}
+.ohc-request .ohc-context{font-size:12px;font-weight:800;line-height:1.5;overflow-wrap:anywhere;margin:0 0 15px;color:#123e40}
+.ohc-request .ohc-field{margin:0 0 13px}
+.ohc-request .ohc-label{font-size:11px;line-height:1.4;margin:0 0 7px}
+.ohc-request .ohc-input{display:block;font:inherit;font-size:14px;line-height:1.4;max-width:100%;min-height:45px}
+.ohc-request textarea.ohc-input{resize:vertical;min-height:110px}
+.ohc-request .ohc-tip{font-size:12px;line-height:1.5;margin:10px 0}
+.ohc-topics{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 16px}
+.ohc-topic{font:800 11px/1.4 Arial,sans-serif;border:1px solid #123e40;background:#fff;color:#123e40;padding:9px 12px;border-radius:22px;cursor:pointer;min-height:38px}
+.ohc-topic:hover{background:#ffde86}
+.ohc-request .ohc-actions{padding:14px 0 0;flex-wrap:wrap;margin-top:14px}
+.ohc-request .ohc-send{flex-basis:100%;min-height:48px}
+.ohc-request .ohc-summary{display:block;width:100%;font:13px/1.55 Arial,sans-serif;resize:vertical;min-height:210px;max-height:340px;color:#123e40}
+.ohc-request .ohc-error{font-size:12px;line-height:1.5;color:#9a3029;margin:8px 0}
+.ohc-topic:focus-visible,.ohc-summary:focus-visible{outline:3px solid #ff7560;outline-offset:2px}
