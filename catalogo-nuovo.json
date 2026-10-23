@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "id": "OH-N-9A24FDFEF305",
+      "brand": "Nike",
+      "family": "Air Max 1",
+      "color": "Bianco e crema",
+      "type": "Sneakers",
+      "code": "FZ5805-001",
+      "description": "Sneaker con profilo basso, nella colorazione bianco e crema. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-9A24FDFEF305_1.webp",
+      "images": [
+        "assets/products/OH-N-9A24FDFEF305_1.webp",
+        "assets/products/OH-N-9A24FDFEF305_2.webp",
+        "assets/products/OH-N-9A24FDFEF305_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-9A24FDFEF305_1.webp",
+        "assets/products/OH-N-9A24FDFEF305_2.webp",
+        "assets/products/OH-N-9A24FDFEF305_3.webp",
+        "assets/products/OH-N-9A24FDFEF305_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-BB70E08C5D5A",
+      "brand": "Jordan",
+      "family": "Air Jordan 4",
+      "color": "Nero e marrone",
+      "type": "Sneakers",
+      "code": "IV6048-001",
+      "description": "Sneaker con profilo alto, nella colorazione nero e marrone. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-BB70E08C5D5A_1.webp",
+      "images": [
+        "assets/products/OH-N-BB70E08C5D5A_1.webp",
+        "assets/products/OH-N-BB70E08C5D5A_2.webp",
+        "assets/products/OH-N-BB70E08C5D5A_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-BB70E08C5D5A_1.webp",
+        "assets/products/OH-N-BB70E08C5D5A_2.webp",
+        "assets/products/OH-N-BB70E08C5D5A_3.webp",
+        "assets/products/OH-N-BB70E08C5D5A_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-5A82E305B534",
+      "brand": "Nike",
+      "family": "SB Dunk Low",
+      "color": "Grigio e bianco",
+      "type": "Sneakers",
+      "code": "LS6688-002",
+      "description": "Sneaker con profilo basso, nella colorazione grigio e bianco. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-5A82E305B534_1.webp",
+      "images": [
+        "assets/products/OH-N-5A82E305B534_1.webp",
+        "assets/products/OH-N-5A82E305B534_2.webp",
+        "assets/products/OH-N-5A82E305B534_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-5A82E305B534_1.webp",
+        "assets/products/OH-N-5A82E305B534_2.webp",
+        "assets/products/OH-N-5A82E305B534_3.webp",
+        "assets/products/OH-N-5A82E305B534_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-3F2E682BF900",
+      "brand": "Nike",
+      "family": "Air Max 1",
+      "color": "Verde oliva e crema",
+      "type": "Sneakers",
+      "code": "CY3628-204",
+      "description": "Sneaker con profilo basso, nella colorazione verde oliva e crema. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-3F2E682BF900_1.webp",
+      "images": [
+        "assets/products/OH-N-3F2E682BF900_1.webp",
+        "assets/products/OH-N-3F2E682BF900_2.webp",
+        "assets/products/OH-N-3F2E682BF900_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-3F2E682BF900_1.webp",
+        "assets/products/OH-N-3F2E682BF900_2.webp",
+        "assets/products/OH-N-3F2E682BF900_3.webp",
+        "assets/products/OH-N-3F2E682BF900_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-F7416D17A749",
+      "brand": "Jordan",
+      "family": "Air Jordan 1 Anodized",
+      "color": "Blu e nero",
+      "type": "Sneakers",
+      "code": "414823-077",
+      "description": "Sneaker con profilo alto, nella colorazione blu e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-F7416D17A749_1.webp",
+      "images": [
+        "assets/products/OH-N-F7416D17A749_1.webp",
+        "assets/products/OH-N-F7416D17A749_2.webp",
+        "assets/products/OH-N-F7416D17A749_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-F7416D17A749_1.webp",
+        "assets/products/OH-N-F7416D17A749_2.webp",
+        "assets/products/OH-N-F7416D17A749_3.webp",
+        "assets/products/OH-N-F7416D17A749_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-F0215F0C6772",
+      "brand": "Jordan",
+      "family": "Air Jordan 1 Low",
+      "color": "Bianco e verde oliva",
+      "type": "Sneakers",
+      "code": "LD8888-033",
+      "description": "Sneaker con profilo basso, nella colorazione bianco e verde oliva. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-F0215F0C6772_1.webp",
+      "images": [
+        "assets/products/OH-N-F0215F0C6772_1.webp",
+        "assets/products/OH-N-F0215F0C6772_2.webp",
+        "assets/products/OH-N-F0215F0C6772_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-F0215F0C6772_1.webp",
+        "assets/products/OH-N-F0215F0C6772_2.webp",
+        "assets/products/OH-N-F0215F0C6772_3.webp",
+        "assets/products/OH-N-F0215F0C6772_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-EF77D5D0FF0D",
+      "brand": "Adidas",
+      "family": "Superstar",
+      "color": "Argento e bianco",
+      "type": "Sneakers",
+      "code": "HP3760",
+      "description": "Sneaker con profilo basso, nella colorazione argento e bianco. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-EF77D5D0FF0D_1.webp",
+      "images": [
+        "assets/products/OH-N-EF77D5D0FF0D_1.webp",
+        "assets/products/OH-N-EF77D5D0FF0D_2.webp",
+        "assets/products/OH-N-EF77D5D0FF0D_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-EF77D5D0FF0D_1.webp",
+        "assets/products/OH-N-EF77D5D0FF0D_2.webp",
+        "assets/products/OH-N-EF77D5D0FF0D_3.webp",
+        "assets/products/OH-N-EF77D5D0FF0D_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-BD0C953B380D",
+      "brand": "Adidas",
+      "family": "BW Run",
+      "color": "Blu, grigio e crema",
+      "type": "Sneakers",
+      "code": "KH6075",
+      "description": "Sneaker con profilo basso, nella colorazione blu, grigio e crema. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-BD0C953B380D_1.webp",
+      "images": [
+        "assets/products/OH-N-BD0C953B380D_1.webp",
+        "assets/products/OH-N-BD0C953B380D_2.webp",
+        "assets/products/OH-N-BD0C953B380D_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-BD0C953B380D_1.webp",
+        "assets/products/OH-N-BD0C953B380D_2.webp",
+        "assets/products/OH-N-BD0C953B380D_3.webp"
+      ]
+    },
+    {
+      "id": "OH-N-C09CA3371D88",
+      "brand": "Nike",
+      "family": "Air Force 1 Low",
+      "color": "Grigio e rosso",
+      "type": "Sneakers",
+      "code": "JL8888-007",
+      "description": "Sneaker con profilo basso, nella colorazione grigio e rosso. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-C09CA3371D88_1.webp",
+      "images": [
+        "assets/products/OH-N-C09CA3371D88_1.webp",
+        "assets/products/OH-N-C09CA3371D88_2.webp",
+        "assets/products/OH-N-C09CA3371D88_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-C09CA3371D88_1.webp",
+        "assets/products/OH-N-C09CA3371D88_2.webp",
+        "assets/products/OH-N-C09CA3371D88_3.webp",
+        "assets/products/OH-N-C09CA3371D88_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-A9F0C69B242D",
+      "brand": "Jordan",
+      "family": "Air Jordan 1 Low",
+      "color": "Bianco e crema",
+      "type": "Sneakers",
+      "code": "IW2026-110",
+      "description": "Sneaker con profilo basso, nella colorazione bianco e crema. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-A9F0C69B242D_1.webp",
+      "images": [
+        "assets/products/OH-N-A9F0C69B242D_1.webp",
+        "assets/products/OH-N-A9F0C69B242D_2.webp",
+        "assets/products/OH-N-A9F0C69B242D_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-A9F0C69B242D_1.webp",
+        "assets/products/OH-N-A9F0C69B242D_2.webp",
+        "assets/products/OH-N-A9F0C69B242D_3.webp",
+        "assets/products/OH-N-A9F0C69B242D_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-57CE0FBD5F1C",
+      "brand": "Nike",
+      "family": "Air Force 1 Low",
+      "color": "Rosa",
+      "type": "Sneakers",
+      "code": "IX5099-600",
+      "description": "Sneaker con profilo basso, nella colorazione rosa. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-57CE0FBD5F1C_1.webp",
+      "images": [
+        "assets/products/OH-N-57CE0FBD5F1C_1.webp",
+        "assets/products/OH-N-57CE0FBD5F1C_2.webp",
+        "assets/products/OH-N-57CE0FBD5F1C_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-57CE0FBD5F1C_1.webp",
+        "assets/products/OH-N-57CE0FBD5F1C_2.webp",
+        "assets/products/OH-N-57CE0FBD5F1C_3.webp",
+        "assets/products/OH-N-57CE0FBD5F1C_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-F3C2A6BEDF28",
+      "brand": "Jordan",
+      "family": "Air Jordan 13",
+      "color": "Bianco, nero e rosso",
+      "type": "Sneakers",
+      "code": "414571-104",
+      "description": "Sneaker con profilo alto, nella colorazione bianco, nero e rosso. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-F3C2A6BEDF28_1.webp",
+      "images": [
+        "assets/products/OH-N-F3C2A6BEDF28_1.webp",
+        "assets/products/OH-N-F3C2A6BEDF28_2.webp",
+        "assets/products/OH-N-F3C2A6BEDF28_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-F3C2A6BEDF28_1.webp",
+        "assets/products/OH-N-F3C2A6BEDF28_2.webp",
+        "assets/products/OH-N-F3C2A6BEDF28_3.webp",
+        "assets/products/OH-N-F3C2A6BEDF28_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-76996F406817",
+      "brand": "Jordan",
+      "family": "Air Jordan 13",
+      "color": "Nero",
+      "type": "Sneakers",
+      "code": "414571-011",
+      "description": "Sneaker con profilo alto, nella colorazione nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-76996F406817_1.webp",
+      "images": [
+        "assets/products/OH-N-76996F406817_1.webp",
+        "assets/products/OH-N-76996F406817_2.webp",
+        "assets/products/OH-N-76996F406817_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-76996F406817_1.webp",
+        "assets/products/OH-N-76996F406817_2.webp",
+        "assets/products/OH-N-76996F406817_3.webp",
+        "assets/products/OH-N-76996F406817_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-1E79FC7CABB3",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Blu scuro e verde lime",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione blu scuro e verde lime. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-1E79FC7CABB3_1.webp",
+      "images": [
+        "assets/products/OH-N-1E79FC7CABB3_1.webp",
+        "assets/products/OH-N-1E79FC7CABB3_2.webp",
+        "assets/products/OH-N-1E79FC7CABB3_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-1E79FC7CABB3_1.webp",
+        "assets/products/OH-N-1E79FC7CABB3_2.webp",
+        "assets/products/OH-N-1E79FC7CABB3_3.webp",
+        "assets/products/OH-N-1E79FC7CABB3_4.webp",
+        "assets/products/OH-N-1E79FC7CABB3_5.webp"
+      ]
+    },
+    {
+      "id": "OH-N-F14BD7189F9B",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Rosa e viola",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione rosa e viola. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-F14BD7189F9B_1.webp",
+      "images": [
+        "assets/products/OH-N-F14BD7189F9B_1.webp",
+        "assets/products/OH-N-F14BD7189F9B_2.webp",
+        "assets/products/OH-N-F14BD7189F9B_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-F14BD7189F9B_1.webp",
+        "assets/products/OH-N-F14BD7189F9B_2.webp",
+        "assets/products/OH-N-F14BD7189F9B_3.webp",
+        "assets/products/OH-N-F14BD7189F9B_4.webp",
+        "assets/products/OH-N-F14BD7189F9B_5.webp",
+        "assets/products/OH-N-F14BD7189F9B_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-57E37D566199",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Blu e viola",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione blu e viola. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-57E37D566199_1.webp",
+      "images": [
+        "assets/products/OH-N-57E37D566199_1.webp",
+        "assets/products/OH-N-57E37D566199_2.webp",
+        "assets/products/OH-N-57E37D566199_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-57E37D566199_1.webp",
+        "assets/products/OH-N-57E37D566199_2.webp",
+        "assets/products/OH-N-57E37D566199_3.webp",
+        "assets/products/OH-N-57E37D566199_4.webp",
+        "assets/products/OH-N-57E37D566199_5.webp"
+      ]
+    },
+    {
+      "id": "OH-N-0F29A8CBD8CA",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless TF",
+      "color": "Blu e viola",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione blu e viola. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-0F29A8CBD8CA_1.webp",
+      "images": [
+        "assets/products/OH-N-0F29A8CBD8CA_1.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_2.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-0F29A8CBD8CA_1.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_2.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_3.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_4.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_5.webp",
+        "assets/products/OH-N-0F29A8CBD8CA_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-FD8506311EAF",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless TF",
+      "color": "Azzurro e nero",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione azzurro e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-FD8506311EAF_1.webp",
+      "images": [
+        "assets/products/OH-N-FD8506311EAF_1.webp",
+        "assets/products/OH-N-FD8506311EAF_2.webp",
+        "assets/products/OH-N-FD8506311EAF_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-FD8506311EAF_1.webp",
+        "assets/products/OH-N-FD8506311EAF_2.webp",
+        "assets/products/OH-N-FD8506311EAF_3.webp",
+        "assets/products/OH-N-FD8506311EAF_4.webp",
+        "assets/products/OH-N-FD8506311EAF_5.webp",
+        "assets/products/OH-N-FD8506311EAF_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-2E6397BCB564",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless TF",
+      "color": "Azzurro e argento",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione azzurro e argento. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-2E6397BCB564_1.webp",
+      "images": [
+        "assets/products/OH-N-2E6397BCB564_1.webp",
+        "assets/products/OH-N-2E6397BCB564_2.webp",
+        "assets/products/OH-N-2E6397BCB564_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-2E6397BCB564_1.webp",
+        "assets/products/OH-N-2E6397BCB564_2.webp",
+        "assets/products/OH-N-2E6397BCB564_3.webp",
+        "assets/products/OH-N-2E6397BCB564_4.webp",
+        "assets/products/OH-N-2E6397BCB564_5.webp",
+        "assets/products/OH-N-2E6397BCB564_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-BC49C42CCC68",
+      "brand": "Adidas",
+      "family": "F50 Elite FG",
+      "color": "Azzurro e oro",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione azzurro e oro. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-BC49C42CCC68_1.webp",
+      "images": [
+        "assets/products/OH-N-BC49C42CCC68_1.webp",
+        "assets/products/OH-N-BC49C42CCC68_2.webp",
+        "assets/products/OH-N-BC49C42CCC68_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-BC49C42CCC68_1.webp",
+        "assets/products/OH-N-BC49C42CCC68_2.webp",
+        "assets/products/OH-N-BC49C42CCC68_3.webp",
+        "assets/products/OH-N-BC49C42CCC68_4.webp",
+        "assets/products/OH-N-BC49C42CCC68_5.webp"
+      ]
+    },
+    {
+      "id": "OH-N-CEA7D4DA79F9",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Corallo e argento",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione corallo e argento. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-CEA7D4DA79F9_1.webp",
+      "images": [
+        "assets/products/OH-N-CEA7D4DA79F9_1.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_2.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-CEA7D4DA79F9_1.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_2.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_3.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_4.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_5.webp",
+        "assets/products/OH-N-CEA7D4DA79F9_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-0F14305215A7",
+      "brand": "Adidas",
+      "family": "F50 Pro TF",
+      "color": "Verde e nero",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione verde e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-0F14305215A7_1.webp",
+      "images": [
+        "assets/products/OH-N-0F14305215A7_1.webp",
+        "assets/products/OH-N-0F14305215A7_2.webp",
+        "assets/products/OH-N-0F14305215A7_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-0F14305215A7_1.webp",
+        "assets/products/OH-N-0F14305215A7_2.webp",
+        "assets/products/OH-N-0F14305215A7_3.webp",
+        "assets/products/OH-N-0F14305215A7_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-1B00CF0C98B4",
+      "brand": "Adidas",
+      "family": "F50 Elite FG",
+      "color": "Rosa e nero",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione rosa e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-1B00CF0C98B4_1.webp",
+      "images": [
+        "assets/products/OH-N-1B00CF0C98B4_1.webp",
+        "assets/products/OH-N-1B00CF0C98B4_2.webp",
+        "assets/products/OH-N-1B00CF0C98B4_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-1B00CF0C98B4_1.webp",
+        "assets/products/OH-N-1B00CF0C98B4_2.webp",
+        "assets/products/OH-N-1B00CF0C98B4_3.webp",
+        "assets/products/OH-N-1B00CF0C98B4_4.webp",
+        "assets/products/OH-N-1B00CF0C98B4_5.webp",
+        "assets/products/OH-N-1B00CF0C98B4_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-11F1AF5D44C2",
+      "brand": "Adidas",
+      "family": "F50 Pro TF",
+      "color": "Rosa e giallo",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione rosa e giallo. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-11F1AF5D44C2_1.webp",
+      "images": [
+        "assets/products/OH-N-11F1AF5D44C2_1.webp",
+        "assets/products/OH-N-11F1AF5D44C2_2.webp",
+        "assets/products/OH-N-11F1AF5D44C2_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-11F1AF5D44C2_1.webp",
+        "assets/products/OH-N-11F1AF5D44C2_2.webp",
+        "assets/products/OH-N-11F1AF5D44C2_3.webp",
+        "assets/products/OH-N-11F1AF5D44C2_4.webp"
+      ]
+    },
+    {
+      "id": "OH-N-74CAC3E4CB2D",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless TF",
+      "color": "Rosa e giallo",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione rosa e giallo. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-74CAC3E4CB2D_1.webp",
+      "images": [
+        "assets/products/OH-N-74CAC3E4CB2D_1.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_2.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-74CAC3E4CB2D_1.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_2.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_3.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_4.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_5.webp",
+        "assets/products/OH-N-74CAC3E4CB2D_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-FC543AD5735E",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Giallo e viola",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione giallo e viola. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-FC543AD5735E_1.webp",
+      "images": [
+        "assets/products/OH-N-FC543AD5735E_1.webp",
+        "assets/products/OH-N-FC543AD5735E_2.webp",
+        "assets/products/OH-N-FC543AD5735E_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-FC543AD5735E_1.webp",
+        "assets/products/OH-N-FC543AD5735E_2.webp",
+        "assets/products/OH-N-FC543AD5735E_3.webp",
+        "assets/products/OH-N-FC543AD5735E_4.webp",
+        "assets/products/OH-N-FC543AD5735E_5.webp",
+        "assets/products/OH-N-FC543AD5735E_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-DCA4716969EC",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless TF",
+      "color": "Giallo e viola",
+      "type": "Calcetto · TF",
+      "code": "",
+      "description": "Scarpa da calcetto con suola TF, nella colorazione giallo e viola. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-DCA4716969EC_1.webp",
+      "images": [
+        "assets/products/OH-N-DCA4716969EC_1.webp",
+        "assets/products/OH-N-DCA4716969EC_2.webp",
+        "assets/products/OH-N-DCA4716969EC_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-DCA4716969EC_1.webp",
+        "assets/products/OH-N-DCA4716969EC_2.webp",
+        "assets/products/OH-N-DCA4716969EC_3.webp",
+        "assets/products/OH-N-DCA4716969EC_4.webp",
+        "assets/products/OH-N-DCA4716969EC_5.webp",
+        "assets/products/OH-N-DCA4716969EC_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-B9C26F803A0D",
+      "brand": "Adidas",
+      "family": "F50 Elite Laceless FG",
+      "color": "Arancione e nero",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione arancione e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-B9C26F803A0D_1.webp",
+      "images": [
+        "assets/products/OH-N-B9C26F803A0D_1.webp",
+        "assets/products/OH-N-B9C26F803A0D_2.webp",
+        "assets/products/OH-N-B9C26F803A0D_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-B9C26F803A0D_1.webp",
+        "assets/products/OH-N-B9C26F803A0D_2.webp",
+        "assets/products/OH-N-B9C26F803A0D_3.webp",
+        "assets/products/OH-N-B9C26F803A0D_4.webp",
+        "assets/products/OH-N-B9C26F803A0D_5.webp",
+        "assets/products/OH-N-B9C26F803A0D_6.webp"
+      ]
+    },
+    {
+      "id": "OH-N-547D9E8C4F83",
+      "brand": "Adidas",
+      "family": "F50 Elite FG",
+      "color": "Arancione e nero",
+      "type": "Calcio · FG",
+      "code": "",
+      "description": "Scarpa da calcio con suola FG, nella colorazione arancione e nero. Esplora le viste della stessa variante per osservare tomaia, profilo e dettagli.",
+      "image": "assets/products/OH-N-547D9E8C4F83_1.webp",
+      "images": [
+        "assets/products/OH-N-547D9E8C4F83_1.webp",
+        "assets/products/OH-N-547D9E8C4F83_2.webp",
+        "assets/products/OH-N-547D9E8C4F83_3.webp"
+      ],
+      "photos": [
+        "assets/products/OH-N-547D9E8C4F83_1.webp",
+        "assets/products/OH-N-547D9E8C4F83_2.webp",
+        "assets/products/OH-N-547D9E8C4F83_3.webp",
+        "assets/products/OH-N-547D9E8C4F83_4.webp",
+        "assets/products/OH-N-547D9E8C4F83_5.webp",
+        "assets/products/OH-N-547D9E8C4F83_6.webp"
+      ]
+    }
+  ]
+}

@@ -106,15 +106,23 @@ config = Path("gestione/config.js").read_text(encoding="utf-8")
 assert "tqkmrejfbvzchfplgxzl.supabase.co" in config, "Configurazione Supabase da verificare"
 assert "service_role" not in config and "sb_secret_" not in config, "Chiave segreta nel codice pubblico"
 
+# The trial catalog has its own reviewed albums and public-file allowlist.
+import runpy
+runpy.run_path(str(Path('scripts/audit_catalogo_nuovo.py').resolve()))
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
 for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
     shutil.copy2(item, dest / item)
+for item in ['catalogo-nuovo.html', 'catalogo-nuovo.json']:
+    shutil.copy2(item, dest / item)
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
+for item in ['ohana-catalogo.js','ohana-catalogo.css']:
+    shutil.copy2(Path('assets') / item, dest / 'assets' / item)
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
 (dest / ".nojekyll").write_text("", encoding="utf-8")
 print(f"PASS: {len(catalog)} schede archiviate; {len(visible_photo_digests)} foto di scarpe distinte esposte; {family_count} famiglie modello consultabili, nessun link privato.")
+

@@ -7,6 +7,10 @@ on:
       - "index.html"
       - "verifica-responsive.html"
       - "catalogo.json"
+      - "catalogo-nuovo.html"
+      - "catalogo-nuovo.json"
+      - "scripts/audit_catalogo_nuovo.py"
+      - "tests/catalogo-nuovo.test.js"
       - "foto-extra.json"
       - "tests/media-bot.test.js"
       - "modelli.html"
@@ -32,6 +36,8 @@ jobs:
         run: python3 scripts/audit_catalog.py
       - name: Verifica risposte del bot fotografico
         run: node tests/media-bot.test.js
+      - name: Verifica il nuovo catalogo e le varianti
+        run: node tests/catalogo-nuovo.test.js
       - name: Prepara i soli file pubblici
         run: python3 tools/prepara_pages.py
       - name: Carica archivio validato
@@ -66,3 +72,4 @@ jobs:
       - name: Pubblica
         id: deployment
         uses: actions/deploy-pages@v4
+

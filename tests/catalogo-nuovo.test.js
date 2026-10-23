@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict');
+const api=require('../assets/ohana-catalogo.js');
+const products=require('../catalogo-nuovo.json').products;
+const p=products.find(p=>p.family==='F50 Elite Laceless FG');
+const r=api.answer(products,p,'altri colori');assert(r.items.length>2);assert(r.items.every(x=>x.family===p.family&&x.type===p.type&&x.id!==p.id));
+assert(api.answer(products,p,'la cerco nera').items.every(x=>/nero/i.test(x.color)));
+assert.equal(api.answer(products,p,'altre foto').items.length,p.photos.length);
+assert.equal(api.answer(products,null,'altre foto').items.length,0);
+const air=products.find(p=>p.family==='Air Max 1');assert.equal(api.related(products,air).length,1);
+assert(api.filterProducts(products,{query:'f50 blu',type:'Calcetto · TF'}).every(p=>p.type==='Calcetto · TF'&&/blu/i.test(p.color)));
+assert.equal(api.filterProducts(products,{query:'nonexistent123'}).length,0);
+for(const x of products)assert.equal(api.filterProducts(products,{query:x.id}).length,1);
+console.log('PASS: ricerca per codice e parole, varianti stesso modello/suola, colori e album completi.');

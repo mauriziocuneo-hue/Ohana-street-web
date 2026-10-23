@@ -113,6 +113,11 @@ async function showPrivate(user){
     // Area gestori allineata alla vetrina attiva: solo scarpe non ripetute.
     // Le altre mappature restano archiviate nel database, senza cancellazioni.
     products=completeCatalog.filter(p=>p.genere==='Scarpe'&&p.vetrina!==false);
+    const trialResponse=await fetch('../catalogo-nuovo.json',{cache:'no-store'});
+    if(trialResponse.ok){
+      const trial=await trialResponse.json();
+      if(trial.version===1&&Array.isArray(trial.products))products.push(...trial.products.map(p=>({id:p.id,brand:p.brand,model:p.family+' — '+p.color,image:p.image,genere:'Scarpe',sottogenere:p.type})));
+    }
   }catch(e){message('Impossibile caricare catalogo.json.');return;}
   $('#login').hidden=true;
   $('#workspace').classList.add('ready');
@@ -160,3 +165,4 @@ initialize();
 </script>
 </body>
 </html>
+
