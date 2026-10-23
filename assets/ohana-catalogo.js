@@ -29,7 +29,7 @@
   const $=s=>document.querySelector(s),esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let products=[],state={brand:'',family:'',type:'',query:'',sort:'default'},limit=24,current=null,returnFocus=null;
   const dialog=$('#productDialog');
-  function card(p){return `<article class="card"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="Apri ${esc(p.brand+' '+p.family+' '+p.color)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+p.family+' · '+p.color)}"><span class="photo-count">${p.photos.length} foto</span></button><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3>${esc(p.family)}</h3><p class="card-color">${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">Esplora la scarpa <span aria-hidden="true">↗</span></button></div></article>`;}
+  function card(p){return `<article class="card"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="Apri ${esc(p.brand+' '+p.family+' '+p.color)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+p.family+' · '+p.color)}"><span class="photo-count">${p.photos.length} foto</span></button><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3 class="display">${esc(p.family)}</h3><p class="card-color">${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">Esplora la scarpa <span aria-hidden="true">↗</span></button></div></article>`;}
   function tree(){
     const brands=[...new Set(products.map(p=>p.brand))].sort((a,b)=>a.localeCompare(b,'it'));
     $('#categoryTree').innerHTML=`<button type="button" data-brand="" data-family="" ${!state.brand?'aria-current="true"':''}>Tutte le scarpe</button>`+brands.map(b=>{
@@ -93,9 +93,11 @@
   $('#mainPhoto').addEventListener('error',()=>{$('#mainPhoto').hidden=true;$('#photoError').hidden=false;});
   $('#mainPhoto').addEventListener('load',()=>{$('#mainPhoto').hidden=false;$('#photoError').hidden=true;});
   async function load(){try{
-    const r=await fetch('catalogo-nuovo.json',{cache:'no-cache'});if(!r.ok)throw Error('catalogo');const data=await r.json();if(data.version!==1||!Array.isArray(data.products))throw Error('formato');products=data.products;
+    const r=await fetch('catalogo-nuovo.json',{cache:'no-cache'});if(!r.ok)throw Error('catalogo');const data=await r.json();if(data.version!==1||!Array.isArray(data.products))throw Error('formato');products=data.products;$('#trialTotal').textContent=products.length;
     $('#type').innerHTML='<option value="">Tutte le tipologie</option>'+[...new Set(products.map(p=>p.type))].sort().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
     if(matchMedia('(max-width:760px)').matches)$('#categoryMenu').open=false;render();const id=new URLSearchParams(location.search).get('articolo');if(id)openProduct(id);
   }catch(e){$('#results').textContent='Catalogo temporaneamente non disponibile';$('#grid').innerHTML='<p class="empty">Non riesco a caricare le scarpe. Ricarica la pagina oppure <a href="index.html">torna alla vetrina</a>.</p>';console.error(e);}}
+  $('#menuBtn').addEventListener('click',()=>{const closed=$('#mobileNav').classList.toggle('hide');$('#menuBtn').setAttribute('aria-expanded',String(!closed));});
+  $('#mobileNav').addEventListener('click',e=>{if(e.target.closest('a')){$('#mobileNav').classList.add('hide');$('#menuBtn').setAttribute('aria-expanded','false');}});
   load();
 })(typeof window==='undefined'?null:window);

@@ -118,7 +118,7 @@ for item in ['catalogo-nuovo.html', 'catalogo-nuovo.json']:
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
-for item in ['ohana-catalogo.js','ohana-catalogo.css']:
+for item in ['ohana-catalogo.js','ohana-catalogo.css','ohana-theme.css']:
     shutil.copy2(Path('assets') / item, dest / 'assets' / item)
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js"]:
