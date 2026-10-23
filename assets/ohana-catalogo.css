@@ -164,3 +164,7 @@ dialog{border:3px solid var(--deep);border-radius:0;box-shadow:10px 10px 0 var(-
 @media(max-width:1060px){.catalog-layout{grid-template-columns:190px minmax(0,1fr);gap:22px}.catalog-main .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:780px){.catalog-layout{display:block}.catalog-layout aside{position:static}.catalog-layout{scroll-margin-top:85px}}
 @media(max-width:530px){.catalog-layout{width:calc(100% - 28px)}.catalog-main .grid{gap:12px}.card-info{padding:12px}.card h3{font-size:23px}.card-color{font-size:11px}.card-code{font-size:10px}.product-info h2{font-size:46px}.results-row h2{font-size:32px}.filters{padding:11px}}
+
+/* Keep the complete brand index usable without changing the approved theme. */
+#categoryTree{max-height:calc(100dvh - 195px);overflow:auto;overscroll-behavior:contain}
+@media(max-width:780px){#categoryTree{max-height:55dvh}}

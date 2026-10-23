@@ -10,4 +10,11 @@ const air=products.find(p=>p.family==='Air Max 1');assert.equal(api.related(prod
 assert(api.filterProducts(products,{query:'f50 blu',type:'Calcetto · TF'}).every(p=>p.type==='Calcetto · TF'&&/blu/i.test(p.color)));
 assert.equal(api.filterProducts(products,{query:'nonexistent123'}).length,0);
 for(const x of products)assert.equal(api.filterProducts(products,{query:x.id}).length,1);
-console.log('PASS: ricerca per codice e parole, varianti stesso modello/suola, colori e album completi.');
+const generic=products.find(p=>p.legacy&&p.variantGroup===null);
+assert(generic);assert.deepEqual(api.related(products,generic),[],'Do not mix generic sneaker names into a model family');
+const single=products.find(p=>p.galleryIncomplete);
+assert(single);assert.equal(api.answer(products,single,'altre foto').items.length,1);assert.match(api.answer(products,single,'altre foto').text,/una sola fotografia/);
+const recovered=products.find(p=>p.id==='OH-C4A8F3895241');assert(recovered);assert.equal(api.answer(products,recovered,'altre foto').items.length,5);
+assert(api.filterProducts(products,{query:'Bred'}).some(p=>p.id==='OH-C4A8F3895241'));
+const cleats=api.filterProducts(products,{type:'@tacchetti'});assert.equal(cleats.length,29);assert(cleats.every(p=>['Scarpe con tacchetti','Calcio · FG','Calcetto · TF'].includes(p.type)));
+console.log('PASS: codici precedenti, nomi e varianti, famiglie ambigue isolate, foto singole, foto extra e filtro tacchetti.');

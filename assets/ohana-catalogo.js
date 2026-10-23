@@ -2,16 +2,19 @@
   'use strict';
   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
   const colorTerms={nero:/\b(nero|nera|neri|nere|black)\b/,bianco:/\b(bianco|bianca|white)\b/,blu:/\b(blu|blue)\b/,azzurro:/\b(azzurro|azzurra|celeste)\b/,rosa:/\b(rosa|pink)\b/,viola:/\b(viola|purple)\b/,verde:/\b(verde|verdi|green)\b/,arancione:/\b(arancione|orange)\b/,giallo:/\b(giallo|gialla|yellow)\b/,grigio:/\b(grigio|grigia|grey|gray)\b/,argento:/\b(argento|silver)\b/,beige:/\b(beige|crema|cream)\b/};
+  Object.assign(colorTerms,{rosso:/\b(rosso|rossa|rossi|rosse|red)\b/,marrone:/\b(marrone|marroni|brown)\b/,crema:/\b(crema|cream)\b/,oro:/\b(oro|gold)\b/,lilla:/\blilla\b/,fucsia:/\b(fucsia|fuchsia)\b/,bordeaux:/\bbordeaux\b/,corallo:/\bcorallo\b/,tortora:/\btortora\b/,sabbia:/\bsabbia\b/});
+  const typeGroups={'@sport':['Running','Trail e outdoor'],'@tacchetti':['Scarpe con tacchetti','Calcio · FG','Calcetto · TF']};
   function filterProducts(products,state){
     const words=norm(state.query).split(/\s+/).filter(Boolean);
-    const list=products.filter(p=>(!state.brand||p.brand===state.brand)&&(!state.family||p.family===state.family)&&(!state.type||p.type===state.type)&&words.every(w=>norm([p.id,p.brand,p.family,p.color,p.code,p.type].join(' ')).includes(w)));
+    const list=products.filter(p=>(!state.brand||p.brand===state.brand)&&(!state.family||p.family===state.family)&&(!state.type||p.type===state.type||(typeGroups[state.type]||[]).includes(p.type))&&words.every(w=>norm([p.id,p.brand,p.family,p.name,p.color,p.code,p.type,...(p.tags||[])].join(' ')).includes(w)));
     if(state.sort==='brand')list.sort((a,b)=>a.brand.localeCompare(b.brand,'it')||a.family.localeCompare(b.family,'it'));
     if(state.sort==='family')list.sort((a,b)=>a.family.localeCompare(b.family,'it'));
     return list;
   }
   function related(products,p,query=''){
+    if(!p.variantGroup)return [];
     const requested=Object.keys(colorTerms).filter(k=>colorTerms[k].test(norm(query)));
-    return products.filter(x=>x.id!==p.id&&x.brand===p.brand&&x.family===p.family&&x.type===p.type&&norm(x.color)!==norm(p.color)&&requested.every(k=>colorTerms[k].test(norm(x.color))));
+    return products.filter(x=>x.id!==p.id&&x.brand===p.brand&&x.variantGroup===p.variantGroup&&x.type===p.type&&norm(x.color)!==norm(p.color)&&requested.every(k=>colorTerms[k].test(norm(x.color))));
   }
   function answer(products,p,query){
     if(!p)return {kind:'text',text:'Apri una scarpa per vedere foto e colori.',items:[]};
@@ -20,7 +23,7 @@
       const items=related(products,p,text);
       return {kind:'variants',items,text:items.length?'Queste sono le altre colorazioni fotografate dello stesso modello e tipo di suola. Tocca una variante per aprirla.':'Non ho altre colorazioni verificate con questa richiesta. Puoi chiederle su WhatsApp.'};
     }
-    if(/\b(foto|immagini|fotografie|scatti|suola|dietro|dettagli|vista|viste)\b/.test(text))return {kind:'photos',items:p.photos,text:'Ecco tutte le fotografie verificate di questa variante.'};
+    if(/\b(foto|immagini|fotografie|scatti|suola|dietro|dettagli|vista|viste)\b/.test(text))return {kind:'photos',items:p.photos,text:p.photos.length>1?'Ecco tutte le fotografie verificate di questa variante.':'Per questo articolo è disponibile una sola fotografia verificata. Puoi richiedere altri scatti su WhatsApp.'};
     if(/\b(taglia|taglie|numero|numeri)\b/.test(text))return {kind:'text',items:[],text:'Taglie 36–46 e altre su richiesta. Conferma la misura desiderata con OHANA su WhatsApp.'};
     return {kind:'text',items:[],text:'Posso mostrarti altre foto o altri colori. Prova “altre foto”, “altri colori” o “la cerco blu”.'};
   }
@@ -34,7 +37,7 @@
     const brands=[...new Set(products.map(p=>p.brand))].sort((a,b)=>a.localeCompare(b,'it'));
     $('#categoryTree').innerHTML=`<button type="button" data-brand="" data-family="" ${!state.brand?'aria-current="true"':''}>Tutte le scarpe</button>`+brands.map(b=>{
       const list=products.filter(p=>p.brand===b),families=[...new Set(list.map(p=>p.family))].sort((a,b)=>a.localeCompare(b,'it'));
-      return `<details ${!state.brand||state.brand===b?'open':''}><summary>${esc(b)} · ${list.length}</summary><button class="family-link" type="button" data-brand="${esc(b)}" data-family="" ${state.brand===b&&!state.family?'aria-current="true"':''}>Tutti i modelli</button>${families.map(f=>`<button class="family-link" type="button" data-brand="${esc(b)}" data-family="${esc(f)}" ${state.brand===b&&state.family===f?'aria-current="true"':''}>${esc(f)}<span>${list.filter(p=>p.family===f).length}</span></button>`).join('')}</details>`;
+      return `<details ${state.brand===b?'open':''}><summary>${esc(b)} · ${list.length}</summary><button class="family-link" type="button" data-brand="${esc(b)}" data-family="" ${state.brand===b&&!state.family?'aria-current="true"':''}>Tutti i modelli</button>${families.map(f=>`<button class="family-link" type="button" data-brand="${esc(b)}" data-family="${esc(f)}" ${state.brand===b&&state.family===f?'aria-current="true"':''}>${esc(f)}<span>${list.filter(p=>p.family===f).length}</span></button>`).join('')}</details>`;
     }).join('');
   }
   function render(){
@@ -58,23 +61,25 @@
   function openProduct(id){
     const p=products.find(p=>p.id===id);if(!p)return;
     if(!dialog.open)returnFocus=document.activeElement;current=p;
-    $('#dialogEyebrow').textContent=p.id;$('#productBrand').textContent=p.brand+' · '+p.type;$('#productTitle').textContent=p.family;$('#productColor').textContent=p.color;
+    $('#dialogEyebrow').textContent=p.id;$('#productBrand').textContent=p.brand+' · '+p.type;$('#productTitle').textContent=p.name||p.family;$('#productColor').textContent=p.color;
     $('#productDescription').textContent=p.description;
     $('#productDetails').innerHTML=`<dt>Codice OHANA</dt><dd>${esc(p.id)}</dd>${p.code?`<dt>Riferimento modello</dt><dd>${esc(p.code)}</dd>`:''}`;
-    $('#thumbnails').innerHTML=photoButtons(p.photos.slice(0,3));$('#album').replaceChildren();$('#album').hidden=true;
-    $('#showAlbum').hidden=p.photos.length<=3;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${p.photos.length} fotografie ↓`;
+    $('#thumbnails').innerHTML=photoButtons(p.images);$('#thumbnails').hidden=p.images.length===1;$('#album').replaceChildren();$('#album').hidden=true;
+    $('#galleryStatus').hidden=!p.galleryIncomplete;$('#galleryStatus').textContent=p.galleryIncomplete?'Galleria in completamento: al momento è disponibile una fotografia di questo articolo.':'';
+    $('#showAlbum').hidden=p.photos.length<=p.images.length;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${p.photos.length} fotografie ↓`;
     $('#botResponse').replaceChildren();$('#botQuery').value='';showPhoto(0);
     const url=new URL(location.href);url.searchParams.set('articolo',p.id);history.replaceState({},'',url);
-    const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda: ${url.href}`;
+    const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.name||p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda: ${url.href}`;
     $('#whatsapp').href='https://wa.me/393473099705?text='+encodeURIComponent(msg);
     if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden';}dialog.scrollTop=0;$('#closeDialog').focus();
   }
   function ask(query){
     const a=answer(products,current,query),host=$('#botResponse');host.replaceChildren();const p=document.createElement('p');p.textContent=a.text;host.append(p);
-    if(a.kind==='photos'){expandAlbum();const b=document.createElement('button');b.type='button';b.textContent='Vai alle fotografie ↑';b.addEventListener('click',()=>$('.gallery').scrollIntoView({block:'start'}));host.append(b);}
+    if(a.kind==='photos'&&a.items.length>1){expandAlbum();const b=document.createElement('button');b.type='button';b.textContent='Vai alle fotografie ↑';b.addEventListener('click',()=>$('.gallery').scrollIntoView({block:'start'}));host.append(b);}
     if(a.kind==='variants'&&a.items.length){const grid=document.createElement('div');grid.className='variants';grid.innerHTML=a.items.map(p=>`<button type="button" data-open="${esc(p.id)}" aria-label="Apri variante ${esc(p.color)}"><img src="${esc(p.image)}" alt="${esc(p.color)}" loading="lazy">${esc(p.color)}</button>`).join('');host.append(grid);}
   }
   document.addEventListener('click',e=>{
+    const headerLink=e.target.closest('header [data-sottogenere]');if(headerLink){e.preventDefault();const sub=headerLink.dataset.sottogenere;state={brand:'',family:'',query:'',sort:'default',type:sub==='Running'?'@sport':sub==='Scarpe con tacchetti'?'@tacchetti':sub};$('#search').value='';$('#sort').value='default';$('#type').value=state.type;limit=24;render();$('#mobileNav').classList.add('hide');$('#menuBtn').setAttribute('aria-expanded','false');$('#catalogo').scrollIntoView({block:'start'});return;}
     const open=e.target.closest('[data-open]');if(open){openProduct(open.dataset.open);return;}
     const photo=e.target.closest('[data-photo]');if(photo&&current){showPhoto(Number(photo.dataset.photo));return;}
     const nav=e.target.closest('[data-brand]');if(nav){state.brand=nav.dataset.brand;state.family=nav.dataset.family||'';state.query='';$('#search').value='';state.type='';$('#type').value='';limit=24;render();if(matchMedia('(max-width:760px)').matches)$('#categoryMenu').open=false;}
@@ -93,8 +98,8 @@
   $('#mainPhoto').addEventListener('error',()=>{$('#mainPhoto').hidden=true;$('#photoError').hidden=false;});
   $('#mainPhoto').addEventListener('load',()=>{$('#mainPhoto').hidden=false;$('#photoError').hidden=true;});
   async function load(){try{
-    const r=await fetch('catalogo-nuovo.json',{cache:'no-cache'});if(!r.ok)throw Error('catalogo');const data=await r.json();if(data.version!==1||!Array.isArray(data.products))throw Error('formato');products=data.products;$('#trialTotal').textContent=products.length;
-    $('#type').innerHTML='<option value="">Tutte le tipologie</option>'+[...new Set(products.map(p=>p.type))].sort().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
+    const r=await fetch('catalogo-nuovo.json',{cache:'no-store'});if(!r.ok)throw Error('catalogo');const data=await r.json();if(data.version!==1||!Array.isArray(data.products))throw Error('formato');products=data.products;$('#trialTotal').textContent=products.length;
+    $('#type').innerHTML='<option value="">Tutte le tipologie</option><option value="@sport">Running e outdoor</option><option value="@tacchetti">Tutti i tacchetti</option>'+[...new Set(products.map(p=>p.type))].sort().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
     if(matchMedia('(max-width:760px)').matches)$('#categoryMenu').open=false;render();const id=new URLSearchParams(location.search).get('articolo');if(id)openProduct(id);
   }catch(e){$('#results').textContent='Catalogo temporaneamente non disponibile';$('#grid').innerHTML='<p class="empty">Non riesco a caricare le scarpe. Ricarica la pagina oppure <a href="index.html">torna alla vetrina</a>.</p>';console.error(e);}}
   $('#menuBtn').addEventListener('click',()=>{const closed=$('#mobileNav').classList.toggle('hide');$('#menuBtn').setAttribute('aria-expanded',String(!closed));});
