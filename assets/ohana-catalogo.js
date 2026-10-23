@@ -100,18 +100,12 @@
     $('#thumbnails').innerHTML=photoButtons(p.images);$('#thumbnails').hidden=p.images.length===1;$('#album').replaceChildren();$('#album').hidden=true;
     $('#galleryStatus').hidden=!p.galleryIncomplete;$('#galleryStatus').textContent=p.galleryIncomplete?`Galleria in completamento: ${p.photos.length===1?'una fotografia disponibile':p.photos.length+' fotografie disponibili'}.`:'';
     $('#showAlbum').hidden=p.photos.length<=p.images.length;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${p.photos.length} fotografie ↓`;
-    $('#botResponse').replaceChildren();$('#botQuery').value='';$('#shareStatus').textContent='';$('#shareFallback').hidden=true;showPhoto(0);variantPicker(p);updateSavedUI();
+    $('#shareStatus').textContent='';$('#shareFallback').hidden=true;showPhoto(0);variantPicker(p);updateSavedUI();
     const url=new URL(location.href);url.searchParams.set('articolo',p.id);history.replaceState({},'',url);
     const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.name||p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda gestori: ${shopping.managerUrl(p,location.href)}`;
     $('#whatsapp').href='https://wa.me/393473099705?text='+encodeURIComponent(msg);
     requestController=root.OhanaChat?.mount($('#ohana-product-request'),p);$('#whatsapp').hidden=Boolean(requestController);root.OhanaChat?.close();
     if(!dialog.open)dialog.showModal();syncOverlay();dialog.scrollTop=0;$('#closeDialog').focus();
-  }
-  function ask(query){
-    const a=answer(products,current,query),host=$('#botResponse');host.replaceChildren();const p=document.createElement('p');p.textContent=a.text;host.append(p);
-    if(a.kind==='request'&&requestController){const b=document.createElement('button');b.type='button';b.textContent='Prepara la richiesta';b.addEventListener('click',()=>requestController.question(query));host.append(b);}
-    if(a.kind==='photos'&&a.items.length>1){expandAlbum();const b=document.createElement('button');b.type='button';b.textContent='Vai alle fotografie ↑';b.addEventListener('click',()=>$('.gallery').scrollIntoView({block:'start'}));host.append(b);}
-    if(a.kind==='variants'&&a.items.length){const grid=document.createElement('div');grid.className='variants';grid.innerHTML=a.items.map(p=>`<button type="button" data-open="${esc(p.id)}" aria-label="Apri variante ${esc(p.color)}"><img src="${esc(p.image)}" alt="${esc(p.color)}" loading="lazy">${esc(p.color)}</button>`).join('');host.append(grid);}
   }
   function sizeOptions(selected='',mass=false){return '<option value="">'+(mass?'Scegli una taglia (facoltativo)':'Scegli la taglia')+'</option>'+Array.from({length:11},(_,i)=>String(i+36)).map(v=>`<option value="${v}" ${selected===v?'selected':''}>${v}</option>`).join('')+(mass?'':`<option value="other" ${selected==='other'?'selected':''}>Altra taglia</option>`)+`<option value="unknown" ${selected==='unknown'?'selected':''}>Non so ancora</option>`;}
   function selectedProducts(){return [...saved].map(id=>products.find(p=>p.id===id)).filter(Boolean);}
@@ -158,8 +152,6 @@
   dialog.addEventListener('close',()=>{syncOverlay();const url=new URL(location.href);url.searchParams.delete('articolo');history.replaceState({},'',url);if(!selectionDialog.open)(returnFocus?.isConnected?returnFocus:$('#openSelection')).focus();});
   selectionDialog.addEventListener('close',()=>{syncOverlay();const url=new URL(location.href);url.searchParams.delete('richiesta');history.replaceState({},'',url);if(!dialog.open)(selectionFocus?.isConnected?selectionFocus:$('#openSelection')).focus();});
   $('#showAlbum').addEventListener('click',()=>{if($('#album').hidden)expandAlbum();else{$('#album').hidden=true;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${current.photos.length} fotografie ↓`;}});
-  $('#botPhotos').addEventListener('click',()=>ask('altre foto'));$('#botColors').addEventListener('click',()=>ask('altri colori'));
-  $('#botForm').addEventListener('submit',e=>{e.preventDefault();ask($('#botQuery').value);});
   $('#mainPhoto').addEventListener('error',()=>{$('#mainPhoto').hidden=true;$('#photoError').hidden=false;});
   $('#mainPhoto').addEventListener('load',()=>{$('#mainPhoto').hidden=false;$('#photoError').hidden=true;});
   $('#shareProduct').addEventListener('click',async()=>{

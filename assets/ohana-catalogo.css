@@ -80,19 +80,6 @@ dialog::backdrop{background:#062a2ecb}
 .product-info dt{font-weight:700;margin-top:6px}
 .product-info dd{margin:2px 0 0;overflow-wrap:anywhere}
 .availability{line-height:1.8;color:var(--muted)}
-.assistant{border:1px solid #96bfb0;background:#edf7f0;border-radius:6px;padding:14px;margin:20px 0}
-.assistant h3{font-size:15px;margin:0}
-.assistant>p{font-size:11px;margin:5px 0 12px}
-.quick{display:flex;gap:7px;flex-wrap:wrap}
-.quick button{font-size:11px;background:white;padding:8px 12px}
-.assistant form{display:flex;gap:6px;margin-top:12px}
-.assistant input{width:0;flex:1;min-width:0;background:white;border:1px solid var(--line);border-radius:6px;padding:9px;font-size:11px}
-.assistant form button{font-size:11px;padding:8px}
-#botResponse{font-size:11px}
-#botResponse:empty{display:none}
-#botResponse .variants{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-#botResponse .variants button{border-color:var(--line);font-size:10px;padding:5px;background:white}
-#botResponse .variants img{width:100%;height:90px;object-fit:contain;display:block}
 .whatsapp{display:block;background:var(--ink);color:white;text-decoration:none;text-align:center;padding:16px 12px;border-radius:30px;font-size:12px;font-weight:900}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 @media(min-width:1450px){.card-cover img{height:255px}}
@@ -160,7 +147,6 @@ dialog{border:3px solid var(--deep);border-radius:0;box-shadow:10px 10px 0 var(-
 .album button{padding:4px}
 .whatsapp{background:#167b56;border-radius:12px;padding:13px 18px;font-size:13px;min-height:45px}
 .whatsapp:hover{background:#115e43}
-.quick button{border-radius:20px}
 @media(max-width:1060px){.catalog-layout{grid-template-columns:190px minmax(0,1fr);gap:22px}.catalog-main .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:780px){.catalog-layout{display:block}.catalog-layout aside{position:static}.catalog-layout{scroll-margin-top:85px}}
 @media(max-width:530px){.catalog-layout{width:calc(100% - 28px)}.catalog-main .grid{gap:12px}.card-info{padding:12px}.card h3{font-size:23px}.card-color{font-size:11px}.card-code{font-size:10px}.product-info h2{font-size:46px}.results-row h2{font-size:32px}.filters{padding:11px}}
