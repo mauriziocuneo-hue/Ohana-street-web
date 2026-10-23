@@ -1608,7 +1608,7 @@
   {
     "id": "OHY-064",
     "brand": "Loro Piana",
-    "model": "Modello da verificare — Marrone e beige",
+    "model": "Nantucket Walk — Marrone e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1630,17 +1630,17 @@
     "colori_disponibili": [
       "Marrone e beige"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Marrone e beige. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "Loro Piana Nantucket Walk. Colorazione: Marrone e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Nantucket Walk",
+    "famiglia_varianti": "Nantucket Walk",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-065",
     "brand": "Loro Piana",
-    "model": "Modello da verificare — Grigio e beige",
+    "model": "Nantucket Walk — Grigio e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1662,17 +1662,17 @@
     "colori_disponibili": [
       "Grigio e beige"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Grigio e beige. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "Loro Piana Nantucket Walk. Colorazione: Grigio e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Nantucket Walk",
+    "famiglia_varianti": "Nantucket Walk",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-066",
     "brand": "Loro Piana",
-    "model": "Modello da verificare — Bianco e beige",
+    "model": "Nantucket Walk — Bianco e beige",
     "category": "Sneakers",
     "kind": "sneaker",
     "style": "Scheda catalogo OHANA",
@@ -1694,12 +1694,12 @@
     "colori_disponibili": [
       "Bianco e beige"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "Loro Piana Nantucket Walk. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Nantucket Walk",
+    "famiglia_varianti": "Nantucket Walk",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OHY-067",
@@ -6275,7 +6275,7 @@
   {
     "id": "OH-2F809C56DDAE",
     "brand": "UGG",
-    "model": "Modello da verificare — Castagna e crema",
+    "model": "Coquette — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -6297,12 +6297,12 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "UGG Coquette. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Coquette",
+    "famiglia_varianti": "Coquette",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-DF49F4382B66",
@@ -6865,7 +6865,7 @@
   {
     "id": "OH-A94C26878A86",
     "brand": "UGG",
-    "model": "Modello da verificare — Nero",
+    "model": "Coquette — Nero",
     "genere": "Scarpe",
     "sottogenere": "Sandali e ciabatte",
     "category": "Sandali e ciabatte",
@@ -6887,12 +6887,12 @@
     "colori_disponibili": [
       "Nero"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "UGG Coquette. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Coquette",
+    "famiglia_varianti": "Coquette",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-111F4D50AAF1",
@@ -7460,7 +7460,7 @@
   {
     "id": "OH-0B52459DC502",
     "brand": "UGG",
-    "model": "Modello da verificare — Castagna e crema",
+    "model": "Classic New Heights Lace Up — Castagna e crema",
     "genere": "Scarpe",
     "sottogenere": "Stivali e stivaletti",
     "category": "Stivali e stivaletti",
@@ -7480,13 +7480,13 @@
     "colori_disponibili": [
       "Castagna e crema"
     ],
-    "descrizione": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
+    "descrizione": "UGG Classic New Heights Lace Up. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
     "galleria_in_completamento": true,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": false,
-    "famiglia_modello": "Modello da verificare",
-    "famiglia_varianti": null,
-    "stato_nome_modello": "pending"
+    "modelloVerificato": true,
+    "famiglia_modello": "Classic New Heights Lace Up",
+    "famiglia_varianti": "Classic New Heights Lace Up",
+    "stato_nome_modello": "identified"
   },
   {
     "id": "OH-7FF3E81A4C51",

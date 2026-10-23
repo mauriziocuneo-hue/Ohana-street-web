@@ -7,7 +7,7 @@ const p=catalog.find(p=>p.id==='OH-N-F14BD7189F9B');
 const data={size:'42',color:'Nero & rosa',question:'Avete questa variante? Vorrei foto e informazioni.'};
 const r=api.requestData(p,data,base);
 assert.equal(r.id,p.id);assert.equal(r.size,'42');assert.equal(r.color,data.color);
-assert.equal(r.url,'https://mauriziocuneo-hue.github.io/Ohana-street-web/catalogo-nuovo.html?articolo='+p.id);
+assert.equal(r.url,'https://mauriziocuneo-hue.github.io/Ohana-street-web/gestione/?articolo='+p.id);
 assert(!r.url.includes('qa='));assert(!r.url.includes('bot='));
 const text=api.message(p,data,base);assert(text.includes(p.id));assert(text.includes(p.code));assert(text.includes(data.question));
 assert.equal(decodeURIComponent(encodeURIComponent(text)),text);

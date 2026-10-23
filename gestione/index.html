@@ -81,6 +81,9 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 <script type="module">
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const $ = selector => document.querySelector(selector);
+// Shared contract with public WhatsApp requests: keep the article through login.
+const requestedArticle=new URLSearchParams(location.search).get('articolo')||'';
+if(/^(?:OHY-\d{3}|OH-(?:N-)?[A-F0-9]{12})$/.test(requestedArticle))$('#search').value=requestedArticle;
 const cfg = window.OHANA_CONFIG || {};
 const message = text => { $('#message').textContent = text; };
 const esc = v => String(v ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));

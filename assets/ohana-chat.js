@@ -19,12 +19,12 @@
   function requestData(product,data,baseUrl){
     const p=productInfo(product),typed=clean(data.product,190);
     const id=p.id||typed.match(/\b(?:OHY-\d{3}|OH-(?:N-)?[A-F0-9]{12})\b/i)?.[0]?.toUpperCase()||'';
-    const url=new URL('catalogo-nuovo.html',baseUrl);url.search='';url.hash='';if(id)url.searchParams.set('articolo',id);
+    const url=new URL('gestione/',baseUrl);url.search='';url.hash='';if(id)url.searchParams.set('articolo',id);
     return {product:p.label||typed||'Richiesta generale',id,code:p.code,size:sizeValue(data)||'Da definire',color:clean(data.color,80)||'Da definire',question:clean(data.question),url:id?url.href:''};
   }
   function message(product,data,baseUrl){
     const r=requestData(product,data,baseUrl);
-    return ['Aloha OHANA STREET! 👋','Vorrei informazioni sul vostro catalogo.','',`Prodotto: ${r.product}`,...(r.id?[`Codice OHANA: ${r.id}`]:[]),...(r.code?[`Riferimento modello: ${r.code}`]:[]),`Taglia richiesta: ${r.size}`,`Colore richiesto: ${r.color}`,`Domanda: ${r.question}`,...(r.url?['',`Scheda: ${r.url}`]:[]),'','Disponibilità, colori e taglie da confermare con OHANA.'].join('\n');
+    return ['Aloha OHANA STREET! 👋','Vorrei informazioni sul vostro catalogo.','',`Prodotto: ${r.product}`,...(r.id?[`Codice OHANA: ${r.id}`]:[]),...(r.code?[`Riferimento modello: ${r.code}`]:[]),`Taglia richiesta: ${r.size}`,`Colore richiesto: ${r.color}`,`Domanda: ${r.question}`,...(r.url?['',`Scheda gestori: ${r.url}`]:[]),'','Disponibilità, colori e taglie da confermare con OHANA.'].join('\n');
   }
   const api={productInfo,sizeValue,validate,requestData,message,topics};if(typeof module!=='undefined'&&module.exports)module.exports=api;
   if(!root?.document)return;

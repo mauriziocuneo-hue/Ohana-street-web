@@ -1,0 +1,41 @@
+'use strict';
+const assert=require('node:assert/strict');
+const api=require('../assets/ohana-scelte.js');
+const chat=require('../assets/ohana-chat.js');
+const catalog=require('../catalogo-nuovo.json').products;
+const base='https://mauriziocuneo-hue.github.io/Ohana-street-web/catalogo-nuovo.html?qa=private&salvati=1#catalogo';
+const groups=api.groupProducts(catalog),ids=groups.flatMap(g=>g.variants.map(p=>p.id));
+assert.equal(ids.length,catalog.length);assert.equal(new Set(ids).size,catalog.length,'Ogni articolo deve comparire in una sola scheda modello');
+assert(groups.length<catalog.length/2,'Le colorazioni devono ridurre concretamente le schede ripetute');
+for(const g of groups){assert(g.variants.every(p=>p.brand===g.product.brand&&p.type===g.product.type));}
+const jordan=catalog.find(p=>p.id==='OHY-001');
+assert(api.modelVariants(catalog,jordan).length>1);
+assert(api.modelVariants(catalog,jordan).every(p=>p.family==='Air Jordan 4'),'La variante SB resta distinta');
+const cleats=catalog.find(p=>p.family==='F50 Elite Laceless FG');
+assert(api.modelVariants(catalog,cleats).every(p=>p.type===cleats.type),'Non mescolare FG e TF');
+for(const p of catalog.filter(p=>['pending','family'].includes(p.modelNameStatus)||p.family==='1906'))assert.deepEqual(api.modelVariants(catalog,p),[p],'Nessun raggruppamento di nomi incerti');
+const pending=catalog.filter(p=>p.modelNameStatus==='pending');
+assert.equal(api.groupProducts(pending).length,pending.length,'I nomi da verificare non sono un unico modello');
+const other=catalog.find(p=>p.id!==jordan.id);
+assert.deepEqual(api.favoriteIds(JSON.stringify([jordan.id,jordan.id,other.id,'invalid','__proto__',null]),catalog),[jordan.id,other.id]);
+assert.deepEqual(api.favoriteIds('{invalid',catalog),[]);assert.deepEqual(api.favoriteIds({id:jordan.id},catalog),[]);
+const favorites=[jordan.id,other.id];
+const drafts={[jordan.id]:{size:'42'},[other.id]:{size:'other',otherSize:'42,5'}};
+const request=api.selectionRequest(catalog,favorites,drafts,'Vorrei dettagli & fotografie.',base);
+assert.deepEqual(request.invalid,[]);assert.equal(request.entries.length,2);assert(request.message.includes('42.5'));
+assert(request.message.includes(jordan.color)&&request.message.includes(other.color));
+assert(request.message.includes(jordan.id)&&request.message.includes(other.id));
+assert(!request.message.includes('catalogo-nuovo.html'),'Le richieste entranti devono aprire l’area gestori');
+assert(request.message.includes('/gestione/?articolo='+jordan.id));assert(!request.message.includes('qa='));
+assert.equal(new URL(request.url).searchParams.get('text'),request.message);
+assert.deepEqual(api.selectionRequest(catalog,favorites,{},'',base).invalid,favorites,'Una taglia mancante va rilevata per ogni scarpa');
+assert.equal(api.validSize({size:'unknown'}),true);assert.equal(api.validSize({size:'other',otherSize:'47'}),true);assert.equal(api.validSize({size:'other',otherSize:'<script>'}),false);
+const long=api.selectionRequest(catalog,catalog.map(p=>p.id),Object.fromEntries(catalog.map(p=>[p.id,{size:'unknown'}])),'',base);
+assert(long.copyRequired);assert.equal(long.url,'https://wa.me/393473099705');assert.equal(long.entries.length,catalog.length,'Il riepilogo lungo non perde articoli');
+for(const p of catalog){
+ const shared=api.shareData(p,base);assert.equal(shared.url,'https://mauriziocuneo-hue.github.io/Ohana-street-web/catalogo-nuovo.html?articolo='+p.id,'Condividi apre la scheda pubblica precisa');
+ assert.equal(api.managerUrl(p,base),'https://mauriziocuneo-hue.github.io/Ohana-street-web/gestione/?articolo='+p.id);
+ const incoming=chat.requestData(p,{size:'42',color:p.color,question:'Informazioni'},base);
+ assert.equal(incoming.url,api.managerUrl(p,base));
+}
+console.log(`PASS: ${catalog.length} varianti senza perdite in ${groups.length} schede; preferiti, taglie per articolo, richiesta unica, condivisione pubblica e collegamenti gestori.`);

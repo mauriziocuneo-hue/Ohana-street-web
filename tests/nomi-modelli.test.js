@@ -36,5 +36,5 @@ assert.equal(find('OH-148AA9D070C4').modelNameStatus,'pending','Un titolo incoer
 assert.equal(find('OH-F2546D8E0082').modelNameStatus,'pending','Un riferimento non coerente con la foto non conferma il modello');
 assert(!products.some(p=>/^(Sneaker|Scarpa |Ciabatta |Sandalo |Stival|Sabot|Mocassino)/.test(p.family)),'Nessun titolo generico senza indicazione della verifica');
 assert.equal(products.length,375);
-assert.equal(products.reduce((n,p)=>n+p.photos.length,0),1140);
+assert.equal(products.reduce((n,p)=>n+p.photos.length,0),1154);
 console.log(`PASS: ${Object.keys(reviews).length} nomi revisionati, ricerca, contesto WhatsApp, identità, separazione modelli e casi da verificare.`);

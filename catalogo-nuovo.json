@@ -567,7 +567,8 @@
         "assets/products/OHY-022_restored.webp"
       ],
       "photos": [
-        "assets/products/OHY-022_restored.webp"
+        "assets/products/OHY-022_restored.webp",
+        "assets/products/OHY-022_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -1011,13 +1012,13 @@
     {
       "id": "OHY-064",
       "brand": "Loro Piana",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Nantucket Walk",
+      "name": "Nantucket Walk",
+      "modelNameStatus": "identified",
       "color": "Marrone e beige",
       "type": "Sneakers",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Marrone e beige. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Loro Piana Nantucket Walk. Colorazione: Marrone e beige. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OHY-064_restored.webp",
       "images": [
         "assets/products/OHY-064_restored.webp",
@@ -1033,20 +1034,20 @@
         "loro piana",
         "sneakers"
       ],
-      "variantGroup": null,
+      "variantGroup": "loro piana:nantucket walk",
       "galleryIncomplete": false,
       "legacy": true
     },
     {
       "id": "OHY-065",
       "brand": "Loro Piana",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Nantucket Walk",
+      "name": "Nantucket Walk",
+      "modelNameStatus": "identified",
       "color": "Grigio e beige",
       "type": "Sneakers",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Grigio e beige. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Loro Piana Nantucket Walk. Colorazione: Grigio e beige. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OHY-065_restored.webp",
       "images": [
         "assets/products/OHY-065_restored.webp",
@@ -1062,20 +1063,20 @@
         "loro piana",
         "sneakers"
       ],
-      "variantGroup": null,
+      "variantGroup": "loro piana:nantucket walk",
       "galleryIncomplete": false,
       "legacy": true
     },
     {
       "id": "OHY-066",
       "brand": "Loro Piana",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Nantucket Walk",
+      "name": "Nantucket Walk",
+      "modelNameStatus": "identified",
       "color": "Bianco e beige",
       "type": "Sneakers",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Loro Piana Nantucket Walk. Colorazione: Bianco e beige. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OHY-066_restored.webp",
       "images": [
         "assets/products/OHY-066_restored.webp",
@@ -1091,7 +1092,7 @@
         "loro piana",
         "sneakers"
       ],
-      "variantGroup": null,
+      "variantGroup": "loro piana:nantucket walk",
       "galleryIncomplete": false,
       "legacy": true
     },
@@ -1288,7 +1289,8 @@
         "assets/products/OH-682F4C0BDCD3.webp"
       ],
       "photos": [
-        "assets/products/OH-682F4C0BDCD3.webp"
+        "assets/products/OH-682F4C0BDCD3.webp",
+        "assets/products/OH-682F4C0BDCD3_extra_recovered_20261023.webp"
       ],
       "tags": [
         "on running",
@@ -1686,7 +1688,8 @@
         "assets/products/OH-DBD4A416CDF9.webp"
       ],
       "photos": [
-        "assets/products/OH-DBD4A416CDF9.webp"
+        "assets/products/OH-DBD4A416CDF9.webp",
+        "assets/products/OH-DBD4A416CDF9_extra_recovered_20261023.webp"
       ],
       "tags": [
         "on running",
@@ -2505,7 +2508,8 @@
         "assets/products/OH-737634294C46.webp"
       ],
       "photos": [
-        "assets/products/OH-737634294C46.webp"
+        "assets/products/OH-737634294C46.webp",
+        "assets/products/OH-737634294C46_extra_recovered_20261023.webp"
       ],
       "tags": [
         "on running",
@@ -2636,13 +2640,13 @@
     {
       "id": "OH-2F809C56DDAE",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Coquette",
+      "name": "Coquette",
+      "modelNameStatus": "identified",
       "color": "Castagna e crema",
       "type": "Sandali e ciabatte",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Coquette. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-2F809C56DDAE.webp",
       "images": [
         "assets/products/OH-2F809C56DDAE.webp",
@@ -2658,7 +2662,7 @@
         "ugg",
         "sandali e ciabatte"
       ],
-      "variantGroup": null,
+      "variantGroup": "ugg:coquette",
       "galleryIncomplete": false,
       "legacy": true
     },
@@ -2870,13 +2874,13 @@
     {
       "id": "OH-A94C26878A86",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Coquette",
+      "name": "Coquette",
+      "modelNameStatus": "identified",
       "color": "Nero",
       "type": "Sandali e ciabatte",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Coquette. Colorazione: Nero. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-A94C26878A86.webp",
       "images": [
         "assets/products/OH-A94C26878A86.webp",
@@ -2892,7 +2896,7 @@
         "ugg",
         "sandali e ciabatte"
       ],
-      "variantGroup": null,
+      "variantGroup": "ugg:coquette",
       "galleryIncomplete": false,
       "legacy": true
     },
@@ -3096,13 +3100,13 @@
     {
       "id": "OH-0B52459DC502",
       "brand": "UGG",
-      "family": "Modello da verificare",
-      "name": "Modello da verificare",
-      "modelNameStatus": "pending",
+      "family": "Classic New Heights Lace Up",
+      "name": "Classic New Heights Lace Up",
+      "modelNameStatus": "identified",
       "color": "Castagna e crema",
       "type": "Stivali e stivaletti",
       "code": "",
-      "description": "Nome del modello da verificare. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "UGG Classic New Heights Lace Up. Colorazione: Castagna e crema. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-0B52459DC502.webp",
       "images": [
         "assets/products/OH-0B52459DC502.webp"
@@ -3114,7 +3118,7 @@
         "ugg",
         "stivali e stivaletti"
       ],
-      "variantGroup": null,
+      "variantGroup": "ugg:classic new heights lace up",
       "galleryIncomplete": true,
       "legacy": true
     },
@@ -3270,7 +3274,8 @@
         "assets/products/OH-4307CE8EB16D.webp"
       ],
       "photos": [
-        "assets/products/OH-4307CE8EB16D.webp"
+        "assets/products/OH-4307CE8EB16D.webp",
+        "assets/products/OH-4307CE8EB16D_extra_recovered_20261023.webp"
       ],
       "tags": [
         "adidas",
@@ -3297,7 +3302,8 @@
         "assets/products/OH-F2546D8E0082.webp"
       ],
       "photos": [
-        "assets/products/OH-F2546D8E0082.webp"
+        "assets/products/OH-F2546D8E0082.webp",
+        "assets/products/OH-F2546D8E0082_extra_recovered_20261023.webp"
       ],
       "tags": [
         "ugg",
@@ -8512,7 +8518,8 @@
         "assets/products/OH-A228F5755740_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-A228F5755740_verified_1.webp"
+        "assets/products/OH-A228F5755740_verified_1.webp",
+        "assets/products/OH-A228F5755740_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -8538,7 +8545,8 @@
         "assets/products/OH-3D198A215EE7_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-3D198A215EE7_verified_1.webp"
+        "assets/products/OH-3D198A215EE7_verified_1.webp",
+        "assets/products/OH-3D198A215EE7_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -8564,7 +8572,8 @@
         "assets/products/OH-AF1BC798A1A6_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-AF1BC798A1A6_verified_1.webp"
+        "assets/products/OH-AF1BC798A1A6_verified_1.webp",
+        "assets/products/OH-AF1BC798A1A6_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -8680,7 +8689,8 @@
         "assets/products/OH-369CF2C781BA_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-369CF2C781BA_verified_1.webp"
+        "assets/products/OH-369CF2C781BA_verified_1.webp",
+        "assets/products/OH-369CF2C781BA_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -9178,7 +9188,8 @@
         "assets/products/OH-ACFC113BA0F0_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-ACFC113BA0F0_verified_1.webp"
+        "assets/products/OH-ACFC113BA0F0_verified_1.webp",
+        "assets/products/OH-ACFC113BA0F0_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -9526,7 +9537,8 @@
         "assets/products/OH-15491933B470_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-15491933B470_verified_1.webp"
+        "assets/products/OH-15491933B470_verified_1.webp",
+        "assets/products/OH-15491933B470_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -9582,7 +9594,8 @@
         "assets/products/OH-C3AE67FA2B6A_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-C3AE67FA2B6A_verified_1.webp"
+        "assets/products/OH-C3AE67FA2B6A_verified_1.webp",
+        "assets/products/OH-C3AE67FA2B6A_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",
@@ -9698,7 +9711,8 @@
         "assets/products/OH-ABD788FB856E_verified_1.webp"
       ],
       "photos": [
-        "assets/products/OH-ABD788FB856E_verified_1.webp"
+        "assets/products/OH-ABD788FB856E_verified_1.webp",
+        "assets/products/OH-ABD788FB856E_extra_recovered_20261023.webp"
       ],
       "tags": [
         "nike",

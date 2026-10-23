@@ -12,7 +12,7 @@ assert.equal(api.filterProducts(products,{query:'nonexistent123'}).length,0);
 for(const x of products)assert.equal(api.filterProducts(products,{query:x.id}).length,1);
 const generic=products.find(p=>p.legacy&&p.variantGroup===null);
 assert(generic);assert.deepEqual(api.related(products,generic),[],'Do not mix generic sneaker names into a model family');
-const single=products.find(p=>p.galleryIncomplete);
+const single=products.find(p=>p.galleryIncomplete&&p.photos.length===1);
 assert(single);assert.equal(api.answer(products,single,'altre foto').items.length,1);assert.match(api.answer(products,single,'altre foto').text,/una sola fotografia/);
 const recovered=products.find(p=>p.id==='OH-C4A8F3895241');assert(recovered);assert.equal(api.answer(products,recovered,'altre foto').items.length,5);
 assert(api.filterProducts(products,{query:'Bred'}).some(p=>p.id==='OH-C4A8F3895241'));

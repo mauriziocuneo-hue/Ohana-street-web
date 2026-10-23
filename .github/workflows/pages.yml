@@ -13,6 +13,8 @@ on:
       - "tests/catalogo-nuovo.test.js"
       - "tests/ohana-chat.test.js"
       - "tests/nomi-modelli.test.js"
+      - "tests/scelte-clienti.test.js"
+      - "tests/gestori-link.test.js"
       - "nomi-modelli.json"
       - "tools/importa_catalogo_esistente.py"
       - "foto-extra.json"
@@ -46,6 +48,8 @@ jobs:
         run: node tests/ohana-chat.test.js
       - name: Verifica i nomi dei modelli e i gruppi di varianti
         run: node tests/nomi-modelli.test.js
+      - name: Verifica scelte cliente e collegamenti gestori
+        run: node tests/scelte-clienti.test.js && node tests/gestori-link.test.js
       - name: Prepara i soli file pubblici
         run: python3 tools/prepara_pages.py
       - name: Carica archivio validato
