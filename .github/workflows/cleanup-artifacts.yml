@@ -1,0 +1,26 @@
+name: OHANA - Pulizia archivi temporanei superati
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cleanup-artifacts.yml'
+      - 'tools/cleanup_artifacts.py'
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: cleanup-artifacts
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mantieni le versioni recenti e rimuovi solo quelle superate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/cleanup_artifacts.py
