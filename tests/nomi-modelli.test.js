@@ -41,9 +41,13 @@ assert.equal(prada.modelNameStatus,'identified');
 assert.equal(prada.galleryIncomplete,false);assert.equal(prada.images.length,3);
 assert.deepEqual(related(products,prada),[],'Il riferimento Prada resta separato dalle famiglie Prax');
 assert(!find('OH-F2546D8E0082').photos.some(x=>x.includes('extra_recovered')),'La fotografia oliva con suola gum non appartiene alla variante sabbia');
-for(const [id,familyName] of [['OH-5A54217FFBF7','Lowmel Guard'],['OH-57750200FD55','Lowmel Guard'],['OH-5CA563FB87E3','Lowmel Guard'],['OH-5EBACB0CB15F','Ball Star']]){
+for(const [id,familyName] of [['OH-5A54217FFBF7','Lowmel Guard'],['OH-57750200FD55','Lowmel Guard'],['OH-5CA563FB87E3','Lowmel Guard'],['OH-5EBACB0CB15F','Ball Star'],['OH-0D0D097C4F75','Runner']]){
  const item=find(id);assert.equal(item.family,familyName);assert.equal(item.modelNameStatus,'family');assert.match(item.name,/versione da verificare/);assert.equal(item.variantGroup,null);assert.deepEqual(related(products,item),[],'Le famiglie parzialmente riconosciute restano fuori dalle varianti confermate');
 }
+assert(!find('OH-0D0D097C4F75').name.includes('Track'),'Il titolo di un album non corrispondente non deve prevalere sulla scritta Runner nella foto');
+for(const id of ['OH-0BDF23690CBC','OH-2C601CEA01BA','OH-0D0D097C4F75']){
+ const p=find(id);assert.equal(p.images.length,3);assert.equal(p.photos.length,3);assert.equal(p.galleryIncomplete,false);assert.equal(p.images[0],p.image,'Il recupero conserva la copertina originale');
+}
 assert.equal(products.length,375);
-assert.equal(products.reduce((n,p)=>n+p.photos.length,0),1156);
+assert.equal(products.reduce((n,p)=>n+p.photos.length,0),1162);
 console.log(`PASS: ${Object.keys(reviews).length} nomi revisionati, ricerca, contesto WhatsApp, identità, separazione modelli e casi da verificare.`);

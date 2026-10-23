@@ -11,6 +11,7 @@ Il catalogo conserva 375 articoli, relativi codici, colorazioni e copertine. Que
 | OH-57750200FD55 | Lowmel Guard · versione da verificare | Famiglia riconosciuta, allestimento non confermato |
 | OH-5CA563FB87E3 | Lowmel Guard · versione da verificare | Famiglia riconosciuta, allestimento non confermato |
 | OH-5EBACB0CB15F | Ball Star · versione da verificare | Famiglia riconosciuta, allestimento non confermato |
+| OH-0D0D097C4F75 | Runner · versione da verificare | Corretto Track Trail Lace; famiglia riconosciuta, allestimento non confermato |
 
 Prada: il riferimento ufficiale [1E506O_3KU1_F0632_F_045](https://www.prada.com/us/en/p/mesh-fabric-and-suede-sneakers/1E506O_3KU1_F0632_F_045) coincide nella costruzione osservabile (mesh nero, occhielli, triangolo e suola segmentata). Il titolo del produttore è descrittivo: si usa il codice base 1E506O senza inventare un nome commerciale Prax e senza attribuire un codice colore alla merce.
 
@@ -18,7 +19,11 @@ UGG: la fonte [Lowmel Guard GTX Trainer 1180512](https://www.ugg.com/uk/lowmel-g
 
 Golden Goose: riconosciuta la famiglia Ball Star tramite disposizione dei pannelli, punta traforata e scritta SNEAKERS sui talloni, confrontando anche le altre due viste originali. Fonti di famiglia: [Ball Star in suede](https://www.goldengoose.com/ww/en/women-s-ball-star-in-green-suede-with-silver-glitter-star-cod-GWF00117.F006680.35907.html) e [Ball Star con dettagli glitter](https://www.goldengoose.com/lb/en/women%E2%80%99s-ball-star-in-leather-and-suede-with-glitter-star-and-heel-tab-cod-GWF00117.F006859.82865.html). Il riferimento preciso della versione grigio/verde resta da verificare.
 
-Le quattro nuove schede con status `family` hanno `variantFamily=null`: restano distinte dai gruppi dei modelli verificati. Nelle 122 schede revisionate risultano 108 identificazioni, 5 riconoscimenti della sola famiglia e 9 nomi ancora incerti. Le identificazioni riguardano il modello di riferimento osservabile, senza attestare autenticità, disponibilità o materiali effettivi.
+Le schede con status `family` hanno `variantFamily=null`: restano distinte dai gruppi dei modelli verificati. Nelle 122 schede revisionate risultano 107 identificazioni, 6 riconoscimenti della sola famiglia e 9 nomi ancora incerti. Le identificazioni riguardano il modello di riferimento osservabile, senza attestare autenticità, disponibilità o materiali effettivi.
+
+Balenciaga: la fotografia originale e l’etichetta di un album corrispondente riportano RUNNER; il precedente titolo Track Trail Lace proveniva da un album diverso. Il confronto con la [famiglia Runner ufficiale](https://www.balenciaga.com/en-us/runner-sneaker-grey-white-black-813230492.html) conferma la costruzione generale. Non si trasferisce il codice dell’album alla merce e non si attribuisce una versione commerciale precisa.
+
+Gli ultimi controlli sui cinque UGG incerti e sui casi Loro Piana, Louis Vuitton, Nike e Hermès non hanno fornito una corrispondenza ufficiale sufficiente: quei nove nomi rimangono esplicitamente da verificare.
 
 ## Gallerie
 
@@ -26,7 +31,13 @@ Le quattro nuove schede con status `family` hanno `variantFamily=null`: restano 
 - New Balance OHY-028: aggiunta una vista laterale della stessa colorazione nera con bordo bianco della N, fodera bianca e suola nera. Due viste totali; galleria ancora in completamento.
 - UGG OH-F2546D8E0082: rimossa la foto extra introdotta nella revisione precedente, perché la tomaia oliva e la suola gum non corrispondono alla copertina sabbia con suola chiara. Conservata la copertina originale.
 
-Il totale corretto è 1156 fotografie: conservate tutte le 1140 precedenti, 13 dei 14 recuperi della prima revisione e tre nuovi scatti. Restano 32 gallerie incomplete (18 con una foto e 14 con due). Il riesame ha confrontato i 14 recuperi precedenti, 95 ulteriori copertine e 54 fotografie di album pertinenti. Foto ufficiali, immagini di confronto e indirizzi dei fornitori non sono inclusi nel sito pubblico.
+Il totale corretto è 1162 fotografie: conservate tutte le 1140 precedenti, 13 dei 14 recuperi della prima revisione e nove nuovi scatti. Restano 29 gallerie incomplete (15 con una foto e 14 con due). Il riesame ha confrontato i 14 recuperi precedenti, 95 ulteriori copertine e 54 fotografie di album pertinenti. Foto ufficiali, immagini di confronto e indirizzi dei fornitori non sono inclusi nel sito pubblico.
+
+### Passaggio finale
+
+Gucci OH-0BDF23690CBC, Hermès OH-2C601CEA01BA e Balenciaga OH-0D0D097C4F75 ricevono ciascuno due viste dell’album che corrisponde alla copertina. Le fotografie mostrano gli stessi colori, pannelli e dettagli. Ora hanno tre immagini principali e galleria completa; copertine e foto precedenti sono conservate.
+
+Gli album UGG disponibili e i candidati Adidas pertinenti non hanno prodotto viste aggiuntive attribuibili con sufficiente certezza. Gli scatti Predator simili, ma senza prova di corrispondenza alla stessa merce, sono esclusi. Il recupero è limitato ai casi documentati; non dichiara esaurito l’intero inventario.
 
 ## Validazione
 

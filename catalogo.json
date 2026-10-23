@@ -5277,13 +5277,15 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-2C601CEA01BA.webp"
+      "assets/products/OH-2C601CEA01BA.webp",
+      "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_1.webp",
+      "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_2.webp"
     ],
     "colori_disponibili": [
       "Bianco e nero"
     ],
     "descrizione": "Nome del modello da verificare. Colorazione: Bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
-    "galleria_in_completamento": true,
+    "galleria_in_completamento": false,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": false,
     "famiglia_modello": "Modello da verificare",
@@ -7208,7 +7210,7 @@
   {
     "id": "OH-0D0D097C4F75",
     "brand": "Balenciaga",
-    "model": "Track Trail Lace — Grigio e rosso",
+    "model": "Runner · versione da verificare — Grigio e rosso",
     "genere": "Scarpe",
     "sottogenere": "Sneakers",
     "category": "Sneakers",
@@ -7223,18 +7225,20 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-0D0D097C4F75.webp"
+      "assets/products/OH-0D0D097C4F75.webp",
+      "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_1.webp",
+      "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_2.webp"
     ],
     "colori_disponibili": [
       "Grigio e rosso"
     ],
-    "descrizione": "Balenciaga Track Trail Lace. Colorazione: Grigio e rosso. Le fotografie mostrano l’articolo di riferimento.",
-    "galleria_in_completamento": true,
+    "descrizione": "Balenciaga Runner · versione da verificare. Colorazione: Grigio e rosso. Le fotografie mostrano l’articolo di riferimento.",
+    "galleria_in_completamento": false,
     "selezione": "archivio_ripristinato",
-    "modelloVerificato": true,
-    "famiglia_modello": "Track Trail Lace",
+    "modelloVerificato": false,
+    "famiglia_modello": "Runner",
     "famiglia_varianti": null,
-    "stato_nome_modello": "identified"
+    "stato_nome_modello": "family"
   },
   {
     "id": "OH-C121AC985A18",
@@ -7607,13 +7611,15 @@
     "status": "Scheda fotografica",
     "vetrina": true,
     "images": [
-      "assets/products/OH-0BDF23690CBC.webp"
+      "assets/products/OH-0BDF23690CBC.webp",
+      "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_1.webp",
+      "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_2.webp"
     ],
     "colori_disponibili": [
       "Grigio e crema"
     ],
     "descrizione": "Gucci 2.0. Colorazione: Grigio e crema. Le fotografie mostrano l’articolo di riferimento.",
-    "galleria_in_completamento": true,
+    "galleria_in_completamento": false,
     "selezione": "archivio_ripristinato",
     "modelloVerificato": true,
     "famiglia_modello": "2.0",

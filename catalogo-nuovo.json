@@ -2367,17 +2367,21 @@
       "description": "Nome del modello da verificare. Colorazione: Bianco e nero. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-2C601CEA01BA.webp",
       "images": [
-        "assets/products/OH-2C601CEA01BA.webp"
+        "assets/products/OH-2C601CEA01BA.webp",
+        "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_2.webp"
       ],
       "photos": [
-        "assets/products/OH-2C601CEA01BA.webp"
+        "assets/products/OH-2C601CEA01BA.webp",
+        "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-2C601CEA01BA_extra_lastpass_20261023_2.webp"
       ],
       "tags": [
         "hermès",
         "sandali e ciabatte"
       ],
       "variantGroup": null,
-      "galleryIncomplete": true,
+      "galleryIncomplete": false,
       "legacy": true
     },
     {
@@ -2962,26 +2966,30 @@
     {
       "id": "OH-0D0D097C4F75",
       "brand": "Balenciaga",
-      "family": "Track Trail Lace",
-      "name": "Track Trail Lace",
-      "modelNameStatus": "identified",
+      "family": "Runner",
+      "name": "Runner · versione da verificare",
+      "modelNameStatus": "family",
       "color": "Grigio e rosso",
       "type": "Sneakers",
       "code": "",
-      "description": "Balenciaga Track Trail Lace. Colorazione: Grigio e rosso. Le fotografie mostrano l’articolo di riferimento.",
+      "description": "Balenciaga Runner · versione da verificare. Colorazione: Grigio e rosso. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-0D0D097C4F75.webp",
       "images": [
-        "assets/products/OH-0D0D097C4F75.webp"
+        "assets/products/OH-0D0D097C4F75.webp",
+        "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_2.webp"
       ],
       "photos": [
-        "assets/products/OH-0D0D097C4F75.webp"
+        "assets/products/OH-0D0D097C4F75.webp",
+        "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-0D0D097C4F75_extra_lastpass_20261023_2.webp"
       ],
       "tags": [
         "balenciaga",
         "sneakers"
       ],
       "variantGroup": null,
-      "galleryIncomplete": true,
+      "galleryIncomplete": false,
       "legacy": true
     },
     {
@@ -3139,17 +3147,21 @@
       "description": "Gucci 2.0. Colorazione: Grigio e crema. Le fotografie mostrano l’articolo di riferimento.",
       "image": "assets/products/OH-0BDF23690CBC.webp",
       "images": [
-        "assets/products/OH-0BDF23690CBC.webp"
+        "assets/products/OH-0BDF23690CBC.webp",
+        "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_2.webp"
       ],
       "photos": [
-        "assets/products/OH-0BDF23690CBC.webp"
+        "assets/products/OH-0BDF23690CBC.webp",
+        "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_1.webp",
+        "assets/products/OH-0BDF23690CBC_extra_lastpass_20261023_2.webp"
       ],
       "tags": [
         "gucci",
         "sneakers"
       ],
       "variantGroup": "gucci:2 0",
-      "galleryIncomplete": true,
+      "galleryIncomplete": false,
       "legacy": true
     },
     {
