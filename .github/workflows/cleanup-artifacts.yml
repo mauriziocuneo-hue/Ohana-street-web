@@ -5,6 +5,10 @@ on:
     paths:
       - '.github/workflows/cleanup-artifacts.yml'
       - 'tools/cleanup_artifacts.py'
+  workflow_run:
+    workflows: ["OHANA STREET — Verifica e pubblica su Pages"]
+    types: [completed]
+    branches: [main]
   schedule:
     - cron: '23 4 * * 1'
   workflow_dispatch:
