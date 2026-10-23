@@ -42,6 +42,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 .item .links a{background:var(--ocean);color:white;border-radius:20px;padding:8px 10px;text-decoration:none;font-size:12px;font-weight:700}
 .item .links a:hover{background:#205c5f}
 @media(max-width:550px){main{margin:25px auto}.panel{padding:18px}header{padding:15px}}
+.variants-dialog{width:min(1050px,95vw);max-height:90vh;border:1px solid #d6e2dd;border-radius:18px;background:#fcf8ee;color:#143438;padding:22px;overflow:auto}.variants-dialog::backdrop{background:#123e4080}.variants-dialog>button{float:right;margin-left:16px}.variant-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.variant-tabs button[aria-pressed=true]{background:#ff7560;color:#143438}.variants-dialog .grid{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))}.variants-dialog li{margin:12px 0;overflow-wrap:anywhere}.variants-dialog a{color:#123e40}.item .links button[data-variants]{background:#123e40;color:white;border-radius:20px;padding:8px 10px;font-size:12px;font-weight:700}.variants-dialog .item p{margin:10px 0}
+
 </style>
 </head>
 <body>
@@ -80,6 +82,83 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 <script src="../assets/ohana-business.js?v=20261023-5" defer></script>
 <script type="module">
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+// BEGIN OHANA PRIVATE VARIANTS
+// Private manager workspace only. All supplier data is read through Supabase RLS.
+const safeUrl = value => { try { const u = new URL(value); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
+function imageUrl(row) {
+  if (/^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(row.local_image || '')) return '../' + row.local_image;
+  return safeUrl(row.cover_url);
+}
+function familyKey(row) { return row.model_key || row.candidate_key || null; }
+const el = (tag, text, cls) => { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; };
+function link(text, url) { const href = safeUrl(url); if (!href) return null; const a = el('a', text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; }
+function mountVariants(client) {
+  let epoch = 0;
+  const modal = el('dialog', '', 'variants-dialog');
+  modal.setAttribute('aria-label', 'Varianti e sorgenti riservate');
+  const close = el('button', 'Chiudi', 'secondary'); close.type = 'button';
+  const body = el('div'); modal.append(close, body); document.body.append(modal);
+  close.addEventListener('click', () => { epoch++; modal.close(); body.replaceChildren(); });
+  modal.addEventListener('cancel', () => { epoch++; body.replaceChildren(); });
+  const clear = () => { epoch++; modal.close(); body.replaceChildren(); };
+  client.auth.onAuthStateChange(event => { if (event === 'SIGNED_OUT') clear(); });
+  document.querySelector('#logout').addEventListener('click', clear);
+  function open(title) { epoch++; body.replaceChildren(el('h2', title), el('p', 'Caricamento…')); if (!modal.open) modal.showModal(); return epoch; }
+  function fail(token) { if (token === epoch) body.replaceChildren(el('h2', 'Dati non disponibili'), el('p', 'Non riesco a leggere l’archivio riservato. Riprova tra poco.')); }
+  async function variants(id) {
+    const token = open('Varianti · ' + id);
+    try {
+      const { data: mapping, error: mappingError } = await client.from('ohana_variant_products').select('album_key').eq('product_id', id).maybeSingle();
+      if (mappingError) throw mappingError;
+      if (token !== epoch) return;
+      if (!mapping) { body.replaceChildren(el('h2', 'Varianti · ' + id), el('p', 'Scheda non ancora collegata all’inventario.')); return; }
+      const { data: anchor, error } = await client.from('ohana_variant_albums').select('album_key,model_key,candidate_key,model_name,candidate_family').eq('album_key', mapping.album_key).single();
+      if (error) throw error;
+      if (token !== epoch) return;
+      const key = familyKey(anchor);
+      body.replaceChildren(el('h2', 'Varianti · ' + (anchor.model_name || anchor.candidate_family || id)), el('p', 'Colorazioni e fornitori dall’archivio OHANA. Disponibilità e taglie da confermare con il fornitore.'));
+      if (!key) { body.append(el('p', 'Modello da identificare: non sono state unite automaticamente scarpe dal nome generico.')); return; }
+      const tabs = el('div', '', 'variant-tabs'); const list = el('div', '', 'grid'); const status = el('p'); const more = el('button', 'Mostra altri'); more.type = 'button'; more.hidden = true;
+      body.append(tabs, status, list, more);
+      let tab = 'confirmed', offset = 0, loading = false, request = 0;
+      const buttons = ['confirmed', 'review'].map(mode => {
+        const button = el('button', mode === 'confirmed' ? 'Confermate' : 'Da verificare', 'secondary'); button.type = 'button';
+        button.addEventListener('click', () => { tab = mode; offset = 0; request++; loading = false; list.replaceChildren(); load(); }); tabs.append(button); return button;
+      });
+      async function load() {
+        if (loading || token !== epoch) return; loading = true; const current = ++request; more.disabled = true;
+        buttons.forEach((b, i) => b.setAttribute('aria-pressed', String((i === 0) === (tab === 'confirmed'))));
+        status.textContent = 'Caricamento…';
+        const field = tab === 'confirmed' ? 'model_key' : 'candidate_key';
+        const { data, error, count } = await client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_name,candidate_family,color,status,cover_url,local_image', { count: 'exact' }).eq(field, key).eq('status', tab).neq('album_key', anchor.album_key).order('album_key').range(offset, offset + 23);
+        if (token !== epoch || current !== request) return;
+        loading = false; more.disabled = false;
+        if (error) { status.textContent = 'Errore nel caricamento. Premi di nuovo la sezione per riprovare.'; more.hidden = true; return; }
+        for (const row of data || []) {
+          const card = el('article', '', 'item'); const imgUrl = imageUrl(row);
+          if (imgUrl) { const img = el('img'); img.src = imgUrl; img.alt = row.color || 'Foto del fornitore'; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; img.addEventListener('error', () => img.replaceWith(el('p', 'Anteprima non disponibile'))); card.append(img); }
+          const details = el('div', '', 'details'); details.append(el('small', row.status === 'confirmed' ? 'Associazione confermata' : 'Da verificare · riconoscimento preliminare'), el('b', row.model_name || row.candidate_family || 'Modello da verificare'), el('p', row.color || 'Colore da verificare'), el('small', row.supplier));
+          const links = el('div', '', 'links'); const album = link('Album foto', row.album_url); if (album) links.append(album); details.append(links); card.append(details); list.append(card);
+        }
+        offset += (data || []).length; more.hidden = offset >= count;
+        status.textContent = count ? count + (tab === 'confirmed' ? ' album con associazione confermata.' : ' album candidati: confronta le fotografie prima di proporli al cliente.') : (tab === 'confirmed' ? 'Nessun’altra variante confermata. Consulta “Da verificare”.' : 'Nessun altro candidato identificato per questo modello.');
+      }
+      more.addEventListener('click', load); await load();
+    } catch { fail(token); }
+  }
+  document.querySelector('#results').addEventListener('click', event => { const button = event.target.closest('[data-variants]'); if (button) variants(button.dataset.variants); });
+  const sourceButton = el('button', 'Sorgenti archivio', 'secondary'); sourceButton.type = 'button'; sourceButton.id = 'variantSources'; document.querySelector('#workspace .actions').append(sourceButton);
+  sourceButton.addEventListener('click', async () => {
+    const token = open('Sorgenti dell’archivio');
+    try {
+      const { data, error } = await client.from('ohana_variant_sources').select('brand,genre,url,status,supplier').eq('genre', 'Scarpe').order('brand');
+      if (error) throw error; if (token !== epoch) return;
+      body.replaceChildren(el('h2', 'Sorgenti scarpe · ' + data.length), el('p', 'Elenco recuperato dal censimento originale. Accessibilità e disponibilità non sono state ricontrollate.'));
+      const list = el('ul'); for (const source of data) { const item = el('li'); const a = link(source.brand + ' · ' + source.supplier, source.url); if (a) item.append(a); item.append(document.createTextNode(' — da ricontrollare')); list.append(item); } body.append(list);
+    } catch { fail(token); }
+  });
+}
+// END OHANA PRIVATE VARIANTS
 const $ = selector => document.querySelector(selector);
 // Shared contract with public WhatsApp requests: keep the article through login.
 const requestedArticle=new URLSearchParams(location.search).get('articolo')||'';
@@ -89,6 +168,7 @@ const message = text => { $('#message').textContent = text; };
 const esc = v => String(v ?? '').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const secureLink = v => {try{const u=new URL(v);return u.protocol==='https:'?u.href:null;}catch{return null;}};
 let supabase=null, rows=[], products=[];
+let variantsMounted=false;
 async function initialize(){
   if(!cfg.supabaseUrl || !cfg.supabaseAnonKey){
     $('#setup').hidden=false;
@@ -128,6 +208,7 @@ async function showPrivate(user){
   }catch(e){message('Impossibile caricare catalogo.json.');return;}
   $('#login').hidden=true;
   $('#workspace').classList.add('ready');
+  if(!variantsMounted){mountVariants(supabase);variantsMounted=true;}
   render();
 }
 function render(){
@@ -146,6 +227,7 @@ function render(){
     return '<article class="item">'+img+'<div class="details"><small>'+esc(r.product_id)+' · '+esc(p.brand||'')+'</small><b>'+esc(p.model||'Prodotto')+'</b><small>'+esc(p.genere||'')+' / '+esc(p.sottogenere||'')+'</small><div class="links">'+
      (a?'<a href="'+esc(a)+'" target="_blank" rel="noopener noreferrer">Album foto</a>':'')+
      (c?'<a href="'+esc(c)+'" target="_blank" rel="noopener noreferrer">Catalogo fornitore</a>':'')+
+     '<button type="button" data-variants="'+esc(r.product_id)+'">Varianti</button>'+
      '</div></div></article>';
   }).join('');
   $('#empty').textContent=rows.length===0?'Nessun collegamento privato è stato ancora importato.':(data.length===0?'Nessun prodotto corrispondente.':'');
