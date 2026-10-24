@@ -2,6 +2,14 @@
 
 Repository destinato esclusivamente alla pubblicazione del catalogo pubblico OHANA STREET con GitHub Pages. Il codice sorgente principale è conservato nel repository privato. I collegamenti riservati ai fornitori sono in Supabase con RLS, non nei file di questo repository.
 
+## Esclusione dai motori di ricerca (24 ottobre 2026)
+
+Su richiesta di Mauri il servizio deve essere condiviso tramite indirizzo, senza indicizzazione. Ogni pagina pubblicata contiene `noindex,nofollow,noimageindex,nosnippet`, applicato prima degli script anche dall'entry point. `tools/prepara_pages.py` impone la stessa direttiva a tutti gli HTML della build, inclusi l'accesso gestori e le pagine future, senza modificare il sorgente del backend. `robots.txt` blocca le fotografie e il favicon, lasciando leggere le pagine ai motori affinché possano rispettare noindex. Non pubblicare sitemap e non aggiungere `Disallow: /`: bloccare la scansione delle pagine impedirebbe di leggerne noindex.
+
+Queste istruzioni valgono per i crawler che le rispettano e non limitano l'accesso umano. Il sito GitHub Pages e questo repository restano pubblici; il link può essere inoltrato e il catalogo è leggibile nel repository. Eventuali risultati già indicizzati vengono rimossi dopo una nuova scansione, non immediatamente. Per una riservatezza effettiva ai soli invitati occorre proteggere l'accesso e rendere privato anche il sorgente dei contenuti, con una soluzione di hosting compatibile. Non simulare la protezione con una password nel JavaScript.
+
+Riferimenti: [Google: noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing), [Google: esclusione immagini](https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page). La build controlla ogni HTML, l'accessibilità ai crawler di tutti i link alle pagine e il blocco di ogni fotografia locale, anche con parametri URL.
+
 ## Homepage e Lookbook disattivato (24 ottobre 2026)
 
 L’ingresso `index.html` apre direttamente il catalogo per modelli `catalogo-nuovo.html`, conservando query delle schede, scelte e ancore. La vecchia vetrina Lookbook è **disattivata, non eliminata**: copia integrale in `archivio/lookbook/index.html`, esclusa dai file pubblicati e dalla navigazione. Le istruzioni di riattivazione sono in `archivio/lookbook/README.md`; la decisione è riportata anche in `AGENTS.md` per il lavoro futuro. `catalogo.json`, codici e fotografie sono conservati.

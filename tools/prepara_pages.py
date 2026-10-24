@@ -10,7 +10,7 @@ root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
 assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
-required = ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js", "assets/ohana-media.js", "assets/ohana-media.css", "foto-extra.json"]
+required = ["index.html", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js", "assets/ohana-media.js", "assets/ohana-media.css", "foto-extra.json"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
     if file.endswith((".html", ".json", ".js")):
@@ -111,7 +111,7 @@ import runpy
 runpy.run_path(str(Path('scripts/audit_catalogo_nuovo.py').resolve()))
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
-for item in ["index.html", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
+for item in ["index.html", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
     shutil.copy2(item, dest / item)
 for item in ['catalogo-nuovo.html', 'catalogo-nuovo.json']:
     shutil.copy2(item, dest / item)
@@ -123,6 +123,40 @@ for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-t
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
+
+# Servizio condiviso tramite indirizzo: tutte le pagine pubblicate, incluse
+# quelle future e l'accesso gestori, devono chiedere l'esclusione dai motori.
+# La trasformazione riguarda solo i file di pubblicazione, non il sorgente backend.
+robots_content = "noindex,nofollow,noimageindex,nosnippet"
+robots_meta = f'<meta name="robots" content="{robots_content}">'
+robots_pattern = re.compile(r'''<meta\b[^>]*\bname\s*=\s*(["'])robots\1[^>]*>''', re.I)
+published_html = list(dest.rglob("*.html"))
+for page in published_html:
+    text = page.read_text(encoding="utf-8")
+    if robots_pattern.search(text):
+        text = robots_pattern.sub("", text)
+    # Charset resta all'inizio del documento; il meta robots precede script e redirect.
+    text, inserted = re.subn(r'(<meta\b[^>]*\bcharset\s*=[^>]+>)',
+                             lambda match: match[0] + "\n" + robots_meta, text, count=1, flags=re.I)
+    assert inserted == 1, f"Impossibile applicare noindex alla pagina: {page}"
+    page.write_text(text, encoding="utf-8")
+    assert len(robots_pattern.findall(text)) == 1 and robots_meta in text, f"Noindex mancante o duplicato: {page}"
+
+# Lasciare accessibili le pagine HTML e i link prodotto per far leggere noindex.
+# Bloccare separatamente le immagini, che non possono contenere meta HTML.
+from urllib.robotparser import RobotFileParser
+robot_rules = RobotFileParser()
+robot_rules.parse((dest / "robots.txt").read_text(encoding="utf-8").splitlines())
+for agent in ("Googlebot", "Bingbot", "Googlebot-Image"):
+    for page in published_html:
+        url = "/" + page.relative_to(dest).as_posix() + "?articolo=OHY-043"
+        assert robot_rules.can_fetch(agent, url), f"Robots impedisce la lettura di noindex: {url}"
+    for image in [dest / "favicon.svg", *(dest / "assets/products").rglob("*")]:
+        if image.is_file():
+            url = "/" + image.relative_to(dest).as_posix() + "?v=1"
+            assert not robot_rules.can_fetch(agent, url), f"Fotografia consentita ai motori: {url}"
+assert not list(dest.rglob("*sitemap*")), "Il sito non deve pubblicare sitemap"
+print(f"PASS: noindex su tutte le {len(published_html)} pagine HTML pubblicate e fotografie escluse dai crawler.")
 (dest / ".nojekyll").write_text("", encoding="utf-8")
 assert not (dest / "archivio").exists(), "Il Lookbook disattivato non deve essere pubblicato"
 print(f"PASS: {len(catalog)} schede archiviate; {len(visible_photo_digests)} foto di scarpe distinte esposte; {family_count} famiglie modello consultabili, nessun link privato.")

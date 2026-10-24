@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "robots.txt"
       - "verifica-responsive.html"
       - "catalogo.json"
       - "catalogo-nuovo.html"

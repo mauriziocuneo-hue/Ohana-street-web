@@ -1,0 +1,6 @@
+# Le pagine devono poter essere lette per applicare il loro meta robots noindex.
+# Non aggiungere Disallow: /: impedirebbe ai motori di leggere noindex.
+# Le fotografie sono escluse anche quando collegate direttamente da altri siti.
+User-agent: *
+Disallow: /assets/products/
+Disallow: /favicon.svg
