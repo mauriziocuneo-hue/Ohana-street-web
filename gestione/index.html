@@ -44,6 +44,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(max-width:550px){main{margin:25px auto}.panel{padding:18px}header{padding:15px}}
 .variants-dialog{width:min(1050px,95vw);max-height:90vh;border:1px solid #d6e2dd;border-radius:18px;background:#fcf8ee;color:#143438;padding:22px;overflow:auto}.variants-dialog::backdrop{background:#123e4080}.variants-dialog>button{float:right;margin-left:16px}.variant-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.variant-tabs button[aria-pressed=true]{background:#ff7560;color:#143438}.variants-dialog .grid{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))}.variants-dialog li{margin:12px 0;overflow-wrap:anywhere}.variants-dialog a{color:#123e40}.item .links button[data-variants]{background:#123e40;color:white;border-radius:20px;padding:8px 10px;font-size:12px;font-weight:700}.variants-dialog .item p{margin:10px 0}
 
+.supplier-offer{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:8px 0;border-top:1px solid #ddd}.supplier-offer a{font-weight:700}.variants-dialog label{display:block;margin-top:12px}.variants-dialog input,.variants-dialog select{max-width:100%;margin:8px 0 14px}.variants-dialog canvas{height:auto;max-height:220px}
 </style>
 </head>
 <body>
@@ -86,14 +87,51 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 // Private manager workspace only. All supplier data is read through Supabase RLS.
 const safeUrl = value => { try { const u = new URL(value); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
 function imageUrl(row) {
-  if (/^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(row.local_image || '')) return '../' + row.local_image;
   const preview=row.image_features?.preview_webp_base64;
   if(typeof preview==='string' && preview.length<100000 && preview.length%4===0 && /^UklGR[A-Za-z0-9+/]+={0,2}$/.test(preview))return 'data:image/webp;base64,'+preview;
+  if (/^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(row.local_image || '')) return '../' + row.local_image;
   return safeUrl(row.cover_url);
 }
-function familyKey(row) { return row.model_key || row.candidate_key || null; }
+function familyKey(row) { if(row.model_key)return row.model_key; if(!row.candidate_family||/^(?:modello da (?:verificare|identificare)|non identificato)$|\((?:linea, non modello|modello non specificato)\)/i.test(row.candidate_family))return null;return row.candidate_key||null; }
 const el = (tag, text, cls) => { const n = document.createElement(tag); if (text) n.textContent = text; if (cls) n.className = cls; return n; };
 function link(text, url) { const href = safeUrl(url); if (!href) return null; const a = el('a', text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; }
+// OHANA photo signature v1: local, non-semantic image similarity.
+function photoSignature(pixels,w,h){
+  let left=w,top=h,right=-1,bottom=-1,foreground=0;
+  const rgb=(x,y)=>{const i=(y*w+x)*4;return [pixels[i],pixels[i+1],pixels[i+2]];};
+  for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(Math.min(...rgb(x,y))<235){foreground++;left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
+  if(foreground<w*h*.02||foreground>w*h*.95){left=0;top=0;right=w-1;bottom=h-1;}
+  const sample=(x,y,nx,ny)=>rgb(Math.min(right,left+Math.floor((x+.5)*(right-left+1)/nx)),Math.min(bottom,top+Math.floor((y+.5)*(bottom-top+1)/ny)));
+  const gray=[];for(let y=0;y<8;y++)for(let x=0;x<9;x++){const c=sample(x,y,9,8);gray.push(c[0]*299+c[1]*587+c[2]*114);}
+  const hex=bits=>{let s='';for(let i=0;i<64;i+=4)s+=parseInt(bits.slice(i,i+4),2).toString(16);return s;};
+  let d='',a='';const mean=gray.reduce((s,n)=>s+n,0)/72;
+  for(let y=0;y<8;y++)for(let x=0;x<8;x++){d+=gray[y*9+x]>gray[y*9+x+1]?'1':'0';a+=gray[y*9+x]>mean?'1':'0';}
+  const hist=Array(24).fill(0);let n=0;
+  for(let y=0;y<32;y++)for(let x=0;x<32;x++){const c=sample(x,y,32,32);if(Math.min(...c)>=235)continue;n++;for(let k=0;k<3;k++)hist[k*8+Math.min(7,Math.floor(c[k]/32))]++;}
+  return {dhash:hex(d),ahash:hex(a),hist:hist.map(v=>n?Math.floor(v*1000/n+.5):0),version:'ohana-photo-v1'};
+}
+
+
+function observedColorGroup(row){
+ const observed=row.image_features?.review?.observed_color;
+ if(row.status!=='confirmed'||!observed)return null;
+ const colors=(observed.toLowerCase().match(/\b(?:bianco|nero|grigio|rosso|blu|azzurro|verde|giallo|arancione|viola|rosa|beige|marrone|bordeaux|argento|oro|crema)\b/g)||[]);
+ return colors.length ? familyKey(row)+'|'+[...new Set(colors)].sort().join(',') : null;
+}
+function privateAlbumCard(row){
+ const card=el('article','','item'),url=imageUrl(row);
+ if(url){const img=el('img');img.src=url;img.alt=row.color||'Foto del fornitore';img.loading='lazy';img.referrerPolicy='no-referrer';img.addEventListener('error',()=>img.replaceWith(el('p','Anteprima non disponibile')));card.append(img);}
+ const details=el('div','','details');details.append(el('small',row.status==='confirmed'?'Famiglia confermata · edizione da confrontare':'Da verificare · riconoscimento preliminare'),el('b',row.model_name||row.candidate_family||'Modello da verificare'),el('p',row.image_features?.review?.observed_color ? 'Colori osservati: '+row.image_features.review.observed_color : (row.color ? 'Colore dichiarato: '+row.color+' · da verificare' : 'Colore da verificare')));
+ const offers=el('div','','supplier-offers');details.append(offers);card.append(details);
+ appendSupplierOffer(offers,row);return {card,details,offers};
+}
+function appendSupplierOffer(offers,row){
+ const item=el('div','','supplier-offer');item.append(el('small',row.supplier));
+ const album=link('Album foto',row.album_url);if(album)item.append(album);
+ if(row.image_features?.review?.supplier_code_conflicts?.length)item.append(el('small','Codice fornitore incoerente: confronto solo fotografico.'));
+ offers.append(item);
+}
+
 function mountVariants(client) {
   // Progressive enhancement: the base catalog remains usable without dialog support.
   if(typeof document.createElement!=='function' || !('showModal' in document.createElement('dialog')))return;
@@ -120,30 +158,31 @@ function mountVariants(client) {
       if (error) throw error;
       if (token !== epoch) return;
       const key = familyKey(anchor);
-      body.replaceChildren(el('h2', 'Varianti · ' + (anchor.model_name || anchor.candidate_family || id)), el('p', 'Colorazioni e fornitori dall’archivio OHANA. Disponibilità e taglie da confermare con il fornitore.'));
+      body.replaceChildren(el('h2', 'Varianti · ' + (anchor.model_name || anchor.candidate_family || id)), el('p', 'Colorazioni e fornitori dall’archivio OHANA. I gruppi riuniscono colori osservati, senza garantire la stessa edizione. Disponibilità e taglie da confermare con il fornitore.'));
       if (!key) { body.append(el('p', 'Modello da identificare: non sono state unite automaticamente scarpe dal nome generico.')); return; }
       const tabs = el('div', '', 'variant-tabs'); const list = el('div', '', 'grid'); const status = el('p'); const more = el('button', 'Mostra altri'); more.type = 'button'; more.hidden = true;
       body.append(tabs, status, list, more);
       let tab = 'confirmed', offset = 0, loading = false, request = 0;
+      const groups=new Map();
       const buttons = ['confirmed', 'review'].map(mode => {
         const button = el('button', mode === 'confirmed' ? 'Confermate' : 'Da verificare', 'secondary'); button.type = 'button';
-        button.addEventListener('click', () => { tab = mode; offset = 0; request++; loading = false; list.replaceChildren(); load(); }); tabs.append(button); return button;
+        button.addEventListener('click', () => { tab = mode; offset = 0; request++; loading = false; list.replaceChildren(); groups.clear(); load(); }); tabs.append(button); return button;
       });
       async function load() {
         if (loading || token !== epoch) return; loading = true; const current = ++request; more.disabled = true;
         buttons.forEach((b, i) => b.setAttribute('aria-pressed', String((i === 0) === (tab === 'confirmed'))));
         status.textContent = 'Caricamento…';
         const field = tab === 'confirmed' ? 'model_key' : 'candidate_key';
-        const { data, error, count } = await client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_name,candidate_family,color,status,cover_url,local_image,image_features', { count: 'exact' }).eq(field, key).eq('status', tab).neq('album_key', anchor.album_key).order('album_key').range(offset, offset + 23);
+        const { data, error, count } = await client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_key,candidate_key,model_name,candidate_family,color,status,cover_url,local_image,image_features', { count: 'exact' }).eq(field, key).eq('status', tab).neq('album_key', anchor.album_key).order('album_key').range(offset, offset + 23);
         if (token !== epoch || current !== request) return;
         loading = false; more.disabled = false;
         if (error) { status.textContent = 'Errore nel caricamento. Premi di nuovo la sezione per riprovare.'; more.hidden = true; return; }
         for (const row of data || []) {
-          const card = el('article', '', 'item'); const imgUrl = imageUrl(row);
-          if (imgUrl) { const img = el('img'); img.src = imgUrl; img.alt = row.color || 'Foto del fornitore'; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; img.addEventListener('error', () => img.replaceWith(el('p', 'Anteprima non disponibile'))); card.append(img); }
-          const details = el('div', '', 'details'); details.append(el('small', row.status === 'confirmed' ? 'Associazione confermata' : 'Da verificare · riconoscimento preliminare'), el('b', row.model_name || row.candidate_family || 'Modello da verificare'), el('p', row.color || 'Colore da verificare'), el('small', row.supplier));
-          if(row.image_features?.review?.supplier_code_conflicts?.length)details.append(el('small','Codice fornitore incoerente: confronto solo fotografico.'));
-          const links = el('div', '', 'links'); const album = link('Album foto', row.album_url); if (album) links.append(album); details.append(links); card.append(details); list.append(card);
+          const group=observedColorGroup(row);
+          if(group&&groups.has(group)){appendSupplierOffer(groups.get(group).offers,row);continue;}
+          const view=privateAlbumCard(row);
+          if(group){view.details.append(el('small','Raggruppamento per famiglia e colori osservati. Confronta edizione e materiali nei singoli album.'));groups.set(group,view);}
+          list.append(view.card);
         }
         offset += (data || []).length; more.hidden = offset >= count;
         status.textContent = count ? count + (tab === 'confirmed' ? ' album con associazione confermata.' : ' album candidati: confronta le fotografie prima di proporli al cliente.') : (tab === 'confirmed' ? 'Nessun’altra variante confermata. Consulta “Da verificare”.' : 'Nessun altro candidato identificato per questo modello.');
@@ -162,6 +201,59 @@ function mountVariants(client) {
       const list = el('ul'); for (const source of data) { const item = el('li'); const a = link(source.brand + ' · ' + source.supplier, source.url); if (a) item.append(a); item.append(document.createTextNode(' — da ricontrollare')); list.append(item); } body.append(list);
     } catch { fail(token); }
   });
+  const photoButton=el('button','Cerca da foto','secondary');photoButton.type='button';photoButton.id='photoSearch';document.querySelector('#workspace .actions').append(photoButton);
+  photoButton.addEventListener('click',()=>{
+    const token=open('Cerca una scarpa da foto');
+    body.replaceChildren(el('h2','Cerca una scarpa da foto'),el('p','Scegli una foto con una sola scarpa, possibilmente di lato e su sfondo semplice. La foto resta sul dispositivo: inviamo soltanto una firma numerica per confrontare forma e colori. I risultati sono somiglianze da verificare.'));
+    const label=el('label','Foto della scarpa');const file=el('input');file.type='file';file.accept='image/jpeg,image/png,image/webp';file.id='photoInput';label.htmlFor=file.id;
+    const brandLabel=el('label','Marchio (facoltativo)');const brand=el('select');brand.id='photoBrand';brandLabel.htmlFor=brand.id;
+    for(const name of ['', 'Adidas','ASICS','Balenciaga','Chanel','Dior','Golden Goose','Gucci','Hermès','Jordan','Loro Piana','Louis Vuitton','New Balance','Nike','On Running','Prada','Salomon','Saucony','Scarpe da calcio','UGG']){const option=el('option',name||'Tutti i marchi');option.value=name;brand.append(option);}
+    const run=el('button','Confronta foto');run.type='button';run.disabled=true;
+    const status=el('p');status.setAttribute('role','status');const list=el('div','','grid');const selected=el('div');body.append(label,file,brandLabel,brand,selected,run,status,list);
+    let signature=null,revision=0;
+    file.addEventListener('change',async()=>{
+      const current=++revision;signature=null;run.disabled=true;list.replaceChildren();selected.replaceChildren();
+      const f=file.files?.[0];if(!f)return;
+      if(!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>15*1024*1024){status.textContent='Scegli una foto JPG, PNG o WebP fino a 15 MB.';return;}
+      let bitmap;
+      try{
+        status.textContent='Analisi della foto sul dispositivo…';bitmap=await createImageBitmap(f);
+        if(token!==epoch||current!==revision)return;
+        if(bitmap.width*bitmap.height>50000000)throw Error('image too large');
+        const canvas=document.createElement('canvas');const scale=Math.min(1,256/Math.max(bitmap.width,bitmap.height));canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
+        const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);
+        signature=photoSignature(ctx.getImageData(0,0,canvas.width,canvas.height).data,canvas.width,canvas.height);
+        if(!signature.hist.some(n=>n>0))throw Error('empty photo');
+        canvas.setAttribute('aria-label','Anteprima della foto scelta');canvas.style.maxWidth='220px';selected.append(canvas);run.disabled=false;status.textContent='Foto pronta. Premi “Confronta foto”.';
+      }catch{if(token===epoch&&current===revision)status.textContent='Non riesco a leggere la foto. Prova con una JPG, PNG o WebP nitida.';}
+      finally{bitmap?.close();}
+    });
+    run.addEventListener('click',async()=>{
+      if(!signature)return;const current=++revision;run.disabled=true;status.textContent='Confronto con l’archivio riservato…';list.replaceChildren();
+      try{
+        const {data:hits,error}=await client.rpc('ohana_search_photo',{p_dhash:signature.dhash,p_ahash:signature.ahash,p_hist:signature.hist,p_brand:brand.value||null,p_limit:24});
+        if(error)throw error;if(token!==epoch||current!==revision)return;
+        if(!hits?.length){status.textContent='Nessun risultato per questo marchio. Prova senza filtro o con un’altra foto.';return;}
+        const keys=hits.map(h=>h.album_key);
+        const responses=await Promise.all([
+          client.from('ohana_variant_albums').select('album_key,album_url,supplier,brand,model_key,candidate_key,model_name,candidate_family,color,status,cover_url,local_image,image_features').in('album_key',keys),
+          client.from('ohana_variant_products').select('product_id,album_key').in('album_key',keys)
+        ]);
+        if(responses.some(r=>r.error))throw Error('private results');if(token!==epoch||current!==revision)return;
+        const byKey=new Map((responses[0].data||[]).map(a=>[a.album_key,a]));
+        for(const hit of hits){const row=byKey.get(hit.album_key);if(!row)continue;const view=privateAlbumCard(row);view.details.prepend(el('small','Somiglianza fotografica · da confrontare'));
+          const ids=(responses[1].data||[]).filter(m=>m.album_key===row.album_key);
+          for(const mapping of ids){if(!/^(?:OHY-\d{3}|OH-(?:N-)?[A-F0-9]{12})$/.test(mapping.product_id))continue;
+            const button=el('button','Varianti · '+mapping.product_id);button.type='button';button.addEventListener('click',()=>variants(mapping.product_id));view.details.append(button);
+            const article=el('a','Apri scheda '+mapping.product_id);article.href='?articolo='+encodeURIComponent(mapping.product_id);view.details.append(article);
+          }list.append(view.card);
+        }
+        status.textContent=list.childElementCount+' risultati ordinati per somiglianza di forma e colori. Questo confronto non riconosce automaticamente modello, edizione o autenticità.';
+      }catch{if(token===epoch&&current===revision)status.textContent='Ricerca non disponibile. Riprova o verifica l’accesso gestore.';}
+      finally{if(token===epoch&&current===revision)run.disabled=false;}
+    });
+  });
+
 }
 // END OHANA PRIVATE VARIANTS
 const $ = selector => document.querySelector(selector);
@@ -259,4 +351,3 @@ initialize();
 </script>
 </body>
 </html>
-
