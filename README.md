@@ -2,6 +2,10 @@
 
 Repository destinato esclusivamente alla pubblicazione del catalogo pubblico OHANA STREET con GitHub Pages. Il codice sorgente principale è conservato nel repository privato. I collegamenti riservati ai fornitori sono in Supabase con RLS, non nei file di questo repository.
 
+## Homepage e Lookbook disattivato (24 ottobre 2026)
+
+L’ingresso `index.html` apre direttamente il catalogo per modelli `catalogo-nuovo.html`, conservando query delle schede, scelte e ancore. La vecchia vetrina Lookbook è **disattivata, non eliminata**: copia integrale in `archivio/lookbook/index.html`, esclusa dai file pubblicati e dalla navigazione. Le istruzioni di riattivazione sono in `archivio/lookbook/README.md`; la decisione è riportata anche in `AGENTS.md` per il lavoro futuro. `catalogo.json`, codici e fotografie sono conservati.
+
 
 ## Richieste cliente e WhatsApp Business (23 ottobre 2026)
 

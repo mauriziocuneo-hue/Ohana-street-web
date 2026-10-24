@@ -124,5 +124,6 @@ for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-t
 for item in ["index.html", "config.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
 (dest / ".nojekyll").write_text("", encoding="utf-8")
+assert not (dest / "archivio").exists(), "Il Lookbook disattivato non deve essere pubblicato"
 print(f"PASS: {len(catalog)} schede archiviate; {len(visible_photo_digests)} foto di scarpe distinte esposte; {family_count} famiglie modello consultabili, nessun link privato.")
 

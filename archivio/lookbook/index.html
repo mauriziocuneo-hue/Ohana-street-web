@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- OHANA STREET v3: tassonomia 2 livelli e catalogo esterno locale -->
+  <meta name="theme-color" content="#0e4a4e"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/ohana-chat.css?v=20261023-5">
+  <link rel="stylesheet" href="assets/ohana-media.css?v=20261023-1">
+  <script src="assets/ohana-media.js?v=20261023-6"></script>
+  <meta name="description" content="OHANA STREET — catalogo fotografico di sneakers e scarpe sportive. Informazioni sui modelli tramite WhatsApp.">
+  <title>OHANA STREET — Your style. Your vibe. Your ʻohana.</title>
+  <link rel="stylesheet" href="assets/ohana-theme.css?v=20261023-2">
+</head>
+<body>
+  <header><div class="wrap"><a href="#top" class="logo" aria-label="OHANA STREET, torna all'inizio">OHANA<span class="dot">.</span>STREET<small>ISLAND CULTURE / STREET STYLE</small></a><div class="header-actions"><nav class="nav" aria-label="Menu principale"><a href="catalogo-nuovo.html#catalogo">Catalogo</a><a class="contact" href="catalogo-nuovo.html#contatti">Contatti</a></nav><a class="account-link" href="gestione/" aria-label="Accesso riservato gestori" title="Accesso gestori"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></a><button type="button" class="menu-btn" id="menuBtn" aria-label="Apri menu" aria-expanded="false"><svg width="27" height="26" fill="none" stroke="currentColor" stroke-width="3"><path d="M2 5h23M2 13h23M2 21h23"/></svg></button></div></div><nav class="mobile-nav hide" id="mobileNav" aria-label="Menu mobile"><a href="catalogo-nuovo.html#catalogo">Catalogo</a><a href="catalogo-nuovo.html#contatti">Contatti</a></nav></header>
+  <main id="top">
+    <section class="hero"><div class="wrap"><div><span class="hero-kicker">ʻOhana = famiglia • legame • appartenenza</span><h1 class="display">OHANA</h1><p class="sub display">STREET × ISLAND CULTURE</p><p class="tagline">Your style. Your vibe. Your ʻohana.</p><a class="cta" href="catalogo-nuovo.html#catalogo">Scopri il catalogo <span aria-hidden="true">↗</span></a></div><div class="hero-art" aria-hidden="true"><div class="hero-disc"><svg viewBox="0 0 380 270" fill="none"><path d="M33 176Q57 153 105 151L154 84L202 110L232 140L297 149Q325 161 341 188L361 201Q366 228 336 236L68 235Q30 230 23 204Z" fill="#f9f4e7" stroke="#123e40" stroke-width="9" stroke-linejoin="round"/><path d="M149 86L199 104 233 143 294 151 292 171 111 167Z" fill="#65dfc6" stroke="#123e40" stroke-width="7" stroke-linejoin="round"/><path d="M35 197Q91 224 343 199L357 217 333 244 68 243 27 222Z" fill="#ff7560" stroke="#123e40" stroke-width="8" stroke-linejoin="round"/><path d="M124 151L174 159M139 133L187 142M156 115L199 126" stroke="#123e40" stroke-width="8" stroke-linecap="round"/><path d="M88 150L115 198M106 147L130 199" stroke="#123e40" stroke-width="6"/><path d="M62 252H331" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg></div><div class="hero-sticker">SUN<br>SURF<br>STREET ✳</div><span class="palm">〰</span></div></div></section>
+    <div class="ticker" aria-hidden="true"><div>SNEAKERS ✳ RUNNING ✳ OCEAN VIBES ✳ FAMILY ✳ LOOKBOOK ✳ SNEAKERS ✳ RUNNING ✳ OCEAN VIBES ✳ FAMILY ✳</div></div>
+    <section class="wrap" id="lookbook"><div class="intro"><div><span class="eyebrow">THE OHANA EDIT / VOL. 01</span><h2 class="display">IL LOOKBOOK</h2><p>Una selezione di scarpe, sneakers e modelli sportivi da esplorare per tipologia e marchio. Le fotografie sono ospitate direttamente su questo sito. Apri una scheda per vedere le immagini disponibili, il colore e le informazioni sulle taglie. Per informazioni specifiche su colori e taglie, contattaci tramite WhatsApp.</p></div><div class="counter"><strong id="total">0</strong><span>articoli<br>fotografici</span></div></div>
+      <p style="margin:0 0 20px"><a href="catalogo-nuovo.html" class="tab" style="display:inline-block;text-decoration:none;background:var(--sun)">✿ Apri il catalogo completo per marchio e modello ↗</a></p>
+      <div class="toolbar"><div class="search-row"><div class="search-field"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Cerca Nike, Jordan, sneakers, running…" autocomplete="off" aria-label="Cerca modelli e marchi"></div><select id="order" class="sort" aria-label="Ordina"><option value="default">Ordine editoriale</option><option value="brand">Marca A–Z</option><option value="model">Modello A–Z</option></select></div><div class="tabs" id="categoryTabs" aria-label="Filtra per genere"></div><div class="filters-footer"><select id="sottogenere" aria-label="Filtra per sottogenere"><option value="">Tutti i sottogeneri</option></select><select id="brand" aria-label="Filtra per marchio"><option value="">Tutti i marchi</option></select><button type="button" class="fav-toggle" id="favToggle" aria-pressed="false">♡ Solo preferiti</button><a class="fav-toggle" href="catalogo-nuovo.html?salvati=1&amp;richiesta=1#catalogo">Richiesta per le scarpe salvate ↗</a><button type="button" class="fav-toggle" id="resetFilters">Azzera filtri</button><span class="result-count" id="results" aria-live="polite"></span></div></div>
+      <div class="grid" id="grid" aria-live="polite"><div class="empty">Caricamento del catalogo…</div></div><div style="text-align:center;margin:28px auto"><button type="button" id="moreProducts" class="tab" hidden>Mostra altri articoli ↓</button></div>
+    </section>
+    <section class="notes" id="contatti"><div class="wrap notes-inner"><div><div style="font-size:11px;font-weight:900;letter-spacing:.15em;margin-bottom:10px">IL SIGNIFICATO DI OHANA</div><h2 class="display">MORE THAN<br>A STYLE. FAMILY.</h2><p>Per noi ʻohana richiama le Hawaii, l'inclusione e il senso di appartenenza. Il catalogo OHANA è progettato per archiviare tutte le fotografie direttamente sul nostro spazio web, senza dipendere da gallerie esterne. Per chiedere informazioni sui prodotti, usa l’assistente OHANA: raccoglie modello, taglia e domanda e prepara un messaggio WhatsApp da inviare al nostro team.</p></div><div class="label">ALOHA<br>FROM<br>OHANA ✿</div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div><div class="logo">OHANA<span class="dot">.</span>STREET</div><p>Catalogo fotografico OHANA STREET, con immagini ospitate sul nostro spazio web. I nomi dei marchi sono riferimenti descrittivi e non implicano affiliazione o autorizzazione dei rispettivi titolari.</p></div><div><strong>FATTO CON ALOHA ♡</strong><p>WhatsApp: contattaci per ulteriori dettagli sui prodotti.</p></div></div></footer>
+  <div id="overlay" class="overlay hide" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><button type="button" class="close" id="closeDialog" aria-label="Chiudi scheda">×</button><div class="modalvisual" id="modalVisual"></div><div class="dialog-body"><div class="brand" id="dialogBrand"></div><h2 class="display" id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="chips"></div><div id="dialogMetadata" class="oh-detail-meta"></div><div id="ohana-media-bot"></div><div id="ohana-product-request"></div><a id="dialogWhatsapp" class="oh-contact-cta" href="#" target="_blank" rel="noopener noreferrer">Chiedi informazioni su WhatsApp ↗</a></div></div></div>
+  <script>
+  let PRODUCTS=[];
+  const SHOW_ABBIGLIAMENTO=false; // Riattivabile senza cancellare il catalogo esistente.
+  const genres=SHOW_ABBIGLIAMENTO?['Tutte','Scarpe','Abbigliamento']:['Scarpe'];
+  const tones=[['#b3ebd9','#6bd6c9'],['#ffe5a3','#ffc46a'],['#f7b6a8','#ee806f'],['#d1d5fa','#a8b4ef'],['#d3eaca','#a7d9ad'],['#f4d3ea','#dca3cb'],['#e8dccf','#c5a990'],['#bde3f6','#86c3d8']];
+  const $=s=>document.querySelector(s); const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const productCode=p=>{if(p.codice_modello)return String(p.codice_modello);const match=String(p.model||"").match(/(?:^|[—–\s])([A-Z]{1,4}\d{3,8}(?:-\d{2,4})?)\s*$/i);return match?match[1]:"";};
+  const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  let state={genere:SHOW_ABBIGLIAMENTO?'Tutte':'Scarpe',sottogenere:'',brand:'',query:'',sort:'default',favoritesOnly:false};
+  let favorites=new Set();try{favorites=new Set(JSON.parse(localStorage.getItem('ohana-fav-v1')||'[]'));}catch(e){}
+  const svgPaths={
+    sneaker:'<path d="M25 126q24-21 58-23l37-55 47 19 28 36 56 4q25 4 35 24l15 19q0 23-30 23H66q-39 0-41-29Z" fill="#fffaf0" stroke="#123e40" stroke-width="7"/><path d="M83 103q15 25 44 32h157M120 52l46 17 28 33" fill="none" stroke="#123e40" stroke-width="7" stroke-linecap="round"/><path d="m114 90 41 10m-31-22 40 10m-26-23 37 9" stroke="#ff7560" stroke-width="7" stroke-linecap="round"/><path d="M27 146q87 39 272 2l-8 27q-105 20-242 6l-21-19Z" fill="#65dfc6" stroke="#123e40" stroke-width="7"/>',
+    runner:'<path d="M25 130q25-20 64-20l29-60 46 17 31 43 57-7q21 3 33 25l20 18q5 23-22 29H62q-44-1-39-26Z" fill="#fff8ee" stroke="#123e40" stroke-width="7"/><path d="M126 52l42 18 27 40-103 6Z" fill="#ff7560" stroke="#123e40" stroke-width="6"/><path d="m120 79 39 7m-48 7 40 8m-50 6 39 8" stroke="#123e40" stroke-width="6" stroke-linecap="round"/><path d="M26 149q136 30 266 0l-14 30-226 2-29-15Z" fill="#65dfc6" stroke="#123e40" stroke-width="7"/><path d="M204 114l-25 37 38 9 38-45" stroke="#123e40" stroke-width="7" fill="none"/>',
+    trail:'<path d="M22 132q26-24 64-18l41-62 36 18 35 40 62 2 36 35q5 29-33 30H51q-38 0-31-30Z" fill="#f9f5e9" stroke="#123e40" stroke-width="7"/><path d="M120 56l46 18 30 40-103 7Z" fill="#6adfc2" stroke="#123e40" stroke-width="7"/><path d="m111 91 51 12m-36-30 44 11" stroke="#123e40" stroke-width="6"/><path d="M21 150q95 23 277-1l-18 35-39-3-16 10-29-10-28 10-25-10-32 10-26-11-36 4Z" fill="#ff7560" stroke="#123e40" stroke-width="6"/>',
+    boot:'<path d="M100 32h92l-2 100 43 18 22 38q-2 15-26 15H74q-25 0-24-17l50-40Z" fill="#f9f5e9" stroke="#123e40" stroke-width="8"/><path d="M110 45h70v80h-70Z" fill="#ffde86"/><path d="M101 137q45 27 117 22l14 29H72Z" fill="#ff7560" stroke="#123e40" stroke-width="6"/><path d="M67 201h169" stroke="#123e40" stroke-width="9"/>',
+    shirt:'<path d="m112 39-39 19-48 48 48 39 27-24v87h128v-87l27 24 48-39-48-48-39-19-20 29h-64Z" fill="#fff8e8" stroke="#123e40" stroke-width="8" stroke-linejoin="round"/><path d="M126 40q33 44 66 0" stroke="#ff7560" stroke-width="9"/><path d="M131 103h58m-29-27v67" stroke="#65dfc6" stroke-width="10" stroke-linecap="round"/>',
+    hoodie:'<path d="M132 33q26-16 52 0l28 36 36 15 36 62-39 27-27-34v69H97v-69l-27 34-39-27 36-62 36-15Z" fill="#fff8e8" stroke="#123e40" stroke-width="8" stroke-linejoin="round"/><path d="M130 37q5 59 29 69 31-15 32-69" fill="#65dfc6" stroke="#123e40" stroke-width="7"/><path d="m139 113-7 35m51-35 7 35" stroke="#ff7560" stroke-width="6" stroke-linecap="round"/><path d="M124 164h71" stroke="#123e40" stroke-width="6"/>',
+    jacket:'<path d="M119 31h81l23 25 34 23 30 98-49 16-19-56v72H99v-72l-19 56-49-16 30-98 34-23Z" fill="#fff8e8" stroke="#123e40" stroke-width="8" stroke-linejoin="round"/><path d="m119 32 42 50 40-50M161 82v126" fill="none" stroke="#123e40" stroke-width="7"/><path d="m107 101 110 0m-117 27 123 0m-123 29 123 0m-112 28 101 0" stroke="#ff7560" stroke-width="5"/><path d="M112 175h34m29 0h34" stroke="#123e40" stroke-width="7"/>',
+    jersey:'<path d="m109 39-37 17-47 45 48 42 24-22v87h130v-87l24 22 48-42-47-45-37-17-20 28h-65Z" fill="#fff8e8" stroke="#123e40" stroke-width="8" stroke-linejoin="round"/><path d="M127 38q35 46 70 0" stroke="#123e40" stroke-width="6"/><path d="M117 74h92M117 91h92M117 110h92" stroke="#65dfc6" stroke-width="12"/><circle cx="163" cy="151" r="17" fill="#ff7560" stroke="#123e40" stroke-width="5"/>'
+  };
+  function art(p){let [a,b]=tones[p.tone];return {bg:`linear-gradient(145deg,${a},${b})`,svg:`<svg viewBox="0 0 320 230" aria-hidden="true">${svgPaths[p.kind]||svgPaths.sneaker}</svg>`};}
+  let shownProducts=48;
+  function syncSubgenres(){
+    const items=[...new Set(PRODUCTS.filter(p=>state.genere==='Tutte'||p.genere===state.genere).map(p=>p.sottogenere||'Da classificare'))].sort((a,b)=>a.localeCompare(b,'it'));
+    if(state.sottogenere&&!items.includes(state.sottogenere)) state.sottogenere='';
+    const sub=$('#sottogenere');sub.innerHTML='<option value="">Tutti i sottogeneri</option>'+items.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('');sub.value=state.sottogenere;
+  }
+  function renderTabs(){ $('#categoryTabs').innerHTML=genres.map(c=>`<button class="tab ${state.genere===c?'active':''}" type="button" data-genere-tab="${esc(c)}">${esc(c)}</button>`).join(''); }
+  function render(){
+    renderTabs();syncSubgenres();
+    const r=PRODUCTS.filter(p=>(state.genere==='Tutte'||p.genere===state.genere)&&(!state.sottogenere||p.sottogenere===state.sottogenere)&&(!state.brand||p.brand===state.brand)&&(!state.favoritesOnly||favorites.has(p.id))&&(!state.query||norm([p.id,p.brand,p.model,productCode(p),p.genere,p.sottogenere,p.style,...(p.tags||[])].join(' ')).includes(norm(state.query))));
+    if(state.sort==='brand')r.sort((a,b)=>a.brand.localeCompare(b.brand,'it')||a.model.localeCompare(b.model,'it'));
+    if(state.sort==='model')r.sort((a,b)=>a.model.localeCompare(b.model,'it'));
+    $('#total').textContent=PRODUCTS.length;
+    $('#results').textContent=`${r.length} ${r.length===1?'articolo trovato':'articoli trovati'}`;
+    $('#favToggle').setAttribute('aria-pressed',String(state.favoritesOnly));$('#favToggle').textContent=state.favoritesOnly?'♥ Mostra tutte':'♡ Solo preferiti';
+    $('#moreProducts').hidden=r.length<=shownProducts;
+    $('#grid').innerHTML=r.length?r.slice(0,shownProducts).map(p=>{
+      const a=art(p);return `<article class="tile"><div class="visual ${p.image?'product-photo':''}" style="background:${a.bg}"><span class="label-top">${esc(p.sottogenere||'Da classificare')}</span><button type="button" class="heart ${favorites.has(p.id)?'active':''}" data-favorite="${esc(p.id)}" aria-label="${favorites.has(p.id)?'Rimuovi dai':'Aggiungi ai'} preferiti ${esc(p.model)}">${favorites.has(p.id)?'♥':'♡'}</button>${p.image ? `<img src="${esc(p.image)}" loading="lazy" alt="Immagine catalogo ${esc(p.brand)} ${esc(p.model)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden class="image-fallback">Immagine non disponibile</span>` : a.svg}<span class="photo-label">Archivio OHANA</span></div><div class="tile-main"><div class="brand">${esc(p.brand)}</div><h3>${esc(p.model)}</h3><p class="subline">${esc(p.genere)} · ${esc(p.sottogenere)}</p>${p.variante?`<p class="variant-note">Variante fotografica ${esc(p.variante)}</p>`:''}<p class="item-code"><span>${productCode(p)?"Modello: "+esc(productCode(p))+" · ":""}Codice OHANA</span> <strong>${esc(p.id)}</strong></p><button type="button" class="detail" data-open="${esc(p.id)}"><span>Esplora scheda</span><span aria-hidden="true">↗</span></button></div></article>`;
+    }).join(''):'<div class="empty">Nessun risultato. Prova un altro modello o azzera i filtri.</div>';
+  }
+  let modalReturnFocus=null;
+  function closeModal(){ document.body.classList.remove('product-dialog-open');$('#overlay').classList.add('hide');document.body.style.overflow='';if(modalReturnFocus&&modalReturnFocus.isConnected)modalReturnFocus.focus();else $('#search').focus();modalReturnFocus=null; }
+  function openModal(id){
+    const p=PRODUCTS.find(x=>x.id===id);if(!p)return;$('#overlay').dataset.productId=p.id;
+    modalReturnFocus=document.activeElement;
+    const visual=$('#modalVisual'),a=art(p);
+    const photos=Array.isArray(p.images)&&p.images.length===3&&
+      p.images.every(x=>typeof x==='string'&&/^assets\/products\/[A-Za-z0-9_.-]+\.webp$/i.test(x))&&p.images[0]===p.image
+      ?p.images:null;
+    visual.style.background=a.bg;
+    visual.classList.toggle('photo-gallery',Boolean(photos));
+    visual.classList.toggle('photo-modal',Boolean(p.image&&!photos));
+    if(photos){
+      visual.innerHTML=`<div class="oh-gallery-main"><img id="ohGalleryMain" alt="Prima vista del modello ${esc(p.model)}" src="${esc(photos[0])}" onerror="this.hidden=true;this.parentElement.querySelector('.oh-gallery-error').hidden=false" onload="this.hidden=false;this.parentElement.querySelector('.oh-gallery-error').hidden=true"><span class="oh-gallery-error" hidden>Fotografia temporaneamente non disponibile</span><span id="ohGalleryCount" class="oh-gallery-count">1 / 3</span></div><div class="oh-gallery-thumbs" aria-label="Le tre fotografie dello stesso articolo">${photos.map((url,i)=>`<button type="button" class="oh-gallery-thumb" data-gallery-index="${i}" aria-pressed="${i===0?'true':'false'}" aria-label="Mostra fotografia ${i+1} di 3"><img src="${esc(url)}" alt="Miniatura fotografia ${i+1}" loading="eager" decoding="async"></button>`).join('')}</div>`;
+      visual.querySelectorAll('[data-gallery-index]').forEach(button=>button.addEventListener('click',()=>{
+        const i=Number(button.dataset.galleryIndex);
+        visual.querySelector('#ohGalleryMain').src=photos[i];
+        visual.querySelector('#ohGalleryMain').alt=`Vista ${i+1} del modello ${p.model}`;
+        visual.querySelector('#ohGalleryCount').textContent=`${i+1} / 3`;
+        visual.querySelectorAll('[data-gallery-index]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+      }));
+    }else{
+      visual.innerHTML=p.image?`<img src="${esc(p.image)}" alt="Foto catalogo ${esc(p.model)}" onerror="this.hidden=true;this.parentElement.classList.add('missing-photo')">`:a.svg;
+    }
+    $('#dialogBrand').textContent=`${p.brand} • ${p.genere} • ${p.sottogenere} • ${p.id}`;
+    $('#dialogTitle').textContent=p.model;
+    const description=typeof p.descrizione==='string'&&p.descrizione.trim()?p.descrizione.trim()+'\n\n':'';
+    $('#dialogDescription').textContent=description+(p.galleria_in_completamento?'Al momento è disponibile una fotografia di questo articolo.\n\n':'')+'Per maggiori informazioni su modelli, colori e taglie, contattaci su WhatsApp.';
+    $('#dialogDescription').style.whiteSpace='pre-line';
+    $('#dialogTags').innerHTML=p.tags.map(t=>`<span>#${esc(t)}</span>`).join('');
+    const code=productCode(p);
+    const colors=Array.isArray(p.colori_disponibili)?p.colori_disponibili.filter(Boolean):[];
+    const colorName=String(p.model||'').split(/\s+[—–]\s+/).slice(-1)[0].trim();
+    const colorTerms=/bianco|bianca|nero|nera|grigi|argento|oro|beige|crema|marron|rosa|rosso|rossa|blu|azzurr|verde|giall|viola|leopard|sabbia|menta|tortora|castagna|arancion|purple|black|white|silver|pink|blue|green|red/i;
+    const photoColor=colorName!==p.model&&colorTerms.test(colorName)?colorName:'Colorazione mostrata nelle fotografie';
+    $('#dialogMetadata').innerHTML=`<strong>Codice OHANA:</strong> ${esc(p.id)}${code?` · <strong>Codice modello:</strong> ${esc(code)}`:''}<div><strong>Colore:</strong> ${esc(colors.length?colors.join(', '):photoColor)} · altre colorazioni su richiesta</div><div><strong>Taglie:</strong> 36–46 · altre taglie su richiesta</div><div class="oh-availability-note">Per dettagli sui colori e sulle taglie, scrivici su WhatsApp.</div>`;
+    const contact=String(window.OHANA_CONTACT_NUMBER||'').replace(/\D/g,'');
+    const productLink=location.origin+location.pathname+'?articolo='+encodeURIComponent(p.id);
+    const message=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.model} (codice OHANA ${p.id}${code?', modello '+code:''}). Potete darmi maggiori informazioni su colori e taglie?\nScheda gestori: ${new URL("gestione/?articolo="+encodeURIComponent(p.id),location.href).href}`;
+    const wa=$('#dialogWhatsapp');wa.href=contact?`https://wa.me/${contact}?text=${encodeURIComponent(message)}`:'#contatti';wa.hidden=!contact||Boolean(window.OhanaChat?.mount($('#ohana-product-request'),p));
+    // Compatibilita: rimuove il pulsante duplicato eventualmente aggiunto da script in cache.
+    document.querySelector('#ohana-chat-product-button')?.remove();
+    window.OhanaChat?.close();window.OhanaMedia?.mount(p,PRODUCTS,openModal);document.body.classList.add('product-dialog-open');
+    $('#overlay').classList.remove('hide');document.body.style.overflow='hidden';$('#closeDialog').focus();
+  }
+  $('#categoryTabs').addEventListener('click',e=>{const b=e.target.closest('[data-genere-tab]');if(b){state.genere=b.dataset.genereTab;state.sottogenere='';shownProducts=48;render();}});
+  $('#grid').addEventListener('click',e=>{const fav=e.target.closest('[data-favorite]');if(fav){const id=fav.dataset.favorite;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('ohana-fav-v1',JSON.stringify([...favorites]));}catch(e){}render();return;}const open=e.target.closest('[data-open]');if(open)openModal(open.dataset.open)});
+  $('#search').addEventListener('input',e=>{state.query=e.target.value;shownProducts=48;render()});
+  $('#brand').addEventListener('change',e=>{state.brand=e.target.value;shownProducts=48;render()});
+  $('#sottogenere').addEventListener('change',e=>{state.sottogenere=e.target.value;shownProducts=48;render()});
+  $('#order').addEventListener('change',e=>{state.sort=e.target.value;render()});
+  $('#favToggle').addEventListener('click',()=>{state.favoritesOnly=!state.favoritesOnly;shownProducts=48;render()});
+  $('#resetFilters').addEventListener('click',()=>{state={genere:'Scarpe',sottogenere:'',brand:'',query:'',sort:'default',favoritesOnly:false};$('#brand').value='';$('#search').value='';$('#order').value='default';shownProducts=48;render();});
+  $('#moreProducts').addEventListener('click',()=>{shownProducts+=48;render()});
+  document.querySelectorAll('[data-genere]').forEach(x=>x.addEventListener('click',()=>{
+    state.genere=x.dataset.genere;state.sottogenere=x.dataset.sottogenere||'';state.brand='';$('#brand').value='';state.query='';$('#search').value='';shownProducts=48;
+    $('#mobileNav').classList.add('hide');$('#menuBtn').setAttribute('aria-expanded','false');render();
+  }));
+  $('#menuBtn').addEventListener('click',()=>{const closed=$('#mobileNav').classList.toggle('hide');$('#menuBtn').setAttribute('aria-expanded',String(!closed));});
+  $('#closeDialog').addEventListener('click',closeModal);
+  $('#overlay').addEventListener('click',e=>{if(e.target===$('#overlay'))closeModal()});
+  document.addEventListener('keydown',e=>{if($('#overlay').classList.contains('hide'))return;if(e.key==='Escape'){e.preventDefault();closeModal();return;}if(e.key==='Tab'){const focusable=[...$('#overlay').querySelectorAll('button:not([disabled]):not([hidden]),a[href]:not([hidden]),input:not([disabled]):not([hidden]),select:not([disabled]):not([hidden]),textarea:not([disabled]):not([hidden])')].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+  async function loadCatalog(){
+    try {
+      const response=await fetch('catalogo.json',{cache:'no-store'});
+      if(!response.ok)throw new Error('HTTP '+response.status);
+      const data=await response.json();if(!Array.isArray(data))throw new Error('Catalogo non valido');
+      PRODUCTS=data.map(p=>({...p,genere:p.genere||((p.category==='Sneakers'||p.category==='Calzature')?'Scarpe':'Abbigliamento'),sottogenere:p.sottogenere||p.category||'Da classificare',tone:Number.isInteger(p.tone)?p.tone%tones.length:0,tags:Array.isArray(p.tags)?p.tags:[]})).filter(p=>(SHOW_ABBIGLIAMENTO||p.genere==='Scarpe')&&p.vetrina!==false);
+      $('#brand').innerHTML='<option value="">Tutti i marchi</option>'+[...new Set(PRODUCTS.map(x=>x.brand))].sort((a,b)=>a.localeCompare(b,'it')).map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+      render();
+      const requestedArticle=new URLSearchParams(location.search).get('articolo');if(requestedArticle)openModal(requestedArticle);
+    }catch(err){
+      $('#results').textContent='Catalogo temporaneamente non disponibile';
+      $('#grid').innerHTML='<div class="empty">Il catalogo è temporaneamente non disponibile. Ricarica la pagina oppure riprova tra poco.</div>';
+      console.error('OHANA catalog:',err);
+    }
+  }
+  document.addEventListener('ohana-chat-ready',()=>{const p=PRODUCTS.find(p=>p.id===$('#overlay').dataset.productId);if(p)$('#dialogWhatsapp').hidden=Boolean(window.OhanaChat.mount($('#ohana-product-request'),p));});
+  loadCatalog();
+  </script>
+  <!-- Recapito di contatto WhatsApp OHANA confermato dal gestore. -->
+  <script>window.OHANA_CONTACT_NUMBER = "393473099705";</script>
+  <script src="assets/ohana-chat.js?v=20261023-7" defer></script>
+</body>
+</html>
+
