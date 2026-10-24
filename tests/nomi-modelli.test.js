@@ -10,11 +10,11 @@ const find=id=>products.find(p=>p.id===id);
 for(const [id,r] of Object.entries(reviews)){
  const old=legacy.find(p=>p.id===id),p=find(id);
  assert(old&&p,'Nessuna scheda revisionata deve andare persa');
- assert.equal(p.brand,r.brand);assert.equal(p.family,r.family);
+ assert.equal(p.brand,r.brand);assert.equal(p.family,r.publicFamily||r.family);
  assert.equal(p.modelNameStatus,r.status);
- assert(old.model.startsWith(r.name+' — '));
+ assert(old.model.startsWith((r.publicName||r.name)+' — '));
  assert.equal(productInfo(p).label,p.brand+' · '+p.name,'WhatsApp usa lo stesso nome mostrato nella scheda');
- assert(filterProducts(products,{query:r.name}).some(x=>x.id===id),'Il modello deve essere ricercabile');
+ assert(filterProducts(products,{query:r.publicName||r.name}).some(x=>x.id===id),'Il nome pubblico deve essere ricercabile');
  assert.equal(family(old),p.variantGroup,'Bot precedente e catalogo devono condividere i gruppi');
  if(r.status!=='identified'||r.variantFamily===null){assert.equal(p.variantGroup,null);assert.deepEqual(related(products,p),[]);}
 }
@@ -34,7 +34,14 @@ const cloud3=find('OH-142CC9280AC3');
 assert(related(products,cloud3).every(p=>p.family==='Cloudmonster 3'));
 assert.equal(find('OH-148AA9D070C4').modelNameStatus,'pending','Un titolo incoerente con la foto deve restare da verificare');
 assert.equal(find('OH-F2546D8E0082').modelNameStatus,'pending','Un riferimento non coerente con la foto non conferma il modello');
-assert(!products.some(p=>/^(Sneaker|Scarpa |Ciabatta |Sandalo |Stival|Sabot|Mocassino)/.test(p.family)),'Nessun titolo generico senza indicazione della verifica');
+for(const p of products.filter(p=>p.modelNameStatus==='pending')){
+ assert(['Sneakers','Stivaletti','Sandali','Ciabatte','Mocassini'].includes(p.name),'Un modello sconosciuto usa una categoria descrittiva, senza inventare un nome');
+ assert.equal(p.variantGroup,null);assert.deepEqual(related(products,p),[],'Un titolo descrittivo non conferma un abbinamento fra modelli');
+}
+for(const p of products){
+ assert(!/da verificare|in completamento|bozza|provvisor|placeholder|\bTODO\b|della famiglia;/i.test([p.name||p.family,p.family,p.description].join(' ')),'Le note redazionali non devono essere mostrate al cliente: '+p.id);
+ assert(!/\.\s+[a-z]/.test(p.description),'Nessuna frase spezzata dopo un punto: '+p.id);
+}
 const prada=find('OH-0ADB669CCF97');
 assert.equal(prada.family,'1E506O','Un riferimento ufficiale descrittivo va identificato con il codice, senza inventare un nome commerciale');
 assert.equal(prada.modelNameStatus,'identified');
@@ -42,7 +49,7 @@ assert.equal(prada.galleryIncomplete,false);assert.equal(prada.images.length,3);
 assert.deepEqual(related(products,prada),[],'Il riferimento Prada resta separato dalle famiglie Prax');
 assert(!find('OH-F2546D8E0082').photos.some(x=>x.includes('extra_recovered')),'La fotografia oliva con suola gum non appartiene alla variante sabbia');
 for(const [id,familyName] of [['OH-5A54217FFBF7','Lowmel Guard'],['OH-57750200FD55','Lowmel Guard'],['OH-5CA563FB87E3','Lowmel Guard'],['OH-5EBACB0CB15F','Ball Star'],['OH-0D0D097C4F75','Runner']]){
- const item=find(id);assert.equal(item.family,familyName);assert.equal(item.modelNameStatus,'family');assert.match(item.name,/versione da verificare/);assert.equal(item.variantGroup,null);assert.deepEqual(related(products,item),[],'Le famiglie parzialmente riconosciute restano fuori dalle varianti confermate');
+ const item=find(id);assert.equal(item.family,familyName);assert.equal(item.modelNameStatus,'family');assert.equal(item.name,familyName);assert.equal(item.variantGroup,null);assert.deepEqual(related(products,item),[],'Le famiglie parzialmente riconosciute restano fuori dalle varianti confermate');
 }
 assert(!find('OH-0D0D097C4F75').name.includes('Track'),'Il titolo di un album non corrispondente non deve prevalere sulla scritta Runner nella foto');
 for(const id of ['OH-0BDF23690CBC','OH-2C601CEA01BA','OH-0D0D097C4F75']){

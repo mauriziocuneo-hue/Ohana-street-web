@@ -217,7 +217,8 @@
       "family": "Runner",
       "status": "family",
       "variantFamily": null,
-      "review": "Corretta l’attribuzione Track Trail Lace proveniente dall’album associato non corrispondente. La copertina mostra scritta RUNNER sul fianco e costruzione Runner. Famiglia riconosciuta; codice/allestimento della versione bianco, grigio e rosso non confermati. Nessun trasferimento di proprietà tecniche o materiali dalla fonte di confronto."
+      "review": "Corretta l’attribuzione Track Trail Lace proveniente dall’album associato non corrispondente. La copertina mostra scritta RUNNER sul fianco e costruzione Runner. Famiglia riconosciuta; codice/allestimento della versione bianco, grigio e rosso non confermati. Nessun trasferimento di proprietà tecniche o materiali dalla fonte di confronto.",
+      "publicName": "Runner"
     },
     "OH-03F4661DD7BD": {
       "brand": "Dior",
@@ -825,7 +826,8 @@
       "family": "Ball Star",
       "status": "family",
       "variantFamily": null,
-      "review": "Famiglia Ball Star riconosciuta confrontando le tre foto della scheda: punta traforata con rinforzo in suede, disposizione della stella e dei pannelli, cupsole con bordo scuro e scritta SNEAKERS in rilievo distribuita sui talloni. Costruzione coerente con la famiglia ufficiale Ball Star e distinta dalla Super-Star. Non confermati il riferimento di collezione e la specifica versione grigio/verde glitter: nessun codice colore attribuito, nessun gruppo di varianti. Riferimenti ufficiali: https://www.goldengoose.com/ww/en/women-s-ball-star-in-green-suede-with-silver-glitter-star-cod-GWF00117.F006680.35907.html ; https://www.goldengoose.com/lb/en/women%E2%80%99s-ball-star-in-leather-and-suede-with-glitter-star-and-heel-tab-cod-GWF00117.F006859.82865.html"
+      "review": "Famiglia Ball Star riconosciuta confrontando le tre foto della scheda: punta traforata con rinforzo in suede, disposizione della stella e dei pannelli, cupsole con bordo scuro e scritta SNEAKERS in rilievo distribuita sui talloni. Costruzione coerente con la famiglia ufficiale Ball Star e distinta dalla Super-Star. Non confermati il riferimento di collezione e la specifica versione grigio/verde glitter: nessun codice colore attribuito, nessun gruppo di varianti. Riferimenti ufficiali: https://www.goldengoose.com/ww/en/women-s-ball-star-in-green-suede-with-silver-glitter-star-cod-GWF00117.F006680.35907.html ; https://www.goldengoose.com/lb/en/women%E2%80%99s-ball-star-in-leather-and-suede-with-glitter-star-and-heel-tab-cod-GWF00117.F006859.82865.html",
+      "publicName": "Ball Star"
     },
     "OH-2C601CEA01BA": {
       "brand": "Hermès",
@@ -833,7 +835,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Ciabatte",
+      "publicFamily": "Ciabatte"
     },
     "OHY-064": {
       "brand": "Loro Piana",
@@ -865,7 +869,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Sneakers",
+      "publicFamily": "Sneakers"
     },
     "OH-11DE03266FB8": {
       "brand": "Louis Vuitton",
@@ -873,7 +879,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Ciabatte",
+      "publicFamily": "Ciabatte"
     },
     "OH-148AA9D070C4": {
       "brand": "Nike",
@@ -881,7 +889,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Sneakers",
+      "publicFamily": "Sneakers"
     },
     "OH-0ADB669CCF97": {
       "brand": "Prada",
@@ -897,7 +907,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Mocassini",
+      "publicFamily": "Mocassini"
     },
     "OH-0B52459DC502": {
       "brand": "UGG",
@@ -921,7 +933,8 @@
       "family": "Lowmel Guard",
       "status": "family",
       "variantFamily": null,
-      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html"
+      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html",
+      "publicName": "Lowmel Guard"
     },
     "OH-5A54217FFBF7": {
       "brand": "UGG",
@@ -929,7 +942,8 @@
       "family": "Lowmel Guard",
       "status": "family",
       "variantFamily": null,
-      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html"
+      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html",
+      "publicName": "Lowmel Guard"
     },
     "OH-5CA563FB87E3": {
       "brand": "UGG",
@@ -937,7 +951,8 @@
       "family": "Lowmel Guard",
       "status": "family",
       "variantFamily": null,
-      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html"
+      "review": "Famiglia Lowmel Guard riconosciuta confrontando pannellatura, collo ripstop, tre passalacci più elemento triangolare, guardia rialzata e inserto laterale con la fonte ufficiale UGG 1180512. Versione esatta e finiture da verificare: bordo del puntale e intreccio dei lacci non coincidono completamente. Nessun gruppo varianti e nessuna garanzia GTX o sui materiali effettivi. Fonte di confronto: https://www.ugg.com/uk/lowmel-guard-gtx-trainer/1180512.html",
+      "publicName": "Lowmel Guard"
     },
     "OH-6E2532D93DEF": {
       "brand": "UGG",
@@ -945,7 +960,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Sandali",
+      "publicFamily": "Sandali"
     },
     "OH-A94C26878A86": {
       "brand": "UGG",
@@ -961,7 +978,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Sandali",
+      "publicFamily": "Sandali"
     },
     "OH-F2546D8E0082": {
       "brand": "UGG",
@@ -969,7 +988,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Stivaletti",
+      "publicFamily": "Stivaletti"
     },
     "OHY-040": {
       "brand": "UGG",
@@ -977,7 +998,9 @@
       "family": "Modello da verificare",
       "status": "pending",
       "variantFamily": null,
-      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti."
+      "review": "Le informazioni disponibili non permettono di confermare un nome di modello coerente con le fotografie. Conservare articolo, colore e fotografie; nessun abbinamento di varianti.",
+      "publicName": "Stivaletti",
+      "publicFamily": "Stivaletti"
     }
   }
 }

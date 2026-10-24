@@ -19,7 +19,9 @@ Verifica: `node tests/ohana-chat.test.js` e i due test esistenti del catalogo/bo
 
 ## Nomi dei modelli (23 ottobre 2026)
 
-`nomi-modelli.json` conserva la revisione di 122 schede: 107 modelli identificati, 6 schede con sola famiglia riconosciuta (1906, tre Lowmel Guard, una Ball Star e una Runner) e 9 casi dichiarati “Modello da verificare”. Contiene solo metadati pubblicabili. La revisione riguarda il nome del modello raffigurato, senza certificare autenticità, materiali o disponibilità. Titoli di archivio incoerenti con la fotografia non vengono copiati come nomi certi.
+`nomi-modelli.json` conserva la revisione di 122 schede: 107 modelli identificati, 6 schede con sola famiglia riconosciuta (1906, tre Lowmel Guard, una Ball Star e una Runner) e 9 identificazioni ancora aperte. La revisione riguarda il nome del modello raffigurato, senza certificare autenticità, materiali o disponibilità. Titoli di archivio incoerenti con la fotografia non vengono copiati come nomi certi. Le note di revisione sono separate da `publicName`/`publicFamily`: la vetrina usa il nome riconosciuto o una categoria descrittiva, conservando gli stati e i gruppi incerti. Il file di revisione non è incluso nella build pubblica.
+
+Il 24 ottobre sono state controllate tutte le 375 descrizioni: 223 ripulite e 14 titoli corretti, eliminando bozze e frammenti redazionali. La pulizia è ripetibile con l’importazione; dettagli in `docs/revisione-testi-20261024.md`.
 
 `python3 tools/importa_catalogo_esistente.py` applica i nomi a `catalogo.json` e ricompila `catalogo-nuovo.json`, conservando codici, colori e fotografie. La scheda, la ricerca, il menu, l’area gestori e il contesto WhatsApp leggono gli stessi nomi. I casi incerti e le Predator con allestimenti non confermati restano senza gruppo di varianti. Shox R4/Z, Air Jordan 4/SB e le generazioni Cloudmonster restano distinti. Verifica con `node tests/nomi-modelli.test.js` oltre ai controlli esistenti. Grafica e caratteri restano quelli del tema OHANA.
 

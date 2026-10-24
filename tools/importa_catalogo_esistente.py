@@ -7,18 +7,32 @@ legacy=json.loads((ROOT/'catalogo.json').read_text())
 active=[p for p in legacy if p.get('genere')=='Scarpe' and p.get('vetrina') is not False]
 reviews=json.loads((ROOT/'nomi-modelli.json').read_text())['products']
 assert set(reviews).issubset(p['id'] for p in active), 'Name review for an inactive or missing article'
+def clean_description(text):
+ text=str(text or '').strip()
+ if text.endswith('della famiglia; disponibilità e dettagli commerciali da verificare.'):
+  text=text.split('. ',1)[0]+'.'
+ text=re.sub(r'\s*Selezione fotografica; disponibilità e dettagli commerciali da verificare\.$','',text)
+ for suffix in ['Fotografie controllate per modello e variante visibile.','Le fotografie mostrano la variante di riferimento.','La fotografia mostra la variante di riferimento.']:
+  if text.endswith(suffix):text=text[:-len(suffix)].rstrip()
+ return text
+description_edits={
+ 'OH-694A6237355C':'Calzatura dal profilo basso, con tomaia scura e dettagli Salomon sul fianco.',
+ 'OH-ED3A8A47A95A':'Sneaker nera con dettagli beige, stella laterale fantasia e suola chiara a contrasto.'
+}
 for p in active:
+ p['descrizione']=description_edits.get(p['id'],clean_description(p.get('descrizione','')))
  review=reviews.get(p['id'])
  if not review:continue
  assert p['brand']==review['brand'], 'Model review brand mismatch'
  color=', '.join(p.get('colori_disponibili') or [re.split(r'\s+[—–]\s+',p['model'])[-1]])
- p['model']=review['name']+' — '+color
- p['famiglia_modello']=review['family']
+ public_name=review.get('publicName',review['name'])
+ p['model']=public_name+' — '+color
+ p['famiglia_modello']=review.get('publicFamily',review['family'])
  p['famiglia_varianti']=review['variantFamily']
  p['stato_nome_modello']=review['status']
  p['modelloVerificato']=review['status']=='identified'
- prefix='Nome del modello da verificare.' if review['status']=='pending' else p['brand']+' '+review['name']+'.'
- p['descrizione']=prefix+' Colorazione: '+color+'. Le fotografie mostrano l’articolo di riferimento.'
+ prefix=public_name+' '+p['brand'] if review['status']=='pending' else p['brand']+' '+public_name
+ p['descrizione']=prefix+' nella colorazione '+color.lower()+'. Guarda i dettagli nelle fotografie.'
 (ROOT/'catalogo.json').write_text(json.dumps(legacy,ensure_ascii=False,indent=2)+'\n')
 existing=json.loads((ROOT/'catalogo-nuovo.json').read_text())
 pilot=[p for p in existing['products'] if not p.get('legacy')]
@@ -32,6 +46,7 @@ def trim_brand(name,brand):
   if prefix and name.lower().startswith(prefix.lower()+' '):name=name[len(prefix):].strip()
  return name
 for p in pilot:
+ p['description']=clean_description(p['description'])
  p['variantGroup']=norm(p['brand'])+':'+norm(aliases.get(norm(p['family']),p['family']))
  p['legacy']=False
 products=[]

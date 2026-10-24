@@ -98,7 +98,7 @@
     $('#productDescription').textContent=p.description;
     $('#productDetails').innerHTML=`<dt>Codice OHANA</dt><dd>${esc(p.id)}</dd>${p.code?`<dt>Riferimento modello</dt><dd>${esc(p.code)}</dd>`:''}`;
     $('#thumbnails').innerHTML=photoButtons(p.images);$('#thumbnails').hidden=p.images.length===1;$('#album').replaceChildren();$('#album').hidden=true;
-    $('#galleryStatus').hidden=!p.galleryIncomplete;$('#galleryStatus').textContent=p.galleryIncomplete?`Galleria in completamento: ${p.photos.length===1?'una fotografia disponibile':p.photos.length+' fotografie disponibili'}.`:'';
+    $('#galleryStatus').hidden=!p.galleryIncomplete;$('#galleryStatus').textContent=p.galleryIncomplete?`${p.photos.length===1?'Una fotografia disponibile':p.photos.length+' fotografie disponibili'}.`:'';
     $('#showAlbum').hidden=p.photos.length<=p.images.length;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${p.photos.length} fotografie ↓`;
     $('#shareStatus').textContent='';$('#shareFallback').hidden=true;showPhoto(0);variantPicker(p);updateSavedUI();
     const url=new URL(location.href);url.searchParams.set('articolo',p.id);history.replaceState({},'',url);
