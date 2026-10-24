@@ -45,6 +45,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 .variants-dialog{width:min(1050px,95vw);max-height:90vh;border:1px solid #d6e2dd;border-radius:18px;background:#fcf8ee;color:#143438;padding:22px;overflow:auto}.variants-dialog::backdrop{background:#123e4080}.variants-dialog>button{float:right;margin-left:16px}.variant-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.variant-tabs button[aria-pressed=true]{background:#ff7560;color:#143438}.variants-dialog .grid{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))}.variants-dialog li{margin:12px 0;overflow-wrap:anywhere}.variants-dialog a{color:#123e40}.item .links button[data-variants]{background:#123e40;color:white;border-radius:20px;padding:8px 10px;font-size:12px;font-weight:700}.variants-dialog .item p{margin:10px 0}
 
 .supplier-offer{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:8px 0;border-top:1px solid #ddd}.supplier-offer a{font-weight:700}.variants-dialog label{display:block;margin-top:12px}.variants-dialog input,.variants-dialog select{max-width:100%;margin:8px 0 14px}.variants-dialog canvas{height:auto;max-height:220px}
+.photo-drop{border:2px dashed #6b9189;border-radius:14px;padding:18px;background:#f3f8f5;transition:background .15s,border-color .15s}.photo-drop p{margin:0 0 10px}.photo-drop input{width:100%;box-sizing:border-box}.photo-drop small{display:block;overflow-wrap:anywhere}.photo-drop.drag-active{background:#d9eee6;border-color:#143e40}.photo-drop:focus-within{outline:3px solid #ff9f8d;outline-offset:3px}
 </style>
 </head>
 <body>
@@ -206,14 +207,17 @@ function mountVariants(client) {
     const token=open('Cerca una scarpa da foto');
     body.replaceChildren(el('h2','Cerca una scarpa da foto'),el('p','Scegli una foto con una sola scarpa, possibilmente di lato e su sfondo semplice. La foto resta sul dispositivo: inviamo soltanto una firma numerica per confrontare forma e colori. I risultati sono somiglianze da verificare.'));
     const label=el('label','Foto della scarpa');const file=el('input');file.type='file';file.accept='image/jpeg,image/png,image/webp';file.id='photoInput';label.htmlFor=file.id;
+    const drop=el('div','','photo-drop');drop.id='photoDrop';
+    const hint=el('p','Trascina qui una foto oppure scegli un file dal dispositivo.');
+    const filename=el('small','JPG, PNG o WebP · massimo 15 MB');filename.setAttribute('aria-live','polite');drop.append(hint,file,filename);
     const brandLabel=el('label','Marchio (facoltativo)');const brand=el('select');brand.id='photoBrand';brandLabel.htmlFor=brand.id;
     for(const name of ['', 'Adidas','ASICS','Balenciaga','Chanel','Dior','Golden Goose','Gucci','Hermès','Jordan','Loro Piana','Louis Vuitton','New Balance','Nike','On Running','Prada','Salomon','Saucony','Scarpe da calcio','UGG']){const option=el('option',name||'Tutti i marchi');option.value=name;brand.append(option);}
     const run=el('button','Confronta foto');run.type='button';run.disabled=true;
-    const status=el('p');status.setAttribute('role','status');const list=el('div','','grid');const selected=el('div');body.append(label,file,brandLabel,brand,selected,run,status,list);
+    const status=el('p');status.setAttribute('role','status');const list=el('div','','grid');const selected=el('div');body.append(label,drop,brandLabel,brand,selected,run,status,list);
     let signature=null,revision=0;
-    file.addEventListener('change',async()=>{
+    async function choosePhoto(f){
       const current=++revision;signature=null;run.disabled=true;list.replaceChildren();selected.replaceChildren();
-      const f=file.files?.[0];if(!f)return;
+      status.textContent='';filename.textContent=f?.name||'JPG, PNG o WebP · massimo 15 MB';if(!f)return;
       if(!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>15*1024*1024){status.textContent='Scegli una foto JPG, PNG o WebP fino a 15 MB.';return;}
       let bitmap;
       try{
@@ -227,6 +231,20 @@ function mountVariants(client) {
         canvas.setAttribute('aria-label','Anteprima della foto scelta');canvas.style.maxWidth='220px';selected.append(canvas);run.disabled=false;status.textContent='Foto pronta. Premi “Confronta foto”.';
       }catch{if(token===epoch&&current===revision)status.textContent='Non riesco a leggere la foto. Prova con una JPG, PNG o WebP nitida.';}
       finally{bitmap?.close();}
+    }
+    file.addEventListener('change',()=>choosePhoto(file.files?.[0]));
+    let dragDepth=0;
+    for(const name of ['dragenter','dragover','dragleave','drop'])drop.addEventListener(name,event=>{
+      event.preventDefault();event.stopPropagation();
+      if(name==='dragenter'){dragDepth++;drop.classList.add('drag-active');}
+      if(name==='dragover'&&event.dataTransfer)event.dataTransfer.dropEffect='copy';
+      if(name==='dragleave'){dragDepth=Math.max(0,dragDepth-1);if(!dragDepth)drop.classList.remove('drag-active');}
+      if(name==='drop'){
+        dragDepth=0;drop.classList.remove('drag-active');file.value='';
+        const files=event.dataTransfer?.files;
+        if(files?.length!==1){choosePhoto(null);status.textContent='Trascina una sola foto alla volta.';return;}
+        choosePhoto(files[0]);
+      }
     });
     run.addEventListener('click',async()=>{
       if(!signature)return;const current=++revision;run.disabled=true;status.textContent='Confronto con l’archivio riservato…';list.replaceChildren();

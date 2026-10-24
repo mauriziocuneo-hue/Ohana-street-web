@@ -32,3 +32,10 @@ test('invalid files are rejected and stale photo results cannot repopulate logge
  Object.defineProperty(input,'files',{value:[{type:'image/webp',size:100}],configurable:true});input.dispatchEvent(new s.window.Event('change'));await tick();
  [...s.document.querySelectorAll('button')].find(b=>b.textContent==='Confronta foto').click();s.logout();s.resolve();await tick();await tick();assert.equal(s.document.querySelectorAll('dialog .item').length,0);
 });
+test('drop accepts one photo locally and rejects multiple files without navigation',async()=>{
+ const s=setup();s.document.querySelector('#photoSearch').click();const drop=s.document.querySelector('#photoDrop');
+ const dispatch=files=>{const e=new s.window.Event('drop',{cancelable:true,bubbles:true});Object.defineProperty(e,'dataTransfer',{value:{files}});drop.dispatchEvent(e);assert.equal(e.defaultPrevented,true);};
+ dispatch([{name:'scarpa.png',type:'image/png',size:200}]);await tick();
+ assert.match(drop.textContent,/scarpa.png/);const run=[...s.document.querySelectorAll('button')].find(b=>b.textContent==='Confronta foto');assert.equal(run.disabled,false);assert.equal(s.rpcArgs,undefined);
+ dispatch([{type:'image/png',size:100},{type:'image/png',size:100}]);await tick();assert.equal(run.disabled,true);assert.match(s.document.querySelector('dialog').textContent,/una sola foto/);
+});
