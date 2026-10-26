@@ -2,14 +2,14 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const products=require('../catalogo-nuovo.json').products;
 const html=fs.readFileSync(require('node:path').join(__dirname,'../gestione/index.html'),'utf8');
-const script=html.match(/<script type="module">([\s\S]*?)<\/script>/)[1].replace(/^\s*import[^\n]*\n/,'').replace(/initialize\(\);\s*$/,'await initialize();');
+const script=html.match(/<script type="module">([\s\S]*?)<\/script>/)[1].replace(/^\s*import[^\n]*\n/gm,'').replace(/initialize\(\);\s*$/,'await initialize();');
 async function run(article,session=false,authorized=true){
  const nodes=new Map();
  function element(id){if(!nodes.has(id)){const classes=new Set();nodes.set(id,{value:'',hidden:false,textContent:'',innerHTML:'',handlers:{},classList:{add:k=>classes.add(k),remove:k=>classes.delete(k),contains:k=>classes.has(k)},addEventListener:(name,fn)=>{element(id).handlers[name]=fn;},replaceChildren:()=>{element(id).innerHTML='';}});}return nodes.get(id);}
  let privateReads=0;
  const user={id:'test-manager'};
- const client={auth:{getSession:async()=>({data:{session:session?{user}:null}}),signInWithPassword:async()=>({data:{user}}),signOut:async()=>({})},from(table){if(table==='ohana_managers')return {select:()=>({eq:()=>({maybeSingle:async()=>({data:authorized?{user_id:user.id}:null})})})};if(table==='ohana_supplier_links'){privateReads++;return {select:()=>({order:async()=>({data:products.map(p=>({product_id:p.id,album_url:'https://example.invalid/album',catalog_url:'https://example.invalid/catalog'}))})})};}throw Error('Unexpected table');}};
- const context={document:{querySelector:element},window:{OHANA_CONFIG:{supabaseUrl:'https://example.invalid',supabaseAnonKey:'public-test-key'}},location:{search:'?articolo='+encodeURIComponent(article)},URL,URLSearchParams,Map,createClient:()=>client,fetch:async path=>({ok:true,json:async()=>path.includes('nuovo')?{version:1,products}:[]})};
+ const client={auth:{onAuthStateChange:()=>{},getSession:async()=>({data:{session:session?{user}:null}}),signInWithPassword:async()=>({data:{user}}),signOut:async()=>({})},from(table){if(table==='ohana_managers')return {select:()=>({eq:()=>({maybeSingle:async()=>({data:authorized?{user_id:user.id}:null})})})};if(table==='ohana_supplier_links'){privateReads++;return {select:()=>({order:async()=>({data:products.map(p=>({product_id:p.id,album_url:'https://example.invalid/album',catalog_url:'https://example.invalid/catalog'}))})})};}throw Error('Unexpected table');}};
+ const context={document:{querySelector:element},window:{OHANA_CONFIG:{supabaseUrl:'https://example.invalid',supabaseAnonKey:'public-test-key'}},location:{search:'?articolo='+encodeURIComponent(article)},URL,URLSearchParams,Map,mountOrders:()=>()=>{},createClient:()=>client,fetch:async path=>({ok:true,json:async()=>path.includes('nuovo')?{version:1,products}:[]})};
  await vm.runInNewContext('(async()=>{'+script+'})()',context);
  return {element,privateReads:()=>privateReads};
 }
