@@ -10,3 +10,13 @@ test('store paginates, carries revision, fails closed and never uses production 
 test('schema denies direct access and public execution',()=>{const sql=readFileSync('backend/ordini-demo/schema.sql','utf8');assert.match(sql,/enable row level security/);assert.match(sql,/revoke all on public.ohana_demo_orders from public,anon,authenticated/);assert.match(sql,/security invoker/);assert.ok(!/security definer/i.test(sql));});
 
 test('server rejects state jumps and edits to closed orders',async()=>{assert.equal((await setup().send({action:'save',order:{...order,state:'spedito'},revision:1})).status,400);assert.equal((await setup().send({action:'save',order:{...order,state:'ordinato'},revision:0})).status,400);});
+test('server accepts the complete demo cycle and rejects writes after delivery',async()=>{
+ let current=null;const {paymentRequest}=await import('../gestione/ordini-core.mjs');
+ const handler=makeHandler({dbUrl:DEMO_DB_URL,serviceKey:'server-only',products,fetcher:async(url,opts)=>{
+  if(url.endsWith('/auth/v1/user'))return response({id:user});if(url.includes('ohana_managers'))return response([{user_id:user}]);
+  if(url.includes('rpc/')){const b=JSON.parse(opts.body);if((current?.revision||0)!==b.p_revision)return response({code:'40001'},400);current={payload:b.p_payload,revision:(current?.revision||0)+1};return response([current]);}
+  return response(current?[current]:[]);
+ }});
+ async function save(o,expected=200){const r=await handler(new Request('https://demo.invalid',{method:'POST',headers:{Authorization:'Bearer verified.jwt'},body:JSON.stringify({action:'save',order:o,revision:current?.revision||0})}));assert.equal(r.status,expected);if(expected===200)return (await r.json()).row.payload;}
+ let o=await save(structuredClone(order));o=await save({...o,state:'preventivo'});o=await save({...o,payment:paymentRequest(o)});o=await save({...o,state:'attesa pagamento'});o=await save({...o,state:'pagamento registrato'});assert.equal(o.payment.status,'registrato demo');o=await save({...o,state:'ordinato'});o=await save({...o,carrier:'TEST',tracking:'TEST-001',state:'spedito'});o=await save({...o,state:'consegnato'});assert.equal(o.history.length,7);await save({...o,customer:'Cambio non consentito'},409);
+});
