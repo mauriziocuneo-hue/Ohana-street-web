@@ -30,3 +30,14 @@ Richieste conservate in `sessionStorage` con chiave del branch e del gestore, su
 Con linkedom 0.18.12 disponibile: `node --test tests/gestione-varianti.test.cjs tests/gestione-foto.test.cjs`.
 
 `python3 tools/build_orders_demo.py /percorso/esterno/dist` genera esclusivamente il laboratorio, escludendo configurazione Supabase, pagine pubbliche e dati fornitore. Il confezionamento Pages di produzione non è stato cambiato: l'eventuale integrazione futura richiederà una revisione esplicita della sua allowlist, della persistenza condivisa e del pagamento reale.
+
+
+## Incolla e importa WhatsApp
+
+Il parser locale non legge chat e non usa servizi AI esterni. Dopo aver creato o selezionato una richiesta, aprire **Incolla e importa da WhatsApp**, caricare l'esempio oppure incollare un messaggio fittizio. Analizzare, controllare i campi selezionati, confermare l'associazione all'ordine e applicare alla bozza. Solo **Salva richiesta** rende persistenti i valori nella sessione browser.
+
+Il preventivo contiene risposte SÌ/NO con riferimento ordine. In **Messaggi WhatsApp** il tipo **richiesta dati** genera lo schema guidato per nome, telefono, email facoltativa, prodotto, colore, taglia e indirizzo. Non sono pulsanti WhatsApp nativi. Sì/No registra una risposta cliente senza avanzare o annullare l'ordine.
+
+Il riconoscimento affidabile richiede etichette esplicite; in testo libero vengono cercati soltanto codice OHANA e taglia esplicita. Campi assenti, valori multipli, recapiti non validi e indirizzi incompleti sono segnalati. Un riferimento a un altro ordine blocca l'applicazione. Senza riferimento serve confermare manualmente l'associazione. L'importazione non modifica prezzi, costi, commissioni, pagamenti o stato. Un cambio prodotto nel modulo azzera la selezione fornitore, come nella selezione manuale esistente. Eventuali dati commerciali cambiati invalidano il preventivo PayPal demo al salvataggio.
+
+Test aggiuntivi: `node --test tests/importa-whatsapp.test.mjs`.
