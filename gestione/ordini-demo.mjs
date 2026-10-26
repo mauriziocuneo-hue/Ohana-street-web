@@ -1,22 +1,27 @@
 import {parseMessage,LABELS,dataRequest,sampleMessage} from './importa-whatsapp.mjs';
 import {STATES,euro,cents,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName} from './ordini-core.mjs';
-export function mountOrders(host,{products,suppliers=[],scope='private-preview'}={}){
+export function mountOrders(host,{products,suppliers=[],scope='private-preview',store=null,initialOrders=[]}={}){
  const key='ohana:test:gestione-richieste-pagamenti:v1:'+scope;
- let orders=[],selected=null,kind='preventivo';
+ let orders=structuredClone(initialOrders),selected=null,kind='preventivo',busy=false,disposed=false;
  const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
  host.className='orders-demo';
  const title=make('h2','Richieste e ordini'),banner=make('div','DEMO · Solo dati fittizi. Nessun pagamento, invio WhatsApp o ordine al fornitore. I test sono salvati solo in questa sessione del browser e non sono condivisi tra i gestori.','demo-banner');
+ if(store)banner.textContent='DEMO · Archivio condiviso nel database di TEST. Solo dati fittizi. Nessun pagamento, invio WhatsApp o ordine reale. Premi Aggiorna elenco per vedere le modifiche degli altri gestori.';
  const status=make('p','','order-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const layout=make('div',undefined,'order-layout'),aside=make('aside',undefined,'order-card'),editor=make('div',undefined,'order-card'),list=make('div',undefined,'order-list'),find=make('input');find.type='search';find.placeholder='Cerca ordine o cliente demo';find.setAttribute('aria-label','Cerca ordine o cliente demo');
  const notify=text=>{status.textContent=text;};
- const button=(text,fn,cls='secondary')=>{const b=make('button',text,cls);b.type='button';b.addEventListener('click',async()=>{try{await fn();}catch(e){notify(e.message);}});return b;};
- function persist(){try{sessionStorage.setItem(key,JSON.stringify(orders));}catch{notify('Memoria browser non disponibile: i test resteranno aperti solo fino alla chiusura della pagina.');}}
- try{const saved=JSON.parse(sessionStorage.getItem(key)||'[]');if(Array.isArray(saved)){for(const o of saved){validate(o,products);if(!/^DEMO-[0-9a-f-]+$/i.test(o.id)||!Array.isArray(o.history))throw Error('Archivio demo non valido');}orders=saved;}}catch{orders=[];}
- function create(){const o=seed(products[0]);o.id='DEMO-'+Array.from(crypto.getRandomValues(new Uint8Array(8)),n=>n.toString(16).padStart(2,'0')).join('').toUpperCase();orders.unshift(o);selected=o.id;persist();render();notify('Richiesta demo creata. Modifica i dati e salva.');}
- aside.append(make('h3','Le richieste'),button('＋ Nuova richiesta demo',create),find,list,button('Azzera dati demo',()=>{if(!confirm('Eliminare tutte le richieste demo di questa sessione?'))return;orders=[];selected=null;persist();render();notify('Dati demo eliminati.');},'danger'));
+ const button=(text,fn,cls='secondary')=>{const b=make('button',text,cls);b.type='button';b.addEventListener('click',async()=>{await execute(fn);});return b;};
+ async function execute(fn){if(busy||disposed)return;busy=true;host.inert=true;const before=structuredClone(orders),previous=selected;try{await fn();}catch(e){if(!disposed){orders=before;selected=previous;render();notify(e.message);}}finally{busy=false;host.inert=false;}}
+ async function persist(){if(disposed)throw Error('Sessione terminata.');if(store){const i=orders.findIndex(o=>o.id===selected);if(i<0)throw Error('Richiesta non selezionata');const saved=await store.save(orders[i]);if(disposed)return;orders[i]=saved;}else{sessionStorage.setItem(key,JSON.stringify(orders));}}
+ if(!store)try{const saved=JSON.parse(sessionStorage.getItem(key)||'[]');if(Array.isArray(saved)){for(const o of saved){validate(o,products);if(!/^DEMO-[0-9a-f-]+$/i.test(o.id)||!Array.isArray(o.history))throw Error('Archivio demo non valido');}orders=saved;}}catch{orders=[];}
+ async function create(productId){const p=products.find(p=>p.id===productId)||products[0],o=seed(p);o.id='DEMO-'+Array.from(crypto.getRandomValues(new Uint8Array(8)),n=>n.toString(16).padStart(2,'0')).join('').toUpperCase();orders.unshift(o);selected=o.id;await persist();if(disposed)return;render();notify(store?'Richiesta demo creata e salvata nel database di test.':'Richiesta demo creata. Modifica i dati e salva.');}
+ aside.append(make('h3','Le richieste'),button('＋ Nuova richiesta demo',()=>create()),find,list);
+ if(store){aside.append(button('Aggiorna elenco',async()=>{orders=await store.list();if(!orders.some(o=>o.id===selected))selected=orders[0]?.id||null;render();notify('Elenco aggiornato dal database di test.');}),button('Esporta archivio demo',()=>{const blob=new Blob([JSON.stringify(orders,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=make('a');a.href=url;a.download='ohana-ordini-demo.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Esportazione dell’archivio demo preparata.');}));}
+ else aside.append(button('Azzera dati demo',async()=>{if(!confirm('Eliminare tutte le richieste demo di questa sessione?'))return;orders=[];selected=null;sessionStorage.removeItem(key);render();notify('Dati demo eliminati.');},'danger'));
  layout.append(aside,editor);host.replaceChildren(title,banner,layout,status);find.addEventListener('input',renderList);
  function renderList(){list.replaceChildren();for(const o of orders.filter(o=>(o.id+' '+o.customer+' '+o.productId).toLowerCase().includes(find.value.toLowerCase()))){const b=button(`${o.id} · ${o.customer}\n${o.productId} · ${o.state}`,()=>{selected=o.id;render();});b.setAttribute('aria-current',String(selected===o.id));list.append(b);}if(!list.childElementCount)list.append(make('p','Nessuna richiesta. Crea un ordine demo per iniziare.'));}
  function render(){
+ if(disposed)return;
  renderList();editor.replaceChildren();const o=orders.find(x=>x.id===selected);if(!o){editor.append(make('h3','Dal messaggio alla consegna'),make('p','Crea una richiesta demo: scegli una scarpa OHANA, prepara il preventivo, simula PayPal e aggiorna spedizione e consegna.'));return;}
  const closed=['consegnato','annullato'].includes(o.state),commercialLocked=STATES.indexOf(o.state)>=2;
  editor.append(make('h3',o.id),make('span',o.state.toUpperCase(),'badge'));
@@ -35,8 +40,8 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview'}
  inputs.productId.addEventListener('change',()=>{const p=products.find(p=>p.id===inputs.productId.value);inputs.model.value=modelName(p);inputs.color.value=p.colori_disponibili?.[0]||p.color||'Da confermare';inputs.supplier.replaceChildren();for(const [v,t]of supplierOptions(p.id)){const option=make('option',t);option.value=v;inputs.supplier.append(option);}productPreview();});productPreview();
  const totals=make('div',undefined,'money-summary');function totalsPreview(){try{const current={...o};for(const k of ['price','cost','shippingCost','fees'])current[k]=cents(inputs[k].value);totals.replaceChildren();for(const [label,value]of [['Totale cliente',current.price],['Costi totali',current.cost+current.shippingCost+current.fees],['Margine stimato',margin(current)]]){const n=make('div',label);n.append(make('strong',euro(value)));totals.append(n);}}catch{totals.textContent='Controlla gli importi.';}}
  for(const k of ['price','cost','shippingCost','fees'])inputs[k].addEventListener('input',totalsPreview);totalsPreview();
- function save(){if(closed)throw Error('Ordine chiuso: i dati sono in sola lettura.');const draft={...o};for(const k in inputs)if(!inputs[k].disabled)draft[k]=['price','cost','shippingCost','fees'].includes(k)?cents(inputs[k].value):inputs[k].value.trim();validate(draft,products);if(['productId','model','color','size','price'].some(k=>draft[k]!==o[k]))draft.payment=null;Object.assign(o,draft);persist();return o;}
- form.addEventListener('submit',e=>{e.preventDefault();try{save();render();notify('Richiesta salvata nella sessione del browser.');}catch(err){notify(err.message);}});
+ function save(){if(closed)throw Error('Ordine chiuso: i dati sono in sola lettura.');const draft={...o};for(const k in inputs)if(!inputs[k].disabled)draft[k]=['price','cost','shippingCost','fees'].includes(k)?cents(inputs[k].value):inputs[k].value.trim();validate(draft,products);if(['productId','model','color','size','price'].some(k=>draft[k]!==o[k]))draft.payment=null;Object.assign(o,draft);return o;}
+ form.addEventListener('submit',e=>{e.preventDefault();execute(async()=>{save();await persist();if(disposed)return;render();notify(store?'Richiesta salvata nel database di test.':'Richiesta salvata nella sessione del browser.');});});
  const saveBtn=make('button','Salva richiesta');saveBtn.type='submit';saveBtn.disabled=closed;form.append(fields,preview,totals,make('p','Prezzi e margini sono solo nel pannello gestori. Il margine stimato sottrae costo prodotto, spedizione e commissioni; non è un calcolo fiscale.','muted'),saveBtn);editor.append(form);
 
  if(!closed){
@@ -66,12 +71,12 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview'}
  });
  importer.append(raw,make('div',undefined,'order-actions'),review);importer.querySelector('.order-actions').append(sample,analyze);editor.insertBefore(importer,form);
  }
- const actions=make('div',undefined,'order-actions');function step(fn,text){save();fn();o.history.push({state:o.state,at:new Date().toISOString()});persist();render();notify(text);}
+ const actions=make('div',undefined,'order-actions');async function step(fn,text){save();fn();o.history.push({state:o.state,at:new Date().toISOString()});await persist();if(disposed)return;render();notify(text);}
  if(!closed){const next=STATES[STATES.indexOf(o.state)+1];if(next==='pagamento registrato')actions.append(button('Registra pagamento demo',()=>step(()=>recordPayment(o),'Pagamento fittizio registrato: nessun movimento di denaro.')));else actions.append(button('Passa a '+next,()=>step(()=>advance(o,next),'Stato aggiornato: '+next)));actions.append(button('Annulla richiesta',()=>step(()=>advance(o,'annullato'),'Richiesta annullata.'),'danger'));}
  editor.append(actions);
  const payment=make('section',undefined,'payment-preview');payment.append(make('h3','PayPal · simulazione locale'),make('p','Questa anteprima non contatta PayPal e non genera link di pagamento. Nessuna transazione reale.','muted'));
  if(o.payment)payment.append(make('p',`${o.payment.id}\n${o.payment.description}\n${euro(o.payment.amount)} · ${o.payment.currency} · ${o.payment.status}`));
- if(o.state==='preventivo')payment.append(button(o.payment?'Rigenera richiesta demo':'Genera richiesta PayPal demo',()=>{save();o.payment=paymentRequest(o);persist();render();notify('Richiesta PayPal demo creata. Ora puoi passare ad attesa pagamento.');}));editor.append(payment);
+ if(o.state==='preventivo')payment.append(button(o.payment?'Rigenera richiesta demo':'Genera richiesta PayPal demo',async()=>{save();o.payment=paymentRequest(o);await persist();if(disposed)return;render();notify('Richiesta PayPal demo creata. Ora puoi passare ad attesa pagamento.');}));editor.append(payment);
  const messages=make('details');messages.open=true;messages.append(make('summary','Messaggi WhatsApp pronti da copiare'));
  const choices=make('select');choices.setAttribute('aria-label','Tipo messaggio');for(const v of ['preventivo','richiesta dati','pagamento','aggiornamento']){const opt=make('option',v);opt.value=v;choices.append(opt);}choices.value=kind;
  const text=make('textarea');text.rows=7;text.readOnly=true;text.setAttribute('aria-label','Messaggio WhatsApp demo');text.value=kind==='richiesta dati'?dataRequest(o):whatsapp(o,kind);choices.addEventListener('change',()=>{kind=choices.value;text.value=kind==='richiesta dati'?dataRequest(o):whatsapp(o,kind);});
@@ -80,6 +85,6 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview'}
  const history=make('details');history.append(make('summary','Cronologia stati'));const ul=make('ol',undefined,'history');for(const e of o.history)ul.append(make('li',new Date(e.at).toLocaleString('it-IT')+' · '+e.state));history.append(ul);editor.append(history);
  }
  if(orders.length)selected=orders[0].id;render();
- const listener=e=>{const id=e.target.closest?.('[data-order-product]')?.dataset.orderProduct;if(id&&products.some(p=>p.id===id)){create();const o=orders[0],p=products.find(p=>p.id===id);o.productId=id;o.model=modelName(p);o.color=p.colori_disponibili?.[0]||p.color||'Da confermare';persist();render();host.closest('details')?.setAttribute('open','');host.scrollIntoView({behavior:'smooth'});}};document.addEventListener('click',listener);
- return ()=>{document.removeEventListener('click',listener);orders=[];host.replaceChildren();};
+ const listener=e=>{const id=e.target.closest?.('[data-order-product]')?.dataset.orderProduct;if(id&&products.some(p=>p.id===id))execute(async()=>{await create(id);if(disposed)return;host.closest('details')?.setAttribute('open','');host.scrollIntoView({behavior:'smooth'});});};document.addEventListener('click',listener);
+ return ()=>{disposed=true;document.removeEventListener('click',listener);orders=[];host.replaceChildren();};
 }

@@ -52,7 +52,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 <body>
 <header>
 <a href="../">OHANA STREET <small>SOLO GESTORI</small></a>
-<a class="home" href="../">Torna al sito</a>
+<span class="home">DEMO · database separato</span>
 </header>
 <main>
 <section id="login">
@@ -71,7 +71,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
   </div>
 </section>
 <section id="workspace">
-  <h1>CATALOGHI RISERVATI</h1>
+  <h1>AREA GESTORI · TEST</h1>
   <p class="muted">I collegamenti compaiono soltanto dopo autenticazione e autorizzazione sul database protetto.</p>
   <div class="actions"><button id="logout" class="secondary">Esci</button><span id="count" class="muted"></span></div>
   <details id="businessToolkit" class="business-tools"><summary>WhatsApp Business · testi pronti e organizzazione richieste</summary><div id="businessToolkitContent"></div></details>
@@ -331,7 +331,11 @@ async function showPrivate(user){
   $('#workspace').classList.add('ready');
   if(!variantsMounted){mountVariants(supabase);variantsMounted=true;}
   unmountOrders?.();
-  unmountOrders=mountOrders($('#ordersDemo'),{products,suppliers:rows,scope:user.id});
+  if(typeof document.createElement==='function'){
+   try{const {createOrderStore}=await import('./ordini-store.mjs');const store=createOrderStore(supabase);const initialOrders=await store.list();if(currentSession!==sessionEpoch)return;unmountOrders=mountOrders($('#ordersDemo'),{products,suppliers:rows,scope:user.id,store,initialOrders});}
+   catch{$('#ordersDemo').textContent='Archivio ordini di test non disponibile. Ricarica la pagina per riprovare: non sono stati usati dati locali.';}
+  }
+  $('#ordersDemoSection').open=true;
   render();
 }
 function render(){
