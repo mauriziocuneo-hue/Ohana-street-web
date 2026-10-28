@@ -28,7 +28,7 @@ export function advance(o,next){const i=STATES.indexOf(o.state);if(next==='annul
 export function recordPayment(o){if(o.state!=='attesa pagamento'||!paymentMatches(o))throw Error('Serve una richiesta demo aggiornata in attesa pagamento.');o.payment.status='registrato demo';o.payment.recordedAt=new Date().toISOString();o.state='pagamento registrato';}
 export function supplierMessages(o){
  if(!['pagamento registrato','ordinato','spedito','consegnato'].includes(o.state)||o.payment?.status!=='registrato demo'||!paymentMatches(o))throw Error('Registra prima il pagamento demo verificato.');
- if(!safeText(o.customer)||!safeText(o.address)||!safeText(o.phone)||o.phone==='NON REALE')throw Error('Completa destinatario, indirizzo e telefono fittizi prima di preparare il messaggio.');
+ const missing=missingCustomerFields(o);if(missing.length)throw Error('Dati cliente mancanti: '+missing.map(f=>f.label).join(', ')+'. Compila la sezione Dati cliente e consegna.');
  const groups=new Map();for(const i of itemsOf(o)){if(!i.supplier?.trim()||!i.photo)throw Error('Seleziona fornitore e foto esatta per ogni riga.');if(!groups.has(i.supplier))groups.set(i.supplier,[]);groups.get(i.supplier).push(i);}
  return [...groups].map(([supplier,items])=>({supplier,items,text:`[SIMULAZIONE DEMO — NON INVIARE]\nOrdine OHANA ${o.id}\nDestinatario: ${o.customer}\nIndirizzo: ${o.address}\nTelefono: ${o.phone}\n\n${items.map((i,n)=>`${n+1}. Codice OHANA: ${i.productId}\n${i.supplierCode?'Codice fornitore: '+i.supplierCode+'\n':''}${i.model}\nColore: ${i.color}\nTaglia: ${i.size}\nQuantità: ${i.quantity}\nFoto allegata: ${i.photo.split('/').pop()}`).join('\n\n')}`}));
 }
@@ -39,3 +39,5 @@ export function reopenQuote(o){if(!['attesa pagamento','pagamento registrato','o
 
 // Empty form amounts mean zero; the strict stored-money validator is unchanged.
 export function centsOrZero(value){return cents(value==null||String(value).trim()===''?'0':value);}
+
+export function missingCustomerFields(o){return [{key:'customer',label:'Nome e cognome',value:o.customer},{key:'phone',label:'Telefono cliente',value:o.phone==='NON REALE'?'':o.phone},{key:'address',label:'Indirizzo di consegna',value:o.address}].filter(f=>!safeText(f.value)).map(({key,label})=>({key,label}));}
