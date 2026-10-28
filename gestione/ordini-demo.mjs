@@ -1,6 +1,6 @@
 import {lineEditor} from './ordini-righe.mjs';
 import {parseMessage,LABELS,dataRequest,sampleMessage} from './importa-whatsapp.mjs';
-import {STATES,euro,cents,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages} from './ordini-core.mjs';
+import {STATES,euro,cents,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages,reopenQuote} from './ordini-core.mjs';
 export function mountOrders(host,{products,suppliers=[],scope='private-preview',store=null,initialOrders=[]}={}){
  const key='ohana:test:gestione-richieste-pagamenti:v1:'+scope;
  let orders=structuredClone(initialOrders),selected=null,kind='preventivo',busy=false,disposed=false;
@@ -26,6 +26,7 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview',
  renderList();editor.replaceChildren();const o=orders.find(x=>x.id===selected);if(!o){editor.append(make('h3','Dal messaggio alla consegna'),make('p','Crea una richiesta demo: scegli una scarpa OHANA, prepara il preventivo, simula PayPal e aggiorna spedizione e consegna.'));return;}
  const closed=['consegnato','annullato'].includes(o.state),commercialLocked=STATES.indexOf(o.state)>=2;
  editor.append(make('h3',o.id),make('span',o.state.toUpperCase(),'badge'));
+ if(commercialLocked&&!closed){const unlock=make('section',undefined,'payment-preview');unlock.append(make('p','Articoli e prezzi sono bloccati perché il preventivo è già stato confermato. Per aggiungere paia o modificare taglie, prezzo, sconto e ricarico, riapri il preventivo demo. Le precedenti istruzioni, l’eventuale pagamento simulato e i dati di spedizione verranno annullati; la cronologia rimane.'));unlock.append(button('Riapri preventivo demo e modifica',async()=>{reopenQuote(o);o.history.push({state:o.state,at:new Date().toISOString()});await persist();if(disposed)return;render();notify('Preventivo riaperto: ora puoi aggiungere righe e modificare articoli, prezzi, sconto e ricarico. Genera poi nuove istruzioni di pagamento demo.');}));editor.append(unlock);}
  const form=make('form'),fields=make('div',undefined,'order-fields'),inputs={};
  function field(name,label,value,{type='text',full=false,options=null,readonly=false}={}){const wrap=make('div',undefined,full?'full':'');const id='order-'+name,lab=make('label',label);lab.htmlFor=id;const n=make(options?'select':type==='textarea'?'textarea':'input');n.id=id;if(n.tagName==='INPUT')n.type=type;if(options)for(const [v,t]of options){const opt=make('option',t);opt.value=v;n.append(opt);}n.value=value??'';n.disabled=closed||readonly;if(['price','cost','shippingCost','fees'].includes(name))n.inputMode='decimal';n.maxLength=2000;wrap.append(lab,n);fields.append(wrap);inputs[name]=n;return n;}
  field('customer','Cliente (nome fittizio)',o.customer);field('phone','Riferimento WhatsApp fittizio',o.phone);

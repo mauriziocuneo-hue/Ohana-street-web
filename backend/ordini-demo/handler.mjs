@@ -1,4 +1,4 @@
-import {validate,advance,recordPayment,paymentRequest,STATES,orderFingerprint,syncLegacy} from '../../gestione/ordini-core.mjs';
+import {validate,advance,recordPayment,paymentRequest,STATES,orderFingerprint,syncLegacy,reopenQuote} from '../../gestione/ordini-core.mjs';
 const AUTH_URL='https://tqkmrejfbvzchfplgxzl.supabase.co';
 const AUTH_KEY='sb_publishable_PNYqcGwzw7oSLfbojDblZw_6VkpC8zI';
 export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch}){
@@ -46,7 +46,7 @@ export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch}){
    const old=previous.payload;if(['annullato','consegnato'].includes(old.state))return out(409,{error:'Ordine chiuso: modifica non consentita.'});
    if(STATES.indexOf(old.state)>=2&&orderFingerprint(clean)!==orderFingerprint(old))return out(400,{error:'Dati commerciali bloccati dopo il preventivo.'});
    try{
-    if(clean.state!==old.state){const draft={...clean,state:old.state,payment:old.payment?structuredClone(old.payment):null};if(clean.state==='pagamento registrato')recordPayment(draft);else advance(draft,clean.state);clean.payment=draft.payment;clean.history=[...old.history,{state:clean.state,at:new Date().toISOString()}];}
+    if(clean.state!==old.state){const draft={...clean,state:old.state,payment:old.payment?structuredClone(old.payment):null};if(clean.state==='preventivo'&&old.state!=='richiesta')reopenQuote(draft);else if(clean.state==='pagamento registrato')recordPayment(draft);else advance(draft,clean.state);clean.payment=draft.payment;if(clean.state==='preventivo'){clean.carrier=draft.carrier;clean.tracking=draft.tracking;}clean.history=[...old.history,{state:clean.state,at:new Date().toISOString()}];}
     else{clean.history=old.history;if(old.state==='preventivo')clean.payment=clean.payment?paymentRequest(clean):null;else clean.payment=old.payment;}
    }catch{return out(400,{error:'Passaggio di stato non valido o dati mancanti.'});}
   }
