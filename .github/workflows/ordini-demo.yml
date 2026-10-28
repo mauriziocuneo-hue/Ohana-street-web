@@ -2,7 +2,7 @@ name: Richieste e ordini - demo isolata
 on:
   push:
     branches: [test/gestione-richieste-pagamenti]
-    paths: ['gestione/**', 'tests/ordini-demo.test.mjs', 'tests/importa-whatsapp.test.mjs', 'tests/ordini-db.test.mjs', 'tests/ordini-flusso.test.mjs', 'backend/ordini-demo/**', 'tests/gestori-link.test.js', 'tools/build_orders_demo.py', '.github/workflows/ordini-demo.yml']
+    paths: ['gestione/**', 'tests/ordini-demo.test.mjs', 'tests/importa-whatsapp.test.mjs', 'tests/ordini-db.test.mjs', 'tests/ordini-flusso.test.mjs', 'tests/ordini-condividi.test.mjs', 'backend/ordini-demo/**', 'tests/gestori-link.test.js', 'tools/build_orders_demo.py', '.github/workflows/ordini-demo.yml']
 permissions:
   contents: read
 jobs:
@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test tests/ordini-demo.test.mjs tests/importa-whatsapp.test.mjs tests/ordini-db.test.mjs tests/ordini-flusso.test.mjs
+      - run: node --test tests/ordini-demo.test.mjs tests/importa-whatsapp.test.mjs tests/ordini-db.test.mjs tests/ordini-flusso.test.mjs tests/ordini-condividi.test.mjs
       - run: node tests/gestori-link.test.js
       - run: python3 tools/build_orders_demo.py "$RUNNER_TEMP/ohana-demo"

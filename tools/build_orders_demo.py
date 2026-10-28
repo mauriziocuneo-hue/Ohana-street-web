@@ -7,7 +7,7 @@ if dest==root or root in dest.parents:
     raise SystemExit('Choose a destination outside the OHANA checkout.')
 dest.mkdir(parents=True,exist_ok=True)
 (dest/'gestione').mkdir(exist_ok=True)
-files=['richieste-demo.html','richieste-demo.mjs','demo-shell.css','ordini-demo.css','ordini-demo.mjs','ordini-core.mjs','importa-whatsapp.mjs','index.html','config.js','ordini-store.mjs','ordini-righe.mjs']
+files=['richieste-demo.html','richieste-demo.mjs','demo-shell.css','ordini-demo.css','ordini-demo.mjs','ordini-core.mjs','importa-whatsapp.mjs','index.html','config.js','ordini-store.mjs','ordini-righe.mjs','ordini-condividi.mjs']
 for name in files: shutil.copy2(root/'gestione'/name,dest/'gestione'/name)
 for name in ['catalogo.json','catalogo-nuovo.json','favicon.svg']: shutil.copy2(root/name,dest/name)
 # Only images referenced by the existing catalogs. No new product database.
