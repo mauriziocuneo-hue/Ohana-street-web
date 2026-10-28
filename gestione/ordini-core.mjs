@@ -36,3 +36,6 @@ export function whatsapp(o,kind='aggiornamento'){const intro=`[SIMULAZIONE DEMO 
 export function seed(p){return {id:'DEMO-0001',customer:'Cliente Esempio',phone:'NON REALE',source:'Ciao! Vorrei questa scarpa, taglia 42. È disponibile?',productId:p.id,model:modelName(p),color:p.colori_disponibili?.[0]||p.color||'Da confermare',size:'42',price:12000,cost:6500,shippingCost:800,fees:0,supplier:'Fornitore DEMO A',quoteMode:'manual',markupBps:4000,discount:0,paymentMethod:'paypal',address:'Cliente Esempio — Via di Test 1, 00000 Città Demo',carrier:'',tracking:'',state:'richiesta',payment:null,history:[{state:'richiesta',at:new Date().toISOString()}]};}
 
 export function reopenQuote(o){if(!['attesa pagamento','pagamento registrato','ordinato','spedito'].includes(o.state))throw Error('Puoi riaprire soltanto un ordine demo attivo dopo il preventivo.');o.state='preventivo';o.payment=null;o.carrier='';o.tracking='';return o;}
+
+// Empty form amounts mean zero; the strict stored-money validator is unchanged.
+export function centsOrZero(value){return cents(value==null||String(value).trim()===''?'0':value);}
