@@ -322,7 +322,7 @@ async function showPrivate(user){
     const trialResponse=await fetch('../catalogo-nuovo.json',{cache:'no-store'});
     if(trialResponse.ok){
       const trial=await trialResponse.json();
-      if(trial.version===1&&Array.isArray(trial.products))products.push(...trial.products.map(p=>({id:p.id,brand:p.brand,model:(p.name||p.family)+' — '+p.color,image:p.image,genere:'Scarpe',sottogenere:p.type})));
+      if(trial.version===1&&Array.isArray(trial.products))products.push(...trial.products.map(p=>({id:p.id,brand:p.brand,model:(p.name||p.family)+' — '+p.color,image:p.image,images:p.images,color:p.color,colori_disponibili:[p.color],genere:'Scarpe',sottogenere:p.type})));
     }
     products=[...new Map(products.map(p=>[p.id,p])).values()];
   }catch(e){message('Impossibile caricare catalogo.json.');return;}

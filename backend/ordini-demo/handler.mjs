@@ -1,4 +1,4 @@
-import {validate,advance,recordPayment,paymentRequest,STATES} from '../../gestione/ordini-core.mjs';
+import {validate,advance,recordPayment,paymentRequest,STATES,orderFingerprint,syncLegacy} from '../../gestione/ordini-core.mjs';
 const AUTH_URL='https://tqkmrejfbvzchfplgxzl.supabase.co';
 const AUTH_KEY='sb_publishable_PNYqcGwzw7oSLfbojDblZw_6VkpC8zI';
 export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch}){
@@ -31,10 +31,12 @@ export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch}){
   if(body.action!=='save')return out(400,{error:'Operazione non consentita'});
   const order=body.order;try{validate(order,products);}catch{return out(400,{error:'Dati ordine non validi'});}
   if(!/^DEMO-[A-F0-9]{8,32}$/.test(order.id)||!Number.isInteger(body.revision)||body.revision<0)return out(400,{error:'Riferimento ordine non valido'});
-  const allowed=['id','customer','phone','email','source','productId','model','color','size','price','cost','shippingCost','fees','supplier','address','carrier','tracking','state','payment','history','customerDecision'];
+  const allowed=['id','customer','phone','email','source','productId','model','color','size','price','cost','shippingCost','fees','supplier','address','carrier','tracking','state','payment','history','customerDecision','items','quoteMode','markupBps','discount','paymentMethod'];
   const clean=Object.fromEntries(allowed.filter(k=>Object.hasOwn(order,k)).map(k=>[k,order[k]]));
+  if(clean.items)clean.items=clean.items.map(i=>Object.fromEntries(['productId','model','color','size','quantity','unitCost','supplier','supplierCode','photo'].filter(k=>Object.hasOwn(i,k)).map(k=>[k,i[k]])));
+  syncLegacy(clean);
   if(allowed.some(k=>typeof clean[k]==='string'&&clean[k].length>(k==='source'?12000:2000))||!Array.isArray(clean.history)||clean.history.length>100)return out(400,{error:'Dati ordine troppo lunghi'});
-  if(clean.payment&&(!String(clean.payment.id).startsWith('DEMO-PAY-')||clean.payment.currency!=='EUR'||!['simulata','registrato demo'].includes(clean.payment.status)))return out(400,{error:'Sono consentiti soltanto pagamenti demo'});
+  if(clean.payment&&(!/^DEMO-(PAY|BANK)-/.test(String(clean.payment.id))||clean.payment.currency!=='EUR'||!['simulata','registrato demo'].includes(clean.payment.status)))return out(400,{error:'Sono consentiti soltanto pagamenti demo'});
   // Validate workflow on the server too; the UI alone is not authoritative.
   if(body.revision===0){if(clean.state!=='richiesta'||clean.payment)return out(400,{error:'Una nuova richiesta deve iniziare senza pagamento.'});clean.history=[{state:'richiesta',at:new Date().toISOString()}];}
   else{
@@ -42,7 +44,7 @@ export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch}){
    if(!previousResponse.ok)return out(503,{error:'Impossibile verificare la revisione.'});
    const previous=(await previousResponse.json())[0];if(!previous||previous.revision!==body.revision)return out(409,{error:'Ordine modificato. Aggiorna l’elenco prima di riprovare.'});
    const old=previous.payload;if(['annullato','consegnato'].includes(old.state))return out(409,{error:'Ordine chiuso: modifica non consentita.'});
-   if(STATES.indexOf(old.state)>=2&&['productId','model','color','size','price'].some(k=>clean[k]!==old[k]))return out(400,{error:'Dati commerciali bloccati dopo il preventivo.'});
+   if(STATES.indexOf(old.state)>=2&&orderFingerprint(clean)!==orderFingerprint(old))return out(400,{error:'Dati commerciali bloccati dopo il preventivo.'});
    try{
     if(clean.state!==old.state){const draft={...clean,state:old.state,payment:old.payment?structuredClone(old.payment):null};if(clean.state==='pagamento registrato')recordPayment(draft);else advance(draft,clean.state);clean.payment=draft.payment;clean.history=[...old.history,{state:clean.state,at:new Date().toISOString()}];}
     else{clean.history=old.history;if(old.state==='preventivo')clean.payment=clean.payment?paymentRequest(clean):null;else clean.payment=old.payment;}

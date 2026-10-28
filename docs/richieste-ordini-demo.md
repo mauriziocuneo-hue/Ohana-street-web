@@ -50,3 +50,16 @@ Il parser cerca etichette esplicite; nel testo libero riconosce soltanto codice 
 Con linkedom 0.18.12: `node --test tests/gestione-varianti.test.cjs tests/gestione-foto.test.cjs`.
 
 `python3 tools/build_orders_demo.py /percorso/esterno/dist` prepara solo l'area gestori, cataloghi e risorse necessari per l'anteprima. Include esclusivamente configurazione Auth pubblica, nessuna chiave server o dato fornitore privato. Il confezionamento Pages di produzione non è cambiato: una futura integrazione richiede revisione esplicita della sua allowlist. Questa versione rimane demo.
+
+
+## Flusso vendita esteso — 28 ottobre 2026
+
+Ogni ordine può contenere da 1 a 20 righe: prodotto OHANA, modello, colore, taglia, quantità da 1 a 20, costo unitario, fornitore, suo codice facoltativo e foto scelta dalle fotografie già presenti nel catalogo. Il fornitore reale è raggruppato per hostname degli album già protetti; i fornitori demo restano disponibili. Non vengono importati nuovi URL privati nel DB. Le vecchie richieste senza array `items` vengono lette come una riga, senza migrazioni o riscritture in massa.
+
+Il prezzo può essere concordato manualmente come totale finale oppure calcolato con ricarico. Base = somma costi unitari × quantità + spedizione + commissioni. Prezzo = base + ricarico percentuale sulla base − sconto fisso. Gli importi vengono arrotondati ai centesimi; ricarico e margine sul prezzo finale sono mostrati separatamente. Per esempio 60 € prodotto + 10 € spedizione, ricarico 40%, sconto 8 € => totale 90 €, guadagno stimato 20 €. Nel prezzo manuale lo sconto è già incluso nel totale scelto, non viene sottratto di nuovo.
+
+Il metodo può essere PayPal o bonifico, entrambi solo demo. Le istruzioni contengono numero ordine e totale; non viene generato un IBAN utilizzabile o un link PayPal reale. Registrare il pagamento richiede di spuntare la verifica dell'accredito simulato. Modificare paia, taglie, quantità, metodo o totale invalida le istruzioni prima dell'attesa pagamento. Dal passaggio ad attesa pagamento i dati commerciali restano bloccati anche sul server.
+
+Dopo pagamento registrato, la sezione **Messaggi per il fornitore** genera un testo per ciascun fornitore, con destinatario, indirizzo, telefono, codice ordine, articoli, colori, taglie, quantità e nomi dei file foto da allegare. Occorre completare telefono, indirizzo, fornitori e foto. Non include prezzo al cliente, ricarico o margine. **Copia messaggio** copia il testo e **Scarica foto** scarica ogni fotografia scelta: il gestore controlla e allega manualmente tutto alla chat corretta. Non viene inviato alcun messaggio. Il riepilogo cliente elenca tutte le righe, ma l'importazione guidata di dati prodotto continua ad agire soltanto sulla prima riga; righe multiple o ambigue richiedono controllo manuale.
+
+Test: `node --test tests/ordini-flusso.test.mjs`. La lista pubblica di ID ammessi sul server contiene anche i percorsi delle foto del catalogo per validare l'appartenenza della foto al prodotto. Lo schema DB rimane invariato.
