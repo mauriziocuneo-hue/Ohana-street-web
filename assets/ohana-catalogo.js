@@ -58,11 +58,22 @@
     return `<article class="card"><div class="card-visual"><button type="button" class="card-cover" data-open="${esc(p.id)}" aria-label="${many?'Scegli il colore di':'Apri'} ${esc(p.brand+' '+title)}"><img src="${esc(p.image)}" loading="lazy" decoding="async" alt="${esc(p.brand+' '+title+' · '+p.color)}"><span class="photo-count">${many?variants.length+' varianti':p.photos.length+' foto'}</span></button><button type="button" class="save-button" data-save="${esc(p.id)}" aria-label="${saved.has(p.id)?'Rimuovi dalle scelte':'Salva'} ${esc(p.brand+' '+title+' · '+p.color)}" aria-pressed="${saved.has(p.id)}">${saved.has(p.id)?'♥':'♡'}</button></div><div class="card-info"><div class="card-brand">${esc(p.brand)} · ${esc(p.type)}</div><h3 class="display">${esc(title)}</h3><p class="card-color">${many?'In foto: ':''}${esc(p.color)}</p><p class="card-code">${p.code?'Modello '+esc(p.code)+'<br>':''}${esc(p.id)}</p><button type="button" class="card-open" data-open="${esc(p.id)}">${many?'Scegli il colore':'Esplora la scarpa'} <span aria-hidden="true">↗</span></button></div></article>`;
   }
   function tree(){
-    const brands=[...new Set(products.map(p=>p.brand))].sort((a,b)=>a.localeCompare(b,'it'));
+    // Calcola la struttura una sola volta: con migliaia di articoli
+    // evita filtri ripetuti su tutto il catalogo per ogni marchio.
+    const byBrand=new Map();
+    for(const p of products){
+      if(!byBrand.has(p.brand))byBrand.set(p.brand,{items:[],families:new Map()});
+      const entry=byBrand.get(p.brand);
+      entry.items.push(p);
+      entry.families.set(p.family,(entry.families.get(p.family)||0)+1);
+    }
+    const brands=[...byBrand.keys()].sort((a,b)=>a.localeCompare(b,'it'));
     const opened=new Set([...$('#categoryTree').querySelectorAll('details[open]')].map(d=>d.dataset.brandGroup));
-    $('#categoryTree').innerHTML=`<button type="button" data-brand="" data-family="" ${!state.brand?'aria-current="true"':''}>Tutti i modelli</button>`+brands.map(b=>{
-      const list=products.filter(p=>p.brand===b),families=[...new Set(list.map(p=>p.family))].sort((a,b)=>a.localeCompare(b,'it'));
-      return `<details data-brand-group="${esc(b)}" ${state.brand===b||opened.has(b)?'open':''}><summary>${esc(b)} · ${shopping.groupProducts(list).length} ${shopping.groupProducts(list).length===1?'scheda':'schede'}</summary><button class="family-link" type="button" data-brand="${esc(b)}" data-family="" ${state.brand===b&&!state.family?'aria-current="true"':''}>Tutti i modelli</button>${families.map(f=>`<button class="family-link" type="button" data-brand="${esc(b)}" data-family="${esc(f)}" ${state.brand===b&&state.family===f?'aria-current="true"':''}>${esc(f)}<span>${list.filter(p=>p.family===f).length}</span></button>`).join('')}</details>`;
+    $('#categoryTree').innerHTML=`<button type="button" data-brand="" data-family="" ${!state.brand?'aria-current="true"':''}>Tutti i modelli</button>`+brands.map(brand=>{
+      const entry=byBrand.get(brand);
+      const families=[...entry.families.keys()].sort((a,b)=>a.localeCompare(b,'it'));
+      const count=shopping.groupProducts(entry.items).length;
+      return `<details data-brand-group="${esc(brand)}" ${state.brand===brand||opened.has(brand)?'open':''}><summary>${esc(brand)} · ${count} ${count===1?'scheda':'schede'}</summary><button class="family-link" type="button" data-brand="${esc(brand)}" data-family="" ${state.brand===brand&&!state.family?'aria-current="true"':''}>Tutti i modelli</button>${families.map(f=>`<button class="family-link" type="button" data-brand="${esc(brand)}" data-family="${esc(f)}" ${state.brand===brand&&state.family===f?'aria-current="true"':''}>${esc(f)}<span>${entry.families.get(f)}</span></button>`).join('')}</details>`;
     }).join('');
   }
   function render(){
