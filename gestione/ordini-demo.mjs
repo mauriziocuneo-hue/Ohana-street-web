@@ -1,7 +1,7 @@
 import {prepareOrderPhotos,canShareOrder,shareOrder,copyPhoto} from './ordini-condividi.mjs';
 import {lineEditor} from './ordini-righe.mjs';
 import {parseMessage,LABELS,dataRequest,sampleMessage} from './importa-whatsapp.mjs';
-import {STATES,euro,cents,centsOrZero,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages,reopenQuote,missingCustomerFields} from './ordini-core.mjs';
+import {STATES,euro,cents,centsOrZero,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages,reopenQuote,missingCustomerFields,buyerSurname,orderLabel,orderLists} from './ordini-core.mjs';
 export function mountOrders(host,{products,suppliers=[],scope='private-preview',store=null,initialOrders=[],mode='demo'}={}){
  const live=mode==='live';if(live&&!store)throw Error('Archivio operativo non disponibile. Nessun salvataggio locale consentito.');
  const display=value=>{if(!live)return value;let text=String(value);if(text.startsWith('OHANA-'))return text;
@@ -22,26 +22,32 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview',
  async function persist(){if(disposed)throw Error('Sessione terminata.');if(store){const i=orders.findIndex(o=>o.id===selected);if(i<0)throw Error('Richiesta non selezionata');const saved=await store.save(orders[i]);if(disposed)return;Object.assign(orders[i],saved);}else{sessionStorage.setItem(key,JSON.stringify(orders));}}
  if(!store)try{const saved=JSON.parse(sessionStorage.getItem(key)||'[]');if(Array.isArray(saved)){for(const o of saved){validate(o,products);if(!/^DEMO-[0-9a-f-]+$/i.test(o.id)||!Array.isArray(o.history))throw Error('Archivio demo non valido');}orders=saved;}}catch{orders=[];}
  async function create(productId){const p=products.find(p=>p.id===productId)||products[0],o=seed(p,live?'live':'demo');o.id=(live?'OHANA-':'DEMO-')+Array.from(crypto.getRandomValues(new Uint8Array(8)),n=>n.toString(16).padStart(2,'0')).join('').toUpperCase();orders.unshift(o);selected=o.id;await persist();if(disposed)return;render();notify(store?'Richiesta demo creata e salvata nel database di test.':'Richiesta demo creata. Modifica i dati e salva.');}
- aside.append(make('h3','Le richieste'),button('＋ Nuova richiesta demo',()=>create()),find,list);
+ const archiveMenu=make('details'),archiveSummary=make('summary'),archiveList=make('div',undefined,'order-list'),activeHeading=make('h3','Ordini attivi');archiveMenu.append(archiveSummary,archiveList);
+ aside.append(activeHeading,button('＋ Nuova richiesta demo',()=>create()),find,list,archiveMenu);
  if(store){aside.append(button('Aggiorna elenco',async()=>{orders=await store.list();if(!orders.some(o=>o.id===selected))selected=orders[0]?.id||null;render();notify('Elenco aggiornato dal database di test.');}),button('Esporta archivio demo',()=>{const blob=new Blob([JSON.stringify(orders,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=make('a');a.href=url;a.download=live?'ohana-ordini.json':'ohana-ordini-demo.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Esportazione dell’archivio demo preparata.');}));}
  else aside.append(button('Azzera dati demo',async()=>{if(!confirm('Eliminare tutte le richieste demo di questa sessione?'))return;orders=[];selected=null;sessionStorage.removeItem(key);render();notify('Dati demo eliminati.');},'danger'));
  layout.append(aside,editor);host.replaceChildren(title,banner,layout,status);find.addEventListener('input',renderList);
- function renderList(){list.replaceChildren();for(const o of orders.filter(o=>(o.id+' '+o.customer+' '+o.productId).toLowerCase().includes(find.value.toLowerCase()))){const b=button(`${o.id} · ${o.customer}\n${o.productId} · ${o.state}`,()=>{selected=o.id;render();});b.setAttribute('aria-current',String(selected===o.id));list.append(b);}if(!list.childElementCount)list.append(make('p','Nessuna richiesta. Crea un ordine demo per iniziare.'));}
+ function renderList(){
+ list.replaceChildren();archiveList.replaceChildren();const groups=orderLists(orders,find.value);
+ activeHeading.textContent='Ordini attivi ('+orders.filter(o=>o.archived!==true).length+')';archiveSummary.textContent='Ordini archiviati ('+orders.filter(o=>o.archived===true).length+')';
+ for(const [target,rows]of [[list,groups.active],[archiveList,groups.archived]]){for(const o of rows){const b=button(`${orderLabel(o)}\n${o.state}`,()=>{selected=o.id;render();});b.setAttribute('aria-current',String(selected===o.id));target.append(b);}if(!rows.length)target.append(make('p',find.value?'Nessun ordine corrispondente.':target===list?'Nessun ordine attivo.':'Nessun ordine archiviato.'));}
+ }
+
  function render(){
  if(disposed)return;
  renderList();editor.replaceChildren();const o=orders.find(x=>x.id===selected);if(!o){editor.append(make('h3','Dal messaggio alla consegna'),make('p','Crea una richiesta demo: scegli una scarpa OHANA, prepara il preventivo, simula PayPal e aggiorna spedizione e consegna.'));return;}
- const closed=['consegnato','annullato'].includes(o.state),commercialLocked=STATES.indexOf(o.state)>=2;
- editor.append(make('h3',o.id),make('span',o.state.toUpperCase(),'badge'));
+ const closed=o.archived===true||['consegnato','annullato'].includes(o.state),commercialLocked=STATES.indexOf(o.state)>=2;
+ editor.append(make('h3',orderLabel(o)),make('span',o.state.toUpperCase(),'badge'));if(o.archived===true)editor.append(make('p','Ordine archiviato · sola lettura. Ripristinalo per riportarlo tra gli ordini attivi.','notice'));
  if(commercialLocked&&!closed&&(!live||o.state==='attesa pagamento')){const unlock=make('section',undefined,'payment-preview');unlock.append(make('p','Articoli e prezzi sono bloccati perché il preventivo è già stato confermato. Per aggiungere paia o modificare taglie, prezzo, sconto e ricarico, riapri il preventivo demo. Le precedenti istruzioni, l’eventuale pagamento simulato e i dati di spedizione verranno annullati; la cronologia rimane.'));unlock.append(button('Riapri preventivo demo e modifica',async()=>{reopenQuote(o);o.history.push({state:o.state,at:new Date().toISOString()});await persist();if(disposed)return;render();notify('Preventivo riaperto: ora puoi aggiungere righe e modificare articoli, prezzi, sconto e ricarico. Genera poi nuove istruzioni di pagamento demo.');}));editor.append(unlock);}
  const form=make('form'),fields=make('div',undefined,'order-fields'),inputs={};
  function field(name,label,value,{type='text',full=false,options=null,readonly=false}={}){const wrap=make('div',undefined,full?'full':'');const id='order-'+name,lab=make('label',label);lab.htmlFor=id;const n=make(options?'select':type==='textarea'?'textarea':'input');n.id=id;if(n.tagName==='INPUT')n.type=type;if(options)for(const [v,t]of options){const opt=make('option',t);opt.value=v;n.append(opt);}n.value=value??'';n.disabled=closed||readonly;if(['price','cost','shippingCost','fees','discount','markupBps'].includes(name)){n.inputMode='decimal';if(!n.value.trim())n.value='0';n.addEventListener('blur',()=>{if(!n.value.trim()){n.value=name==='markupBps'?'0':'0.00';n.dispatchEvent(new Event('input',{bubbles:true}));}});}n.maxLength=2000;wrap.append(lab,n);fields.append(wrap);inputs[name]=n;return n;}
  fields.append(make('h3','Dati cliente e consegna','full'),make('p','Inserisci qui i dati fittizi del destinatario. Puoi completarli anche dopo il pagamento demo; saranno riportati nel messaggio per il fornitore.','full muted'));
- field('customer','Nome e cognome del destinatario · fittizi',o.customer);field('phone','Telefono cliente · fittizio',o.phone);
+ field('customer','Nome e cognome del destinatario · fittizi',o.customer);field('phone','Telefono cliente · fittizio',o.phone);field('customerSurname','Cognome acquirente · facoltativo, per l’elenco',o.customerSurname||'').placeholder=buyerSurname(o);
  field('address','Indirizzo di consegna · via e civico, CAP, città, provincia, paese',o.address,{full:true,type:'textarea'}).placeholder='Via Esempio 10\n00000 Città Demo (XX)\nItalia';
  field('email','Email cliente · facoltativa',o.email);field('customerDecision','Risposta cliente · non cambia lo stato ordine',o.customerDecision||'non indicata',{options:[['non indicata','Non indicata'],['sì','Sì, vuole procedere'],['no','No, rinuncia']]});
  field('source','Messaggio WhatsApp ricevuto · incolla una richiesta fittizia',o.source,{type:'textarea',full:true});
  fields.append(make('h3','Articoli richiesti','full'));const lineHost=make('div',undefined,'full');fields.append(lineHost);let lines;
- lines=lineEditor(lineHost,{order:o,products,suppliers,locked:commercialLocked,onChange:()=>totalsPreview()});
+ lines=lineEditor(lineHost,{order:o,products,suppliers,locked:commercialLocked||closed,onChange:()=>totalsPreview()});if(o.archived===true)for(const n of lineHost.querySelectorAll('input,select,textarea,button'))n.disabled=true;
  for(const k of ['productId','model','color','size','supplier'])inputs[k]=lines.firstInputs[k];
  fields.append(make('h3','Preventivo e pagamento','full'));field('quoteMode','Come calcolare il prezzo',o.quoteMode||'manual',{options:[['manual','Totale finale manuale · sconto già incluso'],['markup','Costi + ricarico − sconto']],readonly:commercialLocked});
  field('markupBps','Ricarico sui costi %',(o.markupBps??0)/100,{readonly:commercialLocked});field('discount','Sconto sul prezzo calcolato €',((o.discount||0)/100).toFixed(2),{readonly:commercialLocked});
@@ -88,10 +94,16 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview',
  }
  const actions=make('div',undefined,'order-actions');async function step(fn,text){save();fn();o.history.push({state:o.state,at:new Date().toISOString()});await persist();if(disposed)return;render();notify(text);}
  if(!closed){const next=STATES[STATES.indexOf(o.state)+1];if(next==='pagamento registrato'){const ackLabel=make('label',undefined,'import-choice'),ack=make('input');ack.type='checkbox';ackLabel.append(ack,make('span','Ho verificato l’accredito simulato di '+euro(o.price)+' tramite '+(paymentMethod(o)==='paypal'?'PayPal':'bonifico')));editor.append(ackLabel);actions.append(button('Registra pagamento demo',()=>{if(!ack.checked)throw Error('Conferma la verifica dell’accredito simulato.');return step(()=>recordPayment(o),'Pagamento fittizio registrato: nessun movimento di denaro.');}));}else actions.append(button('Passa a '+next,()=>step(()=>advance(o,next),'Stato aggiornato: '+next)));actions.append(button('Annulla richiesta',()=>step(()=>advance(o,'annullato'),'Richiesta annullata.'),'danger'));}
- editor.append(actions);if(live)editor.append(make('p','Annullare una richiesta non esegue alcun rimborso: eventuali restituzioni vanno gestite sul metodo di pagamento utilizzato.','muted'));
+ actions.append(button(o.archived===true?'Ripristina ordine':'Archivia ordine',async()=>{
+ const archive=o.archived!==true;
+ if(!closed){save();await persist();if(disposed)return;}
+ const saved=store?await store.setArchived(o,archive):{...o,archived:archive,archivedAt:archive?new Date().toISOString():null};
+ if(disposed)return;Object.assign(o,saved);if(!store)sessionStorage.setItem(key,JSON.stringify(orders));
+ if(archive){selected=null;archiveMenu.open=true;}render();notify(archive?'Ordine archiviato. Lo trovi nel sottomenu Ordini archiviati.':'Ordine ripristinato nell’elenco attivo.');
+ }));editor.append(actions);if(live)editor.append(make('p','Annullare una richiesta non esegue alcun rimborso: eventuali restituzioni vanno gestite sul metodo di pagamento utilizzato.','muted'));
  const payment=make('section',undefined,'payment-preview');payment.append(make('h3','Pagamento · simulazione locale'),make('p','PayPal e bonifico sono simulati. Non vengono generati link, IBAN utilizzabili o transazioni reali.','muted'));
  if(o.payment)payment.append(make('p',`${o.payment.id}\n${o.payment.description}\n${euro(o.payment.amount)} · ${o.payment.currency} · ${o.payment.status}`));
- if(o.state==='preventivo')payment.append(button(o.payment?'Rigenera istruzioni demo':'Genera istruzioni di pagamento demo',async()=>{save();o.payment=paymentRequest(o);await persist();if(disposed)return;render();notify('Istruzioni di pagamento demo create. Ora puoi passare ad attesa pagamento.');}));editor.append(payment);
+ if(!closed&&o.state==='preventivo')payment.append(button(o.payment?'Rigenera istruzioni demo':'Genera istruzioni di pagamento demo',async()=>{save();o.payment=paymentRequest(o);await persist();if(disposed)return;render();notify('Istruzioni di pagamento demo create. Ora puoi passare ad attesa pagamento.');}));editor.append(payment);
  const messages=make('details');messages.open=true;messages.append(make('summary','Messaggi WhatsApp pronti da copiare'));
  const choices=make('select');choices.setAttribute('aria-label','Tipo messaggio');for(const v of ['preventivo','richiesta dati','pagamento','aggiornamento']){const opt=make('option',v);opt.value=v;choices.append(opt);}choices.value=kind;
  const text=make('textarea');text.rows=7;text.readOnly=true;text.setAttribute('aria-label',display('Messaggio WhatsApp demo'));choices.addEventListener('change',()=>{kind=choices.value;refreshMessages();});
@@ -109,7 +121,7 @@ export function mountOrders(host,{products,suppliers=[],scope='private-preview',
  form.addEventListener('input',refreshMessages);form.addEventListener('change',refreshMessages);refreshMessages();editor.append(supplierPanel);
  const history=make('details');history.append(make('summary','Cronologia stati'));const ul=make('ol',undefined,'history');for(const e of o.history)ul.append(make('li',new Date(e.at).toLocaleString('it-IT')+' · '+e.state));history.append(ul);editor.append(history);
  }
- if(orders.length)selected=orders[0].id;render();
+ selected=orders.find(o=>o.archived!==true)?.id||null;render();
  const listener=e=>{const id=e.target.closest?.('[data-order-product]')?.dataset.orderProduct;if(id&&products.some(p=>p.id===id))execute(async()=>{await create(id);if(disposed)return;host.closest('details')?.setAttribute('open','');host.scrollIntoView({behavior:'smooth'});});};document.addEventListener('click',listener);
  return ()=>{disposed=true;document.removeEventListener('click',listener);orders=[];host.replaceChildren();};
 }
