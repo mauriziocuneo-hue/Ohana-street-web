@@ -16,6 +16,7 @@ function paymentMatches(o){if(o.payment?.fingerprint===orderFingerprint(o)&&(!is
 const safeText=s=>typeof s==='string'&&s.trim().length>0&&s.length<=2000;
 export function validate(o,products){
  if(o.environment!==undefined&&!['live','demo'].includes(o.environment))throw Error('Ambiente ordine non valido.');if(o.paymentInstructions!==undefined&&(typeof o.paymentInstructions!=='string'||o.paymentInstructions.length>2000))throw Error('Istruzioni di pagamento non valide.');
+ if(o.customerSurname!==undefined&&(typeof o.customerSurname!=='string'||o.customerSurname.length>2000))throw Error('Cognome non valido.');
  if(!safeText(o.customer))throw Error('Indica nome e cognome fittizi del destinatario.');
  const items=itemsOf(o);if(items.length<1||items.length>20)throw Error('Inserisci da 1 a 20 righe prodotto.');
  for(const i of items){const product=products.find(p=>p.id===i.productId);if(!product)throw Error('Seleziona un prodotto OHANA dal catalogo.');for(const k of ['model','color','size'])if(!safeText(i[k]))throw Error('Completa modello, colore e taglia di ogni paio.');if(!Number.isInteger(i.quantity)||i.quantity<1||i.quantity>20)throw Error('Quantità ammessa da 1 a 20 per riga.');if(!Number.isSafeInteger(i.unitCost)||i.unitCost<0)throw Error('Costo unitario non valido.');for(const k of ['supplier','supplierCode'])if(i[k]!==undefined&&(typeof i[k]!=='string'||i[k].length>2000))throw Error('Dati fornitore non validi.');if(i.photo){if(!/^assets\/products\/[\w.-]+\.(jpe?g|webp|png)$/i.test(i.photo))throw Error('Foto non valida.');const photos=product.images||[product.image].filter(Boolean);if(photos.length&&!photos.includes(i.photo))throw Error('La foto non appartiene al prodotto selezionato.');}}
@@ -44,3 +45,8 @@ export function reopenQuote(o){if(isLive(o)&&o.state!=='attesa pagamento')throw 
 export function centsOrZero(value){return cents(value==null||String(value).trim()===''?'0':value);}
 
 export function missingCustomerFields(o){return [{key:'customer',label:'Nome e cognome',value:o.customer},{key:'phone',label:'Telefono cliente',value:o.phone==='NON REALE'?'':o.phone},{key:'address',label:'Indirizzo di consegna',value:o.address}].filter(f=>!safeText(f.value)).map(({key,label})=>({key,label}));}
+
+// Archive membership is independent of the commercial workflow.
+export function buyerSurname(o){const explicit=typeof o.customerSurname==='string'?o.customerSurname.trim():'';if(explicit)return explicit;const parts=String(o.customer||'').trim().split(/\s+/);return parts.length>1?parts.slice(1).join(' '):parts[0]||'Cliente da completare';}
+export const orderLabel=o=>`${o.id} · ${buyerSurname(o)}`;
+export function orderLists(orders,search=''){const q=search.trim().toLocaleLowerCase('it');const matches=orders.filter(o=>[o.id,o.customer,o.customerSurname,o.productId].join(' ').toLocaleLowerCase('it').includes(q));return {active:matches.filter(o=>o.archived!==true),archived:matches.filter(o=>o.archived===true)};}

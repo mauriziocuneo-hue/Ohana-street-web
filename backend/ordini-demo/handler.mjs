@@ -29,10 +29,21 @@ export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch,mode='demo'
    const r=await fetcher(dbUrl+'/rest/v1/'+table+'?select=id,payload,revision,updated_at&order=id.asc&limit=250&offset='+offset,{headers:dbHeaders});
    if(!r.ok)return out(503,{error:'Archivio temporaneamente non disponibile'});return out(200,{rows:await r.json()});
   }
+  if(body.action==='archive'){
+   if(!(live?/^OHANA-[A-F0-9]{8,32}$/:/^DEMO-[A-F0-9]{8,32}$/).test(body.id||'')||typeof body.archived!=='boolean'||!Number.isInteger(body.revision)||body.revision<1)return out(400,{error:'Archiviazione non valida.'});
+   const previousResponse=await fetcher(dbUrl+'/rest/v1/'+table+'?select=payload,revision&id=eq.'+encodeURIComponent(body.id),{headers:dbHeaders});
+   if(!previousResponse.ok)return out(503,{error:'Impossibile verificare la revisione.'});
+   const previous=(await previousResponse.json())[0];if(!previous||previous.revision!==body.revision)return out(409,{error:'Ordine modificato. Aggiorna l’elenco prima di riprovare.'});
+   if(live?previous.payload.environment!=='live':previous.payload.environment==='live')return out(400,{error:'Ambiente ordine non consentito'});
+   const payload={...previous.payload,archived:body.archived,archivedAt:body.archived?new Date().toISOString():null,archivedBy:body.archived?user.id:null};
+   const result=await fetcher(dbUrl+'/rest/v1/rpc/'+rpc,{method:'POST',headers:dbHeaders,body:JSON.stringify({p_id:body.id,p_payload:payload,p_revision:body.revision,p_actor:user.id})});
+   if(!result.ok){const err=await result.json();return out(err.code==='40001'?409:503,{error:err.code==='40001'?'Ordine modificato. Aggiorna l’elenco prima di riprovare.':'Archiviazione non riuscita. Riprova.'});}
+   return out(200,{row:(await result.json())[0]});
+  }
   if(body.action!=='save')return out(400,{error:'Operazione non consentita'});
   const order=body.order;if(live?order?.environment!=='live':order?.environment==='live')return out(400,{error:'Ambiente ordine non consentito'});try{validate(order,products);}catch{return out(400,{error:'Dati ordine non validi'});}
   if(!(live?/^OHANA-[A-F0-9]{8,32}$/:/^DEMO-[A-F0-9]{8,32}$/).test(order.id)||!Number.isInteger(body.revision)||body.revision<0)return out(400,{error:'Riferimento ordine non valido'});
-  const allowed=['id','customer','phone','email','source','productId','model','color','size','price','cost','shippingCost','fees','supplier','address','carrier','tracking','state','payment','history','customerDecision','items','quoteMode','markupBps','discount','paymentMethod','paymentInstructions','environment'];
+  const allowed=['id','customer','customerSurname','phone','email','source','productId','model','color','size','price','cost','shippingCost','fees','supplier','address','carrier','tracking','state','payment','history','customerDecision','items','quoteMode','markupBps','discount','paymentMethod','paymentInstructions','environment'];
   const clean=Object.fromEntries(allowed.filter(k=>Object.hasOwn(order,k)).map(k=>[k,order[k]]));
   if(clean.items)clean.items=clean.items.map(i=>Object.fromEntries(['productId','model','color','size','quantity','unitCost','supplier','supplierCode','photo'].filter(k=>Object.hasOwn(i,k)).map(k=>[k,i[k]])));
   syncLegacy(clean);
@@ -44,7 +55,7 @@ export function makeHandler({dbUrl,serviceKey,products,fetcher=fetch,mode='demo'
    const previousResponse=await fetcher(dbUrl+'/rest/v1/'+table+'?select=payload,revision&id=eq.'+encodeURIComponent(clean.id),{headers:dbHeaders});
    if(!previousResponse.ok)return out(503,{error:'Impossibile verificare la revisione.'});
    const previous=(await previousResponse.json())[0];if(!previous||previous.revision!==body.revision)return out(409,{error:'Ordine modificato. Aggiorna l’elenco prima di riprovare.'});
-   const old=previous.payload;if(['annullato','consegnato'].includes(old.state))return out(409,{error:'Ordine chiuso: modifica non consentita.'});
+   const old=previous.payload;if(old.archived===true)return out(409,{error:'Ripristina l’ordine prima di modificarlo.'});if(Object.hasOwn(old,'archived'))for(const k of ['archived','archivedAt','archivedBy'])clean[k]=old[k];if(['annullato','consegnato'].includes(old.state))return out(409,{error:'Ordine chiuso: modifica non consentita.'});
    if(STATES.indexOf(old.state)>=2&&(orderFingerprint(clean)!==orderFingerprint(old)||live&&clean.paymentInstructions!==old.paymentInstructions))return out(400,{error:'Dati commerciali bloccati dopo il preventivo.'});
    try{
     if(clean.state!==old.state){const draft={...clean,state:old.state,payment:old.payment?structuredClone(old.payment):null};if(clean.state==='preventivo'&&old.state!=='richiesta')reopenQuote(draft);else if(clean.state==='pagamento registrato')recordPayment(draft);else advance(draft,clean.state);clean.payment=draft.payment;if(live&&clean.state==='pagamento registrato')clean.payment.recordedBy=user.id;if(clean.state==='preventivo'){clean.carrier=draft.carrier;clean.tracking=draft.tracking;}clean.history=[...old.history,{state:clean.state,at:new Date().toISOString(),...(live?{actor:user.id}:{} )}];}
