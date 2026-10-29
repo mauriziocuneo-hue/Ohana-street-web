@@ -1,7 +1,7 @@
 import {prepareOrderPhotos,canShareOrder,shareOrder,copyPhoto} from './ordini-condividi.mjs';
 import {lineEditor} from './ordini-righe.mjs';
 import {parseMessage,LABELS,dataRequest,sampleMessage} from './importa-whatsapp.mjs';
-import {STATES,euro,cents,centsOrZero,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages,reopenQuote,missingCustomerFields,buyerSurname,orderLabel,orderLists} from './ordini-core.mjs';
+import {STATES,euro,cents,centsOrZero,margin,validate,paymentRequest,advance,recordPayment,whatsapp,seed,modelName,itemsOf,itemCost,quote,syncLegacy,orderFingerprint,paymentMethod,supplierMessages,reopenQuote,missingCustomerFields,buyerSurname,orderLabel,orderLists} from './ordini-core.mjs?v=20261029-archivio';
 export function mountOrders(host,{products,suppliers=[],scope='private-preview',store=null,initialOrders=[],mode='demo'}={}){
  const live=mode==='live';if(live&&!store)throw Error('Archivio operativo non disponibile. Nessun salvataggio locale consentito.');
  const display=value=>{if(!live)return value;let text=String(value);if(text.startsWith('OHANA-'))return text;

@@ -7,7 +7,7 @@
 <title>OHANA STREET — Area gestori</title>
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/ohana-business.css?v=20261023-5">
-<link rel="stylesheet" href="ordini-demo.css">
+<link rel="stylesheet" href="ordini-demo.css?v=20261029-archivio">
 <style>
 :root{--ocean:#123e40;--mint:#65dfc6;--cream:#fcf8ee;--coral:#ff7560;--ink:#143438;--line:#d6e2dd}
 *{box-sizing:border-box}
@@ -85,7 +85,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 <script src="config.js"></script>
 <script src="../assets/ohana-business.js?v=20261023-5" defer></script>
 <script type="module">
-import { mountOrders } from './ordini-demo.mjs';
+import { mountOrders } from './ordini-demo.mjs?v=20261029-archivio';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 // BEGIN OHANA PRIVATE VARIANTS
 // Private manager workspace only. All supplier data is read through Supabase RLS.
@@ -332,7 +332,7 @@ async function showPrivate(user){
   if(!variantsMounted){mountVariants(supabase);variantsMounted=true;}
   unmountOrders?.();
   if(typeof document.createElement==='function'){
-   try{const {createOrderStore}=await import('./ordini-store.mjs');const store=createOrderStore(supabase,fetch,{mode:"live"});const initialOrders=await store.list();if(currentSession!==sessionEpoch)return;unmountOrders=mountOrders($('#ordersDemo'),{products,suppliers:rows,scope:user.id,store,initialOrders,mode:"live"});}
+   try{const {createOrderStore}=await import('./ordini-store.mjs?v=20261029-archivio');const store=createOrderStore(supabase,fetch,{mode:"live"});const initialOrders=await store.list();if(currentSession!==sessionEpoch)return;unmountOrders=mountOrders($('#ordersDemo'),{products,suppliers:rows,scope:user.id,store,initialOrders,mode:"live"});}
    catch{$('#ordersDemo').textContent='Archivio ordini non disponibile. Ricarica la pagina per riprovare: non sono stati usati dati locali.';}
   }
   $('#ordersDemoSection').open=true;
