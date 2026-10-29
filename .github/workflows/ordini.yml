@@ -1,0 +1,20 @@
+name: Ordini operativi - verifica rilascio
+on:
+  pull_request:
+    branches: [main]
+    paths: ['gestione/**', 'backend/**', 'tests/ordini-*.mjs', 'tests/importa-whatsapp.test.mjs', 'tools/prepara_pages.py']
+  push:
+    branches: [release/ordini-operativi]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/ordini-*.mjs tests/importa-whatsapp.test.mjs
+      - run: node tests/gestori-link.test.js
+      - run: python3 tools/prepara_pages.py
