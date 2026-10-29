@@ -67,6 +67,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
       <input id="password" type="password" autocomplete="current-password" required>
       <div class="actions"><button id="loginBtn" type="submit">Accedi</button></div>
     </form>
+    <details id="forgotPassword"><summary>Password dimenticata?</summary><form id="forgotForm"><label for="forgotEmail">Email del tuo account gestore</label><input id="forgotEmail" type="email" autocomplete="email" maxlength="254" required><p>Richiedi il link solo dal dispositivo e browser dove lo aprirai. Il servizio email può applicare limiti di invio.</p><button type="submit">Richiedi collegamento di recupero</button></form><p id="forgotStatus" role="status" aria-live="polite"></p></details>
     <p id="message" role="status" aria-live="polite"></p>
   </div>
 </section>
@@ -74,6 +75,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
   <h1>AREA GESTORI · TEST</h1>
   <p class="muted">I collegamenti compaiono soltanto dopo autenticazione e autorizzazione sul database protetto.</p>
   <div class="actions"><button id="logout" class="secondary">Esci</button><span id="count" class="muted"></span></div>
+  <details id="accountSecurity"><summary>Il mio account · Cambia password</summary><form id="passwordChangeForm"><label for="currentPassword">Password attuale</label><input id="currentPassword" type="password" autocomplete="current-password" maxlength="128" required><label for="newPassword">Nuova password · almeno 12 caratteri</label><input id="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required><label for="confirmPassword">Ripeti la nuova password</label><input id="confirmPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required><p>Puoi incollare una password generata dal tuo gestore password. Dopo il cambio dovrai accedere di nuovo.</p><button type="submit">Cambia password</button></form><p id="passwordChangeStatus" role="status" aria-live="polite"></p></details>
   <details id="businessToolkit" class="business-tools"><summary>WhatsApp Business · testi pronti e organizzazione richieste</summary><div id="businessToolkitContent"></div></details>
   <details id="ordersDemoSection"><summary>Richieste e ordini · DEMO</summary><section id="ordersDemo"></section></details>
   <label for="search">Cerca per marca, nome o codice prodotto</label>
@@ -86,7 +88,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 <script src="../assets/ohana-business.js?v=20261023-5" defer></script>
 <script type="module">
 import { mountOrders } from './ordini-demo.mjs';
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.118.0';
+import {mountPasswordTools} from './password-ui.mjs';
 // BEGIN OHANA PRIVATE VARIANTS
 // Private manager workspace only. All supplier data is read through Supabase RLS.
 const safeUrl = value => { try { const u = new URL(value); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
@@ -294,6 +297,7 @@ async function initialize(){
     return;
   }
   supabase=createClient(cfg.supabaseUrl,cfg.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true}});
+  if(typeof document.createElement==='function')mountPasswordTools({client:supabase,createClient,config:cfg,onChanged:text=>message(text)});
   supabase.auth.onAuthStateChange(event=>{if(event==='SIGNED_OUT'){sessionEpoch++;unmountOrders?.();unmountOrders=null;$('#workspace').classList.remove('ready');$('#login').hidden=false;}});
   try{
     const {data:{session},error}=await supabase.auth.getSession();
