@@ -121,7 +121,7 @@ for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.
 for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-theme.css','ohana-business.js','ohana-business.css']:
     shutil.copy2(Path('assets') / item, dest / 'assets' / item)
 (dest / "gestione").mkdir()
-for item in ["index.html", "config.js", "ordini-demo.css", "ordini-demo.mjs", "ordini-core.mjs", "ordini-righe.mjs", "ordini-store.mjs", "ordini-condividi.mjs", "importa-whatsapp.mjs"]:
+for item in ["index.html", "config.js", "password-core.mjs", "password-ui.mjs", "password-page.mjs", "password.html", "password.css", "ordini-demo.css", "ordini-demo.mjs", "ordini-core.mjs", "ordini-righe.mjs", "ordini-store.mjs", "ordini-condividi.mjs", "importa-whatsapp.mjs"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
 
 # Servizio condiviso tramite indirizzo: tutte le pagine pubblicate, incluse
