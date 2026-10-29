@@ -26,6 +26,8 @@ on:
       - "assets/**"
       - "scripts/audit_catalog.py"
       - "gestione/**"
+      - "tests/ordini-*.mjs"
+      - "tests/importa-whatsapp.test.mjs"
       - "tools/prepara_pages.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -51,6 +53,8 @@ jobs:
         run: node tests/nomi-modelli.test.js
       - name: Verifica scelte cliente e collegamenti gestori
         run: node tests/scelte-clienti.test.js && node tests/gestori-link.test.js
+      - name: Verifica ordini operativi e isolamento demo
+        run: node --test tests/ordini-*.mjs tests/importa-whatsapp.test.mjs
       - name: Prepara i soli file pubblici
         run: python3 tools/prepara_pages.py
       - name: Carica archivio validato
