@@ -52,9 +52,9 @@ jobs:
               assert p['modelNameStatus'] in ('source','family') and p['legacy'] is False
               assert p['images']==p['photos'] and p['image']==p['photos'][0]
               assert 1 <= len(p['photos']) <= 3
-              assert not re.search(r'https?://|www\\.|yupoo|supplier|password|service_role|sb_secret_',json.dumps(p),re.I)
+              assert not re.search(r'https?://|www\.|yupoo|supplier|password|service_role|sb_secret_',json.dumps(p),re.I)
               for photo in p['photos']:
-                  assert re.fullmatch(r'assets/products/OH-(?:N|V2)-[A-F0-9]{12}_[123]\\.webp',photo), 'Percorso foto non ammesso'
+                  assert re.fullmatch(r'assets/products/OH-(?:N|V2)-[A-F0-9]{12}_[123]\.webp',photo), 'Percorso foto non ammesso'
                   photos.add(photo)
           for rel in sorted(photos):
               origin=src/rel
@@ -63,7 +63,7 @@ jobs:
               target=root/rel
               target.parent.mkdir(parents=True,exist_ok=True)
               shutil.copyfile(origin,target)
-          (root/'catalogo-nuovo.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\\n',encoding='utf-8')
+          (root/'catalogo-nuovo.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
           print(f'Catalogo V2 verificato: {len(products)} schede, {len(photos)} fotografie')
           PY
       - name: Verifica che area gestori e grafica non siano modificate
