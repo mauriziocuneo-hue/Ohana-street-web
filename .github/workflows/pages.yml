@@ -51,9 +51,9 @@ jobs:
       - name: Verifica le richieste guidate WhatsApp
         run: node tests/ohana-chat.test.js
       - name: Verifica i nomi dei modelli e i gruppi di varianti
-        run: node tests/nomi-modelli.test.js
+        run: node --require ./tests/preload-legacy.js tests/nomi-modelli.test.js
       - name: Verifica scelte cliente e collegamenti gestori
-        run: node tests/scelte-clienti.test.js && node tests/gestori-link.test.js
+        run: node --require ./tests/preload-legacy.js tests/scelte-clienti.test.js && node tests/gestori-link.test.js
       - name: Verifica ordini operativi e isolamento demo
         run: node --test tests/ordini-*.mjs tests/importa-whatsapp.test.mjs tests/password.test.mjs
       - name: Prepara i soli file pubblici

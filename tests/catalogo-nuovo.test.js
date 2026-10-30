@@ -1,6 +1,11 @@
 const assert=require('node:assert/strict');
 const api=require('../assets/ohana-catalogo.js');
-const products=require('../catalogo-nuovo.json').products;
+const complete=require('../catalogo-nuovo.json').products;
+const products=complete.filter(p=>p.legacy);
+const v2=complete.filter(p=>p.legacy===false);
+assert.equal(products.length,375);
+assert.equal(v2.length,5213);
+assert.equal(new Set(complete.map(p=>p.id)).size,complete.length);
 const p=products.find(p=>p.family==='F50 Elite Laceless FG');
 const r=api.answer(products,p,'altri colori');assert(r.items.length>2);assert(r.items.every(x=>x.family===p.family&&x.type===p.type&&x.id!==p.id));
 assert(api.answer(products,p,'la cerco nera').items.every(x=>/nero/i.test(x.color)));
