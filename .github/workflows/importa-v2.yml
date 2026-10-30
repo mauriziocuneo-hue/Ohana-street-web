@@ -1,6 +1,9 @@
 name: OHANA - importa catalogo V2 nel branch di collaudo
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/importa-v2.yml']
 permissions:
   contents: write
 jobs:
@@ -29,7 +32,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/v2"
           git -c credential.helper='!f() { echo username=x-access-token; echo "password=$V2_READ_TOKEN"; }; f' clone --depth 1 --branch main --quiet https://github.com/mauriziocuneo-hue/Ohana-street-catalogo-v2.git "$RUNNER_TEMP/v2"
           python3 -m pip install --quiet pillow
-          python3 "$RUNNER_TEMP/v2/tools/verifica_catalogo_v2.py" --help >/dev/null
+          python3 "$RUNNER_TEMP/v2/tools/verifica_catalogo_v2.py" --root "$RUNNER_TEMP/v2"
       - name: Copia esclusivamente i prodotti pubblicabili
         env:
           SOURCE_V2: ${{ runner.temp }}/v2
