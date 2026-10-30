@@ -1,0 +1,35 @@
+name: OHANA - collaudo catalogo V2 senza pubblicazione
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/collaudo-v2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/catalogo-v2-selettivo-20261030
+      - name: Verifica codice JavaScript
+        run: node --check assets/ohana-catalogo.js
+      - name: Test del catalogo e delle funzioni esistenti
+        run: |
+          node tests/catalogo-nuovo.test.js
+          node tests/media-bot.test.js
+          node tests/ohana-chat.test.js
+          node tests/nomi-modelli.test.js
+          node tests/scelte-clienti.test.js
+          node tests/gestori-link.test.js
+      - name: Verifica fotografie e costruzione sito
+        run: |
+          python3 scripts/audit_catalog.py
+          python3 tools/prepara_pages.py
+      - name: Controllo invarianti frontend di produzione
+        run: |
+          git fetch --depth 1 origin backup/produzione-2026-10-30
+          for path in index.html catalogo-nuovo.html assets/ohana-theme.css assets/ohana-catalogo.css assets/ohana-chat.css assets/ohana-chat.js assets/ohana-scelte.js gestione; do
+            git diff --quiet FETCH_HEAD HEAD -- "$path" || { echo "::error::File non consentito modificato: $path"; exit 1; }
+          done
