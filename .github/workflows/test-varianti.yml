@@ -23,4 +23,5 @@ jobs:
           node tests/foto-zoom.test.js
           node tests/catalogo-nuovo.test.js
           node tests/ohana-chat.test.js
+          node tests/numero-whatsapp.test.js
           node tests/gestori-link.test.js
