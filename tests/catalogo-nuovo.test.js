@@ -1,8 +1,9 @@
 const assert=require('node:assert/strict');
 const api=require('../assets/ohana-catalogo.js');
 const complete=require('../catalogo-nuovo.json').products;
-const products=complete.filter(p=>!/^OH-(?:N|V2)-[A-F0-9]{12}$/.test(p.id));
-const v2=complete.filter(p=>/^OH-(?:N|V2)-[A-F0-9]{12}$/.test(p.id));
+const legacyIds=new Set(require('../catalogo.json').filter(p=>p.genere==='Scarpe'&&p.vetrina!==false).map(p=>p.id));
+const products=complete.filter(p=>legacyIds.has(p.id));
+const v2=complete.filter(p=>!legacyIds.has(p.id));
 assert.equal(products.length,375);
 assert.equal(v2.length,5213);
 assert.equal(new Set(complete.map(p=>p.id)).size,complete.length);
