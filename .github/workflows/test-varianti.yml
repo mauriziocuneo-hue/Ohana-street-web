@@ -1,0 +1,24 @@
+name: OHANA - test griglia varianti
+on:
+  pull_request:
+    paths:
+      - "assets/ohana-catalogo.js"
+      - "assets/ohana-catalogo.css"
+      - "catalogo-nuovo.html"
+      - "tests/varianti-griglia.test.js"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controlla sintassi JavaScript
+        run: node --check assets/ohana-catalogo.js
+      - name: Verifica varianti e regressioni
+        run: |
+          node tests/varianti-griglia.test.js
+          node tests/catalogo-nuovo.test.js
+          node tests/ohana-chat.test.js
+          node tests/gestori-link.test.js
