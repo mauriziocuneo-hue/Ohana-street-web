@@ -155,7 +155,7 @@
     $('#shareStatus').textContent='';$('#shareFallback').hidden=true;showPhoto(0);variantPicker(p);updateSavedUI();
     const url=new URL(location.href);url.searchParams.set('articolo',p.id);history.replaceState({},'',url);
     const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.name||p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda gestori: ${shopping.managerUrl(p,location.href)}`;
-    $('#whatsapp').href='https://wa.me/393473099705?text='+encodeURIComponent(msg);
+    $('#whatsapp').href='https://wa.me/393520263951?text='+encodeURIComponent(msg);
     requestController=root.OhanaChat?.mount($('#ohana-product-request'),p);$('#whatsapp').hidden=Boolean(requestController);root.OhanaChat?.close();
     if(!dialog.open)dialog.showModal();syncOverlay();dialog.scrollTop=keepVariantView?previousScroll:0;if(!keepVariantView)$('#closeDialog').focus();
   }
