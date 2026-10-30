@@ -66,6 +66,9 @@ jobs:
               target=root/rel
               target.parent.mkdir(parents=True,exist_ok=True)
               shutil.copyfile(origin,target)
+          old=json.loads((src/'docs/catalogo-pre-v2-20261029.json').read_text(encoding='utf-8'))['products']
+          assert len(old)==375 and set(p['id'] for p in old).isdisjoint(ids)
+          data['products']=old+products
           (root/'catalogo-nuovo.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
           print(f'Catalogo V2 verificato: {len(products)} schede, {len(photos)} fotografie')
           PY
