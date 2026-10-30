@@ -96,15 +96,45 @@
     $('#album').hidden=false;$('#album').innerHTML=photoButtons(current.photos);$('#showAlbum').setAttribute('aria-expanded','true');$('#showAlbum').textContent='Nascondi album completo ↑';
   }
   function syncOverlay(){const open=dialog.open||selectionDialog.open;document.body.style.overflow=open?'hidden':'';document.body.classList.toggle('product-dialog-open',open);}
-  function variantPicker(p){
-    const variants=shopping.modelVariants(products,p);$('#variantPicker').hidden=variants.length<2;
-    const repeated=color=>variants.filter(v=>norm(v.color)===norm(color)).length>1;
-    $('#colorVariant').innerHTML=variants.map(v=>`<option value="${esc(v.id)}" ${v.id===p.id?'selected':''}>${esc(v.color+(repeated(v.color)?' · '+v.id:''))}</option>`).join('');
-    $('#variantPhotos').innerHTML=variants.map(v=>`<button type="button" data-variant="${esc(v.id)}" aria-label="${esc(v.color+' · '+v.id)}" aria-pressed="${v.id===p.id}"><img src="${esc(v.image)}" alt="${esc(v.color)}" loading="lazy"><span>${esc(v.color)}</span>${saved.has(v.id)?'<span class="variant-saved">♥ Salvata</span>':''}</button>`).join('');
+  let variantsExpanded=false;
+  function variantLabel(v){
+    // Non attribuire un nome colore quando il catalogo non lo certifica.
+    const named=v.colorVerified===true && typeof v.color==='string' && v.color.trim()
+      && !/^colorazion[ei] nelle fotografie$/i.test(v.color.trim());
+    return named?v.color:v.id;
   }
-  function openProduct(id){
+  function variantPicker(p){
+    const variants=shopping.modelVariants(products,p);
+    const picker=$('#variantPicker');
+    picker.hidden=variants.length<2;
+    if(picker.hidden)return;
+    if(variants.findIndex(v=>v.id===p.id)>=6)variantsExpanded=true;
+    const labelCounts=new Map();
+    for(const v of variants){
+      const label=variantLabel(v);
+      labelCounts.set(label,(labelCounts.get(label)||0)+1);
+    }
+    // Il menu a tendina rimane sempre disponibile per una selezione rapida.
+    $('#colorVariant').innerHTML=variants.map(v=>{
+      const label=variantLabel(v);
+      return `<option value="${esc(v.id)}" ${v.id===p.id?'selected':''}>${esc(label+(labelCounts.get(label)>1?' · '+v.id:''))}</option>`;
+    }).join('');
+    // Quando la variante selezionata è oltre le prime sei, resta visibile.
+    const shown=variantsExpanded?variants:variants.slice(0,6);
+    $('#variantPhotos').innerHTML=shown.map(v=>{
+      const label=variantLabel(v);
+      return `<button type="button" data-variant="${esc(v.id)}" aria-label="Seleziona variante ${esc(label)}" aria-pressed="${v.id===p.id}"><img src="${esc(v.image)}" alt="Scarpa ${esc(v.brand+' '+v.family)} – ${esc(label)}" loading="lazy" decoding="async"><span>${esc(label)}</span>${saved.has(v.id)?'<span class="variant-saved">♥ Salvata</span>':''}</button>`;
+    }).join('');
+    const more=$('#showAllVariants');
+    more.hidden=variants.length<=6;
+    more.setAttribute('aria-expanded',String(variantsExpanded));
+    more.textContent=variantsExpanded?'Mostra meno varianti ↑':`Mostra tutte le varianti (${variants.length}) ↓`;
+  }
+  function openProduct(id,keepVariantView=false){
     const p=products.find(p=>p.id===id);if(!p)return;
     if(!dialog.open)returnFocus=document.activeElement;
+    const previousScroll=keepVariantView&&dialog.open?dialog.scrollTop:0;
+    if(!keepVariantView)variantsExpanded=false;
     if(selectionDialog.open)selectionDialog.close();current=p;
     $('#dialogEyebrow').textContent=p.id;$('#productBrand').textContent=p.brand+' · '+p.type;$('#productTitle').textContent=p.name||p.family;$('#productColor').textContent=p.color;
     $('#productDescription').textContent=p.description;
@@ -117,7 +147,7 @@
     const msg=`Ciao OHANA Street! Vorrei informazioni su ${p.brand} ${p.name||p.family}, ${p.color} (codice OHANA ${p.id}${p.code?', modello '+p.code:''}).\nTaglia desiderata: __\nScheda gestori: ${shopping.managerUrl(p,location.href)}`;
     $('#whatsapp').href='https://wa.me/393473099705?text='+encodeURIComponent(msg);
     requestController=root.OhanaChat?.mount($('#ohana-product-request'),p);$('#whatsapp').hidden=Boolean(requestController);root.OhanaChat?.close();
-    if(!dialog.open)dialog.showModal();syncOverlay();dialog.scrollTop=0;$('#closeDialog').focus();
+    if(!dialog.open)dialog.showModal();syncOverlay();dialog.scrollTop=keepVariantView?previousScroll:0;if(!keepVariantView)$('#closeDialog').focus();
   }
   function sizeOptions(selected='',mass=false){return '<option value="">'+(mass?'Scegli una taglia (facoltativo)':'Scegli la taglia')+'</option>'+Array.from({length:11},(_,i)=>String(i+36)).map(v=>`<option value="${v}" ${selected===v?'selected':''}>${v}</option>`).join('')+(mass?'':`<option value="other" ${selected==='other'?'selected':''}>Altra taglia</option>`)+`<option value="unknown" ${selected==='unknown'?'selected':''}>Non so ancora</option>`;}
   function selectedProducts(){return [...saved].map(id=>products.find(p=>p.id===id)).filter(Boolean);}
@@ -145,7 +175,7 @@
   document.addEventListener('click',e=>{
     const save=e.target.closest('[data-save]');if(save){const id=save.dataset.save,inDialog=dialog.contains(save);toggleSaved(id);if(inDialog){variantPicker(current);$('#saveProduct').focus();}else $('#grid').querySelector(`[data-save="${id}"]`)?.focus();return;}
     const remove=e.target.closest('[data-remove]');if(remove){toggleSaved(remove.dataset.remove,true);$('#closeSelection').focus();return;}
-    const variant=e.target.closest('[data-variant]');if(variant){openProduct(variant.dataset.variant);return;}
+    const variant=e.target.closest('[data-variant]');if(variant){openProduct(variant.dataset.variant,true);return;}
     const open=e.target.closest('[data-open]');if(open){openProduct(open.dataset.open);return;}
     const photo=e.target.closest('[data-photo]');if(photo&&current){showPhoto(Number(photo.dataset.photo));return;}
     const nav=e.target.closest('[data-brand]');if(nav){state.brand=nav.dataset.brand;state.family=nav.dataset.family||'';state.query='';$('#search').value='';state.type='';$('#type').value='';limit=24;render();if(matchMedia('(max-width:780px)').matches)$('#categoryMenu').open=false;}
@@ -157,7 +187,8 @@
   $('#savedOnly').addEventListener('click',()=>{state.savedOnly=!state.savedOnly;limit=24;render();});
   $('#more').addEventListener('click',()=>{limit+=24;render();});
   $('#openSelection').addEventListener('click',openSelection);
-  $('#colorVariant').addEventListener('change',e=>openProduct(e.target.value));
+  $('#colorVariant').addEventListener('change',e=>openProduct(e.target.value,true));
+  $('#showAllVariants').addEventListener('click',()=>{variantsExpanded=!variantsExpanded;variantPicker(current);$('#showAllVariants').focus();});
   $('#closeDialog').addEventListener('click',()=>dialog.close());
   $('#closeSelection').addEventListener('click',()=>selectionDialog.close());
   for(const modal of [dialog,selectionDialog])modal.addEventListener('click',e=>{if(e.target===modal){const r=modal.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)modal.close();}});

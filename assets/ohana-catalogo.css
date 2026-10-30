@@ -185,11 +185,14 @@ dialog{border:3px solid var(--deep);border-radius:0;box-shadow:10px 10px 0 var(-
 #variantPicker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;margin-bottom:16px;min-width:0}
 #variantPicker h3{font-size:14px;margin:0 0 9px}
 #colorVariant{display:block;width:100%;min-width:0;max-width:100%;font-size:12px;padding:11px;border:1.5px solid var(--deep);border-radius:9px;background:white}
-.variant-strip{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;padding:10px 1px 6px;max-width:100%}
-#variantPhotos button{flex:0 0 82px;max-width:82px;padding:5px;background:white;border:1px solid #bacfc4;border-radius:8px;font-size:10px;font-weight:500;overflow-wrap:anywhere}
-#variantPhotos button[aria-pressed=true]{border:2px solid var(--deep);background:#e4f7ef}
-#variantPhotos img{display:block;object-fit:contain;width:100%;height:64px}
-#variantPhotos span{display:block;line-height:1.35;margin:4px 0}
+.variant-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:100%;padding:12px 1px 8px;overflow:visible}
+#variantPhotos button{min-width:0;width:100%;padding:7px;background:white;border:1.5px solid #bacfc4;border-radius:8px;font-size:10px;font-weight:600;overflow-wrap:anywhere;text-align:center;transition:border-color .15s,background .15s}
+#variantPhotos button[aria-pressed=true]{border:3px solid #167b56;background:#e4f7ef;box-shadow:0 0 0 2px #a6ddc7}
+#variantPhotos button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+#variantPhotos img{display:block;object-fit:contain;width:100%;height:94px;background:#f6f8f5;border-radius:4px}
+#variantPhotos span{display:block;line-height:1.35;margin:7px 0 2px;font-size:10px}
+#variantPicker #showAllVariants{display:block;width:100%;margin:8px 0 12px;background:var(--sea);border:1.5px solid var(--deep);font-size:11px;border-radius:9px}
+#variantPicker #showAllVariants[hidden]{display:none!important}
 #variantPhotos .variant-saved{font-weight:800}
 #variantPicker>p{font-size:10px;color:#59716e;line-height:1.5;margin:5px 0 0}
 #selectionDialog{width:min(850px,calc(100% - 30px))}
@@ -223,3 +226,7 @@ dialog{border:3px solid var(--deep);border-radius:0;box-shadow:10px 10px 0 var(-
 #selectionEmpty p{font-size:13px;line-height:1.7}
 @media(max-width:780px){.saved-bar{top:81px}.how-it-works ol{grid-template-columns:1fr;gap:14px}.how-it-works li{padding-top:11px}.how-it-works{padding-bottom:25px}.selection-content{padding:18px}.selection-item{grid-template-columns:72px minmax(0,1fr)}#selectionItems .selection-photo{width:72px;height:86px}.selection-size{grid-column:1/-1}.selection-size select{max-width:none}.selection-content>h2{font-size:38px}}
 @media(max-width:530px){.saved-bar{padding:10px;gap:7px}.catalog-layout #savedOnly,.catalog-layout #openSelection{font-size:11px;padding:8px 10px}.saved-bar p{font-size:10px}.product-actions{gap:7px}.product-actions button{padding:10px 8px}.selection-content{padding:15px}#selectionDialog{width:calc(100% - 18px)}.selection-item{padding:11px;gap:11px}.selection-actions{gap:8px}.selection-actions button,.selection-actions .whatsapp{flex:1;white-space:normal}.selection-actions #selectionNext{flex-basis:100%}.selection-actions #selectionBack{flex-basis:100%}}
+
+/* Varianti: due colonne leggibili su smartphone, senza scorrimento orizzontale. */
+@media(max-width:530px){.variant-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#variantPhotos img{height:112px}}
+@media(prefers-reduced-motion:reduce){#variantPhotos button{transition:none}}
