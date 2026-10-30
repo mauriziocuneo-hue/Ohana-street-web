@@ -77,6 +77,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
   <div class="actions"><button id="logout" class="secondary">Esci</button><span id="count" class="muted"></span></div>
   <details id="accountSecurity"><summary>Il mio account · Cambia password</summary><form id="passwordChangeForm"><label for="currentPassword">Password attuale</label><input id="currentPassword" type="password" autocomplete="current-password" maxlength="128" required><label for="newPassword">Nuova password · almeno 12 caratteri</label><input id="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required><label for="confirmPassword">Ripeti la nuova password</label><input id="confirmPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required><p>Puoi incollare una password generata dal tuo gestore password. Dopo il cambio dovrai accedere di nuovo.</p><button type="submit">Cambia password</button></form><p id="passwordChangeStatus" role="status" aria-live="polite"></p></details>
   <details id="businessToolkit" class="business-tools"><summary>WhatsApp Business · testi pronti e organizzazione richieste</summary><div id="businessToolkitContent"></div></details>
+  <div id="incomingArticle" class="notice" hidden role="region" aria-label="Prodotto richiesto da WhatsApp"></div>
   <details id="ordersDemoSection"><summary>Richieste e ordini</summary><section id="ordersDemo"></section></details>
   <label for="search">Cerca per marca, nome o codice prodotto</label>
   <input id="search" type="search" placeholder="Es. Jordan, OHY-001, piumino">
@@ -341,6 +342,32 @@ async function showPrivate(user){
   }
   $('#ordersDemoSection').open=true;
   render();
+  // Deep link from WhatsApp: never trust query parameters as product data.
+  // Resolve the code against the catalog loaded after manager authentication.
+  const incoming=$('#incomingArticle');
+  incoming.replaceChildren();
+  incoming.hidden=true;
+  if(requestedArticle){
+    const item=products.find(p=>p.id===requestedArticle);
+    incoming.hidden=false;
+    if(item){
+      const title=document.createElement('strong');
+      title.textContent='Prodotto ricevuto da WhatsApp';
+      const summary=document.createElement('p');
+      summary.textContent=[item.id,item.brand,item.model].filter(Boolean).join(' · ');
+      const action=document.createElement('button');
+      action.type='button';
+      action.className='secondary';
+      action.dataset.orderProduct=item.id;
+      action.textContent='＋ Crea richiesta per '+item.id;
+      const note=document.createElement('p');
+      note.textContent='La richiesta sarà creata solo quando premi il pulsante. Aggiungi poi i dati del cliente, la taglia e il colore comunicati su WhatsApp.';
+      incoming.append(title,summary,action,note);
+      incoming.scrollIntoView({block:'start'});
+    }else{
+      incoming.textContent='Il codice nel collegamento non corrisponde a un articolo del catalogo attivo. Nessuna richiesta è stata creata.';
+    }
+  }
 }
 function render(){
   const query=$('#search').value.toLowerCase().trim();
