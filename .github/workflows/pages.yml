@@ -16,6 +16,7 @@ on:
       - "tests/ohana-chat.test.js"
       - "tests/nomi-modelli.test.js"
       - "tests/scelte-clienti.test.js"
+      - "tests/numero-whatsapp.test.js"
       - "tests/gestori-link.test.js"
       - "nomi-modelli.json"
       - "tools/importa_catalogo_esistente.py"
@@ -50,7 +51,7 @@ jobs:
       - name: Verifica il nuovo catalogo e le varianti
         run: node tests/catalogo-nuovo.test.js
       - name: Verifica le richieste guidate WhatsApp
-        run: node tests/ohana-chat.test.js
+        run: node tests/ohana-chat.test.js && node tests/numero-whatsapp.test.js
       - name: Verifica i nomi dei modelli e i gruppi di varianti
         run: node --require ./tests/preload-legacy.js tests/nomi-modelli.test.js
       - name: Verifica scelte cliente e collegamenti gestori

@@ -31,7 +31,7 @@ assert.equal(new URL(request.url).searchParams.get('text'),request.message);
 assert.deepEqual(api.selectionRequest(catalog,favorites,{},'',base).invalid,favorites,'Una taglia mancante va rilevata per ogni scarpa');
 assert.equal(api.validSize({size:'unknown'}),true);assert.equal(api.validSize({size:'other',otherSize:'47'}),true);assert.equal(api.validSize({size:'other',otherSize:'<script>'}),false);
 const long=api.selectionRequest(catalog,catalog.map(p=>p.id),Object.fromEntries(catalog.map(p=>[p.id,{size:'unknown'}])),'',base);
-assert(long.copyRequired);assert.equal(long.url,'https://wa.me/393473099705');assert.equal(long.entries.length,catalog.length,'Il riepilogo lungo non perde articoli');
+assert(long.copyRequired);assert.equal(long.url,'https://wa.me/393520263951');assert.equal(long.entries.length,catalog.length,'Il riepilogo lungo non perde articoli');
 for(const p of catalog){
  const shared=api.shareData(p,base);assert.equal(shared.url,'https://mauriziocuneo-hue.github.io/Ohana-street-web/catalogo-nuovo.html?articolo='+p.id,'Condividi apre la scheda pubblica precisa');
  assert.equal(api.managerUrl(p,base),'https://mauriziocuneo-hue.github.io/Ohana-street-web/gestione/?articolo='+p.id);

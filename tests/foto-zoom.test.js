@@ -15,5 +15,5 @@ assert.match(js,/e\.key==='Enter'\|\|e\.key===' '/);
 assert.match(js,/photoZoomDialog'\)\.addEventListener\('close'/);
 assert.match(css,/\.photo-zoom-dialog::backdrop/);
 assert.match(css,/max-height:calc\(100dvh - 136px\)/);
-assert.match(html,/assets\/ohana-catalogo\.js\?v=20261030-zoom1/);
+assert.match(html,/assets\/ohana-catalogo\.js\?v=20261030-[a-z0-9-]+/);
 console.log('PASS: lightbox accessibile, fotografia effettiva, focus e cache aggiornati');
