@@ -1,10 +1,7 @@
 'use strict';
-// Precarica la selezione storica per i test che convalidano il catalogo legacy.
-// Il JSON su disco rimane quello integrale (375 legacy + 5213 V2).
 const file=require.resolve('../catalogo-nuovo.json');
-const json=require(file);
-const all=json.products;
-if(all.length!==5588 || all.filter(p=>/^OH-(?:N|V2)-[A-F0-9]{12}$/.test(p.id)).length!==5213){
- throw Error('Checkpoint V2 inatteso: impossibile eseguire regressioni legacy');
-}
-require.cache[file].exports={...json,products:all.filter(p=>!/^OH-(?:N|V2)-[A-F0-9]{12}$/.test(p.id))};
+const data=require(file);
+const ids=new Set(require('../catalogo.json').filter(p=>p.genere==='Scarpe'&&p.vetrina!==false).map(p=>p.id));
+const old=data.products.filter(p=>ids.has(p.id));
+if(old.length!==375 || data.products.length-old.length!==5213)throw Error('Catalogo storico o V2 incompleto');
+require.cache[file].exports={...data,products:old};
