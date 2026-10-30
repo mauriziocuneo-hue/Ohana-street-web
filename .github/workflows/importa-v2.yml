@@ -1,0 +1,87 @@
+name: OHANA - importa catalogo V2 nel branch di collaudo
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-v2:
+    if: github.ref_name == 'release/catalogo-v2-selettivo-20261030'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del solo frontend di produzione
+        uses: actions/checkout@v4
+        with:
+          ref: release/catalogo-v2-selettivo-20261030
+          persist-credentials: true
+      - name: Verifica disponibilita credenziale privata
+        env:
+          V2_READ_TOKEN: ${{ secrets.OHANA_V2_READ_TOKEN }}
+        run: |
+          if [ -z "$V2_READ_TOKEN" ]; then
+            echo "::error::Impostare il secret OHANA_V2_READ_TOKEN (sola lettura del repository privato V2)."
+            exit 1
+          fi
+      - name: Recupera la sola sorgente privata V2
+        env:
+          V2_READ_TOKEN: ${{ secrets.OHANA_V2_READ_TOKEN }}
+        run: |
+          set -eu
+          mkdir -p "$RUNNER_TEMP/v2"
+          git -c credential.helper='!f() { echo username=x-access-token; echo "password=$V2_READ_TOKEN"; }; f' clone --depth 1 --branch main --quiet https://github.com/mauriziocuneo-hue/Ohana-street-catalogo-v2.git "$RUNNER_TEMP/v2"
+          python3 -m pip install --quiet pillow
+          python3 "$RUNNER_TEMP/v2/tools/verifica_catalogo_v2.py" --help >/dev/null
+      - name: Copia esclusivamente i prodotti pubblicabili
+        env:
+          SOURCE_V2: ${{ runner.temp }}/v2
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, re, shutil
+          root=pathlib.Path.cwd().resolve()
+          src=pathlib.Path(os.environ['SOURCE_V2']).resolve()
+          data=json.loads((src/'catalogo-nuovo.json').read_text(encoding='utf-8'))
+          products=data.get('products', [])
+          assert data.get('version') == 1 and len(products) >= 5213, 'Catalogo V2 incompleto'
+          allowed={'id','brand','family','name','modelNameStatus','color','type','code','description','image','images','photos','tags','variantGroup','galleryIncomplete','legacy'}
+          photos=set()
+          ids=set()
+          for p in products:
+              assert set(p) == allowed, 'Campo prodotto non ammesso'
+              assert re.fullmatch(r'OH-(?:N|V2)-[A-F0-9]{12}',p['id'])
+              assert p['id'] not in ids
+              ids.add(p['id'])
+              assert p['modelNameStatus'] in ('source','family') and p['legacy'] is False
+              assert p['images']==p['photos'] and p['image']==p['photos'][0]
+              assert 1 <= len(p['photos']) <= 3
+              assert not re.search(r'https?://|www\.|yupoo|supplier|password|service_role|sb_secret_',json.dumps(p),re.I)
+              for photo in p['photos']:
+                  assert re.fullmatch(r'assets/products/OH-(?:N|V2)-[A-F0-9]{12}_[123]\.webp',photo), 'Percorso foto non ammesso'
+                  photos.add(photo)
+          for rel in sorted(photos):
+              origin=src/rel
+              assert origin.is_file() and not origin.is_symlink() and origin.resolve().is_relative_to(src)
+              assert origin.stat().st_size > 500 and origin.read_bytes()[:4]==b'RIFF'
+              target=root/rel
+              target.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(origin,target)
+          (root/'catalogo-nuovo.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+          print(f'Catalogo V2 verificato: {len(products)} schede, {len(photos)} fotografie')
+          PY
+      - name: Verifica che area gestori e grafica non siano modificate
+        run: |
+          set -eu
+          if git status --porcelain -- gestione/ assets/ohana-theme.css assets/ohana-catalogo.css assets/ohana-chat.css index.html catalogo-nuovo.html | grep .; then
+            echo '::error::Modifica non consentita a grafica o area gestori'
+            exit 1
+          fi
+      - name: Salva sul branch di collaudo (mai direttamente su main)
+        run: |
+          set -eu
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- catalogo-nuovo.json assets/products/
+          if git diff --cached --quiet; then
+            echo 'Nessun prodotto nuovo'
+          else
+            git commit -m "Catalogo V2: importa schede fotografiche verificate"
+            git push origin HEAD:release/catalogo-v2-selettivo-20261030
+          fi
