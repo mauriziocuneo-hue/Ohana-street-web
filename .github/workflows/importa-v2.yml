@@ -8,7 +8,7 @@ permissions:
   contents: write
 jobs:
   import-v2:
-    if: github.ref_name == 'release/catalogo-v2-selettivo-20261030'
+    if: github.ref_name == 'main' || github.ref_name == 'release/catalogo-v2-selettivo-20261030'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del solo frontend di produzione
