@@ -26,7 +26,7 @@
     return String(draft.size==='other'?draft.otherSize||'':draft.size||'').trim().replace(',','.').slice(0,12);
   }
   function validSize(draft){const size=sizeValue(draft);return size==='Da definire'||/^\d{1,2}(?:\.\d)?$/.test(size);}
-  function selectionRequest(products,ids,drafts,question,base,phone='393473099705'){
+  function selectionRequest(products,ids,drafts,question,base,phone='393520263951'){
     const byId=new Map(products.map(p=>[p.id,p]));
     const entries=favoriteIds(ids,products).map(id=>({product:byId.get(id),size:sizeValue(drafts[id]),valid:validSize(drafts[id])}));
     const invalid=entries.filter(x=>!x.valid).map(x=>x.product.id);
