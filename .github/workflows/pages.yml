@@ -12,6 +12,7 @@ on:
       - "catalogo-nuovo.json"
       - "scripts/audit_catalogo_nuovo.py"
       - "tests/catalogo-nuovo.test.js"
+      - "tests/preload-legacy.js"
       - "tests/ohana-chat.test.js"
       - "tests/nomi-modelli.test.js"
       - "tests/scelte-clienti.test.js"
