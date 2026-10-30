@@ -108,6 +108,7 @@
     const picker=$('#variantPicker');
     picker.hidden=variants.length<2;
     if(picker.hidden)return;
+    if(variants.findIndex(v=>v.id===p.id)>=6)variantsExpanded=true;
     const labelCounts=new Map();
     for(const v of variants){
       const label=variantLabel(v);
