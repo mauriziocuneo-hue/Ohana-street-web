@@ -6,6 +6,7 @@ on:
       - "assets/ohana-catalogo.css"
       - "catalogo-nuovo.html"
       - "tests/varianti-griglia.test.js"
+      - "tests/foto-zoom.test.js"
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,6 +20,7 @@ jobs:
       - name: Verifica varianti e regressioni
         run: |
           node tests/varianti-griglia.test.js
+          node tests/foto-zoom.test.js
           node tests/catalogo-nuovo.test.js
           node tests/ohana-chat.test.js
           node tests/gestori-link.test.js

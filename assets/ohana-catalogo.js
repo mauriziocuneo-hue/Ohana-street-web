@@ -91,6 +91,16 @@
     $('#photoCounter').textContent=`${index+1} / ${current.photos.length}`;
     $('#thumbnails').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.photo)===index)));
   }
+  function openPhotoZoom(){
+    const photo=$('#mainPhoto'),zoom=$('#photoZoomDialog');
+    if(!current||photo.hidden||!photo.complete||!photo.naturalWidth||zoom.open)return;
+    const enlarged=$('#photoZoomImage');
+    enlarged.src=photo.currentSrc||photo.src;
+    enlarged.alt=photo.alt;
+    $('#photoZoomCaption').textContent=photo.alt;
+    zoom.showModal();
+    $('#closePhotoZoom').focus();
+  }
   function photoButtons(photos){return photos.map((src,i)=>`<button type="button" data-photo="${i}" aria-label="Mostra fotografia ${i+1}" aria-pressed="${i===0?'true':'false'}"><img src="${esc(src)}" alt="Vista ${i+1}" loading="lazy"></button>`).join('');}
   function expandAlbum(){
     $('#album').hidden=false;$('#album').innerHTML=photoButtons(current.photos);$('#showAlbum').setAttribute('aria-expanded','true');$('#showAlbum').textContent='Nascondi album completo ↑';
@@ -195,6 +205,18 @@
   dialog.addEventListener('close',()=>{syncOverlay();const url=new URL(location.href);url.searchParams.delete('articolo');history.replaceState({},'',url);if(!selectionDialog.open)(returnFocus?.isConnected?returnFocus:$('#openSelection')).focus();});
   selectionDialog.addEventListener('close',()=>{syncOverlay();const url=new URL(location.href);url.searchParams.delete('richiesta');history.replaceState({},'',url);if(!dialog.open)(selectionFocus?.isConnected?selectionFocus:$('#openSelection')).focus();});
   $('#showAlbum').addEventListener('click',()=>{if($('#album').hidden)expandAlbum();else{$('#album').hidden=true;$('#showAlbum').setAttribute('aria-expanded','false');$('#showAlbum').textContent=`Guarda tutte le ${current.photos.length} fotografie ↓`;}});
+  $('#mainPhoto').addEventListener('click',openPhotoZoom);
+  $('#mainPhoto').addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();openPhotoZoom();}
+  });
+  $('#closePhotoZoom').addEventListener('click',()=>$('#photoZoomDialog').close());
+  $('#photoZoomDialog').addEventListener('close',()=>{
+    $('#photoZoomImage').removeAttribute('src');
+    if($('#productDialog').open)$('#mainPhoto').focus();
+  });
+  $('#photoZoomDialog').addEventListener('click',e=>{
+    if(e.target===e.currentTarget)e.currentTarget.close();
+  });
   $('#mainPhoto').addEventListener('error',()=>{$('#mainPhoto').hidden=true;$('#photoError').hidden=false;});
   $('#mainPhoto').addEventListener('load',()=>{$('#mainPhoto').hidden=false;$('#photoError').hidden=true;});
   $('#shareProduct').addEventListener('click',async()=>{

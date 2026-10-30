@@ -230,3 +230,14 @@ dialog{border:3px solid var(--deep);border-radius:0;box-shadow:10px 10px 0 var(-
 /* Varianti: due colonne leggibili su smartphone, senza scorrimento orizzontale. */
 @media(max-width:530px){.variant-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#variantPhotos img{height:112px}}
 @media(prefers-reduced-motion:reduce){#variantPhotos button{transition:none}}
+
+/* Ingrandimento foto: una finestra distinta, senza modificare la scheda esistente. */
+#mainPhoto[role="button"]{cursor:zoom-in}
+#mainPhoto[role="button"]:focus-visible{outline:3px solid var(--coral);outline-offset:-4px}
+.photo-zoom-dialog{width:min(1200px,calc(100vw - 24px));max-width:none;max-height:calc(100dvh - 24px);padding:0;border:2px solid var(--deep);border-radius:8px;background:var(--cream);box-shadow:none;overflow:hidden}
+.photo-zoom-dialog::backdrop{background:rgba(0,23,27,.9)}
+.photo-zoom-content{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;min-height:140px;padding:48px 12px 12px}
+.photo-zoom-content img{display:block;width:auto;max-width:100%;height:auto;max-height:calc(100dvh - 136px);object-fit:contain}
+.photo-zoom-content p{font-size:12px;text-align:center;max-width:100%;margin:10px 0 0;overflow-wrap:anywhere}
+#photoZoomDialog .photo-zoom-close{position:absolute;top:8px;right:8px;z-index:1;display:grid;place-items:center;width:36px;height:36px;padding:0;background:white;color:var(--deep);border:2px solid var(--deep);border-radius:50%;font-size:26px;line-height:1}
+#photoZoomDialog .photo-zoom-close:hover{background:var(--sea)}
