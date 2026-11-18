@@ -129,6 +129,17 @@ def main():
             raise ValueError("Preview image count must be between one and three")
         photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i})
                   for i in range(1, image_count + 1)]
+        local = ["assets/v3/" + public_id + "-" + str(i) + ".webp"
+                 for i in range(1, image_count + 1)]
+        def safe_webp(relative):
+            f = ROOT / relative
+            if not f.is_file() or not 700 <= f.stat().st_size <= 170_000:
+                return False
+            with f.open("rb") as stream:
+                h = stream.read(12)
+            return h[:4] == b"RIFF" and h[8:] == b"WEBP"
+        if all(safe_webp(path) for path in local):
+            photos = local
         previews.append({
             "id": "OH3P-" + public_id,
             "brand": brand, "family": family, "model": name,
