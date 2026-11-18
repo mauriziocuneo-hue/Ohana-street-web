@@ -1,4 +1,5 @@
 name: OHANA V3 — Aggiorna catalogo verificato
+# Scarica fotografie solo dal proxy OHANA, mai dagli URL privati dei fornitori.
 
 on:
   schedule:
