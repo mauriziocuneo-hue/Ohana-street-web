@@ -33,10 +33,20 @@ for(const item of previews){
   assert.ok(item.images.length>=1 && item.images.length<=3);
   assert.equal(item.image,item.images[0]);
   const pid=item.id.slice(5);
-  for(let n=1;n<=item.images.length;n++)assert.equal(
-    item.images[n-1],
-    `https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`
-  );
+  let localCount=0;
+  for(let n=1;n<=item.images.length;n++){
+    const proxy=`https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`;
+    const local=`assets/v3/${pid}-${n}.webp`;
+    assert.ok(item.images[n-1]===proxy||item.images[n-1]===local,"Unknown V3 photo host/path");
+    if(item.images[n-1]===local){
+      localCount++;
+      assert.ok(fs.existsSync(local),"Local V3 WebP reference must exist");
+      const img=fs.readFileSync(local);
+      assert.equal(img.subarray(0,4).toString("ascii"),"RIFF");
+      assert.equal(img.subarray(8,12).toString("ascii"),"WEBP");
+    }
+  }
+  assert.ok(localCount===0||localCount===item.images.length,"No mixed gallery sources");
 }
 
 for(const path of ["data/catalogo-v3.json","catalogo-v3.html","assets/ohana-v3.js","assets/ohana-v3.css"]){
