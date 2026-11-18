@@ -5,8 +5,8 @@ const client=createClient(cfg.supabaseUrl,cfg.supabaseAnonKey,{auth:{persistSess
 const brands=["Nike","Jordan","Adidas","New Balance"];
 const pageSize=18;let page=0;let manager=null;let sources=[];let count=0;
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=String(text);if(cls)el.className=cls;return el;};
-const validPhoto=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname==="photo.yupoo.com"&&/^\/jsl68\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\.(jpeg|jpg|png)$/.test(x.pathname)?x.href:null;}catch{return null;}};
-const albumLink=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname==="jsl68.x.yupoo.com"&&/^\/albums\/[0-9]+$/.test(x.pathname)?x.href:null;}catch{return null;}};
+const validPhoto=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname==="photo.yupoo.com"&&/^\/[a-zA-Z0-9_-]{2,40}\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\.(jpeg|jpg|png)$/.test(x.pathname)?x.href:null;}catch{return null;}};
+const albumLink=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname.endsWith(".x.yupoo.com")&&/^\/albums\/[0-9]+$/.test(x.pathname)?x.href:null;}catch{return null;}};
 const setStatus=message=>{$("globalStatus").textContent=message;};
 function requireAuth(){ $("authArea").hidden=false; $("workspace").hidden=true; }
 async function authenticate(){
