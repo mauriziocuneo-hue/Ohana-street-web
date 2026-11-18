@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "catalogVersion": "v3-preview",
+  "catalogVersion": "v3",
   "revisionDate": "2026-11-18",
   "visibility": "anteprima",
   "sourceScope": "45 categorie fornite dall'utente; URL e identità fornitore riservati su Supabase",
