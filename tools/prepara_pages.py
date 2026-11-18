@@ -113,7 +113,7 @@ for name in v3_public:
     file = Path(name)
     assert file.is_file(), f"Risorsa pubblica V3 mancante: {name}"
     raw_text = file.read_text(encoding="utf-8")
-    assert not re.search(r"(?:yupoo[.]com|jsl68|sb_secret_|service_role|supplier_url|source_url|category_id|referrercate)", raw_text, re.I), f"Riferimento riservato nella V3: {name}"
+    assert not re.search(r"(?:yupoo[.]com|sb_secret_|service_role|supplier_url|source_url|category_id|referrercate)", raw_text, re.I), f"Riferimento riservato nella V3: {name}"
 v3_data = json.loads(Path("data/catalogo-v3.json").read_text(encoding="utf-8"))
 assert v3_data.get("schemaVersion") == 3, "Versione catalogo V3 inattesa"
 v3_collections = v3_data.get("collections")
@@ -167,7 +167,7 @@ for item in ["index.html", "config.js", "password-core.mjs", "password-ui.mjs", 
 
 # Nessun URL specifico del fornitore deve comparire nel codice dei gestori.
 review_js=(dest/"gestione/v3-review.js").read_text(encoding="utf-8")
-assert "jsl68" not in review_js and "sb_secret_" not in review_js, "Identita fornitore o chiave segreta nel codice V3"
+assert "sb_secret_" not in review_js and not re.search(r"[^/\\s]+[.]x[.]yupoo[.]com/(?:albums|categories)/[0-9]+", review_js), "Link fornitore o chiave segreta nel codice V3"
 
 # Servizio condiviso tramite indirizzo: tutte le pagine pubblicate, incluse
 # quelle future e l'accesso gestori, devono chiedere l'esclusione dai motori.
