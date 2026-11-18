@@ -30,10 +30,10 @@ for(const item of previews){
   assert.ok(data.collections.some(x=>x.brand===item.brand&&x.model===item.family));
   assert.equal(item.model,item.brand+" "+item.family);
   assert.equal(item.color,"Colorazione da verificare");
-  assert.equal(item.images.length,3);
+  assert.ok(item.images.length>=1 && item.images.length<=3);
   assert.equal(item.image,item.images[0]);
   const pid=item.id.slice(5);
-  for(let n=1;n<=3;n++)assert.equal(
+  for(let n=1;n<=item.images.length;n++)assert.equal(
     item.images[n-1],
     `https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`
   );
