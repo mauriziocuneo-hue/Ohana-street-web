@@ -9,6 +9,8 @@ on:
       - "verifica-responsive.html"
       - "catalogo.json"
       - "catalogo-nuovo.html"
+      - "catalogo-v3.html"
+      - "data/catalogo-v3.json"
       - "catalogo-nuovo.json"
       - "scripts/audit_catalogo_nuovo.py"
       - "tests/catalogo-nuovo.test.js"
