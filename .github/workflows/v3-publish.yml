@@ -2,7 +2,7 @@ name: OHANA V3 — Aggiorna catalogo verificato
 
 on:
   schedule:
-    - cron: '23 4,10,16,22 * * *'
+    - cron: '17,47 * * * *'
   workflow_dispatch:
   push:
     paths:
