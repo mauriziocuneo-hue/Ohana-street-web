@@ -135,7 +135,7 @@ for product in v3_products:
     assert (product.get("brand"),product.get("family")) in v3_keys, "Famiglia V3 non consentita"
     for field in ("model","color","description"):
         value = product.get(field)
-        assert isinstance(value,str) and len(value.strip()) >= 3 and not re.search(r"[\\u3400-\\u9fff]",value), "Testo V3 da verificare"
+        assert isinstance(value,str) and len(value.strip()) >= 3 and not re.search(r"[\u3400-\u9fff]",value), "Testo V3 da verificare"
     imgs = product.get("images")
     assert isinstance(imgs,list) and len(imgs)==3 and len(set(imgs))==3 and imgs[0]==product.get("image"), "Galleria V3 non valida"
     for i,url in enumerate(imgs,1):
@@ -157,7 +157,7 @@ for item in v3_previews:
     assert item.get("color") == "Colorazione da verificare", "Colorazione non verificata"
     description=item.get("description")
     assert isinstance(description,str) and 10<=len(description)<=250 and not re.search(
-        r"[\\u3400-\\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
+        r"[\u3400-\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
     photos=item.get("images")
     assert isinstance(photos,list) and len(photos)==3 and photos[0]==item.get("image"), "Galleria V3 anteprima non valida"
     for i,url in enumerate(photos,1):
