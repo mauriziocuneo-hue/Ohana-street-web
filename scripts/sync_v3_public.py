@@ -34,7 +34,10 @@ def public_photo(url: str, public_id: str, index: int) -> bool:
     return parsed.scheme == "https" and parsed.netloc == TARGET_HOST and parsed.path == expected and not parsed.query
 
 
-def read_rows(config: str):
+def read_rows(config: str, table: str, fields: str, sort_column: str):
+    if table not in {"ohana_v3_public_items", "ohana_v3_photo_previews"}:
+        raise ValueError("Table not authorized for public export")
+
     base = config_value(config, "supabaseUrl")
     key = config_value(config, "supabaseAnonKey")
     if base != "https://" + TARGET_HOST or not key.startswith("sb_publishable_"):
@@ -42,11 +45,11 @@ def read_rows(config: str):
     rows = []
     while True:
         params = urllib.parse.urlencode({
-            "select": "public_id,brand,collection_model,product_name,color,description,images",
-            "published": "eq.true", "order": "published_at.asc",
+            "select": fields,
+            "published": "eq.true", "order": sort_column + ".asc",
             "limit": "500", "offset": str(len(rows))
         })
-        req = urllib.request.Request(base + "/rest/v1/ohana_v3_public_items?" + params,
+        req = urllib.request.Request(base + "/rest/v1/" + table + "?" + params,
             headers={"apikey": key, "Accept": "application/json",
                      "User-Agent": "ohana-v3-static-publisher/1.0"})
         with urllib.request.urlopen(req, timeout=30) as response:
@@ -68,7 +71,7 @@ def main():
     allowed = {(v["brand"], v["model"]) for v in collections}
     public_items = []
     seen = set()
-    for row in read_rows(CONFIG.read_text(encoding="utf-8")):
+    for row in read_rows(CONFIG.read_text(encoding="utf-8"), "ohana_v3_public_items", "public_id,brand,collection_model,product_name,color,description,images", "published_at"):
         pid = str(row["public_id"])
         if not re.fullmatch(r"[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}", pid):
             raise ValueError("Invalid public ID")
@@ -96,20 +99,58 @@ def main():
             "image": photos[0], "images": photos, "status": "published",
             "verifiedProduct": True
         })
+    # Photo previews are public model-family references, NOT verified products.
+    # The original supplier album addresses stay exclusively behind RLS.
+    previews = []
+    preview_ids = set()
+    preview_prefix = "https://" + TARGET_HOST + "/functions/v1/ohana-v3-photo?"
+    for row in read_rows(CONFIG.read_text(encoding="utf-8"),
+                         "ohana_v3_photo_previews",
+                         "public_id,brand,family,model,description", "public_id"):
+        public_id = str(row["public_id"])
+        if not re.fullmatch(r"[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}", public_id):
+            raise ValueError("Invalid preview UUID")
+        if public_id in preview_ids:
+            raise ValueError("Duplicate preview UUID")
+        preview_ids.add(public_id)
+        brand, family = row["brand"], row["family"]
+        if brand not in VALID_BRANDS or (brand, family) not in allowed:
+            raise ValueError("Preview model not in permitted source categories")
+        name = str(row["model"]).strip()
+        if name != brand + " " + family:
+            raise ValueError("Preview must use only the listed category name")
+        details = str(row["description"]).strip()
+        if not 10 <= len(details) <= 250 or re.search(
+                r"[\\u3400-\\u9fff]|yupoo|supplier_url|source_url|album_url|https?:",
+                details, re.I):
+            raise ValueError("Private information in preview description")
+        photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i})
+                  for i in range(1, 4)]
+        previews.append({
+            "id": "OH3P-" + public_id,
+            "brand": brand, "family": family, "model": name,
+            "color": "Colorazione da verificare",
+            "description": details,
+            "image": photos[0], "images": photos,
+            "status": "preview", "verifiedProduct": False
+        })
+    counts_preview = Counter((v["brand"],v["family"]) for v in previews)
     counts = Counter((p["brand"], p["family"]) for p in public_items)
     for group in collections:
         count = counts[(group["brand"], group["model"])]
         group["verifiedProducts"] = count
-        group["status"] = "published" if count else "da-catalogare"
+        group["previewProducts"] = counts_preview[(group["brand"],group["model"])]
+        group["status"] = "published" if count else ("photo-preview" if group["previewProducts"] else "da-catalogare")
     data["products"] = public_items
+    data["photoPreviews"] = previews
     data["catalogVersion"] = "v3"
-    data["visibility"] = "anteprima" if not public_items else "pubblico-verificato"
+    data["visibility"] = "pubblico-verificato" if public_items else ("anteprima-fotografica" if previews else "anteprima")
     content = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     if CATALOG.read_text(encoding="utf-8") != content:
         CATALOG.write_text(content, encoding="utf-8")
-        print(f"V3 updated: {len(public_items)} reviewed products across {len(counts)} collections")
+        print(f"V3 updated: {len(previews)} photo previews, {len(public_items)} verified products")
     else:
-        print(f"V3 unchanged: {len(public_items)} reviewed products")
+        print(f"V3 unchanged: {len(previews)} previews, {len(public_items)} verified products")
 
 
 if __name__ == "__main__":
