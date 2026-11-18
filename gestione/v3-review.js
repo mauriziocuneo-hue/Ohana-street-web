@@ -170,7 +170,7 @@ function makeCard(row){
     }
     approve.disabled=true;reject.disabled=true;note.textContent="Salvataggio…";
     const update={
-      status,selected_photo_indices:selected,
+      status,selected_photo_indices:status==="approved"?selected:(selected.length===3?selected:stored),
       proposed_name:name.value.trim().slice(0,110)||null,
       proposed_color:color.value.trim().slice(0,80)||null,
       reviewed_by:manager.id,reviewed_at:new Date().toISOString()
