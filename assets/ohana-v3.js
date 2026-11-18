@@ -22,6 +22,7 @@
   function setSelection(brand, family = "") {
     state.brand = brands.includes(brand) ? brand : "";
     state.family = family;
+    limit = 45;
     get("more").hidden = true;
     render();
   }
@@ -71,12 +72,18 @@
 
   function trustedPhoto(url, id, n) {
     if(typeof url!=="string" || typeof id!=="string")return false;
+    const root="https://tqkmrejfbvzchfplgxzl.supabase.co";
+    if(/^OH3P-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/.test(id)){
+      const uuid=id.slice(5);
+      return url===root+"/functions/v1/ohana-v3-photo?id="+uuid+"&n="+n;
+    }
     const pid=id.replace(/^OH3-/,"");
     return /^OH3-[a-f0-9-]{36}$/.test(id) &&
-      url==="https://tqkmrejfbvzchfplgxzl.supabase.co/storage/v1/object/public/ohana-v3-products/"+pid+"/"+n+".jpg";
+      url===root+"/storage/v1/object/public/ohana-v3-products/"+pid+"/"+n+".jpg";
   }
   function showProduct(p) {
-    get("dialogEyebrow").textContent=p.brand+" · V3 / ARTICOLO VERIFICATO";
+    get("dialogEyebrow").textContent=p.brand+
+      (p.verifiedProduct?" · V3 / ARTICOLO VERIFICATO":" · V3 / ANTEPRIMA FOTOGRAFICA");
     get("productBrand").textContent=p.brand;
     get("productTitle").textContent=p.model;
     get("productColor").textContent="Colore: "+p.color;
@@ -111,7 +118,8 @@
     get("album").replaceChildren();get("album").hidden=true;
     get("showAlbum").hidden=true;
     get("variantPicker").hidden=true;
-    get("galleryStatus").hidden=true;
+    get("galleryStatus").hidden=Boolean(p.verifiedProduct);
+    if(!p.verifiedProduct)get("galleryStatus").textContent="Anteprima: modello e colorazione da verificare tramite WhatsApp.";
     get("saveProduct").hidden=true;
     get("shareProduct").hidden=true;
     get("shareFallback").hidden=true;
@@ -136,8 +144,8 @@
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
     info.append(dom("h3","display",p.model));
     info.append(dom("p","card-color",p.color));
-    info.append(dom("p","card-code",p.id));
-    const button=dom("button","card-open","Esplora la scarpa ↗");button.type="button";
+    info.append(dom("p","card-code",p.verifiedProduct?p.id:"Anteprima fotografica · identificazione da confermare"));
+    const button=dom("button","card-open",p.verifiedProduct?"Esplora la scarpa ↗":"Guarda le foto ↗");button.type="button";
     button.addEventListener("click",()=>showProduct(p));info.append(button);
     root.append(visual,info);return root;
   }
@@ -184,23 +192,31 @@
 
   function card(item) {
     const root = dom("article","card");
+    const representative=publicProducts.find(p=>p.brand===item.brand&&p.family===item.model);
     const visual = dom("div","card-visual v3-card-visual");
     const cover = dom("button","card-cover v3-placeholder");
     cover.type = "button";
     cover.setAttribute("aria-label","Esplora "+item.brand+" "+item.model);
-    cover.append(dom("span","v3-mark","OHANA / V3"));
-    cover.append(dom("span","v3-art","FOTO\nIN REVISIONE"));
-    cover.append(dom("span","photo-count",fmt(item.reportedAlbumCount)+" album censiti"));
-    cover.addEventListener("click",()=>showCollection(item));
+    if(representative){
+      cover.classList.remove("v3-placeholder");
+      const photo=dom("img");photo.src=representative.image;
+      photo.alt=item.brand+" "+item.model+" · fotografia dimostrativa";
+      photo.loading="lazy";photo.decoding="async";cover.append(photo);
+    }else{
+      cover.append(dom("span","v3-mark","OHANA / V3"));
+      cover.append(dom("span","v3-art","FOTO\nIN REVISIONE"));
+    }
+    cover.append(dom("span","photo-count",fmt(item.previewProducts||0)+" anteprime"));
+    cover.addEventListener("click",()=>setSelection(item.brand,item.id));
     visual.append(cover);
     const info = dom("div","card-info");
     info.append(dom("div","card-brand",item.brand+" · Sneakers"));
     info.append(dom("h3","display",item.model));
-    info.append(dom("p","card-color","Foto e colorazioni da verificare"));
+    info.append(dom("p","card-color",representative?"Foto inserite · colorazioni da verificare":"Foto e colorazioni in acquisizione"));
     info.append(dom("p","card-code","Raccolta V3 · "+fmt(item.reportedAlbumCount)+" album segnalati"));
     const open = dom("button","card-open","Esplora il modello ↗");
     open.type = "button";
-    open.addEventListener("click",()=>showCollection(item));
+    open.addEventListener("click",()=>setSelection(item.brand,item.id));
     info.append(open);
     root.append(visual,info);
     return root;
@@ -208,23 +224,27 @@
 
   function render() {
     navigation();
-    const rows=filtered();
-    const q=norm(state.query.trim());
+    const rows=filtered(),q=norm(state.query.trim());
     const cards=[];
+    const showingFamilies=!state.family&&!q;
     for(const item of rows){
+      if(showingFamilies){
+        cards.push(card(item));continue;
+      }
       const approved=publicProducts.filter(p=>
-        p.brand===item.brand && p.family===item.model &&
-        (!q || norm(item.brand+" "+item.model).includes(q) ||
+        p.brand===item.brand&&p.family===item.model&&
+        (!q||norm(item.brand+" "+item.model).includes(q)||
           norm(p.model+" "+p.color).includes(q)));
       if(approved.length)approved.forEach(p=>cards.push(productCard(p)));
-      else if(!q || norm(item.brand+" "+item.model).includes(q))cards.push(card(item));
+      else if(!q||norm(item.brand+" "+item.model).includes(q))cards.push(card(item));
     }
     const grid=get("grid");
-    const chunk=document.createDocumentFragment();
-    cards.slice(0,limit).forEach(el=>chunk.append(el));
-    grid.replaceChildren(chunk);
+    const fragment=document.createDocumentFragment();
+    cards.slice(0,limit).forEach(el=>fragment.append(el));
+    grid.replaceChildren(fragment);
     if(!cards.length)grid.append(dom("p","empty","Nessun modello trovato. Modifica la ricerca."));
-    get("results").textContent=fmt(cards.length)+" schede/raccolte · "+fmt(publicProducts.length)+" prodotti fotografici approvati";
+    get("results").textContent=fmt(cards.length)+" raccolte/schede · "+
+      fmt(publicProducts.filter(p=>!p.verifiedProduct).length)+" anteprime fotografiche";
     const selected=byId(state.family);
     get("selectionTitle").textContent=selected?selected.model:(state.brand||"Tutti i modelli");
     get("breadcrumb").textContent=["Scarpe V3",state.brand,selected?.model].filter(Boolean).join(" › ");
@@ -285,9 +305,10 @@
       catalog=data.collections.filter(item=>
         item&&typeof item.id==="string"&&typeof item.model==="string"&&
         brands.includes(item.brand)&&Number.isInteger(item.reportedAlbumCount)&&
-        item.reportedAlbumCount>=0&&["da-catalogare","published"].includes(item.status));
-      publicProducts=data.products.filter(p=>
-        p&&p.verifiedProduct===true&&p.status==="published"&&
+        item.reportedAlbumCount>=0&&["da-catalogare","photo-preview","published"].includes(item.status));
+      publicProducts=[...(data.products||[]),...(data.photoPreviews||[])].filter(p=>
+        p&&(p.status==="published"&&p.verifiedProduct===true ||
+            p.status==="preview"&&p.verifiedProduct===false)&&
         typeof p.id==="string"&&Array.isArray(p.images)&&p.images.length===3 &&
         p.images.every((url,i)=>trustedPhoto(url,p.id,i+1)) &&
         catalog.some(c=>c.brand===p.brand&&c.model===p.family));
