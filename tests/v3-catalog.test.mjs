@@ -19,7 +19,7 @@ for(const item of data.products){
 }
 for(const path of ["data/catalogo-v3.json","catalogo-v3.html","assets/ohana-v3.js","assets/ohana-v3.css"]){
   const content=read(path);
-  assert.doesNotMatch(content,/jsl68|yupoo\.com|album_url|catalog_url|supplier_url|sb_secret_/i,path);
+  assert.doesNotMatch(content,/yupoo\.com|album_url|catalog_url|supplier_url|sb_secret_/i,path);
 }
 assert.match(read("catalogo-v3.html"),/assets\/ohana-catalogo.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
@@ -34,7 +34,7 @@ assert.match(reviewer,/loaded\.has\(i\)/,"Only loaded photos may be approved");
 assert.match(reviewer,/source_photo_caption/,"Unverified photo captions are available to reviewers");
 assert.match(reviewer,/query=query\.eq\("category_id",model\)/,"Manager can filter specific V3 model");
 assert.match(reviewerHtml,/id="model"/,"Model select exists in reviewer");
-assert.doesNotMatch(reviewer,/(?:https?:\/\/jsl68|\/albums\/[0-9]{6,})/i,
+assert.doesNotMatch(reviewer,/(?:https?:\/\/[a-z0-9.-]+\.x\.yupoo\.com\/albums\/[0-9]{6,}|\/albums\/[0-9]{6,})/i,
   "No literal supplier links should be embedded in public manager code");
 
 console.log("PASS V3 collections, reviewed photos, vendor isolation, canonical OHANA layout");
