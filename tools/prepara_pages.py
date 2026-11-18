@@ -121,7 +121,27 @@ assert isinstance(v3_collections, list) and len(v3_collections) == 45, "Mancano 
 assert len(set(c.get("id") for c in v3_collections)) == 45, "Identificativi duplicati V3"
 assert {c.get("brand") for c in v3_collections} == {"Nike", "Jordan", "Adidas", "New Balance"}, "Marchi V3 inattesi"
 assert sum(c.get("reportedAlbumCount", 0) for c in v3_collections) == 2014, "Conteggi iniziali V3 alterati"
-assert v3_data.get("products") == [], "Non pubblicare prodotti V3 finche non approvati visivamente"
+# I prodotti V3, se presenti, devono essere già approvati e ospitati da OHANA.
+v3_products = v3_data.get("products")
+assert isinstance(v3_products, list) and len(v3_products) <= 5000, "Prodotti V3 non validi"
+v3_keys = {(c.get("brand"),c.get("model")) for c in v3_collections}
+v3_ids = set()
+for product in v3_products:
+    assert product.get("verifiedProduct") is True and product.get("status") == "published", "Prodotto V3 non verificato"
+    pid = product.get("id","")
+    assert re.fullmatch(r"OH3-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}", pid), "ID V3 non valido"
+    assert pid not in v3_ids, "Prodotto V3 duplicato"
+    v3_ids.add(pid)
+    assert (product.get("brand"),product.get("family")) in v3_keys, "Famiglia V3 non consentita"
+    for field in ("model","color","description"):
+        value = product.get(field)
+        assert isinstance(value,str) and len(value.strip()) >= 3 and not re.search(r"[\\u3400-\\u9fff]",value), "Testo V3 da verificare"
+    imgs = product.get("images")
+    assert isinstance(imgs,list) and len(imgs)==3 and len(set(imgs))==3 and imgs[0]==product.get("image"), "Galleria V3 non valida"
+    for i,url in enumerate(imgs,1):
+        assert url == ("https://tqkmrejfbvzchfplgxzl.supabase.co/storage/v1/object/public/ohana-v3-products/"
+                        + pid[4:] + f"/{i}.jpg"), "Immagine V3 fuori dal nostro Storage"
+
 
 # The trial catalog has its own reviewed albums and public-file allowlist.
 import runpy
