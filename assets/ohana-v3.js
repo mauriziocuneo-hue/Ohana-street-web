@@ -138,7 +138,7 @@
     const image=dom("img");image.src=p.verifiedProduct?p.image:p.image+"&size=small";
     image.alt=p.brand+" "+p.model+" "+p.color;
     image.loading="lazy";image.decoding="async";
-    cover.append(image,dom("span","photo-count","3 foto"));
+    cover.append(image,dom("span","photo-count",p.images.length+" foto"));
     cover.addEventListener("click",()=>showProduct(p));visual.append(cover);
     const info=dom("div","card-info");
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
@@ -309,7 +309,7 @@
       publicProducts=[...(data.products||[]),...(data.photoPreviews||[])].filter(p=>
         p&&(p.status==="published"&&p.verifiedProduct===true ||
             p.status==="preview"&&p.verifiedProduct===false)&&
-        typeof p.id==="string"&&Array.isArray(p.images)&&p.images.length===3 &&
+        typeof p.id==="string"&&Array.isArray(p.images)&&p.images.length>=1&&p.images.length<=3 &&
         p.images.every((url,i)=>trustedPhoto(url,p.id,i+1)) &&
         catalog.some(c=>c.brand===p.brand&&c.model===p.family));
       get("trialTotal").textContent=fmt(publicProducts.length||catalog.length);
