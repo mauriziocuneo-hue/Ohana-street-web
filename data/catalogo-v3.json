@@ -219,8 +219,8 @@
       "model": "Air Jordan 4 (gruppo 1)",
       "reportedAlbumCount": 61,
       "verifiedProducts": 0,
-      "status": "da-catalogare",
-      "previewProducts": 0
+      "status": "photo-preview",
+      "previewProducts": 12
     },
     {
       "id": "ohana-v3-family-25",
@@ -255,8 +255,8 @@
       "model": "UltraBoost 5.0",
       "reportedAlbumCount": 15,
       "verifiedProducts": 0,
-      "status": "da-catalogare",
-      "previewProducts": 0
+      "status": "photo-preview",
+      "previewProducts": 15
     },
     {
       "id": "ohana-v3-family-29",
@@ -264,8 +264,8 @@
       "model": "UltraBoost 7.0",
       "reportedAlbumCount": 21,
       "verifiedProducts": 0,
-      "status": "da-catalogare",
-      "previewProducts": 0
+      "status": "photo-preview",
+      "previewProducts": 21
     },
     {
       "id": "ohana-v3-family-30",
@@ -273,8 +273,8 @@
       "model": "UltraBoost 5X",
       "reportedAlbumCount": 10,
       "verifiedProducts": 0,
-      "status": "da-catalogare",
-      "previewProducts": 0
+      "status": "photo-preview",
+      "previewProducts": 10
     },
     {
       "id": "ohana-v3-family-31",
@@ -282,8 +282,8 @@
       "model": "Adizero EVO SL",
       "reportedAlbumCount": 40,
       "verifiedProducts": 0,
-      "status": "da-catalogare",
-      "previewProducts": 0
+      "status": "photo-preview",
+      "previewProducts": 36
     },
     {
       "id": "ohana-v3-family-32",
@@ -479,6 +479,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-0162345c-eb08-43ea-964d-158ed376ce86",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=0162345c-eb08-43ea-964d-158ed376ce86&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=0162345c-eb08-43ea-964d-158ed376ce86&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=0162345c-eb08-43ea-964d-158ed376ce86&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=0162345c-eb08-43ea-964d-158ed376ce86&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-01e18e10-6b5d-41d6-aa8a-0c7c1b20a9bb",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -490,6 +506,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=01e18e10-6b5d-41d6-aa8a-0c7c1b20a9bb&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=01e18e10-6b5d-41d6-aa8a-0c7c1b20a9bb&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=01e18e10-6b5d-41d6-aa8a-0c7c1b20a9bb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-026451b0-e44f-4090-ba37-d359051738cb",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=026451b0-e44f-4090-ba37-d359051738cb&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=026451b0-e44f-4090-ba37-d359051738cb&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=026451b0-e44f-4090-ba37-d359051738cb&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=026451b0-e44f-4090-ba37-d359051738cb&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -570,6 +602,54 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=04befd17-5188-4c7f-83cc-e09c63a0f638&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=04befd17-5188-4c7f-83cc-e09c63a0f638&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=04befd17-5188-4c7f-83cc-e09c63a0f638&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-061c805a-3716-474e-95ae-3394fc83f8de",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=061c805a-3716-474e-95ae-3394fc83f8de&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=061c805a-3716-474e-95ae-3394fc83f8de&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=061c805a-3716-474e-95ae-3394fc83f8de&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=061c805a-3716-474e-95ae-3394fc83f8de&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-06bb4e11-37f5-453f-befc-03a29489d3b4",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=06bb4e11-37f5-453f-befc-03a29489d3b4&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=06bb4e11-37f5-453f-befc-03a29489d3b4&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=06bb4e11-37f5-453f-befc-03a29489d3b4&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=06bb4e11-37f5-453f-befc-03a29489d3b4&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-071197b8-e60a-4c2a-9aec-08eed7baccbe",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=071197b8-e60a-4c2a-9aec-08eed7baccbe&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=071197b8-e60a-4c2a-9aec-08eed7baccbe&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=071197b8-e60a-4c2a-9aec-08eed7baccbe&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=071197b8-e60a-4c2a-9aec-08eed7baccbe&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -815,6 +895,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-15734da2-5706-4506-9a12-660e04d57dd2",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15734da2-5706-4506-9a12-660e04d57dd2&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15734da2-5706-4506-9a12-660e04d57dd2&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15734da2-5706-4506-9a12-660e04d57dd2&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15734da2-5706-4506-9a12-660e04d57dd2&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-15b11b2e-69bf-454f-bba1-fba519dc5ba3",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15b11b2e-69bf-454f-bba1-fba519dc5ba3&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15b11b2e-69bf-454f-bba1-fba519dc5ba3&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15b11b2e-69bf-454f-bba1-fba519dc5ba3&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=15b11b2e-69bf-454f-bba1-fba519dc5ba3&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-164a5bd7-b35d-4190-b34c-7a9528f437d9",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -826,6 +938,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=164a5bd7-b35d-4190-b34c-7a9528f437d9&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=164a5bd7-b35d-4190-b34c-7a9528f437d9&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=164a5bd7-b35d-4190-b34c-7a9528f437d9&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-17092792-20eb-45b8-833d-4bb96e4c2fff",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=17092792-20eb-45b8-833d-4bb96e4c2fff&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=17092792-20eb-45b8-833d-4bb96e4c2fff&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=17092792-20eb-45b8-833d-4bb96e4c2fff&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=17092792-20eb-45b8-833d-4bb96e4c2fff&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-175ffaee-e6d5-44d9-8c67-48bc26a9f6b3",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=175ffaee-e6d5-44d9-8c67-48bc26a9f6b3&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=175ffaee-e6d5-44d9-8c67-48bc26a9f6b3&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=175ffaee-e6d5-44d9-8c67-48bc26a9f6b3&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=175ffaee-e6d5-44d9-8c67-48bc26a9f6b3&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -863,6 +1007,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-18c0c553-a06f-4950-8d04-be231e8994c2",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=18c0c553-a06f-4950-8d04-be231e8994c2&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=18c0c553-a06f-4950-8d04-be231e8994c2&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=18c0c553-a06f-4950-8d04-be231e8994c2&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=18c0c553-a06f-4950-8d04-be231e8994c2&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-19a8fd06-e078-4479-85ae-56833e1e0ea5",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -890,6 +1050,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=19f861c2-d75d-40a4-a596-27a1e27cee48&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=19f861c2-d75d-40a4-a596-27a1e27cee48&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=19f861c2-d75d-40a4-a596-27a1e27cee48&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-1a0c4dac-be9a-40cd-a395-c280ea350098",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1a0c4dac-be9a-40cd-a395-c280ea350098&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1a0c4dac-be9a-40cd-a395-c280ea350098&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1a0c4dac-be9a-40cd-a395-c280ea350098&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1a0c4dac-be9a-40cd-a395-c280ea350098&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -991,6 +1167,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-1f0250c2-a808-4dc2-9528-dd0e919015db",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1f0250c2-a808-4dc2-9528-dd0e919015db&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1f0250c2-a808-4dc2-9528-dd0e919015db&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1f0250c2-a808-4dc2-9528-dd0e919015db&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=1f0250c2-a808-4dc2-9528-dd0e919015db&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-20f71a3c-0cce-4090-b6a7-161078c123e1",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -1018,6 +1210,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21480c29-d69b-4bfc-85b4-0bc875d6dc42&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21480c29-d69b-4bfc-85b4-0bc875d6dc42&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21480c29-d69b-4bfc-85b4-0bc875d6dc42&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-21bde4de-ebf4-4f05-8fee-b247a12a5b26",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21bde4de-ebf4-4f05-8fee-b247a12a5b26&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21bde4de-ebf4-4f05-8fee-b247a12a5b26&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21bde4de-ebf4-4f05-8fee-b247a12a5b26&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=21bde4de-ebf4-4f05-8fee-b247a12a5b26&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1055,6 +1263,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-257ccbb0-6868-4add-9b87-8ecd7c9f7cfb",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=257ccbb0-6868-4add-9b87-8ecd7c9f7cfb&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=257ccbb0-6868-4add-9b87-8ecd7c9f7cfb&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=257ccbb0-6868-4add-9b87-8ecd7c9f7cfb&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=257ccbb0-6868-4add-9b87-8ecd7c9f7cfb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-263abf62-bd87-4b1d-8bb8-e3eb2c9dc2b0",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -1066,6 +1290,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=263abf62-bd87-4b1d-8bb8-e3eb2c9dc2b0&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=263abf62-bd87-4b1d-8bb8-e3eb2c9dc2b0&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=263abf62-bd87-4b1d-8bb8-e3eb2c9dc2b0&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-266ef1a6-4a56-42ac-bfda-3608e4a217a1",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=266ef1a6-4a56-42ac-bfda-3608e4a217a1&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=266ef1a6-4a56-42ac-bfda-3608e4a217a1&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=266ef1a6-4a56-42ac-bfda-3608e4a217a1&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=266ef1a6-4a56-42ac-bfda-3608e4a217a1&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1151,6 +1391,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-2aae83af-0fc8-4539-8650-8096d2f9f207",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2aae83af-0fc8-4539-8650-8096d2f9f207&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2aae83af-0fc8-4539-8650-8096d2f9f207&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2aae83af-0fc8-4539-8650-8096d2f9f207&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2aae83af-0fc8-4539-8650-8096d2f9f207&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-2aba51ed-9383-41bc-8dbc-353b2f11b57b",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -1194,6 +1450,54 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2c50f4db-d91d-4afc-800f-00feb7a87b10&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2c50f4db-d91d-4afc-800f-00feb7a87b10&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2c50f4db-d91d-4afc-800f-00feb7a87b10&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-2d222780-0c16-4cf0-a827-eae7e7cbd0ef",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d222780-0c16-4cf0-a827-eae7e7cbd0ef&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d222780-0c16-4cf0-a827-eae7e7cbd0ef&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d222780-0c16-4cf0-a827-eae7e7cbd0ef&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d222780-0c16-4cf0-a827-eae7e7cbd0ef&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-2d8eb8e9-834b-4ab5-b9e8-ba06b2ad9937",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d8eb8e9-834b-4ab5-b9e8-ba06b2ad9937&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d8eb8e9-834b-4ab5-b9e8-ba06b2ad9937&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d8eb8e9-834b-4ab5-b9e8-ba06b2ad9937&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2d8eb8e9-834b-4ab5-b9e8-ba06b2ad9937&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-2e63315e-762c-4ce9-bec8-afffd89bb10b",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2e63315e-762c-4ce9-bec8-afffd89bb10b&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2e63315e-762c-4ce9-bec8-afffd89bb10b&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2e63315e-762c-4ce9-bec8-afffd89bb10b&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=2e63315e-762c-4ce9-bec8-afffd89bb10b&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1295,6 +1599,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-317840d3-1bce-43a7-a303-f2c4695c18c1",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=317840d3-1bce-43a7-a303-f2c4695c18c1&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=317840d3-1bce-43a7-a303-f2c4695c18c1&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=317840d3-1bce-43a7-a303-f2c4695c18c1&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=317840d3-1bce-43a7-a303-f2c4695c18c1&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-32d55bbd-2224-4b3e-8098-b84ad789c23a",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=32d55bbd-2224-4b3e-8098-b84ad789c23a&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=32d55bbd-2224-4b3e-8098-b84ad789c23a&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=32d55bbd-2224-4b3e-8098-b84ad789c23a&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=32d55bbd-2224-4b3e-8098-b84ad789c23a&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-345c638e-0bb1-4d70-b973-c92b854d1f01",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -1322,6 +1658,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=34e9955d-e3ea-4ed9-a71c-ebe3bbe92ff1&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=34e9955d-e3ea-4ed9-a71c-ebe3bbe92ff1&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=34e9955d-e3ea-4ed9-a71c-ebe3bbe92ff1&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-35a5153e-b963-4d8b-96d1-6a22788ddd47",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=35a5153e-b963-4d8b-96d1-6a22788ddd47&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=35a5153e-b963-4d8b-96d1-6a22788ddd47&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=35a5153e-b963-4d8b-96d1-6a22788ddd47&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=35a5153e-b963-4d8b-96d1-6a22788ddd47&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1391,6 +1743,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-378cb415-ceb4-49eb-848a-3e76bd18ac52",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=378cb415-ceb4-49eb-848a-3e76bd18ac52&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=378cb415-ceb4-49eb-848a-3e76bd18ac52&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=378cb415-ceb4-49eb-848a-3e76bd18ac52&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=378cb415-ceb4-49eb-848a-3e76bd18ac52&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-37ef2488-f8c3-488f-8869-00c746e8f83a",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -1402,6 +1770,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=37ef2488-f8c3-488f-8869-00c746e8f83a&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=37ef2488-f8c3-488f-8869-00c746e8f83a&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=37ef2488-f8c3-488f-8869-00c746e8f83a&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-385e3927-abc7-4a22-af1c-5d65a833443a",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=385e3927-abc7-4a22-af1c-5d65a833443a&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=385e3927-abc7-4a22-af1c-5d65a833443a&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=385e3927-abc7-4a22-af1c-5d65a833443a&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=385e3927-abc7-4a22-af1c-5d65a833443a&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1439,6 +1823,54 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-3a2b02aa-1be8-430d-ad0d-e7057f5352dc",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3a2b02aa-1be8-430d-ad0d-e7057f5352dc&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3a2b02aa-1be8-430d-ad0d-e7057f5352dc&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3a2b02aa-1be8-430d-ad0d-e7057f5352dc&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3a2b02aa-1be8-430d-ad0d-e7057f5352dc&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-3acf1d98-2dc0-49f0-8f15-56a535df5a27",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3acf1d98-2dc0-49f0-8f15-56a535df5a27&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3acf1d98-2dc0-49f0-8f15-56a535df5a27&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3acf1d98-2dc0-49f0-8f15-56a535df5a27&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3acf1d98-2dc0-49f0-8f15-56a535df5a27&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-3b49eb81-7492-4f32-bcbb-460f0650febc",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3b49eb81-7492-4f32-bcbb-460f0650febc&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3b49eb81-7492-4f32-bcbb-460f0650febc&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3b49eb81-7492-4f32-bcbb-460f0650febc&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3b49eb81-7492-4f32-bcbb-460f0650febc&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-3c3f0099-83f3-4f5b-8153-75472d2fe6a3",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -1450,6 +1882,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3c3f0099-83f3-4f5b-8153-75472d2fe6a3&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3c3f0099-83f3-4f5b-8153-75472d2fe6a3&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3c3f0099-83f3-4f5b-8153-75472d2fe6a3&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-3d0f47a2-661e-482c-8ebb-f5e05e425039",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3d0f47a2-661e-482c-8ebb-f5e05e425039&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3d0f47a2-661e-482c-8ebb-f5e05e425039&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3d0f47a2-661e-482c-8ebb-f5e05e425039&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3d0f47a2-661e-482c-8ebb-f5e05e425039&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1498,6 +1946,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e51022b-6b5d-4acc-9605-0bbd44e85228&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e51022b-6b5d-4acc-9605-0bbd44e85228&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e51022b-6b5d-4acc-9605-0bbd44e85228&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-3e5f2972-b487-41c7-aed6-02a3a2771e45",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e5f2972-b487-41c7-aed6-02a3a2771e45&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e5f2972-b487-41c7-aed6-02a3a2771e45&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e5f2972-b487-41c7-aed6-02a3a2771e45&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=3e5f2972-b487-41c7-aed6-02a3a2771e45&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1567,6 +2031,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-40150415-ba79-4318-aef3-011188df9f44",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=40150415-ba79-4318-aef3-011188df9f44&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=40150415-ba79-4318-aef3-011188df9f44&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=40150415-ba79-4318-aef3-011188df9f44&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=40150415-ba79-4318-aef3-011188df9f44&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-403a9908-ae6b-4089-907d-c1bc4bf4f654",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=403a9908-ae6b-4089-907d-c1bc4bf4f654&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=403a9908-ae6b-4089-907d-c1bc4bf4f654&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=403a9908-ae6b-4089-907d-c1bc4bf4f654&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=403a9908-ae6b-4089-907d-c1bc4bf4f654&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-40f6c425-42f1-4747-a187-db43b561b0e2",
       "brand": "Adidas",
       "family": "Yeezy 500",
@@ -1594,6 +2090,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=41b5f01f-f850-4903-99b9-c24f8b6f21fb&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=41b5f01f-f850-4903-99b9-c24f8b6f21fb&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=41b5f01f-f850-4903-99b9-c24f8b6f21fb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-43f71b17-9531-4dfe-a7fb-25cc3db86321",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=43f71b17-9531-4dfe-a7fb-25cc3db86321&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=43f71b17-9531-4dfe-a7fb-25cc3db86321&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=43f71b17-9531-4dfe-a7fb-25cc3db86321&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=43f71b17-9531-4dfe-a7fb-25cc3db86321&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1695,6 +2207,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-49cd7897-fd8b-4444-a494-9b46cbf2799b",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49cd7897-fd8b-4444-a494-9b46cbf2799b&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49cd7897-fd8b-4444-a494-9b46cbf2799b&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49cd7897-fd8b-4444-a494-9b46cbf2799b&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49cd7897-fd8b-4444-a494-9b46cbf2799b&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-49dbf92c-6fb3-45e4-a0ee-cd6b3523a1a4",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -1722,6 +2250,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49ece47a-035d-483f-8ff9-c45c93cb8c72&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49ece47a-035d-483f-8ff9-c45c93cb8c72&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=49ece47a-035d-483f-8ff9-c45c93cb8c72&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-4ad20c46-0387-4c7c-a073-ea08344db43c",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=4ad20c46-0387-4c7c-a073-ea08344db43c&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=4ad20c46-0387-4c7c-a073-ea08344db43c&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=4ad20c46-0387-4c7c-a073-ea08344db43c&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=4ad20c46-0387-4c7c-a073-ea08344db43c&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1887,6 +2431,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-509c45f6-dc6f-41b1-af2d-fdbeefa1be92",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=509c45f6-dc6f-41b1-af2d-fdbeefa1be92&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=509c45f6-dc6f-41b1-af2d-fdbeefa1be92&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=509c45f6-dc6f-41b1-af2d-fdbeefa1be92&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=509c45f6-dc6f-41b1-af2d-fdbeefa1be92&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-5141f4aa-9176-4985-a024-6a3e38c772fe",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5141f4aa-9176-4985-a024-6a3e38c772fe&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5141f4aa-9176-4985-a024-6a3e38c772fe&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5141f4aa-9176-4985-a024-6a3e38c772fe&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5141f4aa-9176-4985-a024-6a3e38c772fe&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-51541a82-a27c-48b9-8324-7bcfb52881e4",
       "brand": "Adidas",
       "family": "Yeezy 500",
@@ -1903,6 +2479,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-52eba18f-86a8-4938-ba2a-f8a3447a10b4",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52eba18f-86a8-4938-ba2a-f8a3447a10b4&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52eba18f-86a8-4938-ba2a-f8a3447a10b4&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52eba18f-86a8-4938-ba2a-f8a3447a10b4&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52eba18f-86a8-4938-ba2a-f8a3447a10b4&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-52fdd6f1-fd54-4131-9b45-a5360b4e6315",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52fdd6f1-fd54-4131-9b45-a5360b4e6315&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52fdd6f1-fd54-4131-9b45-a5360b4e6315&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52fdd6f1-fd54-4131-9b45-a5360b4e6315&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=52fdd6f1-fd54-4131-9b45-a5360b4e6315&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-540d70e8-1f6e-44d1-9d47-befc900ad9ef",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -1914,6 +2522,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=540d70e8-1f6e-44d1-9d47-befc900ad9ef&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=540d70e8-1f6e-44d1-9d47-befc900ad9ef&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=540d70e8-1f6e-44d1-9d47-befc900ad9ef&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-545af71a-3a69-45e7-bea1-060345a7f851",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=545af71a-3a69-45e7-bea1-060345a7f851&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=545af71a-3a69-45e7-bea1-060345a7f851&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=545af71a-3a69-45e7-bea1-060345a7f851&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=545af71a-3a69-45e7-bea1-060345a7f851&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -1983,6 +2607,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-57e95592-d958-4cea-a835-24f83dfdb0f8",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=57e95592-d958-4cea-a835-24f83dfdb0f8&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=57e95592-d958-4cea-a835-24f83dfdb0f8&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=57e95592-d958-4cea-a835-24f83dfdb0f8&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=57e95592-d958-4cea-a835-24f83dfdb0f8&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-58229113-8a97-4f2f-afe1-5d353e7905a9",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -2010,6 +2650,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=58c329a7-6e28-40b8-913c-d541d356263a&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=58c329a7-6e28-40b8-913c-d541d356263a&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=58c329a7-6e28-40b8-913c-d541d356263a&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-5915ba72-454b-486e-99f0-5887e0a1f6a7",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5915ba72-454b-486e-99f0-5887e0a1f6a7&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5915ba72-454b-486e-99f0-5887e0a1f6a7&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5915ba72-454b-486e-99f0-5887e0a1f6a7&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5915ba72-454b-486e-99f0-5887e0a1f6a7&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2159,6 +2815,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-5ee4bd5a-30d1-4ead-b517-ccb2ab26e70b",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5ee4bd5a-30d1-4ead-b517-ccb2ab26e70b&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5ee4bd5a-30d1-4ead-b517-ccb2ab26e70b&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5ee4bd5a-30d1-4ead-b517-ccb2ab26e70b&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5ee4bd5a-30d1-4ead-b517-ccb2ab26e70b&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-5f375415-41b7-44db-9a3e-7f8db4747637",
       "brand": "Adidas",
       "family": "Forum 84",
@@ -2170,6 +2842,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5f375415-41b7-44db-9a3e-7f8db4747637&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5f375415-41b7-44db-9a3e-7f8db4747637&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5f375415-41b7-44db-9a3e-7f8db4747637&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-5fa04b58-1e5e-4195-ac51-917b9ac72b7f",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5fa04b58-1e5e-4195-ac51-917b9ac72b7f&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5fa04b58-1e5e-4195-ac51-917b9ac72b7f&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5fa04b58-1e5e-4195-ac51-917b9ac72b7f&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=5fa04b58-1e5e-4195-ac51-917b9ac72b7f&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2207,6 +2895,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-61292e17-76e4-4ded-933e-bdccbc0bf9bb",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=61292e17-76e4-4ded-933e-bdccbc0bf9bb&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=61292e17-76e4-4ded-933e-bdccbc0bf9bb&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=61292e17-76e4-4ded-933e-bdccbc0bf9bb&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=61292e17-76e4-4ded-933e-bdccbc0bf9bb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-62566deb-2d07-4745-96f9-27671f972f9d",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -2218,6 +2922,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=62566deb-2d07-4745-96f9-27671f972f9d&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=62566deb-2d07-4745-96f9-27671f972f9d&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=62566deb-2d07-4745-96f9-27671f972f9d&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-6339cc01-89ba-4e84-a1bf-8e9747d828b9",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6339cc01-89ba-4e84-a1bf-8e9747d828b9&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6339cc01-89ba-4e84-a1bf-8e9747d828b9&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6339cc01-89ba-4e84-a1bf-8e9747d828b9&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6339cc01-89ba-4e84-a1bf-8e9747d828b9&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2287,6 +3007,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-67a9c50a-77a6-488a-bd56-34fac38e39a6",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=67a9c50a-77a6-488a-bd56-34fac38e39a6&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=67a9c50a-77a6-488a-bd56-34fac38e39a6&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=67a9c50a-77a6-488a-bd56-34fac38e39a6&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=67a9c50a-77a6-488a-bd56-34fac38e39a6&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-691cc5b3-89d9-4388-ab50-4887d7e60950",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -2298,6 +3034,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=691cc5b3-89d9-4388-ab50-4887d7e60950&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=691cc5b3-89d9-4388-ab50-4887d7e60950&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=691cc5b3-89d9-4388-ab50-4887d7e60950&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-69db8f8f-b3ab-4ee2-a67f-b34675d4b3a0",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=69db8f8f-b3ab-4ee2-a67f-b34675d4b3a0&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=69db8f8f-b3ab-4ee2-a67f-b34675d4b3a0&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=69db8f8f-b3ab-4ee2-a67f-b34675d4b3a0&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=69db8f8f-b3ab-4ee2-a67f-b34675d4b3a0&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2351,6 +3103,54 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-6fa6863b-8da7-4096-b589-02d4c7cda584",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fa6863b-8da7-4096-b589-02d4c7cda584&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fa6863b-8da7-4096-b589-02d4c7cda584&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fa6863b-8da7-4096-b589-02d4c7cda584&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fa6863b-8da7-4096-b589-02d4c7cda584&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-6fcad7c6-c636-4591-8850-05b9336d9385",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fcad7c6-c636-4591-8850-05b9336d9385&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fcad7c6-c636-4591-8850-05b9336d9385&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fcad7c6-c636-4591-8850-05b9336d9385&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=6fcad7c6-c636-4591-8850-05b9336d9385&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-70424870-a844-41c6-b8c2-f2174dd04224",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=70424870-a844-41c6-b8c2-f2174dd04224&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=70424870-a844-41c6-b8c2-f2174dd04224&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=70424870-a844-41c6-b8c2-f2174dd04224&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=70424870-a844-41c6-b8c2-f2174dd04224&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-72349bd7-52b7-401b-99a7-29e5380a2ae6",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -2362,6 +3162,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=72349bd7-52b7-401b-99a7-29e5380a2ae6&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=72349bd7-52b7-401b-99a7-29e5380a2ae6&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=72349bd7-52b7-401b-99a7-29e5380a2ae6&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-74a891b3-3250-4a90-bf90-acb648414f44",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74a891b3-3250-4a90-bf90-acb648414f44&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74a891b3-3250-4a90-bf90-acb648414f44&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74a891b3-3250-4a90-bf90-acb648414f44&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74a891b3-3250-4a90-bf90-acb648414f44&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2383,6 +3199,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-74c84a7c-6597-45a1-941b-efd0d6bfdf8d",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74c84a7c-6597-45a1-941b-efd0d6bfdf8d&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74c84a7c-6597-45a1-941b-efd0d6bfdf8d&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74c84a7c-6597-45a1-941b-efd0d6bfdf8d&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74c84a7c-6597-45a1-941b-efd0d6bfdf8d&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-74fb58aa-4aba-4d27-87da-c760722fe922",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -2394,6 +3226,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74fb58aa-4aba-4d27-87da-c760722fe922&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74fb58aa-4aba-4d27-87da-c760722fe922&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=74fb58aa-4aba-4d27-87da-c760722fe922&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-75407f91-97a2-4bf9-b1e4-7b890c0fb6fa",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=75407f91-97a2-4bf9-b1e4-7b890c0fb6fa&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=75407f91-97a2-4bf9-b1e4-7b890c0fb6fa&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=75407f91-97a2-4bf9-b1e4-7b890c0fb6fa&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=75407f91-97a2-4bf9-b1e4-7b890c0fb6fa&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2575,6 +3423,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-7abf0a9c-aa27-422b-9710-e8e01bd785e1",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7abf0a9c-aa27-422b-9710-e8e01bd785e1&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7abf0a9c-aa27-422b-9710-e8e01bd785e1&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7abf0a9c-aa27-422b-9710-e8e01bd785e1&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7abf0a9c-aa27-422b-9710-e8e01bd785e1&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-7aeb7e2e-8458-4429-8b95-bb2ff4cd8258",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7aeb7e2e-8458-4429-8b95-bb2ff4cd8258&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7aeb7e2e-8458-4429-8b95-bb2ff4cd8258&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7aeb7e2e-8458-4429-8b95-bb2ff4cd8258&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7aeb7e2e-8458-4429-8b95-bb2ff4cd8258&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-7b7754d3-e203-4bda-9531-a5975e473c37",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -2586,6 +3466,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7b7754d3-e203-4bda-9531-a5975e473c37&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7b7754d3-e203-4bda-9531-a5975e473c37&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7b7754d3-e203-4bda-9531-a5975e473c37&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-7bd8b132-f554-422d-950b-3e82e8a845b6",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7bd8b132-f554-422d-950b-3e82e8a845b6&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7bd8b132-f554-422d-950b-3e82e8a845b6&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7bd8b132-f554-422d-950b-3e82e8a845b6&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=7bd8b132-f554-422d-950b-3e82e8a845b6&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2655,6 +3551,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-803bc94d-b909-4e91-a98e-076af7d6ba16",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=803bc94d-b909-4e91-a98e-076af7d6ba16&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=803bc94d-b909-4e91-a98e-076af7d6ba16&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=803bc94d-b909-4e91-a98e-076af7d6ba16&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=803bc94d-b909-4e91-a98e-076af7d6ba16&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-804a2813-a4e8-4bad-8d4a-fda31bd55f46",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -2666,6 +3578,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=804a2813-a4e8-4bad-8d4a-fda31bd55f46&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=804a2813-a4e8-4bad-8d4a-fda31bd55f46&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=804a2813-a4e8-4bad-8d4a-fda31bd55f46&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-80712c0e-fecc-415c-ad37-9ff0108b2679",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=80712c0e-fecc-415c-ad37-9ff0108b2679&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=80712c0e-fecc-415c-ad37-9ff0108b2679&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=80712c0e-fecc-415c-ad37-9ff0108b2679&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=80712c0e-fecc-415c-ad37-9ff0108b2679&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -2895,6 +3823,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-8b927d7f-b702-4098-b357-d613019109b8",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8b927d7f-b702-4098-b357-d613019109b8&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8b927d7f-b702-4098-b357-d613019109b8&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8b927d7f-b702-4098-b357-d613019109b8&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8b927d7f-b702-4098-b357-d613019109b8&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-8ba83c93-737f-4bcf-a765-62c5b460176c",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -2975,6 +3919,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-8fa9ee43-f4a7-491e-8e40-0ea362abff7d",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8fa9ee43-f4a7-491e-8e40-0ea362abff7d&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8fa9ee43-f4a7-491e-8e40-0ea362abff7d&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8fa9ee43-f4a7-491e-8e40-0ea362abff7d&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=8fa9ee43-f4a7-491e-8e40-0ea362abff7d&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-9076aac4-02cc-4ae4-b412-c97ddf542e31",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -3034,6 +3994,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94daa93c-dd69-4d9b-b343-96ffff1fd802&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94daa93c-dd69-4d9b-b343-96ffff1fd802&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94daa93c-dd69-4d9b-b343-96ffff1fd802&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-95083008-75eb-4435-b8f5-3eec4fe90785",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=95083008-75eb-4435-b8f5-3eec4fe90785&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=95083008-75eb-4435-b8f5-3eec4fe90785&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=95083008-75eb-4435-b8f5-3eec4fe90785&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=95083008-75eb-4435-b8f5-3eec4fe90785&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3167,6 +4143,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-9d01b8b7-25d4-4c80-a288-5d069abe1665",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9d01b8b7-25d4-4c80-a288-5d069abe1665&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9d01b8b7-25d4-4c80-a288-5d069abe1665&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9d01b8b7-25d4-4c80-a288-5d069abe1665&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9d01b8b7-25d4-4c80-a288-5d069abe1665&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-9e607462-e3c5-4179-9fc7-fc235b90cc39",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9e607462-e3c5-4179-9fc7-fc235b90cc39&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9e607462-e3c5-4179-9fc7-fc235b90cc39&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9e607462-e3c5-4179-9fc7-fc235b90cc39&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=9e607462-e3c5-4179-9fc7-fc235b90cc39&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-9e62ebfa-6f7a-4fe7-8b86-f22bba6c283e",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -3274,6 +4282,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a54ca5cf-b69d-450b-ae7b-02fd89b54a32&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a54ca5cf-b69d-450b-ae7b-02fd89b54a32&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a54ca5cf-b69d-450b-ae7b-02fd89b54a32&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-a5db98fb-64eb-4f1b-b4b5-3228b0f42d72",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a5db98fb-64eb-4f1b-b4b5-3228b0f42d72&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a5db98fb-64eb-4f1b-b4b5-3228b0f42d72&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a5db98fb-64eb-4f1b-b4b5-3228b0f42d72&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a5db98fb-64eb-4f1b-b4b5-3228b0f42d72&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-a634a7e9-49b6-4d26-95b6-8a1692616a29",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a634a7e9-49b6-4d26-95b6-8a1692616a29&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a634a7e9-49b6-4d26-95b6-8a1692616a29&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a634a7e9-49b6-4d26-95b6-8a1692616a29&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a634a7e9-49b6-4d26-95b6-8a1692616a29&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3407,6 +4447,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-a9f3c851-fc2e-4a67-9f9e-7ce704e70f0c",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a9f3c851-fc2e-4a67-9f9e-7ce704e70f0c&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a9f3c851-fc2e-4a67-9f9e-7ce704e70f0c&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a9f3c851-fc2e-4a67-9f9e-7ce704e70f0c&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=a9f3c851-fc2e-4a67-9f9e-7ce704e70f0c&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-aaadd453-b268-409b-99fe-56fd2b3ae3a0",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -3466,6 +4522,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad13cd5f-93ac-4e81-b02e-116f4792200c&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad13cd5f-93ac-4e81-b02e-116f4792200c&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad13cd5f-93ac-4e81-b02e-116f4792200c&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-ad81b4a0-1514-44e7-be2c-31cf41ce0dbb",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad81b4a0-1514-44e7-be2c-31cf41ce0dbb&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad81b4a0-1514-44e7-be2c-31cf41ce0dbb&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad81b4a0-1514-44e7-be2c-31cf41ce0dbb&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ad81b4a0-1514-44e7-be2c-31cf41ce0dbb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-aed442b4-fb03-4833-8049-3f8e0d5679bc",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=aed442b4-fb03-4833-8049-3f8e0d5679bc&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=aed442b4-fb03-4833-8049-3f8e0d5679bc&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=aed442b4-fb03-4833-8049-3f8e0d5679bc&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=aed442b4-fb03-4833-8049-3f8e0d5679bc&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3551,6 +4639,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-b2649207-25c4-46fd-a907-b895dc84c5b0",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b2649207-25c4-46fd-a907-b895dc84c5b0&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b2649207-25c4-46fd-a907-b895dc84c5b0&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b2649207-25c4-46fd-a907-b895dc84c5b0&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b2649207-25c4-46fd-a907-b895dc84c5b0&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-b26530b8-ced3-475e-b359-4b354bde3219",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -3594,6 +4698,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b420c813-9641-4323-bcd2-29366fb1b1eb&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b420c813-9641-4323-bcd2-29366fb1b1eb&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b420c813-9641-4323-bcd2-29366fb1b1eb&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-b4398c9f-f40b-4537-b6d0-38bb83e0bc0b",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b4398c9f-f40b-4537-b6d0-38bb83e0bc0b&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b4398c9f-f40b-4537-b6d0-38bb83e0bc0b&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b4398c9f-f40b-4537-b6d0-38bb83e0bc0b&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b4398c9f-f40b-4537-b6d0-38bb83e0bc0b&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-b52b3eb1-b78a-4545-be10-11162439c2fd",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b52b3eb1-b78a-4545-be10-11162439c2fd&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b52b3eb1-b78a-4545-be10-11162439c2fd&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b52b3eb1-b78a-4545-be10-11162439c2fd&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b52b3eb1-b78a-4545-be10-11162439c2fd&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3663,6 +4799,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-b9ecdf35-efc9-4c83-826f-ff5ae3cab910",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b9ecdf35-efc9-4c83-826f-ff5ae3cab910&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b9ecdf35-efc9-4c83-826f-ff5ae3cab910&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b9ecdf35-efc9-4c83-826f-ff5ae3cab910&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=b9ecdf35-efc9-4c83-826f-ff5ae3cab910&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-ba98da25-305f-478f-b0fa-1a98960503b5",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -3727,6 +4879,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-bdf11569-06c9-4d58-9484-cffe35951f56",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bdf11569-06c9-4d58-9484-cffe35951f56&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bdf11569-06c9-4d58-9484-cffe35951f56&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bdf11569-06c9-4d58-9484-cffe35951f56&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bdf11569-06c9-4d58-9484-cffe35951f56&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-be1da10a-b6a6-46f7-b564-d6a312f3a9af",
       "brand": "Adidas",
       "family": "Yeezy 700",
@@ -3770,6 +4938,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be6c556f-0e16-4084-b980-2226acc60d5c&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be6c556f-0e16-4084-b980-2226acc60d5c&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be6c556f-0e16-4084-b980-2226acc60d5c&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-be850236-725d-4873-ad2a-b782afa0aa5b",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be850236-725d-4873-ad2a-b782afa0aa5b&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be850236-725d-4873-ad2a-b782afa0aa5b&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be850236-725d-4873-ad2a-b782afa0aa5b&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=be850236-725d-4873-ad2a-b782afa0aa5b&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-bfe57fe4-4888-4edc-8951-a1a73ef8195e",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bfe57fe4-4888-4edc-8951-a1a73ef8195e&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bfe57fe4-4888-4edc-8951-a1a73ef8195e&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bfe57fe4-4888-4edc-8951-a1a73ef8195e&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=bfe57fe4-4888-4edc-8951-a1a73ef8195e&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3834,6 +5034,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c3580ad7-2260-4d36-a625-40a393bf4ad4&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c3580ad7-2260-4d36-a625-40a393bf4ad4&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c3580ad7-2260-4d36-a625-40a393bf4ad4&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-c444ced5-67c8-4fd2-84bb-a85a31fcfa80",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c444ced5-67c8-4fd2-84bb-a85a31fcfa80&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c444ced5-67c8-4fd2-84bb-a85a31fcfa80&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c444ced5-67c8-4fd2-84bb-a85a31fcfa80&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=c444ced5-67c8-4fd2-84bb-a85a31fcfa80&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -3935,6 +5151,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-ca1d9ed4-574d-4bea-a3ea-9188f745d627",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ca1d9ed4-574d-4bea-a3ea-9188f745d627&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ca1d9ed4-574d-4bea-a3ea-9188f745d627&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ca1d9ed4-574d-4bea-a3ea-9188f745d627&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ca1d9ed4-574d-4bea-a3ea-9188f745d627&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-cb0b9254-dda3-4a5c-8c75-206d7c69dce6",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -3978,6 +5210,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cc283324-bfcf-445c-92b4-d35d0e9cd124&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cc283324-bfcf-445c-92b4-d35d0e9cd124&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cc283324-bfcf-445c-92b4-d35d0e9cd124&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-ce42d09b-e54a-476d-b990-b3abd1d12977",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ce42d09b-e54a-476d-b990-b3abd1d12977&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ce42d09b-e54a-476d-b990-b3abd1d12977&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ce42d09b-e54a-476d-b990-b3abd1d12977&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ce42d09b-e54a-476d-b990-b3abd1d12977&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-cf0bdb3f-eabc-4e26-9560-1b8f94299e2d",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cf0bdb3f-eabc-4e26-9560-1b8f94299e2d&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cf0bdb3f-eabc-4e26-9560-1b8f94299e2d&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cf0bdb3f-eabc-4e26-9560-1b8f94299e2d&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=cf0bdb3f-eabc-4e26-9560-1b8f94299e2d&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -4138,6 +5402,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d77cbd05-47a0-444e-b7c9-c09dce689877&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d77cbd05-47a0-444e-b7c9-c09dce689877&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d77cbd05-47a0-444e-b7c9-c09dce689877&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-d79a2384-d087-40ff-9548-5eca8ae2b6f7",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d79a2384-d087-40ff-9548-5eca8ae2b6f7&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d79a2384-d087-40ff-9548-5eca8ae2b6f7&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d79a2384-d087-40ff-9548-5eca8ae2b6f7&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=d79a2384-d087-40ff-9548-5eca8ae2b6f7&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -4335,6 +5615,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-e53b5488-7072-4fce-acec-0e0e05c0649f",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e53b5488-7072-4fce-acec-0e0e05c0649f&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e53b5488-7072-4fce-acec-0e0e05c0649f&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e53b5488-7072-4fce-acec-0e0e05c0649f&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e53b5488-7072-4fce-acec-0e0e05c0649f&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-e723dc07-afb8-4525-bf42-0acf974f2318",
       "brand": "Adidas",
       "family": "Forum 84",
@@ -4362,6 +5658,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e7dc394a-cfc7-4b6a-8ae8-7319f79052b1&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e7dc394a-cfc7-4b6a-8ae8-7319f79052b1&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e7dc394a-cfc7-4b6a-8ae8-7319f79052b1&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-e864bfa7-8e18-4eba-a484-98e72e5f31a8",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e864bfa7-8e18-4eba-a484-98e72e5f31a8&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e864bfa7-8e18-4eba-a484-98e72e5f31a8&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e864bfa7-8e18-4eba-a484-98e72e5f31a8&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e864bfa7-8e18-4eba-a484-98e72e5f31a8&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-e9a516c5-4dc2-4308-a862-5d520fa17d85",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e9a516c5-4dc2-4308-a862-5d520fa17d85&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e9a516c5-4dc2-4308-a862-5d520fa17d85&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e9a516c5-4dc2-4308-a862-5d520fa17d85&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=e9a516c5-4dc2-4308-a862-5d520fa17d85&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -4399,6 +5727,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-ec50d297-8555-4065-bf6f-fc4bf34999fd",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ec50d297-8555-4065-bf6f-fc4bf34999fd&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ec50d297-8555-4065-bf6f-fc4bf34999fd&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ec50d297-8555-4065-bf6f-fc4bf34999fd&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ec50d297-8555-4065-bf6f-fc4bf34999fd&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-ed9ee343-0e9d-4d0d-b382-b38528092937",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -4415,6 +5759,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-eda9cc24-3d12-4659-8200-0e1c51a99d79",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eda9cc24-3d12-4659-8200-0e1c51a99d79&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eda9cc24-3d12-4659-8200-0e1c51a99d79&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eda9cc24-3d12-4659-8200-0e1c51a99d79&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eda9cc24-3d12-4659-8200-0e1c51a99d79&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-ee7db526-e62f-4858-b484-462e3ddac9a4",
       "brand": "Nike",
       "family": "Air Force 1 Low",
@@ -4426,6 +5786,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ee7db526-e62f-4858-b484-462e3ddac9a4&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ee7db526-e62f-4858-b484-462e3ddac9a4&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=ee7db526-e62f-4858-b484-462e3ddac9a4&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-eee556da-2656-48ec-aabb-f85de04656e4",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eee556da-2656-48ec-aabb-f85de04656e4&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eee556da-2656-48ec-aabb-f85de04656e4&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eee556da-2656-48ec-aabb-f85de04656e4&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=eee556da-2656-48ec-aabb-f85de04656e4&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -4543,6 +5919,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-f43fa7f0-70d3-4832-ab0c-2daf5abced1c",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f43fa7f0-70d3-4832-ab0c-2daf5abced1c&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f43fa7f0-70d3-4832-ab0c-2daf5abced1c&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f43fa7f0-70d3-4832-ab0c-2daf5abced1c&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f43fa7f0-70d3-4832-ab0c-2daf5abced1c&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-f45ad452-7f57-4d38-9ae9-50ebb9b601e7",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f45ad452-7f57-4d38-9ae9-50ebb9b601e7&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f45ad452-7f57-4d38-9ae9-50ebb9b601e7&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f45ad452-7f57-4d38-9ae9-50ebb9b601e7&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f45ad452-7f57-4d38-9ae9-50ebb9b601e7&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-f4a052e3-34f9-46c3-90d1-bd11efd47534",
       "brand": "Adidas",
       "family": "Yeezy 350",
@@ -4575,6 +5983,22 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-f57948f9-960c-4f04-b6dd-1a06a93430dd",
+      "brand": "Adidas",
+      "family": "Adizero EVO SL",
+      "model": "Adidas Adizero EVO SL",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f57948f9-960c-4f04-b6dd-1a06a93430dd&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f57948f9-960c-4f04-b6dd-1a06a93430dd&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f57948f9-960c-4f04-b6dd-1a06a93430dd&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f57948f9-960c-4f04-b6dd-1a06a93430dd&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-f621b1f5-2932-4469-9736-0ea1ee564a57",
       "brand": "Adidas",
       "family": "Forum 84",
@@ -4602,6 +6026,38 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7814b42-2294-4770-9f8d-86f01cba3e43&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7814b42-2294-4770-9f8d-86f01cba3e43&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7814b42-2294-4770-9f8d-86f01cba3e43&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-f7cfbb0a-f870-4641-8133-a8a4e2f3edc5",
+      "brand": "Adidas",
+      "family": "UltraBoost 7.0",
+      "model": "Adidas UltraBoost 7.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7cfbb0a-f870-4641-8133-a8a4e2f3edc5&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7cfbb0a-f870-4641-8133-a8a4e2f3edc5&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7cfbb0a-f870-4641-8133-a8a4e2f3edc5&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f7cfbb0a-f870-4641-8133-a8a4e2f3edc5&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-f81970a3-42ce-4975-a959-c5de53b8e6ac",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f81970a3-42ce-4975-a959-c5de53b8e6ac&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f81970a3-42ce-4975-a959-c5de53b8e6ac&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f81970a3-42ce-4975-a959-c5de53b8e6ac&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f81970a3-42ce-4975-a959-c5de53b8e6ac&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -4687,6 +6143,38 @@
       "verifiedProduct": false
     },
     {
+      "id": "OH3P-fb9cdb1d-c4e2-4296-bf4e-3b6512ef82b7",
+      "brand": "Adidas",
+      "family": "UltraBoost 5.0",
+      "model": "Adidas UltraBoost 5.0",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fb9cdb1d-c4e2-4296-bf4e-3b6512ef82b7&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fb9cdb1d-c4e2-4296-bf4e-3b6512ef82b7&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fb9cdb1d-c4e2-4296-bf4e-3b6512ef82b7&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fb9cdb1d-c4e2-4296-bf4e-3b6512ef82b7&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-fbdf5660-1a44-4bb1-aa16-15bfc8bfd313",
+      "brand": "Adidas",
+      "family": "UltraBoost 5X",
+      "model": "Adidas UltraBoost 5X",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbdf5660-1a44-4bb1-aa16-15bfc8bfd313&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbdf5660-1a44-4bb1-aa16-15bfc8bfd313&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbdf5660-1a44-4bb1-aa16-15bfc8bfd313&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbdf5660-1a44-4bb1-aa16-15bfc8bfd313&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
       "id": "OH3P-fbecb202-db68-4bfd-b524-27c1085b90a2",
       "brand": "Adidas",
       "family": "Superstar / Shell Toe",
@@ -4714,6 +6202,22 @@
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbfce194-3e23-4f9e-b094-8f039baeb931&n=1",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbfce194-3e23-4f9e-b094-8f039baeb931&n=2",
         "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fbfce194-3e23-4f9e-b094-8f039baeb931&n=3"
+      ],
+      "status": "preview",
+      "verifiedProduct": false
+    },
+    {
+      "id": "OH3P-fdc838a3-beb2-4f22-aa78-983b11cf7b5a",
+      "brand": "Jordan",
+      "family": "Air Jordan 4 (gruppo 1)",
+      "model": "Jordan Air Jordan 4 (gruppo 1)",
+      "color": "Colorazione da verificare",
+      "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
+      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fdc838a3-beb2-4f22-aa78-983b11cf7b5a&n=1",
+      "images": [
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fdc838a3-beb2-4f22-aa78-983b11cf7b5a&n=1",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fdc838a3-beb2-4f22-aa78-983b11cf7b5a&n=2",
+        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=fdc838a3-beb2-4f22-aa78-983b11cf7b5a&n=3"
       ],
       "status": "preview",
       "verifiedProduct": false
