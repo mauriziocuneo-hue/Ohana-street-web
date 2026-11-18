@@ -75,7 +75,8 @@
     const root="https://tqkmrejfbvzchfplgxzl.supabase.co";
     if(/^OH3P-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/.test(id)){
       const uuid=id.slice(5);
-      return url===root+"/functions/v1/ohana-v3-photo?id="+uuid+"&n="+n;
+      return url===root+"/functions/v1/ohana-v3-photo?id="+uuid+"&n="+n ||
+             url==="assets/v3/"+uuid+"-"+n+".webp";
     }
     const pid=id.replace(/^OH3-/,"");
     return /^OH3-[a-f0-9-]{36}$/.test(id) &&
@@ -135,7 +136,7 @@
     const visual=dom("div","card-visual");
     const cover=dom("button","card-cover");cover.type="button";
     cover.setAttribute("aria-label","Apri "+p.brand+" "+p.model);
-    const image=dom("img");image.src=p.verifiedProduct?p.image:p.image+"&size=small";
+    const image=dom("img");image.src=p.verifiedProduct||p.image.startsWith("assets/v3/")?p.image:p.image+"&size=small";
     image.alt=p.brand+" "+p.model+" "+p.color;
     image.loading="lazy";image.decoding="async";
     cover.append(image,dom("span","photo-count",p.images.length+" foto"));
@@ -199,7 +200,7 @@
     cover.setAttribute("aria-label","Esplora "+item.brand+" "+item.model);
     if(representative){
       cover.classList.remove("v3-placeholder");
-      const photo=dom("img");photo.src=representative.verifiedProduct?representative.image:representative.image+"&size=small";
+      const photo=dom("img");photo.src=representative.verifiedProduct||representative.image.startsWith("assets/v3/")?representative.image:representative.image+"&size=small";
       photo.alt=item.brand+" "+item.model+" · fotografia dimostrativa";
       photo.loading="lazy";photo.decoding="async";cover.append(photo);
     }else{
