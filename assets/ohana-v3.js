@@ -135,7 +135,7 @@
     const visual=dom("div","card-visual");
     const cover=dom("button","card-cover");cover.type="button";
     cover.setAttribute("aria-label","Apri "+p.brand+" "+p.model);
-    const image=dom("img");image.src=p.image;
+    const image=dom("img");image.src=p.verifiedProduct?p.image:p.image+"&size=small";
     image.alt=p.brand+" "+p.model+" "+p.color;
     image.loading="lazy";image.decoding="async";
     cover.append(image,dom("span","photo-count","3 foto"));
@@ -199,7 +199,7 @@
     cover.setAttribute("aria-label","Esplora "+item.brand+" "+item.model);
     if(representative){
       cover.classList.remove("v3-placeholder");
-      const photo=dom("img");photo.src=representative.image;
+      const photo=dom("img");photo.src=representative.verifiedProduct?representative.image:representative.image+"&size=small";
       photo.alt=item.brand+" "+item.model+" · fotografia dimostrativa";
       photo.loading="lazy";photo.decoding="async";cover.append(photo);
     }else{
