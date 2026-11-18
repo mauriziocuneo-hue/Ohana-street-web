@@ -25,4 +25,16 @@ assert.match(read("catalogo-v3.html"),/assets\/ohana-catalogo.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-v3.js/);
 assert.match(read("gestione/index.html"),/v3-review.html/);
+
+const reviewer=read("gestione/v3-review.js");
+const reviewerHtml=read("gestione/v3-review.html");
+assert.match(reviewer,/selected_photo_indices/,"Only explicitly selected pictures may be approved");
+assert.match(reviewer,/selected\.length!==3/,"Photo review needs exactly three pictures");
+assert.match(reviewer,/loaded\.has\(i\)/,"Only loaded photos may be approved");
+assert.match(reviewer,/source_photo_caption/,"Unverified photo captions are available to reviewers");
+assert.match(reviewer,/query=query\.eq\("category_id",model\)/,"Manager can filter specific V3 model");
+assert.match(reviewerHtml,/id="model"/,"Model select exists in reviewer");
+assert.doesNotMatch(reviewer,/(?:https?:\/\/jsl68|\/albums\/[0-9]{6,})/i,
+  "No literal supplier links should be embedded in public manager code");
+
 console.log("PASS V3 collections, reviewed photos, vendor isolation, canonical OHANA layout");
