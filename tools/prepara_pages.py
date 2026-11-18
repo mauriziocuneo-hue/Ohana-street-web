@@ -143,6 +143,28 @@ for product in v3_products:
                         + pid[4:] + f"/{i}.jpg"), "Immagine V3 fuori dal nostro Storage"
 
 
+v3_previews = v3_data.get("photoPreviews", [])
+assert isinstance(v3_previews,list) and len(v3_previews)<=5000, "Anteprime V3 non valide"
+v3_preview_ids=set()
+for item in v3_previews:
+    assert item.get("verifiedProduct") is False and item.get("status")=="preview", "Anteprima non etichettata"
+    pid=item.get("id","")
+    assert re.fullmatch(r"OH3P-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}",pid), "ID anteprima non valido"
+    assert pid not in v3_preview_ids, "Anteprima duplicata"
+    v3_preview_ids.add(pid)
+    assert (item.get("brand"),item.get("family")) in v3_keys, "Categoria anteprima inattesa"
+    assert item.get("model") == item.get("brand")+" "+item.get("family"), "Identificazione eccessiva"
+    assert item.get("color") == "Colorazione da verificare", "Colorazione non verificata"
+    description=item.get("description")
+    assert isinstance(description,str) and 10<=len(description)<=250 and not re.search(
+        r"[\\u3400-\\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
+    photos=item.get("images")
+    assert isinstance(photos,list) and len(photos)==3 and photos[0]==item.get("image"), "Galleria V3 anteprima non valida"
+    for i,url in enumerate(photos,1):
+        assert url == ("https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?"
+                       + "id=" + pid[5:] + "&n=" + str(i)), "Anteprima non servita dal proxy OHANA"
+
+
 # The trial catalog has its own reviewed albums and public-file allowlist.
 import runpy
 runpy.run_path(str(Path('scripts/audit_catalogo_nuovo.py').resolve()))
