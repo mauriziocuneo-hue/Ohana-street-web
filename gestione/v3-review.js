@@ -72,6 +72,14 @@ function makeCard(row){
   header.append(make("span","#"+row.album_id,"code"));
   card.append(header);
   if(row.raw_title)card.append(make("p",row.raw_title,"raw-title"));
+  if(row.sku_hint){
+    const sku=make("p","Codice individuato nelle foto (da verificare): "+row.sku_hint,"sku-hint");
+    card.append(sku);
+  }
+  if(row.source_photo_caption){
+    const hint=make("p","Didascalia originale foto: "+row.source_photo_caption,"source-photo-caption");
+    card.append(hint);
+  }
   const originalUrls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.slice(0,12):[];
   const available=originalUrls.map((url,i)=>validPhoto(url)?i:-1).filter(i=>i>=0);
   const allowed=new Set(available);
@@ -221,7 +229,7 @@ async function load(){
   setStatus("");$("cards").replaceChildren(make("p","Caricamento album…"));
   const status=$("status").value,brand=$("brand").value,model=$("model").value;
   let query=client.from("ohana_v3_album_candidates")
-    .select("category_id,album_id,album_url,raw_title,raw_image_urls,selected_photo_indices,status,proposed_name,proposed_color",{count:"exact"})
+    .select("category_id,album_id,album_url,raw_title,source_photo_caption,sku_hint,raw_image_urls,selected_photo_indices,status,proposed_name,proposed_color",{count:"exact"})
     .eq("status",status).order("updated_at",{ascending:false}).range(page*pageSize,(page+1)*pageSize-1);
   if(model)query=query.eq("category_id",model);
   else if(brand){
