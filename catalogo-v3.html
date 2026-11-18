@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noimageindex,nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#123e40">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; connect-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; form-action 'none'">
+  <title>OHANA Street · Catalogo V3 in anteprima</title>
+  <meta name="description" content="Anteprima del nuovo catalogo OHANA Street, organizzato per marchio e modello. Nessun prezzo pubblicato.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/ohana-v3.css?v=1">
+  <script src="assets/ohana-v3.js?v=1" defer></script>
+</head>
+<body>
+<a href="#catalogo" class="skip">Vai al catalogo</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html" aria-label="OHANA Street, sito principale">OHANA<span>.</span>STREET<small>ISLAND CULTURE / STREET STYLE</small></a>
+    <div class="header-right"><span class="preview-mark">V3 · ANTEPRIMA</span><a class="back-link" href="catalogo-nuovo.html">Catalogo attuale ↗</a></div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="spark"></span> NUOVO CATALOGO / V3</span>
+        <h1>SOLO I<br><em>MODELLI</em><br>SCELTI.</h1>
+        <p>Una nuova esperienza OHANA Street. Quattro marchi, modelli ordinati in raccolte distinte e fotografie che pubblicheremo soltanto dopo averle verificate.</p>
+        <a href="#catalogo" class="hero-button">Esplora le raccolte <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-panel" aria-label="Riepilogo del nuovo catalogo">
+        <span class="panel-kicker">SELEZIONE V3</span>
+        <strong class="large-number" id="totalCollections">45</strong>
+        <span class="large-label">RACCOLTE DI MODELLI</span>
+        <div class="panel-divider"></div>
+        <div class="panel-meta"><span id="totalAlbums">2.014</span><small>album segnalati<br>dalle fonti selezionate</small></div>
+        <p>Non sono ancora scarpe pubblicate: i modelli fotografici sono in fase di controllo.</p>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" aria-hidden="true">NIKE ✳ JORDAN ✳ ADIDAS ✳ NEW BALANCE ✳ OHANA STREET ✳ NIKE ✳ JORDAN ✳ ADIDAS ✳ NEW BALANCE ✳</div>
+  <section class="wrap catalog-section" id="catalogo" aria-labelledby="catalogTitle">
+    <div class="section-top">
+      <div><p class="eyebrow">ESPLORA PER MARCHIO E MODELLO</p><h2 id="catalogTitle">IL CATALOGO <span>V3</span></h2></div>
+      <p class="section-note">Nessun prodotto della vecchia versione viene mescolato a questa selezione.</p>
+    </div>
+    <div class="catalog-controls">
+      <div class="brand-bar" id="brandBar" role="group" aria-label="Filtra per marchio">
+        <button type="button" data-brand="" aria-pressed="true">Tutti</button>
+        <button type="button" data-brand="Nike" aria-pressed="false">Nike</button>
+        <button type="button" data-brand="Jordan" aria-pressed="false">Jordan</button>
+        <button type="button" data-brand="Adidas" aria-pressed="false">Adidas</button>
+        <button type="button" data-brand="New Balance" aria-pressed="false">New Balance</button>
+      </div>
+      <div class="query-row">
+        <label class="search" for="modelSearch"><span>Cerca modello</span><input type="search" id="modelSearch" placeholder="Es. Air Force, Dunk, 9060…" autocomplete="off" maxlength="100"></label>
+        <label class="sort" for="modelSort"><span>Ordina</span><select id="modelSort"><option value="brand">Per marchio</option><option value="name">Modello A–Z</option><option value="albums">Album segnalati ↓</option></select></label>
+      </div>
+    </div>
+    <div class="results-line"><h3 id="collectionHeading">Tutte le raccolte</h3><p role="status" id="resultsStatus" aria-live="polite">Caricamento…</p></div>
+    <div class="model-grid" id="modelGrid"></div>
+    <div class="empty" id="emptyState" hidden><strong>Nessuna raccolta trovata.</strong><p>Prova un nome di modello differente.</p><button id="resetFilters" type="button">Azzera i filtri</button></div>
+    <noscript>Abilita JavaScript per consultare le raccolte.</noscript>
+  </section>
+  <section class="wrap status-section" aria-labelledby="aboutV3"><div><span class="eyebrow">IL METODO OHANA</span><h2 id="aboutV3">PRIMA CORRETTE.<br>POI ONLINE.</h2></div><div><p>Questo è l'indice delle categorie della V3. Ogni scheda fotografica verrà resa disponibile solo dopo aver collegato correttamente il modello, la colorazione e le sue fotografie.</p><p>I conteggi degli album sono quelli indicati nell'elenco di partenza e non rappresentano quantità disponibili, prodotti autentificati o articoli già in vendita.</p></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner"><div><strong>OHANA<span>.</span>STREET</strong><p>Catalogo sperimentale V3 · Modelli e nomi sono riferimenti descrittivi, senza affiliazione ai marchi citati.</p></div><a href="index.html">Torna a OHANA Street ↗</a></div></footer>
+<dialog id="modelDialog" aria-labelledby="modelDialogTitle">
+  <div class="dialog-top"><span>OHANA STREET · V3</span><button id="closeModelDialog" aria-label="Chiudi dettagli modello" type="button">×</button></div>
+  <div class="dialog-body">
+    <p class="eyebrow" id="modelDialogBrand"></p>
+    <h2 id="modelDialogTitle"></h2>
+    <p id="modelDialogCount"></p>
+    <div class="not-ready"><strong>Fotografie in revisione</strong><p>La raccolta è stata individuata tra le fonti selezionate. Le singole scarpe e varianti non sono ancora state approvate per la pubblicazione.</p></div>
+    <p class="size-note">Taglie normalmente richieste: 36–46. Ulteriori numeri e colorazioni su richiesta, da verificare.</p>
+    <a id="modelWhatsapp" class="dialog-contact" rel="noopener noreferrer" target="_blank">Chiedi informazioni su WhatsApp ↗</a>
+  </div>
+</dialog>
+</body></html>
