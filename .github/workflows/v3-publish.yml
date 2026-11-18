@@ -19,7 +19,7 @@ concurrency:
 jobs:
   sync-public:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,14 +27,24 @@ jobs:
           persist-credentials: true
       - name: Read sanitized published V3 products
         run: python3 scripts/sync_v3_public.py
-      - name: Publish changed JSON if needed
+      - name: Install free/open-source image conversion tool
         run: |
-          if ! git diff --quiet -- data/catalogo-v3.json; then
+          python3 -m venv .venv
+          .venv/bin/pip install --disable-pip-version-check --quiet Pillow==11.3.0
+      - name: Download and strip metadata from anonymized images
+        run: .venv/bin/python scripts/mirror_v3_photos.py --limit 300 --workers 12
+      - name: Prefer local WebP copies when complete
+        run: python3 scripts/sync_v3_public.py
+      - name: Validate public V3 data and photos
+        run: node tests/v3-catalog.test.mjs
+      - name: Publish changed photos and catalog JSON
+        run: |
+          git add data/catalogo-v3.json assets/v3/
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/catalogo-v3.json
-            git commit -m "Update approved OHANA V3 product catalog"
-            git push
+            git commit -m "Mirror approved OHANA V3 photographs as lightweight WebP"
+            git push || (git pull --rebase origin main && git push)
           else
-            echo "No new verified products."
+            echo "No new V3 photo files or catalog changes."
           fi
