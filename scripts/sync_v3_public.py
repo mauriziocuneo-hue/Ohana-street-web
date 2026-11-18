@@ -121,7 +121,7 @@ def main():
             raise ValueError("Preview must use only the listed category name")
         details = str(row["description"]).strip()
         if not 10 <= len(details) <= 250 or re.search(
-                r"[\\u3400-\\u9fff]|yupoo|supplier_url|source_url|album_url|https?:",
+                r"[\u3400-\u9fff]|yupoo|supplier_url|source_url|album_url|https?:",
                 details, re.I):
             raise ValueError("Private information in preview description")
         photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i})
