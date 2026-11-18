@@ -142,8 +142,12 @@ for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.
 for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-theme.css','ohana-business.js','ohana-business.css']:
     shutil.copy2(Path('assets') / item, dest / 'assets' / item)
 (dest / "gestione").mkdir()
-for item in ["index.html", "config.js", "password-core.mjs", "password-ui.mjs", "password-page.mjs", "password.html", "password.css", "ordini-demo.css", "ordini-demo.mjs", "ordini-core.mjs", "ordini-righe.mjs", "ordini-store.mjs", "ordini-condividi.mjs", "importa-whatsapp.mjs"]:
+for item in ["index.html", "config.js", "password-core.mjs", "password-ui.mjs", "password-page.mjs", "password.html", "password.css", "ordini-demo.css", "ordini-demo.mjs", "ordini-core.mjs", "ordini-righe.mjs", "ordini-store.mjs", "ordini-condividi.mjs", "importa-whatsapp.mjs", "v3-review.html", "v3-review.css", "v3-review.js"]:
     shutil.copy2(Path("gestione") / item, dest / "gestione" / item)
+
+# Nessun URL specifico del fornitore deve comparire nel codice dei gestori.
+review_js=(dest/"gestione/v3-review.js").read_text(encoding="utf-8")
+assert "jsl68" not in review_js and "sb_secret_" not in review_js, "Identita fornitore o chiave segreta nel codice V3"
 
 # Servizio condiviso tramite indirizzo: tutte le pagine pubblicate, incluse
 # quelle future e l'accesso gestori, devono chiedere l'esclusione dai motori.
