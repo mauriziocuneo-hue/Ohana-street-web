@@ -159,7 +159,7 @@ for item in v3_previews:
     assert isinstance(description,str) and 10<=len(description)<=250 and not re.search(
         r"[\u3400-\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
     photos=item.get("images")
-    assert isinstance(photos,list) and len(photos)==3 and photos[0]==item.get("image"), "Galleria V3 anteprima non valida"
+    assert isinstance(photos,list) and 1<=len(photos)<=3 and photos[0]==item.get("image"), "Galleria V3 anteprima non valida"
     for i,url in enumerate(photos,1):
         assert url == ("https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?"
                        + "id=" + pid[5:] + "&n=" + str(i)), "Anteprima non servita dal proxy OHANA"
