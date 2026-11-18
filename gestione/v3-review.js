@@ -53,6 +53,7 @@ async function authenticate(){
   const src=await client.from("ohana_v3_sources").select("category_id,brand,model_label,reported_albums");
   if(src.error){setStatus("Non riesco a leggere le raccolte riservate.");return;}
   sources=src.data||[];
+  refreshModels();
   await load();
 }
 async function stats(){
@@ -65,77 +66,165 @@ async function stats(){
 }
 function makeCard(row){
   const src=sources.find(s=>s.category_id===row.category_id);
-  const el=make("article",undefined,"card");
-  const head=make("header");head.append(make("h2",(src?.brand||"")+" · "+(src?.model_label||"")));
-  head.append(make("span","#"+row.album_id,"code"));el.append(head);
-  if(row.raw_title)el.append(make("p",row.raw_title,"raw-title"));
-  const photos=make("div",undefined,"photos");
-  const urls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.filter(validPhoto):[];
-  let loadedPreviews=0;
-  const previewDone=()=>{loadedPreviews++;if(loadedPreviews===3&&row.status==="needs_review"&&approve)approve.disabled=false;};
-  for(const [index,url] of urls.slice(0,3).entries()){
-    const img=make("img");img.alt="Caricamento vista "+(index+1);
-    img.loading="lazy";photos.append(img);
-    // JPG ricevuto dal proxy autenticato OHANA, senza esporre URL del fornitore.
-    queuePreview(row,index,img,previewDone);
-  }
-  if(!photos.childElementCount)photos.append(make("p","Foto non ancora recuperate"));
-  el.append(photos);
-  const link=albumLink(row.album_url);
-  if(link){const a=make("a","Apri album per verifica ↗");a.href=link;a.target="_blank";a.rel="noopener noreferrer";el.append(a);}
+  const card=make("article",undefined,"card");
+  const header=make("header");
+  header.append(make("h2",(src?.brand||"")+" · "+(src?.model_label||"")));
+  header.append(make("span","#"+row.album_id,"code"));
+  card.append(header);
+  if(row.raw_title)card.append(make("p",row.raw_title,"raw-title"));
+  const originalUrls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.slice(0,12):[];
+  const available=originalUrls.map((url,i)=>validPhoto(url)?i:-1).filter(i=>i>=0);
+  const allowed=new Set(available);
+  const stored=Array.isArray(row.selected_photo_indices)?row.selected_photo_indices.map(Number):[0,1,2];
+  let selected=stored.length===3&&new Set(stored).size===3&&stored.every(i=>allowed.has(i))?stored:[...available].slice(0,3);
+  const loaded=new Set();
+  const editable=row.status==="needs_review";
+  const photos=make("div",undefined,"photos photo-chooser");
+  photos.setAttribute("role","group");
+  photos.setAttribute("aria-label","Seleziona le tre fotografie da pubblicare");
+  const thumbnails=new Map();
+  const helper=make("p","", "photo-selection-status");
+  const more=make("button","Mostra tutte le fotografie ("+available.length+")","photo-more");
+  more.type="button";
+  const additional=make("div",undefined,"photos photo-chooser photo-extra");
+  additional.hidden=true;
   const form=make("form");
-  const nameLabel=make("label","Nome modello verificato");const name=make("input");name.type="text";name.required=true;name.maxLength=110;name.value=row.proposed_name||[src?.brand,src?.model_label].filter(Boolean).join(" ");nameLabel.append(name);
-  const colorLabel=make("label","Colorazione (facoltativa)");const color=make("input");color.type="text";color.maxLength=80;color.value=row.proposed_color||"";color.placeholder="Solo se identificata con certezza";colorLabel.append(color);
+  const nameLabel=make("label","Nome modello verificato");
+  const name=make("input");name.type="text";name.required=true;name.maxLength=110;
+  name.value=row.proposed_name||[src?.brand,src?.model_label].filter(Boolean).join(" ");
+  name.disabled=row.status==="published"||row.status==="publishing";nameLabel.append(name);
+  const colorLabel=make("label","Colorazione (facoltativa)");
+  const color=make("input");color.type="text";color.maxLength=80;
+  color.value=row.proposed_color||"";
+  color.placeholder="Scrivi solo una colorazione verificata";
+  color.disabled=row.status==="published"||row.status==="publishing";
+  colorLabel.append(color);
   const actions=make("div",undefined,"actions");
-  const approve=make("button",row.status==="approved"?"Già approvato":"Approva");approve.type="submit";approve.disabled=true; // Serve il caricamento reale delle tre fotografie prima dell’approvazione
-  const reject=make("button","Scarta","reject");reject.type="button";
+  const approve=make("button","Approva tre fotografie");
+  approve.type="submit";approve.disabled=true;
+  const reject=make("button","Scarta","reject");
+  reject.type="button";reject.disabled=row.status==="published"||row.status==="publishing";
   const note=make("p","", "status notice");note.setAttribute("role","status");
+
+  function updateSelection(){
+    for(const [index,button] of thumbnails){
+      const checked=selected.includes(index);
+      button.classList.toggle("selected",checked);
+      button.setAttribute("aria-pressed",String(checked));
+    }
+    helper.textContent="Fotografie selezionate: "+
+      (selected.length?selected.map(i=>"n. "+(i+1)).join(", "):"nessuna")+
+      " · "+selected.length+"/3 (clicca per scegliere)";
+    approve.disabled=!editable||selected.length!==3||
+      !selected.every(i=>loaded.has(i))||name.value.trim().length<3;
+  }
+  function insertPhoto(index,target){
+    const button=make("button",undefined,"photo-choice");
+    button.type="button";
+    button.setAttribute("aria-label","Seleziona fotografia "+(index+1));
+    const img=make("img");img.alt="Vista "+(index+1)+" non disponibile";
+    img.loading="lazy";button.append(img,make("span",String(index+1),"photo-number"));
+    thumbnails.set(index,button);
+    button.addEventListener("click",()=>{
+      if(!editable)return;
+      if(selected.includes(index))selected=selected.filter(i=>i!==index);
+      else if(selected.length<3)selected=[...selected,index];
+      else {note.textContent="Deseleziona prima una delle tre fotografie.";return;}
+      note.textContent="";
+      updateSelection();
+    });
+    target.append(button);
+    queuePreview(row,index,img,()=>{loaded.add(index);img.alt="Vista "+(index+1);updateSelection();});
+  }
+  if(available.length){
+    available.slice(0,3).forEach(index=>insertPhoto(index,photos));
+    if(available.length>3)more.hidden=false;
+    else more.hidden=true;
+  }else photos.append(make("p","Fotografie non ancora recuperate."));
+  more.addEventListener("click",()=>{
+    additional.hidden=!additional.hidden;
+    more.textContent=additional.hidden?"Mostra tutte le fotografie ("+available.length+")":"Nascondi fotografie aggiuntive";
+    if(!additional.hidden&&!additional.dataset.loaded){
+      available.slice(3).forEach(index=>insertPhoto(index,additional));
+      additional.dataset.loaded="1";
+      updateSelection();
+    }
+  });
+  card.append(photos);
+  if(available.length>3)card.append(more,additional);
+  card.append(helper);
+  updateSelection();
+  const link=albumLink(row.album_url);
+  if(link){
+    const a=make("a","Apri album per verifica ↗");
+    a.href=link;a.target="_blank";a.rel="noopener noreferrer";
+    card.append(a);
+  }
+
   async function save(status){
     if(!manager)return;
-    if(status==="approved"&&(urls.length<3||name.value.trim().length<3)){note.textContent="Servono almeno tre foto e un modello verificato.";return;}
+    if(status==="approved"&&(selected.length!==3||
+      !selected.every(i=>loaded.has(i))||name.value.trim().length<3)){
+      note.textContent="Servono tre fotografie effettivamente visibili e il nome modello verificato.";
+      return;
+    }
     approve.disabled=true;reject.disabled=true;note.textContent="Salvataggio…";
-    const update={status,proposed_name:name.value.trim().slice(0,110)||null,
-       proposed_color:color.value.trim().slice(0,80)||null,reviewed_by:manager.id,reviewed_at:new Date().toISOString()};
-    const {error}=await client.from("ohana_v3_album_candidates").update(update)
-      .eq("category_id",row.category_id).eq("album_id",row.album_id);
-    if(error){note.textContent="Aggiornamento non riuscito. Verifica i permessi.";approve.disabled=urls.length<3;reject.disabled=false;return;}
+    const update={
+      status,selected_photo_indices:selected,
+      proposed_name:name.value.trim().slice(0,110)||null,
+      proposed_color:color.value.trim().slice(0,80)||null,
+      reviewed_by:manager.id,reviewed_at:new Date().toISOString()
+    };
+    const {error}=await client.from("ohana_v3_album_candidates")
+      .update(update).eq("category_id",row.category_id).eq("album_id",row.album_id);
+    if(error){
+      note.textContent="Aggiornamento non riuscito. Controlla i permessi e riprova.";
+      reject.disabled=false;updateSelection();return;
+    }
     await load();
   }
-  form.addEventListener("submit",e=>{e.preventDefault();save("approved");});
+  form.addEventListener("submit",event=>{event.preventDefault();save("approved");});
   reject.addEventListener("click",()=>save("rejected"));
   actions.append(approve,reject);
   if(row.status==="approved"){
-    const publish=make("button","Importa 3 foto e pubblica V3");
+    const publish=make("button","Importa tre foto e pubblica V3");
     publish.type="button";
     publish.addEventListener("click",async()=>{
-      publish.disabled=true;reject.disabled=true;note.textContent="Importazione delle fotografie approvate…";
+      publish.disabled=true;reject.disabled=true;
+      note.textContent="Importazione delle tre fotografie approvate…";
       const {data,error}=await client.functions.invoke("ohana-v3-media",{
         body:{category_id:row.category_id,album_id:row.album_id}
       });
       if(error||!data?.published){
-        note.textContent="Importazione non completata. Riprova oppure verifica le fotografie.";
+        note.textContent="Importazione non riuscita. Le foto devono essere JPEG valide e differenti.";
         publish.disabled=false;reject.disabled=false;return;
       }
-      note.textContent="Fotografie pubblicate nello spazio OHANA. Aggiornamento catalogo statico in corso.";
+      note.textContent="Foto salvate su OHANA; aggiornamento catalogo pubblico programmato.";
       await load();
     });
     actions.append(publish);
   }
   if(row.status==="published"){
     approve.disabled=true;reject.disabled=true;
-    note.textContent="Prodotto approvato e fotografie ospitate da OHANA.";
+    note.textContent="Prodotto fotografico già pubblicato nello Storage OHANA.";
   }
-  form.append(nameLabel,colorLabel,actions,note);el.append(form);
-  return el;
+  if(row.status==="publishing"){
+    approve.disabled=true;reject.disabled=true;
+    note.textContent="Importazione in corso; se bloccata occorre verificare il processo.";
+  }
+  form.append(nameLabel,colorLabel,actions,note);
+  card.append(form);
+  return card;
 }
 async function load(){
   clearPreviews();
   setStatus("");$("cards").replaceChildren(make("p","Caricamento album…"));
-  const status=$("status").value,brand=$("brand").value;
+  const status=$("status").value,brand=$("brand").value,model=$("model").value;
   let query=client.from("ohana_v3_album_candidates")
-    .select("category_id,album_id,album_url,raw_title,raw_image_urls,status,proposed_name,proposed_color",{count:"exact"})
+    .select("category_id,album_id,album_url,raw_title,raw_image_urls,selected_photo_indices,status,proposed_name,proposed_color",{count:"exact"})
     .eq("status",status).order("updated_at",{ascending:false}).range(page*pageSize,(page+1)*pageSize-1);
-  if(brand){
+  if(model)query=query.eq("category_id",model);
+  else if(brand){
     const ids=sources.filter(s=>s.brand===brand).map(s=>s.category_id);
     if(!ids.length){$("cards").replaceChildren(make("p","Nessun modello per questo marchio."));return;}
     query=query.in("category_id",ids);
@@ -157,7 +246,19 @@ $("loginForm").addEventListener("submit",async e=>{
   if(error){$("loginStatus").textContent="Accesso non riuscito. Ricontrolla le credenziali.";return;}
   $("loginStatus").textContent="";await authenticate();
 });
-$("brand").addEventListener("change",()=>{page=0;load();});
+function refreshModels(){
+  const brand=$("brand").value,control=$("model");
+  control.replaceChildren(make("option","Tutti i modelli"));
+  control.firstChild.value="";
+  const rows=sources.filter(s=>!brand||s.brand===brand);
+  rows.sort((a,b)=>a.brand.localeCompare(b.brand,"it")||a.model_label.localeCompare(b.model_label,"it"));
+  for(const item of rows){
+    const option=make("option",item.brand+" · "+item.model_label);
+    option.value=item.category_id;control.append(option);
+  }
+}
+$("brand").addEventListener("change",()=>{page=0;refreshModels();load();});
+$("model").addEventListener("change",()=>{page=0;load();});
 $("status").addEventListener("change",()=>{page=0;load();});
 $("reload").addEventListener("click",()=>load());
 $("prev").addEventListener("click",()=>{if(page>0){page--;load();}});
