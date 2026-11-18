@@ -30,10 +30,14 @@ function queuePreview(row,index,img,finished){
       body:{category_id:row.category_id,album_id:row.album_id,mode:"preview",index}
     });
     if(epoch!==imageEpoch||!img.isConnected)return;
-    if(error||!(data instanceof Blob)||data.type!=="image/jpeg"){
+    if(error||!(data instanceof Blob)||data.type!=="application/octet-stream"){
       img.alt="Anteprima non disponibile";return;
     }
-    const src=URL.createObjectURL(data);
+    const signature=new Uint8Array(await data.slice(0,3).arrayBuffer());
+    if(signature[0]!==0xff||signature[1]!==0xd8||signature[2]!==0xff){
+      img.alt="Formato immagine non valido";return;
+    }
+    const src=URL.createObjectURL(new Blob([data],{type:"image/jpeg"}));
     objectUrls.push(src);
     img.onload=()=>{if(epoch===imageEpoch)finished();};
     img.onerror=()=>{img.alt="Fotografia non disponibile";};
