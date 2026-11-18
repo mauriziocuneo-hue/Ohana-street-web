@@ -17,11 +17,36 @@ for(const item of data.products){
   item.images.forEach((url,index)=>assert.equal(url,
     `https://tqkmrejfbvzchfplgxzl.supabase.co/storage/v1/object/public/ohana-v3-products/${uuid}/${index+1}.jpg`));
 }
+const previews=data.photoPreviews||[];
+assert.ok(Array.isArray(previews));
+assert.ok(previews.length<=5000);
+const previewIds=new Set();
+for(const item of previews){
+  assert.equal(item.verifiedProduct,false,"Preview cannot claim verified status");
+  assert.equal(item.status,"preview");
+  assert.match(item.id,/^OH3P-[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/);
+  assert.ok(!previewIds.has(item.id));
+  previewIds.add(item.id);
+  assert.ok(data.collections.some(x=>x.brand===item.brand&&x.model===item.family));
+  assert.equal(item.model,item.brand+" "+item.family);
+  assert.equal(item.color,"Colorazione da verificare");
+  assert.equal(item.images.length,3);
+  assert.equal(item.image,item.images[0]);
+  const pid=item.id.slice(5);
+  for(let n=1;n<=3;n++)assert.equal(
+    item.images[n-1],
+    `https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`
+  );
+}
+
 for(const path of ["data/catalogo-v3.json","catalogo-v3.html","assets/ohana-v3.js","assets/ohana-v3.css"]){
   const content=read(path);
   assert.doesNotMatch(content,/yupoo\.com|album_url|catalog_url|supplier_url|sb_secret_/i,path);
 }
 assert.match(read("catalogo-v3.html"),/assets\/ohana-catalogo.css/);
+assert.match(read("assets/ohana-v3.js"),/photoPreviews/);
+assert.match(read("assets/ohana-v3.js"),/photo-preview/);
+assert.match(read("assets/ohana-v3.js"),/functions\/v1\/ohana-v3-photo/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-v3.js/);
 assert.match(read("gestione/index.html"),/v3-review.html/);
