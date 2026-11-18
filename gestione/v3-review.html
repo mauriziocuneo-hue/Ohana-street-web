@@ -8,14 +8,14 @@
 <meta name="theme-color" content="#123e40">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'self'; script-src 'self' https://esm.sh; connect-src 'self' https://esm.sh https://*.esm.sh https://tqkmrejfbvzchfplgxzl.supabase.co; style-src 'self'; img-src 'self' blob: data:; font-src 'self'; object-src 'none'">
 <title>OHANA Street — Revisione V3 riservata</title>
-<link rel="stylesheet" href="v3-review.css?v=1">
+<link rel="stylesheet" href="v3-review.css?v=2">
 <script src="config.js" defer></script>
-<script src="v3-review.js?v=1" type="module"></script>
+<script src="v3-review.js?v=2" type="module"></script>
 </head>
 <body>
 <header class="top"><div class="wrap top-row"><a class="logo" href="index.html">OHANA<span>.</span>STREET <small>GESTIONE / V3</small></a><a href="index.html">← Area gestori</a></div></header>
 <main class="wrap">
-<section class="intro"><p class="eyebrow">LAVORO RISERVATO · SOLO GESTORI AUTORIZZATI</p><h1>REVISIONE<br>CATALOGO V3</h1><p>Controlla modello e fotografie album per album. Solo i prodotti verificati possono passare alla fase di pubblicazione; nessun link fornitore finisce nei file pubblici.</p></section>
+<section class="intro"><p class="eyebrow">LAVORO RISERVATO · SOLO GESTORI AUTORIZZATI</p><h1>REVISIONE<br>CATALOGO V3</h1><p>Controlla modello e scegli le tre fotografie migliori di ogni album. Solo i prodotti verificati possono passare alla fase di pubblicazione; nessun link fornitore finisce nei file pubblici.</p></section>
 <section id="authArea" class="panel" hidden>
 <h2>Accesso gestori</h2><p>Accedi con lo stesso account utilizzato nell'area gestori OHANA.</p>
 <form id="loginForm"><label for="email">Email</label><input type="email" id="email" required autocomplete="username"><label for="password">Password</label><input type="password" id="password" required autocomplete="current-password"><button type="submit">Accedi</button></form>
@@ -23,7 +23,7 @@
 </section>
 <section id="workspace" hidden>
 <div class="summary" role="status" id="summary">Caricamento statistiche…</div>
-<div class="filters"><label for="brand">Marchio<select id="brand"><option value="">Tutti i marchi</option><option>Nike</option><option>Jordan</option><option>Adidas</option><option>New Balance</option></select></label><label for="status">Stato<select id="status"><option value="needs_review">Da revisionare</option><option value="approved">Approvati</option><option value="rejected">Scartati</option><option value="publishing">Importazione in corso</option><option value="published">Pubblicati</option><option value="discovered">Ancora da analizzare</option></select></label><button id="reload" type="button">Aggiorna</button></div>
+<div class="filters"><label for="brand">Marchio<select id="brand"><option value="">Tutti i marchi</option><option>Nike</option><option>Jordan</option><option>Adidas</option><option>New Balance</option></select></label><label for="model">Modello<select id="model"><option value="">Tutti i modelli</option></select></label><label for="status">Stato<select id="status"><option value="needs_review">Da revisionare</option><option value="approved">Approvati</option><option value="rejected">Scartati</option><option value="publishing">Importazione in corso</option><option value="published">Pubblicati</option><option value="discovered">Ancora da analizzare</option></select></label><button id="reload" type="button">Aggiorna</button></div>
 <p class="hint">Le fotografie dei fornitori sono visibili soltanto dopo l'accesso. L'approvazione editoriale non rende ancora pubblica la scheda: servono prima immagini ospitate da OHANA e i controlli finali.</p>
 <div id="cards" class="cards" aria-live="polite"></div>
 <div class="pager"><button id="prev" type="button">← Precedenti</button><span id="pageStatus"></span><button id="next" type="button">Successivi →</button></div>
