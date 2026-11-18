@@ -160,9 +160,16 @@ for item in v3_previews:
         r"[\u3400-\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
     photos=item.get("images")
     assert isinstance(photos,list) and 1<=len(photos)<=3 and photos[0]==item.get("image"), "Galleria V3 anteprima non valida"
+    local_count=0
     for i,url in enumerate(photos,1):
-        assert url == ("https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?"
-                       + "id=" + pid[5:] + "&n=" + str(i)), "Anteprima non servita dal proxy OHANA"
+        proxy=("https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?"
+               + "id=" + pid[5:] + "&n=" + str(i))
+        local="assets/v3/" + pid[5:] + "-" + str(i) + ".webp"
+        assert url in (proxy,local), "Anteprima non servita dal proxy o dagli asset OHANA"
+        if url==local:
+            local_count+=1
+            assert Path(local).is_file(), "Foto WebP dichiarata ma mancante"
+    assert local_count in (0,len(photos)), "Gallerie miste WebP/proxy non consentite"
 
 
 # The trial catalog has its own reviewed albums and public-file allowlist.
@@ -178,6 +185,22 @@ for item in v3_public:
     target = dest / item
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(item, target)
+# WebP ottimizzati sul repository pubblico: nessun EXIF o URL del fornitore.
+v3_photo_dir=Path("assets/v3")
+if v3_photo_dir.exists():
+    optimized=list(v3_photo_dir.glob("*.webp"))
+    assert len(optimized)<=6500, "Numero di file V3 inatteso"
+    total_optimized=sum(x.stat().st_size for x in optimized)
+    assert total_optimized<=400_000_000, "Limite gratuito per foto V3 superato"
+    for source in optimized:
+        assert re.fullmatch(r"[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}-[1-3][.]webp", source.name), "Percorso foto V3 anomalo"
+        assert 700<=source.stat().st_size<=170_000, "File foto V3 non ottimizzato"
+        with source.open("rb") as stream:
+            header=stream.read(12)
+        assert header[:4]==b"RIFF" and header[8:]==b"WEBP", "Firma fotografica V3 non valida"
+        target=dest/"assets/v3"/source.name
+        target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(source,target)
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
