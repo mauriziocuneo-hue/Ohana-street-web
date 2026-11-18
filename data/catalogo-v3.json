@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 3,
+  "catalogVersion": "v3-preview",
+  "revisionDate": "2026-11-18",
+  "visibility": "anteprima",
+  "sourceScope": "45 categorie fornite dall'utente; URL e identità fornitore riservati su Supabase",
+  "countsDisclaimer": "I conteggi degli album provengono dall'elenco fornito e non rappresentano scarpe verificate, originalità o disponibilità",
+  "collections": [
+    {
+      "id": "ohana-v3-family-01",
+      "brand": "Nike",
+      "model": "Air Force 1 Low",
+      "reportedAlbumCount": 71,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-02",
+      "brand": "Nike",
+      "model": "Air Force 1 classiche",
+      "reportedAlbumCount": 182,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-03",
+      "brand": "Nike",
+      "model": "AF1 collaborazioni",
+      "reportedAlbumCount": 7,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-04",
+      "brand": "Nike",
+      "model": "AF1 altre collaborazioni",
+      "reportedAlbumCount": 5,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-05",
+      "brand": "Nike",
+      "model": "AF1 x Louis Vuitton",
+      "reportedAlbumCount": 32,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-06",
+      "brand": "Nike",
+      "model": "AF1 con chip interno",
+      "reportedAlbumCount": 122,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-07",
+      "brand": "Nike",
+      "model": "Air Force 1 Mid",
+      "reportedAlbumCount": 10,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-08",
+      "brand": "Nike",
+      "model": "Air Force 1 High",
+      "reportedAlbumCount": 4,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-09",
+      "brand": "Nike",
+      "model": "Dunk SB Low",
+      "reportedAlbumCount": 158,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-10",
+      "brand": "Nike",
+      "model": "Dunk SB Low Limited",
+      "reportedAlbumCount": 64,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-11",
+      "brand": "Nike",
+      "model": "Dunk SB Low 85",
+      "reportedAlbumCount": 4,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-12",
+      "brand": "Nike",
+      "model": "Dunk SB Low The 50",
+      "reportedAlbumCount": 17,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-13",
+      "brand": "Nike",
+      "model": "Air Max 95",
+      "reportedAlbumCount": 82,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-14",
+      "brand": "Nike",
+      "model": "Air Max 97",
+      "reportedAlbumCount": 14,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-15",
+      "brand": "Nike",
+      "model": "Air Max 95/97 Special",
+      "reportedAlbumCount": 5,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-16",
+      "brand": "Nike",
+      "model": "P-6000",
+      "reportedAlbumCount": 18,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-17",
+      "brand": "Nike",
+      "model": "Air Zoom Vomero 5",
+      "reportedAlbumCount": 19,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-18",
+      "brand": "Nike",
+      "model": "Shox TL",
+      "reportedAlbumCount": 16,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-19",
+      "brand": "Nike",
+      "model": "Shox R4",
+      "reportedAlbumCount": 7,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-20",
+      "brand": "Nike",
+      "model": "Shox quattro colonne",
+      "reportedAlbumCount": 14,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-21",
+      "brand": "Jordan",
+      "model": "Air Jordan 1 Low (gruppo 1)",
+      "reportedAlbumCount": 219,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-22",
+      "brand": "Jordan",
+      "model": "Air Jordan 1 Low (gruppo 2)",
+      "reportedAlbumCount": 62,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-23",
+      "brand": "Jordan",
+      "model": "Air Jordan 1 High",
+      "reportedAlbumCount": 174,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-24",
+      "brand": "Jordan",
+      "model": "Air Jordan 4 (gruppo 1)",
+      "reportedAlbumCount": 61,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-25",
+      "brand": "Jordan",
+      "model": "Air Jordan 4 (gruppo 2)",
+      "reportedAlbumCount": 108,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-26",
+      "brand": "Adidas",
+      "model": "Superstar / Shell Toe",
+      "reportedAlbumCount": 59,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-27",
+      "brand": "Adidas",
+      "model": "Forum 84",
+      "reportedAlbumCount": 29,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-28",
+      "brand": "Adidas",
+      "model": "UltraBoost 5.0",
+      "reportedAlbumCount": 15,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-29",
+      "brand": "Adidas",
+      "model": "UltraBoost 7.0",
+      "reportedAlbumCount": 21,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-30",
+      "brand": "Adidas",
+      "model": "UltraBoost 5X",
+      "reportedAlbumCount": 10,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-31",
+      "brand": "Adidas",
+      "model": "Adizero EVO SL",
+      "reportedAlbumCount": 40,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-32",
+      "brand": "Adidas",
+      "model": "Yeezy 350",
+      "reportedAlbumCount": 72,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-33",
+      "brand": "Adidas",
+      "model": "Yeezy 500",
+      "reportedAlbumCount": 10,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-34",
+      "brand": "Adidas",
+      "model": "Yeezy 700",
+      "reportedAlbumCount": 24,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-35",
+      "brand": "Adidas",
+      "model": "Yeezy 700 MNVN",
+      "reportedAlbumCount": 5,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-36",
+      "brand": "New Balance",
+      "model": "9060",
+      "reportedAlbumCount": 69,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-37",
+      "brand": "New Balance",
+      "model": "530",
+      "reportedAlbumCount": 4,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-38",
+      "brand": "New Balance",
+      "model": "550",
+      "reportedAlbumCount": 23,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-39",
+      "brand": "New Balance",
+      "model": "574",
+      "reportedAlbumCount": 14,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-40",
+      "brand": "New Balance",
+      "model": "740",
+      "reportedAlbumCount": 9,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-41",
+      "brand": "New Balance",
+      "model": "990",
+      "reportedAlbumCount": 16,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-42",
+      "brand": "New Balance",
+      "model": "992",
+      "reportedAlbumCount": 34,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-43",
+      "brand": "New Balance",
+      "model": "1906",
+      "reportedAlbumCount": 37,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-44",
+      "brand": "New Balance",
+      "model": "2002",
+      "reportedAlbumCount": 32,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    },
+    {
+      "id": "ohana-v3-family-45",
+      "brand": "New Balance",
+      "model": "327",
+      "reportedAlbumCount": 16,
+      "verifiedProducts": 0,
+      "status": "da-catalogare"
+    }
+  ],
+  "products": []
+}
