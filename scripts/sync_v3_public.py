@@ -106,7 +106,7 @@ def main():
     preview_prefix = "https://" + TARGET_HOST + "/functions/v1/ohana-v3-photo?"
     for row in read_rows(CONFIG.read_text(encoding="utf-8"),
                          "ohana_v3_photo_previews",
-                         "public_id,brand,family,model,description", "public_id"):
+                         "public_id,brand,family,model,description,photo_count", "public_id"):
         public_id = str(row["public_id"])
         if not re.fullmatch(r"[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}", public_id):
             raise ValueError("Invalid preview UUID")
@@ -124,8 +124,11 @@ def main():
                 r"[\u3400-\u9fff]|yupoo|supplier_url|source_url|album_url|https?:",
                 details, re.I):
             raise ValueError("Private information in preview description")
+        image_count = int(row["photo_count"])
+        if not 1 <= image_count <= 3:
+            raise ValueError("Preview image count must be between one and three")
         photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i})
-                  for i in range(1, 4)]
+                  for i in range(1, image_count + 1)]
         previews.append({
             "id": "OH3P-" + public_id,
             "brand": brand, "family": family, "model": name,
