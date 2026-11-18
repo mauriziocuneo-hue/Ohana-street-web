@@ -3,11 +3,45 @@ const $=id=>document.getElementById(id);
 const cfg=window.OHANA_CONFIG||{};
 const client=createClient(cfg.supabaseUrl,cfg.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true}});
 const brands=["Nike","Jordan","Adidas","New Balance"];
-const pageSize=18;let page=0;let manager=null;let sources=[];let count=0;
+const pageSize=12;let page=0;let manager=null;let sources=[];let count=0;
+let imageQueue=[],imageActive=0,imageEpoch=0,objectUrls=[];
 const make=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=String(text);if(cls)el.className=cls;return el;};
 const validPhoto=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname==="photo.yupoo.com"&&/^\/[a-zA-Z0-9_-]{2,40}\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\.(jpeg|jpg|png)$/.test(x.pathname)?x.href:null;}catch{return null;}};
 const albumLink=u=>{try{const x=new URL(u);return x.protocol==="https:"&&x.hostname.endsWith(".x.yupoo.com")&&/^\/albums\/[0-9]+$/.test(x.pathname)?x.href:null;}catch{return null;}};
 const setStatus=message=>{$("globalStatus").textContent=message;};
+function clearPreviews(){
+  imageEpoch++;
+  imageQueue=[];
+  for(const url of objectUrls)URL.revokeObjectURL(url);
+  objectUrls=[];
+}
+function pumpPreviews(){
+  while(imageActive<4 && imageQueue.length){
+    const task=imageQueue.shift();
+    imageActive++;
+    task().catch(()=>{}).finally(()=>{imageActive--;pumpPreviews();});
+  }
+}
+function queuePreview(row,index,img,finished){
+  const epoch=imageEpoch;
+  imageQueue.push(async()=>{
+    if(epoch!==imageEpoch||!img.isConnected)return;
+    const {data,error}=await client.functions.invoke("ohana-v3-media",{
+      body:{category_id:row.category_id,album_id:row.album_id,mode:"preview",index}
+    });
+    if(epoch!==imageEpoch||!img.isConnected)return;
+    if(error||!(data instanceof Blob)||data.type!=="image/jpeg"){
+      img.alt="Anteprima non disponibile";return;
+    }
+    const src=URL.createObjectURL(data);
+    objectUrls.push(src);
+    img.onload=()=>{if(epoch===imageEpoch)finished();};
+    img.onerror=()=>{img.alt="Fotografia non disponibile";};
+    img.src=src;
+  });
+  pumpPreviews();
+}
+
 function requireAuth(){ $("authArea").hidden=false; $("workspace").hidden=true; }
 async function authenticate(){
   const {data:{user},error}=await client.auth.getUser();
@@ -37,9 +71,13 @@ function makeCard(row){
   if(row.raw_title)el.append(make("p",row.raw_title,"raw-title"));
   const photos=make("div",undefined,"photos");
   const urls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.filter(validPhoto):[];
-  for(const url of urls.slice(0,3)){
-    const img=make("img");img.src=url;img.alt="Fotografia album "+row.album_id;
-    img.loading="lazy";img.referrerPolicy="no-referrer";photos.append(img);
+  let loadedPreviews=0;
+  const previewDone=()=>{loadedPreviews++;if(loadedPreviews===3&&row.status==="needs_review"&&approve)approve.disabled=false;};
+  for(const [index,url] of urls.slice(0,3).entries()){
+    const img=make("img");img.alt="Caricamento vista "+(index+1);
+    img.loading="lazy";photos.append(img);
+    // JPG ricevuto dal proxy autenticato OHANA, senza esporre URL del fornitore.
+    queuePreview(row,index,img,previewDone);
   }
   if(!photos.childElementCount)photos.append(make("p","Foto non ancora recuperate"));
   el.append(photos);
@@ -49,7 +87,7 @@ function makeCard(row){
   const nameLabel=make("label","Nome modello verificato");const name=make("input");name.type="text";name.required=true;name.maxLength=110;name.value=row.proposed_name||[src?.brand,src?.model_label].filter(Boolean).join(" ");nameLabel.append(name);
   const colorLabel=make("label","Colorazione (facoltativa)");const color=make("input");color.type="text";color.maxLength=80;color.value=row.proposed_color||"";color.placeholder="Solo se identificata con certezza";colorLabel.append(color);
   const actions=make("div",undefined,"actions");
-  const approve=make("button",row.status==="approved"?"Già approvato":"Approva");approve.type="submit";approve.disabled=urls.length<3||row.status==="approved"||row.status==="published"||row.status==="publishing";
+  const approve=make("button",row.status==="approved"?"Già approvato":"Approva");approve.type="submit";approve.disabled=true; // Serve il caricamento reale delle tre fotografie prima dell’approvazione
   const reject=make("button","Scarta","reject");reject.type="button";
   const note=make("p","", "status notice");note.setAttribute("role","status");
   async function save(status){
@@ -91,6 +129,7 @@ function makeCard(row){
   return el;
 }
 async function load(){
+  clearPreviews();
   setStatus("");$("cards").replaceChildren(make("p","Caricamento album…"));
   const status=$("status").value,brand=$("brand").value;
   let query=client.from("ohana_v3_album_candidates")
