@@ -106,6 +106,23 @@ config = Path("gestione/config.js").read_text(encoding="utf-8")
 assert "tqkmrejfbvzchfplgxzl.supabase.co" in config, "Configurazione Supabase da verificare"
 assert "service_role" not in config and "sb_secret_" not in config, "Chiave segreta nel codice pubblico"
 
+# La V3 pubblica solo gruppi modello; indirizzi e identità fornitore sono
+# conservati nel database Supabase protetto da RLS, mai nei file di Pages.
+v3_public = ["catalogo-v3.html", "data/catalogo-v3.json", "assets/ohana-v3.css", "assets/ohana-v3.js"]
+for name in v3_public:
+    file = Path(name)
+    assert file.is_file(), f"Risorsa pubblica V3 mancante: {name}"
+    raw_text = file.read_text(encoding="utf-8")
+    assert not re.search(r"(?:yupoo[.]com|jsl68|sb_secret_|service_role|supplier_url|source_url|category_id|referrercate)", raw_text, re.I), f"Riferimento riservato nella V3: {name}"
+v3_data = json.loads(Path("data/catalogo-v3.json").read_text(encoding="utf-8"))
+assert v3_data.get("schemaVersion") == 3, "Versione catalogo V3 inattesa"
+v3_collections = v3_data.get("collections")
+assert isinstance(v3_collections, list) and len(v3_collections) == 45, "Mancano gruppi modello V3"
+assert len(set(c.get("id") for c in v3_collections)) == 45, "Identificativi duplicati V3"
+assert {c.get("brand") for c in v3_collections} == {"Nike", "Jordan", "Adidas", "New Balance"}, "Marchi V3 inattesi"
+assert sum(c.get("reportedAlbumCount", 0) for c in v3_collections) == 2014, "Conteggi iniziali V3 alterati"
+assert v3_data.get("products") == [], "Non pubblicare prodotti V3 finche non approvati visivamente"
+
 # The trial catalog has its own reviewed albums and public-file allowlist.
 import runpy
 runpy.run_path(str(Path('scripts/audit_catalogo_nuovo.py').resolve()))
@@ -115,6 +132,10 @@ for item in ["index.html", "robots.txt", "catalogo.json", "modelli.html", "model
     shutil.copy2(item, dest / item)
 for item in ['catalogo-nuovo.html', 'catalogo-nuovo.json']:
     shutil.copy2(item, dest / item)
+for item in v3_public:
+    target = dest / item
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(item, target)
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
