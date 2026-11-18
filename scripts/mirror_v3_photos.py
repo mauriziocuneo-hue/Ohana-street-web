@@ -110,7 +110,7 @@ def main():
     parser.add_argument("--limit", type=int, default=300)
     parser.add_argument("--workers", type=int, default=12)
     options = parser.parse_args()
-    limit = min(500, max(1, options.limit))
+    limit = min(900, max(1, options.limit))
     workers = min(16, max(1, options.workers))
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     before_bytes = sum(f.stat().st_size for f in IMAGE_DIR.glob("*.webp"))
