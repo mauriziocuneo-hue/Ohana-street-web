@@ -37,6 +37,11 @@ on:
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
+# Serializza le pubblicazioni per evitare l'errore "in progress deployment".
+concurrency:
+  group: ohana-pages-production
+  cancel-in-progress: false
+
 permissions:
   contents: read
 
