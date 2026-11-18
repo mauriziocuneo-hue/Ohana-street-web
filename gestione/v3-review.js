@@ -25,7 +25,7 @@ function pumpPreviews(){
 function queuePreview(row,index,img,finished){
   const epoch=imageEpoch;
   imageQueue.push(async()=>{
-    if(epoch!==imageEpoch||!img.isConnected)return;
+    if(epoch!==imageEpoch)return;
     const {data,error}=await client.functions.invoke("ohana-v3-media",{
       body:{category_id:row.category_id,album_id:row.album_id,mode:"preview",index}
     });
