@@ -52,11 +52,16 @@ def fetch_and_optimize(uuid, index, destination, revision):
             with urllib.request.urlopen(request, timeout=25) as response:
                 if urllib.parse.urlsplit(response.geturl()).hostname != "tqkmrejfbvzchfplgxzl.supabase.co":
                     raise ValueError("Image host redirection is forbidden")
-                if "image/jpeg" not in response.headers.get("Content-Type", "").lower():
-                    raise ValueError("Expected image/jpeg from OHANA photo proxy")
+                mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
+                if mime not in {"image/jpeg", "image/png"}:
+                    raise ValueError("Expected JPEG or PNG from OHANA photo proxy")
                 data = response.read(MAX_JPEG_BYTES + 1)
-            if len(data) > MAX_JPEG_BYTES or len(data) < 1000 or data[:3] != b"\xff\xd8\xff":
-                raise ValueError("Invalid JPEG response size or signature")
+            jpeg_ok = data[:3] == b"\xff\xd8\xff"
+            png_ok = data[:8] == b"\x89PNG\r\n\x1a\n"
+            if (len(data) > MAX_JPEG_BYTES or len(data) < 1000 or
+                    not ((mime == "image/jpeg" and jpeg_ok) or
+                         (mime == "image/png" and png_ok))):
+                raise ValueError("Invalid source image size or signature")
             with Image.open(io.BytesIO(data)) as original:
                 original.verify()
             with Image.open(io.BytesIO(data)) as original:
