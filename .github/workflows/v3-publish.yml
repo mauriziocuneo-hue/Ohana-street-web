@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - 'scripts/sync_v3_public.py'
+      - 'scripts/mirror_v3_photos.py'
       - '.github/workflows/v3-publish.yml'
 
 permissions:
@@ -33,6 +34,8 @@ jobs:
         run: |
           python3 -m venv .venv
           .venv/bin/pip install --disable-pip-version-check --quiet Pillow==11.3.0
+      - name: Validate image importer syntax
+        run: python3 -m py_compile scripts/mirror_v3_photos.py scripts/sync_v3_public.py
       - name: Download and strip metadata from anonymized images
         run: .venv/bin/python scripts/mirror_v3_photos.py --limit 900 --workers 16
       - name: Prefer local WebP copies when complete
