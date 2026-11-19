@@ -37,8 +37,11 @@ def valid_file(path):
     return header[:4] == b"RIFF" and header[8:] == b"WEBP"
 
 
-def fetch_and_optimize(uuid, index, destination):
-    query = urllib.parse.urlencode({"id": uuid, "n": index})
+def fetch_and_optimize(uuid, index, destination, revision):
+    params = {"id": uuid, "n": index}
+    if revision > 1:
+        params["rev"] = revision
+    query = urllib.parse.urlencode(params)
     url = IMAGE_URL + "?" + query
     for attempt in range(2):
         try:
@@ -89,19 +92,31 @@ def mirror_one(item):
     if not match or item.get("status") != "preview" or item.get("verifiedProduct") is not False:
         raise ValueError("Untrusted preview item in public JSON")
     uuid = match.group(1)
+    revision = item.get("photoRevision", 1)
+    if type(revision) is not int or not 1 <= revision <= 99:
+        raise ValueError("Untrusted preview revision")
+    revision_suffix = ("-r" + str(revision)) if revision > 1 else ""
     images = item.get("images")
     if not isinstance(images, list) or not 1 <= len(images) <= 3:
         raise ValueError("Invalid number of images")
     completed = 0
     failed = 0
     for index in range(1, len(images) + 1):
-        target = IMAGE_DIR / (uuid + "-" + str(index) + ".webp")
+        target = IMAGE_DIR / (uuid + revision_suffix + "-" + str(index) + ".webp")
         if valid_file(target):
             continue
-        if fetch_and_optimize(uuid, index, target):
+        if fetch_and_optimize(uuid, index, target, revision):
             completed += 1
         else:
             failed += 1
+    if all(valid_file(IMAGE_DIR / (uuid + revision_suffix + "-" + str(i) + ".webp"))
+           for i in range(1, len(images) + 1)):
+        # Do not remove an old gallery until all new photos pass validation.
+        desired = {uuid + revision_suffix + "-" + str(i) + ".webp"
+                   for i in range(1, len(images) + 1)}
+        for obsolete in IMAGE_DIR.glob(uuid + "-*.webp"):
+            if obsolete.name not in desired:
+                obsolete.unlink()
     return completed, failed
 
 
@@ -129,9 +144,13 @@ def main():
             raise ValueError("Unexpected public preview ID")
         uuid = uuid_match.group(1)
         images = item.get("images")
+        revision = item.get("photoRevision", 1)
+        if type(revision) is not int or not 1 <= revision <= 99:
+            raise ValueError("Invalid image revision")
+        suffix = ("-r" + str(revision)) if revision > 1 else ""
         if not isinstance(images, list) or not 1 <= len(images) <= 3:
             raise ValueError("Invalid preview image array")
-        if not all(valid_file(IMAGE_DIR / (uuid + "-" + str(i) + ".webp")) for i in range(1, len(images) + 1)):
+        if not all(valid_file(IMAGE_DIR / (uuid + suffix + "-" + str(i) + ".webp")) for i in range(1, len(images) + 1)):
             pending.append(item)
         if len(pending) >= limit:
             break
