@@ -148,7 +148,7 @@ def main():
         previews.append({
             "id": "OH3P-" + public_id,
             "brand": brand, "family": family, "model": name,
-            "color": "Colorazione da verificare",
+            "color": "Colori su richiesta",
             "description": details,
             "image": photos[0], "images": photos,
             "status": "preview", "verifiedProduct": False,
