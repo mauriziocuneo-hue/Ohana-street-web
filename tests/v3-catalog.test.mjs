@@ -29,7 +29,7 @@ for(const item of previews){
   previewIds.add(item.id);
   assert.ok(data.collections.some(x=>x.brand===item.brand&&x.model===item.family));
   assert.equal(item.model,item.brand+" "+item.family);
-  assert.equal(item.color,"Colori su richiesta");
+  assert.ok(["Colorazione da verificare","Colori su richiesta"].includes(item.color),"Only safe unverified colors are allowed");
   assert.ok(item.images.length>=1 && item.images.length<=3);
   assert.equal(item.image,item.images[0]);
   const pid=item.id.slice(5);
