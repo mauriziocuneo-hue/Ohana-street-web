@@ -98,7 +98,7 @@
       publicProducts.find(p=>p.brand===item.brand&&p.family===item.model);
   }
   function proxyPhoto(p,index,small=false) {
-    if(!p||p.verifiedProduct!==false||!/^OH3P-[0-9a-f-]{36}$/.test(p.id))return null;
+    if(!p||p.verifiedProduct!==false||!/^OH3P-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/.test(p.id))return null;
     if(!Number.isInteger(index)||index<0||index>=p.images.length)return null;
     const rev=p.photoRevision??1;
     const base="https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id="+
