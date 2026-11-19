@@ -106,7 +106,7 @@ def main():
     preview_prefix = "https://" + TARGET_HOST + "/functions/v1/ohana-v3-photo?"
     for row in read_rows(CONFIG.read_text(encoding="utf-8"),
                          "ohana_v3_photo_previews",
-                         "public_id,brand,family,model,description,photo_count", "public_id"):
+                         "public_id,brand,family,model,description,photo_count,image_revision", "public_id"):
         public_id = str(row["public_id"])
         if not re.fullmatch(r"[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}", public_id):
             raise ValueError("Invalid preview UUID")
@@ -125,11 +125,16 @@ def main():
                 details, re.I):
             raise ValueError("Private information in preview description")
         image_count = int(row["photo_count"])
+        revision = int(row["image_revision"])
+        if not 1 <= revision <= 99:
+            raise ValueError("Unexpected photo revision")
         if not 1 <= image_count <= 3:
             raise ValueError("Preview image count must be between one and three")
-        photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i})
+        photos = [preview_prefix + urllib.parse.urlencode({"id": public_id, "n": i}) +
+                  (("&rev=" + str(revision)) if revision > 1 else "")
                   for i in range(1, image_count + 1)]
-        local = ["assets/v3/" + public_id + "-" + str(i) + ".webp"
+        suffix = ("-r" + str(revision)) if revision > 1 else ""
+        local = ["assets/v3/" + public_id + suffix + "-" + str(i) + ".webp"
                  for i in range(1, image_count + 1)]
         def safe_webp(relative):
             f = ROOT / relative
@@ -146,7 +151,8 @@ def main():
             "color": "Colorazione da verificare",
             "description": details,
             "image": photos[0], "images": photos,
-            "status": "preview", "verifiedProduct": False
+            "status": "preview", "verifiedProduct": False,
+            "photoRevision": revision
         })
     counts_preview = Counter((v["brand"],v["family"]) for v in previews)
     counts = Counter((p["brand"], p["family"]) for p in public_items)
