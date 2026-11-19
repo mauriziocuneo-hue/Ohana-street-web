@@ -70,13 +70,16 @@
     return rows;
   }
 
-  function trustedPhoto(url, id, n) {
-    if(typeof url!=="string" || typeof id!=="string")return false;
+  function trustedPhoto(url, id, n, revision=1) {
+    if(typeof url!=="string" || typeof id!=="string" ||
+       !Number.isInteger(revision) || revision<1 || revision>99)return false;
     const root="https://tqkmrejfbvzchfplgxzl.supabase.co";
     if(/^OH3P-[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/.test(id)){
       const uuid=id.slice(5);
-      return url===root+"/functions/v1/ohana-v3-photo?id="+uuid+"&n="+n ||
-             url==="assets/v3/"+uuid+"-"+n+".webp";
+      const suffix=revision>1?"-r"+revision:"";
+      const version=revision>1?"&rev="+revision:"";
+      return url===root+"/functions/v1/ohana-v3-photo?id="+uuid+"&n="+n+version ||
+             url==="assets/v3/"+uuid+suffix+"-"+n+".webp";
     }
     const pid=id.replace(/^OH3-/,"");
     return /^OH3-[a-f0-9-]{36}$/.test(id) &&
@@ -94,7 +97,7 @@
       ["Taglie","36–46 · altre taglie su richiesta"]]){
       details.append(dom("dt","",k),dom("dd","",v));
     }
-    selectedPhotoUrls=p.images.filter((url,i)=>trustedPhoto(url,p.id,i+1));
+    selectedPhotoUrls=p.images.filter((url,i)=>trustedPhoto(url,p.id,i+1,p.photoRevision??1));
     selectedPhotoIndex=0;
     const img=get("mainPhoto");
     img.hidden=false;img.src=selectedPhotoUrls[0];img.alt=p.brand+" "+p.model+" · foto 1";
@@ -311,7 +314,7 @@
         p&&(p.status==="published"&&p.verifiedProduct===true ||
             p.status==="preview"&&p.verifiedProduct===false)&&
         typeof p.id==="string"&&Array.isArray(p.images)&&p.images.length>=1&&p.images.length<=3 &&
-        p.images.every((url,i)=>trustedPhoto(url,p.id,i+1)) &&
+        p.images.every((url,i)=>trustedPhoto(url,p.id,i+1,p.photoRevision??1)) &&
         catalog.some(c=>c.brand===p.brand&&c.model===p.family));
       get("trialTotal").textContent=fmt(publicProducts.length||catalog.length);
       render();
