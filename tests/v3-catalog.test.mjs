@@ -81,6 +81,8 @@ assert.match(v3App,/OH3P-62f122d0-a026-4f7d-99b4-afb938f9fa19/,
   "Dunk SB Low 85 must use reviewed full-shoe cover");
 assert.match(v3App,/excludedPoorPreviews/,"Visually rejected insole-only previews must be hidden");
 assert.match(v3App,/addCoverImage/,"Every V3 card needs resilient image fallback");
+assert.match(v3App,/displayModel/,"Misleading supplier category labels must use a public display alias");
+assert.match(v3App,/Air Force 1 — varianti/,"Unverified AF1 chip claims must not appear as customer-facing model names");
 assert.match(v3App,/FOTO\\nNON DISPONIBILE/,"Unrecoverable image errors need a neutral placeholder");
 assert.match(read("assets/ohana-v3.js"),/functions\/v1\/ohana-v3-photo/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
