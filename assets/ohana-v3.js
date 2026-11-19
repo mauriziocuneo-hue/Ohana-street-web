@@ -139,12 +139,11 @@
     else showUnavailable();
   }
   function showProduct(p) {
-    get("dialogEyebrow").textContent=p.brand+
-      (p.verifiedProduct?" · V3 / ARTICOLO VERIFICATO":" · V3 / ANTEPRIMA FOTOGRAFICA");
+    get("dialogEyebrow").textContent=p.brand+" · SCARPE";
     get("productBrand").textContent=p.brand;
     get("productTitle").textContent=p.model;
-    get("productColor").textContent="Colore: "+p.color;
-    get("productDescription").textContent=p.description;
+    get("productColor").textContent=p.verifiedProduct?"Colore: "+p.color:"Colore e disponibilità su richiesta";
+    get("productDescription").textContent="Per dettagli su colori, taglie e disponibilità, contattaci su WhatsApp.";
     const details=get("productDetails");details.replaceChildren();
     for(const [k,v] of [["Codice OHANA",p.id],["Raccolta",p.family],
       ["Taglie","36–46 · altre taglie su richiesta"]]){
@@ -196,10 +195,9 @@
     get("album").replaceChildren();get("album").hidden=true;
     get("showAlbum").hidden=true;
     get("variantPicker").hidden=true;
-    get("galleryStatus").hidden=Boolean(p.verifiedProduct);
-    if(!p.verifiedProduct)get("galleryStatus").textContent="Anteprima: modello e colorazione da verificare tramite WhatsApp.";
-    get("saveProduct").hidden=true;
-    get("shareProduct").hidden=true;
+    get("galleryStatus").hidden=true;
+    get("saveProduct").hidden=false;
+    get("shareProduct").hidden=false;
     get("shareFallback").hidden=true;
     get("ohana-product-request").replaceChildren();
     const text="Ciao OHANA Street, vorrei informazioni su "+p.brand+" "+p.model+
@@ -219,34 +217,33 @@
     const info=dom("div","card-info");
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
     info.append(dom("h3","display",p.model));
-    info.append(dom("p","card-color",p.color));
-    info.append(dom("p","card-code",p.verifiedProduct?p.id:"Anteprima fotografica · identificazione da confermare"));
+    info.append(dom("p","card-color",p.verifiedProduct?p.color:"Colori e taglie su richiesta"));
+    info.append(dom("p","card-code","Foto disponibili · informazioni su WhatsApp"));
     const button=dom("button","card-open",p.verifiedProduct?"Esplora la scarpa ↗":"Guarda le foto ↗");button.type="button";
     button.addEventListener("click",()=>showProduct(p));info.append(button);
     root.append(visual,info);return root;
   }
 
   function showCollection(item) {
-    get("dialogEyebrow").textContent = item.brand + " · MODELLO V3";
+    get("dialogEyebrow").textContent = item.brand + " · SCARPE";
     get("productBrand").textContent = item.brand;
     get("productTitle").textContent = item.model;
-    get("productColor").textContent = "Colorazioni: da verificare nelle fotografie";
-    get("productDescription").textContent = "Questa famiglia è stata identificata nell'elenco di partenza della V3. " +
-      "Le fotografie dei singoli prodotti saranno pubblicate solo dopo la verifica del modello e della colorazione.";
+    get("productColor").textContent = "Colori e taglie su richiesta";
+    get("productDescription").textContent = "Esplora le fotografie disponibili oppure contattaci su WhatsApp per conoscere varianti, taglie e disponibilità.";
     const list = get("productDetails");
     list.replaceChildren();
     for(const [k,v] of [
-      ["Raccolta","OHANA Street V3"],
-      ["Album indicati",fmt(item.reportedAlbumCount)+" (non ancora verificati singolarmente)"],
+      ["Raccolta","OHANA Street"],
+      ["Fotografie",fmt(item.reportedAlbumCount)+" modelli fotografici"],
       ["Taglie","36–46 · altre taglie su richiesta"]
     ]) { list.append(dom("dt","",k),dom("dd","",v)); }
     get("galleryStatus").hidden = false;
-    get("galleryStatus").textContent = "Fotografie in revisione · nessun articolo verificato ancora pubblicato";
+    get("galleryStatus").textContent = "Puoi chiedere informazioni su colori, taglie e disponibilità.";
     get("mainPhoto").hidden = true;
     get("mainPhoto").removeAttribute("src");
     get("photoCounter").textContent = "";
     get("photoError").hidden = false;
-    get("photoError").textContent = "Fotografie in revisione";
+    get("photoError").textContent = "Scegli un articolo per vedere le fotografie.";
     get("thumbnails").replaceChildren();
     get("album").replaceChildren();
     get("album").hidden = true;
@@ -277,18 +274,18 @@
       cover.classList.remove("v3-placeholder");
       addCoverImage(cover,representative,item.brand+" "+item.model+" · fotografia dimostrativa");
     }else{
-      cover.append(dom("span","v3-mark","OHANA / V3"));
-      cover.append(dom("span","v3-art","FOTO\nIN REVISIONE"));
+      cover.append(dom("span","v3-mark","OHANA STREET"));
+      cover.append(dom("span","v3-art","SCOPRI\nIL MODELLO"));
     }
     const visiblePreviews=publicProducts.filter(p=>p.brand===item.brand&&p.family===item.model).length;
-    cover.append(dom("span","photo-count",fmt(visiblePreviews)+" anteprime"));
+    cover.append(dom("span","photo-count",fmt(visiblePreviews)+" articoli"));
     cover.addEventListener("click",()=>setSelection(item.brand,item.id));
     visual.append(cover);
     const info = dom("div","card-info");
     info.append(dom("div","card-brand",item.brand+" · Sneakers"));
     info.append(dom("h3","display",item.model));
-    info.append(dom("p","card-color",representative?"Foto inserite · colorazioni da verificare":"Foto e colorazioni in acquisizione"));
-    info.append(dom("p","card-code","Raccolta V3 · "+fmt(item.reportedAlbumCount)+" album segnalati"));
+    info.append(dom("p","card-color","Colori e taglie su richiesta"));
+    info.append(dom("p","card-code",fmt(visiblePreviews)+" articoli da esplorare"));
     const open = dom("button","card-open","Esplora il modello ↗");
     open.type = "button";
     open.addEventListener("click",()=>setSelection(item.brand,item.id));
@@ -318,11 +315,10 @@
     cards.slice(0,limit).forEach(el=>fragment.append(el));
     grid.replaceChildren(fragment);
     if(!cards.length)grid.append(dom("p","empty","Nessun modello trovato. Modifica la ricerca."));
-    get("results").textContent=fmt(cards.length)+" raccolte/schede · "+
-      fmt(publicProducts.filter(p=>!p.verifiedProduct).length)+" anteprime fotografiche";
+    get("results").textContent=fmt(cards.length)+" risultati · "+fmt(publicProducts.length)+" articoli fotografici";
     const selected=byId(state.family);
     get("selectionTitle").textContent=selected?selected.model:(state.brand||"Tutti i modelli");
-    get("breadcrumb").textContent=["Scarpe V3",state.brand,selected?.model].filter(Boolean).join(" › ");
+    get("breadcrumb").textContent=["Scarpe",state.brand,selected?.model].filter(Boolean).join(" › ");
     get("more").hidden=cards.length<=limit;
   }
 
@@ -392,7 +388,7 @@
       render();
     }catch(error){
       get("results").textContent="Catalogo V3 momentaneamente non disponibile";
-      get("grid").replaceChildren(dom("p","empty","Errore nel caricamento dei modelli. Ricarica la pagina."));
+      get("grid").replaceChildren(dom("p","empty","Non riusciamo a caricare il catalogo. Riprova ad aggiornare la pagina."));
       console.error("OHANA V3: errore caricamento raccolte");
     }
   }
