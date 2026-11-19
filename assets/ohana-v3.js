@@ -125,7 +125,7 @@
       image.remove();
       container.classList.add("v3-placeholder");
       container.append(dom("span","v3-mark","OHANA / V3"));
-      container.append(dom("span","v3-art","FOTO\\nNON DISPONIBILE"));
+      container.append(dom("span","v3-art","FOTO\nNON DISPONIBILE"));
     };
     image.addEventListener("error",()=>{
       next++;
@@ -151,7 +151,17 @@
     selectedPhotoIndex=0;
     const img=get("mainPhoto");
     img.hidden=false;img.src=selectedPhotoUrls[0];img.alt=p.brand+" "+p.model+" · foto 1";
-    img.onerror=()=>{img.hidden=true;get("photoError").hidden=false;get("photoError").textContent="Fotografia temporaneamente non disponibile";};
+    img.onerror=()=>{
+      const alternative=proxyPhoto(p,selectedPhotoIndex,false);
+      if(alternative&&selectedPhotoUrls[selectedPhotoIndex]!==alternative){
+        selectedPhotoUrls[selectedPhotoIndex]=alternative;
+        img.src=alternative;
+        return;
+      }
+      img.hidden=true;
+      get("photoError").hidden=false;
+      get("photoError").textContent="Fotografia temporaneamente non disponibile";
+    };
     img.onload=()=>{img.hidden=false;get("photoError").hidden=true;};
     get("photoCounter").textContent="1 / "+selectedPhotoUrls.length;
     get("photoError").hidden=true;
@@ -161,9 +171,20 @@
       button.setAttribute("aria-label","Fotografia "+(i+1));
       button.setAttribute("aria-pressed",String(i===0));
       const preview=dom("img");preview.src=url;preview.alt="Vista "+(i+1);
-      preview.loading="eager";button.append(preview);
+      preview.loading="eager";
+      preview.addEventListener("error",()=>{
+        const alternative=proxyPhoto(p,i,false);
+        if(alternative&&!preview.dataset.fallbackUsed){
+          preview.dataset.fallbackUsed="1";
+          preview.src=alternative;
+        }else{
+          preview.hidden=true;
+          button.setAttribute("aria-label","Fotografia "+(i+1)+" non disponibile");
+        }
+      });
+      button.append(preview);
       button.addEventListener("click",()=>{
-        selectedPhotoIndex=i;img.src=url;img.alt=p.brand+" "+p.model+" · foto "+(i+1);
+        selectedPhotoIndex=i;img.src=selectedPhotoUrls[i];img.alt=p.brand+" "+p.model+" · foto "+(i+1);
         get("photoCounter").textContent=(i+1)+" / "+selectedPhotoUrls.length;
         [...thumbs.children].forEach((x,j)=>x.setAttribute("aria-pressed",String(i===j)));
       });
