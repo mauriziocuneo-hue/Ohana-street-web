@@ -277,6 +277,8 @@
     else showUnavailable();
   }
   function showProduct(p) {
+    currentProduct=p;
+    updateFavoritesUI();
     get("dialogEyebrow").textContent=p.brand+" · SCARPE";
     get("productBrand").textContent=p.brand;
     get("productTitle").textContent=p.model;
@@ -337,6 +339,7 @@
     get("saveProduct").hidden=false;
     get("shareProduct").hidden=false;
     get("shareFallback").hidden=true;
+    get("shareStatus").textContent="";
     get("ohana-product-request").replaceChildren();
     const text="Ciao OHANA Street, vorrei informazioni su "+p.brand+" "+p.model+
       ", "+p.color+", codice "+p.id+". Quali taglie sono disponibili?";
@@ -352,6 +355,12 @@
     addCoverImage(cover,p,p.brand+" "+p.model+" "+p.color);
     cover.append(dom("span","photo-count",p.images.length+" foto"));
     cover.addEventListener("click",()=>showProduct(p));visual.append(cover);
+    const heart=dom("button","save-button",favorites.has(p.id)?"♥":"♡");
+    heart.type="button";
+    heart.setAttribute("aria-label",favorites.has(p.id)?"Rimuovi dalle scelte":"Salva questa scarpa");
+    heart.setAttribute("aria-pressed",String(favorites.has(p.id)));
+    heart.addEventListener("click",()=>toggleFavorite(p.id));
+    visual.append(heart);
     const info=dom("div","card-info");
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
     info.append(dom("h3","display",p.model));
@@ -436,8 +445,15 @@
     navigation();
     const rows=filtered(),q=norm(state.query.trim());
     const cards=[];
+    if(onlyFavorites) {
+      const picks=[...favorites].map(productById).filter(Boolean).filter(p=>
+        (!state.brand||p.brand===state.brand)&&
+        (!state.family||catalog.some(c=>c.id===state.family&&c.brand===p.brand&&c.model===p.family))&&
+        (!q||norm(p.brand+" "+p.model+" "+p.color).includes(q)));
+      picks.forEach(p=>cards.push(productCard(p)));
+    }
     const showingFamilies=!state.family&&!q;
-    for(const item of rows){
+    for(const item of (onlyFavorites?[]:rows)){
       if(showingFamilies){
         cards.push(card(item));continue;
       }
@@ -454,8 +470,9 @@
     grid.replaceChildren(fragment);
     if(!cards.length)grid.append(dom("p","empty","Nessun modello trovato. Modifica la ricerca."));
     get("results").textContent=fmt(cards.length)+" risultati · "+fmt(publicProducts.length)+" articoli fotografici";
+    updateFavoritesUI();
     const selected=byId(state.family);
-    get("selectionTitle").textContent=selected?selected.model:(state.brand||"Tutti i modelli");
+    get("selectionTitle").textContent=onlyFavorites?"Le tue scarpe":(selected?selected.model:(state.brand||"Tutti i modelli"));
     get("breadcrumb").textContent=["Scarpe",state.brand,selected?.model].filter(Boolean).join(" › ");
     get("more").hidden=cards.length<=limit;
   }
