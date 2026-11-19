@@ -342,7 +342,7 @@
     get("shareStatus").textContent="";
     get("ohana-product-request").replaceChildren();
     const text="Ciao OHANA Street, vorrei informazioni su "+p.brand+" "+p.model+
-      ", "+p.color+", codice "+p.id+". Quali taglie sono disponibili?";
+      ", codice "+p.id+". Vorrei informazioni su colori, taglie e disponibilità.";
     get("whatsapp").href="https://wa.me/393520263951?text="+encodeURIComponent(text);
     get("whatsapp").textContent="Chiedi informazioni su WhatsApp ↗";
     if(!get("productDialog").open)get("productDialog").showModal();
@@ -511,16 +511,65 @@
       if(e.target===get("productDialog"))get("productDialog").close();
     });
     get("more").addEventListener("click",()=>{limit+=45;render();});
-    // Nessun articolo validato: preferiti e richiesta multipla non disponibili nell'anteprima.
-    get("savedOnly").disabled=true;
+    get("savedOnly").addEventListener("click",()=>{
+      onlyFavorites=!onlyFavorites;limit=45;render();
+    });
+    get("openSelection").addEventListener("click",showSelection);
+    get("saveProduct").addEventListener("click",()=>{
+      if(currentProduct)toggleFavorite(currentProduct.id);
+    });
+    get("shareProduct").addEventListener("click",async()=>{
+      if(!currentProduct)return;
+      const url=new URL(location.href);
+      url.searchParams.set("p",currentProduct.id);
+      url.hash="";
+      const value=url.href;
+      try {
+        if(navigator.share){
+          await navigator.share({title:currentProduct.brand+" "+currentProduct.model,url:value});
+          get("shareStatus").textContent="Scheda condivisa.";
+        }else if(navigator.clipboard?.writeText){
+          await navigator.clipboard.writeText(value);
+          get("shareStatus").textContent="Collegamento alla scarpa copiato.";
+        }else throw new Error("Clipboard unavailable");
+      }catch{
+        get("shareFallback").hidden=false;
+        get("shareLink").value=value;
+        get("shareStatus").textContent="Puoi copiare il collegamento qui sotto.";
+      }
+    });
+    get("closeSelection").addEventListener("click",()=>get("selectionDialog").close());
+    get("selectionBrowse").addEventListener("click",()=>get("selectionDialog").close());
+    get("selectionForm").addEventListener("submit",reviewSelection);
+    get("selectionBack").addEventListener("click",()=>{
+      selectionStep=0;renderSelection();
+    });
+    get("selectionCopy").addEventListener("click",async()=>{
+      try{
+        await navigator.clipboard.writeText(get("selectionSummary").value);
+        get("selectionStatus").textContent="Messaggio copiato.";
+      }catch{
+        get("selectionSummary").focus();get("selectionSummary").select();
+        get("selectionStatus").textContent="Seleziona e copia il testo del messaggio.";
+      }
+    });
+    get("sameSize").addEventListener("change",()=>{
+      const value=get("sameSize").value;
+      if(!value)return;
+      for(const id of favorites){
+        const d=sizeDrafts.get(id)||{size:"",other:""};
+        d.size=value;sizeDrafts.set(id,d);
+      }
+      renderSelection();
+    });
+
+    // Nessun dato personale trasmesso finché il cliente non sceglie di aprire WhatsApp.
+    get("savedOnly").disabled=false;
     get("openSelection").disabled=true;
-    get("savedOnly").textContent="♡ Preferiti in preparazione";
-    get("openSelection").textContent="Richiesta multipla in preparazione";
-    get("savedHint").textContent="I preferiti saranno disponibili quando le fotografie saranno verificate.";
     get("savedStatus").textContent="";
-    get("type").disabled=true;
-    const type = get("type");
-    type.replaceChildren(dom("option","","Da classificare"));
+    const type=get("type");
+    type.disabled=true;
+    type.replaceChildren(dom("option","","Tutte le sneakers"));
     if(matchMedia("(max-width:780px)").matches)get("categoryMenu").open=false;
     try{
       const response=await fetch("data/catalogo-v3.json",{cache:"no-store"});
@@ -540,7 +589,13 @@
         p.images.every((url,i)=>trustedPhoto(url,p.id,i+1,p.photoRevision??1)) &&
         catalog.some(c=>c.brand===p.brand&&c.model===p.family));
       get("trialTotal").textContent=fmt(publicProducts.length||catalog.length);
+      favorites=readFavorites();
+      saveFavorites();
+      updateFavoritesUI();
       render();
+      const sharedId=new URL(location.href).searchParams.get("p");
+      const shared=sharedId?productById(sharedId):null;
+      if(shared)showProduct(shared);
     }catch(error){
       get("results").textContent="Catalogo V3 momentaneamente non disponibile";
       get("grid").replaceChildren(dom("p","empty","Non riusciamo a caricare il catalogo. Riprova ad aggiornare la pagina."));
