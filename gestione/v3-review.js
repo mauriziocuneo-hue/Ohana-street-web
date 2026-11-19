@@ -84,6 +84,10 @@ function makeCard(row){
     const hint=make("p","Didascalia originale foto: "+row.source_photo_caption,"source-photo-caption");
     card.append(hint);
   }
+  if(row.photo_quality_method==="unverified_numbering")
+    card.append(make("p","Controllo visivo necessario: numerazione delle foto non affidabile.","sku-hint"));
+  else if(row.photo_quality_method==="original_photo_01_02_03")
+    card.append(make("p","Foto riordinate secondo le viste originali 01, 02 e 03.","source-photo-caption"));
   const originalUrls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.slice(0,24):[];
   const available=originalUrls.map((url,i)=>validPhoto(url)?i:-1).filter(i=>i>=0);
   const allowed=new Set(available);
@@ -232,9 +236,12 @@ async function load(){
   clearPreviews();
   setStatus("");$("cards").replaceChildren(make("p","Caricamento album…"));
   const status=$("status").value,brand=$("brand").value,model=$("model").value;
+  const photoQuality=$("photoQuality").value;
   let query=client.from("ohana_v3_album_candidates")
-    .select("category_id,album_id,album_url,raw_title,source_photo_caption,sku_hint,raw_image_urls,selected_photo_indices,status,proposed_name,proposed_color",{count:"exact"})
+    .select("category_id,album_id,album_url,raw_title,source_photo_caption,sku_hint,raw_image_urls,selected_photo_indices,photo_quality_method,photo_quality_checked_at,status,proposed_name,proposed_color",{count:"exact"})
     .eq("status",status).order("updated_at",{ascending:false}).range(page*pageSize,(page+1)*pageSize-1);
+  if(photoQuality==="pending")query=query.is("photo_quality_checked_at",null);
+  else if(photoQuality)query=query.eq("photo_quality_method",photoQuality);
   if(model)query=query.eq("category_id",model);
   else if(brand){
     const ids=sources.filter(s=>s.brand===brand).map(s=>s.category_id);
@@ -272,6 +279,7 @@ function refreshModels(){
 $("brand").addEventListener("change",()=>{page=0;refreshModels();load();});
 $("model").addEventListener("change",()=>{page=0;load();});
 $("status").addEventListener("change",()=>{page=0;load();});
+$("photoQuality").addEventListener("change",()=>{page=0;load();});
 $("reload").addEventListener("click",()=>load());
 $("prev").addEventListener("click",()=>{if(page>0){page--;load();}});
 $("next").addEventListener("click",()=>{if((page+1)*pageSize<count){page++;load();}});
