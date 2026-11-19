@@ -19601,11 +19601,11 @@
       "model": "Nike Air Force 1 classiche",
       "color": "Colorazione da verificare",
       "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
-      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94a3a420-a3a4-4829-8a65-75ea504cc97f&n=1",
+      "image": "assets/v3/94a3a420-a3a4-4829-8a65-75ea504cc97f-1.webp",
       "images": [
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94a3a420-a3a4-4829-8a65-75ea504cc97f&n=1",
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94a3a420-a3a4-4829-8a65-75ea504cc97f&n=2",
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=94a3a420-a3a4-4829-8a65-75ea504cc97f&n=3"
+        "assets/v3/94a3a420-a3a4-4829-8a65-75ea504cc97f-1.webp",
+        "assets/v3/94a3a420-a3a4-4829-8a65-75ea504cc97f-2.webp",
+        "assets/v3/94a3a420-a3a4-4829-8a65-75ea504cc97f-3.webp"
       ],
       "status": "preview",
       "verifiedProduct": false
@@ -30719,11 +30719,11 @@
       "model": "Nike Dunk SB Low",
       "color": "Colorazione da verificare",
       "description": "Anteprima fotografica: modello e colorazione da confermare tramite WhatsApp.",
-      "image": "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f1904375-5fac-4995-ace2-764aebb8d5d6&n=1",
+      "image": "assets/v3/f1904375-5fac-4995-ace2-764aebb8d5d6-1.webp",
       "images": [
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f1904375-5fac-4995-ace2-764aebb8d5d6&n=1",
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f1904375-5fac-4995-ace2-764aebb8d5d6&n=2",
-        "https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=f1904375-5fac-4995-ace2-764aebb8d5d6&n=3"
+        "assets/v3/f1904375-5fac-4995-ace2-764aebb8d5d6-1.webp",
+        "assets/v3/f1904375-5fac-4995-ace2-764aebb8d5d6-2.webp",
+        "assets/v3/f1904375-5fac-4995-ace2-764aebb8d5d6-3.webp"
       ],
       "status": "preview",
       "verifiedProduct": false
