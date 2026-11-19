@@ -61,6 +61,21 @@ assert.match(read("catalogo-v3.html"),/assets\/ohana-catalogo.css/);
 assert.match(read("assets/ohana-v3.js"),/photoPreviews/);
 assert.match(read("assets/ohana-v3.js"),/photo-preview/);
 const v3App=read("assets/ohana-v3.js");
+const v3Page=read("catalogo-v3.html");
+assert.doesNotMatch(v3Page,/anteprima fotografica|fotografie in revisione|in preparazione|identificazione da confermare/i,
+  "No unfinished copy on public catalog");
+assert.doesNotMatch(v3App,/Anteprima fotografica · identificazione da confermare|Richiesta multipla in preparazione|Preferiti in preparazione/,
+  "No developer labels in public cards");
+assert.match(v3App,/toggleFavorite/,"V3 favorites must be functional");
+assert.match(v3App,/get\("openSelection"\)\.addEventListener\("click",showSelection\)/,
+  "V3 multi-item request must open");
+assert.match(v3App,/get\("selectionForm"\)\.addEventListener\("submit",reviewSelection\)/,
+  "V3 WhatsApp request must be reviewed");
+assert.match(v3App,/get\("shareProduct"\)\.addEventListener/,
+  "V3 product sharing must be functional");
+assert.match(v3App,/photo_visibility|excludedPoorPreviews/,
+  "V3 must protect public from editorially rejected galleries");
+
 assert.match(v3App,/preferredCategoryCovers/,"V3 needs curated category covers");
 assert.match(v3App,/OH3P-62f122d0-a026-4f7d-99b4-afb938f9fa19/,
   "Dunk SB Low 85 must use reviewed full-shoe cover");
