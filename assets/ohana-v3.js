@@ -257,13 +257,14 @@
     });
     return urls;
   }
-  function addCoverImage(container,p,description){
+  function addCoverImage(container,p,description,hideInvalid=false){
     const sources=coverSources(p);
     const image=dom("img");
     image.alt=description;image.loading="lazy";image.decoding="async";
     let next=0;
     const showUnavailable=()=>{
       image.remove();
+      if(hideInvalid){container.closest("article.card")?.remove();return;}
       container.classList.add("v3-placeholder");
       container.append(dom("span","v3-mark","OHANA STREET"));
       container.append(dom("span","v3-art","FOTO\nNON DISPONIBILE"));
@@ -352,7 +353,7 @@
     const visual=dom("div","card-visual");
     const cover=dom("button","card-cover");cover.type="button";
     cover.setAttribute("aria-label","Apri "+p.brand+" "+p.model);
-    addCoverImage(cover,p,p.brand+" "+p.model+" "+p.color);
+    addCoverImage(cover,p,p.brand+" "+p.model+" "+p.color,true);
     cover.append(dom("span","photo-count",p.images.length+" foto"));
     cover.addEventListener("click",()=>showProduct(p));visual.append(cover);
     const heart=dom("button","save-button",favorites.has(p.id)?"♥":"♡");
@@ -468,7 +469,7 @@
     const fragment=document.createDocumentFragment();
     cards.slice(0,limit).forEach(el=>fragment.append(el));
     grid.replaceChildren(fragment);
-    if(!cards.length)grid.append(dom("p","empty","Nessun modello trovato. Modifica la ricerca."));
+    if(!cards.length)grid.append(dom("p","empty",onlyFavorites?"Non hai ancora salvato scarpe in questa selezione.":"Nessun modello trovato. Modifica la ricerca."));
     get("results").textContent=fmt(cards.length)+" risultati · "+fmt(publicProducts.length)+" articoli fotografici";
     updateFavoritesUI();
     const selected=byId(state.family);
