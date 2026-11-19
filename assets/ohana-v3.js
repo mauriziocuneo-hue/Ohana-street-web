@@ -86,6 +86,9 @@
       url===root+"/storage/v1/object/public/ohana-v3-products/"+pid+"/"+n+".jpg";
   }
   // Copertine validate visivamente: identificativi pubblici OHANA, mai URL fornitore.
+  // Anteprime controllate: l'album seguente mostra solo soletta/interno, senza scarpa.
+  // Rimane nel database riservato per revisione, ma non viene mostrato ai visitatori.
+  const excludedPoorPreviews = new Set(["OH3P-2f8f27b2-bae6-4c7a-b949-8606860d338c"]);
   const preferredCategoryCovers = new Map([
     ["Nike|Dunk SB Low 85", "OH3P-62f122d0-a026-4f7d-99b4-afb938f9fa19"]
   ]);
@@ -277,7 +280,8 @@
       cover.append(dom("span","v3-mark","OHANA / V3"));
       cover.append(dom("span","v3-art","FOTO\nIN REVISIONE"));
     }
-    cover.append(dom("span","photo-count",fmt(item.previewProducts||0)+" anteprime"));
+    const visiblePreviews=publicProducts.filter(p=>p.brand===item.brand&&p.family===item.model).length;
+    cover.append(dom("span","photo-count",fmt(visiblePreviews)+" anteprime"));
     cover.addEventListener("click",()=>setSelection(item.brand,item.id));
     visual.append(cover);
     const info = dom("div","card-info");
@@ -378,8 +382,9 @@
         brands.includes(item.brand)&&Number.isInteger(item.reportedAlbumCount)&&
         item.reportedAlbumCount>=0&&["da-catalogare","photo-preview","published"].includes(item.status));
       publicProducts=[...(data.products||[]),...(data.photoPreviews||[])].filter(p=>
-        p&&(p.status==="published"&&p.verifiedProduct===true ||
-            p.status==="preview"&&p.verifiedProduct===false)&&
+        p&&!excludedPoorPreviews.has(p.id)&&
+        (p.status==="published"&&p.verifiedProduct===true ||
+         p.status==="preview"&&p.verifiedProduct===false)&&
         typeof p.id==="string"&&Array.isArray(p.images)&&p.images.length>=1&&p.images.length<=3 &&
         p.images.every((url,i)=>trustedPhoto(url,p.id,i+1,p.photoRevision??1)) &&
         catalog.some(c=>c.brand===p.brand&&c.model===p.family));
