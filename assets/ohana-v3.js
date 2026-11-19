@@ -265,7 +265,7 @@
     const showUnavailable=()=>{
       image.remove();
       container.classList.add("v3-placeholder");
-      container.append(dom("span","v3-mark","OHANA / V3"));
+      container.append(dom("span","v3-mark","OHANA STREET"));
       container.append(dom("span","v3-art","FOTO\nNON DISPONIBILE"));
     };
     image.addEventListener("error",()=>{
@@ -402,7 +402,7 @@
     get("shareFallback").hidden = true;
     get("ohana-product-request").replaceChildren();
     const message = "Ciao OHANA Street, vorrei informazioni su " + item.brand + " " + item.model +
-      " (catalogo V3). Potete verificare colori, fotografie e taglie disponibili?";
+      ". Potete confermare colori, taglie e disponibilità?";
     const wa = get("whatsapp");
     wa.href = "https://wa.me/393520263951?text=" + encodeURIComponent(message);
     wa.textContent = "Chiedi informazioni su WhatsApp ↗";
@@ -597,7 +597,7 @@
       const shared=sharedId?productById(sharedId):null;
       if(shared)showProduct(shared);
     }catch(error){
-      get("results").textContent="Catalogo V3 momentaneamente non disponibile";
+      get("results").textContent="Catalogo momentaneamente non disponibile";
       get("grid").replaceChildren(dom("p","empty","Non riusciamo a caricare il catalogo. Riprova ad aggiornare la pagina."));
       console.error("OHANA V3: errore caricamento raccolte");
     }
