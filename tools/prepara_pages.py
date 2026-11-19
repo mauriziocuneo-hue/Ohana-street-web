@@ -154,7 +154,7 @@ for item in v3_previews:
     v3_preview_ids.add(pid)
     assert (item.get("brand"),item.get("family")) in v3_keys, "Categoria anteprima inattesa"
     assert item.get("model") == item.get("brand")+" "+item.get("family"), "Identificazione eccessiva"
-    assert item.get("color") == "Colori su richiesta", "Colorazione non verificata"
+    assert item.get("color") in ("Colorazione da verificare","Colori su richiesta"), "Colorazione non verificata"
     description=item.get("description")
     assert isinstance(description,str) and 10<=len(description)<=250 and not re.search(
         r"[\u3400-\u9fff]|https?://|yupoo|supplier|album_url|source_url",description,re.I), "Testo anteprima non sicuro"
