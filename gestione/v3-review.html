@@ -10,7 +10,7 @@
 <title>OHANA Street — Revisione V3 riservata</title>
 <link rel="stylesheet" href="v3-review.css?v=4">
 <script src="config.js" defer></script>
-<script src="v3-review.js?v=5" type="module"></script>
+<script src="v3-review.js?v=6" type="module"></script>
 </head>
 <body>
 <header class="top"><div class="wrap top-row"><a class="logo" href="index.html">OHANA<span>.</span>STREET <small>GESTIONE / V3</small></a><a href="index.html">← Area gestori</a></div></header>
@@ -23,7 +23,7 @@
 </section>
 <section id="workspace" hidden>
 <div class="summary" role="status" id="summary">Caricamento statistiche…</div>
-<div class="filters"><label for="brand">Marchio<select id="brand"><option value="">Tutti i marchi</option><option>Nike</option><option>Jordan</option><option>Adidas</option><option>New Balance</option></select></label><label for="model">Modello<select id="model"><option value="">Tutti i modelli</option></select></label><label for="status">Stato<select id="status"><option value="needs_review">Da revisionare</option><option value="approved">Approvati</option><option value="rejected">Scartati</option><option value="publishing">Importazione in corso</option><option value="published">Pubblicati</option><option value="discovered">Ancora da analizzare</option></select></label><button id="reload" type="button">Aggiorna</button></div>
+<div class="filters"><label for="brand">Marchio<select id="brand"><option value="">Tutti i marchi</option><option>Nike</option><option>Jordan</option><option>Adidas</option><option>New Balance</option></select></label><label for="model">Modello<select id="model"><option value="">Tutti i modelli</option></select></label><label for="status">Stato<select id="status"><option value="needs_review">Da revisionare</option><option value="approved">Approvati</option><option value="rejected">Scartati</option><option value="publishing">Importazione in corso</option><option value="published">Pubblicati</option><option value="discovered">Ancora da analizzare</option></select></label><label for="photoQuality">Qualità foto<select id="photoQuality"><option value="">Tutte</option><option value="unverified_numbering">Verifica visiva necessaria</option><option value="original_photo_01_02_03">Foto 01-03 riordinate</option><option value="pending">Non ancora analizzate</option></select></label><button id="reload" type="button">Aggiorna</button></div>
 <p class="hint">Le fotografie dei fornitori sono visibili soltanto dopo l'accesso. L'approvazione editoriale non rende ancora pubblica la scheda: servono prima immagini ospitate da OHANA e i controlli finali.</p>
 <div id="cards" class="cards" aria-live="polite"></div>
 <div class="pager"><button id="prev" type="button">← Precedenti</button><span id="pageStatus"></span><button id="next" type="button">Successivi →</button></div>
