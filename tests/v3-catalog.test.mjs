@@ -33,10 +33,14 @@ for(const item of previews){
   assert.ok(item.images.length>=1 && item.images.length<=3);
   assert.equal(item.image,item.images[0]);
   const pid=item.id.slice(5);
+  const rev=item.photoRevision??1;
+  assert.ok(Number.isInteger(rev)&&rev>=1&&rev<=99,"Invalid photo revision");
+  const suffix=rev>1?`-r${rev}`:"";
   let localCount=0;
   for(let n=1;n<=item.images.length;n++){
-    const proxy=`https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`;
-    const local=`assets/v3/${pid}-${n}.webp`;
+    const proxy=`https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id=${pid}&n=${n}`+
+      (rev>1?`&rev=${rev}`:"");
+    const local=`assets/v3/${pid}${suffix}-${n}.webp`;
     assert.ok(item.images[n-1]===proxy||item.images[n-1]===local,"Unknown V3 photo host/path");
     if(item.images[n-1]===local){
       localCount++;
