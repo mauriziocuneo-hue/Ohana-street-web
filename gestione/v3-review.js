@@ -84,6 +84,7 @@ function makeCard(row){
     const hint=make("p","Didascalia originale foto: "+row.source_photo_caption,"source-photo-caption");
     card.append(hint);
   }
+  card.append(make("p",row.photo_visibility==="hidden"?"NASCOSTA DALLA VETRINA":"Visibile in vetrina",row.photo_visibility==="hidden"?"sku-hint":"source-photo-caption"));
   if(row.photo_quality_method==="unverified_numbering")
     card.append(make("p","Controllo visivo necessario: numerazione delle foto non affidabile.","sku-hint"));
   else if(row.photo_quality_method==="original_photo_01_02_03")
@@ -203,6 +204,26 @@ function makeCard(row){
   form.addEventListener("submit",event=>{event.preventDefault();save("approved");});
   reject.addEventListener("click",()=>save("rejected"));
   actions.append(approve,reject);
+  if(["needs_review","approved","rejected"].includes(row.status)){
+    const visibility=make("button",
+      row.photo_visibility==="hidden"?"Mostra in vetrina":"Nascondi (foto poco adatte)",
+      row.photo_visibility==="hidden"?"review-show":"review-hide");
+    visibility.type="button";
+    visibility.addEventListener("click",async()=>{
+      if(!manager)return;
+      visibility.disabled=true;
+      note.textContent="Aggiornamento della vetrina…";
+      const next=row.photo_visibility==="hidden"?"visible":"hidden";
+      const {error}=await client.from("ohana_v3_album_candidates")
+        .update({photo_visibility:next,reviewed_by:manager.id,reviewed_at:new Date().toISOString()})
+        .eq("category_id",row.category_id).eq("album_id",row.album_id);
+      if(error){
+        note.textContent="Non riesco a modificare la visibilità.";
+        visibility.disabled=false;
+      }else await load();
+    });
+    actions.append(visibility);
+  }
   if(row.status==="approved"){
     const publish=make("button","Importa tre foto e pubblica V3");
     publish.type="button";
@@ -237,10 +258,11 @@ async function load(){
   clearPreviews();
   setStatus("");$("cards").replaceChildren(make("p","Caricamento album…"));
   const status=$("status").value,brand=$("brand").value,model=$("model").value;
-  const photoQuality=$("photoQuality").value;
+  const photoQuality=$("photoQuality").value,visibility=$("visibility").value;
   let query=client.from("ohana_v3_album_candidates")
-    .select("category_id,album_id,album_url,raw_title,source_photo_caption,sku_hint,raw_image_urls,selected_photo_indices,photo_quality_method,photo_quality_checked_at,status,proposed_name,proposed_color",{count:"exact"})
+    .select("category_id,album_id,album_url,raw_title,source_photo_caption,sku_hint,raw_image_urls,selected_photo_indices,photo_quality_method,photo_quality_checked_at,photo_visibility,status,proposed_name,proposed_color",{count:"exact"})
     .eq("status",status).order("updated_at",{ascending:false}).range(page*pageSize,(page+1)*pageSize-1);
+  if(visibility)query=query.eq("photo_visibility",visibility);
   if(photoQuality==="pending")query=query.is("photo_quality_checked_at",null);
   else if(photoQuality)query=query.eq("photo_quality_method",photoQuality);
   if(model)query=query.eq("category_id",model);
@@ -281,6 +303,7 @@ $("brand").addEventListener("change",()=>{page=0;refreshModels();load();});
 $("model").addEventListener("change",()=>{page=0;load();});
 $("status").addEventListener("change",()=>{page=0;load();});
 $("photoQuality").addEventListener("change",()=>{page=0;load();});
+$("visibility").addEventListener("change",()=>{page=0;load();});
 $("reload").addEventListener("click",()=>load());
 $("prev").addEventListener("click",()=>{if(page>0){page--;load();}});
 $("next").addEventListener("click",()=>{if((page+1)*pageSize<count){page++;load();}});
