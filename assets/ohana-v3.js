@@ -85,6 +85,56 @@
     return /^OH3-[a-f0-9-]{36}$/.test(id) &&
       url===root+"/storage/v1/object/public/ohana-v3-products/"+pid+"/"+n+".jpg";
   }
+  // Copertine validate visivamente: identificativi pubblici OHANA, mai URL fornitore.
+  const preferredCategoryCovers = new Map([
+    ["Nike|Dunk SB Low 85", "OH3P-62f122d0-a026-4f7d-99b4-afb938f9fa19"]
+  ]);
+  function getPreferredCover(item) {
+    const id=preferredCategoryCovers.get(item.brand+"|"+item.model);
+    return (id&&publicProducts.find(p=>p.id===id&&p.brand===item.brand&&p.family===item.model)) ||
+      publicProducts.find(p=>p.brand===item.brand&&p.family===item.model);
+  }
+  function proxyPhoto(p,index,small=false) {
+    if(!p||p.verifiedProduct!==false||!/^OH3P-[0-9a-f-]{36}$/.test(p.id))return null;
+    if(!Number.isInteger(index)||index<0||index>=p.images.length)return null;
+    const rev=p.photoRevision??1;
+    const base="https://tqkmrejfbvzchfplgxzl.supabase.co/functions/v1/ohana-v3-photo?id="+
+      p.id.slice(5)+"&n="+(index+1)+(rev>1?"&rev="+rev:"");
+    return base+(small?"&size=small":"");
+  }
+  function coverSources(p) {
+    const urls=[];
+    if(!p||!Array.isArray(p.images))return urls;
+    p.images.forEach((url,index)=>{
+      if(!trustedPhoto(url,p.id,index+1,p.photoRevision??1))return;
+      const isLocal=url.startsWith("assets/v3/");
+      urls.push(isLocal?url:url+"&size=small");
+      if(isLocal){
+        const fallback=proxyPhoto(p,index,true);
+        if(fallback)urls.push(fallback);
+      }
+    });
+    return urls;
+  }
+  function addCoverImage(container,p,description){
+    const sources=coverSources(p);
+    const image=dom("img");
+    image.alt=description;image.loading="lazy";image.decoding="async";
+    let next=0;
+    const showUnavailable=()=>{
+      image.remove();
+      container.classList.add("v3-placeholder");
+      container.append(dom("span","v3-mark","OHANA / V3"));
+      container.append(dom("span","v3-art","FOTO\\nNON DISPONIBILE"));
+    };
+    image.addEventListener("error",()=>{
+      next++;
+      if(next<sources.length)image.src=sources[next];
+      else showUnavailable();
+    });
+    if(sources.length){container.append(image);image.src=sources[0];}
+    else showUnavailable();
+  }
   function showProduct(p) {
     get("dialogEyebrow").textContent=p.brand+
       (p.verifiedProduct?" · V3 / ARTICOLO VERIFICATO":" · V3 / ANTEPRIMA FOTOGRAFICA");
@@ -139,10 +189,8 @@
     const visual=dom("div","card-visual");
     const cover=dom("button","card-cover");cover.type="button";
     cover.setAttribute("aria-label","Apri "+p.brand+" "+p.model);
-    const image=dom("img");image.src=p.verifiedProduct||p.image.startsWith("assets/v3/")?p.image:p.image+"&size=small";
-    image.alt=p.brand+" "+p.model+" "+p.color;
-    image.loading="lazy";image.decoding="async";
-    cover.append(image,dom("span","photo-count",p.images.length+" foto"));
+    addCoverImage(cover,p,p.brand+" "+p.model+" "+p.color);
+    cover.append(dom("span","photo-count",p.images.length+" foto"));
     cover.addEventListener("click",()=>showProduct(p));visual.append(cover);
     const info=dom("div","card-info");
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
@@ -196,16 +244,14 @@
 
   function card(item) {
     const root = dom("article","card");
-    const representative=publicProducts.find(p=>p.brand===item.brand&&p.family===item.model);
+    const representative=getPreferredCover(item);
     const visual = dom("div","card-visual v3-card-visual");
     const cover = dom("button","card-cover v3-placeholder");
     cover.type = "button";
     cover.setAttribute("aria-label","Esplora "+item.brand+" "+item.model);
     if(representative){
       cover.classList.remove("v3-placeholder");
-      const photo=dom("img");photo.src=representative.verifiedProduct||representative.image.startsWith("assets/v3/")?representative.image:representative.image+"&size=small";
-      photo.alt=item.brand+" "+item.model+" · fotografia dimostrativa";
-      photo.loading="lazy";photo.decoding="async";cover.append(photo);
+      addCoverImage(cover,representative,item.brand+" "+item.model+" · fotografia dimostrativa");
     }else{
       cover.append(dom("span","v3-mark","OHANA / V3"));
       cover.append(dom("span","v3-art","FOTO\nIN REVISIONE"));
