@@ -15,6 +15,144 @@
   };
   let catalog = [], publicProducts = [], limit = 45;
   let selectedPhotoUrls = [], selectedPhotoIndex = 0;
+  let currentProduct = null, onlyFavorites = false, selectionStep = 0;
+  const favoriteKey = "ohana-v3-favorites-v1";
+  let favorites = new Set(), savedStorageAvailable = true;
+  const sizeDrafts = new Map();
+  const allowedSizes = ["unknown", ...Array.from({length:11},(_,i)=>String(36+i)), "other"];
+  const contactNumber = "393520263951";
+  const productById = id => publicProducts.find(p => p.id===id);
+  function readFavorites() {
+    try {
+      const input=JSON.parse(localStorage.getItem(favoriteKey)||"[]");
+      if(!Array.isArray(input))return new Set();
+      return new Set(input.filter(id=>typeof id==="string"&&productById(id)).slice(0,20));
+    }catch{return new Set();}
+  }
+  function saveFavorites() {
+    try {localStorage.setItem(favoriteKey,JSON.stringify([...favorites]));}
+    catch {savedStorageAvailable=false;}
+  }
+  function updateFavoritesUI() {
+    get("savedCount").textContent=String(favorites.size);
+    get("savedOnly").setAttribute("aria-pressed",String(onlyFavorites));
+    get("openSelection").disabled=!favorites.size;
+    get("openSelection").textContent=favorites.size?"Prepara richiesta ("+favorites.size+") →":"Prepara richiesta →";
+    get("savedHint").textContent=savedStorageAvailable?
+      "Salva con ♡ le scarpe che ti interessano. Le ritroverai in questo browser.":
+      "Le tue scelte restano disponibili finché mantieni aperta questa pagina.";
+    if(currentProduct) {
+      const active=favorites.has(currentProduct.id);
+      get("saveProduct").textContent=active?"♥ Scarpa salvata":"♡ Salva questa scarpa";
+      get("saveProduct").setAttribute("aria-pressed",String(active));
+    }
+  }
+  function toggleFavorite(id,remove=false){
+    if(!productById(id))return;
+    if(remove || favorites.has(id))favorites.delete(id);
+    else if(favorites.size<20)favorites.add(id);
+    else {get("savedStatus").textContent="Puoi salvare fino a 20 scarpe per richiesta.";return;}
+    saveFavorites();updateFavoritesUI();render();
+    get("savedStatus").textContent=favorites.has(id)?"Scarpa aggiunta alle tue scelte.":"Scarpa rimossa dalle tue scelte.";
+    if(get("selectionDialog").open)renderSelection();
+  }
+  function sizeSelect(p){
+    const wrapper=dom("label","","Taglia desiderata");
+    const select=dom("select");
+    select.dataset.id=p.id;
+    const entries=[["","Scegli una taglia"],...Array.from({length:11},(_,i)=>[String(36+i),String(36+i)]),
+      ["other","Altra taglia"],["unknown","Non so ancora"]];
+    for(const [value,label] of entries) {
+      const option=dom("option","",label);option.value=value;select.append(option);
+    }
+    select.value=sizeDrafts.get(p.id)?.size||"";
+    select.addEventListener("change",()=>{
+      const d=sizeDrafts.get(p.id)||{size:"",other:""};
+      d.size=select.value;sizeDrafts.set(p.id,d);
+      other.hidden=select.value!=="other";
+    });
+    const other=dom("input");other.type="text";other.placeholder="Es. 47 o 42,5";
+    other.maxLength=12;other.inputMode="decimal";other.setAttribute("aria-label","Altra taglia desiderata");
+    other.value=sizeDrafts.get(p.id)?.other||"";
+    other.hidden=select.value!=="other";
+    other.addEventListener("input",()=>{
+      const d=sizeDrafts.get(p.id)||{size:"",other:""};
+      d.other=other.value.slice(0,12);sizeDrafts.set(p.id,d);
+    });
+    wrapper.append(select,other);
+    return wrapper;
+  }
+  function renderSelection() {
+    const items=[...favorites].map(productById).filter(Boolean);
+    get("selectionCount").textContent=String(items.length);
+    get("selectionForm").hidden=!items.length;get("selectionEmpty").hidden=Boolean(items.length);
+    get("selectionIntro").hidden=!items.length;
+    get("selectionHeading").textContent=selectionStep?"Riepilogo richiesta":"Le tue scarpe";
+    get("selectionEditor").hidden=selectionStep===1;
+    get("selectionReview").hidden=selectionStep===0;
+    get("selectionBack").hidden=get("selectionCopy").hidden=
+      get("selectionWhatsapp").hidden=selectionStep===0;
+    get("selectionNext").hidden=selectionStep===1;
+    get("selectionError").hidden=true;
+    if(selectionStep)return;
+    const list=get("selectionItems");list.replaceChildren();
+    for(const p of items) {
+      const article=dom("article","selection-item");
+      const cover=dom("button","selection-photo");cover.type="button";
+      const photo=dom("img");photo.src=p.image;photo.alt=p.brand+" "+p.model;
+      photo.loading="lazy";cover.append(photo);
+      cover.addEventListener("click",()=>{
+        get("selectionDialog").close();showProduct(p);
+      });
+      const info=dom("div","selection-item-info");
+      info.append(dom("strong","",p.brand+" · "+p.model),dom("p","",p.verifiedProduct?p.color:"Colori su richiesta"),
+        dom("small","",p.id));
+      const remove=dom("button","selection-remove","Rimuovi");
+      remove.type="button";remove.addEventListener("click",()=>toggleFavorite(p.id,true));
+      info.append(remove);
+      const sizes=dom("div","selection-size");sizes.append(sizeSelect(p));
+      article.append(cover,info,sizes);list.append(article);
+    }
+    const size=get("sameSize");size.replaceChildren();
+    for(const [value,label] of [["","Imposta la stessa taglia"],...Array.from({length:11},(_,i)=>[String(36+i),String(36+i)]),["unknown","Non so ancora"]]) {
+      const option=dom("option","",label);option.value=value;size.append(option);
+    }
+  }
+  function showSelection() {
+    if(!favorites.size)return;
+    selectionStep=0;
+    if(get("productDialog").open)get("productDialog").close();
+    renderSelection();get("selectionDialog").showModal();
+  }
+  function reviewSelection(event) {
+    event.preventDefault();
+    const items=[...favorites].map(productById).filter(Boolean);
+    if(!items.length)return;
+    const lines=["Ciao OHANA Street, vorrei informazioni sulle seguenti scarpe:"];
+    for(const p of items) {
+      const d=sizeDrafts.get(p.id)||{};
+      const size=d.size==="unknown"?"da definire":
+                 d.size==="other" ? (d.other||"").trim() : (d.size||"");
+      if(!size || (d.size==="other"&&!/^[0-9A-Za-zÀ-ÿ., -]{1,12}$/.test(size))){
+        get("selectionError").textContent="Scegli una taglia per ogni scarpa, oppure Non so ancora.";
+        get("selectionError").hidden=false;
+        return;
+      }
+      lines.push("- "+p.brand+" "+p.model+" | codice "+p.id+" | taglia "+size);
+    }
+    const note=get("selectionQuestion").value.trim().slice(0,650);
+    if(note)lines.push("Note: "+note);
+    lines.push("Potete confermare colori e disponibilità? Grazie.");
+    const message=lines.join("\n");
+    selectionStep=1;renderSelection();
+    get("selectionSummary").value=message;
+    const link="https://wa.me/"+contactNumber+"?text="+encodeURIComponent(message);
+    get("selectionWhatsapp").href=message.length<=1700?link:"https://wa.me/"+contactNumber;
+    get("selectionCopyHint").textContent=message.length>1700?
+      "Il messaggio è lungo: copialo e incollalo nella chat WhatsApp.":
+      "Controlla il testo. Su WhatsApp deciderai tu se inviarlo.";
+  }
+
 
   const byId = id => catalog.find(item => item.id === id);
   const byBrand = brand => catalog.filter(item => !brand || item.brand === brand);
