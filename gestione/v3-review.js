@@ -84,7 +84,7 @@ function makeCard(row){
     const hint=make("p","Didascalia originale foto: "+row.source_photo_caption,"source-photo-caption");
     card.append(hint);
   }
-  const originalUrls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.slice(0,12):[];
+  const originalUrls=Array.isArray(row.raw_image_urls)?row.raw_image_urls.slice(0,24):[];
   const available=originalUrls.map((url,i)=>validPhoto(url)?i:-1).filter(i=>i>=0);
   const allowed=new Set(available);
   const stored=Array.isArray(row.selected_photo_indices)?row.selected_photo_indices.map(Number):[0,1,2];
