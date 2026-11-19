@@ -7,6 +7,9 @@
   const col = new Intl.Collator("it", {numeric:true,sensitivity:"base"});
   const norm = value => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
   const fmt = n => new Intl.NumberFormat("it-IT").format(n);
+  // Alias pubblico: il nome della raccolta del fornitore NON prova un chip.
+  // Manteniamo gli ID e le etichette originali solo per i collegamenti interni.
+  const displayModel = name => String(name||"").replace(/AF1 con chip interno/gi,"Air Force 1 — varianti");
   const dom = (tag,cls,text) => {
     const el = document.createElement(tag);
     if(cls) el.className = cls;
@@ -99,13 +102,13 @@
     for(const p of items) {
       const article=dom("article","selection-item");
       const cover=dom("button","selection-photo");cover.type="button";
-      const photo=dom("img");photo.src=p.image;photo.alt=p.brand+" "+p.model;
+      const photo=dom("img");photo.src=p.image;photo.alt=p.brand+" "+displayModel(p.model);
       photo.loading="lazy";cover.append(photo);
       cover.addEventListener("click",()=>{
         get("selectionDialog").close();showProduct(p);
       });
       const info=dom("div","selection-item-info");
-      info.append(dom("strong","",p.brand+" · "+p.model),dom("p","",p.verifiedProduct?p.color:"Colori su richiesta"),
+      info.append(dom("strong","",p.brand+" · "+displayModel(p.model)),dom("p","",p.verifiedProduct?p.color:"Colori su richiesta"),
         dom("small","",p.id));
       const remove=dom("button","selection-remove","Rimuovi");
       remove.type="button";remove.addEventListener("click",()=>toggleFavorite(p.id,true));
@@ -138,7 +141,7 @@
         get("selectionError").hidden=false;
         return;
       }
-      lines.push("- "+p.brand+" "+p.model+" | codice "+p.id+" | taglia "+size);
+      lines.push("- "+p.brand+" "+displayModel(p.model)+" | codice "+p.id+" | taglia "+size);
     }
     const note=get("selectionQuestion").value.trim().slice(0,650);
     if(note)lines.push("Note: "+note);
@@ -186,7 +189,7 @@
       whole.addEventListener("click",()=>setSelection(brand));
       group.append(whole);
       for(const item of items) {
-        const button = dom("button","family-link",item.model);
+        const button = dom("button","family-link",displayModel(item.model));
         button.type = "button";
         button.setAttribute("aria-current",String(state.brand===brand && state.family===item.id));
         button.append(dom("span","",fmt(item.reportedAlbumCount)));
@@ -282,18 +285,18 @@
     updateFavoritesUI();
     get("dialogEyebrow").textContent=p.brand+" · SCARPE";
     get("productBrand").textContent=p.brand;
-    get("productTitle").textContent=p.model;
+    get("productTitle").textContent=displayModel(p.model);
     get("productColor").textContent=p.verifiedProduct?"Colore: "+p.color:"Colore e disponibilità su richiesta";
     get("productDescription").textContent="Per dettagli su colori, taglie e disponibilità, contattaci su WhatsApp.";
     const details=get("productDetails");details.replaceChildren();
-    for(const [k,v] of [["Codice OHANA",p.id],["Raccolta",p.family],
+    for(const [k,v] of [["Codice OHANA",p.id],["Raccolta",displayModel(p.family)],
       ["Taglie","36–46 · altre taglie su richiesta"]]){
       details.append(dom("dt","",k),dom("dd","",v));
     }
     selectedPhotoUrls=p.images.filter((url,i)=>trustedPhoto(url,p.id,i+1,p.photoRevision??1));
     selectedPhotoIndex=0;
     const img=get("mainPhoto");
-    img.hidden=false;img.src=selectedPhotoUrls[0];img.alt=p.brand+" "+p.model+" · foto 1";
+    img.hidden=false;img.src=selectedPhotoUrls[0];img.alt=p.brand+" "+displayModel(p.model)+" · foto 1";
     img.onerror=()=>{
       const alternative=proxyPhoto(p,selectedPhotoIndex,false);
       if(alternative&&selectedPhotoUrls[selectedPhotoIndex]!==alternative){
@@ -327,7 +330,7 @@
       });
       button.append(preview);
       button.addEventListener("click",()=>{
-        selectedPhotoIndex=i;img.src=selectedPhotoUrls[i];img.alt=p.brand+" "+p.model+" · foto "+(i+1);
+        selectedPhotoIndex=i;img.src=selectedPhotoUrls[i];img.alt=p.brand+" "+displayModel(p.model)+" · foto "+(i+1);
         get("photoCounter").textContent=(i+1)+" / "+selectedPhotoUrls.length;
         [...thumbs.children].forEach((x,j)=>x.setAttribute("aria-pressed",String(i===j)));
       });
@@ -342,7 +345,7 @@
     get("shareFallback").hidden=true;
     get("shareStatus").textContent="";
     get("ohana-product-request").replaceChildren();
-    const text="Ciao OHANA Street, vorrei informazioni su "+p.brand+" "+p.model+
+    const text="Ciao OHANA Street, vorrei informazioni su "+p.brand+" "+displayModel(p.model)+
       ", codice "+p.id+". Vorrei informazioni su colori, taglie e disponibilità.";
     get("whatsapp").href="https://wa.me/393520263951?text="+encodeURIComponent(text);
     get("whatsapp").textContent="Chiedi informazioni su WhatsApp ↗";
@@ -352,8 +355,8 @@
     const root=dom("article","card");
     const visual=dom("div","card-visual");
     const cover=dom("button","card-cover");cover.type="button";
-    cover.setAttribute("aria-label","Apri "+p.brand+" "+p.model);
-    addCoverImage(cover,p,p.brand+" "+p.model+" "+p.color,true);
+    cover.setAttribute("aria-label","Apri "+p.brand+" "+displayModel(p.model));
+    addCoverImage(cover,p,p.brand+" "+displayModel(p.model)+" "+p.color,true);
     cover.append(dom("span","photo-count",p.images.length+" foto"));
     cover.addEventListener("click",()=>showProduct(p));visual.append(cover);
     const heart=dom("button","save-button",favorites.has(p.id)?"♥":"♡");
@@ -364,7 +367,7 @@
     visual.append(heart);
     const info=dom("div","card-info");
     info.append(dom("div","card-brand",p.brand+" · Sneakers"));
-    info.append(dom("h3","display",p.model));
+    info.append(dom("h3","display",displayModel(p.model)));
     info.append(dom("p","card-color",p.verifiedProduct?p.color:"Colori e taglie su richiesta"));
     info.append(dom("p","card-code","Foto disponibili · informazioni su WhatsApp"));
     const button=dom("button","card-open",p.verifiedProduct?"Esplora la scarpa ↗":"Guarda le foto ↗");button.type="button";
@@ -375,7 +378,7 @@
   function showCollection(item) {
     get("dialogEyebrow").textContent = item.brand + " · SCARPE";
     get("productBrand").textContent = item.brand;
-    get("productTitle").textContent = item.model;
+    get("productTitle").textContent = displayModel(item.model);
     get("productColor").textContent = "Colori e taglie su richiesta";
     get("productDescription").textContent = "Esplora le fotografie disponibili oppure contattaci su WhatsApp per conoscere varianti, taglie e disponibilità.";
     const list = get("productDetails");
@@ -402,7 +405,7 @@
     get("shareStatus").textContent = "";
     get("shareFallback").hidden = true;
     get("ohana-product-request").replaceChildren();
-    const message = "Ciao OHANA Street, vorrei informazioni su " + item.brand + " " + item.model +
+    const message = "Ciao OHANA Street, vorrei informazioni su " + item.brand + " " + displayModel(item.model) +
       ". Potete confermare colori, taglie e disponibilità?";
     const wa = get("whatsapp");
     wa.href = "https://wa.me/393520263951?text=" + encodeURIComponent(message);
@@ -417,10 +420,10 @@
     const visual = dom("div","card-visual v3-card-visual");
     const cover = dom("button","card-cover v3-placeholder");
     cover.type = "button";
-    cover.setAttribute("aria-label","Esplora "+item.brand+" "+item.model);
+    cover.setAttribute("aria-label","Esplora "+item.brand+" "+displayModel(item.model));
     if(representative){
       cover.classList.remove("v3-placeholder");
-      addCoverImage(cover,representative,item.brand+" "+item.model+" · fotografia dimostrativa");
+      addCoverImage(cover,representative,item.brand+" "+displayModel(item.model)+" · fotografia dimostrativa");
     }else{
       cover.append(dom("span","v3-mark","OHANA STREET"));
       cover.append(dom("span","v3-art","SCOPRI\nIL MODELLO"));
@@ -431,7 +434,7 @@
     visual.append(cover);
     const info = dom("div","card-info");
     info.append(dom("div","card-brand",item.brand+" · Sneakers"));
-    info.append(dom("h3","display",item.model));
+    info.append(dom("h3","display",displayModel(item.model)));
     info.append(dom("p","card-color","Colori e taglie su richiesta"));
     info.append(dom("p","card-code",fmt(visiblePreviews)+" articoli da esplorare"));
     const open = dom("button","card-open","Esplora il modello ↗");
@@ -473,8 +476,8 @@
     get("results").textContent=fmt(cards.length)+" risultati · "+fmt(publicProducts.length)+" articoli fotografici";
     updateFavoritesUI();
     const selected=byId(state.family);
-    get("selectionTitle").textContent=onlyFavorites?"Le tue scarpe":(selected?selected.model:(state.brand||"Tutti i modelli"));
-    get("breadcrumb").textContent=["Scarpe",state.brand,selected?.model].filter(Boolean).join(" › ");
+    get("selectionTitle").textContent=onlyFavorites?"Le tue scarpe":(selected?displayModel(selected.model):(state.brand||"Tutti i modelli"));
+    get("breadcrumb").textContent=["Scarpe",state.brand,selected?displayModel(selected.model):""].filter(Boolean).join(" › ");
     get("more").hidden=cards.length<=limit;
   }
 
@@ -527,7 +530,7 @@
       const value=url.href;
       try {
         if(navigator.share){
-          await navigator.share({title:currentProduct.brand+" "+currentProduct.model,url:value});
+          await navigator.share({title:currentProduct.brand+" "+displayModel(currentProduct.model),url:value});
           get("shareStatus").textContent="Scheda condivisa.";
         }else if(navigator.clipboard?.writeText){
           await navigator.clipboard.writeText(value);
