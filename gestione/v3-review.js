@@ -152,16 +152,17 @@ function makeCard(row){
     target.append(button);
     queuePreview(row,index,img,()=>{loaded.add(index);img.alt="Vista "+(index+1);updateSelection();});
   }
+  const primaryIndices=[...selected,...available.filter(index=>!selected.includes(index))].slice(0,3);
+  const extraIndices=available.filter(index=>!primaryIndices.includes(index));
   if(available.length){
-    available.slice(0,3).forEach(index=>insertPhoto(index,photos));
-    if(available.length>3)more.hidden=false;
-    else more.hidden=true;
+    primaryIndices.forEach(index=>insertPhoto(index,photos));
+    more.hidden=extraIndices.length===0;
   }else photos.append(make("p","Fotografie non ancora recuperate."));
   more.addEventListener("click",()=>{
     additional.hidden=!additional.hidden;
     more.textContent=additional.hidden?"Mostra tutte le fotografie ("+available.length+")":"Nascondi fotografie aggiuntive";
     if(!additional.hidden&&!additional.dataset.loaded){
-      available.slice(3).forEach(index=>insertPhoto(index,additional));
+      extraIndices.forEach(index=>insertPhoto(index,additional));
       additional.dataset.loaded="1";
       updateSelection();
     }
