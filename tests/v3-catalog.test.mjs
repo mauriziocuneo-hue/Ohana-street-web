@@ -60,6 +60,13 @@ for(const path of ["data/catalogo-v3.json","catalogo-v3.html","assets/ohana-v3.j
 assert.match(read("catalogo-v3.html"),/assets\/ohana-catalogo.css/);
 assert.match(read("assets/ohana-v3.js"),/photoPreviews/);
 assert.match(read("assets/ohana-v3.js"),/photo-preview/);
+const v3App=read("assets/ohana-v3.js");
+assert.match(v3App,/preferredCategoryCovers/,"V3 needs curated category covers");
+assert.match(v3App,/OH3P-62f122d0-a026-4f7d-99b4-afb938f9fa19/,
+  "Dunk SB Low 85 must use reviewed full-shoe cover");
+assert.match(v3App,/excludedPoorPreviews/,"Visually rejected insole-only previews must be hidden");
+assert.match(v3App,/addCoverImage/,"Every V3 card needs resilient image fallback");
+assert.match(v3App,/FOTO\\nNON DISPONIBILE/,"Unrecoverable image errors need a neutral placeholder");
 assert.match(read("assets/ohana-v3.js"),/functions\/v1\/ohana-v3-photo/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-v3.js/);
