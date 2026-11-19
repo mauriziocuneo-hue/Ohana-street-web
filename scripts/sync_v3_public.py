@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish only approved OHANA V3 catalog metadata to GitHub Pages static JSON.
+"""Publish sanitized OHANA V3 catalog metadata with versioned photo choices.
 
 Reads a public, RLS-whitelisted Supabase catalog table with the already-public
 publishable key. Never reads the private supplier tables or supplier URLs.
