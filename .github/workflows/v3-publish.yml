@@ -42,7 +42,7 @@ jobs:
       - name: Publish changed photos and catalog JSON
         id: publish
         run: |
-          git add data/catalogo-v3.json assets/v3/
+          git add -A -- data/catalogo-v3.json assets/v3/
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
