@@ -14,7 +14,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "catalogo-v3.json"
 CONFIG = ROOT / "gestione" / "config.js"
-VALID_BRANDS = {"Nike", "Jordan", "Adidas", "New Balance"}
+VALID_BRANDS = {"Nike", "Adidas", "New Balance"}
+# Esclusioni editoriali della vetrina. I record restano conservati in Supabase.
+EXCLUDED_PUBLIC_CATEGORIES = {("Nike", "Air Force 1 Mid"), ("Nike", "Air Force 1 High")}
 PRODUCT_BUCKET = "/storage/v1/object/public/ohana-v3-products/"
 TARGET_HOST = "tqkmrejfbvzchfplgxzl.supabase.co"
 
@@ -79,6 +81,8 @@ def main():
             raise ValueError("Duplicated public ID")
         seen.add(pid)
         brand, family = row["brand"], row["collection_model"]
+        if brand == "Jordan" or (brand, family) in EXCLUDED_PUBLIC_CATEGORIES:
+            continue
         if brand not in VALID_BRANDS or (brand, family) not in allowed:
             raise ValueError("Published item outside approved category list")
         photos = row["images"]
@@ -114,6 +118,8 @@ def main():
             raise ValueError("Duplicate preview UUID")
         preview_ids.add(public_id)
         brand, family = row["brand"], row["family"]
+        if brand == "Jordan" or (brand, family) in EXCLUDED_PUBLIC_CATEGORIES:
+            continue
         if brand not in VALID_BRANDS or (brand, family) not in allowed:
             raise ValueError("Preview model not in permitted source categories")
         name = str(row["model"]).strip()
