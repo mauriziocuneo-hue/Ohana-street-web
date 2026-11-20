@@ -3,10 +3,11 @@ import fs from "node:fs";
 const read=p=>fs.readFileSync(p,"utf8");
 const data=JSON.parse(read("data/catalogo-v3.json"));
 assert.equal(data.schemaVersion,3);
-assert.equal(data.collections.length,45);
-assert.equal(data.collections.reduce((x,v)=>x+v.reportedAlbumCount,0),2014);
-assert.deepEqual([...new Set(data.collections.map(x=>x.brand))].sort(),["Adidas","Jordan","New Balance","Nike"]);
-assert.equal(new Set(data.collections.map(x=>x.id)).size,45);
+assert.equal(data.collections.length,38);
+assert.equal(data.collections.reduce((x,v)=>x+v.reportedAlbumCount,0),1376);
+assert.deepEqual([...new Set(data.collections.map(x=>x.brand))].sort(),["Adidas","New Balance","Nike"]);
+assert.equal(new Set(data.collections.map(x=>x.id)).size,38);
+assert.ok(data.collections.every(x=>!(x.brand==="Nike"&&["Air Force 1 Mid","Air Force 1 High"].includes(x.model))),"Air Force Mid/High must not be published");
 for(const item of data.products){
   assert.equal(item.verifiedProduct,true);
   assert.equal(item.status,"published");
@@ -20,6 +21,8 @@ for(const item of data.products){
 const previews=data.photoPreviews||[];
 assert.ok(Array.isArray(previews));
 assert.ok(previews.length<=5000);
+assert.equal(previews.length,1375,"Only reviewed storefront categories may appear");
+assert.ok(previews.every(p=>["Nike","Adidas","New Balance"].includes(p.brand)),"Only three approved storefront brands");
 const previewIds=new Set();
 for(const item of previews){
   assert.equal(item.verifiedProduct,false,"Preview cannot claim verified status");
@@ -87,6 +90,8 @@ assert.match(v3App,/FOTO\\nNON DISPONIBILE/,"Unrecoverable image errors need a n
 assert.match(read("assets/ohana-v3.js"),/functions\/v1\/ohana-v3-photo/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-theme.css/);
 assert.match(read("catalogo-v3.html"),/assets\/ohana-v3.js/);
+assert.match(read("catalogo-nuovo.html"),/assets\/ohana-v3.js\?v=11/,"The official URL must load V3");
+assert.doesNotMatch(read("catalogo-nuovo.html"),/assets\/ohana-catalogo\.js/,"Legacy application must not render on the official URL");
 assert.match(read("gestione/index.html"),/v3-review.html/);
 
 const reviewer=read("gestione/v3-review.js");
