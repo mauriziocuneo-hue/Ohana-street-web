@@ -2,7 +2,7 @@
 (() => {
   "use strict";
   const get = id => document.getElementById(id);
-  const brands = ["Nike", "Jordan", "Adidas", "New Balance"];
+  const brands = ["Nike", "Adidas", "New Balance"];
   const state = {brand:"",family:"",query:"",sort:"default"};
   const col = new Intl.Collator("it", {numeric:true,sensitivity:"base"});
   const norm = value => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
