@@ -117,10 +117,12 @@ for name in v3_public:
 v3_data = json.loads(Path("data/catalogo-v3.json").read_text(encoding="utf-8"))
 assert v3_data.get("schemaVersion") == 3, "Versione catalogo V3 inattesa"
 v3_collections = v3_data.get("collections")
-assert isinstance(v3_collections, list) and len(v3_collections) == 45, "Mancano gruppi modello V3"
-assert len(set(c.get("id") for c in v3_collections)) == 45, "Identificativi duplicati V3"
-assert {c.get("brand") for c in v3_collections} == {"Nike", "Jordan", "Adidas", "New Balance"}, "Marchi V3 inattesi"
-assert sum(c.get("reportedAlbumCount", 0) for c in v3_collections) == 2014, "Conteggi iniziali V3 alterati"
+assert isinstance(v3_collections, list) and len(v3_collections) == 38, "Mancano gruppi modello V3"
+assert len(set(c.get("id") for c in v3_collections)) == 38, "Identificativi duplicati V3"
+assert {c.get("brand") for c in v3_collections} == {"Nike", "Adidas", "New Balance"}, "Marchi V3 inattesi"
+assert sum(c.get("reportedAlbumCount", 0) for c in v3_collections) == 1376, "Conteggi iniziali V3 alterati"
+# Gli unici modelli Air Force pubblicati non includono Mid e High.
+assert not any(c.get("brand") == "Nike" and c.get("model") in ("Air Force 1 Mid", "Air Force 1 High") for c in v3_collections), "Air Force Mid/High non ammessi in vetrina"
 # I prodotti V3, se presenti, devono essere già approvati e ospitati da OHANA.
 v3_products = v3_data.get("products")
 assert isinstance(v3_products, list) and len(v3_products) <= 5000, "Prodotti V3 non validi"
