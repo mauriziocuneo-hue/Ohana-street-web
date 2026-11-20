@@ -12,6 +12,8 @@
   <script>
     const catalog = new URL('catalogo-nuovo.html', window.location.href);
     catalog.search = window.location.search;
+    // Versione esplicita per impedire al browser di riutilizzare il vecchio catalogo.
+    catalog.searchParams.set("v", "3");
     catalog.hash = window.location.hash === '#lookbook' ? '#catalogo' : window.location.hash;
     window.location.replace(catalog.href);
   </script>
