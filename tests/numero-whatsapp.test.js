@@ -24,6 +24,7 @@ assert(page.includes('https://wa.me/'+phone));
 assert(catalog.includes('https://wa.me/'+phone+'?text='));
 assert(selection.includes("phone='"+phone+"'"));
 assert(chat.includes('root.OHANA_CONTACT_NUMBER'),'La chat deve continuare a usare il numero configurato dalla pagina');
-assert(page.includes('assets/ohana-catalogo.js?v=20261030-contact1'));
+assert(page.includes('assets/ohana-v3.js?v=11'));
+assert(read('assets/ohana-v3.js').includes('const contactNumber = "'+phone+'"'));
 assert(page.includes('assets/ohana-scelte.js?v=20261030-contact1'));
 console.log('PASS: tutti i percorsi di contatto WhatsApp puntano a +39 352 026 3951');
