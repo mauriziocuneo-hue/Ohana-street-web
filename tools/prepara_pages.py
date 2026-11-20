@@ -10,7 +10,7 @@ root = Path(".")
 dest = Path("_site")
 catalog = json.loads(Path("catalogo.json").read_text(encoding="utf-8"))
 assert isinstance(catalog, list) and 68 <= len(catalog) <= 40000, "Catalogo non valido o incompleto"
-required = ["index.html", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js", "assets/ohana-media.js", "assets/ohana-media.css", "foto-extra.json"]
+required = ["index.html", "vintage.html", "assets/ohana-vintage.css", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "gestione/index.html", "gestione/config.js", "assets/ohana-chat.css", "assets/ohana-chat.js", "assets/ohana-media.js", "assets/ohana-media.css", "foto-extra.json"]
 for file in required:
     assert Path(file).is_file(), f"File mancante: {file}"
     if file.endswith((".html", ".json", ".js")):
@@ -181,7 +181,7 @@ import runpy
 runpy.run_path(str(Path('scripts/audit_catalogo_nuovo.py').resolve()))
 if dest.exists(): shutil.rmtree(dest)
 dest.mkdir()
-for item in ["index.html", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
+for item in ["index.html", "vintage.html", "robots.txt", "catalogo.json", "modelli.html", "modelli.json", "favicon.svg", "verifica-responsive.html", "foto-extra.json"]:
     shutil.copy2(item, dest / item)
 for item in ['catalogo-nuovo.html', 'catalogo-nuovo.json']:
     shutil.copy2(item, dest / item)
@@ -208,7 +208,7 @@ if v3_photo_dir.exists():
 shutil.copytree("assets/products", dest / "assets/products")
 for item in ["ohana-chat.css", "ohana-chat.js", "ohana-media.css", "ohana-media.js"]:
     shutil.copy2(Path("assets") / item, dest / "assets" / item)
-for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-theme.css','ohana-business.js','ohana-business.css']:
+for item in ['ohana-scelte.js','ohana-catalogo.js','ohana-catalogo.css','ohana-theme.css','ohana-vintage.css','ohana-business.js','ohana-business.css']:
     shutil.copy2(Path('assets') / item, dest / 'assets' / item)
 (dest / "gestione").mkdir()
 for item in ["index.html", "config.js", "password-core.mjs", "password-ui.mjs", "password-page.mjs", "password.html", "password.css", "ordini-demo.css", "ordini-demo.mjs", "ordini-core.mjs", "ordini-righe.mjs", "ordini-store.mjs", "ordini-condividi.mjs", "importa-whatsapp.mjs", "v3-review.html", "v3-review.css", "v3-review.js"]:
